@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+:root {
+  /* Youth Circles survey palette, scoped through officer-console aliases. */
+  --yc-cream: #f7f1e8;
+  --yc-white: #ffffff;
+  --yc-soft-cream: #faf4ec;
+  --yc-border: #e3d5c4;
+  --yc-text: #3c3730;
+  --yc-muted: #7c7168;
+  --yc-dim: #aa9a8f;
+  --yc-blue: #3e7690;
+  --yc-green: #658d6d;
+  --yc-green-deep: #4f7757;
+  --yc-green-soft: #edf4ee;
+  --yc-orange: #d28d46;
+  --yc-orange-deep: #bd7833;
+  --yc-orange-soft: #fbf1e5;
+  --yc-warning: #c98456;
+  --yc-warning-soft: #f9ede5;
+  --yc-shadow: 0 10px 30px rgba(31, 27, 22, 0.06);
+  --yc-shadow-raised: 0 16px 36px rgba(31, 27, 22, 0.1);
+
+  /* Existing component aliases keep this a presentation-only refactor. */
+  --ink: var(--yc-text);
+  --ink-soft: var(--yc-muted);
+  --ink-faint: var(--yc-dim);
+  --paper: var(--yc-cream);
+  --surface: var(--yc-white);
+  --surface-2: var(--yc-soft-cream);
+  --line: var(--yc-border);
+  --line-soft: #eee4d8;
+  --teal: var(--yc-green);
+  --teal-deep: var(--yc-green-deep);
+  --teal-tint: var(--yc-green-soft);
+  --green: var(--yc-green);
+  --green-tint: var(--yc-green-soft);
+  --amber: #9b6237;
+  --amber-tint: var(--yc-warning-soft);
+  --violet: #8c684a;
+  --violet-tint: var(--yc-orange-soft);
+  --slate: var(--yc-muted);
+  --slate-tint: var(--yc-soft-cream);
+  --bar-track: #eee4d8;
+  --focus: var(--yc-orange);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--paper);
+}
+
+body,
+#root {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+body {
+  background:
+    radial-gradient(circle at 8% 2%, rgba(210, 141, 70, 0.09), transparent 23rem),
+    radial-gradient(circle at 92% 26rem, rgba(101, 141, 109, 0.07), transparent 25rem),
+    var(--paper);
+  color: var(--ink);
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: 14.5px;
+  line-height: 1.55;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+.mono {
+  font-family: "JetBrains Mono", monospace;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button,
+label,
+[role="button"] {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+input:focus-visible,
+[role="button"]:focus-visible {
+  outline: 3px solid rgba(210, 141, 70, 0.28);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: rgba(210, 141, 70, 0.22);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

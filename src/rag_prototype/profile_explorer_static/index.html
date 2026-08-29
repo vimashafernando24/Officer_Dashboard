@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Profile Explorer</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --ink: #17232c; --ink-soft: #56666f; --ink-faint: #829199;
+    --paper: #eef1f2; --surface: #ffffff; --surface-2: #f5f7f8;
+    --line: #d7dee2; --line-soft: #e6ebed;
+    --teal: #1c6e76; --teal-deep: #123f45; --teal-tint: #e3eef0;
+    --green: #2f8f5b; --green-tint: #e6f3ec;
+    --amber: #a5701f; --amber-tint: #f6ecdc;
+    --violet: #7c5cbf; --violet-tint: #eee9f8;
+    --slate: #64707a; --slate-tint: #eceff1;
+    --bar-track: #e6ebed;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--paper); color: var(--ink); font-family: 'IBM Plex Sans', sans-serif; font-size: 14.5px; line-height: 1.5; }
+  h1, h2, h3, h4 { font-family: 'Archivo', sans-serif; margin: 0; text-wrap: balance; }
+  .mono { font-family: 'IBM Plex Mono', monospace; }
+
+  .app { display: flex; flex-direction: column; min-height: 100vh; }
+
+  header {
+    position: sticky; top: 0; z-index: 10; background: var(--surface); border-bottom: 1px solid var(--line);
+    padding: 14px 24px; display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+  }
+  header .eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--teal); font-weight: 600; }
+  header h1 { font-size: 18px; font-weight: 700; }
+  .controls { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-left: auto; }
+  select, input[type=text] {
+    font-family: 'IBM Plex Sans', sans-serif; font-size: 13.5px; padding: 7px 10px; border-radius: 8px;
+    border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+  }
+  select:focus, input:focus { outline: 2px solid var(--teal); outline-offset: 1px; }
+  label.ctrl { font-size: 12px; color: var(--ink-faint); font-family: 'IBM Plex Mono', monospace; display: flex; flex-direction: column; gap: 3px; }
+
+  main { flex: 1; padding: 22px 24px 60px; max-width: 1280px; margin: 0 auto; width: 100%; }
+
+  .top-strip { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 22px; }
+  .fact-pill {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 16px;
+    display: flex; flex-direction: column; gap: 2px;
+  }
+  .fact-pill .k { font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; text-transform: uppercase; letter-spacing: .05em; color: var(--ink-faint); }
+  .fact-pill .v { font-size: 14px; font-weight: 600; }
+
+  .empty-state { color: var(--ink-faint); padding: 60px 0; text-align: center; font-size: 15px; }
+  .empty-state .big { font-size: 34px; margin-bottom: 10px; }
+
+  .profile-card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; margin-bottom: 22px; overflow: hidden; }
+  .profile-head { padding: 18px 22px; border-bottom: 1px solid var(--line-soft); display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+  .profile-head .label { font-size: 17px; font-weight: 700; }
+  .profile-head .model { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: var(--teal); }
+  .badge { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 999px; }
+  .badge.sim { background: var(--teal-tint); color: var(--teal-deep); }
+  .badge.safe { background: var(--green-tint); color: var(--green); }
+  .badge.review { background: var(--amber-tint); color: var(--amber); }
+  .badge.tie { background: var(--amber-tint); color: var(--amber); }
+
+  .profile-tabs { display: flex; gap: 4px; padding: 10px 22px 0; border-bottom: 1px solid var(--line-soft); }
+  .ptab { font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 8px 12px; border-radius: 8px 8px 0 0; cursor: pointer; color: var(--ink-faint); border: 1px solid transparent; }
+  .ptab.active { color: var(--teal-deep); background: var(--teal-tint); border-color: var(--line-soft); border-bottom-color: var(--teal-tint); }
+
+  .profile-body { padding: 18px 22px 22px; }
+  .pane { display: none; }
+  .pane.active { display: block; }
+
+  /* findings pane */
+  .findings-cat { margin-bottom: 16px; }
+  .findings-cat h4 { font-size: 12.5px; text-transform: uppercase; letter-spacing: .04em; color: var(--ink-faint); font-family: 'IBM Plex Mono', monospace; margin-bottom: 6px; }
+  .findings-cat ul { margin: 0; padding-left: 18px; }
+  .findings-cat li { margin-bottom: 4px; font-size: 13.5px; }
+
+  /* distributions pane */
+  .dist-toolbar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+  .theme-chip {
+    font-family: 'IBM Plex Mono', monospace; font-size: 11px; padding: 4px 10px; border-radius: 999px;
+    border: 1px solid var(--line); background: var(--surface-2); color: var(--ink-soft); cursor: pointer; user-select: none;
+  }
+  .theme-chip.active { background: var(--teal); color: white; border-color: var(--teal); }
+  .toggle-screened { display: flex; align-items: center; gap: 6px; font-size: 12.5px; color: var(--ink-soft); margin-left: auto; }
+
+  .dist-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 12px; }
+  .var-card { border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; background: var(--surface); }
+  .var-card.matches-own { border-color: var(--teal); box-shadow: 0 0 0 1px var(--teal) inset; }
+  .var-card .vhead { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
+  .var-card .vlabel { font-weight: 600; font-size: 13px; }
+  .var-card .vmeta { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--ink-faint); white-space: nowrap; }
+  .var-card .screened-flag { font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; padding: 1px 6px; border-radius: 999px; }
+  .var-card .screened-flag.yes { background: var(--green-tint); color: var(--green); }
+  .var-card .screened-flag.no { background: var(--slate-tint); color: var(--slate); }
+  .var-card .own-answer { font-size: 11.5px; color: var(--teal-deep); margin-bottom: 6px; font-weight: 600; }
+
+  .bar-row { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; font-size: 12px; }
+  .bar-row .blabel { flex: 0 0 40%; color: var(--ink-soft); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .bar-row .btrack { flex: 1; background: var(--bar-track); border-radius: 4px; height: 14px; position: relative; overflow: hidden; }
+  .bar-row .bfill { position: absolute; left: 0; top: 0; bottom: 0; background: var(--slate); border-radius: 4px; }
+  .bar-row.own .bfill { background: var(--teal); }
+  .bar-row .bpct { flex: 0 0 42px; text-align: right; font-family: 'IBM Plex Mono', monospace; color: var(--ink-faint); font-variant-numeric: tabular-nums; }
+
+  .ordered-summary { font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: var(--ink); background: var(--surface-2); border-radius: 8px; padding: 8px 10px; }
+
+  details.raw-block { margin-top: 16px; }
+  details.raw-block summary { cursor: pointer; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--ink-faint); }
+  details.raw-block pre { white-space: pre-wrap; font-size: 12px; color: var(--ink-soft); background: var(--surface-2); border-radius: 8px; padding: 12px; margin-top: 8px; }
+
+  .loading { text-align: center; padding: 60px 0; color: var(--ink-faint); font-family: 'IBM Plex Mono', monospace; }
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <div>
+      <div class="eyebrow">NYSC profile explorer</div>
+      <h1>What does the assigned profile actually tell us?</h1>
+    </div>
+    <a href="/new-person" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--teal);text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:7px 12px;">walk through as a new person &rarr;</a>
+    <div class="controls">
+      <label class="ctrl">Branch
+        <select id="branchSelect">
+          <option value="D">D</option>
+          <option value="E">E</option>
+          <option value="F">F</option>
+          <option value="G">G</option>
+        </select>
+      </label>
+      <label class="ctrl">Respondent
+        <select id="respondentSelect" style="min-width:340px"></select>
+      </label>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="empty-state"><div class="big">&#128269;</div>Pick a branch and a respondent above to load their full assigned-profile detail.</div>
+  </main>
+</div>
+
+<script>
+(function () {
+  var branchSelect = document.getElementById('branchSelect');
+  var respondentSelect = document.getElementById('respondentSelect');
+  var main = document.getElementById('main');
+
+  function esc(s) {
+    if (s === null || s === undefined) return '';
+    return String(s).replace(/[&<>"']/g, function (c) { return { '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]; });
+  }
+
+  function loadRespondents(branch) {
+    respondentSelect.innerHTML = '<option>loading…</option>';
+    fetch('/api/respondents?branch=' + encodeURIComponent(branch))
+      .then(function (r) { return r.json(); })
+      .then(function (rows) {
+        respondentSelect.innerHTML = rows.map(function (r) {
+          return '<option value="' + esc(r.respondent_id) + '">' + esc(r.ideal_sector) + ' — ' + esc(r.respondent_id.slice(0, 13)) + '…</option>';
+        }).join('');
+        if (rows.length) loadExplore(branch, rows[0].respondent_id);
+      });
+  }
+
+  function themeChips(themes, activeTheme) {
+    return themes.map(function (t) {
+      return '<span class="theme-chip' + (t === activeTheme ? ' active' : '') + '" data-theme="' + esc(t) + '">' + esc(t) + '</span>';
+    }).join('');
+  }
+
+  function renderCategorical(entry, ownValue) {
+    var items = (entry.distribution || []).slice().sort(function (a, b) { return b.percent - a.percent; });
+    return items.map(function (it) {
+      var isOwn = ownValue && it.value.trim().toLowerCase() === ownValue.trim().toLowerCase();
+      return '<div class="bar-row' + (isOwn ? ' own' : '') + '">' +
+        '<span class="blabel" title="' + esc(it.value) + '">' + esc(it.value) + '</span>' +
+        '<span class="btrack"><span class="bfill" style="width:' + it.percent + '%"></span></span>' +
+        '<span class="bpct">' + it.percent.toFixed(1) + '%</span>' +
+        '</div>';
+    }).join('');
+  }
+
+  function renderVarCard(entry, ownAnswers) {
+    var ownValue = ownAnswers[entry.variable];
+    var matches = false;
+    var body;
+    if (entry.type === 'ordered') {
+      body = '<div class="ordered-summary">median ' + entry.median + ' &middot; IQR ' + entry.iqr_low + '–' + entry.iqr_high +
+        (ownValue ? ' &middot; <b>your answer code: ' + esc(ownValue) + '</b>' : '') + '</div>';
+    } else if (entry.distribution) {
+      if (ownValue) {
+        matches = entry.distribution.some(function (it) { return it.value.trim().toLowerCase() === ownValue.trim().toLowerCase(); });
+      }
+      body = renderCategorical(entry, ownValue);
+    } else {
+      body = '<div class="ordered-summary">' + esc(entry.raw_distribution || entry.raw || '') + '</div>';
+    }
+    return '<div class="var-card' + (matches ? ' matches-own' : '') + '">' +
+      '<div class="vhead">' +
+        '<span class="vlabel">' + esc(entry.label) + '</span>' +
+        '<span class="screened-flag ' + (entry.screened ? 'yes' : 'no') + '">' + (entry.screened ? 'screened' : 'not screened') + '</span>' +
+      '</div>' +
+      '<div class="vmeta">' + esc(entry.variable) + ' &middot; ' + esc(entry.theme) + ' &middot; n=' + (entry.eligible_n || '?') + ' &middot; coverage ' + entry.coverage_pct + '%</div>' +
+      (ownValue ? '<div class="own-answer">Your answer: ' + esc(ownValue) + '</div>' : '') +
+      body +
+      '</div>';
+  }
+
+  function buildProfilePane(profile, ownAnswers, state) {
+    var themes = Array.from(new Set(profile.parsed.distributions.map(function (d) { return d.theme; }))).sort();
+    var activeTheme = state.theme || 'all';
+    var screenedOnly = state.screenedOnly;
+
+    var visible = profile.parsed.distributions.filter(function (d) {
+      if (activeTheme !== 'all' && d.theme !== activeTheme) return false;
+      if (screenedOnly && !d.screened) return false;
+      return true;
+    });
+
+    var findingsHtml = profile.parsed.supported_findings.categories.map(function (cat) {
+      return '<div class="findings-cat"><h4>' + esc(cat.category) + '</h4><ul>' +
+        cat.findings.map(function (f) { return '<li>' + esc(f) + '</li>'; }).join('') + '</ul></div>';
+    }).join('') || '<p style="color:var(--ink-faint)">No screened findings for this profile.</p>';
+
+    var distHtml =
+      '<div class="dist-toolbar">' +
+        '<span class="theme-chip' + (activeTheme === 'all' ? ' active' : '') + '" data-theme="all">all (' + profile.parsed.distributions.length + ')</span>' +
+        themeChips(themes, activeTheme) +
+        '<label class="toggle-screened"><input type="checkbox" id="screenedToggle-' + profile.profile_key + '" ' + (screenedOnly ? 'checked' : '') + '> screened findings only</label>' +
+      '</div>' +
+      '<div class="dist-grid">' + visible.map(function (d) { return renderVarCard(d, ownAnswers); }).join('') + '</div>';
+
+    return { findingsHtml: findingsHtml, distHtml: distHtml };
+  }
+
+  var paneState = {}; // profile_key -> {activePane, theme, screenedOnly}
+
+  function render(data) {
+    if (!data.profiles.length) {
+      main.innerHTML = '<div class="empty-state">No retained models for branch ' + esc(data.branch) + '.</div>';
+      return;
+    }
+
+    var topStrip = '<div class="top-strip">' +
+      '<div class="fact-pill"><span class="k">Respondent</span><span class="v mono">' + esc(data.respondent_id) + '</span></div>' +
+      '<div class="fact-pill"><span class="k">Their own ideal_sector answer</span><span class="v">' + esc(data.own_ideal_sector || '(not stated)') + '</span></div>' +
+      '<div class="fact-pill"><span class="k">Their own study_field_preference</span><span class="v">' + esc(data.own_study_field_preference || '(not stated)') + '</span></div>' +
+      '</div>';
+
+    var cardsHtml = data.profiles.map(function (p) {
+      var st = paneState[p.profile_key] || { activePane: 'distributions', theme: 'all', screenedOnly: true };
+      paneState[p.profile_key] = st;
+      var reliabilityCls = p.model_judgment.indexOf('SAFE') === 0 ? 'safe' : 'review';
+      var panes = buildProfilePane(p, data.own_answers_for_profile_variables, st);
+
+      return '<div class="profile-card" data-key="' + p.profile_key + '">' +
+        '<div class="profile-head">' +
+          '<div><div class="label">' + esc(p.profile_label) + '</div><div class="model mono">' + esc(p.profile_key) + '</div></div>' +
+          '<span class="badge sim">similarity ' + p.membership_similarity_percent + '%' + (p.distance_tie ? ' (tie)' : '') + '</span>' +
+          '<span class="badge ' + reliabilityCls + '">' + esc(p.model_judgment) + ' (' + (p.model_published_accuracy * 100).toFixed(1) + '% accuracy)</span>' +
+        '</div>' +
+        '<div class="profile-tabs">' +
+          '<span class="ptab' + (st.activePane === 'findings' ? ' active' : '') + '" data-pane="findings">screened findings</span>' +
+          '<span class="ptab' + (st.activePane === 'distributions' ? ' active' : '') + '" data-pane="distributions">full distributions (' + p.parsed.distributions.length + ' vars)</span>' +
+        '</div>' +
+        '<div class="profile-body">' +
+          '<div class="pane' + (st.activePane === 'findings' ? ' active' : '') + '" data-pane="findings">' + panes.findingsHtml + '</div>' +
+          '<div class="pane' + (st.activePane === 'distributions' ? ' active' : '') + '" data-pane="distributions">' + panes.distHtml + '</div>' +
+          '<details class="raw-block"><summary>cautions &amp; prohibited inferences (raw text)</summary><pre>' + esc(p.parsed.cautions_text) + '\n\n' + esc(p.parsed.prohibited_inferences_text) + '</pre></details>' +
+        '</div>' +
+        '</div>';
+    }).join('');
+
+    main.innerHTML = topStrip + cardsHtml;
+
+    // wire up tab clicks
+    main.querySelectorAll('.ptab').forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        var card = tab.closest('.profile-card');
+        var key = card.dataset.key;
+        paneState[key].activePane = tab.dataset.pane;
+        render(data);
+      });
+    });
+    // wire up theme chip clicks
+    main.querySelectorAll('.theme-chip').forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        var card = chip.closest('.profile-card');
+        var key = card.dataset.key;
+        paneState[key].theme = chip.dataset.theme;
+        render(data);
+      });
+    });
+    // wire up screened-only toggle
+    main.querySelectorAll('[id^="screenedToggle-"]').forEach(function (cb) {
+      cb.addEventListener('change', function () {
+        var key = cb.id.replace('screenedToggle-', '');
+        paneState[key].screenedOnly = cb.checked;
+        render(data);
+      });
+    });
+  }
+
+  function loadExplore(branch, respondentId) {
+    main.innerHTML = '<div class="loading">loading profile detail…</div>';
+    paneState = {};
+    fetch('/api/explore?branch=' + encodeURIComponent(branch) + '&respondent_id=' + encodeURIComponent(respondentId))
+      .then(function (r) { return r.json(); })
+      .then(render);
+  }
+
+  branchSelect.addEventListener('change', function () { loadRespondents(branchSelect.value); });
+  respondentSelect.addEventListener('change', function () { loadExplore(branchSelect.value, respondentSelect.value); });
+
+  loadRespondents(branchSelect.value);
+})();
+</script>
+</body>
+</html>

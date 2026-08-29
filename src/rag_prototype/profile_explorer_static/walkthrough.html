@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>New Person Walkthrough</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --ink: #17232c; --ink-soft: #56666f; --ink-faint: #829199;
+    --paper: #eef1f2; --surface: #ffffff; --surface-2: #f5f7f8;
+    --line: #d7dee2; --line-soft: #e6ebed;
+    --teal: #1c6e76; --teal-deep: #123f45; --teal-tint: #e3eef0;
+    --green: #2f8f5b; --green-tint: #e6f3ec;
+    --amber: #a5701f; --amber-tint: #f6ecdc;
+    --violet: #7c5cbf; --violet-tint: #eee9f8;
+    --slate: #64707a; --slate-tint: #eceff1;
+    --bar-track: #e6ebed;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--paper); color: var(--ink); font-family: 'IBM Plex Sans', sans-serif; font-size: 14.5px; line-height: 1.55; }
+  h1, h2, h3, h4 { font-family: 'Archivo', sans-serif; margin: 0; text-wrap: balance; }
+  .mono { font-family: 'IBM Plex Mono', monospace; }
+
+  header {
+    background: var(--surface); border-bottom: 1px solid var(--line); padding: 14px 24px;
+    display: flex; align-items: center; gap: 16px;
+  }
+  header .eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--teal); font-weight: 600; }
+  header h1 { font-size: 18px; }
+  header a.back { margin-left: auto; font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; color: var(--ink-soft); text-decoration: none; }
+
+  .steps-nav { display: flex; gap: 6px; padding: 14px 24px 0; max-width: 760px; margin: 0 auto; }
+  .step-dot {
+    flex: 1; height: 4px; border-radius: 2px; background: var(--line);
+  }
+  .step-dot.done { background: var(--teal); }
+  .step-dot.active { background: var(--teal-deep); }
+
+  main { max-width: 760px; margin: 0 auto; padding: 22px 24px 80px; }
+
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 24px 28px; margin-bottom: 18px; }
+  .step-title { font-size: 20px; font-weight: 700; margin-bottom: 6px; }
+  .step-hint { color: var(--ink-soft); font-size: 13.5px; margin-bottom: 18px; }
+
+  .q-block { margin-bottom: 20px; }
+  .q-block:last-child { margin-bottom: 0; }
+  .q-label { font-weight: 600; font-size: 14px; margin-bottom: 8px; }
+  .q-model-badge { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--teal); text-transform: uppercase; letter-spacing: .04em; margin: 22px 0 4px; padding-top: 14px; border-top: 1px solid var(--line-soft); }
+  .q-model-badge:first-child { border-top: none; padding-top: 0; margin-top: 0; }
+
+  .choice-grid { display: flex; flex-direction: column; gap: 6px; }
+  .choice-option {
+    border: 1px solid var(--line); border-radius: 9px; padding: 10px 14px; cursor: pointer;
+    display: flex; align-items: center; gap: 10px; font-size: 13.5px; background: var(--surface);
+  }
+  .choice-option:hover { border-color: var(--teal); }
+  .choice-option input { accent-color: var(--teal); }
+  .choice-option.selected { border-color: var(--teal); background: var(--teal-tint); }
+
+  input[type=number] {
+    width: 140px; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--line);
+    font-family: 'IBM Plex Mono', monospace; font-size: 13.5px;
+  }
+
+  .btn-row { display: flex; justify-content: space-between; align-items: center; margin-top: 6px; }
+  button.primary {
+    background: var(--teal); color: white; border: none; border-radius: 9px; padding: 11px 20px;
+    font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 14px; cursor: pointer;
+  }
+  button.primary:hover { background: var(--teal-deep); }
+  button.primary:disabled { background: var(--line); color: var(--ink-faint); cursor: not-allowed; }
+  button.ghost {
+    background: transparent; color: var(--ink-soft); border: 1px solid var(--line); border-radius: 9px;
+    padding: 11px 20px; font-family: 'IBM Plex Sans', sans-serif; font-size: 14px; cursor: pointer;
+  }
+
+  .warn-box { background: var(--amber-tint); color: var(--amber); border-radius: 10px; padding: 12px 16px; font-size: 13px; margin-bottom: 16px; }
+  .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 10px; margin-bottom: 18px; }
+  .summary-item { background: var(--surface-2); border-radius: 9px; padding: 9px 12px; }
+  .summary-item .k { font-family: 'IBM Plex Mono', monospace; font-size: 10px; text-transform: uppercase; color: var(--ink-faint); }
+  .summary-item .v { font-size: 13.5px; margin-top: 2px; }
+
+  .loading { text-align: center; padding: 50px 0; color: var(--ink-faint); font-family: 'IBM Plex Mono', monospace; }
+
+  /* result rendering (mirrors test-results artifact styling) */
+  .profile-pill-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+  .profile-pill { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; font-size: 13px; }
+  .profile-pill b { display: block; font-size: 13.5px; margin-bottom: 3px; }
+  .badge { font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 999px; }
+  .badge.direct { background: var(--teal-tint); color: var(--teal-deep); }
+  .badge.adjacent { background: var(--violet-tint); color: var(--violet); }
+  .badge.strength { background: var(--surface-2); color: var(--ink-soft); border: 1px solid var(--line); }
+  .badge.contrib.REINFORCED { background: var(--green-tint); color: var(--green); }
+  .badge.contrib.CONTRASTED { background: var(--amber-tint); color: var(--amber); }
+  .badge.contrib.HELPED_DIFFERENTIATE { background: var(--violet-tint); color: var(--violet); }
+  .badge.contrib.PROVIDED_CONTEXT { background: var(--teal-tint); color: var(--teal-deep); }
+  .badge.contrib.NOT_USED { background: var(--slate-tint); color: var(--slate); }
+  .rec { border: 1px solid var(--line); border-radius: 10px; padding: 14px 18px; margin-bottom: 12px; }
+  .rec-head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .rec-head .name { font-weight: 700; font-size: 15px; }
+  .rec-head .cid { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--ink-faint); }
+  .rec .why { margin-bottom: 8px; }
+  .rec .bridge { background: var(--violet-tint); border-radius: 8px; padding: 8px 12px; font-size: 13px; margin-bottom: 8px; }
+  .about-card { border-color: var(--teal); background: linear-gradient(180deg, var(--teal-tint), var(--surface) 60%); }
+  .discuss-card { border-color: var(--amber); background: linear-gradient(180deg, var(--amber-tint), var(--surface) 60%); }
+  .discuss-prompt { padding: 10px 0; border-top: 1px solid var(--line-soft); }
+  .discuss-prompt:first-of-type { border-top: none; padding-top: 0; }
+  .about-narrative { font-size: 15px; line-height: 1.6; color: var(--ink); }
+  .about-narrative.why-assigned { padding-bottom: 14px; border-bottom: 1px solid var(--line-soft); }
+  .rec .insight { background: var(--teal-tint); border-radius: 8px; padding: 9px 12px; font-size: 13px; color: var(--teal-deep); margin-bottom: 6px; }
+
+  /* ---------- evidence flip cards ---------- */
+  .evidence-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; margin-top: 8px; }
+  .flip-card { perspective: 1200px; cursor: pointer; }
+  .flip-card-inner { position: relative; display: grid; transition: transform 0.5s cubic-bezier(.4,.2,.2,1); transform-style: preserve-3d; }
+  .flip-card.flipped .flip-card-inner { transform: rotateY(180deg); }
+  .flip-card-front, .flip-card-back {
+    grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden;
+    border-radius: 10px; padding: 11px 13px; border: 1px solid var(--line); background: var(--surface-2);
+  }
+  .flip-card-back { transform: rotateY(180deg); background: var(--surface); }
+  .flip-card-front .finding-text { font-size: 12.5px; color: var(--ink); line-height: 1.45; }
+  .flip-card-front .flip-hint { font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .04em; margin-top: 8px; display: flex; align-items: center; gap: 4px; }
+  .flip-card-back .survey-tag { font-family: 'IBM Plex Mono', monospace; font-size: 9px; color: var(--teal); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 4px; }
+  .flip-card-back .survey-question { font-size: 12.5px; font-weight: 600; color: var(--ink); margin-bottom: 8px; line-height: 1.4; }
+  .chart-bar-row { display: flex; align-items: center; gap: 6px; margin-bottom: 3px; font-size: 10.5px; }
+  .chart-bar-row .cblabel { flex: 0 0 34%; color: var(--ink-soft); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .chart-bar-row .cbtrack { flex: 1; background: var(--bar-track); border-radius: 3px; height: 11px; position: relative; overflow: hidden; }
+  .chart-bar-row .cbfill { position: absolute; left: 0; top: 0; bottom: 0; background: var(--slate); border-radius: 3px; }
+  .chart-bar-row.hl .cbfill { background: var(--teal); }
+  .chart-bar-row .cbpct { flex: 0 0 34px; text-align: right; font-family: 'IBM Plex Mono', monospace; color: var(--ink-faint); }
+  .chart-ordered { font-family: 'IBM Plex Mono', monospace; font-size: 12px; background: var(--surface-2); border-radius: 6px; padding: 6px 8px; }
+  .rec .insight b { font-weight: 700; }
+  .rec details.evidence-trail { margin-top: 4px; }
+  .rec details.evidence-trail summary { cursor: pointer; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--ink-faint); }
+  .rec .profile-line { font-size: 12px; color: var(--ink-faint); padding-top: 4px; }
+  .nodef-box { background: var(--slate-tint); border-left: 3px solid var(--slate); border-radius: 10px; padding: 14px 18px; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <div class="eyebrow">Youth services officer &middot; intake console</div>
+    <h1>Record the member's intake &rarr; get a cluster briefing &amp; programme options</h1>
+  </div>
+  <a class="back" href="/">&larr; profile explorer</a>
+</header>
+<div class="steps-nav" id="stepsNav"></div>
+<main id="main"></main>
+
+<script>
+(function () {
+  var STEP_NAMES = ['Situation', 'Background', 'Preferences', 'Programme match', 'Recommendation'];
+  var state = { step: 0, branch: null, clusterAnswers: {}, idealSector: null, q1: null, q2: null, q3: null, q4: null, q5: null };
+  var config = null;
+  var main = document.getElementById('main');
+  var stepsNav = document.getElementById('stepsNav');
+
+  function esc(s) {
+    if (s === null || s === undefined) return '';
+    return String(s).replace(/[&<>"']/g, function (c) { return { '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]; });
+  }
+
+  var flipCardCounter = 0;
+
+  function renderDistributionChart(dist) {
+    if (!dist) return '<div class="chart-ordered">No source distribution found for this variable.</div>';
+    if (dist.parse_failed || dist.raw_distribution) {
+      return '<div class="chart-ordered">' + esc(dist.raw || dist.raw_distribution || 'Distribution not available.') + '</div>';
+    }
+    if (dist.type === 'ordered') {
+      return '<div class="chart-ordered">median ' + dist.median + ' &middot; IQR ' + dist.iqr_low + '&ndash;' + dist.iqr_high +
+        ' <span style="color:var(--ink-faint)">(n=' + dist.eligible_n + ')</span></div>';
+    }
+    var items = (dist.distribution || []).slice().sort(function (a, b) { return b.percent - a.percent; });
+    return items.map(function (it, i) {
+      return '<div class="chart-bar-row' + (i === 0 ? ' hl' : '') + '">' +
+        '<span class="cblabel" title="' + esc(it.value) + '">' + esc(it.value) + '</span>' +
+        '<span class="cbtrack"><span class="cbfill" style="width:' + it.percent + '%"></span></span>' +
+        '<span class="cbpct">' + it.percent.toFixed(1) + '%</span>' +
+        '</div>';
+    }).join('') + (dist.eligible_n ? '<div style="font-size:10px;color:var(--ink-faint);margin-top:4px">n=' + dist.eligible_n + '</div>' : '');
+  }
+
+  function renderFindingCard(f) {
+    var cardId = 'flip-' + (flipCardCounter++);
+    var sq = f.survey_question;
+    var backHeader = sq
+      ? '<div class="survey-tag">National ' + esc(sq.framework) + ' survey &middot; Q' + esc(sq.question_id) + ' &middot; ' + esc(f.profile_key) + '</div>' +
+        '<div class="survey-question">&ldquo;' + esc(sq.question_text) + '&rdquo;</div>'
+      : '<div class="survey-tag">' + esc(f.profile_key) + ' &middot; ' + esc(f.variable) + '</div>';
+    return '<div class="flip-card" id="' + cardId + '" onclick="document.getElementById(\'' + cardId + '\').classList.toggle(\'flipped\')">' +
+      '<div class="flip-card-inner">' +
+        '<div class="flip-card-front">' +
+          '<div class="finding-text">' + esc(f.finding) + '</div>' +
+          '<div class="flip-hint">&#8635; flip for source &amp; chart</div>' +
+        '</div>' +
+        '<div class="flip-card-back">' + backHeader + renderDistributionChart(f.distribution) + '</div>' +
+      '</div>' +
+    '</div>';
+  }
+
+  function renderFindingCards(findings) {
+    if (!findings || !findings.length) return '';
+    return '<div class="evidence-grid">' + findings.map(renderFindingCard).join('') + '</div>';
+  }
+
+  function renderNav() {
+    stepsNav.innerHTML = STEP_NAMES.map(function (_, i) {
+      var cls = i < state.step ? 'done' : (i === state.step ? 'active' : '');
+      return '<div class="step-dot ' + cls + '"></div>';
+    }).join('');
+  }
+
+  function fetchConfig(branch) {
+    return fetch('/api/question_config?branch=' + encodeURIComponent(branch)).then(function (r) { return r.json(); });
+  }
+
+  // ---------- Step 0: branch routing ----------
+  function renderStep0() {
+    main.innerHTML =
+      '<div class="card">' +
+        '<div class="step-title">Which best describes the member\'s current situation?</div>' +
+        '<div class="step-hint">Ask the member this directly. It determines which set of cluster-assignment questions applies — the same branch logic used for the original 362-respondent study.</div>' +
+        '<div class="choice-grid" id="branchChoices"></div>' +
+      '</div>';
+    var opts = [
+      { code: 'D', label: "Currently in education (school, university, or a training programme)" },
+      { code: 'E', label: "Finished or left education and unemployed or searching for work" },
+      { code: 'F', label: "Currently employed (in paid work)" },
+      { code: 'G', label: "Not working, not studying, and not currently searching for work" },
+    ];
+    var wrap = document.getElementById('branchChoices');
+    wrap.innerHTML = opts.map(function (o) {
+      return '<label class="choice-option" data-code="' + o.code + '"><input type="radio" name="branch" value="' + o.code + '"> ' + esc(o.label) + '</label>';
+    }).join('');
+    wrap.querySelectorAll('.choice-option').forEach(function (el) {
+      el.addEventListener('click', function () {
+        wrap.querySelectorAll('.choice-option').forEach(function (o) { o.classList.remove('selected'); });
+        el.classList.add('selected');
+        el.querySelector('input').checked = true;
+        state.branch = el.dataset.code;
+        fetchConfig(state.branch).then(function (cfg) {
+          config = cfg;
+          state.step = 1;
+          renderNav();
+          renderStep1();
+        });
+      });
+    });
+  }
+
+  // ---------- Step 1: cluster-forming questions ----------
+  function renderStep1() {
+    var groupsHtml = config.cluster_questions.map(function (grp) {
+      var qsHtml = grp.questions.map(function (q) {
+        if (q.type === 'number') {
+          return '<div class="q-block"><div class="q-label">' + esc(q.question) + '</div>' +
+            '<input type="number" min="0" data-var="' + q.variable + '" class="cluster-input">' + '</div>';
+        }
+        var optsHtml = q.options.map(function (o) {
+          return '<label class="choice-option" data-var="' + q.variable + '" data-code="' + esc(o.code) + '"><input type="radio" name="' + q.variable + '"> ' + esc(o.label) + '</label>';
+        }).join('');
+        return '<div class="q-block"><div class="q-label">' + esc(q.question) + '</div><div class="choice-grid">' + optsHtml + '</div></div>';
+      }).join('');
+      return '<div class="q-model-badge">' + esc(grp.model_id.replace(/_/g, ' ')) + '</div>' + qsHtml;
+    }).join('');
+
+    main.innerHTML =
+      '<div class="card">' +
+        '<div class="step-title">A few background questions to ask the member</div>' +
+        '<div class="step-hint">These are the exact, already-validated cluster-forming questions for this branch — the same items the original study used to build these profile models.</div>' +
+        groupsHtml +
+        '<div class="btn-row"><button class="ghost" id="back0">&larr; back</button><button class="primary" id="next1" disabled>Next</button></div>' +
+      '</div>';
+
+    main.querySelectorAll('.choice-option[data-var]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        var v = el.dataset.var;
+        main.querySelectorAll('.choice-option[data-var="' + v + '"]').forEach(function (o) { o.classList.remove('selected'); });
+        el.classList.add('selected');
+        el.querySelector('input').checked = true;
+        state.clusterAnswers[v] = el.dataset.code;
+        checkStep1Complete();
+      });
+    });
+    main.querySelectorAll('.cluster-input').forEach(function (el) {
+      el.addEventListener('input', function () {
+        state.clusterAnswers[el.dataset.var] = el.value;
+        checkStep1Complete();
+      });
+    });
+    document.getElementById('back0').addEventListener('click', function () { state.step = 0; renderNav(); renderStep0(); });
+    document.getElementById('next1').addEventListener('click', function () { state.step = 2; renderNav(); renderStep2(); });
+    checkStep1Complete();
+  }
+
+  function checkStep1Complete() {
+    var allVars = [];
+    config.cluster_questions.forEach(function (g) { g.questions.forEach(function (q) { allVars.push(q.variable); }); });
+    var complete = allVars.every(function (v) { return state.clusterAnswers[v] !== undefined && state.clusterAnswers[v] !== ''; });
+    var btn = document.getElementById('next1');
+    if (btn) btn.disabled = !complete;
+  }
+
+  // ---------- Step 2: ideal_sector (reused existing survey question) ----------
+  function renderStep2() {
+    var optsHtml = config.ideal_sector_options.map(function (o) {
+      return '<label class="choice-option" data-code="' + esc(o.code) + '"><input type="radio" name="sector"> ' + esc(o.label) + '</label>';
+    }).join('');
+    main.innerHTML =
+      '<div class="card">' +
+        '<div class="step-title">Which sector would the member like to work in?</div>' +
+        '<div class="step-hint">This is an existing survey question, reused as-is — not a new one.</div>' +
+        '<div class="choice-grid">' + optsHtml + '</div>' +
+        '<div class="btn-row"><button class="ghost" id="back1">&larr; back</button><button class="primary" id="next2" disabled>Next</button></div>' +
+      '</div>';
+    main.querySelectorAll('.choice-option').forEach(function (el) {
+      el.addEventListener('click', function () {
+        main.querySelectorAll('.choice-option').forEach(function (o) { o.classList.remove('selected'); });
+        el.classList.add('selected');
+        el.querySelector('input').checked = true;
+        state.idealSector = el.dataset.code;
+        document.getElementById('next2').disabled = false;
+      });
+    });
+    document.getElementById('back1').addEventListener('click', function () { state.step = 1; renderNav(); renderStep1(); });
+    document.getElementById('next2').addEventListener('click', function () { state.step = 3; renderNav(); renderStep3(); });
+  }
+
+  // ---------- Step 3: Q1-Q5 course-matching questions ----------
+  function renderStep3() {
+    var q1OptionsData = JSON.parse(config.q1_options_by_skill_area);
+    var bridgedAreas = config.sector_bridge[state.idealSector] || [];
+    var q1Options = [];
+    bridgedAreas.forEach(function (area) { (q1OptionsData[area] || []).forEach(function (n) { if (q1Options.indexOf(n) === -1) q1Options.push(n); }); });
+    q1Options.push('Not sure / open to more than one');
+
+    var q1Html = bridgedAreas.length ?
+      '<div class="q-block"><div class="q-label">Q1 &mdash; Within ' + esc(bridgedAreas.join(', ')) + ', which is closest to what you want to train in?</div><div class="choice-grid">' +
+      q1Options.map(function (o) { return '<label class="choice-option" data-q="q1" data-code="' + esc(o) + '"><input type="radio" name="q1"> ' + esc(o) + '</label>'; }).join('') +
+      '</div></div>' :
+      '<div class="warn-box">No catalogue skill area maps to your chosen sector — this is a genuine catalogue gap. Q1 is skipped; you may still see a NO_DEFENSIBLE_RECOMMENDATION result.</div>';
+
+    function choiceBlock(qkey, label, options) {
+      return '<div class="q-block"><div class="q-label">' + esc(label) + '</div><div class="choice-grid">' +
+        options.map(function (o) { return '<label class="choice-option" data-q="' + qkey + '" data-code="' + esc(o) + '"><input type="radio" name="' + qkey + '"> ' + esc(o) + '</label>'; }).join('') +
+        '</div></div>';
+    }
+
+    main.innerHTML =
+      '<div class="card">' +
+        '<div class="step-title">Programme-matching questions</div>' +
+        '<div class="step-hint">These 4-5 questions (§1) are what actually narrow down to a specific, existing course — ask the member directly.</div>' +
+        q1Html +
+        choiceBlock('q2', 'Q2 — What\'s the main reason they want this training?', config.q2_options) +
+        choiceBlock('q3', 'Q3 — Which training schedule works best for them?', config.q3_options) +
+        choiceBlock('q4', 'Q4 — Which language would they prefer to study in?', config.q4_options) +
+        choiceBlock('q5', 'Q5 — Is a formal NVQ/qualification important to them?', config.q5_options) +
+        '<div class="btn-row"><button class="ghost" id="back2">&larr; back</button><button class="primary" id="next3" disabled>Review &amp; get briefing</button></div>' +
+      '</div>';
+
+    main.querySelectorAll('.choice-option[data-q]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        var q = el.dataset.q;
+        main.querySelectorAll('.choice-option[data-q="' + q + '"]').forEach(function (o) { o.classList.remove('selected'); });
+        el.classList.add('selected');
+        el.querySelector('input').checked = true;
+        state[q] = el.dataset.code;
+        checkStep3Complete();
+      });
+    });
+    document.getElementById('back2').addEventListener('click', function () { state.step = 2; renderNav(); renderStep2(); });
+    document.getElementById('next3').addEventListener('click', function () { state.step = 4; renderNav(); renderStep4(); });
+    checkStep3Complete();
+  }
+
+  function checkStep3Complete() {
+    var required = ['q2', 'q3', 'q4', 'q5'];
+    var complete = required.every(function (k) { return !!state[k]; });
+    var btn = document.getElementById('next3');
+    if (btn) btn.disabled = !complete;
+  }
+
+  // ---------- Step 4: review + submit + result ----------
+  function renderStep4() {
+    var idealSectorLabel = (config.ideal_sector_options.find(function (o) { return o.code === state.idealSector; }) || {}).label;
+    main.innerHTML =
+      '<div class="card">' +
+        '<div class="step-title">Ready to generate the briefing</div>' +
+        '<div class="warn-box">This step makes a real call to gpt-5-mini (a small live API cost). Review the output before discussing it with the member — it is decision support, not a final answer.</div>' +
+        '<div class="summary-grid">' +
+          '<div class="summary-item"><div class="k">Situation</div><div class="v">Branch ' + esc(state.branch) + '</div></div>' +
+          '<div class="summary-item"><div class="k">Sector</div><div class="v">' + esc(idealSectorLabel) + '</div></div>' +
+          '<div class="summary-item"><div class="k">Focus (Q1)</div><div class="v">' + esc(state.q1 || 'Not sure') + '</div></div>' +
+          '<div class="summary-item"><div class="k">Reason (Q2)</div><div class="v">' + esc(state.q2) + '</div></div>' +
+          '<div class="summary-item"><div class="k">Schedule (Q3)</div><div class="v">' + esc(state.q3) + '</div></div>' +
+          '<div class="summary-item"><div class="k">Language (Q4)</div><div class="v">' + esc(state.q4) + '</div></div>' +
+          '<div class="summary-item"><div class="k">Qualification (Q5)</div><div class="v">' + esc(state.q5) + '</div></div>' +
+        '</div>' +
+        '<div class="btn-row"><button class="ghost" id="back3">&larr; back</button><button class="primary" id="submitBtn">Get briefing</button></div>' +
+      '</div>' +
+      '<div id="resultArea"></div>';
+    document.getElementById('back3').addEventListener('click', function () { state.step = 3; renderNav(); renderStep3(); });
+    document.getElementById('submitBtn').addEventListener('click', submitRecommendation);
+  }
+
+  function submitRecommendation() {
+    var resultArea = document.getElementById('resultArea');
+    document.getElementById('submitBtn').disabled = true;
+    resultArea.innerHTML = '<div class="loading">generating briefing…</div>';
+    fetch('/api/new_person_recommend', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        branch: state.branch, cluster_answers: state.clusterAnswers, ideal_sector: state.idealSector,
+        q1: state.q1, q2: state.q2, q3: state.q3, q4: state.q4, q5: state.q5,
+      }),
+    }).then(function (r) { return r.json(); }).then(renderResult).catch(function (err) {
+      resultArea.innerHTML = '<div class="warn-box">Request failed: ' + esc(err.message) + '</div>';
+    });
+  }
+
+  function renderResult(data) {
+    var resultArea = document.getElementById('resultArea');
+    if (data.error) {
+      resultArea.innerHTML = '<div class="warn-box">API call failed: ' + esc(data.error) + '</div>';
+      return;
+    }
+    var dupWarning = (data.duplicate_course_ids_detected && data.duplicate_course_ids_detected.length)
+      ? '<div class="warn-box">Model output issue: course(s) ' + esc(data.duplicate_course_ids_detected.join(', ')) +
+        ' were recommended more than once. Shown as returned, not silently corrected — flagging for review.</div>'
+      : '';
+    var evidenceWarning = (data.evidence_safeguard_violations && data.evidence_safeguard_violations.length)
+      ? '<div class="warn-box">Evidence safeguard: ' + data.evidence_safeguard_violations.length +
+        ' cluster citation(s) were removed before display because they weren\'t in the pre-selected, validated evidence list for their profile. Logged for review, not shown to the officer.</div>'
+      : '';
+    var profilesHtml = data.profiles.map(function (p) {
+      return '<div class="profile-pill"><b>' + esc(p.profile_label) + '</b>' +
+        '<span class="mono">' + esc(p.profile_key) + '</span> &middot; similarity ' + p.membership_similarity_percent + '%' +
+        (p.distance_tie ? ' (tie)' : '') + ' &middot; ' + esc(p.model_judgment) + '</div>';
+    }).join('');
+
+    var body;
+    if (data.recommendation_status === 'NO_DEFENSIBLE_RECOMMENDATION') {
+      body = '<div class="nodef-box"><b>NO_DEFENSIBLE_RECOMMENDATION.</b><br>' + esc(data.no_defensible_recommendation_reason) + '</div>';
+    } else {
+      body = (data.catalogue_coverage_note ? '<p style="color:var(--ink-soft);font-style:italic">' + esc(data.catalogue_coverage_note) + '</p>' : '') +
+        data.recommendations.map(function (r) {
+          var matchCls = r.match_type === 'DIRECT_MATCH' ? 'direct' : 'adjacent';
+          return '<div class="rec">' +
+            '<div class="rec-head"><span class="name">' + r.rank + '. ' + esc(r.course_name) + '</span><span class="cid">' + esc(r.course_id) + '</span>' +
+            '<span class="badge ' + matchCls + '">' + esc(r.match_type) + '</span><span class="badge strength">' + esc(r.evidence_strength) + '</span>' +
+            '<span class="badge contrib ' + esc(r.profile_context_contribution.role) + '">' + esc(r.profile_context_contribution.role) + '</span></div>' +
+            (r.bridge_explanation ? '<div class="bridge"><b>Bridge:</b> ' + esc(r.bridge_explanation) + '</div>' : '') +
+            '<div class="why">' + esc(r.why_matches_explicit_answers) + '</div>' +
+            (r.profile_context_contribution.insight ? '<div class="insight"><b>Cluster insight:</b> ' + esc(r.profile_context_contribution.insight) + '</div>' : '') +
+            renderFindingCards(r.profile_context_contribution.contributing_findings) +
+            '</div>';
+        }).join('');
+    }
+
+    var aboutHtml = '';
+    if (data.about_people_like_you) {
+      aboutHtml =
+        '<div class="card about-card">' +
+          '<div class="step-title" style="margin-bottom:10px">Why the member was grouped this way</div>' +
+          '<div class="about-narrative why-assigned">' + esc(data.about_people_like_you.why_assigned) + '</div>' +
+          '<div class="step-title" style="margin:16px 0 10px">About members with a similar background</div>' +
+          '<div class="about-narrative">' + esc(data.about_people_like_you.narrative) + '</div>' +
+          renderFindingCards(data.about_people_like_you.supporting_findings) +
+        '</div>';
+    }
+
+    var promptsHtml = '';
+    if (data.officer_discussion_prompts && data.officer_discussion_prompts.length) {
+      promptsHtml =
+        '<div class="card discuss-card">' +
+          '<div class="step-title" style="margin-bottom:6px">Worth raising in conversation</div>' +
+          '<div class="step-hint" style="margin-bottom:12px">Exploratory, officer-only — not a recommendation. Use your judgment on whether/how to bring these up with the member.</div>' +
+          data.officer_discussion_prompts.map(function (p) {
+            return '<div class="discuss-prompt"><div class="about-narrative">' + esc(p.prompt) + '</div>' +
+              '<div class="profile-line" style="margin-top:4px">grounded in: ' + esc(p.grounded_in) + '</div></div>';
+          }).join('') +
+        '</div>';
+    }
+
+    resultArea.innerHTML = dupWarning + evidenceWarning +
+      '<div class="card"><div class="step-title" style="margin-bottom:14px">Member profile</div><div class="profile-pill-row">' + profilesHtml + '</div>' +
+      '<div style="color:var(--ink-faint);font-size:12px" class="mono">candidate pool: ' + esc(data.selection.note) + '</div></div>' +
+      aboutHtml +
+      '<div class="card"><div class="step-title" style="margin-bottom:14px">Suggested programmes (for officer review)</div>' + body + '</div>' +
+      promptsHtml;
+  }
+
+  renderNav();
+  renderStep0();
+})();
+</script>
+</body>
+</html>

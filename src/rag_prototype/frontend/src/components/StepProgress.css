@@ -1,0 +1,68 @@
+.steps-nav {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  width: min(100% - 48px, 920px);
+  margin: 0 auto;
+  padding: 18px 0 0;
+}
+
+.step-item {
+  min-width: 0;
+}
+
+.step-dot {
+  display: block;
+  height: 6px;
+  margin-bottom: 6px;
+  border-radius: 999px;
+  background: var(--line);
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.step-dot.done {
+  background: var(--yc-green);
+}
+
+.step-dot.active {
+  background: var(--yc-orange);
+  box-shadow: 0 0 0 3px rgba(210, 141, 70, 0.12);
+}
+
+.step-label {
+  display: block;
+  overflow: hidden;
+  color: var(--ink-faint);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.035em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.step-item.active .step-label {
+  color: var(--yc-orange-deep);
+  font-weight: 700;
+}
+
+.step-item.done .step-label {
+  color: var(--yc-green-deep);
+}
+
+@media (max-width: 620px) {
+  .steps-nav {
+    width: calc(100% - 28px);
+    gap: 5px;
+    padding-top: 14px;
+  }
+
+  .step-label {
+    font-size: 0;
+  }
+
+  .step-label::after {
+    content: attr(data-short-label);
+    font-size: 8px;
+  }
+}

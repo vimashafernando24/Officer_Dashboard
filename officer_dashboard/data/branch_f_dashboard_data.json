@@ -1,0 +1,934 @@
+{
+  "dashboard": {
+    "title": "NYSC Officer Dashboard",
+    "subtitle": "Officer decision-support · profile intelligence",
+    "scope": "Branch F — employed youth",
+    "model_id": "F_employment_security",
+    "model_cohort_n": 81
+  },
+  "governance": {
+    "specification_file": "outputs/officer_dashboard_specification/dashboard_metric_specification.csv",
+    "profile_summary_file": "outputs/officer_dashboard_specification/profile_dashboard_summary.csv",
+    "group_warning": "These are group patterns. Profile membership does not mean every member has each characteristic.",
+    "supply_warning": "Catalogue counts describe documented programme supply only. They are not course recommendations, capacity estimates, live intake information, or individual eligibility decisions.",
+    "comparison_warning": "Compare F-S1 and F-S2 only. Do not compare these sample shares with other branches as population prevalence."
+  },
+  "profiles": {
+    "F-S1": {
+      "profile_id": "F-S1",
+      "frozen_profile_id": 1,
+      "label": "Temporary/no-contract employment with uncertain security",
+      "dimension": "Employment security and formality",
+      "size": 29,
+      "cohort_n": 81,
+      "cohort_share": 35.8,
+      "ambiguous_n": 4,
+      "ambiguous_percent": 13.8
+    },
+    "F-S2": {
+      "profile_id": "F-S2",
+      "frozen_profile_id": 2,
+      "label": "Predominantly permanent employment with stronger security",
+      "dimension": "Employment security and formality",
+      "size": 52,
+      "cohort_n": 81,
+      "cohort_share": 64.2,
+      "ambiguous_n": 1,
+      "ambiguous_percent": 1.9
+    }
+  },
+  "defining_metrics": [
+    {
+      "metric_id": "F_EMPLOYMENT_SECURITY_DEF_01",
+      "display_name": "Contract type",
+      "section": "Cluster-defining characteristics",
+      "source": "outputs/branch_f_employment_security_clusters/employment_security_consensus_assignments.csv: contract_type__response",
+      "denominator_rule": "Selected profile members with non-missing `contract_type__response`; show missing n separately and never convert missing/structural N/A into a category such as No.",
+      "evidence_type": "cluster-defining",
+      "visualization": "stacked bar",
+      "caution": "Definition, not independent validation. Do not describe it as an additional need or outcome.",
+      "display_priority": "headline chart",
+      "variable": "contract_type__response",
+      "profiles": {
+        "F-S1": {
+          "valid_n": 29,
+          "missing_n": 0,
+          "categories": [
+            {
+              "category": "Written contract — temporary (under 12 months)",
+              "count": 12,
+              "percent": 41.4
+            },
+            {
+              "category": "Written contract — temporary (12–36 months)",
+              "count": 8,
+              "percent": 27.6
+            },
+            {
+              "category": "No contract at all",
+              "count": 5,
+              "percent": 17.2
+            },
+            {
+              "category": "Oral contract — temporary (12–36 months)",
+              "count": 2,
+              "percent": 6.9
+            },
+            {
+              "category": "Do not know",
+              "count": 1,
+              "percent": 3.4
+            },
+            {
+              "category": "Oral contract — temporary (under 12 months)",
+              "count": 1,
+              "percent": 3.4
+            }
+          ]
+        },
+        "F-S2": {
+          "valid_n": 52,
+          "missing_n": 0,
+          "categories": [
+            {
+              "category": "Written contract — permanent/unlimited",
+              "count": 40,
+              "percent": 76.9
+            },
+            {
+              "category": "Written contract — temporary (12–36 months)",
+              "count": 3,
+              "percent": 5.8
+            },
+            {
+              "category": "No contract at all",
+              "count": 3,
+              "percent": 5.8
+            },
+            {
+              "category": "Oral contract — permanent/unlimited",
+              "count": 2,
+              "percent": 3.8
+            },
+            {
+              "category": "Do not know",
+              "count": 2,
+              "percent": 3.8
+            },
+            {
+              "category": "Oral contract — temporary (under 12 months)",
+              "count": 1,
+              "percent": 1.9
+            },
+            {
+              "category": "Oral contract — temporary (12–36 months)",
+              "count": 1,
+              "percent": 1.9
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metric_id": "F_EMPLOYMENT_SECURITY_DEF_02",
+      "display_name": "Expected job security over next 12 months",
+      "section": "Cluster-defining characteristics",
+      "source": "outputs/branch_f_employment_security_clusters/employment_security_consensus_assignments.csv: job_security_12months__response",
+      "denominator_rule": "Selected profile members with non-missing `job_security_12months__response`; show missing n separately and never convert missing/structural N/A into a category such as No.",
+      "evidence_type": "cluster-defining",
+      "visualization": "stacked bar",
+      "caution": "Definition, not independent validation. Do not describe it as an additional need or outcome.",
+      "display_priority": "headline chart",
+      "variable": "job_security_12months__response",
+      "profiles": {
+        "F-S1": {
+          "valid_n": 29,
+          "missing_n": 0,
+          "categories": [
+            {
+              "category": "Likely but not certain — I have some concern",
+              "count": 15,
+              "percent": 51.7
+            },
+            {
+              "category": "I do not know",
+              "count": 8,
+              "percent": 27.6
+            },
+            {
+              "category": "Not likely — I doubt I will still have this job",
+              "count": 5,
+              "percent": 17.2
+            },
+            {
+              "category": "Very likely — my job is secure",
+              "count": 1,
+              "percent": 3.4
+            }
+          ]
+        },
+        "F-S2": {
+          "valid_n": 52,
+          "missing_n": 0,
+          "categories": [
+            {
+              "category": "Very likely — my job is secure",
+              "count": 36,
+              "percent": 69.2
+            },
+            {
+              "category": "Likely but not certain — I have some concern",
+              "count": 13,
+              "percent": 25.0
+            },
+            {
+              "category": "I do not know",
+              "count": 2,
+              "percent": 3.8
+            },
+            {
+              "category": "Not likely — I doubt I will still have this job",
+              "count": 1,
+              "percent": 1.9
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metric_id": "F_EMPLOYMENT_SECURITY_DEF_03",
+      "display_name": "Employment-sector formality",
+      "section": "Cluster-defining characteristics",
+      "source": "outputs/branch_f_employment_security_clusters/employment_security_consensus_assignments.csv: sector_formality__response",
+      "denominator_rule": "Selected profile members with non-missing `sector_formality__response`; show missing n separately and never convert missing/structural N/A into a category such as No.",
+      "evidence_type": "cluster-defining",
+      "visualization": "stacked bar",
+      "caution": "Definition, not independent validation. Do not describe it as an additional need or outcome.",
+      "display_priority": "headline chart",
+      "variable": "sector_formality__response",
+      "profiles": {
+        "F-S1": {
+          "valid_n": 29,
+          "missing_n": 0,
+          "categories": [
+            {
+              "category": "Fully formal — registered employer, written contract, statutory benefits",
+              "count": 16,
+              "percent": 55.2
+            },
+            {
+              "category": "Mixed — some formal, some informal aspects",
+              "count": 7,
+              "percent": 24.1
+            },
+            {
+              "category": "Mostly formal — some documentation but not fully compliant",
+              "count": 6,
+              "percent": 20.7
+            }
+          ]
+        },
+        "F-S2": {
+          "valid_n": 52,
+          "missing_n": 0,
+          "categories": [
+            {
+              "category": "Fully formal — registered employer, written contract, statutory benefits",
+              "count": 35,
+              "percent": 67.3
+            },
+            {
+              "category": "Mostly formal — some documentation but not fully compliant",
+              "count": 8,
+              "percent": 15.4
+            },
+            {
+              "category": "Mixed — some formal, some informal aspects",
+              "count": 7,
+              "percent": 13.5
+            },
+            {
+              "category": "Fully informal — no documentation, cash only",
+              "count": 2,
+              "percent": 3.8
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "profiling_metrics": [
+    {
+      "metric_id": "F_EMPLOYMENT_SECURITY_PROF_01",
+      "display_name": "Monthly work-income band",
+      "section": "Strong post-cluster profiling findings",
+      "source": "outputs/final_cluster_profile_comparison_summary.csv: model_id=F_employment_security, variable=monthly_income_band; final_cluster_profiling_report.md",
+      "denominator_rule": "Observed/valid respondents in the selected profile; model eligible n=81 (100.0% coverage). Show each profile valid n.",
+      "evidence_type": "profiling finding",
+      "visualization": "bar",
+      "caution": "Association only; no causal or individual-level interpretation.",
+      "display_priority": "strong chart",
+      "variable": "monthly_income_band",
+      "variable_type": "ordered",
+      "effect_size_name": "absolute rank-biserial correlation",
+      "effect_size": 0.607,
+      "raw_p_value": 5e-06,
+      "adjusted_p_value": 0.000257,
+      "conditional": false,
+      "gateway": null,
+      "sparse": false,
+      "sparse_expected_share": "",
+      "profiles": {
+        "F-S1": {
+          "valid_n": 29,
+          "median": 3.0,
+          "q1": 2.0,
+          "q3": 3.0,
+          "missing_n": 0
+        },
+        "F-S2": {
+          "valid_n": 52,
+          "median": 5.0,
+          "q1": 3.75,
+          "q3": 6.0,
+          "missing_n": 0
+        }
+      }
+    },
+    {
+      "metric_id": "F_EMPLOYMENT_SECURITY_PROF_02",
+      "display_name": "Primary personal income source",
+      "section": "Strong post-cluster profiling findings",
+      "source": "outputs/final_cluster_profile_comparison_summary.csv: model_id=F_employment_security, variable=primary_income_source; final_cluster_profiling_report.md",
+      "denominator_rule": "Observed/valid respondents in the selected profile; model eligible n=81 (100.0% coverage). Show each profile valid n.",
+      "evidence_type": "profiling finding",
+      "visualization": "stacked bar",
+      "caution": "sparse categorical cells; do not interpret rare categories individually",
+      "display_priority": "strong chart",
+      "variable": "primary_income_source",
+      "variable_type": "categorical",
+      "effect_size_name": "bias-corrected Cramér's V",
+      "effect_size": 0.499,
+      "raw_p_value": 8.2e-05,
+      "adjusted_p_value": 0.002351,
+      "conditional": false,
+      "gateway": null,
+      "sparse": true,
+      "sparse_expected_share": 0.6,
+      "profiles": {
+        "F-S1": {
+          "valid_n": 29,
+          "categories": [
+            {
+              "category": "My parents or family",
+              "count": 14,
+              "percent": 48.3
+            },
+            {
+              "category": "My regular job or business",
+              "count": 11,
+              "percent": 37.9
+            },
+            {
+              "category": "An education grant, scholarship, or training allowance",
+              "count": 2,
+              "percent": 6.9
+            },
+            {
+              "category": "Casual or informal work",
+              "count": 1,
+              "percent": 3.4
+            },
+            {
+              "category": "Other source",
+              "count": 1,
+              "percent": 3.4
+            }
+          ],
+          "missing_or_not_applicable_n": 0
+        },
+        "F-S2": {
+          "valid_n": 52,
+          "categories": [
+            {
+              "category": "My regular job or business",
+              "count": 45,
+              "percent": 86.5
+            },
+            {
+              "category": "My parents or family",
+              "count": 4,
+              "percent": 7.7
+            },
+            {
+              "category": "Casual or informal work",
+              "count": 2,
+              "percent": 3.8
+            },
+            {
+              "category": "Other source",
+              "count": 1,
+              "percent": 1.9
+            }
+          ],
+          "missing_or_not_applicable_n": 0
+        }
+      }
+    },
+    {
+      "metric_id": "F_EMPLOYMENT_SECURITY_PROF_03",
+      "display_name": "Hopes to change job",
+      "section": "Strong post-cluster profiling findings",
+      "source": "outputs/final_cluster_profile_comparison_summary.csv: model_id=F_employment_security, variable=hopes_to_change_job; final_cluster_profiling_report.md",
+      "denominator_rule": "Observed/valid respondents in the selected profile; model eligible n=81 (100.0% coverage). Show each profile valid n.",
+      "evidence_type": "profiling finding",
+      "visualization": "stacked bar",
+      "caution": "Did not remain below BH-adjusted 0.05; supporting/descriptive only, not a headline KPI",
+      "display_priority": "secondary/cautious chart",
+      "variable": "hopes_to_change_job",
+      "variable_type": "categorical",
+      "effect_size_name": "bias-corrected Cramér's V",
+      "effect_size": 0.288,
+      "raw_p_value": 0.013283,
+      "adjusted_p_value": 0.189286,
+      "conditional": false,
+      "gateway": null,
+      "sparse": false,
+      "sparse_expected_share": 0,
+      "profiles": {
+        "F-S1": {
+          "valid_n": 29,
+          "categories": [
+            {
+              "category": "Yes — I want to change",
+              "count": 18,
+              "percent": 62.1
+            },
+            {
+              "category": "Not sure",
+              "count": 10,
+              "percent": 34.5
+            },
+            {
+              "category": "No — I want to stay in this job",
+              "count": 1,
+              "percent": 3.4
+            }
+          ],
+          "missing_or_not_applicable_n": 0
+        },
+        "F-S2": {
+          "valid_n": 52,
+          "categories": [
+            {
+              "category": "Yes — I want to change",
+              "count": 28,
+              "percent": 53.8
+            },
+            {
+              "category": "No — I want to stay in this job",
+              "count": 15,
+              "percent": 28.8
+            },
+            {
+              "category": "Not sure",
+              "count": 9,
+              "percent": 17.3
+            }
+          ],
+          "missing_or_not_applicable_n": 0
+        }
+      }
+    },
+    {
+      "metric_id": "F_EMPLOYMENT_SECURITY_PROF_04",
+      "display_name": "Overall job satisfaction",
+      "section": "Strong post-cluster profiling findings",
+      "source": "outputs/final_cluster_profile_comparison_summary.csv: model_id=F_employment_security, variable=job_satisfaction; final_cluster_profiling_report.md",
+      "denominator_rule": "Observed/valid respondents in the selected profile; model eligible n=81 (100.0% coverage). Show each profile valid n.",
+      "evidence_type": "profiling finding",
+      "visualization": "bar",
+      "caution": "Did not remain below BH-adjusted 0.05; supporting/descriptive only, not a headline KPI",
+      "display_priority": "secondary/cautious chart",
+      "variable": "job_satisfaction",
+      "variable_type": "ordered",
+      "effect_size_name": "absolute rank-biserial correlation",
+      "effect_size": 0.258,
+      "raw_p_value": 0.031996,
+      "adjusted_p_value": 0.25816,
+      "conditional": false,
+      "gateway": null,
+      "sparse": false,
+      "sparse_expected_share": "",
+      "profiles": {
+        "F-S1": {
+          "valid_n": 29,
+          "median": 2.0,
+          "q1": 2.0,
+          "q3": 2.0,
+          "missing_n": 0
+        },
+        "F-S2": {
+          "valid_n": 52,
+          "median": 2.0,
+          "q1": 1.0,
+          "q3": 2.0,
+          "missing_n": 0
+        }
+      }
+    },
+    {
+      "metric_id": "F_EMPLOYMENT_SECURITY_PROF_05",
+      "display_name": "Received training for current job",
+      "section": "Strong post-cluster profiling findings",
+      "source": "outputs/final_cluster_profile_comparison_summary.csv: model_id=F_employment_security, variable=received_training; final_cluster_profiling_report.md",
+      "denominator_rule": "Observed/valid respondents in the selected profile; model eligible n=81 (100.0% coverage). Show each profile valid n.",
+      "evidence_type": "profiling finding",
+      "visualization": "stacked bar",
+      "caution": "Did not remain below BH-adjusted 0.05; supporting/descriptive only, not a headline KPI",
+      "display_priority": "secondary/cautious chart",
+      "variable": "received_training",
+      "variable_type": "categorical",
+      "effect_size_name": "bias-corrected Cramér's V",
+      "effect_size": 0.181,
+      "raw_p_value": 0.056851,
+      "adjusted_p_value": 0.336434,
+      "conditional": false,
+      "gateway": null,
+      "sparse": false,
+      "sparse_expected_share": 0,
+      "profiles": {
+        "F-S1": {
+          "valid_n": 29,
+          "categories": [
+            {
+              "category": "Yes",
+              "count": 20,
+              "percent": 69.0
+            },
+            {
+              "category": "No",
+              "count": 9,
+              "percent": 31.0
+            }
+          ],
+          "missing_or_not_applicable_n": 0
+        },
+        "F-S2": {
+          "valid_n": 52,
+          "categories": [
+            {
+              "category": "Yes",
+              "count": 45,
+              "percent": 86.5
+            },
+            {
+              "category": "No",
+              "count": 7,
+              "percent": 13.5
+            }
+          ],
+          "missing_or_not_applicable_n": 0
+        }
+      }
+    },
+    {
+      "metric_id": "F_EMPLOYMENT_SECURITY_PROF_06",
+      "display_name": "Type of work while studying",
+      "section": "Strong post-cluster profiling findings",
+      "source": "outputs/final_cluster_profile_comparison_summary.csv: model_id=F_employment_security, variable=work_while_study_type; final_cluster_profiling_report.md",
+      "denominator_rule": "Eligible respondents only: gateway `worked_while_studying = Yes`; total eligible n=63. Use each stored profile eligible n; structural N/A is excluded, not coded No.",
+      "evidence_type": "profiling finding",
+      "visualization": "table",
+      "caution": "sparse categorical cells; do not interpret rare categories individually; conditional subgroup; not applicable to the whole profile; approved secondary finding only; severe sparsity and non-causal",
+      "display_priority": "secondary/cautious chart",
+      "variable": "work_while_study_type",
+      "variable_type": "categorical",
+      "effect_size_name": "bias-corrected Cramér's V",
+      "effect_size": 0.48,
+      "raw_p_value": 0.00238,
+      "adjusted_p_value": 0.049184,
+      "conditional": true,
+      "gateway": "worked_while_studying = Yes",
+      "sparse": true,
+      "sparse_expected_share": 0.7143,
+      "profiles": {
+        "F-S1": {
+          "valid_n": 22,
+          "categories": [
+            {
+              "category": "Informal or casual work",
+              "count": 0,
+              "percent": 0.0
+            },
+            {
+              "category": "Internship or apprenticeship in a private company",
+              "count": 17,
+              "percent": 77.3
+            },
+            {
+              "category": "Internship or apprenticeship in the public sector",
+              "count": 1,
+              "percent": 4.5
+            },
+            {
+              "category": "Paid work in a company (not internship)",
+              "count": 3,
+              "percent": 13.6
+            },
+            {
+              "category": "Paid work in the public sector (not internship)",
+              "count": 0,
+              "percent": 0.0
+            },
+            {
+              "category": "Volunteer or community work (unpaid)",
+              "count": 0,
+              "percent": 0.0
+            },
+            {
+              "category": "Work in a family business or farm",
+              "count": 1,
+              "percent": 4.5
+            }
+          ],
+          "missing_or_not_applicable_n": 7
+        },
+        "F-S2": {
+          "valid_n": 41,
+          "categories": [
+            {
+              "category": "Informal or casual work",
+              "count": 1,
+              "percent": 2.4
+            },
+            {
+              "category": "Internship or apprenticeship in a private company",
+              "count": 12,
+              "percent": 29.3
+            },
+            {
+              "category": "Internship or apprenticeship in the public sector",
+              "count": 0,
+              "percent": 0.0
+            },
+            {
+              "category": "Paid work in a company (not internship)",
+              "count": 23,
+              "percent": 56.1
+            },
+            {
+              "category": "Paid work in the public sector (not internship)",
+              "count": 4,
+              "percent": 9.8
+            },
+            {
+              "category": "Volunteer or community work (unpaid)",
+              "count": 1,
+              "percent": 2.4
+            },
+            {
+              "category": "Work in a family business or farm",
+              "count": 0,
+              "percent": 0.0
+            }
+          ],
+          "missing_or_not_applicable_n": 11
+        }
+      }
+    }
+  ],
+  "direct_metrics": [
+    {
+      "metric_id": "F_EMPLOYMENT_SECURITY_DIRECT_PRE_01",
+      "display_name": "Preferred sector or industry",
+      "section": "Preferred sectors",
+      "source": "outputs/nysc_survey_cleaned_labels.csv: ideal_sector; outputs/branch_f_employment_security_clusters/employment_security_consensus_assignments.csv: respondent_id, employment_security_profile_id",
+      "denominator_rule": "Valid `ideal_sector` respondents within the selected profile. Conditional N/A, if present, is excluded and shown separately; never code N/A as No.",
+      "evidence_type": "direct survey evidence",
+      "visualization": "stacked bar",
+      "caution": "Broad aspiration only; not a course recommendation.",
+      "display_priority": "context chart",
+      "variable": "ideal_sector",
+      "profiles": {
+        "F-S1": {
+          "valid_n": 29,
+          "missing_n": 0,
+          "categories": [
+            {
+              "category": "Information technology and communications",
+              "count": 18,
+              "percent": 62.1
+            },
+            {
+              "category": "Wholesale, retail, or repair",
+              "count": 3,
+              "percent": 10.3
+            },
+            {
+              "category": "Public administration, government, and defence",
+              "count": 2,
+              "percent": 6.9
+            },
+            {
+              "category": "Transport, storage, and logistics",
+              "count": 1,
+              "percent": 3.4
+            },
+            {
+              "category": "Education and teaching",
+              "count": 1,
+              "percent": 3.4
+            },
+            {
+              "category": "Not sure",
+              "count": 1,
+              "percent": 3.4
+            },
+            {
+              "category": "Creative, media, and arts",
+              "count": 1,
+              "percent": 3.4
+            },
+            {
+              "category": "Personal services (beauty, fitness, wellness)",
+              "count": 1,
+              "percent": 3.4
+            },
+            {
+              "category": "Manufacturing or production",
+              "count": 1,
+              "percent": 3.4
+            }
+          ]
+        },
+        "F-S2": {
+          "valid_n": 52,
+          "missing_n": 0,
+          "categories": [
+            {
+              "category": "Information technology and communications",
+              "count": 34,
+              "percent": 65.4
+            },
+            {
+              "category": "Agriculture, forestry, and fishing",
+              "count": 5,
+              "percent": 9.6
+            },
+            {
+              "category": "Manufacturing or production",
+              "count": 3,
+              "percent": 5.8
+            },
+            {
+              "category": "Not sure",
+              "count": 2,
+              "percent": 3.8
+            },
+            {
+              "category": "Finance, banking, and insurance",
+              "count": 2,
+              "percent": 3.8
+            },
+            {
+              "category": "Personal services (beauty, fitness, wellness)",
+              "count": 2,
+              "percent": 3.8
+            },
+            {
+              "category": "Wholesale, retail, or repair",
+              "count": 1,
+              "percent": 1.9
+            },
+            {
+              "category": "Hotels, restaurants, and hospitality",
+              "count": 1,
+              "percent": 1.9
+            },
+            {
+              "category": "Public administration, government, and defence",
+              "count": 1,
+              "percent": 1.9
+            },
+            {
+              "category": "Creative, media, and arts",
+              "count": 1,
+              "percent": 1.9
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metric_id": "F_EMPLOYMENT_SECURITY_DIRECT_TRA_01",
+      "display_name": "Plans for further education or training",
+      "section": "Training/further-learning demand",
+      "source": "outputs/nysc_survey_cleaned_labels.csv: plans_further_edu_f; outputs/branch_f_employment_security_clusters/employment_security_consensus_assignments.csv: respondent_id, employment_security_profile_id",
+      "denominator_rule": "Valid `plans_further_edu_f` respondents within the selected profile. Conditional N/A, if present, is excluded and shown separately; never code N/A as No.",
+      "evidence_type": "direct survey evidence",
+      "visualization": "stacked bar",
+      "caution": "Intention does not establish course eligibility or attendance feasibility.",
+      "display_priority": "context chart",
+      "variable": "plans_further_edu_f",
+      "profiles": {
+        "F-S1": {
+          "valid_n": 29,
+          "missing_n": 0,
+          "categories": [
+            {
+              "category": "Yes",
+              "count": 23,
+              "percent": 79.3
+            },
+            {
+              "category": "Not sure yet",
+              "count": 5,
+              "percent": 17.2
+            },
+            {
+              "category": "No",
+              "count": 1,
+              "percent": 3.4
+            }
+          ]
+        },
+        "F-S2": {
+          "valid_n": 52,
+          "missing_n": 0,
+          "categories": [
+            {
+              "category": "Yes",
+              "count": 48,
+              "percent": 92.3
+            },
+            {
+              "category": "Not sure yet",
+              "count": 3,
+              "percent": 5.8
+            },
+            {
+              "category": "No",
+              "count": 1,
+              "percent": 1.9
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "value_label_maps": {
+    "monthly_income_band": [
+      {
+        "value": 1,
+        "label": "Below LKR 20,000"
+      },
+      {
+        "value": 2,
+        "label": "LKR 20,000 – 40,000"
+      },
+      {
+        "value": 3,
+        "label": "LKR 40,000 – 70,000"
+      },
+      {
+        "value": 4,
+        "label": "LKR 70,000 – 120,000"
+      },
+      {
+        "value": 5,
+        "label": "LKR 120,000 – 200,000"
+      },
+      {
+        "value": 6,
+        "label": "Above LKR 200,000"
+      }
+    ],
+    "job_satisfaction": [
+      {
+        "value": 1,
+        "label": "Very satisfied"
+      },
+      {
+        "value": 2,
+        "label": "Somewhat satisfied"
+      },
+      {
+        "value": 3,
+        "label": "Somewhat unsatisfied"
+      },
+      {
+        "value": 4,
+        "label": "Very unsatisfied"
+      }
+    ]
+  },
+  "catalogue_supply": {
+    "metric_id": "SUPPLY_001",
+    "display_name": "Known courses by broad skill area",
+    "section": "NYSC programme supply by relevant area",
+    "source": "outputs/nysc_course_matching_dataset.csv: course_id, skill_area",
+    "denominator_rule": "All 87 unique V2 course records; this is a catalogue count, not a youth denominator.",
+    "evidence_type": "catalogue supply",
+    "visualization": "bar",
+    "caution": "Counts course records, not seats, current intakes, locations, quality, availability or employment outcomes.",
+    "display_priority": "context chart",
+    "total_courses": 87,
+    "areas": [
+      {
+        "area": "ICT & Computing",
+        "course_count": 18
+      },
+      {
+        "area": "Automotive & Mechanical Engineering",
+        "course_count": 15
+      },
+      {
+        "area": "Beauty, Fashion & Personal Care",
+        "course_count": 9
+      },
+      {
+        "area": "Construction & Surveying",
+        "course_count": 8
+      },
+      {
+        "area": "Electrical & Electronics",
+        "course_count": 8
+      },
+      {
+        "area": "Languages & Communication",
+        "course_count": 8
+      },
+      {
+        "area": "Hospitality & Culinary Arts",
+        "course_count": 6
+      },
+      {
+        "area": "Agriculture & Environment",
+        "course_count": 5
+      },
+      {
+        "area": "Business, Management & Administration",
+        "course_count": 5
+      },
+      {
+        "area": "Creative Arts, Design & Media",
+        "course_count": 5
+      }
+    ]
+  },
+  "validation": {
+    "passed": true,
+    "checks": [
+      "All required governed metric IDs were found and are applicable to F profiles.",
+      "Frozen assignment cohort contains 81 unique respondents.",
+      "Frozen profile sizes reproduce F-S1 n=29 and F-S2 n=52.",
+      "Cleaned readable-label and internal-value joins are one-to-one on respondent_id.",
+      "Course V2 contains 87 unique course records.",
+      "All defining distributions use frozen assignment values and full profile denominators.",
+      "All six approved profiling metrics reproduce stored valid n, counts/percentages or median/IQR values.",
+      "Preferred-sector and further-training distributions use respondents’ own cleaned readable-label answers.",
+      "Catalogue broad-area counts sum to all 87 unique V2 course records."
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="NYSC Branch F officer decision-support dashboard" />
+    <title>NYSC Officer Dashboard · Branch F</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="NYSC Officer Dashboard home">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span><strong>NYSC</strong><small>Officer intelligence</small></span>
+      </a>
+      <div class="status-pill"><span></span> Frozen research model</div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Officer decision-support · profile intelligence</p>
+          <h1>Employed youth<br /><span>security profiles</span></h1>
+          <p class="hero-copy">A governed view of the two retained Branch F profiles. Group evidence is separated from documented NYSC programme supply.</p>
+        </div>
+        <div class="selector-card" aria-labelledby="profile-selector-label">
+          <span id="profile-selector-label" class="selector-label">Select profile</span>
+          <div class="profile-tabs" id="profile-tabs" role="tablist" aria-label="Branch F profiles"></div>
+          <p id="profile-selector-note" class="selector-note"></p>
+        </div>
+      </section>
+
+      <div class="warning-banner" role="note">
+        <span class="warning-icon" aria-hidden="true">i</span>
+        <p id="group-warning"></p>
+      </div>
+
+      <section class="profile-intro" aria-labelledby="profile-title">
+        <div>
+          <p class="section-kicker">Selected profile</p>
+          <h2 id="profile-title"></h2>
+          <p id="profile-dimension" class="muted"></p>
+        </div>
+        <div class="kpi-grid" id="kpi-grid"></div>
+      </section>
+
+      <section class="dashboard-section" aria-labelledby="defining-title">
+        <div class="section-heading">
+          <div><p class="section-kicker">01 · Profile definition</p><h2 id="defining-title">Employment security characteristics</h2></div>
+          <p>These variables created the profile. They describe its definition—not an additional outcome.</p>
+        </div>
+        <div class="card-grid three" id="defining-grid"></div>
+      </section>
+
+      <section class="dashboard-section" aria-labelledby="findings-title">
+        <div class="section-heading">
+          <div><p class="section-kicker">02 · Approved evidence</p><h2 id="findings-title">What else distinguishes this profile?</h2></div>
+          <p>Only approved post-cluster findings are shown. Statistical tests support interpretation; they do not define importance alone.</p>
+        </div>
+        <div class="card-grid two" id="profiling-grid"></div>
+      </section>
+
+      <section class="dashboard-section" aria-labelledby="demand-title">
+        <div class="section-heading">
+          <div><p class="section-kicker">03 · Youth demand context</p><h2 id="demand-title">Aspirations and further learning</h2></div>
+          <p>These charts use respondents’ own answers. They are broad planning signals, not inferred individual preferences.</p>
+        </div>
+        <div class="card-grid two" id="direct-grid"></div>
+      </section>
+
+      <section class="dashboard-section supply-section" aria-labelledby="supply-title">
+        <div class="section-heading">
+          <div><p class="section-kicker supply">04 · Catalogue supply · separate from youth demand</p><h2 id="supply-title">Documented NYSC programme areas</h2></div>
+          <p id="supply-warning"></p>
+        </div>
+        <article class="metric-card wide"><div class="card-head"><div><span class="evidence-tag supply-tag">Catalogue supply</span><h3>Known courses by broad skill area</h3></div><span class="denominator-badge" id="supply-total"></span></div><div id="supply-chart" class="supply-chart"></div><div class="source-line" id="supply-source"></div></article>
+      </section>
+
+      <section class="dashboard-section cautions" aria-labelledby="cautions-title">
+        <div class="section-heading"><div><p class="section-kicker">05 · Read carefully</p><h2 id="cautions-title">Research cautions</h2></div></div>
+        <div class="caution-grid" id="caution-grid"></div>
+      </section>
+
+      <section class="validation-strip" aria-live="polite">
+        <span class="validation-check" aria-hidden="true">✓</span>
+        <div><strong>Source validation passed</strong><p id="validation-summary"></p></div>
+      </section>
+    </main>
+
+    <footer><span>NYSC Officer Dashboard · Branch F pilot</span><span>Profile intelligence, not individual recommendation</span></footer>
+    <script src="app.js" defer></script>
+  </body>
+</html>

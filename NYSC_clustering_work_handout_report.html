@@ -1,0 +1,1537 @@
+<!doctype html><html><head><meta charset="utf-8"><style>@page { size:A4; margin:1.8cm; } body { font-family:Arial,Helvetica,sans-serif; color:#1f2937; line-height:1.38; font-size:10.5pt; max-width:900px; margin:auto; } h1 { color:#163a5f; font-size:25pt; border-bottom:3px solid #2f7d8c; padding-bottom:8px; } h2 { color:#163a5f; font-size:17pt; border-bottom:1px solid #b8c7d1; padding-bottom:4px; margin-top:24px; } h3 { color:#275d6b; font-size:13pt; margin-top:18px; } table { border-collapse:collapse; width:100%; margin:10px 0 16px; font-size:8.8pt; } th { background:#dcebf0; color:#163a5f; text-align:left; font-weight:bold; } th,td { border:1px solid #9fb3bf; padding:5px; vertical-align:top; } tr:nth-child(even) td { background:#f7fafb; } blockquote { border-left:4px solid #2f7d8c; margin:12px 0; padding:8px 14px; background:#eef6f7; } code { font-family:Menlo,Consolas,monospace; font-size:8.5pt; color:#7c2d12; } li { margin-bottom:4px; } hr { border:0; border-top:1px solid #9fb3bf; margin:20px 0; }</style></head><body><h1>NYSC Youth Transition Survey</h1>
+<h2>Data preparation and clustering work completed to date</h2>
+<p><strong>Handout report</strong><br />
+<strong>Project:</strong> Youth Labour Market Programme Matching through Unsupervised Clustering of School-to-Work Transition Profiles<br />
+<strong>Researcher:</strong> Fernando W. S. V. — IT22166456 — R26-DS-014<br />
+<strong>Partner:</strong> National Youth Services Council (NYSC), Sri Lanka<br />
+<strong>Status date:</strong> 25 August 2026</p>
+<hr />
+<h2>1. Purpose of this handout</h2>
+<p>This document records the complete analysis journey so far: what data were received, how the survey export was cleaned, how the correct final branch was reconstructed, which clustering approaches were tried, which results were retained or rejected, what the current method is, and what work remains.</p>
+<p>The most important conclusion is that a visually attractive or internally stable clustering is not automatically a valid youth typology. A result is retained only when the variables form a defensible theoretical dimension, the solution is reasonably stable across samples and algorithms, no single question simply dictates membership, the profiles are large enough to interpret, and the profiles have a coherent programme-relevant meaning.</p>
+<p>This handout distinguishes three statuses:</p>
+<ul>
+<li><strong>Retained:</strong> suitable for cautious exploratory reporting.</li>
+<li><strong>Excluded/rejected:</strong> analysed, but the evidence was not strong enough to use it as a youth profile system.</li>
+<li><strong>Historical/provisional:</strong> an earlier method that helped the analysis develop but is no longer the adopted final approach.</li>
+</ul>
+<hr />
+<h2>2. Research purpose and theoretical plan</h2>
+<p>The supervisor preparation document proposed identifying youth transition profiles and later mapping them to NYSC's 95-course catalogue. It combines three complementary frameworks.</p>
+<table>
+<thead>
+<tr>
+  <th>Framework</th>
+  <th>Contribution to the survey and analysis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>ILO School-to-Work Transition Survey (SWTS)</td>
+  <td>Labour-market position, education-to-work pathway, employment conditions, job search, barriers and branch structure.</td>
+</tr>
+<tr>
+  <td>Bourdieu's forms of capital</td>
+  <td>Economic resources, cultural/educational capital, social-network resources and labour-market field position.</td>
+</tr>
+<tr>
+  <td>Self-Determination Theory (SDT)</td>
+  <td>Autonomy, competence, relatedness and the type of motivation guiding study, search or work.</td>
+</tr>
+</tbody>
+</table>
+<p>The survey first places respondents into a current transition branch and then asks branch-specific questions:</p>
+<table>
+<thead>
+<tr>
+  <th>Research branch</th>
+  <th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>D</td>
+  <td>In education</td>
+</tr>
+<tr>
+  <td>E</td>
+  <td>Unemployed and actively seeking/transitioning</td>
+</tr>
+<tr>
+  <td>F</td>
+  <td>Employed, including temporary absence with a job to return to</td>
+</tr>
+<tr>
+  <td>G</td>
+  <td>Inactive/not currently seeking work</td>
+</tr>
+</tbody>
+</table>
+<p>The original plan mentioned clustering many encoded variables and using PCA. The work showed that this can produce weak or uninterpretable groups. The adopted approach therefore became <strong>dimension-specific clustering on original questionnaire responses</strong>, followed only later—if justified—by richer integrated profiles.</p>
+<hr />
+<h2>3. Data received and reconstruction problem</h2>
+<h3>3.1 Raw export</h3>
+<p>The raw CSV contained <strong>481 submissions and 2,547 flattened columns</strong>. The large column count occurred because several generations of the application export were present:</p>
+<ul>
+<li>newer <code>answers.&lt;question&gt;.*</code> fields;</li>
+<li>intermediate <code>analysis.items[...]</code> fields;</li>
+<li>explicit <code>analysis.values.*</code> and <code>analysis.labels.*</code> dictionaries; and</li>
+<li>older top-level survey fields.</li>
+</ul>
+<p>The notebook reconstructed one canonical survey row per submission across these formats. Only answers identified as belonging to the active survey path were used; audit copies and off-path payloads were not treated as genuine answers.</p>
+<h3>3.2 Where readable and numbered values came from</h3>
+<p>The readable values were <strong>not manually invented</strong>. For newer records:</p>
+<ul>
+<li><code>answers.&lt;question&gt;.value</code> supplied the internal value/code; and</li>
+<li><code>answers.&lt;question&gt;.label</code> supplied the readable response wording.</li>
+</ul>
+<p>Equivalent value and label fields were recovered from the intermediate and legacy layouts. Two parallel datasets were preserved:</p>
+<ul>
+<li><code>nysc_survey_cleaned_values.csv</code> for reproducible transformations; and</li>
+<li><code>nysc_survey_cleaned_labels.csv</code> for readable interpretation.</li>
+</ul>
+<p>Ordinal numbers were used only when the questionnaire itself defined an order. Binary yes/no fields became 1/0. Nominal categories such as occupation, sector, obstacle and contract-reason categories were not given invented rankings. For the general ML-ready export, nominal variables were one-hot encoded. In the final dimension-specific clustering, nominal responses were compared directly using Gower same/different distance.</p>
+<p>Explicit compatibility mappings were needed for a few old textual values, such as age bands and residence type. These mappings harmonised equivalent historical labels; they did not create new substantive scores.</p>
+<hr />
+<h2>4. Cleaning and quality filtering</h2>
+<h3>4.1 Cleaning operations</h3>
+<p>The cleaning notebook performed the following operations:</p>
+<ol>
+<li>Standardised blank and missing tokens such as empty strings, <code>NA</code>, <code>null</code>, <code>undefined</code> and <code>missing</code>.</li>
+<li>Reconstructed canonical response variables across all export layouts.</li>
+<li>Used only active-path responses.</li>
+<li>Preserved both internal values and readable labels.</li>
+<li>Reconstructed entry branch and final active branch separately.</li>
+<li>Removed known test/debug/smoke records.</li>
+<li>Required a recognised D/E/F/G branch, an in-scope age of 15–35 and at least ten recovered answers.</li>
+<li>Treated repeated session IDs as resubmissions and retained the latest submission.</li>
+<li>Preserved legacy submissions with distinct database IDs.</li>
+<li>Kept possible outliers for review rather than deleting them automatically.</li>
+<li>Produced missingness, numeric-conversion, outlier, branch-correction and quality-audit files.</li>
+</ol>
+<h3>4.2 Record accounting</h3>
+<p>Quality-rule counts can overlap; therefore, they should not be added together as independent deletions.</p>
+<table>
+<thead>
+<tr>
+  <th>Stage or audit flag</th>
+  <th style="text-align:right">Records</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Raw submissions</td>
+  <td style="text-align:right">481</td>
+</tr>
+<tr>
+  <td>Known test submissions</td>
+  <td style="text-align:right">11</td>
+</tr>
+<tr>
+  <td>Outside the target age range</td>
+  <td style="text-align:right">30</td>
+</tr>
+<tr>
+  <td>Unrecognised or missing branch</td>
+  <td style="text-align:right">10</td>
+</tr>
+<tr>
+  <td>Too few recovered answers</td>
+  <td style="text-align:right">14</td>
+</tr>
+<tr>
+  <td>Eligible before deduplication</td>
+  <td style="text-align:right">443</td>
+</tr>
+<tr>
+  <td>Duplicate/resubmission records removed</td>
+  <td style="text-align:right">51</td>
+</tr>
+<tr>
+  <td>Final cleaned master dataset</td>
+  <td style="text-align:right">392</td>
+</tr>
+</tbody>
+</table>
+<p>No record was flagged as explicitly incomplete by the export status. The final cleaned master file contains 392 rows and 171 canonical/admin columns.</p>
+<h3>4.3 Three analytical populations that must not be confused</h3>
+<table>
+<thead>
+<tr>
+  <th>Population</th>
+  <th style="text-align:right">D</th>
+  <th style="text-align:right">E</th>
+  <th style="text-align:right">F</th>
+  <th style="text-align:right">G</th>
+  <th style="text-align:right">Total</th>
+  <th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Cleaned master, including historical routing fallbacks</td>
+  <td style="text-align:right">195</td>
+  <td style="text-align:right">38</td>
+  <td style="text-align:right">90</td>
+  <td style="text-align:right">69</td>
+  <td style="text-align:right">392</td>
+  <td>Data preservation and audit</td>
+</tr>
+<tr>
+  <td>New-structure translated final-active-branch records</td>
+  <td style="text-align:right">191</td>
+  <td style="text-align:right">34</td>
+  <td style="text-align:right">82</td>
+  <td style="text-align:right">56</td>
+  <td style="text-align:right">363</td>
+  <td>New survey structure analyses</td>
+</tr>
+<tr>
+  <td>Strict new-structure records after integrity exclusion</td>
+  <td style="text-align:right">191</td>
+  <td style="text-align:right">34</td>
+  <td style="text-align:right">81</td>
+  <td style="text-align:right">56</td>
+  <td style="text-align:right">362</td>
+  <td>Current valid clustering cohorts</td>
+</tr>
+</tbody>
+</table>
+<p>The additional 29 cleaned records outside the new-structure cohort consist of <strong>six legacy final-active-branch records</strong> and <strong>23 entry-branch fallback records</strong>. They remain in the cleaned master data but are not mixed into strict final-path clustering.</p>
+<hr />
+<h2>5. Correct final-branch logic</h2>
+<h3>5.1 Why the entry branch was insufficient</h3>
+<p>The answer to the initial activity gateway records where a person first entered the branch system. A respondent can later switch branch—for example, an apparently unemployed respondent may reveal that they are not actively seeking work and move to inactivity. Therefore, the entry branch cannot always be the analytical branch.</p>
+<h3>5.2 Final branch rule used</h3>
+<p>The newer application used implementation section letters that were one position earlier than the research report. They were translated as follows:</p>
+<table>
+<thead>
+<tr>
+  <th>Application section</th>
+  <th>Research branch</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>C</td>
+  <td>D — In education</td>
+</tr>
+<tr>
+  <td>D</td>
+  <td>E — Unemployed</td>
+</tr>
+<tr>
+  <td>E</td>
+  <td>F — Employed</td>
+</tr>
+<tr>
+  <td>F</td>
+  <td>G — Inactive</td>
+</tr>
+</tbody>
+</table>
+<p>For new survey records, the last branch-specific section in <code>path.active_sections</code> was treated as authoritative. This corrects cases where <code>path.active_branch</code> remained stale after a mid-survey branch switch. If final-path metadata was absent, a legacy final branch was used; the initial entry branch was the last fallback only.</p>
+<p>The logic retained:</p>
+<ul>
+<li>31 records whose final branch differed from their entry branch;</li>
+<li>11 mid-survey path disagreements that were explicitly corrected; and</li>
+<li>one Branch F integrity problem for audit but exclusion from employed clustering.</li>
+</ul>
+<p>The integrity case had final Branch F and current activity recorded as working, but no <code>employment_status</code>. Because a valid employed path should contain that core response, the record was not allowed into Branch F clustering.</p>
+<p><strong>Conclusion:</strong> the correct final analytical branch is being used for the new survey structure, including respondents who switched branches during the survey. Historical fallback records remain separately identifiable and are not silently treated as equally reliable final-path records.</p>
+<hr />
+<h2>6. General preprocessing outputs</h2>
+<p>The cleaning notebook created a general-purpose analysis-ready layer and ML-ready alternatives.</p>
+<table>
+<thead>
+<tr>
+  <th>Operation</th>
+  <th>Rule used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Structural missingness</td>
+  <td>Off-branch unanswered fields recorded as <code>not_applicable</code>.</td>
+</tr>
+<tr>
+  <td>Genuine missingness</td>
+  <td>Applicable but unanswered fields recorded as <code>missing</code>.</td>
+</tr>
+<tr>
+  <td>Ordinal variables</td>
+  <td>Questionnaire order preserved.</td>
+</tr>
+<tr>
+  <td>Binary variables</td>
+  <td>0/1 mapping.</td>
+</tr>
+<tr>
+  <td>Nominal variables</td>
+  <td>One-hot encoding in ML-ready matrices.</td>
+</tr>
+<tr>
+  <td>Numeric imputation</td>
+  <td>Median, after quality filtering.</td>
+</tr>
+<tr>
+  <td>Nominal imputation</td>
+  <td>Explicit/mode category in ML-ready pipeline.</td>
+</tr>
+<tr>
+  <td>Scaling</td>
+  <td>StandardScaler after imputation.</td>
+</tr>
+<tr>
+  <td>PCA</td>
+  <td>Components retained until at least 85% variance.</td>
+</tr>
+<tr>
+  <td>Outliers</td>
+  <td>Diagnosed with audit tables; not automatically deleted.</td>
+</tr>
+</tbody>
+</table>
+<p>The complete cleaned dataset had 131 model variables present, expanded to 621 encoded features. Thirty-six PCA components retained 85.32% of the variance.</p>
+<table>
+<thead>
+<tr>
+  <th>Branch master matrix</th>
+  <th style="text-align:right">Rows</th>
+  <th style="text-align:right">Input variables</th>
+  <th style="text-align:right">Encoded features</th>
+  <th style="text-align:right">PCA components</th>
+  <th style="text-align:right">Variance retained</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>D</td>
+  <td style="text-align:right">195</td>
+  <td style="text-align:right">48</td>
+  <td style="text-align:right">204</td>
+  <td style="text-align:right">33</td>
+  <td style="text-align:right">85.31%</td>
+</tr>
+<tr>
+  <td>E</td>
+  <td style="text-align:right">38</td>
+  <td style="text-align:right">60</td>
+  <td style="text-align:right">205</td>
+  <td style="text-align:right">20</td>
+  <td style="text-align:right">86.41%</td>
+</tr>
+<tr>
+  <td>F</td>
+  <td style="text-align:right">90</td>
+  <td style="text-align:right">84</td>
+  <td style="text-align:right">284</td>
+  <td style="text-align:right">34</td>
+  <td style="text-align:right">85.22%</td>
+</tr>
+<tr>
+  <td>G</td>
+  <td style="text-align:right">69</td>
+  <td style="text-align:right">49</td>
+  <td style="text-align:right">200</td>
+  <td style="text-align:right">24</td>
+  <td style="text-align:right">85.14%</td>
+</tr>
+</tbody>
+</table>
+<p>These counts describe the broad cleaned master matrices. The later clustering notebooks rebuild stricter final-path cohorts and generally use original responses with Gower distance instead of the imputed/PCA matrices.</p>
+<hr />
+<h2>7. Why the analysis moved to dimension-specific clustering</h2>
+<h3>7.1 First Branch D all-variable experiment</h3>
+<p>The initial Branch D experiment used 191 strict final-Branch-D respondents, 48 candidate input variables, 197 expanded features and 71 PCA components. K-means tested <code>k=2–5</code>, with holdout and comparison diagnostics.</p>
+<p>No acceptable solution was found. The diagnostic <code>k=2</code> result contained 183 respondents in one cluster and only 8 in the other. Although the training silhouette was 0.410, only one cluster appeared in the holdout data. This demonstrated that a good-looking single metric can coexist with an unusable typology.</p>
+<h3>7.2 Proposed Level 1 and Level 2 strategy</h3>
+<p>The analysis then proposed:</p>
+<ul>
+<li><strong>Level 1:</strong> group theoretically related variables into dimensions and identify dimension-specific response profiles.</li>
+<li><strong>Level 2:</strong> represent each dimension once and create integrated whole-person transition profiles.</li>
+</ul>
+<p>An early Level 1 notebook constructed five 0–100 dimension scores using researcher-defined mappings and equal weights. A Level 2 k-means analysis produced a provisional three-profile solution of sizes 52, 87 and 52. However, it passed only two of five quality checks: silhouette 0.186, bootstrap ARI mean 0.574, bootstrap ARI 10th percentile 0.299, K-medoids agreement ARI 0.505 and Ward agreement ARI 0.408. Forty-seven memberships were low-confidence.</p>
+<p>More importantly, the lecturer's criticism was correct: a researcher cannot claim a validated theoretical score merely by inventing numerical category mappings and averaging them. The agency diagnostic alpha was also only approximately 0.551. Consequently:</p>
+<blockquote>
+<p>The constructed-score Level 1/Level 2 solution is retained only as a historical experiment and must not be reported as the final youth typology.</p>
+</blockquote>
+<p>The current method clusters original responses inside theoretically defensible dimensions and does not invent total-score formulas.</p>
+<hr />
+<h2>8. Current adopted clustering method, in simple terms</h2>
+<h3>8.1 Feature selection</h3>
+<p>Choosing which survey questions belong to each dimension is a form of <strong>theory-guided feature selection</strong>. Fewer variables do not automatically make clusters more stable. The aim is to use enough relevant, non-duplicative variables to represent one coherent concept.</p>
+<p>Theory proposes a candidate grouping, but data-quality checks decide whether each variable has enough coverage and variation. Stability tests then decide whether the respondent groups are reproducible. Neither theory nor a high score alone is sufficient.</p>
+<h3>8.2 Gower distance</h3>
+<p>For each question, the method measures how different two respondents are:</p>
+<ul>
+<li>ordered response: difference in rank divided by the possible rank range;</li>
+<li>numeric response: absolute difference divided by its observed/theoretical range;</li>
+<li>nominal response: 0 if the answers match and 1 if they differ;</li>
+<li>missing response: that question is omitted for that respondent pair.</li>
+</ul>
+<p>The overall distance is the equal-weight mean of the available question-level differences:</p>
+<p>[
+d(i,j)=\frac{\sum_p w_{ijp},\delta_{ijp}}{\sum_p w_{ijp}}
+]</p>
+<p>No respondent receives an invented motivation, capital or readiness score. Gower distance only expresses how different two original response patterns are.</p>
+<h3>8.3 K-medoids, spectral clustering and consensus</h3>
+<ul>
+<li><strong>K-medoids</strong> groups respondents around actual respondents called medoids. It is compatible with Gower distance and keeps profiles interpretable.</li>
+<li><strong>Spectral clustering</strong> provides a different way of partitioning the same Gower-based relationships.</li>
+<li>For retained consensus analyses, each method is run on 100 matched 80% respondent subsamples, creating 200 base partitions.</li>
+<li>For every respondent pair, the consensus value is:</li>
+</ul>
+<p>[
+C_{ij}=\frac{\text{times respondents }i,j\text{ were clustered together}}
+{\text{times both were sampled}}
+]</p>
+<ul>
+<li>Final profiles are obtained by K-medoids on <code>1 − C</code>.</li>
+</ul>
+<p>Consensus is not automatically superior. It is accepted only if it is reproducible, has clear within-profile blocks, agrees reasonably with both source methods and produces meaningful profiles.</p>
+<h3>8.4 Validation evidence used</h3>
+<table>
+<thead>
+<tr>
+  <th>Diagnostic</th>
+  <th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Silhouette</td>
+  <td>Whether respondents are closer to their own profile than alternatives.</td>
+</tr>
+<tr>
+  <td>Adjusted Rand Index (ARI)</td>
+  <td>Agreement between two partitions, corrected for chance; 1 means identical, around 0 means little agreement beyond chance.</td>
+</tr>
+<tr>
+  <td>Subsample/bootstrap stability</td>
+  <td>Whether broadly the same grouping returns when respondents are resampled.</td>
+</tr>
+<tr>
+  <td>Cross-algorithm ARI</td>
+  <td>Whether the result depends heavily on one algorithm.</td>
+</tr>
+<tr>
+  <td>Minimum profile size</td>
+  <td>Prevents tiny groups being overinterpreted. Most dimension analyses used at least 15.</td>
+</tr>
+<tr>
+  <td>Leave-one-feature-out ARI</td>
+  <td>Tests whether removing one variable destroys the solution.</td>
+</tr>
+<tr>
+  <td>Encoding sensitivity</td>
+  <td>Tests reasonable alternative treatments of ambiguous variable types.</td>
+</tr>
+<tr>
+  <td>Respondent confidence</td>
+  <td>Flags respondents near a profile boundary.</td>
+</tr>
+<tr>
+  <td>PAC</td>
+  <td>Proportion of pairwise consensus values lying in an ambiguous middle interval. Lower is clearer, but it is used comparatively.</td>
+</tr>
+<tr>
+  <td>Prediction strength</td>
+  <td>Tests whether clusters learned in training data reproduce in held-out respondents.</td>
+</tr>
+<tr>
+  <td>Permutation-null calibration</td>
+  <td>Checks whether the best result found after searching many combinations is better than results from independently shuffled variables.</td>
+</tr>
+</tbody>
+</table>
+<p>There is no universally justified rule that <code>PAC ≤ 0.20</code> proves validity. The earlier discussion therefore led to a correction: PAC is now reported comparatively across candidate solutions and is not used as a universal pass/fail threshold.</p>
+<p>Scatterplots are two-dimensional displays of a higher-dimensional distance structure. Their horizontal and vertical axes are display coordinates such as MDS/PCA axes, not questionnaire scores and not the variables used to create the clusters. Cluster validity comes from the diagnostics and original-response profiles, not from how separated coloured dots appear.</p>
+<hr />
+<h2>9. Branch D — In Education</h2>
+<h3>9.1 Strict cohort</h3>
+<p>All current Branch D dimension analyses use 191 new-structure respondents whose final translated active branch is D.</p>
+<p>The broad Branch D analysis-ready manifest contains 48 variables:</p>
+<p><code>age_group</code>, <code>gender</code>, <code>district</code>, <code>area_type</code>, <code>moved_from_origin</code>, <code>move_reason</code>, <code>marital_status</code>, <code>age_first_married</code>, <code>spouse_activity</code>, <code>has_children</code>, <code>num_children</code>, <code>father_edu</code>, <code>mother_edu</code>, <code>father_occ</code>, <code>mother_occ</code>, <code>household_size</code>, <code>household_income</code>, <code>household_workers</code>, <code>household_unemployed</code>, <code>primary_earner_status</code>, <code>employment_network_quality</code>, <code>edu_status</code>, <code>highest_edu_completed</code>, <code>edu_end_year</code>, <code>spell1_activity</code>, <code>spell1_is_current</code>, <code>worked_while_studying</code>, <code>edu_min_for_decent_job</code>, <code>most_important_life_goal</code>, <code>most_useful_quality_for_job</code>, <code>ideal_work_type</code>, <code>ideal_sector</code>, <code>primary_income_source</code>, <code>current_activity_status</code>, <code>plans_after_education</code>, <code>already_job_searching</code>, <code>re_entered_education</code>, <code>reason_re_entered</code>, <code>expected_highest_edu_d</code>, <code>study_field_preference</code>, <code>institution_type</code>, <code>edu_funding_source</code>, <code>social_capital_in_edu_access</code>, <code>study_motivation_type</code>, <code>autonomy_in_study</code>, <code>competence_in_study_field</code>, <code>relatedness_at_institution</code>, <code>job_search_method_d</code>.</p>
+<p>Not all 48 variables were placed in clustering distances. Demographics and programme-mapping variables remain descriptors; conditional variables are used only where applicable.</p>
+<h3>9.2 Branch D dimension results</h3>
+<table>
+<thead>
+<tr>
+  <th>Dimension</th>
+  <th>Variables/components used</th>
+  <th>Profiles and evidence</th>
+  <th>Current decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Motivation and study experience</td>
+  <td><code>study_motivation_type</code>, <code>autonomy_in_study</code>, <code>competence_in_study_field</code>, <code>relatedness_at_institution</code></td>
+  <td>Consensus k=3; sizes 47, 75, 69; Gower silhouette 0.350; bootstrap ARI mean 0.981; ARI against K-medoids 0.968 and spectral 0.712; PAC 0.193.</td>
+  <td><strong>Retained for exploratory dimension-specific profiling, with ambiguity and single-item/ordinal-spacing cautions.</strong></td>
+</tr>
+<tr>
+  <td>Economic resources and household pressure</td>
+  <td>Household income; worker and unemployed household proportions; primary-earner responsibility; primary income source; education funding source</td>
+  <td>k=2; sizes 44 and 147; Gower silhouette 0.436; bootstrap ARI mean 0.986; K-medoids/spectral agreements 0.849/0.796; seven of eight checks passed.</td>
+  <td><strong>Retained with caution.</strong> Profiles indicate relatively lower versus relatively higher household economic position.</td>
+</tr>
+<tr>
+  <td>Educational trajectory and cultural capital</td>
+  <td>Parental education, expected education, institution type, work while studying, re-entry into education</td>
+  <td>k=4; sizes 15, 53, 57, 66; Gower silhouette 0.427; bootstrap ARI mean 0.963; K-medoids/spectral agreements 0.776/0.934; all eight checks passed.</td>
+  <td><strong>Retained.</strong> Stable, cross-method-supported exploratory segmentation.</td>
+</tr>
+<tr>
+  <td>Transition planning and direction</td>
+  <td><code>plans_after_education</code>, <code>ideal_work_type</code>, <code>ideal_sector</code>, <code>study_field_preference</code></td>
+  <td>Diagnostic k=2; sizes 120 and 71; Gower silhouette 0.245; spectral agreement ARI 0.137; PAC 0.751; only five of eight checks passed.</td>
+  <td><strong>Rejected.</strong> No sufficiently robust transition-planning profiles.</td>
+</tr>
+<tr>
+  <td>Social connectedness and support pathways</td>
+  <td><code>employment_network_quality</code>, <code>relatedness_at_institution</code></td>
+  <td>Statistically stable k=3; sizes 51, 83, 57; algorithms agreed perfectly in this discrete two-item pattern.</td>
+  <td><strong>Excluded from the final dimension set.</strong> <code>relatedness_at_institution</code> is already used in motivation; retaining this dimension would double-count it.</td>
+</tr>
+</tbody>
+</table>
+<h3>9.3 Retained Branch D profile interpretations</h3>
+<p><strong>Motivation/study experience:</strong></p>
+<ol>
+<li>Externally or uncertainly motivated, with moderate study support — 47.</li>
+<li>Goal-aligned motivation with mixed confidence and support — 75.</li>
+<li>Highly self-directed, capable and connected — 69.</li>
+</ol>
+<p>These names describe four questionnaire responses only; they are not psychological diagnoses or validated SDT types. Approximately 23.6% had low Gower membership confidence, so individual classification must preserve uncertainty.</p>
+<p><strong>Economic resources:</strong></p>
+<ol>
+<li>Relatively lower household economic position — 44.</li>
+<li>Relatively higher household economic position — 147.</li>
+</ol>
+<p>Twenty-nine respondents declined household income. Five records had workers plus unemployed greater than household size. Those inconsistent proportions were treated as unavailable rather than silently corrected; the remaining components were compared through missing-aware Gower distance.</p>
+<p><strong>Educational trajectory/cultural capital:</strong></p>
+<ol>
+<li>Re-entered students, often with degree-educated parents — 15.</li>
+<li>State-institution students without work exposure — 53.</li>
+<li>Private-institution students without work exposure — 57.</li>
+<li>Work-experienced students, mainly in private institutions — 66.</li>
+</ol>
+<p>Parental education is used as a proxy/indicator of family cultural capital, not as a measure of intelligence or respondent merit.</p>
+<h3>9.4 <code>highest_edu_completed</code> and related education issue</h3>
+<p><code>highest_edu_completed</code> was not generally missing because of a cleaning error. It was observed for only 3 of the 191 current-student respondents because the question is conditional on having completed or left education. It was therefore excluded from Branch D distance. <code>edu_status</code> was also excluded: it was more than 90% one category and contained six answers conflicting with the final current-attendance route. The final branch remained authoritative.</p>
+<h3>9.5 Candidate dimensions deliberately not created</h3>
+<ul>
+<li><strong>Parental occupation:</strong> Bourdieu makes parental social position relevant, but father/mother occupation alone is not a ready-made validated capital scale. A defensible occupational-class crosswalk would be required. The variables remain descriptors and were not silently ignored.</li>
+<li><strong>Family responsibilities:</strong> responsibility is partly represented through household structure and primary-earner status. Sparse conditional marital/child questions did not support a separate all-respondent dimension.</li>
+<li><strong>Life goals and plans:</strong> <code>most_important_life_goal</code> and <code>plans_after_education</code> are meaningful descriptors, but combining two nominal questions into a single score or claiming one latent construct was not sufficiently grounded.</li>
+<li><strong>Beliefs:</strong> proposed belief items did not form a published, validated multi-item scale in this survey. They were retained descriptively rather than combined through invented formulas.</li>
+<li><strong>Social connectedness:</strong> excluded despite statistical stability because it overlapped with the retained motivation dimension.</li>
+</ul>
+<hr />
+<h2>10. Attempted global household-economic clustering</h2>
+<p>The idea was to cluster all new-structure branches together using common household questions, then examine the same dimension within each branch. The global analysis included 363 respondents: D=191, E=34, F=82 and G=56. Branch identity was not used as a clustering input.</p>
+<p>The four distance inputs were household income, household size, household workers and household unemployed. Primary-earner status and primary income source were moved to descriptors because they tended to recreate direct questionnaire/branch splits.</p>
+<p>The diagnostic k=2 result had groups of 135 and 228 and Gower silhouette 0.365. However, agreement with full K-medoids was ARI 0.011, raw-count sensitivity was also ARI 0.011, and PAC was 0.609. Only six of nine checks passed.</p>
+<p><strong>Decision:</strong> the global household-economic segmentation was rejected. The global approach was paused, and the analysis returned to branch-by-branch dimensions.</p>
+<hr />
+<h2>11. Branch F — Employed</h2>
+<h3>11.1 Cohort and survey-variable accounting</h3>
+<p>There are 82 new-structure final-Branch-F records. One routing-integrity record lacks <code>employment_status</code>, leaving <strong>81 valid employed respondents</strong> for clustering.</p>
+<p>The branch-specific modelling manifest originally showed 84 variables: 39 common variables plus 45 retained employed variables. A later full active-path audit found <strong>105 collectively answerable Branch F variables</strong>, because it also counted conditional follow-ups and employee/self-employed subgroup questions. This is not a contradiction; the two counts describe different inventories.</p>
+<p>Among the 81 valid employed respondents:</p>
+<ul>
+<li>wage-worker subgroup: 70;</li>
+<li>self-employed subgroup: 11.</li>
+</ul>
+<h3>11.2 Theory-led Branch F dimensions</h3>
+<table>
+<thead>
+<tr>
+  <th>Code</th>
+  <th>Proposed dimension</th>
+  <th>Variables</th>
+  <th>Theory/rationale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>D1</td>
+  <td>Household economic resources and responsibility</td>
+  <td><code>household_income</code>, <code>household_size</code>, <code>household_workers</code>, <code>household_unemployed</code>, <code>primary_earner_status</code>, <code>primary_income_source</code></td>
+  <td>Bourdieu economic capital plus SWTS household position. Raw indicators, not a published scale.</td>
+</tr>
+<tr>
+  <td>D2</td>
+  <td>Educational and inherited cultural capital</td>
+  <td><code>father_edu</code>, <code>mother_edu</code>, <code>edu_status</code>, <code>worked_while_studying</code></td>
+  <td>Family education and education/work trajectory. Parental education is only a proxy.</td>
+</tr>
+<tr>
+  <td>D3</td>
+  <td>Employment security and formality</td>
+  <td><code>contract_type</code>, <code>job_security_12months</code>, <code>sector_formality</code></td>
+  <td>SWTS employment quality and labour-market field position.</td>
+</tr>
+<tr>
+  <td>D4</td>
+  <td>Earnings and working-time adequacy</td>
+  <td><code>monthly_income_band</code>, <code>usual_hours_per_week</code>, <code>income_hours_preference</code></td>
+  <td>SWTS employment conditions and under/over-employment preference.</td>
+</tr>
+<tr>
+  <td>D5</td>
+  <td>Job satisfaction and mobility intention</td>
+  <td><code>job_satisfaction</code>, <code>contract_satisfaction</code>, <code>hopes_to_change_job</code></td>
+  <td>SWTS satisfactory employment and intention to change jobs. Contract reasons remain nominal.</td>
+</tr>
+<tr>
+  <td>D6</td>
+  <td>Qualification use and skill development</td>
+  <td><code>qualification_job_match</code>, <code>past_edu_useful_for_job</code>, <code>received_training</code></td>
+  <td>Cultural-capital utilisation and education/training relevance.</td>
+</tr>
+<tr>
+  <td>D7</td>
+  <td>Professional social capital</td>
+  <td><code>employment_network_quality</code>, <code>professional_network_growth</code></td>
+  <td>Access to useful contacts and network expansion.</td>
+</tr>
+<tr>
+  <td>D8</td>
+  <td>Work motivation and psychological need experience</td>
+  <td><code>work_autonomy</code>, <code>competence_growth_at_work</code>, <code>relatedness_at_work</code>, <code>work_motivation_type</code></td>
+  <td>SDT autonomy, competence, relatedness and motivation style. One item per construct; not a validated scale.</td>
+</tr>
+<tr>
+  <td>D9</td>
+  <td>Transition-to-work search pathway and barriers</td>
+  <td><code>registered_as_jobseeker</code>, <code>employment_service_help_f</code>, <code>jobs_applied_before_hire</code>, <code>interviews_before_hire</code>, <code>search_duration_before_hire</code>, <code>obstacle_finding_this_job</code></td>
+  <td>SWTS search intensity, duration, institutional help and barriers.</td>
+</tr>
+</tbody>
+</table>
+<h3>11.3 Branch F dimension decisions</h3>
+<table>
+<thead>
+<tr>
+  <th>Dimension/attempt</th>
+  <th>Main empirical result</th>
+  <th>Final decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>D1 Household economic resources and responsibility</td>
+  <td>Dedicated k=2 consensus produced sizes 21/60, silhouette 0.470 and bootstrap ARI mean 0.994, but the single <code>primary_income_source</code> partition agreed at ARI 0.845; removing that item changed the result to ARI −0.036; the three structural-resource components agreed at ARI 0.000; searched permutation p=0.059.</td>
+  <td><strong>Rejected for clustering; retain indicators for descriptive/programme-feasibility analysis.</strong> The result mainly distinguished family-supported from own-job-supported income rather than two broad economic-resource positions.</td>
+</tr>
+<tr>
+  <td>D2 Educational and inherited cultural capital</td>
+  <td>No k=2–4 candidate kept at least 15 respondents per cluster under both algorithms. Diagnostic k=2 produced K-medoids sizes 21/60 but spectral minimum size 14; mean silhouette 0.461; cross-algorithm ARI 0.647; K-medoids/spectral stability means 0.898/0.713; permutation p=0.683. <code>worked_while_studying</code> was the strongest driver (single-item ARI 0.571; leave-out ARI 0.243).</td>
+  <td><strong>Rejected for clustering; retain parental education, education status and work exposure for descriptive/programme-mapping analysis.</strong> Diagnostic groups must not be named as profiles.</td>
+</tr>
+<tr>
+  <td>Broad six-variable employment-quality attempt</td>
+  <td>k=3, sizes 29/25/27, silhouette 0.263, spectral agreement ARI 0.444, six of eight checks.</td>
+  <td><strong>Rejected.</strong> Too broad and not sufficiently cross-method robust; replaced by clearer D3 and D4 dimensions.</td>
+</tr>
+<tr>
+  <td>D3 Employment security and formality</td>
+  <td>k=2, sizes 29/52; silhouette 0.368; bootstrap ARI mean 0.953; K-medoids and spectral agreements 0.854/0.950; seven of eight checks.</td>
+  <td><strong>Retained with PAC/ambiguity caution.</strong></td>
+</tr>
+<tr>
+  <td>D4 Earnings and working-time preference</td>
+  <td>k=2, sizes 51/30; silhouette 0.525; bootstrap ARI mean 0.995; eight of eight checks; leave-out preference ARI −0.013.</td>
+  <td><strong>Excluded from the final dimension set by researcher decision.</strong> Retain only as a descriptive diagnostic because it mainly repeats the working-hours/income preference answer rather than forming a multidimensional employed-youth profile.</td>
+</tr>
+<tr>
+  <td>D5 Job satisfaction and mobility intention</td>
+  <td>Apparent k=2 sizes 34/47 and good internal stability, but removing <code>hopes_to_change_job</code> produced ARI −0.007; PAC 0.519; detailed/binary contract encoding ARI 0.488.</td>
+  <td><strong>Rejected for clustering; keep for descriptive analysis.</strong> It mostly reproduced one intention question.</td>
+</tr>
+<tr>
+  <td>D6 Qualification use and skill development</td>
+  <td>Initial k=2 sizes 65/16 appeared perfectly stable, but exactly reproduced <code>received_training</code>; removing it gave ARI 0.014. The two-variable retest had weak source-algorithm agreement, ARI 0.097–0.212.</td>
+  <td><strong>Rejected for clustering; keep for descriptive analysis.</strong></td>
+</tr>
+<tr>
+  <td>D7 Professional social capital</td>
+  <td>Two direct indicators available.</td>
+  <td><strong>Skipped/excluded under the prior no-overlapping-social-connectedness decision.</strong> Keep as descriptors unless scope is revised.</td>
+</tr>
+<tr>
+  <td>D8 Work motivation/psychological needs</td>
+  <td>No k=2–4 solution met the cross-algorithm minimum-size rule. Diagnostic k=3 spectral agreement ARI 0.330; alternative motivation encoding ARI 0.248.</td>
+  <td><strong>Rejected for clustering; keep for descriptive analysis.</strong></td>
+</tr>
+<tr>
+  <td>D9 Search pathway and barriers</td>
+  <td>Diagnostic k=2 sizes 48/33; silhouette 0.165; bootstrap ARI mean 0.532; spectral agreement ARI 0.038; 35.8% low-confidence. Raw/log count agreement ARI 0.902.</td>
+  <td><strong>Rejected for clustering; count preprocessing was not the main problem.</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>11.4 Retained Branch F profile system and excluded D4 diagnostic</h3>
+<p><strong>D3 Employment security and formality</strong></p>
+<ol>
+<li>Temporary/no-contract employment with uncertain security — 29.</li>
+<li>Predominantly permanent employment with stronger security — 52.</li>
+</ol>
+<p>This is a defensible employment-condition pattern, but it is still exploratory and should be checked with more data and expert interpretation.</p>
+<p><strong>D4 Earnings and working-time preference — excluded from the final clustering set</strong></p>
+<ol>
+<li>Mostly current-hours preference — 51 (63.0%): 47 wanted to keep hours/income the same and 4 preferred fewer hours/lower income.</li>
+<li>More-hours/more-income preference — 30 (37.0%): 28 wanted more hours/more income and 2 preferred fewer hours/lower income.</li>
+</ol>
+<p>Both profiles had a median monthly-income-band code of 4 and median usual working hours of 40. Therefore, this result must <strong>not</strong> be labelled low income versus high income. It is primarily a preference segmentation and is retained only as a descriptive diagnostic, not as a final Branch F clustering.</p>
+<h3>11.5 Branch F <code>highest_edu_completed</code></h3>
+<p>In Branch F, <code>highest_edu_completed</code> was observed for 21 of 81 respondents. This was caused by conditional education-history routing, not automatic evidence of 60 incomplete surveys. It remains a conditional descriptor and is not placed in an all-Branch-F distance calculation.</p>
+<hr />
+<h2>12. Branch F complete 105-variable role audit</h2>
+<p>The complete audit ensures that no variable was silently forgotten. Only 34 were eligible theory-proposed clustering inputs. The other 71 remain available for interpretation, subgroup analysis, validation or routing audits.</p>
+<table>
+<thead>
+<tr>
+  <th>Role</th>
+  <th style="text-align:right">Count</th>
+  <th>Variables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Proposed clustering inputs</td>
+  <td style="text-align:right">34</td>
+  <td><code>household_size</code>, <code>household_income</code>, <code>household_workers</code>, <code>household_unemployed</code>, <code>primary_earner_status</code>, <code>primary_income_source</code>, <code>father_edu</code>, <code>mother_edu</code>, <code>edu_status</code>, <code>worked_while_studying</code>, <code>sector_formality</code>, <code>contract_type</code>, <code>job_security_12months</code>, <code>usual_hours_per_week</code>, <code>income_hours_preference</code>, <code>monthly_income_band</code>, <code>contract_satisfaction</code>, <code>job_satisfaction</code>, <code>hopes_to_change_job</code>, <code>qualification_job_match</code>, <code>received_training</code>, <code>past_edu_useful_for_job</code>, <code>employment_network_quality</code>, <code>professional_network_growth</code>, <code>work_autonomy</code>, <code>competence_growth_at_work</code>, <code>relatedness_at_work</code>, <code>work_motivation_type</code>, <code>registered_as_jobseeker</code>, <code>employment_service_help_f</code>, <code>jobs_applied_before_hire</code>, <code>interviews_before_hire</code>, <code>search_duration_before_hire</code>, <code>obstacle_finding_this_job</code></td>
+</tr>
+<tr>
+  <td>Programme/profile descriptors</td>
+  <td style="text-align:right">30</td>
+  <td><code>age_group</code>, <code>gender</code>, <code>district</code>, <code>area_type</code>, <code>moved_from_origin</code>, <code>move_reason</code>, <code>marital_status</code>, <code>has_children</code>, <code>father_occ</code>, <code>mother_occ</code>, <code>work_while_study_type</code>, <code>work_while_study_paid</code>, <code>work_while_study_hours</code>, <code>work_while_study_motivation</code>, <code>edu_min_for_decent_job</code>, <code>most_important_life_goal</code>, <code>most_useful_quality_for_job</code>, <code>ideal_work_type</code>, <code>ideal_sector</code>, <code>enterprise_location_type</code>, <code>occupational_class</code>, <code>has_second_job</code>, <code>willing_to_relocate_f</code>, <code>plans_further_edu_f</code>, <code>expected_highest_edu_f</code>, <code>union_member</code>, <code>ever_refused_job_f</code>, <code>acceptance_conditions_search</code>, <code>had_min_wage_during_search</code>, <code>employment_status</code></td>
+</tr>
+<tr>
+  <td>Conditional descriptors</td>
+  <td style="text-align:right">27</td>
+  <td><code>age_first_married</code>, <code>spouse_activity</code>, <code>num_children</code>, <code>reason_left_edu</code>, <code>highest_edu_completed</code>, <code>edu_end_year</code>, <code>spell1_activity</code>, <code>spell2_activity</code>, <code>spell3_activity</code>, <code>spell1_is_current</code>, <code>spell2_is_current</code>, <code>spell1_contract</code>, <code>spell2_contract</code>, <code>spell1_satisfaction</code>, <code>spell2_satisfaction</code>, <code>spell1_end_reason</code>, <code>spell2_end_reason</code>, <code>reason_temp_absence</code>, <code>reason_below_normal_hours</code>, <code>reason_wants_to_change</code>, <code>insecurity_bothers</code>, <code>reason_not_union</code>, <code>training_type_received</code>, <code>training_provider</code>, <code>training_duration</code>, <code>who_paid_training</code>, <code>reason_refused_job_f</code></td>
+</tr>
+<tr>
+  <td>Validation/profile descriptors</td>
+  <td style="text-align:right">4</td>
+  <td><code>enterprise_registered</code>, <code>paid_taxes</code>, <code>actual_hours_last_week</code>, <code>hours_below_normal</code></td>
+</tr>
+<tr>
+  <td>Wage-worker subgroup descriptors</td>
+  <td style="text-align:right">3</td>
+  <td><code>job_recruitment_method</code>, <code>enterprise_size</code>, <code>gender_equality_at_work</code></td>
+</tr>
+<tr>
+  <td>Self-employed subgroup descriptors</td>
+  <td style="text-align:right">5</td>
+  <td><code>reason_self_employed</code>, <code>business_helpers</code>, <code>business_funding_source</code>, <code>business_profitability</code>, <code>main_business_obstacle</code></td>
+</tr>
+<tr>
+  <td>Routing/audit only</td>
+  <td style="text-align:right">2</td>
+  <td><code>current_activity_status</code>, <code>has_job_to_return</code></td>
+</tr>
+</tbody>
+</table>
+<p>Why variables were not used directly in every clustering:</p>
+<ul>
+<li>demographics are better used to describe and check equity across profiles than to define needs automatically;</li>
+<li>conditional questions would make distance depend on which follow-up path a person saw;</li>
+<li>subgroup questions cannot fairly compare 70 wage workers with 11 self-employed respondents in one all-Branch-F distance;</li>
+<li>enterprise registration/tax and actual/usual hours can duplicate formality and hours information;</li>
+<li>programme-preference descriptors are most useful after clustering for mapping profiles to interventions;</li>
+<li>routing variables should validate cohort membership, not recreate the known branch.</li>
+</ul>
+<p>The detailed question-by-question table, with question IDs, wording, coverage and framework metadata, is preserved in <code>branch_f_variable_dimension_selection_report.md</code> and <code>outputs/branch_f_variable_dimension_audit/branch_f_all_105_variables.csv</code>.</p>
+<hr />
+<h2>13. Branch G — Inactive: variable and dimension audit</h2>
+<p>The next branch selected for analysis was Branch G because it contains 56 strict final-path respondents, compared with only 34 in Branch E. A complete active-path audit identified 62 collectively answerable variables. The first requested clustering test, G1 household economic resources and dependency, has now also been completed.</p>
+<table>
+<thead>
+<tr>
+  <th>Variable role</th>
+  <th style="text-align:right">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Proposed clustering inputs</td>
+  <td style="text-align:right">19</td>
+</tr>
+<tr>
+  <td>Profile/programme-mapping descriptors</td>
+  <td style="text-align:right">21</td>
+</tr>
+<tr>
+  <td>Conditional descriptors</td>
+  <td style="text-align:right">13</td>
+</tr>
+<tr>
+  <td>Routing/audit variables</td>
+  <td style="text-align:right">9</td>
+</tr>
+</tbody>
+</table>
+<p>Five candidate dimensions were proposed:</p>
+<table>
+<thead>
+<tr>
+  <th>Code</th>
+  <th>Candidate dimension</th>
+  <th>Variables</th>
+  <th>Main caution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>G1</td>
+  <td>Household economic resources and dependency</td>
+  <td><code>household_income</code>, <code>household_size</code>, <code>household_workers</code>, <code>household_unemployed</code>, <code>primary_earner_status</code>, <code>primary_income_source</code></td>
+  <td>Five household-count conflicts; income source could dominate.</td>
+</tr>
+<tr>
+  <td>G2</td>
+  <td>Educational and inherited cultural capital</td>
+  <td><code>father_edu</code>, <code>mother_edu</code>, <code>edu_status</code>, <code>worked_while_studying</code></td>
+  <td>Parental education is a proxy; prior branches produced weak/work-exposure-led solutions.</td>
+</tr>
+<tr>
+  <td>G3</td>
+  <td>Inactivity pathway and future engagement intention</td>
+  <td><code>reason_not_in_labour_force</code>, <code>ever_worked</code>, <code>wants_to_work_future</code>, <code>wants_further_edu</code></td>
+  <td>The 13-category inactivity reason may directly control the partition.</td>
+</tr>
+<tr>
+  <td>G4</td>
+  <td>Psychological readiness and support for engagement</td>
+  <td><code>future_orientation_g</code>, <code>employment_self_efficacy</code>, <code>support_for_engagement</code></td>
+  <td>One item per component; original answers must be clustered without claiming a validated SDT scale.</td>
+</tr>
+<tr>
+  <td>G5</td>
+  <td>Labour-market social connection</td>
+  <td><code>employment_network_quality</code>, <code>labour_market_connection</code></td>
+  <td>Only two closely related indicators; a cross-tab may be more appropriate than clustering.</td>
+</tr>
+</tbody>
+</table>
+<p>All 19 proposed inputs have complete canonical coverage. Three respondents declined household income and five household-count records require pairwise unavailability rather than silent correction. <code>time_use_decision_maker</code>, <code>expected_highest_edu_g</code>, parental occupations, demographics and conditional histories remain descriptors. Nine unemployment/temporary-absence gateway variables encountered before final rerouting remain audit fields and do not enter all-Branch-G distances.</p>
+<h3>13.1 G1 household economic resources and dependency result</h3>
+<p>G1 used the six audited source variables without constructing an economic-capital score. Household size formed worker and unemployed shares and therefore did not receive a second independent weight. Missing-aware Gower distance compared five equal-weight components, and a 200-partition K-medoids/spectral consensus selected two profiles.</p>
+<table>
+<thead>
+<tr>
+  <th>Profile</th>
+  <th style="text-align:right">Records</th>
+  <th style="text-align:right">Percent</th>
+  <th>Main pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Predominantly family/partner-supported non-provider</td>
+  <td style="text-align:right">41</td>
+  <td style="text-align:right">73.2%</td>
+  <td>90.2% were not the main household provider; 75.6% relied mainly on parents/family and 14.6% on a partner/spouse.</td>
+</tr>
+<tr>
+  <td>Predominantly self-income provider/contributor</td>
+  <td style="text-align:right">15</td>
+  <td style="text-align:right">26.8%</td>
+  <td>86.7% were the main or a shared earner; 66.7% reported a regular job/business as their main personal income source.</td>
+</tr>
+</tbody>
+</table>
+<p>All nine prespecified screening checks passed: Gower silhouette 0.372, ensemble bootstrap mean ARI 1.000, agreement with full K-medoids 0.854 and spectral clustering 0.718, minimum profile size 15, and a 100-repetition permutation p-value of 0.012. The result is not exactly reproduced by one item, although primary income source is the strongest item (ARI 0.640).</p>
+<p>The interpretation is deliberately narrower than the original title. Structural resources alone—income position and household worker/unemployed shares—had ARI -0.016 with the final grouping. Removing income source also reduced agreement to ARI 0.356. The result is therefore retained cautiously as a <strong>household economic role/dependency segmentation</strong>, not a low-versus-high household-resource or validated economic-capital classification.</p>
+<h3>13.2 G4 psychological readiness and support result</h3>
+<p>G4 used <code>future_orientation_g</code>, <code>employment_self_efficacy</code>, and <code>support_for_engagement</code> as three equal-weight ordered responses. All 56 respondents answered all three, and no combined psychological score was created. No k=2–4 candidate met the cross-algorithm minimum-profile-size rule. The diagnostic k=2 solution formed groups of 45 and 11. It had good separation (silhouette 0.539), high ensemble stability (mean ARI 0.984) and permutation p=0.010, but K-medoids agreement was only ARI 0.590. Removing self-efficacy changed the grouping almost completely (ARI -0.017), and the smaller group was below the minimum size of 15.</p>
+<p>G4 is therefore <strong>excluded from clustering</strong>. The three answers remain useful as descriptive indicators for programme planning, but the diagnostic groups must not be assigned to respondents as validated profiles.</p>
+<h3>13.3 G3 inactivity pathway and future engagement result</h3>
+<p>G3 used four complete original categorical answers: inactivity reason, previous work experience, desire for future work, and desire for future education/training. The selected two-profile consensus passed all ten screening checks: Gower silhouette 0.413, ensemble bootstrap mean ARI 1.000, K-medoids/spectral agreement 0.928/1.000, minimum profile size 21 and permutation p=0.011.</p>
+<table>
+<thead>
+<tr>
+  <th>Profile</th>
+  <th style="text-align:right">Records</th>
+  <th style="text-align:right">Percent</th>
+  <th>Main pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Work-and-education engaged, mostly prior work experience</td>
+  <td style="text-align:right">35</td>
+  <td style="text-align:right">62.5%</td>
+  <td>97.1% wanted future work, 85.7% wanted further education and 82.9% had worked before.</td>
+</tr>
+<tr>
+  <td>Low/uncertain engagement, mostly no prior work experience</td>
+  <td style="text-align:right">21</td>
+  <td style="text-align:right">37.5%</td>
+  <td>71.4% did not want future work, 61.9% were unsure about further education and 76.2% had never worked.</td>
+</tr>
+</tbody>
+</table>
+<p>The result is retained with a narrower interpretation. Removing the 13-category inactivity-reason question reproduced the partition exactly (ARI 1.000), so it did not define the separation. These are <strong>future-engagement/prior-work-experience profiles</strong>, while current inactivity reason remains a programme-needs descriptor inside each group. No single item alone reproduced the clusters; the maximum single-item ARI was 0.554.</p>
+<h3>13.4 G2 educational and inherited cultural capital result</h3>
+<p>G2 used ordered father/mother education, nominal education status and binary work-while-studying experience. Unknown/refused parental education was unavailable pairwise, and no cultural-capital score was constructed. Diagnostic k=2 groups of 38 and 18 appeared extremely stable (silhouette 0.474; K-medoids and spectral ARI 1.000), but they exactly reproduced <code>worked_while_studying</code>. Removing that one item changed agreement to ARI 0.004, whereas removing either parental-education variable or education status left the split unchanged. Both groups had the same median parental-education position, and the searched permutation p-value was 0.230.</p>
+<p>G2 is therefore <strong>rejected as a clustering dimension</strong>. The apparent profiles are simply “did not work while studying” and “worked while studying”, not educational/cultural-capital groups.</p>
+<p>All proposed Branch G dimensions are now tested or explicitly skipped:</p>
+<table>
+<thead>
+<tr>
+  <th>Dimension</th>
+  <th>Decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>G1 household economic resources/dependency</td>
+  <td>Retained narrowly as economic role/dependency profiles</td>
+</tr>
+<tr>
+  <td>G2 educational/inherited cultural capital</td>
+  <td>Rejected; work-while-studying split</td>
+</tr>
+<tr>
+  <td>G3 inactivity pathway/future engagement</td>
+  <td>Retained narrowly as future-engagement/prior-work-experience profiles</td>
+</tr>
+<tr>
+  <td>G4 psychological readiness/support</td>
+  <td>Rejected</td>
+</tr>
+<tr>
+  <td>G5 labour-market social connection</td>
+  <td>Skipped under the no-overlap decision</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>14. Branch E — Unemployed/searching: variable and dimension audit</h2>
+<p>Branch E contains 34 strict final-path respondents. Its implementation questions are stored in survey Section D, but the analytical research branch is E. The audit found 75 collectively answerable active-path variables and did not use entry branch as the inclusion rule.</p>
+<table>
+<thead>
+<tr>
+  <th>Variable role</th>
+  <th style="text-align:right">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Active candidate clustering inputs</td>
+  <td style="text-align:right">24</td>
+</tr>
+<tr>
+  <td>Social-capital inputs skipped under no-overlap decision</td>
+  <td style="text-align:right">3</td>
+</tr>
+<tr>
+  <td>Profile/programme-mapping descriptors</td>
+  <td style="text-align:right">26</td>
+</tr>
+<tr>
+  <td>Conditional descriptors</td>
+  <td style="text-align:right">16</td>
+</tr>
+<tr>
+  <td>Routing/audit variables</td>
+  <td style="text-align:right">6</td>
+</tr>
+</tbody>
+</table>
+<p>Seven theory-led dimensions were documented, of which six remain active candidates:</p>
+<table>
+<thead>
+<tr>
+  <th>Code</th>
+  <th>Candidate dimension</th>
+  <th style="text-align:right">Inputs</th>
+  <th>Main caution/status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>E1</td>
+  <td>Job-search psychological readiness and support</td>
+  <td style="text-align:right">4</td>
+  <td>One item per construct; do not claim a validated SDT/readiness scale.</td>
+</tr>
+<tr>
+  <td>E2</td>
+  <td>Search intensity and accumulated exposure</td>
+  <td style="text-align:right">4</td>
+  <td>Application/interview count outliers require raw-versus-log sensitivity.</td>
+</tr>
+<tr>
+  <td>E3</td>
+  <td>Economic urgency and job-acceptance constraints</td>
+  <td style="text-align:right">3</td>
+  <td>Urgency or the binary minimum-wage item may dominate.</td>
+</tr>
+<tr>
+  <td>E4</td>
+  <td>Education-to-work preparedness and learning orientation</td>
+  <td style="text-align:right">3</td>
+  <td>Related observed indicators, not one validated latent construct.</td>
+</tr>
+<tr>
+  <td>E5</td>
+  <td>Household economic resources and dependency</td>
+  <td style="text-align:right">6</td>
+  <td>Income-source dominance and resource-versus-role interpretation.</td>
+</tr>
+<tr>
+  <td>E6</td>
+  <td>Educational and inherited cultural capital</td>
+  <td style="text-align:right">4</td>
+  <td>Prior branches produced work-while-studying-led results.</td>
+</tr>
+<tr>
+  <td>E7</td>
+  <td>Job-search social capital</td>
+  <td style="text-align:right">3</td>
+  <td>Skipped under the existing no-overlapping-social-connectedness decision.</td>
+</tr>
+</tbody>
+</table>
+<p>Direct intervention fields—main obstacle, desired training, employment-service help and job type sought—remain programme-mapping descriptors rather than cluster-forming inputs. Conditional search method, non-search reason, refusal reason and minimum-wage band are not supplied to an all-Branch-E distance.</p>
+<p>The central limitation is sample size: with n=34 and a minimum profile size of 15, only k=2 can be eligible; three profiles would require at least 45 respondents. The complete 75-variable table is in <code>branch_e_variable_dimension_selection_report.md</code>.</p>
+<h3>14.1 All Branch E dimensions tested</h3>
+<p>E1–E6 were tested with equal-weight Gower distance, K-medoids/spectral consensus, 100 ensemble bootstraps, single-feature and leave-one-feature-out checks, and 100 shuffled-variable repetitions. E2 also compared raw and log-transformed count encodings. E7 remained skipped.</p>
+<table>
+<thead>
+<tr>
+  <th>Code</th>
+  <th style="text-align:right">Profiles</th>
+  <th>Key validation result</th>
+  <th>Decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>E1</td>
+  <td style="text-align:right">17 / 17</td>
+  <td>Spectral ARI 0.403; source minimum 11; p=0.050</td>
+  <td>Rejected</td>
+</tr>
+<tr>
+  <td>E2</td>
+  <td style="text-align:right">26 / 8</td>
+  <td>Exactly reproduced active search; p=0.500</td>
+  <td>Rejected</td>
+</tr>
+<tr>
+  <td>E3</td>
+  <td style="text-align:right">28 / 6</td>
+  <td>Exactly reproduced minimum-wage answer</td>
+  <td>Rejected</td>
+</tr>
+<tr>
+  <td>E4</td>
+  <td style="text-align:right">18 / 16</td>
+  <td>Silhouette 0.567; ensemble ARI 0.953; K-medoids/spectral ARI 0.882/1.000; p=0.040</td>
+  <td><strong>Retained cautiously—feature dependent</strong></td>
+</tr>
+<tr>
+  <td>E5</td>
+  <td style="text-align:right">22 / 12</td>
+  <td>Source ARI 0.484; ambiguous 38.2%; p=0.583</td>
+  <td>Rejected</td>
+</tr>
+<tr>
+  <td>E6</td>
+  <td style="text-align:right">24 / 10</td>
+  <td>Exactly reproduced work while studying</td>
+  <td>Rejected</td>
+</tr>
+<tr>
+  <td>E7</td>
+  <td style="text-align:right">—</td>
+  <td>No-overlap decision</td>
+  <td>Skipped</td>
+</tr>
+</tbody>
+</table>
+<p>The retained E4 profiles are:</p>
+<table>
+<thead>
+<tr>
+  <th>Profile</th>
+  <th style="text-align:right">Records</th>
+  <th>Pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>High perceived education utility and strong learning ambition</td>
+  <td style="text-align:right">18</td>
+  <td>83.3% rated past education very useful, 94.4% planned further education and 66.7% expected postgraduate education.</td>
+</tr>
+<tr>
+  <td>Moderate perceived utility and mixed learning ambition</td>
+  <td style="text-align:right">16</td>
+  <td>93.8% rated education somewhat useful; 62.5% planned further education, with the remainder unsure or not planning it.</td>
+</tr>
+</tbody>
+</table>
+<p>E4 passed all ten mandatory checks, but removing <code>past_edu_usefulness</code> changed the partition almost completely (ARI 0.039). It must therefore be interpreted narrowly as <strong>education-usefulness and further-learning orientation</strong>, not as a validated human-capital or general learning-readiness scale. The complete evidence and rejection reasons are in <code>branch_e_clustering_results_report.md</code>.</p>
+<hr />
+<h2>15. Automated Branch F candidate-dimension discovery</h2>
+<p>Because Branch F has many variables, a new script tested whether defensible combinations inside the theory pools could produce additional stable dimensions. It did <strong>not</strong> search all 105 variables freely and then invent meanings for the best result.</p>
+<h3>15.1 Procedure</h3>
+<ol>
+<li>Restricted the cohort to the 81 valid Branch F respondents.</li>
+<li>Restricted variables to the 34 audited clustering candidates.</li>
+<li>Calculated mixed-type variable associations: absolute Spearman for ordered/numeric pairs, bias-corrected Cramér's V for nominal pairs and correlation ratio for nominal/numeric pairs.</li>
+<li>Bootstrapped descriptive variable grouping 60 times for group counts 2–10.</li>
+<li>Tested respondent-clustering subsets of 2–4 variables only inside D1–D9 theory pools; D7 was visible in variable grouping but skipped from respondent clustering under the overlap decision.</li>
+<li>Tested k=2, 3 and 4 with K-medoids and spectral clustering.</li>
+<li>Evaluated silhouette, cross-algorithm ARI, minimum size and single-variable dominance.</li>
+<li>Shortlisted at most three candidates per theory pool.</li>
+<li>Ran 30 train/test prediction-strength splits.</li>
+<li>Compared the best observed result in each pool with the best result from independently permuted variables.</li>
+</ol>
+<p>The script evaluated <strong>414 candidate subset/k solutions</strong> and shortlisted 15.</p>
+<h3>15.2 Preliminary pool-wise null results</h3>
+<table>
+<thead>
+<tr>
+  <th>Theory pool</th>
+  <th style="text-align:right">Best observed K-medoids silhouette</th>
+  <th style="text-align:right">Preliminary empirical p-value</th>
+  <th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>D1 Household resources</td>
+  <td style="text-align:right">0.767</td>
+  <td style="text-align:right">0.129</td>
+  <td>Not better than pool-wise shuffled search at 0.05.</td>
+</tr>
+<tr>
+  <td>D2 Educational/cultural capital</td>
+  <td style="text-align:right">0.814</td>
+  <td style="text-align:right">0.161</td>
+  <td>Not better than pool-wise shuffled search.</td>
+</tr>
+<tr>
+  <td>D3 Security/formality</td>
+  <td style="text-align:right">0.562</td>
+  <td style="text-align:right">0.484</td>
+  <td>No additional discovery evidence.</td>
+</tr>
+<tr>
+  <td>D4 Earnings/time</td>
+  <td style="text-align:right">0.689</td>
+  <td style="text-align:right">0.258</td>
+  <td>No additional discovery evidence.</td>
+</tr>
+<tr>
+  <td>D5 Satisfaction/mobility</td>
+  <td style="text-align:right">0.837</td>
+  <td style="text-align:right">0.129</td>
+  <td>Attractive raw result, but not beyond searched-null evidence.</td>
+</tr>
+<tr>
+  <td>D6 Qualification/skills</td>
+  <td style="text-align:right">0.833</td>
+  <td style="text-align:right">0.194</td>
+  <td>Top candidates were entirely dominated by <code>received_training</code>.</td>
+</tr>
+<tr>
+  <td>D8 Motivation/needs</td>
+  <td style="text-align:right">0.767</td>
+  <td style="text-align:right">0.581</td>
+  <td>No additional discovery evidence.</td>
+</tr>
+<tr>
+  <td>D9 Search pathway</td>
+  <td style="text-align:right">0.801</td>
+  <td style="text-align:right">0.290</td>
+  <td>No additional discovery evidence.</td>
+</tr>
+</tbody>
+</table>
+<p>The descriptive variable grouping selected eight groups by the highest median bootstrap ARI, but its median stability was only about 0.497 and agreement with the theory pools was very low (ARI about 0.04). These data-driven groups must not be named as new constructs.</p>
+<p><strong>Current discovery conclusion:</strong> no extra Branch F dimension was automatically confirmed. This is a useful result: it prevents selecting a high silhouette that arose because many combinations were searched or because one categorical question created an easy split.</p>
+<p>The current run used 30 null repetitions as a runtime-feasible screen. At least 200 repetitions should be used before reporting final empirical p-values. Even a significant result would still require theoretical review and preferably confirmation in additional respondents.</p>
+<hr />
+<h2>16. What clustering can and cannot do for NYSC programmes</h2>
+<h3>16.1 What the profile means</h3>
+<p>The purpose of dimension-specific clustering is to identify the response profile to which an individual is most similar <strong>within a particular dimension</strong>. A person can simultaneously belong to:</p>
+<ul>
+<li>one economic-resource profile;</li>
+<li>one education/cultural-capital profile;</li>
+<li>one motivation profile; and</li>
+<li>one employment-security or working-time profile, depending on branch.</li>
+</ul>
+<p>These are current conditions, not permanent identities.</p>
+<h3>16.2 How existing courses could be recommended</h3>
+<p>Clustering alone does not know which course is best. It first identifies needs and constraints. A separate, transparent programme-matching layer must then compare those profiles and descriptors with a structured NYSC catalogue containing:</p>
+<ul>
+<li>occupational category and skills taught;</li>
+<li>entry prerequisites and appropriate NVQ level;</li>
+<li>full-time/part-time/weekend format;</li>
+<li>duration;</li>
+<li>location and accessibility;</li>
+<li>cost, stipend or financial-support options;</li>
+<li>employer placement, internship or certification support; and</li>
+<li>support services such as counselling, job-search help or childcare referrals.</li>
+</ul>
+<p>A safe recommendation sequence is:</p>
+<ol>
+<li><strong>Profile need:</strong> what barrier, resource, motivation or employment condition is indicated?</li>
+<li><strong>Individual preference:</strong> ideal sector/work type, location, willingness to relocate and further-study plan.</li>
+<li><strong>Eligibility:</strong> education, existing qualification and course prerequisites.</li>
+<li><strong>Feasibility:</strong> income urgency, household responsibility, time availability and delivery format.</li>
+<li><strong>Expert-reviewed match:</strong> score eligible courses using published programme attributes and NYSC expert rules.</li>
+<li><strong>Uncertainty:</strong> show alternatives and flag uncertain cluster membership instead of forcing one recommendation.</li>
+</ol>
+<p>For example, an employed respondent with insecure informal work and a preference for current hours may need certification/formalisation support delivered part-time; an employed respondent wanting more hours/income may need an upgrading pathway with stronger placement prospects. The actual course recommendation must also use sector preference, qualifications, prerequisites and catalogue availability.</p>
+<h3>16.3 How programme gaps can be identified</h3>
+<p>A programme gap exists when a sizeable, stable and meaningful profile has a documented need but the catalogue has no feasible response. Examples include:</p>
+<ul>
+<li>suitable skills course exists, but only full-time delivery is offered to primary earners;</li>
+<li>technical course exists, but no bridging module meets the profile's entry qualification;</li>
+<li>training exists, but no placement/network component addresses weak employment contacts;</li>
+<li>course exists, but a profile first needs counselling, confidence-building or job-search support;</li>
+<li>employed youth need recognition/upgrading of existing skills rather than beginner training.</li>
+</ul>
+<p>Gap claims should combine cluster size, confidence, descriptor distributions, catalogue evidence and NYSC expert review. Clusters suggest where to look; they do not by themselves prove that a new programme is necessary.</p>
+<hr />
+<h2>17. Answers to recurring methodological questions</h2>
+<h3>Does more data make clusters more stable?</h3>
+<p>Usually, more representative data allow more reliable estimation and make genuine structures easier to reproduce. There is no guarantee. More records can reveal that an apparent cluster was sample noise, expose previously absent subgroups or remain unstable if the population behaves as a continuum.</p>
+<h3>Do fewer variables make clusters more stable?</h3>
+<p>Not automatically. Removing irrelevant, duplicated or noisy variables can improve stability. Removing essential variables can produce a stable but shallow split controlled by one question. D5 and D6 showed exactly this danger.</p>
+<h3>Is selecting variables part of feature selection?</h3>
+<p>Yes. The present process is theory-guided feature selection followed by coverage, variation, redundancy, dominance and stability checks.</p>
+<h3>Can stability prove the theory?</h3>
+<p>No. Stability means a specified computational pattern is reproducible. Construct validity requires theoretical coherence, appropriate measurement, expert review and ideally replication or external validation.</p>
+<h3>Why not use one very large clustering model?</h3>
+<p>Twenty to thirty raw variables can give dimensions with more questions disproportionate influence, mix unrelated mechanisms and make a cluster impossible to explain. Dimension-specific profiles are clearer, and any later integrated model should represent each approved dimension once.</p>
+<h3>What exactly is the current clustering algorithm?</h3>
+<p>For retained dimension analyses: equal-weight Gower distance on original answers, K-medoids plus spectral clustering across matched respondent subsamples, followed by K-medoids on the consensus dissimilarity matrix. K-medoids alone was first tested for motivation; the consensus ensemble was adopted only after comparison showed it improved agreement and reproducibility.</p>
+<hr />
+<h2>18. Current overall decision register</h2>
+<table>
+<thead>
+<tr>
+  <th>Scope</th>
+  <th>Dimension/result</th>
+  <th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Data</td>
+  <td>Canonical reconstruction and cleaning</td>
+  <td>Complete</td>
+</tr>
+<tr>
+  <td>Data</td>
+  <td>Final active-branch reconstruction, including mid-branch switches</td>
+  <td>Complete and audited</td>
+</tr>
+<tr>
+  <td>Data</td>
+  <td>New-structure strict cohorts</td>
+  <td>D=191, E=34, F=81, G=56</td>
+</tr>
+<tr>
+  <td>Branch D</td>
+  <td>All-variable PCA/K-means typology</td>
+  <td>Rejected</td>
+</tr>
+<tr>
+  <td>Branch D</td>
+  <td>Researcher-constructed five scores and integrated k=3</td>
+  <td>Withdrawn/provisional; not current method</td>
+</tr>
+<tr>
+  <td>Branch D</td>
+  <td>Motivation/study experience</td>
+  <td>Retained for cautious exploratory use</td>
+</tr>
+<tr>
+  <td>Branch D</td>
+  <td>Economic resources/household pressure</td>
+  <td>Retained with caution</td>
+</tr>
+<tr>
+  <td>Branch D</td>
+  <td>Educational trajectory/cultural capital</td>
+  <td>Retained</td>
+</tr>
+<tr>
+  <td>Branch D</td>
+  <td>Transition planning/direction</td>
+  <td>Rejected</td>
+</tr>
+<tr>
+  <td>Branch D</td>
+  <td>Social connectedness</td>
+  <td>Statistically stable but excluded for overlap</td>
+</tr>
+<tr>
+  <td>Global</td>
+  <td>Household economic resources across 363 records</td>
+  <td>Rejected</td>
+</tr>
+<tr>
+  <td>Branch F</td>
+  <td>Broad employment-quality clustering</td>
+  <td>Rejected</td>
+</tr>
+<tr>
+  <td>Branch F</td>
+  <td>Household economic resources/responsibility</td>
+  <td>Rejected; primarily an income-source split and searched-null p=0.059</td>
+</tr>
+<tr>
+  <td>Branch F</td>
+  <td>Educational/inherited cultural capital</td>
+  <td>Rejected; no cross-algorithm size-eligible solution and permutation p=0.683</td>
+</tr>
+<tr>
+  <td>Branch F</td>
+  <td>Employment security/formality</td>
+  <td>Retained with caution</td>
+</tr>
+<tr>
+  <td>Branch F</td>
+  <td>Earnings/working-time preference</td>
+  <td>Statistically stable but excluded from final set; descriptive diagnostic only</td>
+</tr>
+<tr>
+  <td>Branch F</td>
+  <td>Satisfaction/mobility</td>
+  <td>Rejected; descriptive only</td>
+</tr>
+<tr>
+  <td>Branch F</td>
+  <td>Qualification/skill development</td>
+  <td>Rejected; training-item dominated</td>
+</tr>
+<tr>
+  <td>Branch F</td>
+  <td>Professional social capital</td>
+  <td>Skipped/excluded under overlap decision</td>
+</tr>
+<tr>
+  <td>Branch F</td>
+  <td>Work motivation/needs</td>
+  <td>Rejected; method and encoding sensitive</td>
+</tr>
+<tr>
+  <td>Branch F</td>
+  <td>Search pathway/barriers</td>
+  <td>Rejected; insufficient stability</td>
+</tr>
+<tr>
+  <td>Branch F</td>
+  <td>Automated extra-dimension discovery</td>
+  <td>Screening complete; no dimension automatically confirmed</td>
+</tr>
+<tr>
+  <td>Branch G</td>
+  <td>Complete variable/dimension audit</td>
+  <td>Complete; five candidates proposed</td>
+</tr>
+<tr>
+  <td>Branch G</td>
+  <td>G1 household economic resources/dependency</td>
+  <td>Retained cautiously as two household economic role/dependency profiles; not a resource-level classification</td>
+</tr>
+<tr>
+  <td>Branch G</td>
+  <td>G4 psychological readiness/support</td>
+  <td>Rejected; no size-eligible candidate, diagnostic smaller group n=11 and leave-one-feature-out instability</td>
+</tr>
+<tr>
+  <td>Branch G</td>
+  <td>G3 future engagement/prior work experience</td>
+  <td>Retained with narrowed interpretation; two profiles of 35 and 21, all 10 checks passed</td>
+</tr>
+<tr>
+  <td>Branch G</td>
+  <td>G2 educational/inherited cultural capital</td>
+  <td>Rejected; exactly reproduced work while studying and permutation p=0.230</td>
+</tr>
+<tr>
+  <td>Branch E</td>
+  <td>Complete variable/dimension audit</td>
+  <td>Complete; 75 variables classified, six active candidates plus one skipped social-capital dimension</td>
+</tr>
+<tr>
+  <td>Branch E</td>
+  <td>E1 psychological search readiness/support</td>
+  <td>Rejected; spectral ARI 0.403 and permutation p=0.050</td>
+</tr>
+<tr>
+  <td>Branch E</td>
+  <td>E2 search intensity/exposure</td>
+  <td>Rejected; direct active-search split, 26/8</td>
+</tr>
+<tr>
+  <td>Branch E</td>
+  <td>E3 urgency/acceptance constraints</td>
+  <td>Rejected; direct minimum-wage split, 28/6</td>
+</tr>
+<tr>
+  <td>Branch E</td>
+  <td>E4 education usefulness/further-learning orientation</td>
+  <td>Retained cautiously; 18/16 profiles, all mandatory checks passed, strong dependence on past-education usefulness</td>
+</tr>
+<tr>
+  <td>Branch E</td>
+  <td>E5 household economic resources/dependency</td>
+  <td>Rejected; unstable 22/12 result and p=0.583</td>
+</tr>
+<tr>
+  <td>Branch E</td>
+  <td>E6 educational/inherited cultural capital</td>
+  <td>Rejected; direct work-while-studying split, 24/10</td>
+</tr>
+<tr>
+  <td>Branch E</td>
+  <td>E7 job-search social capital</td>
+  <td>Skipped under no-overlap decision</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>19. Limitations that must accompany the results</h2>
+<ol>
+<li>Branch F has only 81 valid respondents; Branch E has 34 and Branch G has 56. Small profiles can be unstable and are difficult to validate.</li>
+<li>More observations may improve precision but cannot guarantee stable clusters.</li>
+<li>Several theoretical constructs are represented by single survey items rather than validated multi-item scales.</li>
+<li>Gower's equal spacing of ordinal categories is a transparent modelling assumption, not a psychometric fact.</li>
+<li>Consensus stability does not prove natural, causal or permanent youth types.</li>
+<li>Conditional questions cannot be treated as ordinary missing values or universal clustering inputs.</li>
+<li>Parental education is a proxy for family cultural capital; parental occupation has not yet been transformed through a defensible class scheme.</li>
+<li>The current profile names are descriptive summaries and must not stigmatise or restrict individuals.</li>
+<li>Programme recommendations require a structured course catalogue, eligibility rules and NYSC expert validation.</li>
+<li>The Branch F permutation screen currently uses 30 repetitions; final inference needs at least 200 and preferably replication in additional data.</li>
+</ol>
+<hr />
+<h2>20. Work remaining and recommended next sequence</h2>
+<ol>
+<li>Review the retained Branch D and Branch F dimensions with the supervisor/NYSC experts and confirm that the variable groupings and profile names are substantively defensible.</li>
+<li>Increase the Branch F permutation-null run from 30 to at least 200 repetitions before thesis reporting.</li>
+<li>Decide whether Branch F D1/D2 should be analysed separately despite the weak automated discovery evidence; do not force them merely for symmetry with Branch D.</li>
+<li>Collect more data, particularly for Branch E and G, before expecting reliable multi-profile clustering. Branch E at n=34 is especially constrained.</li>
+<li>Review the single cautiously retained Branch E result (E4) and the five rejected diagnostics; replicate E4 in additional Branch E respondents before treating it as established.</li>
+<li>Obtain and structure the 95-course catalogue with prerequisites, level, category, duration, mode, location, cost/support and placement attributes.</li>
+<li>Build an expert-reviewed profile-to-programme mapping matrix only from retained profiles and relevant descriptors.</li>
+<li>Identify catalogue gaps by comparing stable profile needs with available programme features.</li>
+<li>Validate retained clusters through additional samples, holdout/prediction strength and an NYSC expert workshop.</li>
+<li>Create an individual assignment procedure that preserves uncertainty and never uses cluster membership as an exclusionary decision by itself.</li>
+</ol>
+<hr />
+<h2>21. Reproducible files produced</h2>
+<h3>Core data preparation</h3>
+<ul>
+<li><code>nysc_survey_cleaning_and_transformation.ipynb</code></li>
+<li><code>outputs/nysc_survey_cleaned_values.csv</code></li>
+<li><code>outputs/nysc_survey_cleaned_labels.csv</code></li>
+<li><code>outputs/nysc_survey_quality_audit.csv</code></li>
+<li><code>outputs/nysc_survey_branch_path_corrections.csv</code></li>
+<li><code>outputs/nysc_survey_branch_integrity_issues.csv</code></li>
+<li><code>outputs/nysc_survey_feature_manifest.csv</code></li>
+<li><code>outputs/nysc_survey_preprocessing_summary.json</code></li>
+</ul>
+<h3>Branch D analysis</h3>
+<ul>
+<li><code>02_branch_d_clustering_experiments.ipynb</code></li>
+<li><code>03_branch_d_dimension_engineering.ipynb</code></li>
+<li><code>04_branch_d_integrated_transition_profiles.ipynb</code></li>
+<li><code>05_branch_d_motivation_clustering.ipynb</code></li>
+<li><code>06_branch_d_motivation_algorithm_comparison.ipynb</code></li>
+<li><code>07_branch_d_motivation_consensus_clustering.ipynb</code></li>
+<li><code>08_branch_d_economic_resources_clustering.ipynb</code></li>
+<li><code>09_branch_d_educational_cultural_capital_clustering.ipynb</code></li>
+<li><code>10_branch_d_transition_planning_clustering.ipynb</code></li>
+<li><code>11_branch_d_social_connectedness_clustering.ipynb</code></li>
+</ul>
+<h3>Global and Branch F analysis</h3>
+<ul>
+<li><code>14_global_household_economic_clustering.ipynb</code></li>
+<li><code>12_branch_f_employment_security_formality_clustering.ipynb</code></li>
+<li><code>13_branch_f_variable_dimension_audit.py</code></li>
+<li><code>15_branch_f_earnings_working_time_clustering.ipynb</code></li>
+<li><code>16_branch_f_job_satisfaction_mobility_clustering.ipynb</code></li>
+<li><code>17_branch_f_qualification_skill_development_clustering.ipynb</code></li>
+<li><code>18_branch_f_work_motivation_sdt_clustering.ipynb</code></li>
+<li><code>19_branch_f_search_pathway_barriers_clustering.ipynb</code></li>
+<li><code>20_branch_f_candidate_dimension_discovery.py</code></li>
+<li><code>branch_f_variable_dimension_selection_report.md</code></li>
+<li><code>branch_clustering_progress.md</code></li>
+</ul>
+<h3>Branch G audit and G1 clustering</h3>
+<ul>
+<li><code>23_branch_g_variable_dimension_audit.py</code></li>
+<li><code>23_branch_g_variable_dimension_audit.ipynb</code></li>
+<li><code>24_branch_g_household_economic_resources_clustering.py</code></li>
+<li><code>24_branch_g_household_economic_resources_clustering.ipynb</code></li>
+<li><code>25_branch_g_psychological_readiness_support_clustering.py</code></li>
+<li><code>25_branch_g_psychological_readiness_support_clustering.ipynb</code></li>
+<li><code>26_branch_g_inactivity_pathway_future_engagement_clustering.py</code></li>
+<li><code>26_branch_g_inactivity_pathway_future_engagement_clustering.ipynb</code></li>
+<li><code>27_branch_g_educational_cultural_capital_clustering.py</code></li>
+<li><code>27_branch_g_educational_cultural_capital_clustering.ipynb</code></li>
+<li><code>branch_g_variable_dimension_selection_report.md</code></li>
+<li><code>outputs/branch_g_variable_dimension_audit/branch_g_all_62_variables.csv</code></li>
+<li><code>outputs/branch_g_variable_dimension_audit/branch_g_proposed_dimensions.csv</code></li>
+<li><code>outputs/branch_g_variable_dimension_audit/branch_g_variable_role_summary.csv</code></li>
+<li><code>outputs/branch_g_household_economic_resources_clusters/household_economic_clustering_summary.json</code></li>
+<li><code>outputs/branch_g_household_economic_resources_clusters/household_economic_profile_scatterplot.png</code></li>
+<li><code>outputs/branch_g_psychological_readiness_support_clusters/readiness_support_clustering_summary.json</code></li>
+<li><code>outputs/branch_g_psychological_readiness_support_clusters/readiness_support_profile_scatterplot.png</code></li>
+<li><code>outputs/branch_g_inactivity_pathway_future_engagement_clusters/pathway_engagement_clustering_summary.json</code></li>
+<li><code>outputs/branch_g_inactivity_pathway_future_engagement_clusters/pathway_engagement_profile_scatterplot.png</code></li>
+<li><code>outputs/branch_g_educational_cultural_capital_clusters/educational_cultural_clustering_summary.json</code></li>
+<li><code>outputs/branch_g_educational_cultural_capital_clusters/educational_cultural_profile_scatterplot.png</code></li>
+</ul>
+<h3>Branch E audit</h3>
+<ul>
+<li><code>28_branch_e_variable_dimension_audit.py</code></li>
+<li><code>28_branch_e_variable_dimension_audit.ipynb</code></li>
+<li><code>branch_e_variable_dimension_selection_report.md</code></li>
+<li><code>outputs/branch_e_variable_dimension_audit/branch_e_all_75_variables.csv</code></li>
+<li><code>outputs/branch_e_variable_dimension_audit/branch_e_proposed_dimensions.csv</code></li>
+<li><code>outputs/branch_e_variable_dimension_audit/branch_e_variable_role_summary.csv</code></li>
+<li><code>29_branch_e_all_dimensions_clustering.py</code></li>
+<li><code>29_branch_e_all_dimensions_clustering.ipynb</code></li>
+<li><code>branch_e_clustering_results_report.md</code></li>
+<li><code>outputs/branch_e_all_dimensions_clusters/branch_e_all_dimension_screening_summary.csv</code></li>
+<li><code>outputs/branch_e_all_dimensions_clusters/e4/profile_scatterplot.png</code></li>
+</ul>
+<p>Each analysis has a corresponding output directory containing assignments, profile summaries, validation tables, sensitivity tests and graphs. Rejected diagnostic assignments must not be reused as validated youth classifications.</p>
+<hr />
+<h2>22. References and methodological sources</h2>
+<ol>
+<li>Bourdieu, P. (1986). “The Forms of Capital.” In J. Richardson (Ed.), <em>Handbook of Theory and Research for the Sociology of Education</em>.</li>
+<li>Deci, E. L., &amp; Ryan, R. M. (2000). “The ‘What’ and ‘Why’ of Goal Pursuits: Human Needs and the Self-Determination of Behavior.” <em>Psychological Inquiry</em>, 11(4), 227–268.</li>
+<li>International Labour Organization. School-to-Work Transition Survey methodology and youth-transition framework.</li>
+<li>Chavent, M., Kuentz-Simonet, V., Liquet, B., &amp; Saracco, J. (2012). “ClustOfVar: An R Package for the Clustering of Variables.”</li>
+<li>Tibshirani, R., &amp; Walther, G. (2005). “Cluster Validation by Prediction Strength.” <em>Journal of Computational and Graphical Statistics</em>, 14(3), 511–528.</li>
+<li>Witten, D. M., &amp; Tibshirani, R. (2010). “A Framework for Feature Selection in Clustering.” <em>Journal of the American Statistical Association</em>, 105(490), 713–726.</li>
+<li>Raftery, A. E., &amp; Dean, N. (2006). “Variable Selection for Model-Based Clustering.” <em>Journal of the American Statistical Association</em>, 101(473), 168–178.</li>
+<li>Local project source: <code>nysc_supervisor_prep.docx</code>, treated as the research plan and framework specification.</li>
+<li>Local project source: <code>Data Analysis Report.docx</code>, treated as the reporting template rather than an instruction to predetermine results.</li>
+</ol>
+<hr />
+<h2>23. Short viva summary</h2>
+<blockquote>
+<p>I first cleaned 481 raw survey submissions and reconstructed the active survey path across several export formats. After quality rules and deduplication, 392 records remained in the cleaned master dataset. The new survey structure provided 363 final-path records; one employed routing-integrity record was excluded, giving 362 strict records. I used the final active branch, not merely the entry branch, and corrected 11 mid-survey branch switches. The adopted method selects variables using theory, clusters original mixed responses with Gower distance, compares K-medoids and spectral clustering, and uses consensus, stability, dominance, sensitivity and permutation checks. In Branch D, three dimensions are retained cautiously. In Branch F, only employment security/formality is retained. In Branch G, G1 and G3 are retained narrowly. All six active Branch E dimensions were tested with k=2 because n=34; only E4 passed every mandatory check, producing 18/16 education-usefulness/further-learning profiles. E4 is strongly dependent on perceived past-education usefulness and therefore remains exploratory. The other Branch E dimensions are rejected, while social capital remains skipped under the no-overlap decision.</p>
+</blockquote>
+</body></html>

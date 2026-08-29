@@ -1,0 +1,184 @@
+.research-tree-panel {
+  --tree-assigned: #f0a202;
+  --tree-assigned-deep: #c97f00;
+  --tree-assigned-soft: #fff1cf;
+  --tree-assigned-glow: rgba(240, 162, 2, .85);
+  padding: clamp(20px, 3vw, 34px) 14px;
+  overflow: hidden;
+  border: 1px solid var(--yc-border);
+  border-radius: 25px;
+  background:
+    radial-gradient(circle at 50% 78%, rgba(210, 141, 70, .08), transparent 23rem),
+    linear-gradient(150deg, #fffdf9, var(--yc-soft-cream));
+  box-shadow: 0 12px 34px rgba(31, 27, 22, .055);
+}
+
+.research-tree-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 26px; margin-bottom: 16px; }
+.research-tree-heading h2 { margin: 0 0 7px; font: 500 clamp(31px, 4vw, 43px)/1.08 "Instrument Serif", serif; }
+.research-tree-heading p { max-width: 690px; margin: 0; color: var(--yc-muted); }
+.research-tree-legend { display: grid; gap: 9px; flex: 0 0 auto; padding: 11px 13px; border: 1px solid var(--yc-border); border-radius: 14px; background: rgba(255,255,255,.78); color: var(--yc-muted); font: 700 10px "JetBrains Mono", monospace; text-transform: uppercase; box-shadow: 0 5px 15px rgba(31,27,22,.04); }
+.research-tree-legend span { display: flex; align-items: center; gap: 9px; }
+.research-tree-legend i { display: inline-block; }
+.legend-route { width: 27px; height: 5px; border-radius: 999px; background: var(--tree-assigned); box-shadow: 0 0 0 4px rgba(240,162,2,.16); animation: legendBlink 1.4s ease-in-out infinite; }
+.legend-leaf { width: 22px; height: 13px; border: 2px solid var(--tree-assigned); border-radius: 70% 30% 70% 30%; background: var(--tree-assigned-soft); }
+@keyframes legendBlink { 0%, 100% { opacity: 1; } 50% { opacity: .45; } }
+
+.research-tree-scroll {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border: 1px solid rgba(227,213,196,.88);
+  border-radius: 22px;
+  background:
+    radial-gradient(ellipse at 50% 25%, rgba(101,141,109,.1), transparent 34rem),
+    linear-gradient(180deg, rgba(255,255,255,.8), rgba(250,244,236,.78));
+  scrollbar-color: var(--yc-border) transparent;
+  box-shadow: inset 0 -12px 28px rgba(118,88,55,.035);
+}
+.research-tree-scroll:focus-visible { outline: 3px solid rgba(210,141,70,.28); outline-offset: 3px; }
+.research-tree-svg { display: block; width: 100%; min-width: 1480px; height: auto; }
+.research-tree-art { opacity: 0; animation: researchTreeEnter .7s ease-out .08s forwards; }
+@keyframes researchTreeEnter { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: translateY(0); } }
+
+.research-trunk-shadow { fill: rgba(74,52,35,.16); transform: translateY(4px); filter: blur(.5px); }
+.research-trunk { fill: url(#trunkGradient); stroke: #6f533c; stroke-width: 1.2; vector-effect: non-scaling-stroke; }
+.research-bark-line { fill: none; stroke: rgba(255,244,223,.4); stroke-width: 2; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+.research-trunk-light, .research-path-base, .research-path-light { fill: none; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.research-trunk-light { stroke: var(--tree-assigned); stroke-width: 3.2; opacity: .8; filter: url(#routeGlow); stroke-dasharray: 1; stroke-dashoffset: 1; animation: drawResearchPath .65s ease-out .62s forwards, routeBlink 1.3s ease-in-out 1.3s infinite; }
+@keyframes drawResearchPath { to { stroke-dashoffset: 0; } }
+@keyframes routeBlink {
+  0%, 100% { opacity: .85; filter: url(#routeGlow) drop-shadow(0 0 2px var(--tree-assigned-glow)); }
+  50% { opacity: .35; filter: url(#routeGlow) drop-shadow(0 0 10px var(--tree-assigned-glow)); }
+}
+
+.research-branch:not(.is-route) .research-major-limb,
+.research-branch:not(.is-route) .research-model-limb,
+.research-branch:not(.is-route) .research-leaf-stem { opacity: .5; }
+.research-branch:not(.is-route) .research-model-knot { opacity: .68; }
+.research-branch:not(.is-route) .research-leaf-shape,
+.research-branch:not(.is-route) .research-leaf-vein { opacity: .84; }
+.research-major-limb { stroke: #8d6b4c; stroke-width: 13; stroke-linecap: round; }
+.research-model-limb { stroke: #9a7958; stroke-width: 7.5; stroke-linecap: round; }
+.research-leaf-stem { stroke: #9d8061; stroke-width: 3.6; stroke-linecap: round; }
+.research-path-base { stroke-dasharray: 1; stroke-dashoffset: 1; animation: drawResearchPath .78s ease-out .42s forwards; }
+.research-path-light { stroke: var(--tree-assigned); filter: url(#routeGlow); stroke-dasharray: 1; stroke-dashoffset: 1; }
+.research-branch.is-route .research-major-limb.research-path-base { stroke: #d9a94a; }
+.research-branch.is-route .research-model-limb.research-path-base { stroke: #e0b25a; }
+.research-branch.is-route .research-leaf-stem.research-path-base { stroke: #e6bd6d; }
+.route-major { stroke-width: 4.4; animation: drawResearchPath .65s ease-out .9s forwards, routeBlink 1.3s ease-in-out 1.55s infinite; }
+.route-model { stroke-width: 3.6; animation: drawResearchPath .58s ease-out 1.25s forwards, routeBlink 1.3s ease-in-out 1.83s infinite; }
+.route-leaf { stroke-width: 2.8; animation: drawResearchPath .52s ease-out 1.55s forwards, routeBlink 1.3s ease-in-out 2.07s infinite; }
+.research-model-knot { fill: #88694d; stroke: #f8f0e5; stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+.research-branch.is-route .research-model-knot { fill: var(--tree-assigned); stroke: #fff6df; animation: knotBlink 1.3s ease-in-out 2s infinite; }
+@keyframes knotBlink {
+  0%, 100% { filter: drop-shadow(0 0 1px var(--tree-assigned-glow)); }
+  50% { filter: drop-shadow(0 0 7px var(--tree-assigned-glow)); }
+}
+
+.research-branch-label-group rect,
+.research-model-label-group rect {
+  fill: rgba(255,252,246,.96);
+  stroke: rgba(195,169,139,.78);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+  filter: drop-shadow(0 3px 4px rgba(74,52,35,.08));
+}
+.research-model-label-group rect { fill: rgba(250,247,238,.96); stroke: rgba(148,128,103,.58); }
+.research-branch.is-route .research-branch-label-group rect,
+.research-branch.is-route .research-model-label-group rect { stroke: var(--tree-assigned); fill: rgba(255,249,232,.98); }
+.research-branch-label { fill: #985d28; font: 800 17px "JetBrains Mono", monospace; letter-spacing: .025em; }
+.research-branch-subtitle { fill: #554e47; font: 650 13px "Plus Jakarta Sans", sans-serif; }
+.research-model-label { fill: #514b45; font: 750 14.5px "Plus Jakarta Sans", sans-serif; letter-spacing: .002em; }
+.research-branch.is-route .research-branch-label,
+.research-branch.is-route .research-model-label { fill: var(--tree-assigned-deep); }
+
+.research-leaf { cursor: pointer; outline: none; }
+.research-leaf-hit { fill: transparent; pointer-events: all; }
+.research-leaf-illustration { pointer-events: none; }
+.research-leaf-shadow { fill: rgba(74,52,35,.14); filter: blur(.6px); }
+.research-leaf-shape {
+  fill: url(#leafGradient);
+  stroke: #5f7350;
+  stroke-width: 2.1;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+  transition: fill .18s ease, stroke .18s ease, filter .18s ease;
+  filter: drop-shadow(0 3px 3px rgba(74,52,35,.1));
+}
+.research-leaf-vein { fill: none; stroke: rgba(255,255,255,.4); stroke-width: 1.1; stroke-linecap: round; vector-effect: non-scaling-stroke; pointer-events: none; }
+.research-leaf-vein-main { stroke: rgba(255,255,255,.55); stroke-width: 1.4; }
+.research-leaf-code { fill: #33422a; font: 850 14px "JetBrains Mono", monospace; letter-spacing: -.025em; pointer-events: none; paint-order: stroke; stroke: rgba(255,253,247,.78); stroke-width: 1.4px; }
+.research-leaf:hover .research-leaf-shape,
+.research-leaf:focus-visible .research-leaf-shape,
+.research-leaf.is-selected .research-leaf-shape { fill: var(--yc-orange-soft); stroke: var(--yc-orange); stroke-width: 2.3; }
+.research-leaf:focus-visible .research-leaf-shape { filter: drop-shadow(0 0 6px rgba(210,141,70,.48)); }
+.research-leaf.is-assigned .research-leaf-shape { fill: url(#leafGradientAssigned); stroke: var(--tree-assigned-deep); stroke-width: 2.6; animation: assignedLeafBlink 1.3s ease-in-out infinite; }
+.research-leaf.is-assigned .research-leaf-vein-main,
+.research-leaf.is-assigned .research-leaf-vein { stroke: rgba(146,90,0,.5); }
+.research-leaf.is-assigned .research-leaf-code { fill: #7a4c00; font-size: 15px; font-weight: 900; }
+@keyframes assignedLeafBlink {
+  0%, 100% { filter: drop-shadow(0 2px 3px rgba(74,52,35,.1)) drop-shadow(0 0 3px var(--tree-assigned-glow)); transform: scale(1); }
+  50% { filter: drop-shadow(0 2px 3px rgba(74,52,35,.1)) drop-shadow(0 0 12px var(--tree-assigned-glow)); transform: scale(1.05); }
+}
+
+.research-root ellipse { fill: var(--yc-orange-soft); stroke: var(--yc-orange); stroke-width: 1.8; filter: drop-shadow(0 4px 5px rgba(74,52,35,.1)); }
+.research-root text { fill: #8f531f; font: 850 13px "JetBrains Mono", monospace; letter-spacing: .06em; }
+.research-tree-note { margin: 13px 0 0; color: var(--yc-dim); font-size: 12px; text-align: center; }
+
+.research-profile-popover {
+  position: fixed;
+  z-index: 1100;
+  visibility: hidden;
+  padding: 20px 22px 21px;
+  border: 1px solid rgba(154,121,83,.36);
+  border-radius: 22px 25px 24px 20px;
+  background: linear-gradient(145deg, #fffdf8, #faf3e8);
+  color: var(--yc-text);
+  box-shadow: 0 18px 42px rgba(57,45,33,.19);
+  opacity: 0;
+}
+.research-profile-popover.is-positioned { visibility: visible; animation: researchPopoverIn .18s ease-out forwards; }
+@keyframes researchPopoverIn { from { opacity: 0; transform: translateY(7px) scale(.985); } to { opacity: 1; transform: translateY(0) scale(1); } }
+.research-profile-popover::after {
+  content: "";
+  position: absolute;
+  left: var(--research-popover-tail-x, 50%);
+  width: 17px;
+  height: 17px;
+  background: #faf3e8;
+  transform: translateX(-50%) rotate(45deg);
+}
+.research-profile-popover.is-above::after { bottom: -9px; border-right: 1px solid rgba(154,121,83,.36); border-bottom: 1px solid rgba(154,121,83,.36); }
+.research-profile-popover.is-below::after { top: -9px; border-left: 1px solid rgba(154,121,83,.36); border-top: 1px solid rgba(154,121,83,.36); background: #fffdf8; }
+.research-popover-close { position: absolute; top: 12px; right: 12px; width: 31px; height: 31px; display: grid; place-items: center; padding: 0; border: 1px solid var(--yc-border); border-radius: 50%; background: rgba(255,255,255,.72); color: var(--yc-muted); font-size: 20px; line-height: 1; cursor: pointer; }
+.research-popover-close:hover { border-color: var(--yc-orange); color: var(--yc-orange-deep); }
+.research-popover-code { display: block; padding-right: 35px; color: var(--yc-orange-deep); font: 850 12px "JetBrains Mono", monospace; letter-spacing: .07em; }
+.research-popover-assigned { display: inline-block; margin-top: 9px; padding: 4px 8px; border-radius: 999px; background: var(--yc-green-soft); color: var(--yc-green-deep); font: 850 9px "JetBrains Mono", monospace; letter-spacing: .035em; text-transform: uppercase; }
+.research-profile-popover h2 { margin: 12px 34px 8px 0; font: 500 25px/1.08 "Instrument Serif", serif; }
+.research-profile-popover p { margin: 0; color: var(--yc-muted); font-size: 13px; line-height: 1.62; }
+
+@media (max-width: 820px) {
+  .research-tree-heading { display: block; }
+  .research-tree-legend { display: flex; flex-wrap: wrap; margin-top: 14px; }
+  .research-tree-scroll::after { content: "Scroll to explore the complete tree →"; display: block; position: sticky; left: 14px; width: max-content; margin: -31px 0 9px 14px; padding: 5px 9px; border-radius: 999px; background: rgba(255,255,255,.92); color: var(--yc-muted); font: 700 9px "JetBrains Mono", monospace; }
+}
+
+@media (max-width: 520px) {
+  .research-tree-panel { padding: 17px 11px; }
+  .research-tree-svg { min-width: 1320px; }
+  .research-profile-popover { padding: 18px 19px 19px; border-radius: 19px 22px 21px 18px; }
+  .research-profile-popover h2 { font-size: 23px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .research-tree-art,
+  .research-trunk-light,
+  .research-path-base,
+  .research-path-light,
+  .research-leaf.is-assigned .research-leaf-shape,
+  .research-profile-popover { animation: none !important; }
+  .research-tree-art, .research-profile-popover.is-positioned { opacity: 1; }
+  .research-trunk-light, .research-path-base, .research-path-light { stroke-dashoffset: 0; }
+  .research-leaf-shape { transition: none; }
+}

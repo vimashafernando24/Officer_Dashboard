@@ -1,0 +1,65 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 4px 9px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.badge-direct,
+.badge-status-available,
+.badge-safe {
+  border-color: rgba(101, 141, 109, 0.28);
+  background: var(--yc-green-soft);
+  color: var(--yc-green-deep);
+}
+
+.badge-adjacent {
+  border-color: rgba(210, 141, 70, 0.28);
+  background: var(--yc-orange-soft);
+  color: var(--yc-orange-deep);
+}
+
+.badge-strength {
+  border-color: var(--line);
+  background: var(--surface-2);
+  color: var(--ink-soft);
+}
+
+.badge-strength-strong {
+  border-color: rgba(101, 141, 109, 0.28);
+  background: var(--yc-green-soft);
+  color: var(--yc-green-deep);
+}
+
+.badge-strength-moderate {
+  border-color: rgba(210, 141, 70, 0.28);
+  background: var(--yc-orange-soft);
+  color: var(--yc-orange-deep);
+}
+
+.badge-context {
+  border-color: rgba(62, 118, 144, 0.3);
+  background: rgba(62, 118, 144, 0.1);
+  color: var(--yc-blue);
+}
+
+.badge-status-offline,
+.badge-review {
+  border-color: rgba(201, 132, 86, 0.28);
+  background: var(--yc-warning-soft);
+  color: #8a5431;
+}
+
+.badge-status-nodef {
+  border-color: var(--line);
+  background: var(--surface-2);
+  color: var(--ink-soft);
+}

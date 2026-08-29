@@ -1,0 +1,218 @@
+.evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr));
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.evidence-flip {
+  min-width: 0;
+  height: 390px;
+  perspective: 1200px;
+}
+
+.evidence-flip-button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  border-radius: 20px;
+  background: transparent;
+  padding: 0;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.evidence-flip-inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.58s cubic-bezier(0.2, 0.75, 0.25, 1);
+  transform-style: preserve-3d;
+}
+
+.evidence-flip.is-flipped .evidence-flip-inner {
+  transform: rotateY(180deg);
+}
+
+.evidence-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface);
+  box-shadow: 0 8px 24px rgba(31, 27, 22, 0.08);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.evidence-front {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 28px 22px;
+  text-align: center;
+  background:
+    radial-gradient(circle at 88% 12%, rgba(210, 141, 70, 0.19), transparent 112px),
+    radial-gradient(circle at 8% 92%, rgba(101, 141, 109, 0.16), transparent 128px),
+    var(--surface-2);
+}
+
+.evidence-front::before,
+.evidence-front::after {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.evidence-front::before {
+  top: 24px;
+  right: 25px;
+  width: 11px;
+  height: 11px;
+  background: var(--yc-orange);
+  box-shadow: 0 0 0 7px rgba(210, 141, 70, 0.12);
+}
+
+.evidence-front::after {
+  bottom: 31px;
+  left: 28px;
+  width: 8px;
+  height: 8px;
+  background: var(--yc-green);
+  box-shadow: 0 0 0 6px rgba(101, 141, 109, 0.12);
+}
+
+.evidence-front-kicker {
+  margin-bottom: 13px;
+  color: var(--yc-green-deep);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.evidence-feature-name {
+  max-width: 430px;
+  color: var(--ink);
+  font-family: "Instrument Serif", serif;
+  font-size: clamp(27px, 4vw, 38px);
+  font-weight: 400;
+  line-height: 1.03;
+  text-wrap: balance;
+}
+
+.evidence-flip-cue {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 23px;
+  border: 1px solid rgba(210, 141, 70, 0.38);
+  border-radius: 999px;
+  background: var(--yc-orange-soft);
+  padding: 7px 11px;
+  color: var(--yc-orange-deep);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.evidence-back {
+  flex-direction: column;
+  background:
+    linear-gradient(180deg, rgba(237, 244, 238, 0.8), rgba(255, 255, 255, 0) 86px),
+    var(--surface);
+  transform: rotateY(180deg);
+}
+
+.evidence-back-topline {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid var(--line-soft);
+  padding: 12px 15px 10px;
+}
+
+.evidence-back-label,
+.evidence-return-cue {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+}
+
+.evidence-back-label {
+  color: var(--yc-green-deep);
+}
+
+.evidence-return-cue {
+  color: var(--yc-orange-deep);
+}
+
+.evidence-back-scroll {
+  display: block;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 15px 16px 17px;
+  scrollbar-color: var(--yc-green) var(--bar-track);
+  scrollbar-width: thin;
+}
+
+.evidence-source {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--ink-faint);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 0.045em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+.evidence-question {
+  display: block;
+  margin-bottom: 18px;
+  color: var(--ink);
+  font-family: "Instrument Serif", serif;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.evidence-flip-button:hover .evidence-face {
+  border-color: rgba(210, 141, 70, 0.55);
+  box-shadow: 0 13px 30px rgba(31, 27, 22, 0.12);
+}
+
+.evidence-flip-button:hover .evidence-flip-cue {
+  border-color: var(--yc-orange);
+  background: #fff7ed;
+}
+
+@media (max-width: 640px) {
+  .evidence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .evidence-flip {
+    height: 410px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .evidence-flip-inner {
+    transition: none;
+  }
+}
