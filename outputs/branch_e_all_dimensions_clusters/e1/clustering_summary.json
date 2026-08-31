@@ -1,0 +1,123 @@
+{
+  "dimension_code": "E1",
+  "dimension_name": "Job-search psychological readiness and support",
+  "records": 34,
+  "source_variables": [
+    "job_search_self_efficacy",
+    "job_search_autonomy_orientation",
+    "social_support_job_search",
+    "future_planning_orientation"
+  ],
+  "clustering_features": [
+    "job_search_self_efficacy",
+    "job_search_autonomy_orientation",
+    "social_support_job_search",
+    "future_planning_orientation"
+  ],
+  "feature_types": {
+    "job_search_self_efficacy": "ordinal",
+    "job_search_autonomy_orientation": "ordinal",
+    "social_support_job_search": "ordinal",
+    "future_planning_orientation": "ordinal"
+  },
+  "profile_sizes": {
+    "1": 17,
+    "2": 17
+  },
+  "profile_labels": {
+    "1": "Diagnostic: general-direction and flexible-search pattern",
+    "2": "Diagnostic: clear-plan and specific-search pattern"
+  },
+  "profile_modes": [
+    {
+      "profile_id": 1,
+      "variable": "future_planning_orientation",
+      "response": "I have a general direction but no specific steps yet",
+      "records": 9,
+      "within_profile_percent": 52.94117647058823
+    },
+    {
+      "profile_id": 1,
+      "variable": "job_search_autonomy_orientation",
+      "response": "I have preferences but am flexible and will take good opportunities",
+      "records": 10,
+      "within_profile_percent": 58.8235294117647
+    },
+    {
+      "profile_id": 1,
+      "variable": "job_search_self_efficacy",
+      "response": "Fairly confident \u2014 I think I will, though it may take time",
+      "records": 10,
+      "within_profile_percent": 58.8235294117647
+    },
+    {
+      "profile_id": 1,
+      "variable": "social_support_job_search",
+      "response": "Somewhat supported \u2014 I have some encouragement",
+      "records": 7,
+      "within_profile_percent": 41.1764705882353
+    },
+    {
+      "profile_id": 2,
+      "variable": "future_planning_orientation",
+      "response": "I have a very clear, specific plan and I am actively working toward it",
+      "records": 13,
+      "within_profile_percent": 76.47058823529412
+    },
+    {
+      "profile_id": 2,
+      "variable": "job_search_autonomy_orientation",
+      "response": "I am looking specifically for work I genuinely want to do",
+      "records": 11,
+      "within_profile_percent": 64.70588235294117
+    },
+    {
+      "profile_id": 2,
+      "variable": "job_search_self_efficacy",
+      "response": "Fairly confident \u2014 I think I will, though it may take time",
+      "records": 10,
+      "within_profile_percent": 58.8235294117647
+    },
+    {
+      "profile_id": 2,
+      "variable": "social_support_job_search",
+      "response": "Very supported \u2014 people actively encourage and assist me",
+      "records": 11,
+      "within_profile_percent": 64.70588235294117
+    }
+  ],
+  "metrics": {
+    "gower_silhouette": 0.380644054217974,
+    "consensus_silhouette": 0.7097867980773174,
+    "source_minimum_cluster_size": 11,
+    "final_minimum_cluster_size": 17,
+    "kmedoids_subsample_stability_mean": 0.7578583175168561,
+    "spectral_subsample_stability_mean": 0.4489430336863577,
+    "ensemble_bootstrap_ari_mean": 0.9394935675941185,
+    "ensemble_bootstrap_ari_p10": 0.7613992397802652,
+    "ari_vs_full_kmedoids": 0.6684671059738576,
+    "ari_vs_full_spectral": 0.4028436018957346,
+    "maximum_single_feature_ari": 0.48309387490547695,
+    "dominant_single_feature": "future_planning_orientation",
+    "minimum_leave_one_feature_out_ari": 0.26066350710900477,
+    "ambiguous_consensus_percent": 17.647058823529413,
+    "low_gower_confidence_percent": 17.647058823529413,
+    "pac_10_90": 0.5828877005347594,
+    "permutation_valid_repetitions": 19,
+    "permutation_null_p95": 0.28481958243938316,
+    "empirical_permutation_p": 0.05,
+    "raw_vs_log_count_encoding_minimum_ari": null,
+    "structural_resource_only_ari": null
+  },
+  "automatic_screen_pass": false,
+  "checks_passed": 7,
+  "checks_total": 10,
+  "decision": "reject",
+  "limitations": [
+    "Branch E contains only 34 strict respondents, so only k=2 can satisfy the minimum profile size of 15.",
+    "No dimension score or psychometric scale is constructed.",
+    "PAC is reported descriptively because there is only one eligible candidate k.",
+    "Automatic screening does not replace single-feature and leave-one-feature-out substantive review.",
+    "A retained result with leave-one-feature-out ARI below 0.10 is explicitly marked feature-dependent and must be interpreted around its central indicator rather than as a broad latent scale."
+  ]
+}

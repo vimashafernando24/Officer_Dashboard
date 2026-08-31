@@ -1,0 +1,58 @@
+{
+  "cohort": {
+    "branch": "D",
+    "routing_basis": "validated final active branch inherited from Level 1",
+    "records": 191,
+    "dimensions": [
+      "economic_resources",
+      "human_capital_trajectory",
+      "career_transition_readiness",
+      "social_capital_belonging",
+      "agency_study_engagement"
+    ],
+    "complete_five_dimension_rows": 191
+  },
+  "method": {
+    "primary": "K-means on five equally z-standardized Level 1 dimension scores",
+    "substantive_candidate_k": [
+      3,
+      4,
+      5
+    ],
+    "boundary_diagnostic_k": [
+      2,
+      6
+    ],
+    "bootstrap_repetitions": 100,
+    "minimum_profile_size": 15,
+    "selection_rule": "Selected k=3 from the eligible 3\u20135 profile candidates using the lowest equal-weight mean rank across separation, compactness, bootstrap stability, and K-medoids agreement."
+  },
+  "selected_solution": {
+    "k": 3,
+    "silhouette": 0.18605192224602995,
+    "calinski_harabasz": 42.63151173101712,
+    "davies_bouldin": 1.6473736030079886,
+    "bootstrap_ari_mean": 0.5742252467540104,
+    "bootstrap_ari_p10": 0.2987078481937119,
+    "kmedoids_ari": 0.5049845434514827,
+    "ward_ari": 0.40766423553246517,
+    "profile_names": {
+      "1": "Profile 1: lower agency and study engagement and lower career-transition readiness",
+      "2": "Profile 2: lower human-capital trajectory and higher agency and study engagement",
+      "3": "Profile 3: higher human-capital trajectory and higher economic resources"
+    },
+    "profile_sizes": {
+      "1": 52,
+      "2": 87,
+      "3": 52
+    },
+    "low_confidence_memberships": 47
+  },
+  "quality": {
+    "checks_passed": 2,
+    "checks_total": 5,
+    "status": "Provisional solution \u2014 interpret with the failed diagnostics clearly reported",
+    "agency_score_caution": "Level 1 agency alpha was approximately 0.551 and remains a substantive interpretation caveat.",
+    "crosswalk_caution": "Study-to-career alignment relies on the documented Level 1 crosswalk and requires expert review."
+  }
+}

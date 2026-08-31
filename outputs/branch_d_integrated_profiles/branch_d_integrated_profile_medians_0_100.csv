@@ -1,0 +1,4 @@
+profile_id,profile_label,economic_resources,human_capital_trajectory,career_transition_readiness,social_capital_belonging,agency_study_engagement
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,77.22222222222221,58.333333333333336,67.5,55.55555555555555,51.388888888888886
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,75.0,58.333333333333336,80.0,66.66666666666666,80.55555555555554
+3,Profile 3: higher human-capital trajectory and higher economic resources,87.08333333333333,91.66666666666666,90.0,55.55555555555555,80.55555555555554

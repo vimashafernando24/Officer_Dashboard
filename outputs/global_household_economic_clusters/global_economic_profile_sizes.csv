@@ -1,0 +1,3 @@
+global_economic_profile_id,global_economic_profile_label,records,low_gower_confidence_records,mean_gower_silhouette,mean_consensus_silhouette,percent
+1,Exploratory lower-income/fewer-worker household pattern,135,2,0.3408696215583756,0.6857054105069474,37.1900826446281
+2,Exploratory higher-income/more-worker household pattern,228,23,0.37996679695059227,0.659864196054068,62.8099173553719

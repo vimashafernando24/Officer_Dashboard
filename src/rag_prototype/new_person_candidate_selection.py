@@ -19,6 +19,10 @@ MATCHING_LAYER_CSV = BASE / "outputs/rag_new_person_intake_v1/course_matching_la
 NOT_STATED = "NOT_STATED"
 
 MAX_CANDIDATES = 8
+UNSURE_SKILL_VALUES = {
+    "not sure", "not sure yet", "not sure / open to more than one",
+}
+UNSURE_SECTOR_VALUES = {"not sure", "not sure yet"}
 
 
 def _strip_variant_suffix(name: str) -> str:
@@ -91,7 +95,15 @@ def retrieve_sector_catalogue(answers: dict) -> dict:
             if area not in skill_areas:
                 skill_areas.append(area)
 
-    if not skill_areas:
+    sector_preference_unsure = bool(sectors) and all(
+        sector.casefold() in UNSURE_SECTOR_VALUES for sector in sectors
+    )
+    if not skill_areas and sector_preference_unsure:
+        skill_areas = sorted({
+            row["skill_area"] for row in rows
+            if row["skill_area"] != NOT_STATED
+        })
+    elif not skill_areas:
         return {
             "retrieval_method": "selected-sector catalogue scope",
             "sector_skill_areas": {},
@@ -121,6 +133,12 @@ def retrieve_sector_catalogue(answers: dict) -> dict:
                 sector: _as_distinct_strings(skills_by_sector.get(sector))
                 for sector in matched_sectors
             },
+            "exact_selected_skill_matches": [
+                {"sector": sector, "skill": skill}
+                for sector in matched_sectors
+                for skill in _as_distinct_strings(skills_by_sector.get(sector))
+                if _strip_variant_suffix(row["rag_course_name"]).casefold() == skill.casefold()
+            ],
             "structured_attributes": {
                 key: row[key] for key in (
                     "skill_area", "attendance_type", "attendance_days",
@@ -131,16 +149,77 @@ def retrieve_sector_catalogue(answers: dict) -> dict:
         })
 
     candidates.sort(key=lambda candidate: candidate["course_id"])
+
+    def preference_fit(candidate: dict) -> tuple[int, str]:
+        """Choose one governed catalogue variant per exact selected skill.
+
+        This is a coverage decision, not the final recommendation ranking. It
+        prevents an exact user-selected course from disappearing merely because
+        several catalogue variants share its name.
+        """
+        attributes = candidate["structured_attributes"]
+        score = 0
+        schedule = str(answers.get("q3_schedule") or "").lower()
+        attendance = str(attributes.get("attendance_type") or "").lower()
+        days = str(attributes.get("attendance_days") or "").lower()
+        if schedule and "no strong preference" not in schedule and NOT_STATED.lower() not in attendance:
+            wants_part_time = "part-time" in schedule or "weekend" in schedule
+            is_part_time = "part time" in attendance or "weekend" in days
+            score += 2 if wants_part_time == is_part_time else -2
+        language = str(answers.get("q4_language") or "").strip().lower()
+        course_languages = str(attributes.get("instruction_languages") or "").lower()
+        if language and "no strong preference" not in language and course_languages != NOT_STATED.lower():
+            score += 2 if language in course_languages else -2
+        qualification = str(answers.get("q5_qualification") or "").strip().lower()
+        if qualification.startswith("yes"):
+            stated = attributes.get("qualification_type") not in (NOT_STATED, "", None)
+            score += 1 if stated else -1
+        return score, candidate["course_id"]
+
+    required_skill_coverage = []
+    for sector in sectors:
+        for skill in _as_distinct_strings(skills_by_sector.get(sector)):
+            matching_candidates = [
+                candidate for candidate in candidates
+                if any(
+                    match["sector"] == sector and match["skill"] == skill
+                    for match in candidate["exact_selected_skill_matches"]
+                )
+            ]
+            if not matching_candidates:
+                continue
+            selected = max(matching_candidates, key=preference_fit)
+            required_skill_coverage.append({
+                "sector": sector,
+                "selected_skill": skill,
+                "required_course_id": selected["course_id"],
+                "available_exact_course_ids": [
+                    candidate["course_id"] for candidate in matching_candidates
+                ],
+            })
+    retrieval_method = (
+        "complete verified catalogue fallback for unspecified sector"
+        if sector_preference_unsure
+        else "complete verified catalogue slice for selected sectors"
+    )
+    note = (
+        f"The member did not specify a sector. Retrieved all {len(candidates)} verified "
+        "catalogue courses so the existing ranking flow can use the other questionnaire "
+        "answers and validated profile context. No suitability score or pre-ranking was applied."
+        if sector_preference_unsure
+        else (
+            f"Retrieved all {len(candidates)} verified courses in the catalogue areas "
+            f"mapped from the selected sectors. No suitability score or pre-ranking was applied."
+        )
+    )
     return {
-        "retrieval_method": "complete verified catalogue slice for selected sectors",
+        "retrieval_method": retrieval_method,
         "sector_skill_areas": sector_skill_areas,
         "skill_areas": skill_areas,
         "selected_skills_by_sector": skills_by_sector,
+        "required_selected_skill_coverage": required_skill_coverage,
         "candidates": candidates,
-        "note": (
-            f"Retrieved all {len(candidates)} verified courses in the catalogue areas "
-            f"mapped from the selected sectors. No suitability score or pre-ranking was applied."
-        ),
+        "note": note,
     }
 
 
@@ -171,7 +250,7 @@ def select_candidates(answers: dict) -> dict:
     pool = [r for r in rows if r["skill_area"] in skill_areas and r["skill_area"] != NOT_STATED]
     selected_skills_lower = {
         skill.lower() for skill in selected_skills
-        if skill.lower() not in ("not sure", "not sure / open to more than one")
+        if skill.lower() not in UNSURE_SKILL_VALUES
     }
 
     scored = []

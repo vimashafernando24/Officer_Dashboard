@@ -1,0 +1,35 @@
+variable,data_driven_variable_group,theory_pool,type,mean_within_group_bootstrap_coclustering
+father_edu,1,D2 — Educational and inherited cultural capital,ordinal,0.5666666666666667
+mother_edu,1,D2 — Educational and inherited cultural capital,ordinal,0.5666666666666667
+household_size,2,D1 — Household economic resources and responsibility,continuous,0.6916666666666667
+household_income,6,D1 — Household economic resources and responsibility,ordinal,0.6587719298245615
+household_workers,1,D1 — Household economic resources and responsibility,continuous,0.39166666666666666
+household_unemployed,2,D1 — Household economic resources and responsibility,continuous,0.6916666666666667
+primary_earner_status,5,D1 — Household economic resources and responsibility,nominal,0.48888888888888893
+employment_network_quality,7,D7 — Professional social capital,ordinal,1.0
+edu_status,6,D2 — Educational and inherited cultural capital,nominal,0.6394736842105262
+worked_while_studying,1,D2 — Educational and inherited cultural capital,nominal,0.39166666666666666
+primary_income_source,6,D1 — Household economic resources and responsibility,nominal,0.7166666666666667
+qualification_job_match,6,D6 — Qualification use and skill development,ordinal,0.7026315789473684
+work_autonomy,6,D8 — Work motivation and psychological need experience,ordinal,0.643859649122807
+sector_formality,6,D3 — Employment security and formality,ordinal,0.543859649122807
+competence_growth_at_work,6,D8 — Work motivation and psychological need experience,ordinal,0.7701754385964912
+professional_network_growth,6,D7 — Professional social capital,ordinal,0.7157894736842106
+relatedness_at_work,6,D8 — Work motivation and psychological need experience,ordinal,0.7482456140350876
+work_motivation_type,6,D8 — Work motivation and psychological need experience,ordinal,0.7359649122807018
+contract_type,6,D3 — Employment security and formality,nominal,0.7228070175438597
+contract_satisfaction,6,D5 — Subjective job satisfaction and mobility intention,nominal,0.775438596491228
+usual_hours_per_week,6,D4 — Earnings and working-time adequacy,continuous,0.39649122807017545
+income_hours_preference,6,D4 — Earnings and working-time adequacy,nominal,0.6719298245614034
+monthly_income_band,6,D4 — Earnings and working-time adequacy,ordinal,0.7228070175438597
+job_satisfaction,6,D5 — Subjective job satisfaction and mobility intention,ordinal,0.6701754385964912
+hopes_to_change_job,6,D5 — Subjective job satisfaction and mobility intention,nominal,0.5280701754385965
+job_security_12months,6,D3 — Employment security and formality,ordinal,0.5736842105263159
+received_training,8,D6 — Qualification use and skill development,nominal,1.0
+registered_as_jobseeker,4,D9 — Transition-to-work search pathway and barriers,nominal,0.8416666666666667
+employment_service_help_f,4,D9 — Transition-to-work search pathway and barriers,nominal,0.8416666666666667
+jobs_applied_before_hire,3,D9 — Transition-to-work search pathway and barriers,continuous,0.975
+interviews_before_hire,3,D9 — Transition-to-work search pathway and barriers,continuous,0.975
+search_duration_before_hire,5,D9 — Transition-to-work search pathway and barriers,ordinal,0.5111111111111112
+obstacle_finding_this_job,6,D9 — Transition-to-work search pathway and barriers,nominal,0.7210526315789474
+past_edu_useful_for_job,5,D6 — Qualification use and skill development,ordinal,0.5222222222222223

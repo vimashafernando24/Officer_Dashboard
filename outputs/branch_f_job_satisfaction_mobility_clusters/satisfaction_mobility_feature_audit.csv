@@ -1,0 +1,4 @@
+feature,type,observed,missing,maximum_distance_weight
+job_satisfaction,ordinal,81,0,0.3333333333333333
+contract_satisfaction_polarity,nominal,81,0,0.3333333333333333
+hopes_to_change_job,nominal,81,0,0.3333333333333333

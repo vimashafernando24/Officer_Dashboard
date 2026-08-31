@@ -1,0 +1,10 @@
+check,value,passed
+original Gower silhouette >= 0.25,0.37168009937936247,True
+ensemble bootstrap mean ARI >= 0.80,1.0,True
+minimum profile size >= 15,15.0,True
+ARI with full K-medoids >= 0.60,0.8538167435728411,True
+ARI with full spectral >= 0.60,0.718461876510657,True
+not near-exactly reproduced by one feature (ARI < 0.90),0.6396255850234009,True
+permutation screening p < 0.05,0.011764705882352941,True
+ambiguous consensus respondents <= 20%,3.571428571428571,True
+low-confidence respondents in original Gower space <= 20%,10.714285714285714,True

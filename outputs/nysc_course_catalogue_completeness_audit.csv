@@ -1,0 +1,276 @@
+audit_type,item,source,expected_count,observed_count,complete_n,total_n,completeness_percent,status,details,affected_course_ids
+claim_reconciliation,Displayed course total versus unique extracted entries,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,95,87,,,,unresolved_shortfall,"Both sources display 95, but each contains 87 identifiable course entries. Shortfall: 8. No missing course names were invented.",
+source_record_count,HTML course objects,CourseCatalogDetails/NYSC_Course_Catalogue.html,95,87,,,,below_displayed_claim,Count of structured objects in const COURSES.,
+source_record_count,DOCX course entries,CourseCatalogDetails/NYSC_Course_Catalogue.docx,95,87,,,,below_displayed_claim,Count of entries identified by course name followed by Full Time/Part Time.,
+source_match,Exact course-name matches across HTML and DOCX,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,87,87,,,,complete,HTML-only=0; DOCX-only=0.,
+category_count,ICT & Computing,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,18,HTML=18; DOCX=18,,,,complete,Category heading claim compared with extracted entries.,
+category_count,Automotive & Mechanical Engineering,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,15,HTML=15; DOCX=15,,,,complete,Category heading claim compared with extracted entries.,
+category_count,Electrical & Electronics,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,8,HTML=8; DOCX=8,,,,complete,Category heading claim compared with extracted entries.,
+category_count,Construction & Surveying,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,8,HTML=8; DOCX=8,,,,complete,Category heading claim compared with extracted entries.,
+category_count,Hospitality & Culinary Arts,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,6,HTML=6; DOCX=6,,,,complete,Category heading claim compared with extracted entries.,
+category_count,"Beauty, Fashion & Personal Care",CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,9,HTML=9; DOCX=9,,,,complete,Category heading claim compared with extracted entries.,
+category_count,Agriculture & Environment,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,5,HTML=5; DOCX=5,,,,complete,Category heading claim compared with extracted entries.,
+category_count,"Business, Management & Administration",CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,5,HTML=5; DOCX=5,,,,complete,Category heading claim compared with extracted entries.,
+category_count,Languages & Communication,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,8,HTML=8; DOCX=8,,,,complete,Category heading claim compared with extracted entries.,
+category_count,"Creative Arts, Design & Media",CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,5,HTML=5; DOCX=5,,,,complete,Category heading claim compared with extracted entries.,
+field_completeness,course_id,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,exact_course_name,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,alternate_abbreviated_name,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,category,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,subcategory,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,source_files,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,source_count,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,source_html_section,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,source_html_line,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,source_html_record_index,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,source_html_raw_object,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,source_docx_section,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,source_docx_page_start,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,source_docx_page_end,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,source_docx_heading,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,source_docx_raw_text,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,record_match_status,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,human_review_priority,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,human_review_reasons,canonical dataset,,,83,87,95.4,partial,"Blank means missing/unknown, not No.",
+field_completeness,catalogue_displayed_course_total,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,catalogue_tagline,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,catalogue_application_note,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,catalogue_contact_details,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,catalogue_website,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,catalogue_current_information_note,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,catalogue_global_metadata_source_text,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,overview_description,canonical dataset,,,36,87,41.4,partial,"Blank means missing/unknown, not No.",
+field_completeness,overview_description_source_text,canonical dataset,,,36,87,41.4,partial,"Blank means missing/unknown, not No.",
+field_completeness,objective_purpose,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,target_audience,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,course_outcomes,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,certificate_qualification_awarded,canonical dataset,,,32,87,36.8,partial,"Blank means missing/unknown, not No.",
+field_completeness,certificate_qualification_source_text,canonical dataset,,,32,87,36.8,partial,"Blank means missing/unknown, not No.",
+field_completeness,nvq_level_raw,canonical dataset,,,32,87,36.8,partial,"Blank means missing/unknown, not No.",
+field_completeness,progression_information,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,modules_json,canonical dataset,,,36,87,41.4,partial,"Blank means missing/unknown, not No.",
+field_completeness,modules_pipe,canonical dataset,,,36,87,41.4,partial,"Blank means missing/unknown, not No.",
+field_completeness,module_count,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,modules_html_json,canonical dataset,,,36,87,41.4,partial,"Blank means missing/unknown, not No.",
+field_completeness,modules_docx_json,canonical dataset,,,36,87,41.4,partial,"Blank means missing/unknown, not No.",
+field_completeness,subjects_topics,canonical dataset,,,36,87,41.4,partial,"Blank means missing/unknown, not No.",
+field_completeness,practical_components,canonical dataset,,,6,87,6.9,partial,"Blank means missing/unknown, not No.",
+field_completeness,theory_components,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,projects_assessments,canonical dataset,,,1,87,1.1,partial,"Blank means missing/unknown, not No.",
+field_completeness,tools_software_equipment_mentioned,canonical dataset,,,10,87,11.5,partial,"Blank means missing/unknown, not No.",
+field_completeness,technical_skills_explicitly_taught,canonical dataset,,,36,87,41.4,partial,"Blank means missing/unknown, not No.",
+field_completeness,soft_skills_explicitly_taught,canonical dataset,,,4,87,4.6,partial,"Blank means missing/unknown, not No.",
+field_completeness,entrepreneurship_business_content,canonical dataset,,,7,87,8.0,partial,"Blank means missing/unknown, not No.",
+field_completeness,language_communication_content,canonical dataset,,,10,87,11.5,partial,"Blank means missing/unknown, not No.",
+field_completeness,safety_compliance_content,canonical dataset,,,3,87,3.4,partial,"Blank means missing/unknown, not No.",
+field_completeness,raw_content_text,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,schedule_raw,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,full_time_part_time,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,weekday_weekend_evening,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,schedule_text,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,duration_raw,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,duration_value,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,duration_unit,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,normalized_duration_months,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,contact_hours_weekly,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,delivery_mode,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,language_raw,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,languages_json,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,practical_theory_delivery_split,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,maximum_students,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,batch_size,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,intake_information,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,start_dates,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,frequency_of_intake,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,application_deadlines,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,waiting_list_information,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,minimum_education,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,entry_requirements,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,prerequisite_subjects,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,age_requirements,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,prior_experience_requirements,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,required_qualifications,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,literacy_numeracy_requirements,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,selection_interview_test_requirements,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,recognition_of_prior_learning,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,training_centre,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,district,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,address_location,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,offered_at_multiple_centres,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,online_hybrid_availability,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,fees,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,registration_fees,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,material_equipment_costs,canonical dataset,,,1,87,1.1,partial,"Blank means missing/unknown, not No.",
+field_completeness,subsidies,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,scholarships,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,stipends,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,instalment_payment_information,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,accommodation_transport_support,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,learner_support,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,counselling_mentoring,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,explicit_target_occupations,canonical dataset,,,55,87,63.2,partial,"Blank means missing/unknown, not No.",
+field_completeness,explicit_target_occupations_source_text,canonical dataset,,,55,87,63.2,partial,"Blank means missing/unknown, not No.",
+field_completeness,career_paths,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,industries_sectors_mentioned,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,industries_sectors_source_text,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,employer_links,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,internships,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,apprenticeships,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,placement_job_support,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,self_employment_relevance,canonical dataset,,,1,87,1.1,partial,"Blank means missing/unknown, not No.",
+field_completeness,entrepreneurship_relevance,canonical dataset,,,1,87,1.1,partial,"Blank means missing/unknown, not No.",
+field_completeness,employment_outcomes,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,licensing_certification_relevance,canonical dataset,,,34,87,39.1,partial,"Blank means missing/unknown, not No.",
+field_completeness,admission_note,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,special_requirement,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,equipment_needed,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,uniform_requirement,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,assessment_method,canonical dataset,,,1,87,1.1,partial,"Blank means missing/unknown, not No.",
+field_completeness,attendance_rule,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,completion_requirement,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,external_accreditation,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,partner_organization,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,other_explicit_details,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,broad_skill_area,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,broad_skill_area_status,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,broad_skill_area_source_text,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,content_keywords,canonical dataset,,,70,87,80.5,partial,"Blank means missing/unknown, not No.",
+field_completeness,content_keywords_status,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,content_keywords_source_text,canonical dataset,,,70,87,80.5,partial,"Blank means missing/unknown, not No.",
+field_completeness,explicit_sector_tags,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,explicit_sector_tags_status,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,explicit_sector_tags_source_text,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,explicit_occupation_tags,canonical dataset,,,55,87,63.2,partial,"Blank means missing/unknown, not No.",
+field_completeness,explicit_occupation_tags_status,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,explicit_occupation_tags_source_text,canonical dataset,,,55,87,63.2,partial,"Blank means missing/unknown, not No.",
+field_completeness,schedule_category,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,schedule_category_status,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,schedule_category_source_text,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,normalized_duration,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,normalized_duration_status,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,normalized_duration_source_text,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,normalized_languages,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,normalized_languages_status,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,normalized_languages_source_text,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,normalized_nvq,canonical dataset,,,32,87,36.8,partial,"Blank means missing/unknown, not No.",
+field_completeness,normalized_nvq_status,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,normalized_nvq_source_text,canonical dataset,,,32,87,36.8,partial,"Blank means missing/unknown, not No.",
+field_completeness,delivery_pattern,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,delivery_pattern_status,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,delivery_pattern_source_text,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,qualification_type,canonical dataset,,,34,87,39.1,partial,"Blank means missing/unknown, not No.",
+field_completeness,qualification_type_status,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,qualification_type_source_text,canonical dataset,,,34,87,39.1,partial,"Blank means missing/unknown, not No.",
+field_completeness,employment_support_present,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,employment_support_present_status,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,employment_support_present_source_text,canonical dataset,,,0,87,0.0,absent_from_sources,"Blank means missing/unknown, not No.",
+field_completeness,entrepreneurship_content_present,canonical dataset,,,1,87,1.1,partial,"Blank means missing/unknown, not No.",
+field_completeness,entrepreneurship_content_present_status,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,entrepreneurship_content_present_source_text,canonical dataset,,,1,87,1.1,partial,"Blank means missing/unknown, not No.",
+field_completeness,practical_training_present,canonical dataset,,,6,87,6.9,partial,"Blank means missing/unknown, not No.",
+field_completeness,practical_training_present_status,canonical dataset,,,87,87,100.0,complete,"Blank means missing/unknown, not No.",
+field_completeness,practical_training_present_source_text,canonical dataset,,,6,87,6.9,partial,"Blank means missing/unknown, not No.",
+source_richness,course_name,CourseCatalogDetails/NYSC_Course_Catalogue.html,,,87,87,100.0,complete,Direct course-level field availability in this source.,
+source_richness,category,CourseCatalogDetails/NYSC_Course_Catalogue.html,,,87,87,100.0,complete,Direct course-level field availability in this source.,
+source_richness,schedule,CourseCatalogDetails/NYSC_Course_Catalogue.html,,,87,87,100.0,complete,Direct course-level field availability in this source.,
+source_richness,language,CourseCatalogDetails/NYSC_Course_Catalogue.html,,,87,87,100.0,complete,Direct course-level field availability in this source.,
+source_richness,maximum_students,CourseCatalogDetails/NYSC_Course_Catalogue.html,,,87,87,100.0,complete,Direct course-level field availability in this source.,
+source_richness,duration,CourseCatalogDetails/NYSC_Course_Catalogue.html,,,87,87,100.0,complete,Direct course-level field availability in this source.,
+source_richness,nvq_level,CourseCatalogDetails/NYSC_Course_Catalogue.html,,,32,87,36.8,partial,Direct course-level field availability in this source.,
+source_richness,course_overview_modules,CourseCatalogDetails/NYSC_Course_Catalogue.html,,,36,87,41.4,partial,Direct course-level field availability in this source.,
+source_richness,course_name,CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,87,87,100.0,complete,Direct course-level field availability in this source.,
+source_richness,category,CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,87,87,100.0,complete,Direct course-level field availability in this source.,
+source_richness,schedule,CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,87,87,100.0,complete,Direct course-level field availability in this source.,
+source_richness,language,CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,87,87,100.0,complete,Direct course-level field availability in this source.,
+source_richness,maximum_students,CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,87,87,100.0,complete,Direct course-level field availability in this source.,
+source_richness,duration,CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,87,87,100.0,complete,Direct course-level field availability in this source.,
+source_richness,nvq_level,CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,32,87,36.8,partial,Direct course-level field availability in this source.,
+source_richness,course_overview_modules,CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,36,87,41.4,partial,Direct course-level field availability in this source.,
+source_richness,global_schedule_definition,CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,1,1,100.0,present,DOCX explicitly defines Full Time=weekdays and Part Time=weekends.,
+source_richness,current_intake_dates_and_fees,CourseCatalogDetails/NYSC_Course_Catalogue.html,,,0,1,0.0,absent_from_sources,HTML footer instructs readers to contact NYSC for current intake dates and fees; no values are supplied.,
+course_human_review,NYSC-C003 — Computer Hardware Technician (Full Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,possible duplicate or explicit course variant,NYSC-C003
+course_human_review,NYSC-C004 — Computer Network Technician,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no course overview/modules stated,NYSC-C004
+course_human_review,NYSC-C005 — Computer Hardware Technician (Part Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no NVQ level stated | possible duplicate or explicit course variant,NYSC-C005
+course_human_review,NYSC-C006 — Computer Hardware And Network Technician,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated,NYSC-C006
+course_human_review,NYSC-C007 — Computer Certificate,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated,NYSC-C007
+course_human_review,NYSC-C008 — Computer Applications Assistant,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no NVQ level stated,NYSC-C008
+course_human_review,NYSC-C009 — Computer Based Accounting,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no NVQ level stated,NYSC-C009
+course_human_review,NYSC-C010 — Cisco Certified Network Associate,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated,NYSC-C010
+course_human_review,NYSC-C011 — Multimedia & Web Design,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated,NYSC-C011
+course_human_review,NYSC-C012 — Micro Controller Circuit Designing,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated,NYSC-C012
+course_human_review,NYSC-C013 — Java Programming With Software Applications Development,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated,NYSC-C013
+course_human_review,NYSC-C014 — Web Designing,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no NVQ level stated,NYSC-C014
+course_human_review,NYSC-C015 — AutoCAD,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated,NYSC-C015
+course_human_review,NYSC-C016 — Non-Linear Video Editing With Digital 3D Animation,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated,NYSC-C016
+course_human_review,NYSC-C017 — PYTHON,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated,NYSC-C017
+course_human_review,NYSC-C018 — Freelancer of Web Design & Development,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,high,cross-source conflict or unmatched record | no NVQ level stated,NYSC-C018
+course_human_review,NYSC-C019 — Automobile Mechanic (Full Time – Sinhala),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,possible duplicate or explicit course variant,NYSC-C019
+course_human_review,NYSC-C020 — Automobile Mechanic (Full Time – English),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no NVQ level stated | possible duplicate or explicit course variant,NYSC-C020
+course_human_review,NYSC-C021 — Automobile Electrician (Full Time – English),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no course overview/modules stated | possible duplicate or explicit course variant,NYSC-C021
+course_human_review,NYSC-C022 — Automobile Electrician (Full Time – Sinhala),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated | possible duplicate or explicit course variant,NYSC-C022
+course_human_review,NYSC-C023 — Three Wheeler Mechanic,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no course overview/modules stated,NYSC-C023
+course_human_review,NYSC-C024 — Motorcycle Mechanic (Full Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no course overview/modules stated | possible duplicate or explicit course variant,NYSC-C024
+course_human_review,NYSC-C025 — Machinist,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no course overview/modules stated,NYSC-C025
+course_human_review,NYSC-C026 — Aluminium Fabricator,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated,NYSC-C026
+course_human_review,NYSC-C027 — Welder (Full Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no course overview/modules stated,NYSC-C027
+course_human_review,NYSC-C028 — Agricultural Machinery Equipment Mechanic,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no course overview/modules stated,NYSC-C028
+course_human_review,NYSC-C029 — Automobile Mechanic (Part Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no NVQ level stated | possible duplicate or explicit course variant,NYSC-C029
+course_human_review,NYSC-C030 — Motorcycle Mechanic (Part Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated | possible duplicate or explicit course variant,NYSC-C030
+course_human_review,NYSC-C031 — Motor Winding,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated,NYSC-C031
+course_human_review,NYSC-C032 — Motor Controlling Technology,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated,NYSC-C032
+course_human_review,NYSC-C033 — Lapiderist (Gem Cutting),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no course overview/modules stated,NYSC-C033
+course_human_review,NYSC-C034 — Electrician (Full Time – English),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,possible duplicate or explicit course variant,NYSC-C034
+course_human_review,NYSC-C035 — Electronic Appliances Technician,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no course overview/modules stated,NYSC-C035
+course_human_review,NYSC-C036 — Refrigeration & Air Conditioning Technician (Full Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,possible duplicate or explicit course variant,NYSC-C036
+course_human_review,NYSC-C037 — Mobile Phone Repair Technician (Full Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no course overview/modules stated | possible duplicate or explicit course variant,NYSC-C037
+course_human_review,NYSC-C038 — Electrician (Part Time – Sinhala),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no NVQ level stated | possible duplicate or explicit course variant,NYSC-C038
+course_human_review,NYSC-C039 — Refrigeration & Air Conditioning Technician (Part Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no NVQ level stated | possible duplicate or explicit course variant,NYSC-C039
+course_human_review,NYSC-C040 — Mobile Phone Repair Technician (Part Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated | possible duplicate or explicit course variant,NYSC-C040
+course_human_review,"NYSC-C041 — Radio, TV & Allied Equipment Repairer",CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no NVQ level stated,NYSC-C041
+course_human_review,NYSC-C043 — Construction Site Supervisor (Full Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no course overview/modules stated | possible duplicate or explicit course variant,NYSC-C043
+course_human_review,NYSC-C044 — Survey Field Assistant,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no course overview/modules stated,NYSC-C044
+course_human_review,NYSC-C045 — Plumber,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no course overview/modules stated,NYSC-C045
+course_human_review,NYSC-C046 — Construction Site Supervisor (Part Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated | possible duplicate or explicit course variant,NYSC-C046
+course_human_review,NYSC-C047 — Draughtperson,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated,NYSC-C047
+course_human_review,NYSC-C048 — Engineering Draughtsmanship,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated,NYSC-C048
+course_human_review,NYSC-C049 — Designing & Space Planning For Draughtsmanship,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated,NYSC-C049
+course_human_review,NYSC-C050 — Professional Cookery,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no NVQ level stated,NYSC-C050
+course_human_review,NYSC-C051 — Baker (Full Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,possible duplicate or explicit course variant,NYSC-C051
+course_human_review,NYSC-C052 — Baker (Part Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no NVQ level stated | possible duplicate or explicit course variant,NYSC-C052
+course_human_review,NYSC-C053 — Cook,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated,NYSC-C053
+course_human_review,NYSC-C054 — Cake Decorator,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated,NYSC-C054
+course_human_review,NYSC-C055 — Cake & Cake Structure,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no NVQ level stated,NYSC-C055
+course_human_review,NYSC-C056 — Beautician (Full Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,possible duplicate or explicit course variant,NYSC-C056
+course_human_review,NYSC-C057 — Beautician (Part Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no NVQ level stated | possible duplicate or explicit course variant,NYSC-C057
+course_human_review,NYSC-C058 — Hair Dresser (Full Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,possible duplicate or explicit course variant,NYSC-C058
+course_human_review,NYSC-C059 — Hair Dresser (Part Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated | possible duplicate or explicit course variant,NYSC-C059
+course_human_review,NYSC-C060 — Bridal Dresser,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated,NYSC-C060
+course_human_review,NYSC-C061 — Tailor (Full Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,possible duplicate or explicit course variant,NYSC-C061
+course_human_review,NYSC-C062 — Tailor (Part Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated | possible duplicate or explicit course variant,NYSC-C062
+course_human_review,NYSC-C063 — Dress Making Without Blocks,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no NVQ level stated,NYSC-C063
+course_human_review,NYSC-C064 — Handycraft,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated,NYSC-C064
+course_human_review,NYSC-C065 — Field Assistant (Agricultural),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no course overview/modules stated,NYSC-C065
+course_human_review,NYSC-C066 — Plant Nursery Development Assistant,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no course overview/modules stated,NYSC-C066
+course_human_review,NYSC-C067 — Landscape Development Assistant,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no course overview/modules stated,NYSC-C067
+course_human_review,NYSC-C068 — Landscaping Technician (Full Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no course overview/modules stated | possible duplicate or explicit course variant,NYSC-C068
+course_human_review,NYSC-C069 — Landscaping Technician (Part Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated | possible duplicate or explicit course variant,NYSC-C069
+course_human_review,NYSC-C070 — Secretary – Secretarial Practices (Full Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,possible duplicate or explicit course variant,NYSC-C070
+course_human_review,NYSC-C071 — Secretary – Secretarial Practices (Part Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no NVQ level stated | possible duplicate or explicit course variant,NYSC-C071
+course_human_review,NYSC-C072 — Business Management,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated,NYSC-C072
+course_human_review,NYSC-C073 — Human Resources Management,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no NVQ level stated,NYSC-C073
+course_human_review,NYSC-C074 — Store Management,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated,NYSC-C074
+course_human_review,NYSC-C075 — Certificate in English Communication Essentials,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no NVQ level stated,NYSC-C075
+course_human_review,NYSC-C076 — Professional English,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated,NYSC-C076
+course_human_review,NYSC-C077 — Japanese Language,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,high,cross-source conflict or unmatched record | no NVQ level stated,NYSC-C077
+course_human_review,NYSC-C078 — Korean Language,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no NVQ level stated,NYSC-C078
+course_human_review,NYSC-C079 — French Language,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated,NYSC-C079
+course_human_review,NYSC-C080 — Sinhala Language,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated,NYSC-C080
+course_human_review,NYSC-C081 — Tamil Language,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no NVQ level stated,NYSC-C081
+course_human_review,NYSC-C082 — Mass Communication,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no NVQ level stated,NYSC-C082
+course_human_review,NYSC-C083 — Graphics Designer (Full Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no course overview/modules stated | possible duplicate or explicit course variant,NYSC-C083
+course_human_review,NYSC-C084 — Graphics Designer (Part Time),CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,medium,no course overview/modules stated | no NVQ level stated | possible duplicate or explicit course variant,NYSC-C084
+course_human_review,NYSC-C085 — Desktop Publisher,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no NVQ level stated,NYSC-C085
+course_human_review,NYSC-C086 — National Diploma in Television Program Production,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,,,,,low,no course overview/modules stated,NYSC-C086
+issue_summary,cross_source_module_conflict,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,2,,,,review,See source-conflicts CSV for row-level evidence.,NYSC-C018 | NYSC-C077
+issue_summary,possible_schedule_or_language_variant,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,16,,,,review,See source-conflicts CSV for row-level evidence.,NYSC-C003 | NYSC-C005 | NYSC-C019 | NYSC-C020 | NYSC-C021 | NYSC-C022 | NYSC-C024 | NYSC-C029 | NYSC-C030 | NYSC-C034 | NYSC-C036 | NYSC-C037 | NYSC-C038 | NYSC-C039 | NYSC-C040 | NYSC-C043 | NYSC-C046 | NYSC-C051 | NYSC-C052 | NYSC-C056 | NYSC-C057 | NYSC-C058 | NYSC-C059 | NYSC-C061 | NYSC-C062 | NYSC-C068 | NYSC-C069 | NYSC-C070 | NYSC-C071 | NYSC-C083 | NYSC-C084
+issue_summary,near_duplicate_course_name,CourseCatalogDetails/NYSC_Course_Catalogue.html | CourseCatalogDetails/NYSC_Course_Catalogue.docx,,1,,,,review,See source-conflicts CSV for row-level evidence.,NYSC-C019 | NYSC-C029

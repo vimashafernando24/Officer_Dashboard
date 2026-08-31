@@ -1,0 +1,3 @@
+profile_id,profile_label,records,mean_gower_silhouette,mean_consensus_silhouette,percent
+1,Diagnostic: stated minimum-wage boundary,28,0.6165539943020273,0.8845790434841941,82.3529411764706
+2,Diagnostic: no stated minimum-wage boundary,6,0.63396526959106,0.9114350709375357,17.647058823529413

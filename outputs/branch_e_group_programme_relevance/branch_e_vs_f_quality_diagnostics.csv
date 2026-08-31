@@ -1,0 +1,18 @@
+branch,metric,numerator,denominator,percent,value,definition
+E,respondent_course_rows_scored,2851,2958,96.382691,,At least one component available.
+E,scored_rows_driven_only_by_ideal_sector,1025,2851,35.952297,,ideal_sector is the only available component.
+E,scored_rows_with_2plus_available_signals,1585,2851,55.594528,,At least two survey-variable components available; answers are separate signals but may overlap conceptually.
+E,positive_rows_with_2plus_positive_signals,298,1061,28.086711,,At least two positive component matches.
+E,respondents_with_top_score_tie,31,34,91.176471,,More than one course shares the respondent's maximum relevance score.
+E,top_score_tie_group_size_mean,,,,18.264706,Mean number of courses sharing maximum score.
+E,top_score_tie_group_size_median,,,,18.0,Median number of courses sharing maximum score.
+E,top_score_tie_group_size_max,,,,63,Largest number of courses sharing maximum score.
+E,within_sector_course_differentiation,1,28,3.571429,,"Among respondents with at least two sector-matched courses, those whose sector-matched courses receive >1 distinct overall score."
+F,respondent_course_rows_scored,6092,7047,86.448134,,Read from frozen F prototype.
+F,scored_rows_driven_only_by_ideal_sector,6053,6092,99.359816,,"Sector available and entrepreneurship unavailable, from frozen F component flags."
+F,scored_rows_with_2plus_available_signals,37,6092,0.607354,,From frozen F components_available.
+F,positive_rows_with_2plus_positive_signals,25,1115,2.242152,,From frozen F components_positive.
+F,respondents_with_top_score_tie,69,72,95.833333,,Read from frozen F respondent-course scores.
+F,top_score_tie_group_size_mean,,,,15.319444,Read from frozen F respondent-course scores.
+F,top_score_tie_group_size_median,,,,18.0,Read from frozen F respondent-course scores.
+F,top_score_tie_group_size_max,,,,23,Read from frozen F respondent-course scores.

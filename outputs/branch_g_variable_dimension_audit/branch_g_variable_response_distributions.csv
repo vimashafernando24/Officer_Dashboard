@@ -1,0 +1,344 @@
+variable,response,records,percent_of_56
+active_search_4weeks,[missing],45,80.4
+active_search_4weeks,No — I did not take any active steps,6,10.7
+active_search_4weeks,Yes — I took active steps in the past four weeks,5,8.9
+age_first_married,[missing],43,76.8
+age_first_married,21.0,4,7.1
+age_first_married,23.0,2,3.6
+age_first_married,27.0,1,1.8
+age_first_married,34.0,1,1.8
+age_first_married,31.0,1,1.8
+age_first_married,22.0,1,1.8
+age_first_married,18.0,1,1.8
+age_first_married,35.0,1,1.8
+age_first_married,19.0,1,1.8
+age_group,22 – 25 years,30,53.6
+age_group,18 – 21 years,11,19.6
+age_group,30 – 35 years,8,14.3
+age_group,26 – 29 years,7,12.5
+area_type,Small town,19,33.9
+area_type,Rural area,14,25.0
+area_type,Metropolitan suburb,13,23.2
+area_type,Large city,10,17.9
+available_to_start,[missing],45,80.4
+available_to_start,No — I was not able to start last week,11,19.6
+current_activity_status,Home duties — looking after family or the household,16,28.6
+current_activity_status,Not working or looking for work for another reason,15,26.8
+current_activity_status,Not working — looking for work or trying to set up a business,11,19.6
+current_activity_status,Recently finished education — plan to start looking for work,8,14.3
+current_activity_status,I have a job but was temporarily away from it last week,3,5.4
+current_activity_status,Recently finished education — have work already arranged,3,5.4
+desire_for_work,[missing],36,64.3
+desire_for_work,Yes,11,19.6
+desire_for_work,No,9,16.1
+district,Colombo,13,23.2
+district,Jaffna,7,12.5
+district,Ratnapura,6,10.7
+district,Galle,5,8.9
+district,Trincomalee,4,7.1
+district,Puttalam,3,5.4
+district,Gampaha,3,5.4
+district,Kalutara,3,5.4
+district,Hambantota,2,3.6
+district,Ampara,2,3.6
+district,Kurunegala,2,3.6
+district,Kegalle,2,3.6
+district,Badulla,2,3.6
+district,Kilinochchi,1,1.8
+district,Kandy,1,1.8
+edu_end_year,[missing],41,73.2
+edu_end_year,2022.0,3,5.4
+edu_end_year,2017.0,3,5.4
+edu_end_year,2020.0,3,5.4
+edu_end_year,1989.0,1,1.8
+edu_end_year,2021.0,1,1.8
+edu_end_year,2009.0,1,1.8
+edu_end_year,2015.0,1,1.8
+edu_end_year,2026.0,1,1.8
+edu_end_year,2025.0,1,1.8
+edu_min_for_decent_job,University degree,24,42.9
+edu_min_for_decent_job,A/L level,12,21.4
+edu_min_for_decent_job,Vocational training or NVQ,7,12.5
+edu_min_for_decent_job,O/L level,5,8.9
+edu_min_for_decent_job,Post-graduate qualification,4,7.1
+edu_min_for_decent_job,Education level doesn't matter much,3,5.4
+edu_min_for_decent_job,Primary education,1,1.8
+edu_status,Currently in higher education (degree or diploma),26,46.4
+edu_status,Currently in secondary education (O/L or A/L),10,17.9
+edu_status,I have completed my education and am not currently studying,8,14.3
+edu_status,I left school or education before completing it,7,12.5
+edu_status,Currently doing post-graduate studies,4,7.1
+edu_status,Currently attending a vocational or NVQ programme,1,1.8
+employment_network_quality,Yes — I know several people with useful connections,18,32.1
+employment_network_quality,Not really — I have very few useful contacts,15,26.8
+employment_network_quality,Yes — I know one or two people who might help,12,21.4
+employment_network_quality,No — I have no one I could call on,11,19.6
+employment_self_efficacy,Very confident — I believe I could find something suitable,22,39.3
+employment_self_efficacy,Fairly confident — I probably could with effort,20,35.7
+employment_self_efficacy,Not confident at all — I feel it would be very difficult for me,8,14.3
+employment_self_efficacy,Not very confident — I have significant doubts,6,10.7
+ever_worked,Yes — I have worked before,34,60.7
+ever_worked,No — I have never worked,22,39.3
+expected_highest_edu_g,[missing],24,42.9
+expected_highest_edu_g,Post-graduate degree,12,21.4
+expected_highest_edu_g,Bachelor's degree,11,19.6
+expected_highest_edu_g,A/L level,4,7.1
+expected_highest_edu_g,Vocational certificate or NVQ,3,5.4
+expected_highest_edu_g,O/L level,1,1.8
+expected_highest_edu_g,Diploma,1,1.8
+father_edu,O/L level (Grade 9–11),19,33.9
+father_edu,A/L level (Grade 12–13),13,23.2
+father_edu,Bachelor's degree,10,17.9
+father_edu,Do not know / prefer not to say,5,8.9
+father_edu,Primary/Elementary (Grade 1–5),3,5.4
+father_edu,Post-graduate (Masters/PhD),2,3.6
+father_edu,Diploma,2,3.6
+father_edu,Vocational certificate / NVQ,1,1.8
+father_edu,No schooling,1,1.8
+father_occ,Government / public sector employee,11,19.6
+father_occ,Other,8,14.3
+father_occ,Manager / administrator,6,10.7
+father_occ,Deceased / not applicable,6,10.7
+father_occ,Professional or technical worker,6,10.7
+father_occ,Agricultural / farm worker,5,8.9
+father_occ,Retired,3,5.4
+father_occ,Sales worker,3,5.4
+father_occ,Factory / production / trade worker,2,3.6
+father_occ,Homemaker (full-time),2,3.6
+father_occ,Other service worker,2,3.6
+father_occ,Unpaid family worker,1,1.8
+father_occ,Unemployed / looking for work,1,1.8
+future_orientation_g,I have a general sense of direction but no concrete plan yet,19,33.9
+future_orientation_g,I have a clear plan and I am working toward specific goals even now,14,25.0
+future_orientation_g,I want to change my situation but feel stuck and unsure how to start,12,21.4
+future_orientation_g,I feel quite lost and uncertain about what the future holds for me,11,19.6
+gender,Male,31,55.4
+gender,Female,23,41.1
+gender,Prefer not to say,2,3.6
+has_children,No,46,82.1
+has_children,Yes,10,17.9
+has_job_to_return,[missing],50,89.3
+has_job_to_return,No — I do not currently have a job to return to,6,10.7
+highest_edu_completed,[missing],41,73.2
+highest_edu_completed,O/L level (Grade 10–11),6,10.7
+highest_edu_completed,Bachelor's degree,3,5.4
+highest_edu_completed,Junior secondary (up to Grade 9),3,5.4
+highest_edu_completed,A/L level (Grade 12–13),2,3.6
+highest_edu_completed,Vocational certificate or NVQ,1,1.8
+household_income,"LKR 60,000 – 120,000",14,25.0
+household_income,"Above LKR 200,000",13,23.2
+household_income,"LKR 120,000 – 200,000",10,17.9
+household_income,"LKR 30,000 – 60,000",9,16.1
+household_income,"Below LKR 30,000",7,12.5
+household_income,Prefer not to say,3,5.4
+household_size,4.0,27,48.2
+household_size,3.0,9,16.1
+household_size,5.0,7,12.5
+household_size,2.0,5,8.9
+household_size,6.0,4,7.1
+household_size,23.0,1,1.8
+household_size,7.0,1,1.8
+household_size,8.0,1,1.8
+household_size,25.0,1,1.8
+household_unemployed,1.0,18,32.1
+household_unemployed,2.0,17,30.4
+household_unemployed,0.0,16,28.6
+household_unemployed,3.0,4,7.1
+household_unemployed,5.0,1,1.8
+household_workers,2.0,30,53.6
+household_workers,1.0,18,32.1
+household_workers,0.0,4,7.1
+household_workers,23.0,1,1.8
+household_workers,5.0,1,1.8
+household_workers,15.0,1,1.8
+household_workers,3.0,1,1.8
+ideal_sector,Information technology and communications,17,30.4
+ideal_sector,"Hotels, restaurants, and hospitality",7,12.5
+ideal_sector,"Transport, storage, and logistics",6,10.7
+ideal_sector,Not sure,6,10.7
+ideal_sector,Manufacturing or production,5,8.9
+ideal_sector,"Personal services (beauty, fitness, wellness)",4,7.1
+ideal_sector,"Wholesale, retail, or repair",4,7.1
+ideal_sector,"Public administration, government, and defence",2,3.6
+ideal_sector,Construction and building,2,3.6
+ideal_sector,"Finance, banking, and insurance",1,1.8
+ideal_sector,Education and teaching,1,1.8
+ideal_sector,"Creative, media, and arts",1,1.8
+ideal_work_type,Start my own business,23,41.1
+ideal_work_type,Work for a local private Sri Lankan company,6,10.7
+ideal_work_type,Work for a multinational or large private company,6,10.7
+ideal_work_type,Not sure yet,5,8.9
+ideal_work_type,Work on my own or family farm or land,4,7.1
+ideal_work_type,I do not wish to work,4,7.1
+ideal_work_type,Work for the government or public sector,4,7.1
+ideal_work_type,Work in a family business (non-farming),3,5.4
+ideal_work_type,Work for a non-profit or NGO,1,1.8
+labour_market_connection,Very connected — I hear about jobs and training opportunities regularly,21,37.5
+labour_market_connection,Somewhat connected — I occasionally hear of relevant things,18,32.1
+labour_market_connection,Not connected — I feel cut off from opportunities and information,10,17.9
+labour_market_connection,Weakly connected — I rarely receive useful information,7,12.5
+looking_while_absent,[missing],50,89.3
+looking_while_absent,No,5,8.9
+looking_while_absent,Yes,1,1.8
+marital_status,Never married,39,69.6
+marital_status,Married,12,21.4
+marital_status,Engaged to be married,4,7.1
+marital_status,Widowed,1,1.8
+most_important_life_goal,Having financial security or earning a lot,13,23.2
+most_important_life_goal,Being successful in work or my career,12,21.4
+most_important_life_goal,"Having leisure, freedom, and personal time",9,16.1
+most_important_life_goal,Having a good family life,7,12.5
+most_important_life_goal,Finding purpose and meaning in life,6,10.7
+most_important_life_goal,Building self-confidence and personal fulfilment,4,7.1
+most_important_life_goal,Upholding my religious or cultural values,2,3.6
+most_important_life_goal,Making a meaningful contribution to society,2,3.6
+most_important_life_goal,Participating in community or public affairs,1,1.8
+most_useful_quality_for_job,Ambition and drive,11,19.6
+most_useful_quality_for_job,Communication and interpersonal skills,10,17.9
+most_useful_quality_for_job,IT and digital skills,8,14.3
+most_useful_quality_for_job,Business and economic knowledge,7,12.5
+most_useful_quality_for_job,"Command of languages (English, etc.)",6,10.7
+most_useful_quality_for_job,A good general education,5,8.9
+most_useful_quality_for_job,Teamwork and collaboration skills,5,8.9
+most_useful_quality_for_job,Scientific or technical qualifications,4,7.1
+mother_edu,O/L level (Grade 9–11),17,30.4
+mother_edu,A/L level (Grade 12–13),16,28.6
+mother_edu,Diploma,8,14.3
+mother_edu,Primary/Elementary (Grade 1–5),4,7.1
+mother_edu,Do not know / prefer not to say,4,7.1
+mother_edu,Vocational certificate / NVQ,3,5.4
+mother_edu,Bachelor's degree,3,5.4
+mother_edu,Post-graduate (Masters/PhD),1,1.8
+mother_occ,Homemaker (full-time),12,21.4
+mother_occ,Government / public sector employee,8,14.3
+mother_occ,Manager / administrator,6,10.7
+mother_occ,Other,4,7.1
+mother_occ,Agricultural / farm worker,4,7.1
+mother_occ,Unpaid family worker,4,7.1
+mother_occ,Other service worker,3,5.4
+mother_occ,Clerical / office worker,3,5.4
+mother_occ,Sales worker,3,5.4
+mother_occ,Unemployed / looking for work,3,5.4
+mother_occ,Deceased / not applicable,2,3.6
+mother_occ,Retired,2,3.6
+mother_occ,Professional or technical worker,1,1.8
+mother_occ,Factory / production / trade worker,1,1.8
+move_reason,[missing],41,73.2
+move_reason,For work or employment reasons,6,10.7
+move_reason,For education or training,5,8.9
+move_reason,Other reason,4,7.1
+moved_from_origin,Yes — I grew up here and still live here,41,73.2
+moved_from_origin,No — I moved from somewhere else,15,26.8
+num_children,[missing],46,82.1
+num_children,2.0,6,10.7
+num_children,1.0,4,7.1
+primary_earner_status,No — someone else is the main provider,39,69.6
+primary_earner_status,Yes — I provide the main household income,9,16.1
+primary_earner_status,Shared — several people contribute roughly equally,8,14.3
+primary_income_source,My parents or family,31,55.4
+primary_income_source,My regular job or business,10,17.9
+primary_income_source,My partner or spouse,7,12.5
+primary_income_source,Casual or informal work,3,5.4
+primary_income_source,Other source,3,5.4
+primary_income_source,"An education grant, scholarship, or training allowance",1,1.8
+primary_income_source,Unemployment or social security benefits,1,1.8
+reason_left_edu,[missing],49,87.5
+reason_left_edu,Did not enjoy schooling,4,7.1
+reason_left_edu,Failed examinations,2,3.6
+reason_left_edu,Other reason,1,1.8
+reason_not_in_labour_force,Currently in education or training,14,25.0
+reason_not_in_labour_force,"Personal or family responsibilities (caring for children, elderly, etc.)",9,16.1
+reason_not_in_labour_force,Other reason,7,12.5
+reason_not_in_labour_force,Have not started looking yet,6,10.7
+reason_not_in_labour_force,Could not find suitable work after trying,4,7.1
+reason_not_in_labour_force,Do not know how or where to look for work,3,5.4
+reason_not_in_labour_force,Awaiting the busy season (seasonal worker),2,3.6
+reason_not_in_labour_force,Already arranged self-employment to start in the future,2,3.6
+reason_not_in_labour_force,Awaiting recall to a former job,2,3.6
+reason_not_in_labour_force,Already found work to start in the future,2,3.6
+reason_not_in_labour_force,Believe there is no suitable work available in this area,2,3.6
+reason_not_in_labour_force,"Own illness, injury, or pregnancy",2,3.6
+reason_not_in_labour_force,I do not meet employers' requirements — feel I lack qualifications,1,1.8
+reason_not_seeking,[missing],50,89.3
+reason_not_seeking,In education or training,3,5.4
+reason_not_seeking,Personal or family responsibilities,2,3.6
+reason_not_seeking,Already found work to start later,1,1.8
+search_method_primary,[missing],51,91.1
+search_method_primary,Direct application to employers,1,1.8
+search_method_primary,"Online job ads (internet, social media)",1,1.8
+search_method_primary,Attending job fairs,1,1.8
+search_method_primary,Public employment office registration,1,1.8
+search_method_primary,"Through friends, relatives, or colleagues",1,1.8
+spell1_activity,[missing],41,73.2
+spell1_activity,Working for a salary or wage (employed),6,10.7
+spell1_activity,Self-employed / running own business,3,5.4
+spell1_activity,Home duties — caring for family or household,2,3.6
+spell1_activity,Not working or looking for other reasons,2,3.6
+spell1_activity,Looking for work / unemployed,1,1.8
+spell1_activity,In training or further education,1,1.8
+spell1_contract,[missing],52,92.9
+spell1_contract,No contract at all,2,3.6
+spell1_contract,Oral contract — temporary (12–36 months),1,1.8
+spell1_contract,Oral contract — temporary (under 12 months),1,1.8
+spell1_end_reason,[missing],52,92.9
+spell1_end_reason,Left to have a baby,2,3.6
+spell1_end_reason,Temporary job ended,1,1.8
+spell1_end_reason,Left for a better job,1,1.8
+spell1_is_current,[missing],41,73.2
+spell1_is_current,Yes — this is still my current situation,11,19.6
+spell1_is_current,No — it ended and I moved on to something else,4,7.1
+spell1_satisfaction,[missing],52,92.9
+spell1_satisfaction,Very satisfied,2,3.6
+spell1_satisfaction,Somewhat unsatisfied,1,1.8
+spell1_satisfaction,Somewhat satisfied,1,1.8
+spell2_activity,[missing],52,92.9
+spell2_activity,Not working or looking for other reasons,2,3.6
+spell2_activity,Home duties — caring for family or household,1,1.8
+spell2_activity,Working for a salary or wage (employed),1,1.8
+spell2_is_current,[missing],52,92.9
+spell2_is_current,Yes — this is still my current situation,3,5.4
+spell2_is_current,No — it ended and I moved on again,1,1.8
+spouse_activity,[missing],43,76.8
+spouse_activity,Working for a salary or wage,5,8.9
+spouse_activity,Self-employed / own business,5,8.9
+spouse_activity,Looking for work,1,1.8
+spouse_activity,Home duties and childcare,1,1.8
+spouse_activity,Attending education or training,1,1.8
+support_for_engagement,A great deal — people would actively support and encourage me,22,39.3
+support_for_engagement,Some — I would have moderate support,21,37.5
+support_for_engagement,Very little — most people would be indifferent,7,12.5
+support_for_engagement,None or opposition — I would face resistance from those around me,6,10.7
+time_use_decision_maker,I decide for myself — I have full autonomy over my time,31,55.4
+time_use_decision_maker,Family obligations — caregiving responsibilities determine my schedule,15,26.8
+time_use_decision_maker,Largely my family — they have major influence over how I spend my time,5,8.9
+time_use_decision_maker,Economic necessity — I have no choice but to do what I do,4,7.1
+time_use_decision_maker,Cultural or community expectations — social norms shape what I can do,1,1.8
+wanted_to_work,[missing],50,89.3
+wanted_to_work,Yes — I want to work,6,10.7
+wants_further_edu,Yes,32,57.1
+wants_further_edu,Not sure yet,17,30.4
+wants_further_edu,No,7,12.5
+wants_to_work_future,Yes — I want to work at some point,40,71.4
+wants_to_work_future,No — I do not want to work,16,28.6
+work_while_study_hours,[missing],38,67.9
+work_while_study_hours,5 to 10 hours,10,17.9
+work_while_study_hours,More than 20 hours,5,8.9
+work_while_study_hours,10 to 20 hours,2,3.6
+work_while_study_hours,Less than 5 hours,1,1.8
+work_while_study_motivation,[missing],38,67.9
+work_while_study_motivation,To gain work experience and build my CV,9,16.1
+work_while_study_motivation,To earn money,6,10.7
+work_while_study_motivation,Other reason,2,3.6
+work_while_study_motivation,To build connections that could lead to future employment,1,1.8
+work_while_study_paid,[missing],38,67.9
+work_while_study_paid,Paid,15,26.8
+work_while_study_paid,Unpaid,3,5.4
+work_while_study_type,[missing],38,67.9
+work_while_study_type,Paid work in a company (not internship),5,8.9
+work_while_study_type,Internship or apprenticeship in a private company,4,7.1
+work_while_study_type,Internship or apprenticeship in the public sector,4,7.1
+work_while_study_type,Work in a family business or farm,3,5.4
+work_while_study_type,Paid work in the public sector (not internship),1,1.8
+work_while_study_type,Informal or casual work,1,1.8
+worked_while_studying,No,38,67.9
+worked_while_studying,Yes,18,32.1

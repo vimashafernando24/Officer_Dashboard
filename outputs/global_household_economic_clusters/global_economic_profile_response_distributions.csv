@@ -1,0 +1,71 @@
+global_economic_profile_id,variable,response,records,within_profile_percent
+1,household_income,"Below LKR 30,000",19,14.074074074074074
+1,household_income,"LKR 30,000 – 60,000",35,25.925925925925927
+1,household_income,"LKR 60,000 – 120,000",63,46.666666666666664
+1,household_income,Prefer not to say,18,13.333333333333334
+2,household_income,"Above LKR 200,000",128,56.14035087719298
+2,household_income,"LKR 120,000 – 200,000",63,27.63157894736842
+2,household_income,"LKR 60,000 – 120,000",3,1.3157894736842106
+2,household_income,Prefer not to say,34,14.912280701754385
+1,household_size,2.0,10,7.407407407407407
+1,household_size,3.0,23,17.037037037037038
+1,household_size,4.0,43,31.85185185185185
+1,household_size,5.0,40,29.62962962962963
+1,household_size,6.0,12,8.88888888888889
+1,household_size,7.0,4,2.962962962962963
+1,household_size,8.0,1,0.7407407407407407
+1,household_size,10.0,1,0.7407407407407407
+1,household_size,23.0,1,0.7407407407407407
+2,household_size,1.0,1,0.43859649122807015
+2,household_size,2.0,5,2.192982456140351
+2,household_size,3.0,40,17.54385964912281
+2,household_size,4.0,100,43.85964912280702
+2,household_size,5.0,58,25.43859649122807
+2,household_size,6.0,18,7.894736842105263
+2,household_size,7.0,4,1.7543859649122806
+2,household_size,8.0,1,0.43859649122807015
+2,household_size,25.0,1,0.43859649122807015
+1,household_workers,0.0,7,5.185185185185185
+1,household_workers,1.0,59,43.7037037037037
+1,household_workers,2.0,58,42.96296296296296
+1,household_workers,3.0,7,5.185185185185185
+1,household_workers,4.0,2,1.4814814814814814
+1,household_workers,5.0,1,0.7407407407407407
+1,household_workers,23.0,1,0.7407407407407407
+2,household_workers,0.0,5,2.192982456140351
+2,household_workers,1.0,50,21.92982456140351
+2,household_workers,2.0,92,40.35087719298246
+2,household_workers,3.0,58,25.43859649122807
+2,household_workers,4.0,15,6.578947368421052
+2,household_workers,5.0,6,2.6315789473684212
+2,household_workers,6.0,1,0.43859649122807015
+2,household_workers,15.0,1,0.43859649122807015
+1,household_unemployed,0.0,17,12.592592592592593
+1,household_unemployed,1.0,68,50.370370370370374
+1,household_unemployed,2.0,41,30.37037037037037
+1,household_unemployed,3.0,7,5.185185185185185
+1,household_unemployed,4.0,2,1.4814814814814814
+2,household_unemployed,0.0,93,40.78947368421053
+2,household_unemployed,1.0,86,37.719298245614034
+2,household_unemployed,2.0,37,16.228070175438596
+2,household_unemployed,3.0,11,4.824561403508772
+2,household_unemployed,5.0,1,0.43859649122807015
+1,primary_earner_status,No — someone else is the main provider,105,77.77777777777777
+1,primary_earner_status,Shared — several people contribute roughly equally,17,12.592592592592593
+1,primary_earner_status,Yes — I provide the main household income,13,9.62962962962963
+2,primary_earner_status,No — someone else is the main provider,188,82.45614035087719
+2,primary_earner_status,Shared — several people contribute roughly equally,26,11.403508771929825
+2,primary_earner_status,Yes — I provide the main household income,14,6.140350877192983
+1,primary_income_source,"An education grant, scholarship, or training allowance",5,3.7037037037037037
+1,primary_income_source,Casual or informal work,7,5.185185185185185
+1,primary_income_source,My parents or family,94,69.62962962962963
+1,primary_income_source,My partner or spouse,5,3.7037037037037037
+1,primary_income_source,My regular job or business,15,11.11111111111111
+1,primary_income_source,Other source,7,5.185185185185185
+1,primary_income_source,Unemployment or social security benefits,2,1.4814814814814814
+2,primary_income_source,"An education grant, scholarship, or training allowance",5,2.192982456140351
+2,primary_income_source,Casual or informal work,7,3.0701754385964914
+2,primary_income_source,My parents or family,131,57.45614035087719
+2,primary_income_source,My partner or spouse,4,1.7543859649122806
+2,primary_income_source,My regular job or business,76,33.333333333333336
+2,primary_income_source,Other source,5,2.192982456140351

@@ -1,0 +1,106 @@
+question_id,survey_section,variable,framework_recorded_in_survey,question_text,observed_records,coverage_percent,unique_observed_responses,proposed_role,proposed_dimension
+A1,A,age_group,SWTS,What is your age?,81,100.0,4,profile/programme-mapping descriptor,Not a clustering dimension
+A2,A,gender,SWTS,What is your gender?,81,100.0,3,profile/programme-mapping descriptor,Not a clustering dimension
+A3,A,district,SWTS,Which district do you currently live in?,81,100.0,13,profile/programme-mapping descriptor,Not a clustering dimension
+A4,A,area_type,SWTS,How would you describe your current place of residence?,81,100.0,4,profile/programme-mapping descriptor,Not a clustering dimension
+A5,A,moved_from_origin,SWTS,Do you live in the same area where you grew up?,81,100.0,2,profile/programme-mapping descriptor,Not a clustering dimension
+A6,A,move_reason,SWTS,What was the main reason you moved to your current area?,31,38.3,4,profile/programme-mapping descriptor,Not a clustering dimension
+A7,A,marital_status,SWTS,What is your current marital status?,81,100.0,4,profile/programme-mapping descriptor,Not a clustering dimension
+A8,A,age_first_married,SWTS,At what age were you first married?,6,7.4,6,conditional descriptor,Not used in all-Branch-F distance
+A9,A,spouse_activity,SWTS,What does your spouse or partner currently do?,6,7.4,2,conditional descriptor,Not used in all-Branch-F distance
+A10,A,has_children,SWTS,Do you have any children?,81,100.0,2,profile/programme-mapping descriptor,Not a clustering dimension
+A11,A,num_children,SWTS,How many children do you have?,1,1.2,1,conditional descriptor,Not used in all-Branch-F distance
+A12,A,father_edu,SWTS,What is the highest level of education your father completed?,81,100.0,8,proposed clustering input,D2 — Educational and inherited cultural capital
+A13,A,mother_edu,SWTS,What is the highest level of education your mother completed?,81,100.0,7,proposed clustering input,D2 — Educational and inherited cultural capital
+A14,A,father_occ,SWTS,What is or was your father's main occupation?,81,100.0,11,profile/programme-mapping descriptor,Not a clustering dimension
+A15,A,mother_occ,SWTS,What is or was your mother's main occupation?,81,100.0,14,profile/programme-mapping descriptor,Not a clustering dimension
+A16,A,household_size,SWTS,How many people live in your household in total?,81,100.0,9,proposed clustering input,D1 — Household economic resources and responsibility
+A17,A,household_income,SWTS,What is the approximate total monthly income of your household from all sources?,81,100.0,5,proposed clustering input,D1 — Household economic resources and responsibility
+A18,A,household_workers,SWTS,How many people in your household are currently working for a salary or wage?,81,100.0,6,proposed clustering input,D1 — Household economic resources and responsibility
+A19,A,household_unemployed,SWTS,How many people in your household are currently without work and actively looking for a job?,81,100.0,4,proposed clustering input,D1 — Household economic resources and responsibility
+A20,A,primary_earner_status,Bourdieu,Are you the primary income earner in your household?,81,100.0,3,proposed clustering input,D1 — Household economic resources and responsibility
+A21,A,employment_network_quality,Bourdieu,Do you personally know people who could help you find employment or training opportunities?,81,100.0,4,proposed clustering input,D7 — Professional social capital
+B1,B,edu_status,SWTS,Which best describes your most recent education?,81,100.0,6,proposed clustering input,D2 — Educational and inherited cultural capital
+B2,B,reason_left_edu,SWTS,What was the main reason you left education before completing it?,1,1.2,1,conditional descriptor,Not used in all-Branch-F distance
+B3,B,highest_edu_completed,SWTS,What is the highest level of education you have completed?,21,25.9,5,conditional descriptor,Not used in all-Branch-F distance
+B4,B,edu_end_year,SWTS,Approximately what year did you finish or leave your most recent education?,21,25.9,9,conditional descriptor,Not used in all-Branch-F distance
+B5a_1,B,spell1_activity,SWTS,"Immediately after leaving or finishing education, what was your main activity?",21,25.9,5,conditional descriptor,Not used in all-Branch-F distance
+B5a_2,B,spell2_activity,SWTS,"After that first spell, what did you move on to next?",6,7.4,2,conditional descriptor,Not used in all-Branch-F distance
+B5a_3,B,spell3_activity,SWTS,What is your current main activity now?,4,4.9,3,conditional descriptor,Not used in all-Branch-F distance
+B5b_1,B,spell1_is_current,SWTS,"Is that still your current situation, or did it end and you moved on to something else?",21,25.9,2,conditional descriptor,Not used in all-Branch-F distance
+B5b_2,B,spell2_is_current,SWTS,Is that second activity still your current situation?,6,7.4,2,conditional descriptor,Not used in all-Branch-F distance
+B6_1,B,spell1_contract,SWTS,"In that first job after education, what kind of employment contract did you have?",2,2.5,2,conditional descriptor,Not used in all-Branch-F distance
+B6_2,B,spell2_contract,SWTS,What kind of employment contract did you have in that second job?,3,3.7,2,conditional descriptor,Not used in all-Branch-F distance
+B7_1,B,spell1_satisfaction,SWTS,How satisfied were you with that first job overall?,2,2.5,1,conditional descriptor,Not used in all-Branch-F distance
+B7_2,B,spell2_satisfaction,SWTS,How satisfied were you with that second job?,3,3.7,2,conditional descriptor,Not used in all-Branch-F distance
+B8_1,B,spell1_end_reason,SWTS,Why did that first activity end?,2,2.5,2,conditional descriptor,Not used in all-Branch-F distance
+B8_2,B,spell2_end_reason,SWTS,Why did that second activity end?,3,3.7,3,conditional descriptor,Not used in all-Branch-F distance
+B9,B,worked_while_studying,SWTS,Did you work (or do you currently work) while studying?,81,100.0,2,proposed clustering input,D2 — Educational and inherited cultural capital
+B10,B,work_while_study_type,SWTS,How would you describe that work experience while studying?,63,77.8,7,profile/programme-mapping descriptor,Not a clustering dimension
+B11,B,work_while_study_paid,SWTS,Was that work paid or unpaid?,63,77.8,2,profile/programme-mapping descriptor,Not a clustering dimension
+B12,B,work_while_study_hours,SWTS,How many hours per week did you work while studying?,63,77.8,3,profile/programme-mapping descriptor,Not a clustering dimension
+B13,B,work_while_study_motivation,SWTS,What was your main motivation for working while studying?,63,77.8,4,profile/programme-mapping descriptor,Not a clustering dimension
+B14,B,edu_min_for_decent_job,SWTS,"In your opinion, what is the minimum level of education a person needs to get a decent job today?",81,100.0,7,profile/programme-mapping descriptor,Not a clustering dimension
+B15,B,most_important_life_goal,SWTS,What is the most important goal in your life right now?,81,100.0,8,profile/programme-mapping descriptor,Not a clustering dimension
+B16,B,most_useful_quality_for_job,SWTS,Which quality do you think is most useful for finding a good job?,81,100.0,8,profile/programme-mapping descriptor,Not a clustering dimension
+B17,B,ideal_work_type,SWTS,"Ideally, what type of work would you prefer?",81,100.0,9,profile/programme-mapping descriptor,Not a clustering dimension
+B18,B,ideal_sector,SWTS,"Ideally, in which sector or industry do you want to work?",81,100.0,12,profile/programme-mapping descriptor,Not a clustering dimension
+B19,B,primary_income_source,SWTS,"Currently, where does most of your money come from?",81,100.0,5,proposed clustering input,D1 — Household economic resources and responsibility
+B20,B,current_activity_status,SWTS,"In the past week, what was your main activity?",81,100.0,3,routing/audit only,Not a clustering dimension
+BE1,E,qualification_job_match,Bourdieu,How well does your current job use your actual qualifications and training?,81,100.0,5,proposed clustering input,D6 — Qualification use and skill development
+E1,E,has_job_to_return,SWTS,"Even though you were not working last week, do you have a job or business to return to?",17,21.0,1,routing/audit only,Not a clustering dimension
+SE1,E,work_autonomy,SDT,How much autonomy and choice do you have in how you carry out your work?,81,100.0,4,proposed clustering input,D8 — Work motivation and psychological need experience
+BE2,E,sector_formality,Bourdieu,How would you describe the formality of your work situation?,81,100.0,4,proposed clustering input,D3 — Employment security and formality
+SE2,E,competence_growth_at_work,SDT,"Does your current work help you grow, develop new skills, and feel more capable?",81,100.0,4,proposed clustering input,D8 — Work motivation and psychological need experience
+BE3,E,professional_network_growth,Bourdieu,Has this job expanded your professional network and connections in any meaningful way?,81,100.0,4,proposed clustering input,D7 — Professional social capital
+E3,E,reason_temp_absence,SWTS,Why did you not work last week?,17,21.0,5,conditional descriptor,Not used in all-Branch-F distance
+SE3,E,relatedness_at_work,SDT,How connected and supported do you feel by the people you work with?,81,100.0,4,proposed clustering input,D8 — Work motivation and psychological need experience
+E4,E,enterprise_location_type,SWTS,Where is the workplace or business you work at located?,81,100.0,3,profile/programme-mapping descriptor,Not a clustering dimension
+SE4,E,work_motivation_type,SDT,What primarily motivates you to do this job?,81,100.0,5,proposed clustering input,D8 — Work motivation and psychological need experience
+E5,E,enterprise_registered,SWTS,Is the business or enterprise you work for officially registered with government authorities?,81,100.0,3,validation/profile descriptor,Avoid duplicate or temporary-event weighting
+E6,E,paid_taxes,SWTS,Did you pay taxes last year on your earnings from this work?,81,100.0,3,validation/profile descriptor,Avoid duplicate or temporary-event weighting
+E7,E,occupational_class,SWTS,Which occupational class best describes your current job?,81,100.0,8,profile/programme-mapping descriptor,Not a clustering dimension
+E8,E,contract_type,SWTS,What kind of employment contract are you currently working under?,81,100.0,8,proposed clustering input,D3 — Employment security and formality
+E9,E,contract_satisfaction,SWTS,How do you feel about your current contract situation?,81,100.0,8,proposed clustering input,D5 — Subjective job satisfaction and mobility intention
+E10,E,has_second_job,SWTS,"In addition to your main job, do you have a second job?",81,100.0,2,profile/programme-mapping descriptor,Not a clustering dimension
+E11,E,usual_hours_per_week,SWTS,How many hours per week do you usually work at your main job?,81,100.0,27,proposed clustering input,D4 — Earnings and working-time adequacy
+E12,E,actual_hours_last_week,SWTS,"Last week, how many hours did you actually work at your main job?",81,100.0,26,validation/profile descriptor,Avoid duplicate or temporary-event weighting
+E13,E,income_hours_preference,SWTS,"If you could choose regarding your work hours and income, which would you prefer?",81,100.0,3,proposed clustering input,D4 — Earnings and working-time adequacy
+E14,E,hours_below_normal,SWTS,Were your actual hours worked last week less than your normal working hours?,81,100.0,2,validation/profile descriptor,Avoid duplicate or temporary-event weighting
+E15,E,reason_below_normal_hours,SWTS,What was the main reason you worked fewer hours than normal last week?,32,39.5,9,conditional descriptor,Not used in all-Branch-F distance
+E16,E,monthly_income_band,SWTS,"On average, what is your total income from work per month?",81,100.0,6,proposed clustering input,D4 — Earnings and working-time adequacy
+E17,E,job_satisfaction,SWTS,"Overall, how satisfied are you with your main job?",81,100.0,4,proposed clustering input,D5 — Subjective job satisfaction and mobility intention
+E18,E,hopes_to_change_job,SWTS,Do you hope to change your main job in the future?,81,100.0,3,proposed clustering input,D5 — Subjective job satisfaction and mobility intention
+E19,E,reason_wants_to_change,SWTS,What is the most important reason you want to change your job?,46,56.8,7,conditional descriptor,Not used in all-Branch-F distance
+E20,E,job_security_12months,SWTS,How likely is it that you will be able to keep your main job over the next 12 months?,81,100.0,4,proposed clustering input,D3 — Employment security and formality
+E21,E,insecurity_bothers,SWTS,Does the uncertainty about your job situation bother you?,34,42.0,2,conditional descriptor,Not used in all-Branch-F distance
+E22,E,willing_to_relocate_f,SWTS,Would you consider relocating to find different or better work?,81,100.0,5,profile/programme-mapping descriptor,Not a clustering dimension
+E23,E,plans_further_edu_f,SWTS,Do you plan to continue your education or training in the future?,81,100.0,3,profile/programme-mapping descriptor,Not a clustering dimension
+E24,E,expected_highest_edu_f,SWTS,What is the highest level of education or training you expect to eventually achieve?,71,87.7,4,profile/programme-mapping descriptor,Not a clustering dimension
+E25,E,union_member,SWTS,Are you a member of a trade union or worker's association?,81,100.0,2,profile/programme-mapping descriptor,Not a clustering dimension
+E26,E,reason_not_union,SWTS,Why are you not a member of a trade union?,75,92.6,7,conditional descriptor,Not used in all-Branch-F distance
+E27,E,received_training,SWTS,Did you receive any training or development specifically for your current job?,81,100.0,2,proposed clustering input,D6 — Qualification use and skill development
+E28,E,training_type_received,SWTS,What was the main type of training you received for this job?,65,80.2,7,conditional descriptor,Not used in all-Branch-F distance
+E29,E,training_provider,SWTS,Who provided that training?,65,80.2,5,conditional descriptor,Not used in all-Branch-F distance
+E30,E,training_duration,SWTS,How long did that training last?,65,80.2,6,conditional descriptor,Not used in all-Branch-F distance
+E31,E,who_paid_training,SWTS,Who mainly paid for that training?,65,80.2,5,conditional descriptor,Not used in all-Branch-F distance
+E32,E,registered_as_jobseeker,SWTS,"Before getting this job, did you register as a jobseeker with any employment service?",81,100.0,2,proposed clustering input,D9 — Transition-to-work search pathway and barriers
+E33,E,employment_service_help_f,SWTS,Did you receive any help from an employment service before finding this job?,81,100.0,4,proposed clustering input,D9 — Transition-to-work search pathway and barriers
+E34,E,jobs_applied_before_hire,SWTS,Approximately how many jobs did you apply for before starting this job?,81,100.0,20,proposed clustering input,D9 — Transition-to-work search pathway and barriers
+E35,E,interviews_before_hire,SWTS,How many interviews did you attend before starting this job?,81,100.0,11,proposed clustering input,D9 — Transition-to-work search pathway and barriers
+E36,E,ever_refused_job_f,SWTS,"Before starting this job, did you ever refuse a job that was offered to you?",81,100.0,2,profile/programme-mapping descriptor,Not a clustering dimension
+E37,E,reason_refused_job_f,SWTS,What was the main reason you refused that other offer?,36,44.4,9,conditional descriptor,Not used in all-Branch-F distance
+E38,E,acceptance_conditions_search,SWTS,"When searching for this job, which best describes what you were willing to accept?",81,100.0,5,profile/programme-mapping descriptor,Not a clustering dimension
+E39,E,had_min_wage_during_search,SWTS,"When searching for this job, was there a minimum income below which you would not have accepted an offer?",81,100.0,2,profile/programme-mapping descriptor,Not a clustering dimension
+E40,E,search_duration_before_hire,SWTS,How long were you actively looking for work before finding this job?,81,100.0,6,proposed clustering input,D9 — Transition-to-work search pathway and barriers
+E41,E,obstacle_finding_this_job,SWTS,"Looking back, what was the main obstacle you faced in finding this job?",81,100.0,10,proposed clustering input,D9 — Transition-to-work search pathway and barriers
+E42,E,past_edu_useful_for_job,SWTS,Has your past education or training been useful for getting or performing this job?,81,100.0,4,proposed clustering input,D6 — Qualification use and skill development
+E43,E,employment_status,SWTS,"In your current job, business, or farm, how do you usually work?",81,100.0,6,profile/programme-mapping descriptor,Not a clustering dimension
+E44,E,job_recruitment_method,SWTS,How did you get your current job?,70,86.4,7,wage-worker subgroup description,Separate n=70 subgroup
+E45,E,enterprise_size,SWTS,How many workers are employed in the organisation you work for?,70,86.4,6,wage-worker subgroup description,Separate n=70 subgroup
+E46,E,gender_equality_at_work,SWTS,"In your current workplace, do women and men have equal opportunities for advancement?",70,86.4,4,wage-worker subgroup description,Separate n=70 subgroup
+E47,E,reason_self_employed,SWTS,Why did you choose to be self-employed rather than work for an employer?,11,13.6,5,self-employed subgroup description,Separate n=11 subgroup
+E48,E,business_helpers,SWTS,Does anyone help you in your business or economic activity?,11,13.6,4,self-employed subgroup description,Separate n=11 subgroup
+E49,E,business_funding_source,SWTS,How did you mainly get the money to start your current business?,11,13.6,5,self-employed subgroup description,Separate n=11 subgroup
+E50,E,business_profitability,SWTS,"Currently, is your business making a profit, a loss, or breaking even?",11,13.6,3,self-employed subgroup description,Separate n=11 subgroup
+E51,E,main_business_obstacle,SWTS,What is the most important challenge you face in running your business?,11,13.6,4,self-employed subgroup description,Separate n=11 subgroup

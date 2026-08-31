@@ -1,0 +1,7 @@
+feature,type,observed,missing,maximum_distance_weight
+registered_as_jobseeker,nominal,81,0,0.16666666666666666
+employment_service_help_f,nominal,81,0,0.16666666666666666
+jobs_applied_before_hire,continuous,81,0,0.16666666666666666
+interviews_before_hire,continuous,81,0,0.16666666666666666
+search_duration_before_hire,ordinal,81,0,0.16666666666666666
+obstacle_finding_this_job,nominal,81,0,0.16666666666666666

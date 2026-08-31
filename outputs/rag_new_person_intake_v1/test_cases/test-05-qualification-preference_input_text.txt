@@ -1,0 +1,444 @@
+{
+  "schema_version": "context_aware_programme_ranking_v3",
+  "user": {
+    "respondent_id": "test-05-qualification-preference",
+    "assigned_branch": "D",
+    "questionnaire_answers": {
+      "preferred_sectors": [
+        "Manufacturing or production"
+      ],
+      "preferred_skills_by_sector": {},
+      "preferred_skills": [
+        "Not sure"
+      ],
+      "reason_for_training": "Improve skills in my current job",
+      "schedule_preference": "No strong preference",
+      "language_preference": "No strong preference",
+      "qualification_preference": "Yes, I want a formal NVQ or qualification"
+    }
+  },
+  "constraints": {
+    "sectors": [
+      "Manufacturing or production"
+    ],
+    "skills": {},
+    "reason": "Improve skills in my current job",
+    "schedule": "No strong preference",
+    "language": "No strong preference",
+    "qualification": "Yes, I want a formal NVQ or qualification"
+  },
+  "assigned_branch_research_context": [
+    {
+      "profile_key": "D_motivation_p3",
+      "model_id": "D_motivation",
+      "dimension": "Study motivation",
+      "cluster_code": "Cluster MOT-3",
+      "cluster_name": "Goal-led, confident and connected study",
+      "common_description": "This cluster is centred on learners studying for personally meaningful goals, with substantial choice, strong confidence and a strong sense of connection to the institution.",
+      "validated_profile_definition": "Facts that define the cluster itself. These variables and diagnostics produced the\ncluster; they are NOT re-tested as post-cluster findings (doing so would be circular).\n\nBranch: D — strict final-path analytical cohort n=191 (of 362 total strict-cohort respondents: D=191, E=34, F=81, G=56).\nRetained dimension: Motivation and study experience\nNumber of profiles in this retained model (k): 3\nThis profile's id and label: Profile 3 — \"Consensus motivation profile 3: highly self-directed, capable and connected\"\nThis profile's exact frozen size: n=69 (cross-verified against the Part III freeze-verification table in the source report)\n\nExact cluster-forming variables (the only inputs used to build this clustering; all\nother survey variables were deliberately excluded from distance calculation and are\nonly used descriptively in sections 2-3 below):\n  - study_motivation_type\n  - autonomy_in_study\n  - competence_in_study_field\n  - relatedness_at_institution\n\nTheoretical basis and purpose: Self-Determination Theory (Deci & Ryan, 2000): autonomy, competence and relatedness in the study context, plus stated study-motivation type.\n\nClustering method: Gower distance over original mixed-type responses (no invented 0-100\nscores), consensus of repeated K-medoids and spectral clustering across 100 matched\n80% subsamples (200 base partitions), final clusters from K-medoids on (1 - co-association).\n\nValidation diagnostics for this retained model: Gower silhouette 0.350; bootstrap/subsample ARI 0.981; ARI vs full K-medoids 0.968 and vs spectral 0.712; PAC (proportion of ambiguous clustering) 0.193; 7 of 8 mandatory validation checks passed.\nFinal decision status: Retained for exploratory use, with ambiguity and one-item-per-construct cautions.\nModel-level caution (from the frozen decision register): Four single survey items represent motivation, autonomy, competence and relatedness; uncertain memberships must remain visible.\n\nAdditional definitional context: About 23.6% of respondents in this model had low Gower membership confidence (ambiguous cluster assignment); uncertain assignments must remain flagged. The three profile labels summarise four single-item questions only — they are not clinical or psychometrically validated SDT instrument types.\n\nInterpretation of this specific profile (verbatim from the frozen report's per-model\nprofile table):\n  Responses indicated stronger autonomous motivation, perceived competence and institutional relatedness.\n\nReminder: this profile exists only WITHIN this one retained dimension. A respondent's\nmembership here says nothing about their membership in any other branch's or dimension's\nprofile system (see PROHIBITED_INFERENCES).\n\n----------------------------------------------------------------------------------------------------",
+      "validated_cluster_defining_variables": [
+        {
+          "variable": "study_motivation_type",
+          "question_id": "SC1",
+          "question": "Why are you studying right now? Which best describes your motivation?",
+          "user_answer": "Because I am genuinely passionate about this subject"
+        },
+        {
+          "variable": "autonomy_in_study",
+          "question_id": "SC2",
+          "question": "How much choice and control do you have over what and how you study?",
+          "user_answer": "A great deal — I have real freedom to shape my learning"
+        },
+        {
+          "variable": "competence_in_study_field",
+          "question_id": "SC3",
+          "question": "How capable and effective do you feel in your area of study?",
+          "user_answer": "Very capable — confident and effective in my field"
+        },
+        {
+          "variable": "relatedness_at_institution",
+          "question_id": "SC4",
+          "question": "How much do you feel you belong and are connected to the people at your institution?",
+          "user_answer": "Somewhat — I have some connections but am not deeply involved"
+        }
+      ],
+      "validated_profile_findings": [
+        {
+          "profile_key": "D_motivation_p3",
+          "variable": "employment_network_quality",
+          "label": "Useful employment/training contacts",
+          "finding": "Useful employment/training contacts: more often reported ‘Yes — I know several people with useful connections’ (21/69, 30.4% vs 15.6% in other profile(s))",
+          "interpretation_guard": "Treat this only as the retained between-profile comparison stated above; do not turn it into a claim that one response was the profile's most common answer.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_motivation, profile_id=3, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_motivation, variable=employment_network_quality"
+          }
+        }
+      ]
+    },
+    {
+      "profile_key": "D_economic_p2",
+      "model_id": "D_economic",
+      "dimension": "Household resources",
+      "cluster_code": "Cluster RES-2",
+      "cluster_name": "Family-funded study with more household earners",
+      "common_description": "This cluster is centred on four-person households with two wage earners and one person seeking work. It combines a learner who is not the main earner with family-funded education. Household income is not included because it was not disclosed.",
+      "validated_profile_definition": "Facts that define the cluster itself. These variables and diagnostics produced the\ncluster; they are NOT re-tested as post-cluster findings (doing so would be circular).\n\nBranch: D — strict final-path analytical cohort n=191 (of 362 total strict-cohort respondents: D=191, E=34, F=81, G=56).\nRetained dimension: Economic resources and household pressure\nNumber of profiles in this retained model (k): 2\nThis profile's id and label: Profile 2 — \"Economic profile 2: relatively higher household economic position\"\nThis profile's exact frozen size: n=147 (cross-verified against the Part III freeze-verification table in the source report)\n\nExact cluster-forming variables (the only inputs used to build this clustering; all\nother survey variables were deliberately excluded from distance calculation and are\nonly used descriptively in sections 2-3 below):\n  - edu_funding_source\n  - household_income\n  - household_size\n  - household_unemployed\n  - household_workers\n  - primary_earner_status\n  - primary_income_source\n\nTheoretical basis and purpose: Bourdieu economic capital and ILO School-to-Work Transition Survey household/education-financing position.\n\nClustering method: Gower distance over original mixed-type responses (no invented 0-100\nscores), consensus of repeated K-medoids and spectral clustering across 100 matched\n80% subsamples (200 base partitions), final clusters from K-medoids on (1 - co-association).\n\nValidation diagnostics for this retained model: Gower silhouette 0.436; bootstrap/subsample ARI 0.986; source-method ARIs 0.849 and 0.796; 7 of 8 mandatory validation checks passed.\nFinal decision status: Retained cautiously.\nModel-level caution (from the frozen decision register): Income refusals and household-count inconsistencies were handled pairwise in clustering; profiles indicate relative position, not poverty status.\n\nAdditional definitional context: 29 of 191 Branch D respondents declined to report household income. 5 records had reported household workers plus unemployed members exceeding household size; their derived shares were treated as unavailable (missing) rather than silently corrected. Missing-aware Gower distance used only the remaining comparable components for these respondents.\n\nInterpretation of this specific profile (verbatim from the frozen report's per-model\nprofile table):\n  Higher relative position across the same observed components.\n\nReminder: this profile exists only WITHIN this one retained dimension. A respondent's\nmembership here says nothing about their membership in any other branch's or dimension's\nprofile system (see PROHIBITED_INFERENCES).\n\n----------------------------------------------------------------------------------------------------",
+      "validated_cluster_defining_variables": [
+        {
+          "variable": "household_income",
+          "question_id": "A17",
+          "question": "What is the approximate total monthly income of your household from all sources?",
+          "user_answer": "Above LKR 200,000"
+        },
+        {
+          "variable": "household_size",
+          "question_id": "A16",
+          "question": "How many people live in your household in total?",
+          "user_answer": "3.0"
+        },
+        {
+          "variable": "household_workers",
+          "question_id": "A18",
+          "question": "How many people in your household are currently working for a salary or wage?",
+          "user_answer": "2.0"
+        },
+        {
+          "variable": "household_unemployed",
+          "question_id": "A19",
+          "question": "How many people in your household are currently without work and actively looking for a job?",
+          "user_answer": "2.0"
+        },
+        {
+          "variable": "primary_earner_status",
+          "question_id": "A20",
+          "question": "Are you the primary income earner in your household?",
+          "user_answer": "No — someone else is the main provider"
+        },
+        {
+          "variable": "primary_income_source",
+          "question_id": "B19",
+          "question": "Currently, where does most of your money come from?",
+          "user_answer": "My parents or family"
+        },
+        {
+          "variable": "edu_funding_source",
+          "question_id": "BC2",
+          "question": "How is your current education mainly funded?",
+          "user_answer": "Paid for by my family"
+        }
+      ],
+      "validated_profile_findings": [
+        {
+          "profile_key": "D_economic_p2",
+          "variable": "ideal_sector",
+          "label": "Ideal sector",
+          "finding": "Ideal sector: more often reported ‘Information technology and communications’ (93/147, 63.3% vs 40.9% in other profile(s)) [sparse table]",
+          "interpretation_guard": "The most common answer within this profile was Information technology and communications (63.3%). Keep any wording proportional and distinguish this within-profile pattern from the retained between-profile comparison.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_economic, profile_id=2, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_economic, variable=ideal_sector"
+          }
+        },
+        {
+          "profile_key": "D_economic_p2",
+          "variable": "study_field_preference",
+          "label": "Current or preferred field of study",
+          "finding": "Current or preferred field of study: more often reported ‘ICT or computing’ (95/145, 65.5% vs 26.2% in other profile(s)) [sparse table]",
+          "interpretation_guard": "The most common answer within this profile was ICT or computing (65.5%). Keep any wording proportional and distinguish this within-profile pattern from the retained between-profile comparison.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_economic, profile_id=2, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_economic, variable=study_field_preference"
+          }
+        },
+        {
+          "profile_key": "D_economic_p2",
+          "variable": "institution_type",
+          "label": "Current institution type",
+          "finding": "Current institution type: more often reported ‘Private school or private degree-awarding institute’ (106/147, 72.1% vs 9.1% in other profile(s)) [sparse table; cross-dimensional/related variable]",
+          "interpretation_guard": "The most common answer within this profile was Private school or private degree-awarding institute (72.1%). Keep any wording proportional and distinguish this within-profile pattern from the retained between-profile comparison.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_economic, profile_id=2, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_economic, variable=institution_type"
+          }
+        },
+        {
+          "profile_key": "D_economic_p2",
+          "variable": "job_search_method_d",
+          "label": "Main job-search method while studying",
+          "finding": "Main job-search method while studying: more often reported ‘Online job ads (internet, social media)’ (45/89, 50.6% vs 18.2% in other profile(s)) [conditional eligible n=111; sparse table]",
+          "interpretation_guard": "The most common answer within this profile was Online job ads (internet, social media) (50.6%). Keep any wording proportional and distinguish this within-profile pattern from the retained between-profile comparison.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_economic, profile_id=2, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_economic, variable=job_search_method_d"
+          }
+        }
+      ]
+    },
+    {
+      "profile_key": "D_educational_cultural_p2",
+      "model_id": "D_educational_cultural",
+      "dimension": "Education background",
+      "cluster_code": "Cluster EDU-2",
+      "cluster_name": "State-study postgraduate pathway",
+      "common_description": "This cluster is centred on state-sector learners expecting postgraduate education, without reported work while studying or a stop-and-return education pathway. Parental education was not known or not disclosed.",
+      "validated_profile_definition": "Facts that define the cluster itself. These variables and diagnostics produced the\ncluster; they are NOT re-tested as post-cluster findings (doing so would be circular).\n\nBranch: D — strict final-path analytical cohort n=191 (of 362 total strict-cohort respondents: D=191, E=34, F=81, G=56).\nRetained dimension: Educational trajectory and cultural capital\nNumber of profiles in this retained model (k): 4\nThis profile's id and label: Profile 2 — \"State-institution students without work exposure\"\nThis profile's exact frozen size: n=53 (cross-verified against the Part III freeze-verification table in the source report)\n\nExact cluster-forming variables (the only inputs used to build this clustering; all\nother survey variables were deliberately excluded from distance calculation and are\nonly used descriptively in sections 2-3 below):\n  - expected_highest_edu_d\n  - father_edu\n  - institution_type\n  - mother_edu\n  - re_entered_education\n  - worked_while_studying\n\nTheoretical basis and purpose: Inherited educational background (Bourdieu cultural capital, proxied by parental education) plus current educational trajectory (institution type, work-while-studying, education re-entry).\n\nClustering method: Gower distance over original mixed-type responses (no invented 0-100\nscores), consensus of repeated K-medoids and spectral clustering across 100 matched\n80% subsamples (200 base partitions), final clusters from K-medoids on (1 - co-association).\n\nValidation diagnostics for this retained model: Gower silhouette 0.427; bootstrap/subsample ARI 0.963; source-method ARIs 0.776 and 0.934; 8 of 8 mandatory validation checks passed.\nFinal decision status: Retained.\nModel-level caution (from the frozen decision register): Parental education is a proxy only; work-experience and re-entry follow-ups are structurally linked to variables defining these profiles.\n\nAdditional definitional context: Parental education is only a proxy for family cultural capital; it is not a measure of intelligence or merit. Sensitivity analysis showed that work-while-studying experience and institution type are important drivers of the partition and must remain explicit in interpretation, not collapsed into a single 'cultural capital' score.\n\nInterpretation of this specific profile (verbatim from the frozen report's per-model\nprofile table):\n  State-institution attendance and no work-while-studying experience.\n\nReminder: this profile exists only WITHIN this one retained dimension. A respondent's\nmembership here says nothing about their membership in any other branch's or dimension's\nprofile system (see PROHIBITED_INFERENCES).\n\n----------------------------------------------------------------------------------------------------",
+      "validated_cluster_defining_variables": [
+        {
+          "variable": "father_edu",
+          "question_id": "A12",
+          "question": "What is the highest level of education your father completed?",
+          "user_answer": "Diploma"
+        },
+        {
+          "variable": "mother_edu",
+          "question_id": "A13",
+          "question": "What is the highest level of education your mother completed?",
+          "user_answer": "Bachelor's degree"
+        },
+        {
+          "variable": "expected_highest_edu_d",
+          "question_id": "C6",
+          "question": "What is the highest level of education or training you expect to complete in total?",
+          "user_answer": "Post-graduate degree"
+        },
+        {
+          "variable": "institution_type",
+          "question_id": "BC1",
+          "question": "What type of institution are you currently attending?",
+          "user_answer": "International school or foreign university programme"
+        },
+        {
+          "variable": "worked_while_studying",
+          "question_id": "B9",
+          "question": "Did you work (or do you currently work) while studying?",
+          "user_answer": "No"
+        },
+        {
+          "variable": "re_entered_education",
+          "question_id": "C4",
+          "question": "Have you ever stopped your education to work or look for work, then re-entered education later?",
+          "user_answer": "No"
+        }
+      ],
+      "validated_profile_findings": [
+        {
+          "profile_key": "D_educational_cultural_p2",
+          "variable": "already_job_searching",
+          "label": "Already searching for work/business",
+          "finding": "Already searching for work/business: more often reported ‘No — not yet’ (34/53, 64.2% vs 33.3% in other profile(s))",
+          "interpretation_guard": "The most common answer within this profile was No — not yet (64.2%). Keep any wording proportional and distinguish this within-profile pattern from the retained between-profile comparison.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_educational_cultural, profile_id=2, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_educational_cultural, variable=already_job_searching"
+          }
+        },
+        {
+          "profile_key": "D_educational_cultural_p2",
+          "variable": "primary_income_source",
+          "label": "Primary personal income source",
+          "finding": "Primary personal income source: more often reported ‘My parents or family’ (50/53, 94.3% vs 71.7% in other profile(s)) [sparse table; cross-dimensional/related variable]",
+          "interpretation_guard": "The most common answer within this profile was My parents or family (94.3%). Keep any wording proportional and distinguish this within-profile pattern from the retained between-profile comparison.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_educational_cultural, profile_id=2, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_educational_cultural, variable=primary_income_source"
+          }
+        },
+        {
+          "profile_key": "D_educational_cultural_p2",
+          "variable": "edu_funding_source",
+          "label": "Main education funding source",
+          "finding": "Main education funding source: more often reported ‘Government-funded or free of charge’ (24/53, 45.3% vs 6.5% in other profile(s)) [sparse table; cross-dimensional/related variable]",
+          "interpretation_guard": "The most common answer within this profile was Paid for by my family (50.9%). The retained statement highlights Government-funded or free of charge only because it differed between profiles. Do not call the highlighted category primary, dominant, top, or most common.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_educational_cultural, profile_id=2, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_educational_cultural, variable=edu_funding_source"
+          }
+        },
+        {
+          "profile_key": "D_educational_cultural_p2",
+          "variable": "household_income",
+          "label": "Household income band",
+          "finding": "Household income band: less often reported ‘Above LKR 200,000’ (5/49, 10.2% vs 51.3% in other profile(s)) [cross-dimensional/related variable]",
+          "interpretation_guard": "Treat this only as the retained between-profile comparison stated above; do not turn it into a claim that one response was the profile's most common answer.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_educational_cultural, profile_id=2, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_educational_cultural, variable=household_income"
+          }
+        }
+      ]
+    }
+  ],
+  "catalogue_retrieval": {
+    "method": "complete selected-sector catalogue slice",
+    "sector_skill_areas": {},
+    "skill_areas": [
+      "Automotive & Mechanical Engineering",
+      "Electrical & Electronics"
+    ],
+    "selected_skills_by_sector": {},
+    "required_selected_skill_coverage": [],
+    "note": "22 courses in bridged skill area(s) ['Automotive & Mechanical Engineering', 'Electrical & Electronics']; 8 selected deterministically by score."
+  },
+  "candidate_programmes": [
+    {
+      "course_id": "COURSE-005",
+      "course_name": "Automobile Mechanic",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "Automotive & Mechanical Engineering",
+        "attendance_type": "Full Time",
+        "attendance_days": "Weekdays",
+        "duration_months": "12",
+        "instruction_languages": "[\"Sinhala\"]",
+        "nvq_level": "Level 4",
+        "qualification_type": "National Vocational Qualification (NVQ)"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-005\n\nCOURSE NAME: Automobile Mechanic\n\nDOCUMENT STATUS: SAFE_TO_INDEX\n\nCORPUS VERSION: FINAL_RAG_CORPUS_V2\n\nPROMOTED SOURCE DOCUMENT: outputs/rag_course_knowledge/manual_review_resolved_candidates/course-005_automobile_mechanic_candidate.txt\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOTS\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.21.32.png; Screenshot 2026-04-12 at 22.23.26.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.25.19.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-005\n\nREMAINING UNCERTAINTY MARKERS: 0\n\nCORRECTION NOTE: Both detail screenshots visibly show the same course name, Sinhala language, 20-student capacity, Full Time weekday delivery and Level 4 outcome. The two corresponding catalogue cards also both show Full Time, 20 students and 01 year. They are therefore retained as one repeated screenshot-derived parent, not split using the conflicting structured English record.\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nAutomobile Mechanic\nLANGUAGE\nMAX STUDENTS\nSinhala\n20\nAPPLY NOW\nCourse Overview\nThe National Youth Service Council has initiated several Course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations.\nAutomobile Mechanic/Automobile Technician will give you theoretical knowledge as well as job\noriented practical that is necessary for employment and higher education. This is a full time course\nwhich will be held on weekdays.\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\nBy completing this course , can achieve Competency Level 4 under the National Vocational\nQualifications Competency Standards through following a variety of full time study programs covering\na variety of occupations.\n1. Engine (Petrol and Diesel)\n2. Transmission System (Manual and Auto)\n3. Steering System (Power and Manual)\n4. Breaking System\n5. Electrical System\nThe National Youth Service Council has initiated several course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations. The\nAutomobile Mechanic/Automobile Technician course will give you theoretical knowledge as well as job\noriented practical skills that are necessary for employment and higher education. This is a full time\ncourse which will be held on weekdays.\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\nBy completing this course , You can achieve competency Level 4 under the National Vocational\nQualifications Competency Standards.\n"
+    },
+    {
+      "course_id": "COURSE-013",
+      "course_name": "Electronic Appliances Technician",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "Electrical & Electronics",
+        "attendance_type": "Full Time",
+        "attendance_days": "Weekdays",
+        "duration_months": "12",
+        "instruction_languages": "[\"Sinhala\"]",
+        "nvq_level": "Level 4",
+        "qualification_type": "National Vocational Qualification (NVQ)"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-013\n\nCOURSE NAME: Electronic Appliances Technician\n\nVALIDATION STATUS: VALIDATED_WITH_LIMITATIONS\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.27.24.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.31.50.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-013\n\nUNCERTAINTY MARKERS PRESENT: YES\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nElectronic Appliances Technician\nLANGUAGE\nMAX STUDENTS\nSinhala\n20\nAPPLY NOW\nCourse Overview\n[UNCLEAR]\nThe National Youth Service Council has initiated several course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations.\nElectronic Appliances Technician course will give you theoretical knowledge as well as job oriented\npractical that is necessary for employment and higher education.\nThis is a full time course which will be held on weekdays.\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\nBy completing this course , You can achieve competency Level 4 under the National Vocational\nQualifications Competency Standards.\n"
+    },
+    {
+      "course_id": "COURSE-017",
+      "course_name": "Agricultural Machinery Equipment Mechanic",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "Automotive & Mechanical Engineering",
+        "attendance_type": "Full Time",
+        "attendance_days": "Weekdays",
+        "duration_months": "24",
+        "instruction_languages": "[\"Sinhala\"]",
+        "nvq_level": "Level 4",
+        "qualification_type": "National Vocational Qualification (NVQ)"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-017\n\nCOURSE NAME: Agricultural Machinery Equipment Mechanic\n\nVALIDATION STATUS: VALIDATED\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.28.49.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.31.50.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-017\n\nUNCERTAINTY MARKERS PRESENT: NO\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nAgricultural Machinery Equipment Mechanic\nLANGUAGE\nMAX STUDENTS\nSinhala\n20\nAPPLY NOW\nCourse Overview\nThe National Youth Service Council has initiated several course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations.\nAgricultural Machinery and Equipment Mechanic course will give you theoretical knowledge as well as\njob oriented practical that is necessary for employment and higher education. This is a full time\ncourse which will be held on weekdays.\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\nBy completing this course , You can achieve competency Level 4 under the National Vocational\nQualifications Competency Standards.\n"
+    },
+    {
+      "course_id": "COURSE-021",
+      "course_name": "Automobile Electrician",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "Automotive & Mechanical Engineering",
+        "attendance_type": "Full Time",
+        "attendance_days": "Weekdays",
+        "duration_months": "6",
+        "instruction_languages": "[\"English\"]",
+        "nvq_level": "Level 4",
+        "qualification_type": "National Vocational Qualification (NVQ)"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-021\n\nCOURSE NAME: Automobile Electrician\n\nVALIDATION STATUS: VALIDATED\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.30.32.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.31.50.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-021\n\nUNCERTAINTY MARKERS PRESENT: NO\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nAutomobile Electrician\nLANGUAGE\nMAX STUDENTS\nEnglish\n20\n→\nAPPLY NOW\nCourse Overview\nThe National Youth Service Council has initiated several course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations. The\nAutomobile Electrician course will give you theoretical knowledge as well as job oriented practical that\nis necessary for employment and higher education. This is a full time course which will be held on\nweekdays.\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\nBy completing this course , You can achieve competency Level 4 under the National Vocational\nQualifications Competency Standards.\n"
+    },
+    {
+      "course_id": "COURSE-025",
+      "course_name": "Electrician",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "Electrical & Electronics",
+        "attendance_type": "Full Time",
+        "attendance_days": "Weekdays",
+        "duration_months": "12",
+        "instruction_languages": "[\"English\"]",
+        "nvq_level": "Level 3/4",
+        "qualification_type": "National Vocational Qualification (NVQ)"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-025\n\nCOURSE NAME: Electrician\n\nVALIDATION STATUS: VALIDATED_WITH_LIMITATIONS\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.33.25.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.38.08.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-025\n\nUNCERTAINTY MARKERS PRESENT: NO\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nElectrician\nLANGUAGE\nMAX STUDENTS\nEnglish\n20\n+ APPLY NOW\nCourse Overview\nThe National Youth Service Council has initiated several course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations\n1. Repair and Service Motor Generator\nElectrician courses will give you theoretical knowledge as well as job oriented practical skills that are\n2. Industrial Electrical Installation (Motor\nnecessary for employment and higher education.\nControlling System)\n3. P.L.C.\nThis is a full time course which will be held on weekdays.\n4. Security Solutions\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\n5. Domestic Electrical Installation\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\nBy completing this course , You can achieve competency Level 3,4 under the National Vocational\nQualifications Competency Standards.\n"
+    },
+    {
+      "course_id": "COURSE-028",
+      "course_name": "Lapiderist (Gem Cutting)",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "Automotive & Mechanical Engineering",
+        "attendance_type": "Full Time",
+        "attendance_days": "Weekdays",
+        "duration_months": "6",
+        "instruction_languages": "[\"Sinhala\"]",
+        "nvq_level": "Level 3",
+        "qualification_type": "National Vocational Qualification (NVQ)"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-028\n\nCOURSE NAME: Lapiderist (Gem Cutting)\n\nVALIDATION STATUS: VALIDATED\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.34.16.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.38.08.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-028\n\nUNCERTAINTY MARKERS PRESENT: NO\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nLapiderist (Gem Cutting)\nLANGUAGE\nMAX STUDENTS\nsinhala\n20\nH\nAPPLY NOW\nCourse Overview\nThe National Youth Service Council has initiated several course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations. The\nLapiderist (Gem Cutting) course will give you theoretical knowledge as well as job oriented practical\nskills that are necessary for employment and higher education. This is a full time course which will be\nheld on weekdays.\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\nBy completing this course , You can achieve competency Level 3 under the National Vocational\nQualifications Competency Standards.\n"
+    },
+    {
+      "course_id": "COURSE-029",
+      "course_name": "Mobile Phone Repair Technician",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "Electrical & Electronics",
+        "attendance_type": "Full Time",
+        "attendance_days": "Weekdays",
+        "duration_months": "8",
+        "instruction_languages": "[\"Sinhala\"]",
+        "nvq_level": "Level 4",
+        "qualification_type": "National Vocational Qualification (NVQ)"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-029\n\nCOURSE NAME: Mobile Phone Repair Technician\n\nVALIDATION STATUS: VALIDATED\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.34.31.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.38.08.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-029\n\nUNCERTAINTY MARKERS PRESENT: NO\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nMobile Phone Repair Technician\nLANGUAGE\nMAX STUDENTS\nsinhala\n20\nAPPLY NOW\nCourse Overview\nThe National Youth Service Council has initiated several course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations. Mobile\nPhone Repairing Craftsman course will give you theoretical knowledge as well as job oriented\npractical that is necessary for employment and higher education. This is a full time course which will\nbe held on weekdays.\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\nBy completing this course , You can achieve competency Level 4 under the National Vocational\nQualifications Competency Standards.\n"
+    },
+    {
+      "course_id": "COURSE-030",
+      "course_name": "Motorcycle Mechanic",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "Automotive & Mechanical Engineering",
+        "attendance_type": "Full Time",
+        "attendance_days": "Weekdays",
+        "duration_months": "12",
+        "instruction_languages": "[\"Sinhala\"]",
+        "nvq_level": "Level 3/4",
+        "qualification_type": "National Vocational Qualification (NVQ)"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-030\n\nCOURSE NAME: Motorcycle Mechanic\n\nVALIDATION STATUS: VALIDATED\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.35.56.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.38.08.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-030\n\nUNCERTAINTY MARKERS PRESENT: NO\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nMotorcycle Mechanic\nLANGUAGE\nMAX STUDENTS\nsinhala\n20\nAPPLY NOW\nCourse Overview\nThe National Youth Service Council has initiated several course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations.\nMotorcycle Mechanic course will give you theoretical knowledge as well as job oriented practical that\nis necessary for employment and higher education. This is a full time course which will be held on\nweekdays.\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\nBy completing this course , You can achieve competency Level 3,4 under the National Vocational\nQualifications Competency Standards.\n"
+    }
+  ],
+  "evidence_boundaries": {
+    "user_fact": "Only values in user.questionnaire_answers and validated_cluster_defining_variables.",
+    "cluster_context": "Only the assigned profiles' final-retained findings are included. They are historical group context, never personal facts about the user.",
+    "course_fact": "Only facts inside the corresponding candidate programme record."
+  }
+}

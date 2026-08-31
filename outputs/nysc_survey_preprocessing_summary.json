@@ -1,0 +1,38 @@
+{
+  "input_file": "/Users/vimashafernando/Desktop/ClusterRP/nysc_survey.survey_responses23.csv",
+  "raw_shape": [
+    481,
+    2547
+  ],
+  "cleaned_shape": [
+    392,
+    171
+  ],
+  "quality": {
+    "raw_rows": 481,
+    "known_test_rows": 11,
+    "explicitly_incomplete_rows": 0,
+    "outside_target_age_15_35": 30,
+    "unrecognised_or_missing_branch": 10,
+    "too_few_answers": 14,
+    "eligible_before_dedup": 443,
+    "duplicate_resubmissions_removed": 51,
+    "final_branch_overrides_retained": 31,
+    "mid_survey_branch_switches_corrected": 11,
+    "branch_integrity_issues_retained": 1,
+    "entry_branch_fallback_retained": 23,
+    "final_rows": 392
+  },
+  "branch_counts": {
+    "D": 195,
+    "E": 38,
+    "F": 90,
+    "G": 69
+  },
+  "model_variables_present": 131,
+  "encoded_feature_count": 621,
+  "pca_components": 36,
+  "pca_variance_retained": 0.8531621579471246,
+  "random_state": 42,
+  "pca_variance_target": 0.85
+}

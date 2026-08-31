@@ -1,0 +1,5 @@
+educational_cultural_profile_id,respondent_id,father_education__response,mother_education__response,expected_education__response,institution_type__response,worked_while_studying__response,re_entered_education__response
+1,nysc-a3a70af6-24ca-4298-98ca-4390e9366605,Bachelor's degree,Bachelor's degree,Bachelor's degree,Private school or private degree-awarding institute,,Yes
+2,nysc-bb28e1a6-f66a-4ced-8bf4-e88fa2012208,Diploma,O/L level (Grade 9–11),Post-graduate degree,Government school or state university,No,No
+3,nysc-e49f1cfe-9cf3-4091-8c51-01c2913290b3,Bachelor's degree,Bachelor's degree,Post-graduate degree,Private school or private degree-awarding institute,No,No
+4,nysc-f73ce24e-0e7e-4640-a105-f70e73989176,A/L level (Grade 12–13),Diploma,Post-graduate degree,Private school or private degree-awarding institute,Yes,No

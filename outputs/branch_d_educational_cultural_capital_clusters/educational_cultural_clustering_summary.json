@@ -1,0 +1,92 @@
+{
+  "cohort": {
+    "records": 191,
+    "branch": "D",
+    "routing_source": "translated_final_active_branch"
+  },
+  "dimension": "educational trajectory and cultural capital",
+  "theory_selected_variables": [
+    "father_edu",
+    "mother_edu",
+    "edu_status",
+    "highest_edu_completed",
+    "expected_highest_edu_d",
+    "institution_type",
+    "worked_while_studying",
+    "re_entered_education"
+  ],
+  "excluded_from_distance_after_screening": {
+    "edu_status": "over 90% one category and six responses conflict with final current-attendance status",
+    "highest_edu_completed": "observed for only three respondents in this current-student branch"
+  },
+  "clustering_features": [
+    "father_education",
+    "mother_education",
+    "expected_education",
+    "institution_type",
+    "worked_while_studying",
+    "re_entered_education"
+  ],
+  "data_quality": {
+    "records": 191,
+    "unique_ids": 191,
+    "wrong_branch": 0,
+    "wrong_routing_source": 0,
+    "not_currently_attending_by_final_status": 0
+  },
+  "method": {
+    "distance": "equal-weight mixed, missing-aware Gower on original responses",
+    "candidate_k": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "selected_k": 4,
+    "ensemble": "equal-weight K-medoids plus spectral consensus",
+    "base_partitions": 200,
+    "final_method": "K-medoids on one minus co-association"
+  },
+  "profiles": {
+    "sizes": {
+      "1": 15,
+      "2": 53,
+      "3": 57,
+      "4": 66
+    },
+    "names": {
+      "1": "Re-entered students, often with degree-educated parents",
+      "2": "State-institution students without work exposure",
+      "3": "Private-institution students without work exposure",
+      "4": "Work-experienced students, mainly in private institutions"
+    }
+  },
+  "metrics": {
+    "gower_silhouette": 0.4268408850721272,
+    "consensus_distance_silhouette": 0.8397363084983452,
+    "ensemble_bootstrap_ari_mean": 0.9625787891227019,
+    "ensemble_bootstrap_ari_p10": 0.9171528205176577,
+    "ari_vs_full_kmedoids": 0.7757081103527563,
+    "ari_vs_full_spectral": 0.934013838338834,
+    "ari_consensus_kmedoids_vs_hac_average": 0.9165571596282054,
+    "ari_consensus_kmedoids_vs_hac_complete": 0.9165571596282054,
+    "minimum_profile_size": 15,
+    "low_gower_confidence_percent": 7.853403141361256,
+    "ambiguous_consensus_percent": 12.56544502617801,
+    "pac_10_90": 0.13414163681454946
+  },
+  "decision": {
+    "primary_checks_passed": true,
+    "checks_passed": 8,
+    "checks_total": 8,
+    "status": "Stable, cross-method-supported educational/cultural segmentation"
+  },
+  "limitations": [
+    "The profiles are exploratory and are not validated cultural-capital scores.",
+    "Parental education is an indicator/proxy; it does not fully measure family cultural capital.",
+    "Highest completed education is unavailable for 188 of 191 respondents and is excluded from distance.",
+    "Education status is near-constant and contains six conflicts with final current-attendance status, so it is excluded from distance.",
+    "Institution type, work exposure, and re-entry are compared as categories without invented ranks.",
+    "Leave-one-feature-out results show greatest sensitivity to work-while-studying and institution type; profile interpretation must foreground those drivers."
+  ]
+}

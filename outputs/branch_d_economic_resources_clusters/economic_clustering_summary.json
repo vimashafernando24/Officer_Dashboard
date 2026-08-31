@@ -1,0 +1,83 @@
+{
+  "cohort": {
+    "records": 191,
+    "branch": "D",
+    "routing_source": "translated_final_active_branch"
+  },
+  "dimension": "economic resources and household pressure",
+  "source_variables": [
+    "household_income",
+    "household_size",
+    "household_workers",
+    "household_unemployed",
+    "primary_earner_status",
+    "primary_income_source",
+    "edu_funding_source"
+  ],
+  "clustering_components": [
+    "household_income_position",
+    "household_worker_share",
+    "household_unemployed_share",
+    "primary_earner_responsibility",
+    "primary_income_source",
+    "education_funding_source"
+  ],
+  "data_quality": {
+    "records": 191,
+    "unique_ids": 191,
+    "wrong_branch": 0,
+    "wrong_routing_source": 0,
+    "income_prefer_not_to_say": 29,
+    "workers_greater_than_household_size": 0,
+    "unemployed_greater_than_household_size": 0,
+    "workers_plus_unemployed_greater_than_size": 5
+  },
+  "method": {
+    "distance": "equal-weight mixed, missing-aware Gower",
+    "candidate_k": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "selected_k": 2,
+    "ensemble": "equal-weight K-medoids plus spectral consensus",
+    "base_partitions": 200,
+    "final_method": "K-medoids on one minus co-association"
+  },
+  "profiles": {
+    "sizes": {
+      "1": 44,
+      "2": 147
+    },
+    "names": {
+      "1": "Economic profile 1: relatively lower household economic position",
+      "2": "Economic profile 2: relatively higher household economic position"
+    }
+  },
+  "metrics": {
+    "gower_silhouette": 0.43633259293084076,
+    "consensus_distance_silhouette": 0.8865938193501853,
+    "ensemble_bootstrap_ari_mean": 0.9857371798272545,
+    "ensemble_bootstrap_ari_p10": 0.9549076633390068,
+    "ari_vs_full_kmedoids": 0.8487859139568715,
+    "ari_vs_full_spectral": 0.7961529598156416,
+    "ari_consensus_kmedoids_vs_hac_average": 0.8692870202876576,
+    "ari_consensus_kmedoids_vs_hac_complete": 0.8692870202876576,
+    "minimum_profile_size": 44,
+    "low_gower_confidence_percent": 7.329842931937172,
+    "ambiguous_consensus_percent": 6.282722513089005,
+    "pac_10_90": 0.4218241939928355
+  },
+  "decision": {
+    "primary_checks_passed": true,
+    "checks_passed": 7,
+    "checks_total": 8,
+    "status": "Passes primary stability rules but retains ambiguity cautions"
+  },
+  "limitations": [
+    "29 respondents declined household income; missing-aware Gower excludes that component pairwise.",
+    "Five records have workers plus unemployed greater than household size; both derived shares are unavailable for those records.",
+    "Nominal income and education funding sources use exact category matching and no invented ordering."
+  ]
+}

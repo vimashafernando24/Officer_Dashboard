@@ -1,0 +1,11 @@
+variable,role,observed,missing,unique_observed_responses,dominant_response,dominant_response_percent
+registered_as_jobseeker,cluster_input,81,0,2,No,75.30864197530865
+employment_service_help_f,cluster_input,81,0,4,No — none at all,79.01234567901234
+jobs_applied_before_hire,cluster_input,81,0,19,10.0,16.049382716049383
+interviews_before_hire,cluster_input,81,0,10,2.0,27.160493827160494
+search_duration_before_hire,cluster_input,81,0,6,1 to 4 weeks,28.39506172839506
+obstacle_finding_this_job,cluster_input,81,0,10,No major obstacles — the process was straightforward,34.5679012345679
+reason_refused_job_f,profile_descriptor,36,45,9,nan,55.55555555555556
+acceptance_conditions_search,profile_descriptor,81,0,5,"Only a job that was stable, well paid, AND matched my qualifications",55.55555555555556
+had_min_wage_during_search,profile_descriptor,81,0,2,Yes,71.60493827160494
+willing_to_relocate_f,profile_descriptor,81,0,5,No — I would not move,30.864197530864196

@@ -428,7 +428,11 @@ def decode_new_person_intake(body: dict) -> tuple[str, dict, list[str], dict]:
         raise ValueError("skills_by_sector must be an object")
     options_by_area = json.loads(Q1_OPTIONS_PATH.read_text(encoding="utf-8"))
     selected_skills_by_sector = {}
+    skill_preference_unsure_by_sector = {}
     selected_skills = []
+    unsure_skill_sentinels = {
+        "Not sure", "Not sure yet", "Not sure / open to more than one"
+    }
     for sector_code in sector_codes:
         sector_label = IDEAL_SECTOR_DISPLAY.get(sector_code, sector_code)
         valid_skills = {
@@ -441,21 +445,39 @@ def decode_new_person_intake(body: dict) -> tuple[str, dict, list[str], dict]:
             raw_skills = [body.get("q1")]
         if not isinstance(raw_skills, list):
             raise ValueError(f"Skills for '{sector_label}' must be a list")
-        skills = []
+        normalized_values = []
         for raw_skill in raw_skills:
             skill = str(raw_skill or "").strip()
-            if not skill or skill in skills:
+            if not skill or skill in normalized_values:
                 continue
-            if skill not in valid_skills and skill not in ("Not sure", "Not sure / open to more than one"):
+            normalized_values.append(skill)
+
+        skill_preference_unsure = sector_code == "not sure" or any(
+            value in unsure_skill_sentinels for value in normalized_values
+        )
+        real_skill_values = [
+            value for value in normalized_values
+            if value not in unsure_skill_sentinels
+        ]
+        if skill_preference_unsure and real_skill_values:
+            raise ValueError(
+                f"'Not sure yet' cannot be combined with specific skills for '{sector_label}'"
+            )
+        skills = []
+        for skill in real_skill_values:
+            if skill not in valid_skills:
                 raise ValueError(f"Unknown skill '{skill}' for sector '{sector_label}'")
             skills.append(skill)
         if len(skills) > 3:
             raise ValueError(f"Select no more than three skills for '{sector_label}'")
-        if multi_value_request and valid_skills and not skills:
+        if multi_value_request and valid_skills and not skills and not skill_preference_unsure:
             raise ValueError(f"Select at least one skill for '{sector_label}'")
         if skills:
             selected_skills_by_sector[sector_label] = skills
             selected_skills.extend(skill for skill in skills if skill not in selected_skills)
+        elif skill_preference_unsure:
+            selected_skills_by_sector[sector_label] = []
+            skill_preference_unsure_by_sector[sector_label] = True
 
     ideal_sector_labels = [IDEAL_SECTOR_DISPLAY.get(code, code) for code in sector_codes]
     officer_context = {
@@ -463,6 +485,7 @@ def decode_new_person_intake(body: dict) -> tuple[str, dict, list[str], dict]:
         "q1_occupation_focus": "; ".join(selected_skills),
         "preferred_sectors": ideal_sector_labels,
         "preferred_skills_by_sector": selected_skills_by_sector,
+        "skill_preference_unsure_by_sector": skill_preference_unsure_by_sector,
         "selected_skills": selected_skills,
         "q2_reason": body.get("q2"),
         "q3_schedule": body.get("q3"),

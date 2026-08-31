@@ -1,0 +1,82 @@
+{
+  "cohort": {
+    "records": 191,
+    "branch": "D",
+    "routing_source": "translated_final_active_branch"
+  },
+  "dimension": "social connectedness and support pathways",
+  "clustering_features": [
+    "employment_network_quality",
+    "relatedness_at_institution"
+  ],
+  "descriptors": [
+    "social_capital_in_edu_access",
+    "institution_type"
+  ],
+  "data_quality": {
+    "records": 191,
+    "unique_ids": 191,
+    "wrong_branch": 0,
+    "wrong_routing_source": 0,
+    "not_currently_attending_by_final_status": 0,
+    "cluster_input_missing_values": 0,
+    "invalid_employment_network_codes": 0,
+    "invalid_education_access_codes": 0,
+    "invalid_relatedness_codes": 0
+  },
+  "method": {
+    "distance": "equal-weight Gower on two survey-ordered responses",
+    "candidate_k": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "selected_k": 3,
+    "ensemble": "equal-weight K-medoids plus spectral consensus",
+    "base_partitions": 200,
+    "final_method": "K-medoids on one minus co-association"
+  },
+  "profiles": {
+    "sizes": {
+      "1": 51,
+      "2": 83,
+      "3": 57
+    },
+    "names": {
+      "1": "Useful employment contacts, partial institutional belonging",
+      "2": "Strong institutional belonging, mixed employment contacts",
+      "3": "Weak employment contacts, limited institutional belonging"
+    }
+  },
+  "metrics": {
+    "gower_silhouette": 0.4956081362216983,
+    "consensus_distance_silhouette": 0.9812337305310109,
+    "ensemble_bootstrap_ari_mean": 1.0,
+    "ensemble_bootstrap_ari_p10": 1.0,
+    "ari_vs_full_kmedoids": 1.0,
+    "ari_vs_full_spectral": 1.0,
+    "ari_consensus_kmedoids_vs_hac_average": 1.0,
+    "ari_consensus_kmedoids_vs_hac_complete": 1.0,
+    "minimum_profile_size": 51,
+    "low_gower_confidence_percent": 5.7591623036649215,
+    "ambiguous_consensus_percent": 0.0,
+    "pac_10_90": 0.0
+  },
+  "decision": {
+    "primary_checks_passed": true,
+    "checks_passed": 8,
+    "checks_total": 8,
+    "statistical_status": "Stable, cross-method-supported social-connectedness segmentation",
+    "included_in_final_dimension_set": false,
+    "exclusion_reason": "relatedness_at_institution is retained in the theoretically grounded motivation/study-experience dimension; reusing it here would double-count it",
+    "status": "Excluded from final dimension set despite statistical stability: relatedness_at_institution overlaps with the motivation/study-experience dimension"
+  },
+  "limitations": [
+    "These profiles are exploratory social-response patterns, not a validated social-capital or belonging scale.",
+    "Employment contacts indicate network resources; institutional belonging is a related but distinct social condition.",
+    "Ordinal Gower positions preserve only the questionnaire's explicit order and must not be interpreted as interval-scale psychological scores.",
+    "Education-access pathway is descriptive only; no pathway is classified as inherently better than another.",
+    "Only two clustering variables are available, so profiles are narrow connectedness patterns rather than whole-person youth types."
+  ]
+}

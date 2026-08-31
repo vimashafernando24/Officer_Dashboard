@@ -1,0 +1,6 @@
+check,value,passed
+Gower silhouette >= 0.25,0.35172802787566665,True
+mean 80% subsample ARI >= 0.70,0.9385816123977874,True
+minimum cluster size >= 15,46.0,True
+hierarchical agreement ARI >= 0.60,0.0050496354670440825,False
+low-confidence memberships <= 20%,23.56020942408377,False

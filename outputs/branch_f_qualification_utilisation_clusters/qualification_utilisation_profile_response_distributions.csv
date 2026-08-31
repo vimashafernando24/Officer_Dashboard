@@ -1,0 +1,94 @@
+qualification_utilisation_profile_id,variable,response,records,within_profile_percent
+1,qualification_job_match,Partially — I am somewhat over-qualified or under-qualified,1,2.5641025641025643
+1,qualification_job_match,Very well — my qualifications are central to this job,38,97.43589743589743
+2,qualification_job_match,Fairly well — some of my training is relevant,4,14.814814814814815
+2,qualification_job_match,Not at all — the job is unrelated to my training,2,7.407407407407407
+2,qualification_job_match,Partially — I am somewhat over-qualified or under-qualified,3,11.11111111111111
+2,qualification_job_match,Poorly — I am significantly over-qualified for this job,1,3.7037037037037037
+2,qualification_job_match,Very well — my qualifications are central to this job,17,62.96296296296296
+3,qualification_job_match,Fairly well — some of my training is relevant,10,66.66666666666667
+3,qualification_job_match,Not at all — the job is unrelated to my training,1,6.666666666666667
+3,qualification_job_match,Partially — I am somewhat over-qualified or under-qualified,3,20.0
+3,qualification_job_match,Poorly — I am significantly over-qualified for this job,1,6.666666666666667
+1,past_edu_useful_for_job,Do not know,1,2.5641025641025643
+1,past_edu_useful_for_job,Very useful — directly relevant and applied daily,38,97.43589743589743
+2,past_edu_useful_for_job,Do not know,2,7.407407407407407
+2,past_edu_useful_for_job,Not useful — there is little connection,4,14.814814814814815
+2,past_edu_useful_for_job,Somewhat useful — helps in some areas,21,77.77777777777777
+3,past_edu_useful_for_job,Very useful — directly relevant and applied daily,15,100.0
+1,received_training,No,6,15.384615384615385
+1,received_training,Yes,33,84.61538461538461
+2,received_training,No,8,29.62962962962963
+2,received_training,Yes,19,70.37037037037037
+3,received_training,No,2,13.333333333333334
+3,received_training,Yes,13,86.66666666666667
+1,training_type_received,Apprenticeship training,6,15.384615384615385
+1,training_type_received,Business or entrepreneurship training,3,7.6923076923076925
+1,training_type_received,On-the-job mentoring with a colleague,8,20.512820512820515
+1,training_type_received,Other,4,10.256410256410257
+1,training_type_received,Training in new technologies,11,28.205128205128204
+1,training_type_received,Vocational or NVQ programme,1,2.5641025641025643
+1,training_type_received,,6,15.384615384615385
+2,training_type_received,Accounting or bookkeeping,1,3.7037037037037037
+2,training_type_received,Apprenticeship training,1,3.7037037037037037
+2,training_type_received,Business or entrepreneurship training,1,3.7037037037037037
+2,training_type_received,On-the-job mentoring with a colleague,7,25.925925925925927
+2,training_type_received,Other,2,7.407407407407407
+2,training_type_received,Training in new technologies,7,25.925925925925927
+2,training_type_received,,8,29.62962962962963
+3,training_type_received,Apprenticeship training,2,13.333333333333334
+3,training_type_received,On-the-job mentoring with a colleague,7,46.666666666666664
+3,training_type_received,Training in new technologies,3,20.0
+3,training_type_received,Vocational or NVQ programme,1,6.666666666666667
+3,training_type_received,,2,13.333333333333334
+1,training_provider,"A government training institution (NYSC, NAITA, VTA, etc.)",2,5.128205128205129
+1,training_provider,A private contractor or trainer,2,5.128205128205129
+1,training_provider,A private training institution,2,5.128205128205129
+1,training_provider,My employer (on-the-job),24,61.53846153846154
+1,training_provider,Other,3,7.6923076923076925
+1,training_provider,,6,15.384615384615385
+2,training_provider,A private contractor or trainer,1,3.7037037037037037
+2,training_provider,A private training institution,1,3.7037037037037037
+2,training_provider,My employer (on-the-job),14,51.851851851851855
+2,training_provider,Other,3,11.11111111111111
+2,training_provider,,8,29.62962962962963
+3,training_provider,A private contractor or trainer,1,6.666666666666667
+3,training_provider,A private training institution,2,13.333333333333334
+3,training_provider,My employer (on-the-job),9,60.0
+3,training_provider,Other,1,6.666666666666667
+3,training_provider,,2,13.333333333333334
+1,training_duration,1 to 3 months,3,7.6923076923076925
+1,training_duration,1 to 4 weeks,11,28.205128205128204
+1,training_duration,3 to 6 months,8,20.512820512820515
+1,training_duration,6 months to 1 year,3,7.6923076923076925
+1,training_duration,Less than one week,7,17.94871794871795
+1,training_duration,More than 1 year,1,2.5641025641025643
+1,training_duration,,6,15.384615384615385
+2,training_duration,1 to 3 months,1,3.7037037037037037
+2,training_duration,1 to 4 weeks,7,25.925925925925927
+2,training_duration,3 to 6 months,2,7.407407407407407
+2,training_duration,6 months to 1 year,3,11.11111111111111
+2,training_duration,Less than one week,5,18.51851851851852
+2,training_duration,More than 1 year,1,3.7037037037037037
+2,training_duration,,8,29.62962962962963
+3,training_duration,1 to 3 months,4,26.666666666666668
+3,training_duration,1 to 4 weeks,3,20.0
+3,training_duration,3 to 6 months,2,13.333333333333334
+3,training_duration,6 months to 1 year,1,6.666666666666667
+3,training_duration,Less than one week,2,13.333333333333334
+3,training_duration,More than 1 year,1,6.666666666666667
+3,training_duration,,2,13.333333333333334
+1,who_paid_training,An international organization or donor,2,5.128205128205129
+1,who_paid_training,My employer,23,58.97435897435897
+1,who_paid_training,Myself or my family,1,2.5641025641025643
+1,who_paid_training,Other,5,12.820512820512821
+1,who_paid_training,The government,2,5.128205128205129
+1,who_paid_training,,6,15.384615384615385
+2,who_paid_training,My employer,13,48.148148148148145
+2,who_paid_training,Myself or my family,3,11.11111111111111
+2,who_paid_training,Other,3,11.11111111111111
+2,who_paid_training,,8,29.62962962962963
+3,who_paid_training,My employer,10,66.66666666666667
+3,who_paid_training,Myself or my family,2,13.333333333333334
+3,who_paid_training,Other,1,6.666666666666667
+3,who_paid_training,,2,13.333333333333334

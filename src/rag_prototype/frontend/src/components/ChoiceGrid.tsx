@@ -49,20 +49,25 @@ export function MultiChoiceGrid({
   value,
   onChange,
   maxSelected,
+  exclusiveOptionCodes = [],
 }: {
   name: string;
   options: Option[];
   value: string[];
   onChange: (values: string[]) => void;
   maxSelected?: number;
+  exclusiveOptionCodes?: string[];
 }) {
   const selected = new Set(value);
-  const atLimit = maxSelected !== undefined && value.length >= maxSelected;
+  const exclusiveOptions = new Set(exclusiveOptionCodes);
+  const selectedNonExclusive = value.filter((code) => !exclusiveOptions.has(code));
+  const atLimit = maxSelected !== undefined && selectedNonExclusive.length >= maxSelected;
   return (
     <div className="choice-grid" role="group" aria-label={name}>
       {options.map((option) => {
         const checked = selected.has(option.code);
-        const disabled = !checked && atLimit;
+        const isExclusive = exclusiveOptions.has(option.code);
+        const disabled = !checked && atLimit && !isExclusive;
         return (
           <label
             key={option.code}
@@ -73,9 +78,18 @@ export function MultiChoiceGrid({
               name={name}
               checked={checked}
               disabled={disabled}
-              onChange={() => onChange(checked
-                ? value.filter((code) => code !== option.code)
-                : [...value, option.code])}
+              onChange={() => {
+                if (checked) {
+                  onChange(value.filter((code) => code !== option.code));
+                } else if (isExclusive) {
+                  onChange([option.code]);
+                } else {
+                  onChange([
+                    ...value.filter((code) => !exclusiveOptions.has(code)),
+                    option.code,
+                  ]);
+                }
+              }}
             />
             <span className="choice-label">{option.label}</span>
           </label>

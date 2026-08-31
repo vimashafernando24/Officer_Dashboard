@@ -1,0 +1,268 @@
+{
+  "schema_version": "context_aware_programme_ranking_v3",
+  "user": {
+    "respondent_id": "test-03-conflict-with-profile",
+    "assigned_branch": "F",
+    "questionnaire_answers": {
+      "preferred_sectors": [
+        "Personal services (beauty, fitness, wellness)"
+      ],
+      "preferred_skills_by_sector": {},
+      "preferred_skills": [
+        "Not sure"
+      ],
+      "reason_for_training": "Start my own business",
+      "schedule_preference": "Part-time, weekends",
+      "language_preference": "Sinhala",
+      "qualification_preference": "Not sure"
+    }
+  },
+  "constraints": {
+    "sectors": [
+      "Personal services (beauty, fitness, wellness)"
+    ],
+    "skills": {},
+    "reason": "Start my own business",
+    "schedule": "Part-time, weekends",
+    "language": "Sinhala",
+    "qualification": "Not sure"
+  },
+  "assigned_branch_research_context": [
+    {
+      "profile_key": "F_employment_security_p1",
+      "model_id": "F_employment_security",
+      "dimension": "Employment security",
+      "cluster_code": "Cluster F-SEC-1",
+      "cluster_name": "Temporary work with uncertain security",
+      "common_description": "This cluster is centred on employed youth whose contract, formality, and near-term security answers indicated temporary or absent contracts and less certain employment.",
+      "validated_profile_definition": "Facts that define the cluster itself. These variables and diagnostics produced the\ncluster; they are NOT re-tested as post-cluster findings (doing so would be circular).\n\nBranch: F — strict final-path analytical cohort n=81 (of 362 total strict-cohort respondents: D=191, E=34, F=81, G=56).\nRetained dimension: Employment security and formality\nNumber of profiles in this retained model (k): 2\nThis profile's id and label: Profile 1 — \"Temporary/no-contract employment with uncertain security\"\nThis profile's exact frozen size: n=29 (cross-verified against the Part III freeze-verification table in the source report)\n\nExact cluster-forming variables (the only inputs used to build this clustering; all\nother survey variables were deliberately excluded from distance calculation and are\nonly used descriptively in sections 2-3 below):\n  - contract_type\n  - job_security_12months\n  - sector_formality\n\nTheoretical basis and purpose: Employment arrangement formality and perceived 12-month job security (ILO SWTS employment-quality framework).\n\nClustering method: Gower distance over original mixed-type responses (no invented 0-100\nscores), consensus of repeated K-medoids and spectral clustering across 100 matched\n80% subsamples (200 base partitions), final clusters from K-medoids on (1 - co-association).\n\nValidation diagnostics for this retained model: Gower silhouette 0.368; bootstrap/subsample ARI 0.953; source-method ARIs 0.854 and 0.950; 7 of 8 mandatory validation checks passed.\nFinal decision status: Retained with PAC/ambiguity caution.\nModel-level caution (from the frozen decision register): Employment arrangement and contract satisfaction are related outcomes, not independent validation of the security/formality clusters.\n\nAdditional definitional context: This is the only retained Branch F clustering result. It describes employment conditions, not respondent worth or employability, and should guide questions about formalisation, certification, protection and feasible upgrading rather than automatically assigning a course. A related diagnostic (earnings/working-time preference, 'D4') was explicitly excluded from the final model set — it formed a stable but preference-controlled 51/30 split and is NOT part of this retained profile system.\n\nInterpretation of this specific profile (verbatim from the frozen report's per-model\nprofile table):\n  Temporary or absent contracts combined with weaker 12-month security and formality responses.\n\nReminder: this profile exists only WITHIN this one retained dimension. A respondent's\nmembership here says nothing about their membership in any other branch's or dimension's\nprofile system (see PROHIBITED_INFERENCES).\n\n----------------------------------------------------------------------------------------------------",
+      "validated_cluster_defining_variables": [
+        {
+          "variable": "contract_type",
+          "question_id": "E8",
+          "question": "What kind of employment contract are you currently working under?",
+          "user_answer": "Written contract — temporary (12–36 months)"
+        },
+        {
+          "variable": "job_security_12months",
+          "question_id": "E20",
+          "question": "How likely is it that you will be able to keep your main job over the next 12 months?",
+          "user_answer": "Likely but not certain — I have some concern"
+        },
+        {
+          "variable": "sector_formality",
+          "question_id": "BE2",
+          "question": "How would you describe the formality of your work situation?",
+          "user_answer": "Mixed — some formal, some informal aspects"
+        }
+      ],
+      "validated_profile_findings": [
+        {
+          "profile_key": "F_employment_security_p1",
+          "variable": "monthly_income_band",
+          "label": "Monthly work-income band",
+          "finding": "Monthly work-income band: less often reported ‘Above LKR 200,000’ (1/29, 3.4% vs 36.5% in other profile(s))",
+          "interpretation_guard": "Treat this only as the retained between-profile comparison stated above; do not turn it into a claim that one response was the profile's most common answer.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=F_employment_security, profile_id=1, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=F_employment_security, variable=monthly_income_band"
+          }
+        },
+        {
+          "profile_key": "F_employment_security_p1",
+          "variable": "primary_income_source",
+          "label": "Primary personal income source",
+          "finding": "Primary personal income source: less often reported ‘My regular job or business’ (11/29, 37.9% vs 86.5% in other profile(s)) [sparse table]",
+          "interpretation_guard": "The most common answer within this profile was My parents or family (48.3%). The retained statement highlights My regular job or business only because it differed between profiles. Do not call the highlighted category primary, dominant, top, or most common.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=F_employment_security, profile_id=1, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=F_employment_security, variable=primary_income_source"
+          }
+        },
+        {
+          "profile_key": "F_employment_security_p1",
+          "variable": "hopes_to_change_job",
+          "label": "Hopes to change job",
+          "finding": "Hopes to change job: less often reported ‘No — I want to stay in this job’ (1/29, 3.4% vs 28.8% in other profile(s))",
+          "interpretation_guard": "The most common answer within this profile was Yes — I want to change (62.1%). The retained statement highlights No — I want to stay in this job only because it differed between profiles. Do not call the highlighted category primary, dominant, top, or most common.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=F_employment_security, profile_id=1, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=F_employment_security, variable=hopes_to_change_job"
+          }
+        },
+        {
+          "profile_key": "F_employment_security_p1",
+          "variable": "job_satisfaction",
+          "label": "Overall job satisfaction",
+          "finding": "Overall job satisfaction: less often reported ‘Very satisfied’ (5/29, 17.2% vs 40.4% in other profile(s))",
+          "interpretation_guard": "Treat this only as the retained between-profile comparison stated above; do not turn it into a claim that one response was the profile's most common answer.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=F_employment_security, profile_id=1, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=F_employment_security, variable=job_satisfaction"
+          }
+        }
+      ]
+    }
+  ],
+  "catalogue_retrieval": {
+    "method": "complete selected-sector catalogue slice",
+    "sector_skill_areas": {},
+    "skill_areas": [
+      "Beauty, Fashion & Personal Care"
+    ],
+    "selected_skills_by_sector": {},
+    "required_selected_skill_coverage": [],
+    "note": "9 courses in bridged skill area(s) ['Beauty, Fashion & Personal Care']; 8 selected deterministically by score."
+  },
+  "candidate_programmes": [
+    {
+      "course_id": "COURSE-046",
+      "course_name": "Beautician",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "Beauty, Fashion & Personal Care",
+        "attendance_type": "Part Time",
+        "attendance_days": "Weekends",
+        "duration_months": "6",
+        "instruction_languages": "[\"Sinhala\"]",
+        "nvq_level": "NOT_STATED",
+        "qualification_type": "NOT_STATED"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-046\n\nCOURSE NAME: Beautician\n\nDOCUMENT STATUS: SAFE_TO_INDEX\n\nCORPUS VERSION: FINAL_RAG_CORPUS_V2\n\nPROMOTED SOURCE DOCUMENT: outputs/rag_course_knowledge/manual_review_resolved_candidates/course-046_beautician_part_time_candidate.txt\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nAUTHORITATIVE CONTENT SCREENSHOT: Screenshot 2026-04-12 at 22.48.00.png\n\nREJECTED CONFLICTING DUPLICATE SCREENSHOT: Screenshot 2026-04-12 at 23.01.50.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.48.17.png; Screenshot 2026-04-12 at 23.02.00.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-046; COURSE-010\n\nREMAINING UNCERTAINTY MARKERS: 0\n\nCORRECTION NOTE: The candidate uses the complete Part Time detail screenshot at 22.48.00. Both linked catalogue cards say Part Time, 20 students and 06 Months. The duplicate 23.01.50 detail screenshot states Full Time and is excluded from this Part Time candidate; independently captured full-time Beautician evidence remains in COURSE-010.\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nBeautician\nLANGUAGE\nMAX STUDENTS\nSinhala\n20\nAPPLY NOW\nCourse Overview\n1. Facial\n2. Menicure\n3. Pedicure\n4. Makeup\n5. Flower Bouques & Bridal Dressing\nThe National Youth Service Council has initiated several course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations.\nBeautician course will give you theoretical knowledge as well as job oriented practical skills that are\nnecessary for employment and higher education. This is a part time course which will be held on\nweekends.\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\n"
+    },
+    {
+      "course_id": "COURSE-048",
+      "course_name": "Bridal Dresser",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "Beauty, Fashion & Personal Care",
+        "attendance_type": "Part Time",
+        "attendance_days": "Weekends",
+        "duration_months": "6",
+        "instruction_languages": "[\"Sinhala\"]",
+        "nvq_level": "NOT_STATED",
+        "qualification_type": "NOT_STATED"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-048\n\nCOURSE NAME: Bridal Dresser\n\nVALIDATION STATUS: VALIDATED\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.49.08.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.52.40.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-048\n\nUNCERTAINTY MARKERS PRESENT: NO\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nBridal Dresser\nLANGUAGE\nMAX STUDENTS\nSinhala\n20\n+ APPLY NOW\nThe National Youth Service Council has initiated several course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations. The\nBridal Dresser course will give you theoretical knowledge as well as job oriented practical that is\nnecessary for employment and higher education. This is a part time course which will be held on\nweekends.\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\n"
+    },
+    {
+      "course_id": "COURSE-063",
+      "course_name": "Dress Making Without Blocks",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "Beauty, Fashion & Personal Care",
+        "attendance_type": "Part Time",
+        "attendance_days": "Weekends",
+        "duration_months": "6",
+        "instruction_languages": "[\"Sinhala\"]",
+        "nvq_level": "NOT_STATED",
+        "qualification_type": "NOT_STATED"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-063\n\nCOURSE NAME: Dress Making Without Blocks\n\nVALIDATION STATUS: VALIDATED_WITH_LIMITATIONS\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.54.08.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.57.21.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-063\n\nUNCERTAINTY MARKERS PRESENT: NO\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nDress Making Without Blocks\nLANGUAGE\nMAX STUDENTS\nSinhala\n25\n→ APPLY NOW\nCourse Overview\nThe National Youth Service Council has initiated several course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations.\nDressmaking Without Blocks course will give you theoretical knowledge as well as job oriented\n2. Women and children clothing\npractical skills that are necessary for employment and higher education. This is a part time course\nwhich will be held on weekends.\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\n"
+    },
+    {
+      "course_id": "COURSE-069",
+      "course_name": "Hair Dresser",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "Beauty, Fashion & Personal Care",
+        "attendance_type": "Part Time",
+        "attendance_days": "Weekends",
+        "duration_months": "6",
+        "instruction_languages": "[\"Sinhala\"]",
+        "nvq_level": "NOT_STATED",
+        "qualification_type": "NOT_STATED"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-069\n\nCOURSE NAME: Hair Dresser\n\nVALIDATION STATUS: VALIDATED\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.55.47.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.57.21.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-069\n\nUNCERTAINTY MARKERS PRESENT: NO\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nHair Dresser\nLANGUAGE\nMAX STUDENTS\nSinhala\n20\n→ APPLY NOW\nThe National Youth Service Council has initiated several course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations. Hair\nStyle courses will give you theoretical knowledge as well as job oriented practical skills that are\nnecessary for employment and higher education. This is a part time course which will be held on\nweekends.\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\n"
+    },
+    {
+      "course_id": "COURSE-070",
+      "course_name": "Handycraft",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "Beauty, Fashion & Personal Care",
+        "attendance_type": "Part Time",
+        "attendance_days": "Weekends",
+        "duration_months": "6",
+        "instruction_languages": "[\"Sinhala\"]",
+        "nvq_level": "NOT_STATED",
+        "qualification_type": "NOT_STATED"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-070\n\nCOURSE NAME: Handycraft\n\nVALIDATION STATUS: VALIDATED_WITH_LIMITATIONS\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.56.09.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.57.21.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-070\n\nUNCERTAINTY MARKERS PRESENT: YES\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nHandycraft\nLANGUAGE\nMAX STUDENTS\nSinhala\n[UNCLEAR]\n25\n~ APPLY NOW\nThe National Youth Service Council has initiated several course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations.\nHandicraft courses will give you theoretical knowledge as well as job oriented practical skills that are\nnecessary for employment and higher education. This is a part time course which will be held on\nweekends.\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\n"
+    },
+    {
+      "course_id": "COURSE-085",
+      "course_name": "Tailor",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "Beauty, Fashion & Personal Care",
+        "attendance_type": "Part Time",
+        "attendance_days": "Weekends",
+        "duration_months": "6",
+        "instruction_languages": "[\"Sinhala\"]",
+        "nvq_level": "NOT_STATED",
+        "qualification_type": "NOT_STATED"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-085\n\nCOURSE NAME: Tailor\n\nVALIDATION STATUS: VALIDATED\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 23.01.07.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 23.02.00.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-085\n\nUNCERTAINTY MARKERS PRESENT: NO\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nTailor\nLANGUAGE\nMAX STUDENTS\nSinhala\n25\n+ APPLY NOW\nThe National Youth Service Council has initiated several course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations. Tailor\ncourses will give you theoretical knowledge as well as job oriented practical skills that are necessary\nfor employment and higher education. This is a part time course which will be held on weekends.\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\n"
+    },
+    {
+      "course_id": "COURSE-010",
+      "course_name": "Beautician",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "Beauty, Fashion & Personal Care",
+        "attendance_type": "Full Time",
+        "attendance_days": "Weekdays",
+        "duration_months": "6",
+        "instruction_languages": "[\"Sinhala\"]",
+        "nvq_level": "Level 4",
+        "qualification_type": "National Vocational Qualification (NVQ)"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-010\n\nCOURSE NAME: Beautician\n\nVALIDATION STATUS: VALIDATED\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.23.56.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.25.19.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-010\n\nUNCERTAINTY MARKERS PRESENT: NO\n\nPROVENANCE NOTE: Full-time Beautician source separated from an incorrect raw full/part grouping.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nBeautician\nLANGUAGE\nMAX STUDENTS\nSinhala\n20\nAPPLY NOW\nCourse Overview\n1. Facial\n2. Pedicure Menicure\n3. Bridal Dressing\n4. Make up\n5. Flowers Bouguets\nThe National Youth Service Council has initiated several course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations.\nBeautician course will give you theoretical knowledge as well as job oriented practical skills that are\nnecessary for employment and higher education. This is a full time course which will be held on\nweekdays.\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\nBy completing this course , You can achieve competency Level 4 under the National Vocational\nQualifications Competency Standards.\n"
+    },
+    {
+      "course_id": "COURSE-014",
+      "course_name": "Hair Dresser",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "Beauty, Fashion & Personal Care",
+        "attendance_type": "Full Time",
+        "attendance_days": "Weekdays",
+        "duration_months": "6",
+        "instruction_languages": "[\"Sinhala\"]",
+        "nvq_level": "Level 4",
+        "qualification_type": "National Vocational Qualification (NVQ)"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-014\n\nCOURSE NAME: Hair Dresser\n\nVALIDATION STATUS: VALIDATED_WITH_LIMITATIONS\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.27.43.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.31.50.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-014\n\nUNCERTAINTY MARKERS PRESENT: NO\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nHair Dresser\nLANGUAGE\nMAX STUDENTS\nSinhala\n20\n→\nAPPLY NOW\nCourse Overview\n1. Straightening\n2. Hair Coloring\n3. Hiar Stylist and Hair Setting\n4. Hair treatment\n5. Perming\n6. Hair Cutting\nThe National Youth Service Council has initiated several course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations. The\nHairDresser course will give you theoretical knowledge as well as job oriented practical that is\nnecessary for employment and higher education.\nThis is a full time course which will be held on weekdays.\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\nBy completing this course , You can achieve competency Level 4 under the National Vocational\nQualifi\nScreenshot\nindards.\n"
+    }
+  ],
+  "evidence_boundaries": {
+    "user_fact": "Only values in user.questionnaire_answers and validated_cluster_defining_variables.",
+    "cluster_context": "Only the assigned profiles' final-retained findings are included. They are historical group context, never personal facts about the user.",
+    "course_fact": "Only facts inside the corresponding candidate programme record."
+  }
+}

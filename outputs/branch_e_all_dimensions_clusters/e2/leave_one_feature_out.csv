@@ -1,0 +1,5 @@
+omitted_feature,minimum_pair_coverage,silhouette_reduced,ari_reduced_vs_final
+active_search_4weeks,3,0.36302172403214555,-0.01969100272644653
+job_search_duration,3,0.6726853029514369,1.0
+num_applications,3,0.6225391700311501,1.0
+num_interviews,3,0.5969250996316009,1.0

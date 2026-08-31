@@ -1,0 +1,109 @@
+{
+  "cohort": {
+    "records": 191,
+    "branch": "D",
+    "routing_source": "translated_final_active_branch",
+    "variables": [
+      "study_motivation_type",
+      "autonomy_in_study",
+      "competence_in_study_field",
+      "relatedness_at_institution"
+    ]
+  },
+  "comparison": {
+    "algorithms": {
+      "kmedoids": "K-medoids (Gower)",
+      "hac_average": "HAC average-link (Gower)",
+      "hac_complete": "HAC complete-link (Gower)",
+      "spectral": "Spectral (Gower affinity)",
+      "kmeans": "K-means (normalized ordinal)",
+      "gmm": "Gaussian mixture (normalized ordinal)"
+    },
+    "candidate_k": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "subsample_repetitions_per_configuration": 50,
+    "selected_configurations": {
+      "kmedoids": {
+        "algorithm_label": "K-medoids (Gower)",
+        "k": 3,
+        "silhouette_gower": 0.35172802787566665,
+        "subsample_ari_mean": 0.9660517379853207,
+        "subsample_ari_p10": 0.873734105523781,
+        "minimum_cluster_size": 46,
+        "low_confidence_percent": 23.56020942408377,
+        "ari_vs_kmedoids_same_k": 1.0,
+        "passes_primary_rules": true
+      },
+      "hac_average": {
+        "algorithm_label": "HAC average-link (Gower)",
+        "k": 4,
+        "silhouette_gower": 0.3394666680017001,
+        "subsample_ari_mean": 0.46448634407923073,
+        "subsample_ari_p10": 0.2411052146007643,
+        "minimum_cluster_size": 1,
+        "low_confidence_percent": 12.56544502617801,
+        "ari_vs_kmedoids_same_k": 0.28532994639128334,
+        "passes_primary_rules": false
+      },
+      "hac_complete": {
+        "algorithm_label": "HAC complete-link (Gower)",
+        "k": 2,
+        "silhouette_gower": 0.36020484433490746,
+        "subsample_ari_mean": 0.3062335966642103,
+        "subsample_ari_p10": 0.1434155758129477,
+        "minimum_cluster_size": 48,
+        "low_confidence_percent": 14.136125654450263,
+        "ari_vs_kmedoids_same_k": 0.01596610666896473,
+        "passes_primary_rules": false
+      },
+      "spectral": {
+        "algorithm_label": "Spectral (Gower affinity)",
+        "k": 4,
+        "silhouette_gower": 0.34771949796138946,
+        "subsample_ari_mean": 0.7192468968209798,
+        "subsample_ari_p10": 0.5879771483920289,
+        "minimum_cluster_size": 28,
+        "low_confidence_percent": 10.99476439790576,
+        "ari_vs_kmedoids_same_k": 0.5570136928408492,
+        "passes_primary_rules": true
+      },
+      "kmeans": {
+        "algorithm_label": "K-means (normalized ordinal)",
+        "k": 2,
+        "silhouette_gower": 0.3778542228592591,
+        "subsample_ari_mean": 0.9829858358675159,
+        "subsample_ari_p10": 0.9376247729447823,
+        "minimum_cluster_size": 73,
+        "low_confidence_percent": 10.471204188481675,
+        "ari_vs_kmedoids_same_k": 0.14816048213556826,
+        "passes_primary_rules": true
+      },
+      "gmm": {
+        "algorithm_label": "Gaussian mixture (normalized ordinal)",
+        "k": 2,
+        "silhouette_gower": 0.33145224639045934,
+        "subsample_ari_mean": 0.6341514664294036,
+        "subsample_ari_p10": 0.14974517964989584,
+        "minimum_cluster_size": 87,
+        "low_confidence_percent": 21.465968586387437,
+        "ari_vs_kmedoids_same_k": 0.13355988078555944,
+        "passes_primary_rules": false
+      }
+    },
+    "diagnostic_leader": {
+      "algorithm": "kmeans",
+      "algorithm_label": "K-means (normalized ordinal)",
+      "k": 2
+    },
+    "median_selected_solution_cross_algorithm_ari": 0.3498050506655853,
+    "robustness_status": "Low cross-algorithm agreement \u2014 cluster interpretation is method-dependent",
+    "prior_kmedoids_reproduction_ari": 1.0
+  },
+  "dbscan": null,
+  "interpretation": "Compare algorithm-specific profiles and do not adopt a final motivation typology unless the cross-method agreement and substantive interpretation are acceptable."
+}

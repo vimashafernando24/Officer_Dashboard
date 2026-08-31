@@ -1,0 +1,106 @@
+{
+  "dimension_code": "E4",
+  "dimension_name": "Education-to-work preparedness and learning orientation",
+  "records": 34,
+  "source_variables": [
+    "past_edu_usefulness",
+    "plans_further_edu",
+    "expected_highest_edu_e"
+  ],
+  "clustering_features": [
+    "past_edu_usefulness",
+    "plans_further_edu",
+    "expected_highest_edu_e"
+  ],
+  "feature_types": {
+    "past_edu_usefulness": "nominal",
+    "plans_further_edu": "nominal",
+    "expected_highest_edu_e": "ordinal"
+  },
+  "profile_sizes": {
+    "1": 18,
+    "2": 16
+  },
+  "profile_labels": {
+    "1": "High perceived education utility and strong learning ambition",
+    "2": "Moderate perceived utility and mixed learning ambition"
+  },
+  "profile_modes": [
+    {
+      "profile_id": 1,
+      "variable": "expected_highest_edu_e",
+      "response": "Post-graduate degree",
+      "records": 12,
+      "within_profile_percent": 66.66666666666667
+    },
+    {
+      "profile_id": 1,
+      "variable": "past_edu_usefulness",
+      "response": "Very useful \u2014 directly relevant, employers value it",
+      "records": 15,
+      "within_profile_percent": 83.33333333333333
+    },
+    {
+      "profile_id": 1,
+      "variable": "plans_further_edu",
+      "response": "Yes",
+      "records": 17,
+      "within_profile_percent": 94.44444444444444
+    },
+    {
+      "profile_id": 2,
+      "variable": "expected_highest_edu_e",
+      "response": "Post-graduate degree",
+      "records": 6,
+      "within_profile_percent": 37.5
+    },
+    {
+      "profile_id": 2,
+      "variable": "past_edu_usefulness",
+      "response": "Somewhat useful \u2014 helps to some extent",
+      "records": 15,
+      "within_profile_percent": 93.75
+    },
+    {
+      "profile_id": 2,
+      "variable": "plans_further_edu",
+      "response": "Yes",
+      "records": 10,
+      "within_profile_percent": 62.5
+    }
+  ],
+  "metrics": {
+    "gower_silhouette": 0.567301864966065,
+    "consensus_silhouette": 0.9515514167228271,
+    "source_minimum_cluster_size": 16,
+    "final_minimum_cluster_size": 16,
+    "kmedoids_subsample_stability_mean": 0.9908690012970169,
+    "spectral_subsample_stability_mean": 0.8513199273044569,
+    "ensemble_bootstrap_ari_mean": 0.952903016542329,
+    "ensemble_bootstrap_ari_p10": 0.8822575413558222,
+    "ari_vs_full_kmedoids": 0.8822575413558222,
+    "ari_vs_full_spectral": 1.0,
+    "maximum_single_feature_ari": 0.6683069176632145,
+    "dominant_single_feature": "past_edu_usefulness",
+    "minimum_leave_one_feature_out_ari": 0.03914851969659897,
+    "ambiguous_consensus_percent": 2.941176470588235,
+    "low_gower_confidence_percent": 2.941176470588235,
+    "pac_10_90": 0.058823529411764705,
+    "permutation_valid_repetitions": 100,
+    "permutation_null_p95": 0.5501500511853299,
+    "empirical_permutation_p": 0.039603960396039604,
+    "raw_vs_log_count_encoding_minimum_ari": null,
+    "structural_resource_only_ari": null
+  },
+  "automatic_screen_pass": true,
+  "checks_passed": 10,
+  "checks_total": 10,
+  "decision": "retain_cautiously_feature_dependent",
+  "limitations": [
+    "Branch E contains only 34 strict respondents, so only k=2 can satisfy the minimum profile size of 15.",
+    "No dimension score or psychometric scale is constructed.",
+    "PAC is reported descriptively because there is only one eligible candidate k.",
+    "Automatic screening does not replace single-feature and leave-one-feature-out substantive review.",
+    "A retained result with leave-one-feature-out ARI below 0.10 is explicitly marked feature-dependent and must be interpreted around its central indicator rather than as a broad latent scale."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "model": "D educational/cultural assignment",
+  "decision": "SAFE TO FREEZE",
+  "assignment_rule": "Assign to the profile with the lowest mean Gower distance to its frozen reference members.",
+  "validation_design": "500 repeated stratified five-fold cross-validation runs with one out-of-fold prediction per respondent per repeat.",
+  "why_this_design": "The tested respondent and all other members of the held-out fold are excluded from the four profile means, preventing self-contribution and testing sensitivity to the reference cohort.",
+  "assignment_file": "outputs/branch_d_educational_cultural_capital_clusters/educational_cultural_consensus_assignments.csv",
+  "records": 191,
+  "profile_sizes": {
+    "1": 15,
+    "2": 53,
+    "3": 57,
+    "4": 66
+  },
+  "cluster_forming_variables": [
+    "father_edu",
+    "mother_edu",
+    "expected_highest_edu_d",
+    "institution_type",
+    "worked_while_studying",
+    "re_entered_education"
+  ],
+  "gower_logic": {
+    "father_edu": "ordered difference / 6; unknown or refused pairwise unavailable",
+    "mother_edu": "ordered difference / 6; unknown or refused pairwise unavailable",
+    "expected_highest_edu_d": "ordered difference / 6",
+    "institution_type": "nominal exact match or mismatch",
+    "worked_while_studying": "binary exact match or mismatch; missing pairwise unavailable",
+    "re_entered_education": "binary exact match or mismatch",
+    "weighting": "equal among pairwise-observed components"
+  },
+  "repeats": 500,
+  "folds_per_repeat": 5,
+  "random_seed_start": 20260901,
+  "tie_rule": "lowest profile ID for exact equal mean-distance minima; ties recorded",
+  "safe_thresholds": {
+    "accuracy": 0.95,
+    "balanced_accuracy": 0.9,
+    "macro_f1": 0.9,
+    "ari": 0.8,
+    "mismatch_percent": 5.0
+  },
+  "confirmation_rule": "SAFE TO FREEZE if at least 95% of complete repeats jointly pass all five SAFE thresholds.",
+  "joint_safe_repetitions": 500,
+  "joint_safe_repetitions_percent": 100.0
+}

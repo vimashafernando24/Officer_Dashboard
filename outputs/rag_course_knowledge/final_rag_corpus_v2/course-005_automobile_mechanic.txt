@@ -1,0 +1,57 @@
+COURSE DOCUMENT ID: COURSE-005
+
+COURSE NAME: Automobile Mechanic
+
+DOCUMENT STATUS: SAFE_TO_INDEX
+
+CORPUS VERSION: FINAL_RAG_CORPUS_V2
+
+PROMOTED SOURCE DOCUMENT: outputs/rag_course_knowledge/manual_review_resolved_candidates/course-005_automobile_mechanic_candidate.txt
+
+SOURCE TYPE: COURSE_DETAIL_SCREENSHOTS
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.21.32.png; Screenshot 2026-04-12 at 22.23.26.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.25.19.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-005
+
+REMAINING UNCERTAINTY MARKERS: 0
+
+CORRECTION NOTE: Both detail screenshots visibly show the same course name, Sinhala language, 20-student capacity, Full Time weekday delivery and Level 4 outcome. The two corresponding catalogue cards also both show Full Time, 20 students and 01 year. They are therefore retained as one repeated screenshot-derived parent, not split using the conflicting structured English record.
+
+COMPLETE EXTRACTED COURSE TEXT
+
+Automobile Mechanic
+LANGUAGE
+MAX STUDENTS
+Sinhala
+20
+APPLY NOW
+Course Overview
+The National Youth Service Council has initiated several Course programs to enable the youth to
+develop their skills while also providing an opportunity to achieve their future job aspirations.
+Automobile Mechanic/Automobile Technician will give you theoretical knowledge as well as job
+oriented practical that is necessary for employment and higher education. This is a full time course
+which will be held on weekdays.
+It is our objective to show the correct path that will direct youth to their desired occupations while at
+the same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and
+gentle attitudes within a disciplined environment.
+By completing this course , can achieve Competency Level 4 under the National Vocational
+Qualifications Competency Standards through following a variety of full time study programs covering
+a variety of occupations.
+1. Engine (Petrol and Diesel)
+2. Transmission System (Manual and Auto)
+3. Steering System (Power and Manual)
+4. Breaking System
+5. Electrical System
+The National Youth Service Council has initiated several course programs to enable the youth to
+develop their skills while also providing an opportunity to achieve their future job aspirations. The
+Automobile Mechanic/Automobile Technician course will give you theoretical knowledge as well as job
+oriented practical skills that are necessary for employment and higher education. This is a full time
+course which will be held on weekdays.
+It is our objective to show the correct path that will direct youth to their desired occupations while at
+the same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and
+gentle attitudes within a disciplined environment.
+By completing this course , You can achieve competency Level 4 under the National Vocational
+Qualifications Competency Standards.

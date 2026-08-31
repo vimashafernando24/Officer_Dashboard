@@ -1,0 +1,116 @@
+profile_id,profile_label,variable,category,records,within_profile_percent
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,age_group,18 – 21 years,14,26.923076923076923
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,age_group,22 – 25 years,33,63.46153846153846
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,age_group,26 – 29 years,5,9.615384615384615
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,age_group,15 – 17 years,1,1.1494252873563218
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,age_group,18 – 21 years,13,14.942528735632184
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,age_group,22 – 25 years,66,75.86206896551724
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,age_group,26 – 29 years,6,6.896551724137931
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,age_group,30 – 35 years,1,1.1494252873563218
+3,Profile 3: higher human-capital trajectory and higher economic resources,age_group,15 – 17 years,1,1.9230769230769231
+3,Profile 3: higher human-capital trajectory and higher economic resources,age_group,18 – 21 years,7,13.461538461538462
+3,Profile 3: higher human-capital trajectory and higher economic resources,age_group,22 – 25 years,40,76.92307692307692
+3,Profile 3: higher human-capital trajectory and higher economic resources,age_group,26 – 29 years,3,5.769230769230769
+3,Profile 3: higher human-capital trajectory and higher economic resources,age_group,30 – 35 years,1,1.9230769230769231
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,gender,Female,31,59.61538461538461
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,gender,Male,21,40.38461538461539
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,gender,Female,34,39.08045977011494
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,gender,Male,52,59.770114942528735
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,gender,Prefer not to say,1,1.1494252873563218
+3,Profile 3: higher human-capital trajectory and higher economic resources,gender,Female,20,38.46153846153846
+3,Profile 3: higher human-capital trajectory and higher economic resources,gender,Male,31,59.61538461538461
+3,Profile 3: higher human-capital trajectory and higher economic resources,gender,Prefer not to say,1,1.9230769230769231
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,district,Colombo,17,32.69230769230769
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,district,Galle,6,11.538461538461538
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,district,Gampaha,10,19.23076923076923
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,district,Hambantota,1,1.9230769230769231
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,district,Jaffna,1,1.9230769230769231
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,district,Kalutara,1,1.9230769230769231
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,district,Kandy,2,3.8461538461538463
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,district,Kegalle,2,3.8461538461538463
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,district,Kurunegala,2,3.8461538461538463
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,district,Matara,2,3.8461538461538463
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,district,Monaragala,2,3.8461538461538463
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,district,Polonnaruwa,1,1.9230769230769231
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,district,Puttalam,2,3.8461538461538463
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,district,Ratnapura,1,1.9230769230769231
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,district,Trincomalee,2,3.8461538461538463
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,district,Ampara,4,4.597701149425287
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,district,Anuradhapura,1,1.1494252873563218
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,district,Badulla,2,2.2988505747126435
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,district,Batticaloa,2,2.2988505747126435
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,district,Colombo,13,14.942528735632184
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,district,Galle,6,6.896551724137931
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,district,Gampaha,4,4.597701149425287
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,district,Hambantota,2,2.2988505747126435
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,district,Jaffna,5,5.747126436781609
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,district,Kalutara,7,8.045977011494253
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,district,Kandy,8,9.195402298850574
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,district,Kurunegala,3,3.4482758620689653
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,district,Matara,10,11.494252873563218
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,district,Monaragala,2,2.2988505747126435
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,district,Mullaitivu,1,1.1494252873563218
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,district,Nuwara Eliya,1,1.1494252873563218
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,district,Polonnaruwa,1,1.1494252873563218
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,district,Puttalam,8,9.195402298850574
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,district,Ratnapura,4,4.597701149425287
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,district,Trincomalee,2,2.2988505747126435
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,district,Vavuniya,1,1.1494252873563218
+3,Profile 3: higher human-capital trajectory and higher economic resources,district,Anuradhapura,3,5.769230769230769
+3,Profile 3: higher human-capital trajectory and higher economic resources,district,Badulla,1,1.9230769230769231
+3,Profile 3: higher human-capital trajectory and higher economic resources,district,Colombo,27,51.92307692307692
+3,Profile 3: higher human-capital trajectory and higher economic resources,district,Galle,2,3.8461538461538463
+3,Profile 3: higher human-capital trajectory and higher economic resources,district,Gampaha,6,11.538461538461538
+3,Profile 3: higher human-capital trajectory and higher economic resources,district,Kalutara,2,3.8461538461538463
+3,Profile 3: higher human-capital trajectory and higher economic resources,district,Kandy,2,3.8461538461538463
+3,Profile 3: higher human-capital trajectory and higher economic resources,district,Kegalle,2,3.8461538461538463
+3,Profile 3: higher human-capital trajectory and higher economic resources,district,Kurunegala,6,11.538461538461538
+3,Profile 3: higher human-capital trajectory and higher economic resources,district,Matara,1,1.9230769230769231
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,area_type,Large city,5,9.615384615384615
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,area_type,Metropolitan suburb,27,51.92307692307692
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,area_type,Rural area,4,7.6923076923076925
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,area_type,Small town,16,30.76923076923077
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,area_type,Large city,16,18.39080459770115
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,area_type,Metropolitan suburb,24,27.586206896551722
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,area_type,Rural area,18,20.689655172413794
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,area_type,Small town,29,33.333333333333336
+3,Profile 3: higher human-capital trajectory and higher economic resources,area_type,Large city,14,26.923076923076923
+3,Profile 3: higher human-capital trajectory and higher economic resources,area_type,Metropolitan suburb,25,48.07692307692308
+3,Profile 3: higher human-capital trajectory and higher economic resources,area_type,Rural area,4,7.6923076923076925
+3,Profile 3: higher human-capital trajectory and higher economic resources,area_type,Small town,9,17.307692307692307
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,marital_status,Engaged to be married,1,1.9230769230769231
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,marital_status,Never married,51,98.07692307692308
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,marital_status,Engaged to be married,3,3.4482758620689653
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,marital_status,Married,2,2.2988505747126435
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,marital_status,Never married,82,94.25287356321839
+3,Profile 3: higher human-capital trajectory and higher economic resources,marital_status,Married,1,1.9230769230769231
+3,Profile 3: higher human-capital trajectory and higher economic resources,marital_status,Never married,51,98.07692307692308
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,household_income,"Above LKR 200,000",10,19.23076923076923
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,household_income,"Below LKR 30,000",1,1.9230769230769231
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,household_income,"LKR 120,000 – 200,000",8,15.384615384615385
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,household_income,"LKR 30,000 – 60,000",8,15.384615384615385
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,household_income,"LKR 60,000 – 120,000",13,25.0
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,household_income,Prefer not to say,12,23.076923076923077
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,household_income,"Above LKR 200,000",19,21.839080459770116
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,household_income,"Below LKR 30,000",8,9.195402298850574
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,household_income,"LKR 120,000 – 200,000",21,24.137931034482758
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,household_income,"LKR 30,000 – 60,000",5,5.747126436781609
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,household_income,"LKR 60,000 – 120,000",22,25.28735632183908
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,household_income,Prefer not to say,12,13.793103448275861
+3,Profile 3: higher human-capital trajectory and higher economic resources,household_income,"Above LKR 200,000",34,65.38461538461539
+3,Profile 3: higher human-capital trajectory and higher economic resources,household_income,"LKR 120,000 – 200,000",7,13.461538461538462
+3,Profile 3: higher human-capital trajectory and higher economic resources,household_income,"LKR 30,000 – 60,000",3,5.769230769230769
+3,Profile 3: higher human-capital trajectory and higher economic resources,household_income,"LKR 60,000 – 120,000",3,5.769230769230769
+3,Profile 3: higher human-capital trajectory and higher economic resources,household_income,Prefer not to say,5,9.615384615384615
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,highest_edu_completed,,52,100.0
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,highest_edu_completed,Bachelor's degree,1,1.1494252873563218
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,highest_edu_completed,,86,98.85057471264368
+3,Profile 3: higher human-capital trajectory and higher economic resources,highest_edu_completed,Bachelor's degree,2,3.8461538461538463
+3,Profile 3: higher human-capital trajectory and higher economic resources,highest_edu_completed,,50,96.15384615384616
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,worked_while_studying,No,36,69.23076923076923
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,worked_while_studying,Yes,16,30.76923076923077
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,worked_while_studying,No,77,88.50574712643679
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,worked_while_studying,Yes,7,8.045977011494253
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,worked_while_studying,,3,3.4482758620689653
+3,Profile 3: higher human-capital trajectory and higher economic resources,worked_while_studying,No,1,1.9230769230769231
+3,Profile 3: higher human-capital trajectory and higher economic resources,worked_while_studying,Yes,51,98.07692307692308

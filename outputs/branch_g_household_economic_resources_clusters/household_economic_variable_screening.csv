@@ -1,0 +1,7 @@
+variable,observed,missing,unique_observed_responses,dominant_response,dominant_response_percent
+household_income,56,0,6,"LKR 60,000 – 120,000",25.0
+household_size,56,0,9,4.0,48.214285714285715
+household_workers,56,0,7,2.0,53.57142857142857
+household_unemployed,56,0,5,1.0,32.142857142857146
+primary_earner_status,56,0,3,No — someone else is the main provider,69.64285714285714
+primary_income_source,56,0,7,My parents or family,55.35714285714286

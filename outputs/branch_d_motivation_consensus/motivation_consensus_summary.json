@@ -1,0 +1,59 @@
+{
+  "cohort": {
+    "records": 191,
+    "branch": "D",
+    "routing_source": "translated_final_active_branch",
+    "variables": [
+      "study_motivation_type",
+      "autonomy_in_study",
+      "competence_in_study_field",
+      "relatedness_at_institution"
+    ]
+  },
+  "ensemble": {
+    "k": 3,
+    "algorithms": [
+      "K-medoids on ordinal Gower",
+      "spectral clustering on Gower affinity"
+    ],
+    "subsamples_per_algorithm": 100,
+    "total_base_partitions": 200,
+    "subsample_fraction": 0.8,
+    "equal_algorithm_weight": true,
+    "final_method": "K-medoids on one minus the co-association matrix"
+  },
+  "profiles": {
+    "sizes": {
+      "1": 47,
+      "2": 75,
+      "3": 69
+    },
+    "names": {
+      "1": "Consensus motivation profile 1: externally or uncertainly motivated, with moderate study support",
+      "2": "Consensus motivation profile 2: goal-aligned motivation with mixed study confidence and support",
+      "3": "Consensus motivation profile 3: highly self-directed, capable and connected"
+    }
+  },
+  "metrics": {
+    "gower_silhouette": 0.350397542673708,
+    "consensus_distance_silhouette": 0.8807546449002266,
+    "ensemble_bootstrap_ari_mean": 0.9807315088034154,
+    "ensemble_bootstrap_ari_p10": 0.9664437810112789,
+    "minimum_profile_size": 47,
+    "low_gower_confidence_percent": 23.56020942408377,
+    "ambiguous_consensus_percent": 5.2356020942408374,
+    "pac_10_90": 0.1931110498759989,
+    "pac_20_80": 0.16362634334527418
+  },
+  "agreement": {
+    "ari_vs_full_kmedoids_k3": 0.9675880340017039,
+    "ari_vs_full_spectral_k3": 0.7122085751291078,
+    "prior_kmedoids_reproduction_ari": 1.0
+  },
+  "decision": {
+    "primary_checks_passed": true,
+    "checks_passed": 7,
+    "checks_total": 8,
+    "status": "Consensus passes primary stability rules but retains ambiguity cautions"
+  }
+}

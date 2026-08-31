@@ -6,11 +6,15 @@ interface Props {
   geometry: BranchGeometry;
   assignedBranch: string;
   assignedProfiles: Set<string>;
-  selectedProfileKey: string | null;
+  selectedProfileKeys: Set<string>;
+  selectedModelId: string | null;
   onOpenProfile: (profile: ClusterCatalogueEntry, anchor: SVGGElement) => void;
+  onOpenDimension: (modelId: string, anchor: SVGGElement) => void;
 }
 
-export function ResearchBranch({ geometry, assignedBranch, assignedProfiles, selectedProfileKey, onOpenProfile }: Props) {
+export function ResearchBranch({
+  geometry, assignedBranch, assignedProfiles, selectedProfileKeys, selectedModelId, onOpenProfile, onOpenDimension,
+}: Props) {
   const branchAssigned = geometry.branch.branch_id === assignedBranch;
   const branchPlateWidth = Math.max(185, Math.min(245, geometry.branch.branch_label.length * 7.4 + 34));
   const preferredBranchLabelX = geometry.labelSide === "left"
@@ -45,13 +49,28 @@ export function ResearchBranch({ geometry, assignedBranch, assignedProfiles, sel
                 <ClusterLeaf
                   geometry={leaf}
                   assigned={assigned}
-                  selected={selectedProfileKey === leaf.profile.profile_key}
+                  selected={selectedProfileKeys.has(leaf.profile.profile_key)}
                   onOpen={onOpenProfile}
                 />
               </g>
             );
           })}
-          <g className="research-model-label-group" transform={`translate(${modelGeometry.hub.x - modelPlateWidth / 2} ${modelGeometry.hub.y + 13})`}>
+          <g
+            className={`research-model-label-group research-dimension-button${selectedModelId === modelGeometry.model.model_id ? " is-selected" : ""}`}
+            transform={`translate(${modelGeometry.hub.x - modelPlateWidth / 2} ${modelGeometry.hub.y + 13})`}
+            role="button"
+            tabIndex={0}
+            aria-label={`Open research method for ${modelGeometry.model.model_label}`}
+            aria-haspopup="dialog"
+            aria-expanded={selectedModelId === modelGeometry.model.model_id}
+            onClick={(event) => onOpenDimension(modelGeometry.model.model_id, event.currentTarget)}
+            onKeyDown={(event) => {
+              if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                onOpenDimension(modelGeometry.model.model_id, event.currentTarget);
+              }
+            }}
+          >
             <rect width={modelPlateWidth} height="32" rx="10" />
             <text className="research-model-label" x={modelPlateWidth / 2} y="21" textAnchor="middle">{modelGeometry.model.model_label}</text>
           </g>

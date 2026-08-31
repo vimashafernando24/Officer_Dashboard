@@ -1,0 +1,15 @@
+qualification_skills_profile_id,variable,response,records,within_profile_percent
+1,past_edu_useful_for_job,Very useful — directly relevant and applied daily,45,69.23076923076923
+1,qualification_job_match,Very well — my qualifications are central to this job,45,69.23076923076923
+1,received_training,Yes,65,100.0
+1,training_duration,1 to 4 weeks,21,32.30769230769231
+1,training_provider,My employer (on-the-job),47,72.3076923076923
+1,training_type_received,On-the-job mentoring with a colleague,22,33.84615384615385
+1,who_paid_training,My employer,46,70.76923076923077
+2,past_edu_useful_for_job,Very useful — directly relevant and applied daily,8,50.0
+2,qualification_job_match,Very well — my qualifications are central to this job,10,62.5
+2,received_training,No,16,100.0
+2,training_duration,,16,100.0
+2,training_provider,,16,100.0
+2,training_type_received,,16,100.0
+2,who_paid_training,,16,100.0

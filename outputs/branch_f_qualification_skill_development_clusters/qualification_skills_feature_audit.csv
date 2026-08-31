@@ -1,0 +1,4 @@
+feature,type,observed,missing,maximum_distance_weight
+qualification_job_match,ordinal,81,0,0.3333333333333333
+past_edu_useful_for_job,ordinal,78,3,0.3333333333333333
+received_training,nominal,81,0,0.3333333333333333

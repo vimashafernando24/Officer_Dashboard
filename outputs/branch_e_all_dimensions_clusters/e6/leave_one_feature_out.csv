@@ -1,0 +1,5 @@
+omitted_feature,minimum_pair_coverage,silhouette_reduced,ari_reduced_vs_final
+father_edu,2,0.6376697927551935,1.0
+mother_edu,2,0.6407536773379728,1.0
+edu_status,1,0.7449924057319637,1.0
+worked_while_studying,1,0.5871653756530752,-0.0018840153076243745

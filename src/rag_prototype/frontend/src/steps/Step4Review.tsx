@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { fetchEvidencePreview } from "../api";
 import { ClusterResearchTree } from "../components/research-tree/ClusterResearchTree";
 import { ResultView } from "../components/ResultView";
+import { ClusterResearchTeachingPanel } from "../components/ClusterResearchTeachingPanel";
 import type { ClusterQuestionGroup, EvidencePreview, IntakeState, Option, RecommendResponse } from "../types";
 import officerMascot from "../../../../mascots/small/rabbit4.png";
 import supportMascot from "../../../../mascots/small/rabbit2.png";
@@ -19,7 +20,7 @@ interface Props {
 
 type TabId = "profile" | "programmes";
 
-export function Step4Review({ state, onBack, onSubmit, loading, result }: Props) {
+export function Step4Review({ state, idealSectorOptions, onBack, onSubmit, loading, result }: Props) {
   const [preview, setPreview] = useState<EvidencePreview | null>(null);
   const [previewError, setPreviewError] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<TabId>("profile");
@@ -27,6 +28,20 @@ export function Step4Review({ state, onBack, onSubmit, loading, result }: Props)
   useEffect(() => {
     if (result) setActiveTab("programmes");
   }, [result]);
+
+  const sectorLabel = (code: string) =>
+    idealSectorOptions.find((option) => option.code === code)?.label ?? code;
+
+  const memberAnswers = [
+    ...state.idealSectors.map((code) => ({
+      label: sectorLabel(code),
+      value: state.skillsBySector[code]?.length ? state.skillsBySector[code].join(", ") : "No specific skill selected",
+    })),
+    { label: "Reason for training", value: state.q2 ?? "Not stated" },
+    { label: "Schedule preference", value: state.q3 ?? "Not stated" },
+    { label: "Language preference", value: state.q4 ?? "Not stated" },
+    { label: "Qualification preference", value: state.q5 ?? "Not stated" },
+  ];
 
   useEffect(() => {
     if (!state.branch || !state.idealSectors.length) return;
@@ -69,7 +84,7 @@ export function Step4Review({ state, onBack, onSubmit, loading, result }: Props)
             onClick={() => setActiveTab("profile")}
           >
             <span className="sidebar-tab-number">2</span>
-            <strong>Your profile</strong>
+            <strong>Cluster assignment</strong>
           </button>
           <button
             type="button"
@@ -82,12 +97,15 @@ export function Step4Review({ state, onBack, onSubmit, loading, result }: Props)
         </nav>
 
         <main className="simple-main">
-          {activeTab === "profile" ? (
-            <section className="flow-section profile-section" aria-labelledby="profile-step-title">
+          <section
+            className="flow-section profile-section"
+            aria-labelledby="profile-step-title"
+            hidden={activeTab !== "profile"}
+          >
               <div className="flow-section-heading">
                 <span className="step-number">2</span>
                 <div>
-                  <span className="section-kicker">Your profile</span>
+                  <span className="section-kicker">Cluster assignment</span>
                   <h2 id="profile-step-title">Branch and cluster assignment</h2>
                   <p>The assignment below uses the existing frozen nearest-match models.</p>
                 </div>
@@ -96,11 +114,17 @@ export function Step4Review({ state, onBack, onSubmit, loading, result }: Props)
               {previewError ? <div className="simple-alert">Could not load the profile assignment: {previewError}</div> : null}
               {!preview && !previewError ? <div className="simple-loading">Assigning the profile…</div> : null}
               {preview ? (
-                <ClusterResearchTree
-                  assignedBranch={preview.branch}
-                  assignedProfiles={preview.assigned_profiles}
-                  tree={preview.research_tree}
-                />
+                <>
+                  <ClusterResearchTree
+                    assignedBranch={preview.branch}
+                    assignedProfiles={preview.assigned_profiles}
+                    tree={preview.research_tree}
+                  />
+                  <ClusterResearchTeachingPanel
+                    key={preview.assigned_profiles.map((profile) => profile.profile_key).join("|")}
+                    assignedProfiles={preview.assigned_profiles}
+                  />
+                </>
               ) : null}
 
               <div className="profile-actions">
@@ -119,8 +143,7 @@ export function Step4Review({ state, onBack, onSubmit, loading, result }: Props)
                   </button>
                 )}
               </div>
-            </section>
-          ) : null}
+          </section>
 
           {activeTab !== "profile" && loading ? (
             <div className="simple-loading result-loading">Reviewing the member’s answers and course catalogue…</div>
@@ -128,7 +151,7 @@ export function Step4Review({ state, onBack, onSubmit, loading, result }: Props)
 
           {activeTab === "programmes" && !loading ? (
             result ? (
-              <ResultView data={result} />
+              <ResultView data={result} memberAnswers={memberAnswers} />
             ) : (
               <div className="simple-loading">
                 No programme options yet — finish the profile step and click “Get programme options”.

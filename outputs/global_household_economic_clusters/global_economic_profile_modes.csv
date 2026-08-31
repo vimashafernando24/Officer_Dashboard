@@ -1,0 +1,13 @@
+global_economic_profile_id,variable,response,records,within_profile_percent
+1,household_income,"LKR 60,000 – 120,000",63,46.666666666666664
+1,household_size,4.0,43,31.85185185185185
+1,household_unemployed,1.0,68,50.370370370370374
+1,household_workers,1.0,59,43.7037037037037
+1,primary_earner_status,No — someone else is the main provider,105,77.77777777777777
+1,primary_income_source,My parents or family,94,69.62962962962963
+2,household_income,"Above LKR 200,000",128,56.14035087719298
+2,household_size,4.0,100,43.85964912280702
+2,household_unemployed,0.0,93,40.78947368421053
+2,household_workers,2.0,92,40.35087719298246
+2,primary_earner_status,No — someone else is the main provider,188,82.45614035087719
+2,primary_income_source,My parents or family,131,57.45614035087719

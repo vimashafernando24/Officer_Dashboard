@@ -1,0 +1,155 @@
+{
+  "dimension_code": "E5",
+  "dimension_name": "Household economic resources and dependency",
+  "records": 34,
+  "source_variables": [
+    "household_income",
+    "household_size",
+    "household_workers",
+    "household_unemployed",
+    "primary_earner_status",
+    "primary_income_source"
+  ],
+  "clustering_features": [
+    "household_income_position",
+    "household_worker_share",
+    "household_unemployed_share",
+    "primary_earner_responsibility",
+    "primary_income_source"
+  ],
+  "feature_types": {
+    "household_income_position": "ordinal",
+    "household_worker_share": "continuous",
+    "household_unemployed_share": "continuous",
+    "primary_earner_responsibility": "ordinal",
+    "primary_income_source": "nominal"
+  },
+  "profile_sizes": {
+    "1": 22,
+    "2": 12
+  },
+  "profile_labels": {
+    "1": "Diagnostic household-economic response profile 1",
+    "2": "Diagnostic household-economic response profile 2"
+  },
+  "profile_modes": [
+    {
+      "profile_id": 1,
+      "variable": "household_income",
+      "response": "LKR 60,000 \u2013 120,000",
+      "records": 8,
+      "within_profile_percent": 36.36363636363637
+    },
+    {
+      "profile_id": 1,
+      "variable": "household_size",
+      "response": 4.0,
+      "records": 9,
+      "within_profile_percent": 40.90909090909091
+    },
+    {
+      "profile_id": 1,
+      "variable": "household_unemployed",
+      "response": 1.0,
+      "records": 11,
+      "within_profile_percent": 50.0
+    },
+    {
+      "profile_id": 1,
+      "variable": "household_workers",
+      "response": 1.0,
+      "records": 16,
+      "within_profile_percent": 72.72727272727273
+    },
+    {
+      "profile_id": 1,
+      "variable": "primary_earner_status",
+      "response": "No \u2014 someone else is the main provider",
+      "records": 19,
+      "within_profile_percent": 86.36363636363636
+    },
+    {
+      "profile_id": 1,
+      "variable": "primary_income_source",
+      "response": "My parents or family",
+      "records": 16,
+      "within_profile_percent": 72.72727272727273
+    },
+    {
+      "profile_id": 2,
+      "variable": "household_income",
+      "response": "Above LKR 200,000",
+      "records": 6,
+      "within_profile_percent": 50.0
+    },
+    {
+      "profile_id": 2,
+      "variable": "household_size",
+      "response": 5.0,
+      "records": 5,
+      "within_profile_percent": 41.666666666666664
+    },
+    {
+      "profile_id": 2,
+      "variable": "household_unemployed",
+      "response": 1.0,
+      "records": 7,
+      "within_profile_percent": 58.333333333333336
+    },
+    {
+      "profile_id": 2,
+      "variable": "household_workers",
+      "response": 3.0,
+      "records": 7,
+      "within_profile_percent": 58.333333333333336
+    },
+    {
+      "profile_id": 2,
+      "variable": "primary_earner_status",
+      "response": "No \u2014 someone else is the main provider",
+      "records": 8,
+      "within_profile_percent": 66.66666666666667
+    },
+    {
+      "profile_id": 2,
+      "variable": "primary_income_source",
+      "response": "My parents or family",
+      "records": 11,
+      "within_profile_percent": 91.66666666666667
+    }
+  ],
+  "metrics": {
+    "gower_silhouette": 0.2569586870591487,
+    "consensus_silhouette": 0.618223904098688,
+    "source_minimum_cluster_size": 17,
+    "final_minimum_cluster_size": 12,
+    "kmedoids_subsample_stability_mean": 0.4111977241966283,
+    "spectral_subsample_stability_mean": 0.3405958790159896,
+    "ensemble_bootstrap_ari_mean": 0.8983921087081561,
+    "ensemble_bootstrap_ari_p10": 0.7718120805369127,
+    "ari_vs_full_kmedoids": 0.48398576512455516,
+    "ari_vs_full_spectral": 0.48398576512455516,
+    "maximum_single_feature_ari": 0.7718120805369127,
+    "dominant_single_feature": "household_worker_share",
+    "minimum_leave_one_feature_out_ari": 0.080393414581997,
+    "ambiguous_consensus_percent": 38.23529411764706,
+    "low_gower_confidence_percent": 20.588235294117645,
+    "pac_10_90": 0.7914438502673797,
+    "permutation_valid_repetitions": 35,
+    "permutation_null_p95": 0.24831412671268954,
+    "empirical_permutation_p": 0.5833333333333334,
+    "raw_vs_log_count_encoding_minimum_ari": null,
+    "structural_resource_only_ari": 0.7718120805369127
+  },
+  "automatic_screen_pass": false,
+  "checks_passed": 4,
+  "checks_total": 10,
+  "decision": "reject",
+  "limitations": [
+    "Branch E contains only 34 strict respondents, so only k=2 can satisfy the minimum profile size of 15.",
+    "No dimension score or psychometric scale is constructed.",
+    "PAC is reported descriptively because there is only one eligible candidate k.",
+    "Automatic screening does not replace single-feature and leave-one-feature-out substantive review.",
+    "A retained result with leave-one-feature-out ARI below 0.10 is explicitly marked feature-dependent and must be interpreted around its central indicator rather than as a broad latent scale."
+  ]
+}

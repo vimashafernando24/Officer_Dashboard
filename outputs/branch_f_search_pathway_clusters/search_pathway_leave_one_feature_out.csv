@@ -1,0 +1,7 @@
+omitted_feature,retained_features,respondents_compared,minimum_pair_coverage,gower_silhouette_reduced_kmedoids,ari_reduced_kmedoids_vs_final_consensus
+registered_as_jobseeker,5,81,5,0.18850539954205026,1.0
+employment_service_help_f,5,81,5,0.19052423607092714,0.9505820338238524
+jobs_applied_before_hire,5,81,5,0.1748793447368485,0.9023753947549087
+interviews_before_hire,5,81,5,0.18332229973220562,0.9023753947549087
+search_duration_before_hire,5,81,5,0.3069398054769983,0.1522295975982593
+obstacle_finding_this_job,5,81,5,0.5254549728009484,0.01682758620689655

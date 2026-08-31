@@ -9,15 +9,16 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  min-height: 52px;
+  min-height: 58px;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 18px;
   background: var(--surface);
   color: var(--ink);
   padding: 13px 16px;
-  font-size: 13.5px;
-  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.55;
   cursor: pointer;
   touch-action: manipulation;
   transition: transform 0.14s ease, border-color 0.14s ease, background 0.14s ease, box-shadow 0.14s ease;
@@ -50,7 +51,7 @@
 }
 
 .choice-option.is-disabled { opacity: .48; cursor: not-allowed; transform: none; box-shadow: none; }
-.choice-limit { color: var(--yc-dim); font: 700 10px "JetBrains Mono", monospace; text-align: right; }
+.choice-limit { color: var(--yc-muted); font: 700 12px var(--yc-font-reading); text-align: right; }
 
 .choice-label {
   position: relative;
@@ -124,8 +125,8 @@
 
   .choice-grid-tiles .choice-label {
     flex: none;
-    font-size: 14px;
-    line-height: 1.45;
+    font-size: 16.5px;
+    line-height: 1.55;
   }
 }
 

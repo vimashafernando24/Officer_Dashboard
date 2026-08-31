@@ -1,0 +1,3 @@
+readiness_profile_id,readiness_profile_label,records,low_gower_confidence_records,mean_gower_silhouette,mean_consensus_silhouette,percent
+1,"Diagnostic: more direction, confidence and support",45,3,0.5414187485226344,0.7951499513988622,80.35714285714286
+2,"Diagnostic: lost, low-confidence and low-support",11,0,0.5288547022585997,0.8963899326401062,19.642857142857142

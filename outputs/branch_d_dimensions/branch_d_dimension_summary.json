@@ -1,0 +1,52 @@
+{
+  "cohort": {
+    "branch": "D",
+    "routing_source": "translated_final_active_branch",
+    "records": 191
+  },
+  "method": {
+    "dimensions": [
+      "economic_resources",
+      "human_capital_trajectory",
+      "career_transition_readiness",
+      "social_capital_belonging",
+      "agency_study_engagement"
+    ],
+    "component_count": 19,
+    "minimum_component_coverage": 0.6,
+    "aggregation": "Equal-weight mean of available normalized components when coverage threshold is met",
+    "score_range": "0\u2013100; higher means more of the named dimension"
+  },
+  "coverage": {
+    "economic_resources": {
+      "scored_rows": 191,
+      "coverage_pct": 100.0
+    },
+    "human_capital_trajectory": {
+      "scored_rows": 191,
+      "coverage_pct": 100.0
+    },
+    "career_transition_readiness": {
+      "scored_rows": 191,
+      "coverage_pct": 100.0
+    },
+    "social_capital_belonging": {
+      "scored_rows": 191,
+      "coverage_pct": 100.0
+    },
+    "agency_study_engagement": {
+      "scored_rows": 191,
+      "coverage_pct": 100.0
+    }
+  },
+  "complete_five_dimension_rows": 191,
+  "agency_cronbach_alpha_diagnostic": 0.5507172734314485,
+  "dimensions_passing_readiness_checks": [
+    "economic_resources",
+    "human_capital_trajectory",
+    "career_transition_readiness",
+    "social_capital_belonging",
+    "agency_study_engagement"
+  ],
+  "status": "Ready for Level 2 integrated clustering"
+}

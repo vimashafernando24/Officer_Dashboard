@@ -1,0 +1,87 @@
+transition_profile_id,variable,role,response,records,within_profile_percent
+1,plans_after_education,cluster_input,Do not know yet,4,3.3333333333333335
+1,plans_after_education,cluster_input,Immediately go on to further education or training,31,25.833333333333332
+1,plans_after_education,cluster_input,Look for a job,83,69.16666666666667
+1,plans_after_education,cluster_input,Start my own business,1,0.8333333333333334
+1,plans_after_education,cluster_input,Stay at home,1,0.8333333333333334
+2,plans_after_education,cluster_input,Do not know yet,5,7.042253521126761
+2,plans_after_education,cluster_input,Immediately go on to further education or training,12,16.901408450704224
+2,plans_after_education,cluster_input,Look for a job,37,52.11267605633803
+2,plans_after_education,cluster_input,Start my own business,16,22.535211267605632
+2,plans_after_education,cluster_input,Stay at home,1,1.408450704225352
+1,ideal_work_type,cluster_input,I do not wish to work,1,0.8333333333333334
+1,ideal_work_type,cluster_input,Not sure yet,19,15.833333333333334
+1,ideal_work_type,cluster_input,Work for a local private Sri Lankan company,12,10.0
+1,ideal_work_type,cluster_input,Work for a multinational or large private company,70,58.333333333333336
+1,ideal_work_type,cluster_input,Work for the government or public sector,15,12.5
+1,ideal_work_type,cluster_input,Work in a family business (non-farming),1,0.8333333333333334
+1,ideal_work_type,cluster_input,Work on my own or family farm or land,2,1.6666666666666667
+2,ideal_work_type,cluster_input,Start my own business,71,100.0
+1,ideal_sector,cluster_input,"Agriculture, forestry, and fishing",2,1.6666666666666667
+1,ideal_sector,cluster_input,"Creative, media, and arts",2,1.6666666666666667
+1,ideal_sector,cluster_input,Education and teaching,10,8.333333333333334
+1,ideal_sector,cluster_input,"Finance, banking, and insurance",5,4.166666666666667
+1,ideal_sector,cluster_input,"Health, social work, and wellbeing",3,2.5
+1,ideal_sector,cluster_input,"Hotels, restaurants, and hospitality",3,2.5
+1,ideal_sector,cluster_input,Information technology and communications,70,58.333333333333336
+1,ideal_sector,cluster_input,Manufacturing or production,7,5.833333333333333
+1,ideal_sector,cluster_input,Not sure,13,10.833333333333334
+1,ideal_sector,cluster_input,"Personal services (beauty, fitness, wellness)",1,0.8333333333333334
+1,ideal_sector,cluster_input,"Public administration, government, and defence",1,0.8333333333333334
+1,ideal_sector,cluster_input,"Transport, storage, and logistics",1,0.8333333333333334
+1,ideal_sector,cluster_input,"Wholesale, retail, or repair",2,1.6666666666666667
+2,ideal_sector,cluster_input,"Agriculture, forestry, and fishing",2,2.816901408450704
+2,ideal_sector,cluster_input,Construction and building,2,2.816901408450704
+2,ideal_sector,cluster_input,"Creative, media, and arts",3,4.225352112676056
+2,ideal_sector,cluster_input,Education and teaching,2,2.816901408450704
+2,ideal_sector,cluster_input,"Finance, banking, and insurance",4,5.633802816901408
+2,ideal_sector,cluster_input,"Health, social work, and wellbeing",2,2.816901408450704
+2,ideal_sector,cluster_input,"Hotels, restaurants, and hospitality",2,2.816901408450704
+2,ideal_sector,cluster_input,Information technology and communications,41,57.74647887323944
+2,ideal_sector,cluster_input,Manufacturing or production,4,5.633802816901408
+2,ideal_sector,cluster_input,Not sure,7,9.859154929577464
+2,ideal_sector,cluster_input,"Personal services (beauty, fitness, wellness)",1,1.408450704225352
+2,ideal_sector,cluster_input,"Wholesale, retail, or repair",1,1.408450704225352
+1,study_field_preference,cluster_input,"Commerce, business, or management",11,9.166666666666666
+1,study_field_preference,cluster_input,Education or teaching,6,5.0
+1,study_field_preference,cluster_input,Engineering,7,5.833333333333333
+1,study_field_preference,cluster_input,Health sciences or nursing,1,0.8333333333333334
+1,study_field_preference,cluster_input,ICT or computing,66,55.0
+1,study_field_preference,cluster_input,Industrial or technical studies,3,2.5
+1,study_field_preference,cluster_input,"Literature, arts, or social sciences",2,1.6666666666666667
+1,study_field_preference,cluster_input,Other field,7,5.833333333333333
+1,study_field_preference,cluster_input,Science or mathematics,16,13.333333333333334
+1,study_field_preference,cluster_input,,1,0.8333333333333334
+2,study_field_preference,cluster_input,"Commerce, business, or management",6,8.450704225352112
+2,study_field_preference,cluster_input,Engineering,8,11.267605633802816
+2,study_field_preference,cluster_input,Health sciences or nursing,2,2.816901408450704
+2,study_field_preference,cluster_input,ICT or computing,40,56.33802816901409
+2,study_field_preference,cluster_input,Industrial or technical studies,2,2.816901408450704
+2,study_field_preference,cluster_input,"Literature, arts, or social sciences",2,2.816901408450704
+2,study_field_preference,cluster_input,Other field,2,2.816901408450704
+2,study_field_preference,cluster_input,Science or mathematics,6,8.450704225352112
+2,study_field_preference,cluster_input,,3,4.225352112676056
+1,already_job_searching,transition_engagement_descriptor,No — not yet,56,46.666666666666664
+1,already_job_searching,transition_engagement_descriptor,Yes — I am already searching,64,53.333333333333336
+2,already_job_searching,transition_engagement_descriptor,No — not yet,24,33.80281690140845
+2,already_job_searching,transition_engagement_descriptor,Yes — I am already searching,47,66.19718309859155
+1,job_search_method_d,conditional_descriptor,Attending job fairs,5,4.166666666666667
+1,job_search_method_d,conditional_descriptor,Checking at worksites / factory gates,2,1.6666666666666667
+1,job_search_method_d,conditional_descriptor,Direct application to employers,4,3.3333333333333335
+1,job_search_method_d,conditional_descriptor,Looking for resources to start own business,1,0.8333333333333334
+1,job_search_method_d,conditional_descriptor,"Online job ads (internet, social media)",30,25.0
+1,job_search_method_d,conditional_descriptor,Placing or answering job advertisements,5,4.166666666666667
+1,job_search_method_d,conditional_descriptor,Private employment agency,3,2.5
+1,job_search_method_d,conditional_descriptor,Public employment office registration,1,0.8333333333333334
+1,job_search_method_d,conditional_descriptor,Through education or training institution,10,8.333333333333334
+1,job_search_method_d,conditional_descriptor,"Through friends, relatives, or colleagues",3,2.5
+1,job_search_method_d,conditional_descriptor,,56,46.666666666666664
+2,job_search_method_d,conditional_descriptor,Attending job fairs,8,11.267605633802816
+2,job_search_method_d,conditional_descriptor,Checking at worksites / factory gates,3,4.225352112676056
+2,job_search_method_d,conditional_descriptor,Direct application to employers,5,7.042253521126761
+2,job_search_method_d,conditional_descriptor,Looking for resources to start own business,2,2.816901408450704
+2,job_search_method_d,conditional_descriptor,"Online job ads (internet, social media)",19,26.760563380281692
+2,job_search_method_d,conditional_descriptor,Other method,4,5.633802816901408
+2,job_search_method_d,conditional_descriptor,Private employment agency,1,1.408450704225352
+2,job_search_method_d,conditional_descriptor,Through education or training institution,5,7.042253521126761
+2,job_search_method_d,conditional_descriptor,,24,33.80281690140845

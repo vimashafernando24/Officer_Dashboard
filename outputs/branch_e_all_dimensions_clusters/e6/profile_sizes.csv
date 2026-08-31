@@ -1,0 +1,3 @@
+profile_id,profile_label,records,mean_gower_silhouette,mean_consensus_silhouette,percent
+1,Diagnostic: did not work while studying,24,0.6012749516544473,1.0,70.58823529411765
+2,Diagnostic: worked while studying,10,0.5444859729739869,1.0,29.41176470588235

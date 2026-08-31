@@ -1,0 +1,21 @@
+readiness_profile_id,variable,response,records,within_profile_percent
+1,future_orientation_g,I feel quite lost and uncertain about what the future holds for me,1,2.2222222222222223
+1,future_orientation_g,I have a clear plan and I am working toward specific goals even now,13,28.88888888888889
+1,future_orientation_g,I have a general sense of direction but no concrete plan yet,19,42.22222222222222
+1,future_orientation_g,I want to change my situation but feel stuck and unsure how to start,12,26.666666666666668
+2,future_orientation_g,I feel quite lost and uncertain about what the future holds for me,10,90.9090909090909
+2,future_orientation_g,I have a clear plan and I am working toward specific goals even now,1,9.090909090909092
+1,employment_self_efficacy,Fairly confident — I probably could with effort,19,42.22222222222222
+1,employment_self_efficacy,Not confident at all — I feel it would be very difficult for me,1,2.2222222222222223
+1,employment_self_efficacy,Not very confident — I have significant doubts,3,6.666666666666667
+1,employment_self_efficacy,Very confident — I believe I could find something suitable,22,48.888888888888886
+2,employment_self_efficacy,Fairly confident — I probably could with effort,1,9.090909090909092
+2,employment_self_efficacy,Not confident at all — I feel it would be very difficult for me,7,63.63636363636363
+2,employment_self_efficacy,Not very confident — I have significant doubts,3,27.272727272727273
+1,support_for_engagement,A great deal — people would actively support and encourage me,21,46.666666666666664
+1,support_for_engagement,Some — I would have moderate support,19,42.22222222222222
+1,support_for_engagement,Very little — most people would be indifferent,5,11.11111111111111
+2,support_for_engagement,A great deal — people would actively support and encourage me,1,9.090909090909092
+2,support_for_engagement,None or opposition — I would face resistance from those around me,6,54.54545454545455
+2,support_for_engagement,Some — I would have moderate support,2,18.181818181818183
+2,support_for_engagement,Very little — most people would be indifferent,2,18.181818181818183

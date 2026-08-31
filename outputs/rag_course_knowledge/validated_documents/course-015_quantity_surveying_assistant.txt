@@ -1,0 +1,55 @@
+COURSE DOCUMENT ID: COURSE-015
+
+COURSE NAME: Quantity Surveying Assistant
+
+VALIDATION STATUS: NEEDS_MANUAL_REVIEW_DO_NOT_INDEX
+
+SOURCE TYPE: COURSE_DETAIL_SCREENSHOT
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.28.10.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.31.50.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-015
+
+UNCERTAINTY MARKERS PRESENT: NO
+
+PROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.
+
+SOURCE CONFLICT NOTE: The catalogue card says Part Time, while the course-detail text says full time; the structured cross-check contains only a Full Time Quantity Surveying record.
+
+COMPLETE EXTRACTED COURSE TEXT
+
+Quantity Surveying Assistant
+LANGUAGE
+MAX STUDENTS
+English
+20
+APPLY NOW
+Course Overview
+1. Contract Administration - Semester 1|
+2. Interim Valuation - Semester 1|
+3. Material Technology - Semester 1
+4. QS Practice 02 - Semester 1
+5. EMP 3 - Semester 1
+6. Maths - Semester 1
+7. Measurement 01 - Semester 1|
+8. Construction Technology - Semester 1
+9. QS Practice 01 - Semester 1
+10. Drawing Practice - Semester 1
+1l. Accounting - Semester 1
+12. General Econ - Semester 1
+13. Work place Information Management
+C
+- Semester 1
+The National Youth Service Council has initiated several Course programs to enable the youth to
+develop their skills while also providing an opportunity to achieve their future job aspirations.
+Quantity Surveyor will give you theoretical knowledge as well as job oriented practical that is
+necessary for employment and higher education. This is a full time course which will be held on
+weekdays.
+It is our objective to show the correct path that will direct youth to their desired occupations while at
+the same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and
+gentle attitudes within a disciplined environment.
+By completing this course , can achieve Competency Level 5 under the National Vocational
+Qualifications Competency Standards through following a variety of full time study programs covering
+a variety of occupations.

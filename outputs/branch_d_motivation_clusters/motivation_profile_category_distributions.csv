@@ -1,0 +1,42 @@
+motivation_profile_id,motivation_profile_label,variable,ordinal_code,response,records,within_profile_percent
+1,"Motivation profile 1: externally or uncertainly motivated, with moderate study support",study_motivation_type,4,External: qualification required for a job,33,71.73913043478261
+1,"Motivation profile 1: externally or uncertainly motivated, with moderate study support",study_motivation_type,5,Amotivated/uncertain: following the path ended up on,13,28.26086956521739
+2,Motivation profile 2: goal-aligned motivation with mixed study confidence and support,study_motivation_type,1,Intrinsic: genuinely passionate about the subject,30,38.96103896103896
+2,Motivation profile 2: goal-aligned motivation with mixed study confidence and support,study_motivation_type,2,Identified: aligned with own goals,38,49.35064935064935
+2,Motivation profile 2: goal-aligned motivation with mixed study confidence and support,study_motivation_type,3,Introjected: avoid guilt or disappointing family,9,11.688311688311689
+3,"Motivation profile 3: highly self-directed, capable and connected",study_motivation_type,1,Intrinsic: genuinely passionate about the subject,29,42.64705882352941
+3,"Motivation profile 3: highly self-directed, capable and connected",study_motivation_type,2,Identified: aligned with own goals,34,50.0
+3,"Motivation profile 3: highly self-directed, capable and connected",study_motivation_type,3,Introjected: avoid guilt or disappointing family,3,4.411764705882353
+3,"Motivation profile 3: highly self-directed, capable and connected",study_motivation_type,4,External: qualification required for a job,2,2.9411764705882355
+1,"Motivation profile 1: externally or uncertainly motivated, with moderate study support",autonomy_in_study,1,A great deal of choice and control,15,32.608695652173914
+1,"Motivation profile 1: externally or uncertainly motivated, with moderate study support",autonomy_in_study,2,Some flexibility within a mostly fixed curriculum,21,45.65217391304348
+1,"Motivation profile 1: externally or uncertainly motivated, with moderate study support",autonomy_in_study,3,Very little choice; prescribed and fixed,7,15.217391304347826
+1,"Motivation profile 1: externally or uncertainly motivated, with moderate study support",autonomy_in_study,4,No choice or control,3,6.521739130434782
+2,Motivation profile 2: goal-aligned motivation with mixed study confidence and support,autonomy_in_study,1,A great deal of choice and control,23,29.87012987012987
+2,Motivation profile 2: goal-aligned motivation with mixed study confidence and support,autonomy_in_study,2,Some flexibility within a mostly fixed curriculum,44,57.142857142857146
+2,Motivation profile 2: goal-aligned motivation with mixed study confidence and support,autonomy_in_study,3,Very little choice; prescribed and fixed,9,11.688311688311689
+2,Motivation profile 2: goal-aligned motivation with mixed study confidence and support,autonomy_in_study,4,No choice or control,1,1.2987012987012987
+3,"Motivation profile 3: highly self-directed, capable and connected",autonomy_in_study,1,A great deal of choice and control,62,91.17647058823529
+3,"Motivation profile 3: highly self-directed, capable and connected",autonomy_in_study,2,Some flexibility within a mostly fixed curriculum,3,4.411764705882353
+3,"Motivation profile 3: highly self-directed, capable and connected",autonomy_in_study,3,Very little choice; prescribed and fixed,2,2.9411764705882355
+3,"Motivation profile 3: highly self-directed, capable and connected",autonomy_in_study,4,No choice or control,1,1.4705882352941178
+1,"Motivation profile 1: externally or uncertainly motivated, with moderate study support",competence_in_study_field,1,Very capable and confident,5,10.869565217391305
+1,"Motivation profile 1: externally or uncertainly motivated, with moderate study support",competence_in_study_field,2,Fairly capable with some gaps,24,52.17391304347826
+1,"Motivation profile 1: externally or uncertainly motivated, with moderate study support",competence_in_study_field,3,Somewhat capable; struggles in some areas,15,32.608695652173914
+1,"Motivation profile 1: externally or uncertainly motivated, with moderate study support",competence_in_study_field,4,Not very capable; frequently out of depth,2,4.3478260869565215
+2,Motivation profile 2: goal-aligned motivation with mixed study confidence and support,competence_in_study_field,1,Very capable and confident,7,9.090909090909092
+2,Motivation profile 2: goal-aligned motivation with mixed study confidence and support,competence_in_study_field,2,Fairly capable with some gaps,47,61.03896103896104
+2,Motivation profile 2: goal-aligned motivation with mixed study confidence and support,competence_in_study_field,3,Somewhat capable; struggles in some areas,21,27.272727272727273
+2,Motivation profile 2: goal-aligned motivation with mixed study confidence and support,competence_in_study_field,4,Not very capable; frequently out of depth,2,2.5974025974025974
+3,"Motivation profile 3: highly self-directed, capable and connected",competence_in_study_field,1,Very capable and confident,56,82.3529411764706
+3,"Motivation profile 3: highly self-directed, capable and connected",competence_in_study_field,2,Fairly capable with some gaps,12,17.647058823529413
+1,"Motivation profile 1: externally or uncertainly motivated, with moderate study support",relatedness_at_institution,1,Strongly connected and part of the community,12,26.08695652173913
+1,"Motivation profile 1: externally or uncertainly motivated, with moderate study support",relatedness_at_institution,2,Some connections but not deeply involved,26,56.52173913043478
+1,"Motivation profile 1: externally or uncertainly motivated, with moderate study support",relatedness_at_institution,3,Weakly connected or isolated,5,10.869565217391305
+1,"Motivation profile 1: externally or uncertainly motivated, with moderate study support",relatedness_at_institution,4,No sense of belonging,3,6.521739130434782
+2,Motivation profile 2: goal-aligned motivation with mixed study confidence and support,relatedness_at_institution,1,Strongly connected and part of the community,15,19.48051948051948
+2,Motivation profile 2: goal-aligned motivation with mixed study confidence and support,relatedness_at_institution,2,Some connections but not deeply involved,54,70.12987012987013
+2,Motivation profile 2: goal-aligned motivation with mixed study confidence and support,relatedness_at_institution,3,Weakly connected or isolated,6,7.792207792207792
+2,Motivation profile 2: goal-aligned motivation with mixed study confidence and support,relatedness_at_institution,4,No sense of belonging,2,2.5974025974025974
+3,"Motivation profile 3: highly self-directed, capable and connected",relatedness_at_institution,1,Strongly connected and part of the community,56,82.3529411764706
+3,"Motivation profile 3: highly self-directed, capable and connected",relatedness_at_institution,2,Some connections but not deeply involved,12,17.647058823529413

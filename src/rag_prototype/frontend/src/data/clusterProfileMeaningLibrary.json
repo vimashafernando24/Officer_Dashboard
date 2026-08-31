@@ -1,0 +1,497 @@
+{
+  "D_motivation_p1": {
+    "model_key": "D_motivation",
+    "profile_code": "MOT-1",
+    "profile_name": "Qualification-led study",
+    "historical_profile_size": 47,
+    "sibling_profiles": [
+      {
+        "profile_key": "D_motivation_p2",
+        "profile_name": "Goal-led study with developing confidence"
+      },
+      {
+        "profile_key": "D_motivation_p3",
+        "profile_name": "Goal-led, confident and connected study"
+      }
+    ],
+    "comparison_summary": "Compared with the other study-motivation profiles, this historical group more often reported having no useful employment or training contact they could call on.",
+    "summary_evidence": [
+      {
+        "evidence_id": "D_motivation_p1:employment_network_quality",
+        "evidence_status": "retained_descriptive"
+      }
+    ]
+  },
+  "D_motivation_p2": {
+    "model_key": "D_motivation",
+    "profile_code": "MOT-2",
+    "profile_name": "Goal-led study with developing confidence",
+    "historical_profile_size": 75,
+    "sibling_profiles": [
+      {
+        "profile_key": "D_motivation_p1",
+        "profile_name": "Qualification-led study"
+      },
+      {
+        "profile_key": "D_motivation_p3",
+        "profile_name": "Goal-led, confident and connected study"
+      }
+    ],
+    "comparison_summary": "Compared with the other study-motivation profiles, this historical group less often reported knowing several people with useful employment or training connections.",
+    "summary_evidence": [
+      {
+        "evidence_id": "D_motivation_p2:employment_network_quality",
+        "evidence_status": "retained_descriptive"
+      }
+    ]
+  },
+  "D_motivation_p3": {
+    "model_key": "D_motivation",
+    "profile_code": "MOT-3",
+    "profile_name": "Goal-led, confident and connected study",
+    "historical_profile_size": 69,
+    "sibling_profiles": [
+      {
+        "profile_key": "D_motivation_p1",
+        "profile_name": "Qualification-led study"
+      },
+      {
+        "profile_key": "D_motivation_p2",
+        "profile_name": "Goal-led study with developing confidence"
+      }
+    ],
+    "comparison_summary": "Compared with the other study-motivation profiles, this historical group more often reported knowing several people with useful employment or training connections.",
+    "summary_evidence": [
+      {
+        "evidence_id": "D_motivation_p3:employment_network_quality",
+        "evidence_status": "retained_descriptive"
+      }
+    ]
+  },
+  "D_economic_p1": {
+    "model_key": "D_economic",
+    "profile_code": "RES-1",
+    "profile_name": "Family-supported, government-funded study",
+    "historical_profile_size": 44,
+    "sibling_profiles": [
+      {
+        "profile_key": "D_economic_p2",
+        "profile_name": "Family-funded study with more household earners"
+      }
+    ],
+    "comparison_summary": "Compared with Family-funded study with more household earners, this historical group was less concentrated in ICT study interests and private institutions, and less often reported family guidance into its current programme.",
+    "summary_evidence": [
+      {
+        "evidence_id": "D_economic_p1:study_field_preference",
+        "evidence_status": "fdr_supported"
+      },
+      {
+        "evidence_id": "D_economic_p1:institution_type",
+        "evidence_status": "fdr_supported"
+      },
+      {
+        "evidence_id": "D_economic_p1:social_capital_in_edu_access",
+        "evidence_status": "fdr_supported"
+      }
+    ]
+  },
+  "D_economic_p2": {
+    "model_key": "D_economic",
+    "profile_code": "RES-2",
+    "profile_name": "Family-funded study with more household earners",
+    "historical_profile_size": 147,
+    "sibling_profiles": [
+      {
+        "profile_key": "D_economic_p1",
+        "profile_name": "Family-supported, government-funded study"
+      }
+    ],
+    "comparison_summary": "Compared with Family-supported, government-funded study, this historical group was more concentrated in ICT study interests and private institutions, and more often reported family guidance into its current programme.",
+    "summary_evidence": [
+      {
+        "evidence_id": "D_economic_p2:study_field_preference",
+        "evidence_status": "fdr_supported"
+      },
+      {
+        "evidence_id": "D_economic_p2:institution_type",
+        "evidence_status": "fdr_supported"
+      },
+      {
+        "evidence_id": "D_economic_p2:social_capital_in_edu_access",
+        "evidence_status": "fdr_supported"
+      }
+    ]
+  },
+  "D_educational_cultural_p1": {
+    "model_key": "D_educational_cultural",
+    "profile_code": "EDU-1",
+    "profile_name": "Education re-entry with graduate family background",
+    "historical_profile_size": 15,
+    "sibling_profiles": [
+      {
+        "profile_key": "D_educational_cultural_p2",
+        "profile_name": "State-study postgraduate pathway"
+      },
+      {
+        "profile_key": "D_educational_cultural_p3",
+        "profile_name": "Private-study bachelor pathway without work exposure"
+      },
+      {
+        "profile_key": "D_educational_cultural_p4",
+        "profile_name": "Private-study bachelor pathway with work exposure"
+      }
+    ],
+    "comparison_summary": "Compared with the other education-background profiles, this historical group was more often already searching for work and less often relied on parents or family as its main personal income or education-funding source.",
+    "summary_evidence": [
+      {
+        "evidence_id": "D_educational_cultural_p1:already_job_searching",
+        "evidence_status": "fdr_supported"
+      },
+      {
+        "evidence_id": "D_educational_cultural_p1:primary_income_source",
+        "evidence_status": "fdr_supported"
+      },
+      {
+        "evidence_id": "D_educational_cultural_p1:edu_funding_source",
+        "evidence_status": "fdr_supported"
+      }
+    ]
+  },
+  "D_educational_cultural_p2": {
+    "model_key": "D_educational_cultural",
+    "profile_code": "EDU-2",
+    "profile_name": "State-study postgraduate pathway",
+    "historical_profile_size": 53,
+    "sibling_profiles": [
+      {
+        "profile_key": "D_educational_cultural_p1",
+        "profile_name": "Education re-entry with graduate family background"
+      },
+      {
+        "profile_key": "D_educational_cultural_p3",
+        "profile_name": "Private-study bachelor pathway without work exposure"
+      },
+      {
+        "profile_key": "D_educational_cultural_p4",
+        "profile_name": "Private-study bachelor pathway with work exposure"
+      }
+    ],
+    "comparison_summary": "Compared with the other education-background profiles, this historical group more often had not yet begun searching for work, relied on parents or family for personal income, and studied through government-funded or free education.",
+    "summary_evidence": [
+      {
+        "evidence_id": "D_educational_cultural_p2:already_job_searching",
+        "evidence_status": "fdr_supported"
+      },
+      {
+        "evidence_id": "D_educational_cultural_p2:primary_income_source",
+        "evidence_status": "fdr_supported"
+      },
+      {
+        "evidence_id": "D_educational_cultural_p2:edu_funding_source",
+        "evidence_status": "fdr_supported"
+      }
+    ]
+  },
+  "D_educational_cultural_p3": {
+    "model_key": "D_educational_cultural",
+    "profile_code": "EDU-3",
+    "profile_name": "Private-study bachelor pathway without work exposure",
+    "historical_profile_size": 57,
+    "sibling_profiles": [
+      {
+        "profile_key": "D_educational_cultural_p1",
+        "profile_name": "Education re-entry with graduate family background"
+      },
+      {
+        "profile_key": "D_educational_cultural_p2",
+        "profile_name": "State-study postgraduate pathway"
+      },
+      {
+        "profile_key": "D_educational_cultural_p4",
+        "profile_name": "Private-study bachelor pathway with work exposure"
+      }
+    ],
+    "comparison_summary": "Compared with the other education-background profiles, this historical group less often said they had not yet begun searching for work, while parents or family were more prominent as both personal income and education funding.",
+    "summary_evidence": [
+      {
+        "evidence_id": "D_educational_cultural_p3:already_job_searching",
+        "evidence_status": "fdr_supported"
+      },
+      {
+        "evidence_id": "D_educational_cultural_p3:primary_income_source",
+        "evidence_status": "fdr_supported"
+      },
+      {
+        "evidence_id": "D_educational_cultural_p3:edu_funding_source",
+        "evidence_status": "fdr_supported"
+      }
+    ]
+  },
+  "D_educational_cultural_p4": {
+    "model_key": "D_educational_cultural",
+    "profile_code": "EDU-4",
+    "profile_name": "Private-study bachelor pathway with work exposure",
+    "historical_profile_size": 66,
+    "sibling_profiles": [
+      {
+        "profile_key": "D_educational_cultural_p1",
+        "profile_name": "Education re-entry with graduate family background"
+      },
+      {
+        "profile_key": "D_educational_cultural_p2",
+        "profile_name": "State-study postgraduate pathway"
+      },
+      {
+        "profile_key": "D_educational_cultural_p3",
+        "profile_name": "Private-study bachelor pathway without work exposure"
+      }
+    ],
+    "comparison_summary": "Compared with the other education-background profiles, this historical group less often said they had not yet begun searching for work, relied less on parents or family as its main personal income source, and more often reported the highest household-income band.",
+    "summary_evidence": [
+      {
+        "evidence_id": "D_educational_cultural_p4:already_job_searching",
+        "evidence_status": "fdr_supported"
+      },
+      {
+        "evidence_id": "D_educational_cultural_p4:primary_income_source",
+        "evidence_status": "fdr_supported"
+      },
+      {
+        "evidence_id": "D_educational_cultural_p4:household_income",
+        "evidence_status": "fdr_supported"
+      }
+    ]
+  },
+  "E_learning_orientation_p1": {
+    "model_key": "E_learning_orientation",
+    "profile_code": "E-LEARN-1",
+    "profile_name": "High education value and strong learning ambition",
+    "historical_profile_size": 18,
+    "sibling_profiles": [
+      {
+        "profile_key": "E_learning_orientation_p2",
+        "profile_name": "Moderate education value and mixed learning plans"
+      }
+    ],
+    "comparison_summary": "Compared with Moderate education value and mixed learning plans, this historical group more often expected a stable, well-paid and qualification-matched job, reported more helpful job-search contacts and stronger support, and submitted more applications.",
+    "summary_evidence": [
+      {
+        "evidence_id": "E_learning_orientation_p1:job_acceptance_conditions",
+        "evidence_status": "retained_descriptive"
+      },
+      {
+        "evidence_id": "E_learning_orientation_p1:network_helpfulness",
+        "evidence_status": "retained_descriptive"
+      },
+      {
+        "evidence_id": "E_learning_orientation_p1:social_support_job_search",
+        "evidence_status": "retained_descriptive"
+      },
+      {
+        "evidence_id": "E_learning_orientation_p1:num_applications",
+        "evidence_status": "retained_descriptive"
+      }
+    ]
+  },
+  "E_learning_orientation_p2": {
+    "model_key": "E_learning_orientation",
+    "profile_code": "E-LEARN-2",
+    "profile_name": "Moderate education value and mixed learning plans",
+    "historical_profile_size": 16,
+    "sibling_profiles": [
+      {
+        "profile_key": "E_learning_orientation_p1",
+        "profile_name": "High education value and strong learning ambition"
+      }
+    ],
+    "comparison_summary": "Compared with High education value and strong learning ambition, this historical group less often reported strict job conditions, very helpful contacts or strong job-search support, and submitted fewer applications.",
+    "summary_evidence": [
+      {
+        "evidence_id": "E_learning_orientation_p2:job_acceptance_conditions",
+        "evidence_status": "retained_descriptive"
+      },
+      {
+        "evidence_id": "E_learning_orientation_p2:network_helpfulness",
+        "evidence_status": "retained_descriptive"
+      },
+      {
+        "evidence_id": "E_learning_orientation_p2:social_support_job_search",
+        "evidence_status": "retained_descriptive"
+      },
+      {
+        "evidence_id": "E_learning_orientation_p2:num_applications",
+        "evidence_status": "retained_descriptive"
+      }
+    ]
+  },
+  "F_employment_security_p1": {
+    "model_key": "F_employment_security",
+    "profile_code": "F-SEC-1",
+    "profile_name": "Temporary work with uncertain security",
+    "historical_profile_size": 29,
+    "sibling_profiles": [
+      {
+        "profile_key": "F_employment_security_p2",
+        "profile_name": "Permanent work with stronger security"
+      }
+    ],
+    "comparison_summary": "Compared with Permanent work with stronger security, this historical group tended to have lower work income, rely less on regular employment as its main income source, and be less likely to want to stay in the current job.",
+    "summary_evidence": [
+      {
+        "evidence_id": "F_employment_security_p1:monthly_income_band",
+        "evidence_status": "fdr_supported"
+      },
+      {
+        "evidence_id": "F_employment_security_p1:primary_income_source",
+        "evidence_status": "fdr_supported"
+      },
+      {
+        "evidence_id": "F_employment_security_p1:hopes_to_change_job",
+        "evidence_status": "retained_descriptive"
+      }
+    ]
+  },
+  "F_employment_security_p2": {
+    "model_key": "F_employment_security",
+    "profile_code": "F-SEC-2",
+    "profile_name": "Permanent work with stronger security",
+    "historical_profile_size": 52,
+    "sibling_profiles": [
+      {
+        "profile_key": "F_employment_security_p1",
+        "profile_name": "Temporary work with uncertain security"
+      }
+    ],
+    "comparison_summary": "Compared with Temporary work with uncertain security, this historical group tended to have higher work income, rely more on regular employment as its main income source, and be more likely to want to stay in the current job.",
+    "summary_evidence": [
+      {
+        "evidence_id": "F_employment_security_p2:monthly_income_band",
+        "evidence_status": "fdr_supported"
+      },
+      {
+        "evidence_id": "F_employment_security_p2:primary_income_source",
+        "evidence_status": "fdr_supported"
+      },
+      {
+        "evidence_id": "F_employment_security_p2:hopes_to_change_job",
+        "evidence_status": "retained_descriptive"
+      }
+    ]
+  },
+  "G_economic_role_p1": {
+    "model_key": "G_economic_role",
+    "profile_code": "G-ROLE-1",
+    "profile_name": "Family-supported non-provider",
+    "historical_profile_size": 41,
+    "sibling_profiles": [
+      {
+        "profile_key": "G_economic_role_p2",
+        "profile_name": "Self-income provider or contributor"
+      }
+    ],
+    "comparison_summary": "Compared with Self-income provider or contributor, this historical group less often reported several useful employment contacts, regular access to labour-market information, or high confidence in finding suitable work or training.",
+    "summary_evidence": [
+      {
+        "evidence_id": "G_economic_role_p1:employment_network_quality",
+        "evidence_status": "retained_descriptive"
+      },
+      {
+        "evidence_id": "G_economic_role_p1:labour_market_connection",
+        "evidence_status": "retained_descriptive"
+      },
+      {
+        "evidence_id": "G_economic_role_p1:employment_self_efficacy",
+        "evidence_status": "retained_descriptive"
+      }
+    ]
+  },
+  "G_economic_role_p2": {
+    "model_key": "G_economic_role",
+    "profile_code": "G-ROLE-2",
+    "profile_name": "Self-income provider or contributor",
+    "historical_profile_size": 15,
+    "sibling_profiles": [
+      {
+        "profile_key": "G_economic_role_p1",
+        "profile_name": "Family-supported non-provider"
+      }
+    ],
+    "comparison_summary": "Compared with Family-supported non-provider, this historical group more often reported several useful employment contacts, regular access to labour-market information, and high confidence in finding suitable work or training.",
+    "summary_evidence": [
+      {
+        "evidence_id": "G_economic_role_p2:employment_network_quality",
+        "evidence_status": "retained_descriptive"
+      },
+      {
+        "evidence_id": "G_economic_role_p2:labour_market_connection",
+        "evidence_status": "retained_descriptive"
+      },
+      {
+        "evidence_id": "G_economic_role_p2:employment_self_efficacy",
+        "evidence_status": "retained_descriptive"
+      }
+    ]
+  },
+  "G_future_engagement_p1": {
+    "model_key": "G_future_engagement",
+    "profile_code": "G-FUTURE-1",
+    "profile_name": "Work-and-education engaged",
+    "historical_profile_size": 35,
+    "sibling_profiles": [
+      {
+        "profile_key": "G_future_engagement_p2",
+        "profile_name": "Low or uncertain future engagement"
+      }
+    ],
+    "comparison_summary": "Compared with Low or uncertain future engagement, this historical group more often reported high confidence, strong support and regular access to labour-market information, and less often felt lost or uncertain about the future.",
+    "summary_evidence": [
+      {
+        "evidence_id": "G_future_engagement_p1:employment_self_efficacy",
+        "evidence_status": "fdr_supported"
+      },
+      {
+        "evidence_id": "G_future_engagement_p1:support_for_engagement",
+        "evidence_status": "fdr_supported"
+      },
+      {
+        "evidence_id": "G_future_engagement_p1:labour_market_connection",
+        "evidence_status": "fdr_supported"
+      },
+      {
+        "evidence_id": "G_future_engagement_p1:future_orientation_g",
+        "evidence_status": "fdr_supported"
+      }
+    ]
+  },
+  "G_future_engagement_p2": {
+    "model_key": "G_future_engagement",
+    "profile_code": "G-FUTURE-2",
+    "profile_name": "Low or uncertain future engagement",
+    "historical_profile_size": 21,
+    "sibling_profiles": [
+      {
+        "profile_key": "G_future_engagement_p1",
+        "profile_name": "Work-and-education engaged"
+      }
+    ],
+    "comparison_summary": "Compared with Work-and-education engaged, this historical group less often reported high confidence, strong support or regular access to labour-market information, and more often felt lost or uncertain about the future.",
+    "summary_evidence": [
+      {
+        "evidence_id": "G_future_engagement_p2:employment_self_efficacy",
+        "evidence_status": "fdr_supported"
+      },
+      {
+        "evidence_id": "G_future_engagement_p2:support_for_engagement",
+        "evidence_status": "fdr_supported"
+      },
+      {
+        "evidence_id": "G_future_engagement_p2:labour_market_connection",
+        "evidence_status": "fdr_supported"
+      },
+      {
+        "evidence_id": "G_future_engagement_p2:future_orientation_g",
+        "evidence_status": "fdr_supported"
+      }
+    ]
+  }
+}

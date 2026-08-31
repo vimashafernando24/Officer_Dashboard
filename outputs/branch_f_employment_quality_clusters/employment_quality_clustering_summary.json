@@ -1,0 +1,90 @@
+{
+  "cohort": {
+    "records": 81,
+    "branch": "F",
+    "routing_source": "translated_final_active_branch",
+    "strict_final_branch_records": 82,
+    "excluded_routing_integrity_records": 1
+  },
+  "dimension": "employment quality and security",
+  "clustering_features": [
+    "contract_type",
+    "monthly_income_band",
+    "income_hours_preference",
+    "job_satisfaction",
+    "job_security_12months",
+    "sector_formality"
+  ],
+  "descriptors": [
+    "employment_status",
+    "contract_satisfaction",
+    "hopes_to_change_job",
+    "insecurity_bothers"
+  ],
+  "data_quality": {
+    "records": 81,
+    "unique_ids": 81,
+    "wrong_branch": 0,
+    "wrong_routing_source": 0,
+    "path_disagreements_remaining": 0,
+    "integrity_issues_remaining": 0,
+    "invalid_activity_status": 0,
+    "cluster_input_missing_values": 0,
+    "invalid_income_codes": 0,
+    "invalid_satisfaction_codes": 0,
+    "invalid_security_codes": 0,
+    "invalid_formality_codes": 0
+  },
+  "method": {
+    "distance": "equal-weight mixed Gower on six original employment responses",
+    "candidate_k": [
+      2,
+      3,
+      4
+    ],
+    "selected_k": 3,
+    "ensemble": "equal-weight K-medoids plus spectral consensus",
+    "base_partitions": 200,
+    "final_method": "K-medoids on one minus co-association"
+  },
+  "profiles": {
+    "sizes": {
+      "1": 29,
+      "2": 25,
+      "3": 27
+    },
+    "names": {
+      "1": "Employment quality profile 1",
+      "2": "Employment quality profile 2",
+      "3": "Employment quality profile 3"
+    }
+  },
+  "metrics": {
+    "gower_silhouette": 0.263243865910778,
+    "consensus_distance_silhouette": 0.7633197910226701,
+    "ensemble_bootstrap_ari_mean": 0.9996276252937233,
+    "ensemble_bootstrap_ari_p10": 1.0,
+    "ari_vs_full_kmedoids": 0.798391400522084,
+    "ari_vs_full_spectral": 0.4437676578715934,
+    "ari_consensus_kmedoids_vs_hac_average": 1.0,
+    "ari_consensus_kmedoids_vs_hac_complete": 1.0,
+    "minimum_profile_size": 25,
+    "low_gower_confidence_percent": 19.753086419753085,
+    "ambiguous_consensus_percent": 18.51851851851852,
+    "pac_10_90": 0.40339506172839507
+  },
+  "decision": {
+    "primary_checks_passed": false,
+    "checks_passed": 6,
+    "checks_total": 8,
+    "included_in_final_dimension_set": false,
+    "status": "No sufficiently robust employment-quality segmentation found"
+  },
+  "limitations": [
+    "These are exploratory employment-quality response patterns, not a validated job-quality scale.",
+    "Ordinal Gower positions preserve questionnaire order only and are not respondent-level interval scores.",
+    "Contract type remains nominal because written/oral form and duration do not create one unambiguous rank order.",
+    "Job-security 'do not know' is treated as an uncertainty category, not forced above or below a known response.",
+    "The one routing-corrupted final-Branch-F record is retained in cleaned data but excluded from this analysis."
+  ]
+}

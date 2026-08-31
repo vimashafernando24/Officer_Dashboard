@@ -1,0 +1,36 @@
+COURSE DOCUMENT ID: COURSE-052
+
+COURSE NAME: Cisco Certified Network Associate
+
+VALIDATION STATUS: VALIDATED
+
+SOURCE TYPE: COURSE_DETAIL_SCREENSHOT
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.50.07.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.52.40.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-052
+
+UNCERTAINTY MARKERS PRESENT: NO
+
+PROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.
+
+SOURCE CONFLICT NOTE: NONE
+
+COMPLETE EXTRACTED COURSE TEXT
+
+Cisco Certified Network Associate
+LANGUAGE
+MAX STUDENTS
+English
+25
++ APPLY NOW
+The National Youth Service Council has initiated several course programs to enable the youth to
+develop their skills while also providing an opportunity to achieve their future job aspirations. CISCO
+Network Associate course will give you theoretical knowledge as well as job oriented practical that is
+necessary for employment and higher education. This is a part time course which will be held on
+weekends.
+It is our objective to show the correct path that will direct youth to their desired occupations while at
+the same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and
+gentle attitudes within a disciplined environment.

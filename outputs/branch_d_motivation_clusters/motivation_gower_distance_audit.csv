@@ -1,0 +1,5 @@
+variable,ordered_levels,normalising_range,weight_in_total_distance
+study_motivation_type,5,4.0,0.25
+autonomy_in_study,4,3.0,0.25
+competence_in_study_field,4,3.0,0.25
+relatedness_at_institution,4,3.0,0.25

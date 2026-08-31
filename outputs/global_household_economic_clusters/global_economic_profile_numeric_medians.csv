@@ -1,0 +1,3 @@
+global_economic_profile_id,household_income_order,household_size_reported,household_workers_reported,household_unemployed_reported,primary_earner_responsibility
+1,0.5,4.0,1.0,1.0,0.0
+2,1.0,4.0,2.0,1.0,0.0

@@ -1,0 +1,40 @@
+economic_profile_id,variable,response,records,within_profile_percent
+1,primary_income_source,"An education grant, scholarship, or training allowance",3,6.818181818181818
+1,primary_income_source,Casual or informal work,3,6.818181818181818
+1,primary_income_source,My parents or family,30,68.18181818181819
+1,primary_income_source,My regular job or business,7,15.909090909090908
+1,primary_income_source,Other source,1,2.272727272727273
+2,primary_income_source,"An education grant, scholarship, or training allowance",3,2.0408163265306123
+2,primary_income_source,Casual or informal work,3,2.0408163265306123
+2,primary_income_source,My parents or family,119,80.95238095238095
+2,primary_income_source,My partner or spouse,2,1.3605442176870748
+2,primary_income_source,My regular job or business,16,10.884353741496598
+2,primary_income_source,Other source,3,2.0408163265306123
+2,primary_income_source,Unemployment or social security benefits,1,0.6802721088435374
+1,edu_funding_source,Government-funded or free of charge,33,75.0
+1,edu_funding_source,I pay from my own earnings,6,13.636363636363637
+1,edu_funding_source,Other arrangement,2,4.545454545454546
+1,edu_funding_source,Scholarship or grant,3,6.818181818181818
+2,edu_funding_source,Employer-sponsored,1,0.6802721088435374
+2,edu_funding_source,I pay from my own earnings,1,0.6802721088435374
+2,edu_funding_source,Other arrangement,1,0.6802721088435374
+2,edu_funding_source,Paid for by my family,139,94.5578231292517
+2,edu_funding_source,Scholarship or grant,5,3.401360544217687
+1,primary_earner_status,No — someone else is the main provider,36,81.81818181818181
+1,primary_earner_status,Shared — several people contribute roughly equally,3,6.818181818181818
+1,primary_earner_status,Yes — I provide the main household income,5,11.363636363636363
+2,primary_earner_status,No — someone else is the main provider,134,91.15646258503402
+2,primary_earner_status,Shared — several people contribute roughly equally,8,5.442176870748299
+2,primary_earner_status,Yes — I provide the main household income,5,3.401360544217687
+1,household_income,"Above LKR 200,000",5,11.363636363636363
+1,household_income,"Below LKR 30,000",6,13.636363636363637
+1,household_income,"LKR 120,000 – 200,000",10,22.727272727272727
+1,household_income,"LKR 30,000 – 60,000",8,18.181818181818183
+1,household_income,"LKR 60,000 – 120,000",10,22.727272727272727
+1,household_income,Prefer not to say,5,11.363636363636363
+2,household_income,"Above LKR 200,000",58,39.45578231292517
+2,household_income,"Below LKR 30,000",3,2.0408163265306123
+2,household_income,"LKR 120,000 – 200,000",26,17.687074829931973
+2,household_income,"LKR 30,000 – 60,000",8,5.442176870748299
+2,household_income,"LKR 60,000 – 120,000",28,19.047619047619047
+2,household_income,Prefer not to say,24,16.3265306122449

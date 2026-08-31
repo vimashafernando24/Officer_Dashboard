@@ -1,0 +1,5 @@
+variable,type,observed_for_distance,missing_for_distance,unique_observed_responses,dominant_response,dominant_response_percent
+father_edu,ordinal,78,3,8,A/L level (Grade 12–13),30.864197530864196
+mother_edu,ordinal,79,2,7,A/L level (Grade 12–13),35.80246913580247
+edu_status,nominal,81,0,6,Currently in higher education (degree or diploma),55.55555555555556
+worked_while_studying,binary,81,0,2,Yes,77.77777777777779

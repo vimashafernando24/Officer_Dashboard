@@ -1,0 +1,3 @@
+economic_profile_id,economic_profile_label,records,low_gower_confidence_records,mean_gower_silhouette,mean_consensus_silhouette,percent
+1,Predominantly family/partner-supported non-provider,41,2,0.4131484236439594,0.9368679722601458,73.21428571428571
+2,Predominantly self-income provider/contributor,15,4,0.25833334638946426,0.8163086497464438,26.785714285714285

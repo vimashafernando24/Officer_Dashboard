@@ -1,0 +1,5 @@
+educational_cultural_profile_id,educational_cultural_profile_label,records,low_gower_confidence_records,mean_gower_silhouette,mean_consensus_silhouette,percent
+1,"Re-entered students, often with degree-educated parents",15,4,0.26205926068513663,0.7387916136497137,7.853403141361256
+2,State-institution students without work exposure,53,8,0.392716022584278,0.843067299090189,27.74869109947644
+3,Private-institution students without work exposure,57,1,0.5434745475037063,0.8792816736900358,29.842931937172775
+4,"Work-experienced students, mainly in private institutions",66,2,0.3909654808154735,0.825850582823124,34.55497382198953

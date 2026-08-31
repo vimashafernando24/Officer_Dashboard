@@ -1,0 +1,16 @@
+profile_id,profile_label,rank_by_absolute_deviation,dimension,dimension_label,centroid_z,direction_vs_branch_D_mean
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,1,agency_study_engagement,agency and study engagement,-1.0265158214877113,below
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,2,career_transition_readiness,career-transition readiness,-0.9294308779305975,below
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,3,social_capital_belonging,social capital and belonging,-0.48521963048934713,below
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,4,human_capital_trajectory,human-capital trajectory,-0.14161526391574814,below
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,5,economic_resources,economic resources,-0.003665008697491658,below
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,1,human_capital_trajectory,human-capital trajectory,-0.604289847907493,below
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,2,agency_study_engagement,agency and study engagement,0.4256629493311872,above
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,3,economic_resources,economic resources,-0.3905067814599797,below
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,4,social_capital_belonging,social capital and belonging,0.33870875102955095,above
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,5,career_transition_readiness,career-transition readiness,0.30752020034898675,above
+3,Profile 3: higher human-capital trajectory and higher economic resources,1,human_capital_trajectory,human-capital trajectory,1.1526386632994392,above
+3,Profile 3: higher human-capital trajectory and higher economic resources,2,economic_resources,economic resources,0.6570128930632267,above
+3,Profile 3: higher human-capital trajectory and higher economic resources,3,career_transition_readiness,career-transition readiness,0.4149259273467172,above
+3,Profile 3: higher human-capital trajectory and higher economic resources,4,agency_study_engagement,agency and study engagement,0.31434896395284095,above
+3,Profile 3: higher human-capital trajectory and higher economic resources,5,social_capital_belonging,social capital and belonging,-0.0814661645024001,below

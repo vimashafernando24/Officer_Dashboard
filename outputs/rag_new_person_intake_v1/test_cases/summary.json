@@ -1,0 +1,143 @@
+[
+  {
+    "case": "test-01-direct-preference",
+    "description": "Very clear direct programme preference — expect a strong DIRECT_MATCH.",
+    "candidate_count": 8,
+    "skill_areas": [
+      "ICT & Computing"
+    ],
+    "called_api": true,
+    "n_calls": 3,
+    "recommendation_sets": [
+      [
+        "API_ERROR"
+      ],
+      [
+        "API_ERROR"
+      ],
+      [
+        "API_ERROR"
+      ]
+    ],
+    "stable_across_repeats": true,
+    "status": null
+  },
+  {
+    "case": "test-02-broad-uncertain",
+    "description": "Broad/uncertain programme preference — no skill area determinable, expect zero candidates / NO_DEFENSIBLE_RECOMMENDATION.",
+    "candidate_count": 0,
+    "skill_areas": [],
+    "called_api": false,
+    "n_calls": 1,
+    "recommendation_sets": [],
+    "stable_across_repeats": null,
+    "status": null
+  },
+  {
+    "case": "test-03-conflict-with-profile",
+    "description": "Explicit self-employment/beauty-sector preference set against an F_employment_security profile whose common tendency is toward stable, formal permanent employment — tests that individual evidence wins, not the group tendency.",
+    "candidate_count": 8,
+    "skill_areas": [
+      "Beauty, Fashion & Personal Care"
+    ],
+    "called_api": true,
+    "n_calls": 1,
+    "recommendation_sets": [
+      [
+        "API_ERROR"
+      ]
+    ],
+    "stable_across_repeats": true,
+    "status": null
+  },
+  {
+    "case": "test-04-schedule-constraint",
+    "description": "Schedule constraint — expect scoring to favor the part-time/weekend delivery variant.",
+    "candidate_count": 8,
+    "skill_areas": [
+      "Automotive & Mechanical Engineering",
+      "Electrical & Electronics"
+    ],
+    "called_api": false,
+    "n_calls": 1,
+    "recommendation_sets": [],
+    "stable_across_repeats": null,
+    "status": null
+  },
+  {
+    "case": "test-05-qualification-preference",
+    "description": "Qualification/NVQ preference — expect a soft score boost toward NVQ-bearing courses, no hard filter.",
+    "candidate_count": 8,
+    "skill_areas": [
+      "Automotive & Mechanical Engineering",
+      "Electrical & Electronics"
+    ],
+    "called_api": false,
+    "n_calls": 1,
+    "recommendation_sets": [],
+    "stable_across_repeats": null,
+    "status": null
+  },
+  {
+    "case": "test-06-self-employment-goal",
+    "description": "Self-employment goal — governance discipline test: model must not invent business-viability/affordability claims.",
+    "candidate_count": 5,
+    "skill_areas": [
+      "Business, Management & Administration"
+    ],
+    "called_api": true,
+    "n_calls": 1,
+    "recommendation_sets": [
+      [
+        "API_ERROR"
+      ]
+    ],
+    "stable_across_repeats": true,
+    "status": null
+  },
+  {
+    "case": "test-07-catalogue-gap",
+    "description": "Catalogue gap — ideal_sector has no SECTOR_BRIDGE mapping to any skill_area; expect NO_DEFENSIBLE_RECOMMENDATION.",
+    "candidate_count": 0,
+    "skill_areas": [],
+    "called_api": true,
+    "n_calls": 1,
+    "recommendation_sets": [
+      [
+        "API_ERROR"
+      ]
+    ],
+    "stable_across_repeats": true,
+    "status": null
+  },
+  {
+    "case": "test-08-profile-adds-value",
+    "description": "Profile context should genuinely add value: G_economic_role's 'predominantly self-income provider' pattern, if assigned, is consistent with (reinforces) an explicit self-employment goal.",
+    "candidate_count": 5,
+    "skill_areas": [
+      "Business, Management & Administration"
+    ],
+    "called_api": true,
+    "n_calls": 1,
+    "recommendation_sets": [
+      [
+        "API_ERROR"
+      ]
+    ],
+    "stable_across_repeats": true,
+    "status": null
+  },
+  {
+    "case": "test-09-profile-should-not-influence",
+    "description": "Crystal-clear direct preference where profile context (study motivation/economic background) is orthogonal to course content — expect profile_context_contribution.role = NOT_USED for most/all recs, not forced in.",
+    "candidate_count": 8,
+    "skill_areas": [
+      "ICT & Computing"
+    ],
+    "called_api": false,
+    "n_calls": 1,
+    "recommendation_sets": [],
+    "stable_across_repeats": null,
+    "status": null
+  }
+]

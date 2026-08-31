@@ -1,0 +1,4 @@
+social_profile_id,social_profile_label,records,low_gower_confidence_records,mean_gower_silhouette,mean_consensus_silhouette,percent
+1,"Useful employment contacts, partial institutional belonging",51,0,0.6357419782146627,0.9916267763376291,26.701570680628272
+2,"Strong institutional belonging, mixed employment contacts",83,11,0.34036005204963515,0.9710996974837044,43.455497382198956
+3,"Weak employment contacts, limited institutional belonging",57,0,0.5962882247241559,0.9866912639834483,29.842931937172775

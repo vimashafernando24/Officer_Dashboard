@@ -1,0 +1,25 @@
+educational_cultural_profile_id,feature,source_variable,response,records,within_profile_percent
+1,expected_education,expected_highest_edu_d,Bachelor's degree,8,53.333333333333336
+1,father_education,father_edu,Bachelor's degree,12,80.0
+1,institution_type,institution_type,Private school or private degree-awarding institute,7,46.666666666666664
+1,mother_education,mother_edu,Bachelor's degree,11,73.33333333333333
+1,re_entered_education,re_entered_education,Yes,15,100.0
+1,worked_while_studying,worked_while_studying,Yes,8,53.333333333333336
+2,expected_education,expected_highest_edu_d,Post-graduate degree,33,62.264150943396224
+2,father_education,father_edu,Bachelor's degree,14,26.41509433962264
+2,institution_type,institution_type,Government school or state university,44,83.01886792452831
+2,mother_education,mother_edu,A/L level (Grade 12–13),22,41.509433962264154
+2,re_entered_education,re_entered_education,No,48,90.56603773584905
+2,worked_while_studying,worked_while_studying,No,53,100.0
+3,expected_education,expected_highest_edu_d,Post-graduate degree,35,61.40350877192982
+3,father_education,father_edu,A/L level (Grade 12–13),28,49.12280701754386
+3,institution_type,institution_type,Private school or private degree-awarding institute,56,98.24561403508773
+3,mother_education,mother_edu,A/L level (Grade 12–13),18,31.57894736842105
+3,re_entered_education,re_entered_education,No,52,91.2280701754386
+3,worked_while_studying,worked_while_studying,No,57,100.0
+4,expected_education,expected_highest_edu_d,Post-graduate degree,43,65.15151515151516
+4,father_education,father_edu,Bachelor's degree,20,30.303030303030305
+4,institution_type,institution_type,Private school or private degree-awarding institute,47,71.21212121212122
+4,mother_education,mother_edu,A/L level (Grade 12–13),21,31.818181818181817
+4,re_entered_education,re_entered_education,No,64,96.96969696969697
+4,worked_while_studying,worked_while_studying,Yes,66,100.0

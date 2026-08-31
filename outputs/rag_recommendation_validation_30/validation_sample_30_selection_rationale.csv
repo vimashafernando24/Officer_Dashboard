@@ -1,0 +1,31 @@
+respondent_id,branch,selection_rationale
+nysc-0cba8a68-ebf6-47cb-bd45-e2a1d78ad74b,D,Education and teaching; distinct D profile combo
+nysc-0d099a8b-7f90-43c3-8b8d-6eb1c4c23e88,D,Manufacturing or production
+nysc-4eae9a51-70b3-48ae-ae06-6fe372ac0230,D,"Finance, banking, and insurance"
+nysc-4e38db03-e477-420e-9afd-d3f92b53995d,D,"Health, social work, and wellbeing"
+nysc-8ae4a1d8-97c7-4bc4-9dc9-cb7eea0c897f,D,"Creative, media, and arts"
+nysc-4401e631-9304-4f41-9ba4-6f84d659f7c8,D,"Agriculture, forestry, and fishing"
+nysc-515dbda4-d209-46f1-b1cd-a9f996f9cebd,D,"Hotels, restaurants, and hospitality"
+nysc-b556590a-0e0d-4d6f-8b9e-f148e18ca930,D,Weak/unsure sector AND field — NO_DEFENSIBLE stress test
+nysc-25c345ec-5f45-4616-adb8-c96e31f3511c,D,"has_children=Yes, never studied, conflicting intent signals"
+nysc-0566257f-e441-4134-9a0f-ebedde047f88,D,ICT + worked_while_studying — experience-building test
+nysc-15a74ec0-011b-4f61-804e-72de37c73705,D,"Public administration/government sector, new combo"
+nysc-0a4832c0-3e8a-47e9-ac41-22252b0ceb06,E,"E profile 1, ICT, entrepreneurship-training interest"
+nysc-136c3ecd-09d4-4238-8a63-64c8636724df,E,"E profile 2, ICT, self-employment intent"
+nysc-2e8a4c77-f611-4fff-9da8-9161a3f0f368,E,"E profile 1, Personal services/beauty sector"
+nysc-3258dc18-84da-4092-82af-cfb84352536e,E,"E profile 2, Manufacturing, wage barrier"
+nysc-cab6cf5f-13dc-4f50-9d5a-b24f266dc279,E,"E profile 2, sector unsure but job_type/training signals present — partial-weak test"
+nysc-04134b0d-f3fe-4a25-916c-ee106362e150,F,"F profile 1 (insecure), weak/unsure sector, professional occupational_class"
+nysc-4646cb19-0ac0-49ca-a00b-e2d8cb16b65e,F,"F profile 2 (secure), weak/unsure sector"
+nysc-03b655c2-0162-44b7-a418-e4d9ac99ccbb,F,"F profile 1, Retail/repair, job-change-for-pay intent"
+nysc-1a42a4ad-7444-4e03-8b9c-7ce184f7850c,F,"F profile 1, Creative arts, no-experience barrier"
+nysc-0a92b28f-94dc-44ce-9e9e-2d25b35c0b04,F,"F profile 2, Manufacturing, satisfied/stable"
+nysc-14ffa0bd-0d24-4a0e-b75d-516771a7fbbb,F,"F profile 1, ICT, qualification mismatch signal"
+nysc-079cc6c0-68dd-4ae3-b5e3-9ffd99d463f3,F,"F profile 2, ICT, wants to change job"
+nysc-34933c14-655f-4189-800f-2419775963fe,F,"F profile 2, ICT self-employed, financing obstacle"
+nysc-27b17da2-64b7-4031-b4ac-3205b9b2a735,G,"G economic_role p1 / future_engagement p1, ICT, caregiving time-constraint"
+nysc-31cab333-afc9-48c5-baec-8ba48e14defb,G,"G p1/p2, Personal services/beauty, seasonal-worker, low engagement"
+nysc-0717027e-65cc-4b29-9b44-17593f66aaf5,G,"G p2/p1, ICT, 'no suitable work in area' barrier"
+nysc-27c2ff48-e39c-4db3-aa11-a149d76be479,G,"G p2/p1, ICT, caregiving + shared provider"
+nysc-49b62c9a-e647-4f21-9742-305d52c6b5a9,G,"G p2/p2 (rare combo), Education sector, provider+children, conflicting work-intent signals"
+nysc-5242257e-4708-442a-a41f-1081109194a9,G,"G p2/p2, weak/unsure sector, does not wish to work — strong NO_DEFENSIBLE test"

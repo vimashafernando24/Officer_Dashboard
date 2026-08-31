@@ -1,0 +1,7 @@
+dimension_code,dimension_name,profile_sizes,gower_silhouette,ensemble_bootstrap_ari_mean,ari_vs_full_kmedoids,ari_vs_full_spectral,maximum_single_feature_ari,minimum_leave_one_feature_out_ari,permutation_p,checks_passed,checks_total,automatic_screen_pass,final_decision
+E1,Job-search psychological readiness and support,17/17,0.380644054217974,0.9394935675941185,0.6684671059738576,0.4028436018957346,0.48309387490547695,0.26066350710900477,0.05,7,10,False,reject
+E2,Search intensity and accumulated exposure,26/8,0.5333575010323762,1.0,1.0,1.0,1.0,-0.01969100272644653,0.5,7,11,False,reject
+E3,Economic urgency and job-acceptance constraints,28/6,0.6196265722942096,1.0,1.0,1.0,1.0,0.0009713453132588635,,6,10,False,reject
+E4,Education-to-work preparedness and learning orientation,18/16,0.567301864966065,0.952903016542329,0.8822575413558222,1.0,0.6683069176632145,0.03914851969659897,0.039603960396039604,10,10,True,retain_cautiously_feature_dependent
+E5,Household economic resources and dependency,22/12,0.2569586870591487,0.8983921087081561,0.48398576512455516,0.48398576512455516,0.7718120805369127,0.080393414581997,0.5833333333333334,4,10,False,reject
+E6,Educational and inherited cultural capital,24/10,0.5845723108660765,1.0,1.0,1.0,1.0,-0.0018840153076243745,,6,10,False,reject

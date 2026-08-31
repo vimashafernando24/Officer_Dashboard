@@ -1,0 +1,13 @@
+economic_profile_id,variable,response,records,within_profile_percent
+1,household_income,"LKR 60,000 – 120,000",12,29.26829268292683
+1,household_size,4.0,18,43.90243902439025
+1,household_unemployed,1.0,14,34.146341463414636
+1,household_workers,2.0,19,46.34146341463415
+1,primary_earner_status,No — someone else is the main provider,37,90.2439024390244
+1,primary_income_source,My parents or family,31,75.60975609756098
+2,household_income,"LKR 120,000 – 200,000",6,40.0
+2,household_size,4.0,9,60.0
+2,household_unemployed,0.0,5,33.333333333333336
+2,household_workers,2.0,11,73.33333333333333
+2,primary_earner_status,Yes — I provide the main household income,7,46.666666666666664
+2,primary_income_source,My regular job or business,10,66.66666666666667

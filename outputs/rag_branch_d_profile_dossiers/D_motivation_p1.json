@@ -1,0 +1,122 @@
+{
+  "schema_version": "branch_d_profile_dossier_v2",
+  "profile": {
+    "profile_key": "D_motivation_p1",
+    "branch": "D",
+    "model_id": "D_motivation",
+    "dimension": "Motivation and study experience",
+    "profile_id": 1,
+    "analysis_label": "Consensus motivation profile 1: externally or uncertainly motivated, with moderate study support",
+    "cluster_code": "Cluster MOT-1",
+    "cluster_name": "Qualification-led study",
+    "historical_profile_size": 47
+  },
+  "cluster_definition": {
+    "raw_cluster_forming_variables": [
+      "study_motivation_type",
+      "autonomy_in_study",
+      "competence_in_study_field",
+      "relatedness_at_institution"
+    ],
+    "derived_distance_features": [
+      "study_motivation_type",
+      "autonomy_in_study",
+      "competence_in_study_field",
+      "relatedness_at_institution"
+    ],
+    "medoid_pattern": [
+      {
+        "variable": "study_motivation_type",
+        "question_id": "SC1",
+        "question": "Why are you studying right now? Which best describes your motivation?",
+        "medoid_answer": "External: qualification required for a job"
+      },
+      {
+        "variable": "autonomy_in_study",
+        "question_id": "SC2",
+        "question": "How much choice and control do you have over what and how you study?",
+        "medoid_answer": "Some flexibility within a mostly fixed curriculum"
+      },
+      {
+        "variable": "competence_in_study_field",
+        "question_id": "SC3",
+        "question": "How capable and effective do you feel in your area of study?",
+        "medoid_answer": "Fairly capable with some gaps"
+      },
+      {
+        "variable": "relatedness_at_institution",
+        "question_id": "SC4",
+        "question": "How much do you feel you belong and are connected to the people at your institution?",
+        "medoid_answer": "Some connections but not deeply involved"
+      }
+    ],
+    "saved_officer_description": "This cluster is centred on learners studying because a qualification is required for work. They show some choice over study, some confidence gaps and some—but not deep—connection to the institution.",
+    "final_definition_text": "Facts that define the cluster itself. These variables and diagnostics produced the\ncluster; they are NOT re-tested as post-cluster findings (doing so would be circular).\n\nBranch: D — strict final-path analytical cohort n=191 (of 362 total strict-cohort respondents: D=191, E=34, F=81, G=56).\nRetained dimension: Motivation and study experience\nNumber of profiles in this retained model (k): 3\nThis profile's id and label: Profile 1 — \"Consensus motivation profile 1: externally or uncertainly motivated, with moderate study support\"\nThis profile's exact frozen size: n=47 (cross-verified against the Part III freeze-verification table in the source report)\n\nExact cluster-forming variables (the only inputs used to build this clustering; all\nother survey variables were deliberately excluded from distance calculation and are\nonly used descriptively in sections 2-3 below):\n  - study_motivation_type\n  - autonomy_in_study\n  - competence_in_study_field\n  - relatedness_at_institution\n\nTheoretical basis and purpose: Self-Determination Theory (Deci & Ryan, 2000): autonomy, competence and relatedness in the study context, plus stated study-motivation type.\n\nClustering method: Gower distance over original mixed-type responses (no invented 0-100\nscores), consensus of repeated K-medoids and spectral clustering across 100 matched\n80% subsamples (200 base partitions), final clusters from K-medoids on (1 - co-association).\n\nValidation diagnostics for this retained model: Gower silhouette 0.350; bootstrap/subsample ARI 0.981; ARI vs full K-medoids 0.968 and vs spectral 0.712; PAC (proportion of ambiguous clustering) 0.193; 7 of 8 mandatory validation checks passed.\nFinal decision status: Retained for exploratory use, with ambiguity and one-item-per-construct cautions.\nModel-level caution (from the frozen decision register): Four single survey items represent motivation, autonomy, competence and relatedness; uncertain memberships must remain visible.\n\nAdditional definitional context: About 23.6% of respondents in this model had low Gower membership confidence (ambiguous cluster assignment); uncertain assignments must remain flagged. The three profile labels summarise four single-item questions only — they are not clinical or psychometrically validated SDT instrument types.\n\nInterpretation of this specific profile (verbatim from the frozen report's per-model\nprofile table):\n  Motivation was more external/uncertain and the combined study-support responses were moderate.\n\nReminder: this profile exists only WITHIN this one retained dimension. A respondent's\nmembership here says nothing about their membership in any other branch's or dimension's\nprofile system (see PROHIBITED_INFERENCES).\n\n----------------------------------------------------------------------------------------------------"
+  },
+  "approved_post_cluster_findings": [
+    {
+      "evidence_id": "D_motivation_p1:employment_network_quality",
+      "variable": "employment_network_quality",
+      "label": "Useful employment/training contacts",
+      "finding": "Useful employment/training contacts: more often reported ‘No — I have no one I could call on’ (13/47, 27.7% vs 9.7% in other profile(s))",
+      "interpretation_guard": "Treat this only as the retained between-profile comparison stated above; do not turn it into a claim that one response was the profile's most common answer.",
+      "is_programme_relevant_subset": true,
+      "statistical_support": {
+        "label": "Useful employment/training contacts",
+        "variable": "employment_network_quality",
+        "coverage_pct": 100.0,
+        "effect_size_name": "epsilon-squared",
+        "effect_size": 0.048,
+        "raw_p": "0.004204",
+        "bh_adjusted_p": "0.07778",
+        "significant_note": "NOT significant at FDR<0.05 (descriptive only)",
+        "programme_relevance": "high"
+      },
+      "survey_question": {
+        "question_id": "A21",
+        "section": "A",
+        "framework": "Bourdieu",
+        "question_text": "Do you personally know people who could help you find employment or training opportunities?"
+      },
+      "profile_distribution": {
+        "eligible_n": 47,
+        "distribution": [
+          {
+            "value": "Yes — I know several people with useful connections",
+            "count": 7,
+            "percent": 14.9
+          },
+          {
+            "value": "Yes — I know one or two people who might help",
+            "count": 11,
+            "percent": 23.4
+          },
+          {
+            "value": "Not really — I have very few useful contacts",
+            "count": 16,
+            "percent": 34.0
+          },
+          {
+            "value": "No — I have no one I could call on",
+            "count": 13,
+            "percent": 27.7
+          }
+        ]
+      },
+      "provenance": {
+        "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_motivation, profile_id=1, column=strongest_non_clustering_characteristics",
+        "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+        "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_motivation, variable=employment_network_quality"
+      }
+    }
+  ],
+  "cautions": "Model-level caution: Four single survey items represent motivation, autonomy, competence and relatedness; uncertain memberships must remain visible.\nAdditional model context: About 23.6% of respondents in this model had low Gower membership confidence (ambiguous cluster assignment); uncertain assignments must remain flagged. The three profile labels summarise four single-item questions only — they are not clinical or psychometrically validated SDT instrument types.\nFDR-correction context: Among the findings that passed the effect-size/coverage reporting screen for this model, 0 of 1 remained significant after Benjamini-Hochberg FDR correction. The reported finding is descriptive/exploratory evidence only, not a confirmed statistical difference.\n\nProfile-specific caution (verbatim from the frozen evidence summary): Four single survey items represent motivation, autonomy, competence and relatedness; uncertain memberships must remain visible. None of the selected comparisons remained below FDR 0.05; effect sizes are descriptive evidence.\n\nConditional-denominator caution: 7 of 37 variables tested against this model are conditional (asked only of an eligible subgroup via survey routing, e.g. only active jobseekers, only those who worked while studying). Their percentages use the eligible-subgroup denominator shown in section 3, not the full profile size. A blank caused by survey routing was never treated as a 'No' answer during profiling.\n\nCross-dimensional caution: the following variables tested against this model also form part of another retained clustering model; their relationship to this profile is descriptive only and is NOT independent statistical validation of this model:\n  - Primary personal income source: Forms the separate D economic model.\n  - Worked while studying: Forms the separate D educational/cultural model.\n  - Re-entered education after interruption: Forms the separate D educational/cultural model.\n  - Primary-earner status: Forms the separate D economic model.\n  - Father's education: Forms the separate D educational/cultural model.\n  - Main education funding source: Forms the separate D economic model.\n  - Type of work while studying: Conditional on a variable forming the D educational/cultural model.\n  - Household income band: Forms the separate D economic model.\n  - Reason for working while studying: Conditional on a variable forming the D educational/cultural model.\n  - Mother's education: Forms the separate D educational/cultural model.\n  - Expected highest education: Forms the separate D educational/cultural model.\n  - Hours band while studying: Conditional on a variable forming the D educational/cultural model.\n  - District: Many district categories can create sparse tables.\n  - Household size: Forms the separate D economic model.\n  - Household workers: Forms the separate D economic model.\n  - Household unemployed jobseekers: Forms the separate D economic model.\n  - Current institution type: Forms the separate D educational/cultural model.\n  - Reason for re-entering education: Follow-up to a variable forming the D educational/cultural model.\n  - Paid status of work while studying: Conditional on a variable forming the D educational/cultural model.\n\nSparse-cell caution: 20 of 37 variables tested against this model contain sparse expected-cell counts (categorical tables with rare category combinations); percentages built from sparse tables are listed in section 3 and should be read with extra caution, especially for high-cardinality variables such as district, sector or stated obstacle.\n\nGeneral measurement cautions (apply to every profile in this knowledge base):\n  - A reported percentage is a within-profile percentage in this 362-respondent strict\n    cohort, not a population estimate for all Sri Lankan youth.\n  - Effect sizes rank descriptive differences; they do not prove that cluster membership\n    caused the characteristic.\n  - Consensus clustering stability shows reproducibility under the specified procedure;\n    it does not prove a natural, causal, or permanent youth type.\n  - Profile names are descriptive and must not stigmatise respondents or be used to deny\n    programme access.\n\n----------------------------------------------------------------------------------------------------",
+  "prohibited_inferences": "Statements that must NOT be assumed true for an individual merely because they belong\nto this profile. These are hard constraints for any downstream system (including a RAG\nrecommendation layer) consuming this document.\n\nUniversal (applies to all 17 retained profiles):\n  - Do not assume that a specific individual assigned to this profile personally holds any characteristic reported as a group percentage. A group finding such as 'X% of this profile reported Y' describes the profile as a whole; it is not a fact about any one person in it — a sizeable minority (and in close splits, close to half) of the profile did NOT report Y.\n  - Do not treat profile membership as a diagnosis, permanent trait, or whole-person label. Profiles are exploratory response-pattern groups within ONE retained dimension only. The same respondent can simultaneously belong to different profiles across different retained dimensions (for example a Branch D respondent has independent motivation, economic and educational-trajectory profile memberships) — no single profile describes the whole person.\n  - Do not use profile membership, alone, as an eligibility gate, a reason to deny access to a programme, or a reason to prioritise/deprioritise a youth for any service.\n  - Do not treat effect sizes or association strength as evidence of causation. A reported association (e.g. 'Profile A more often reported X') describes a measured difference in this sample; it does not establish that being in Profile A caused X, or that X caused profile membership.\n  - Do not treat a finding that did not pass this model's effect-size/coverage reporting screen (see DIRECT_GROUP_DISTRIBUTIONS) as an approved or reportable difference. Untagged distributions are raw descriptive data only, not vetted findings.\n  - Do not treat a finding as statistically confirmed population evidence merely because it appears here. Most models in this knowledge base have few or zero findings that remain significant after Benjamini-Hochberg FDR correction (see this profile's CAUTIONS section and fdr_note) — effect sizes are the primary ranking evidence, and p-values (raw or adjusted) are supporting evidence only.\n  - Do not generalise any percentage in this document to Sri Lankan youth generally, to NYSC's wider applicant pool, or to any group outside the 362-respondent strict analytical cohort (D=191, E=34, F=81, G=56) from which these profiles were derived.\n  - Do not infer, invent, or assume any need, barrier, preference or characteristic for this profile that is not explicitly present in the source data below. If a data point is absent, it must be reported as absent/not tested, never filled in by assumption.\n  - Do not use this document, on its own, to select or recommend a specific NYSC course or programme. Course/programme recommendation requires a separate, transparent, expert-reviewed matching stage that combines this profile information with the individual's own stated preferences, eligibility and the structured NYSC course catalogue.\n\nSpecific to the 'Motivation and study experience' model:\n  - Do not treat the three motivation profile labels as clinical or psychometrically validated Self-Determination-Theory types; they summarise four single survey items only.\n  - Do not assume an individual in the 'externally or uncertainly motivated' profile lacks motivation entirely, or that an individual in the 'highly self-directed' profile has no study difficulties — these are relative, not absolute, characterisations, and 23.6% of the model's respondents had low membership confidence.\n\nWorked counter-example for this specific profile (do NOT do this):\n  WRONG: \"This youth is in profile 'Consensus motivation profile 1: externally or uncertainly motivated, with moderate study support', so they must have this characteristic: Useful employment/training contacts: more often reported ‘No — I have no one I could call on’ (13/47, 27.7% vs 9.7% in other profile(s))\"\n  RIGHT: \"This youth is in profile 'Consensus motivation profile 1: externally or uncertainly motivated, with moderate study support' (n=47). Within this profile, the group-level pattern was: Useful employment/training contacts: more often reported ‘No — I have no one I could call on’ (13/47, 27.7% vs 9.7% in other profile(s)). This is evidence about the group, not a confirmed fact about this individual, who must be asked directly.\"\n\n====================================================================================================\nEND OF DOCUMENT\n====================================================================================================",
+  "sources": [
+    "NYSC_all_branches_clustering_final_report.md",
+    "final_cluster_profiling_report.md",
+    "outputs/final_cluster_programme_relevant_profiles.csv",
+    "outputs/final_cluster_profile_comparison_summary.csv",
+    "outputs/branch_d_motivation_clusters/motivation_medoid_profiles.csv"
+  ]
+}

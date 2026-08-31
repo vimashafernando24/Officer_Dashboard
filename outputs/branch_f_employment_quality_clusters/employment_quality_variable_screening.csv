@@ -1,0 +1,11 @@
+variable,role,observed,missing,coverage_percent,unique_observed_responses,dominant_response,dominant_response_percent
+contract_type,cluster_input,81,0,100.0,8,Written contract — permanent/unlimited,49.382716049382715
+monthly_income_band,cluster_input,81,0,100.0,6,"Above LKR 200,000",24.691358024691358
+income_hours_preference,cluster_input,81,0,100.0,3,Keep things the same as they are now,58.0246913580247
+job_satisfaction,cluster_input,81,0,100.0,4,Somewhat satisfied,55.55555555555556
+job_security_12months,cluster_input,81,0,100.0,4,Very likely — my job is secure,45.67901234567901
+sector_formality,cluster_input,81,0,100.0,4,"Fully formal — registered employer, written contract, statutory benefits",62.96296296296296
+employment_status,work_arrangement_descriptor,81,0,100.0,6,For an employer — for a salary or wage,76.5432098765432
+contract_satisfaction,subjective_contract_descriptor,81,0,100.0,8,Satisfied — it gives me the flexibility I need,34.5679012345679
+hopes_to_change_job,transition_intention_descriptor,81,0,100.0,3,Yes — I want to change,56.79012345679012
+insecurity_bothers,conditional_security_descriptor,34,47,41.9753086419753,2,No — I accept it or it does not concern me,52.94117647058824

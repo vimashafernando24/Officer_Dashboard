@@ -1,0 +1,3 @@
+feature,type,observed,missing,maximum_distance_weight
+employment_network_quality,ordinal,191,0,0.5
+relatedness_at_institution,ordinal,191,0,0.5

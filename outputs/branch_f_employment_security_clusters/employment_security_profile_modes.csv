@@ -1,0 +1,15 @@
+employment_security_profile_id,variable,role,response,records,within_profile_percent
+1,contract_satisfaction,subjective_contract_descriptor,Satisfied — it gives me the flexibility I need,10,34.48275862068966
+1,contract_type,cluster_input,Written contract — temporary (under 12 months),12,41.37931034482759
+1,employment_status,work_arrangement_descriptor,For an employer — for a salary or wage,17,58.62068965517241
+1,hopes_to_change_job,transition_intention_descriptor,Yes — I want to change,18,62.06896551724138
+1,insecurity_bothers,conditional_security_descriptor,No — I accept it or it does not concern me,11,37.93103448275862
+1,job_security_12months,cluster_input,Likely but not certain — I have some concern,15,51.724137931034484
+1,sector_formality,cluster_input,"Fully formal — registered employer, written contract, statutory benefits",16,55.172413793103445
+2,contract_satisfaction,subjective_contract_descriptor,Satisfied — it gives me the job security I need,19,36.53846153846154
+2,contract_type,cluster_input,Written contract — permanent/unlimited,40,76.92307692307692
+2,employment_status,work_arrangement_descriptor,For an employer — for a salary or wage,45,86.53846153846153
+2,hopes_to_change_job,transition_intention_descriptor,Yes — I want to change,28,53.84615384615385
+2,insecurity_bothers,conditional_security_descriptor,No — I accept it or it does not concern me,38,73.07692307692308
+2,job_security_12months,cluster_input,Very likely — my job is secure,36,69.23076923076923
+2,sector_formality,cluster_input,"Fully formal — registered employer, written contract, statutory benefits",35,67.3076923076923

@@ -1,0 +1,8 @@
+variable,role,observed,missing,unique_observed_responses,dominant_response,dominant_response_percent
+qualification_job_match,cluster_input,81,0,5,Very well — my qualifications are central to this job,67.90123456790124
+past_edu_useful_for_job,cluster_input,81,0,4,Very useful — directly relevant and applied daily,65.4320987654321
+received_training,cluster_input,81,0,2,Yes,80.24691358024691
+training_type_received,profile_descriptor,65,16,7,On-the-job mentoring with a colleague,27.160493827160494
+training_provider,profile_descriptor,65,16,5,My employer (on-the-job),58.0246913580247
+training_duration,profile_descriptor,65,16,6,1 to 4 weeks,25.925925925925924
+who_paid_training,profile_descriptor,65,16,5,My employer,56.79012345679012

@@ -1,0 +1,70 @@
+{
+  "cohort": {
+    "records": 81,
+    "branch": "F",
+    "strict_final_branch_records": 82,
+    "excluded_routing_integrity_records": 1
+  },
+  "dimension": "qualification utilisation and education relevance",
+  "clustering_features": [
+    "qualification_job_match",
+    "past_edu_useful_for_job"
+  ],
+  "descriptors": [
+    "received_training",
+    "training_type_received",
+    "training_provider",
+    "training_duration",
+    "who_paid_training"
+  ],
+  "method": {
+    "distance": "equal-weight mixed Gower on two questionnaire indicators",
+    "selected_k": 3,
+    "ensemble": "K-medoids plus spectral consensus",
+    "base_partitions": 200
+  },
+  "profiles": {
+    "sizes": {
+      "1": 39,
+      "2": 27,
+      "3": 15
+    },
+    "names": {
+      "1": "Rejected diagnostic profile 1",
+      "2": "Rejected diagnostic profile 2",
+      "3": "Rejected diagnostic profile 3"
+    }
+  },
+  "metrics": {
+    "gower_silhouette": 0.6090724322682447,
+    "consensus_distance_silhouette": 0.7543865349918403,
+    "ensemble_bootstrap_ari_mean": 0.9774822949912766,
+    "ensemble_bootstrap_ari_p10": 0.9223457054151518,
+    "ari_vs_full_kmedoids": 0.454915392180135,
+    "ari_vs_full_spectral": 0.549638714321309,
+    "ari_vs_hac_average": 0.454915392180135,
+    "ari_vs_hac_complete": 0.454915392180135,
+    "minimum_profile_size": 15,
+    "low_gower_confidence_percent": 3.7037037037037033,
+    "ambiguous_consensus_percent": 17.28395061728395,
+    "pac_10_90": 0.4469135802469136,
+    "candidate_pac_rank_all": 1.0
+  },
+  "decision": {
+    "retained_for_clustering": false,
+    "diagnostic_partition_only": true,
+    "primary_checks_passed": false,
+    "checks_passed": 5,
+    "checks_total": 8,
+    "status": "No sufficiently robust qualification-utilisation segmentation found"
+  },
+  "limitations": [
+    "These are exploratory qualification-utilisation response profiles, not a validated human-capital scale.",
+    "Do not know for education usefulness is treated as unknown rather than assigned an invented rank.",
+    "Receiving training records access, not its quality, intensity, or effectiveness; training details are descriptors.",
+    "The three-input trial was rejected because it exactly reproduced training receipt; omitting training gave ARI 0.014.",
+    "The two-indicator qualification-utilisation trial is also rejected because no k=2 to k=4 candidate met the minimum-size rule across both algorithms and source-algorithm agreement was weak.",
+    "PAC is reported comparatively across k=2 to k=4; no universal absolute PAC pass/fail cutoff is imposed.",
+    "The one routing-corrupted final-Branch-F record is excluded from this employment analysis."
+  ]
+}

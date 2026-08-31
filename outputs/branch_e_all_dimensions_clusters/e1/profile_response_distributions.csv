@@ -1,0 +1,25 @@
+profile_id,variable,response,records,within_profile_percent
+1,job_search_self_efficacy,"Fairly confident — I think I will, though it may take time",10,58.8235294117647
+1,job_search_self_efficacy,Not confident at all — I feel quite hopeless about it,1,5.882352941176471
+1,job_search_self_efficacy,Not very confident — I have significant doubts,2,11.764705882352942
+1,job_search_self_efficacy,Very confident — I believe I will find suitable work,4,23.529411764705884
+2,job_search_self_efficacy,"Fairly confident — I think I will, though it may take time",10,58.8235294117647
+2,job_search_self_efficacy,Not very confident — I have significant doubts,1,5.882352941176471
+2,job_search_self_efficacy,Very confident — I believe I will find suitable work,6,35.294117647058826
+1,job_search_autonomy_orientation,I am mainly looking for any job that will provide income,5,29.41176470588235
+1,job_search_autonomy_orientation,I am not sure what I want — searching without a clear direction,2,11.764705882352942
+1,job_search_autonomy_orientation,I have preferences but am flexible and will take good opportunities,10,58.8235294117647
+2,job_search_autonomy_orientation,I am looking specifically for work I genuinely want to do,11,64.70588235294117
+2,job_search_autonomy_orientation,I have preferences but am flexible and will take good opportunities,6,35.294117647058826
+1,social_support_job_search,Minimally supported — most people are indifferent,6,35.294117647058826
+1,social_support_job_search,Not supported at all — I face this largely alone,4,23.529411764705884
+1,social_support_job_search,Somewhat supported — I have some encouragement,7,41.1764705882353
+2,social_support_job_search,Somewhat supported — I have some encouragement,6,35.294117647058826
+2,social_support_job_search,Very supported — people actively encourage and assist me,11,64.70588235294117
+1,future_planning_orientation,I feel quite uncertain and directionless about my future,4,23.529411764705884
+1,future_planning_orientation,I have a general direction but no specific steps yet,9,52.94117647058823
+1,future_planning_orientation,"I have a very clear, specific plan and I am actively working toward it",1,5.882352941176471
+1,future_planning_orientation,I know I want something different but do not know how to get there,3,17.647058823529413
+2,future_planning_orientation,I have a general direction but no specific steps yet,3,17.647058823529413
+2,future_planning_orientation,"I have a very clear, specific plan and I am actively working toward it",13,76.47058823529412
+2,future_planning_orientation,I know I want something different but do not know how to get there,1,5.882352941176471

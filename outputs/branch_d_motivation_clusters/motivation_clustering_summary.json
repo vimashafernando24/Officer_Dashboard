@@ -1,0 +1,55 @@
+{
+  "cohort": {
+    "records": 191,
+    "branch": "D",
+    "routing_source": "translated_final_active_branch",
+    "complete_four_item_rows": 191
+  },
+  "dimension": "motivation and study experience",
+  "variables": [
+    "study_motivation_type",
+    "autonomy_in_study",
+    "competence_in_study_field",
+    "relatedness_at_institution"
+  ],
+  "method": {
+    "distance": "equal-weight ordinal Gower",
+    "primary_algorithm": "multiple-start K-medoids",
+    "comparison_algorithm": "average-linkage hierarchical clustering",
+    "candidate_k": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "selection_rule": "lowest equal-weight rank across K-medoids Gower silhouette and 80% subsample stability; hierarchical agreement is a sensitivity diagnostic",
+    "subsample_repetitions": 100,
+    "subsample_fraction": 0.8
+  },
+  "selected_candidate": {
+    "k": 3,
+    "silhouette_gower": 0.35172802787566665,
+    "subsample_ari_mean": 0.9385816123977874,
+    "subsample_ari_p10": 0.873734105523781,
+    "hierarchical_ari": 0.0050496354670440825,
+    "profile_sizes": {
+      "1": 46,
+      "2": 77,
+      "3": 68
+    },
+    "profile_names": {
+      "1": "Motivation profile 1: externally or uncertainly motivated, with moderate study support",
+      "2": "Motivation profile 2: goal-aligned motivation with mixed study confidence and support",
+      "3": "Motivation profile 3: highly self-directed, capable and connected"
+    },
+    "low_confidence_memberships": 45
+  },
+  "quality": {
+    "primary_checks_passed": true,
+    "hierarchical_robustness_passed": false,
+    "checks_passed": 3,
+    "checks_total": 5,
+    "status": "Stable within K-medoids but method-dependent \u2014 exploratory use only"
+  }
+}

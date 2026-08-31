@@ -1,0 +1,5 @@
+variable,observed,missing,unique_observed_responses,dominant_response,dominant_response_percent
+father_edu,56,0,9,O/L level (Grade 9–11),33.92857142857143
+mother_edu,56,0,8,O/L level (Grade 9–11),30.357142857142854
+edu_status,56,0,6,Currently in higher education (degree or diploma),46.42857142857143
+worked_while_studying,56,0,2,No,67.85714285714286

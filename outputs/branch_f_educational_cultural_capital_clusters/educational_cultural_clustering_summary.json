@@ -1,0 +1,64 @@
+{
+  "cohort": {
+    "records": 81,
+    "branch": "F",
+    "strict_final_branch_records": 82,
+    "excluded_routing_integrity_records": 1
+  },
+  "dimension": "educational and inherited cultural capital",
+  "clustering_features": [
+    "father_edu",
+    "mother_edu",
+    "edu_status",
+    "worked_while_studying"
+  ],
+  "measurement": {
+    "father_edu": "ordered questionnaire response; unknown/refusal unavailable",
+    "mother_edu": "ordered questionnaire response; unknown/refusal unavailable",
+    "edu_status": "nominal current education position",
+    "worked_while_studying": "binary work-exposure indicator"
+  },
+  "method": {
+    "distance": "equal-weight missing-aware mixed Gower on four original responses",
+    "candidate_k": [
+      2,
+      3,
+      4
+    ],
+    "subsample_repetitions_per_algorithm": 100,
+    "permutation_repetitions": 100,
+    "consensus_constructed": false,
+    "consensus_reason": "no candidate passed the minimum-size rule across both source algorithms"
+  },
+  "diagnostic_only": {
+    "k": 2,
+    "kmedoids_sizes": {
+      "1": 21,
+      "2": 60
+    },
+    "mean_source_silhouette": 0.4614570256843361,
+    "cross_algorithm_ari": 0.6472457627118644,
+    "kmedoids_stability_mean": 0.8982426400998511,
+    "spectral_stability_mean": 0.7130801248801675,
+    "dominant_single_feature": "worked_while_studying",
+    "maximum_single_feature_ari": 0.5714285714285714,
+    "observed_maximum_kmedoids_silhouette": 0.4369536633844294,
+    "permutation_null_median": 0.44520610314698017,
+    "permutation_null_p95": 0.49332479580784444,
+    "empirical_permutation_p": 0.6831683168316832
+  },
+  "decision": {
+    "retained_for_clustering": false,
+    "checks_passed": 4,
+    "checks_total": 7,
+    "status": "No sufficiently robust Branch F educational/cultural-capital segmentation found"
+  },
+  "limitations": [
+    "These are original-response similarities, not a validated cultural-capital scale.",
+    "Parental education is a proxy for family cultural capital and must not be interpreted as respondent merit or ability.",
+    "Education status describes current educational position and is nominal; categories are not ranked.",
+    "Worked while studying measures exposure, not the quality or relevance of the work.",
+    "The diagnostic assignments are saved only to explain failure and must not be used as final profiles.",
+    "The Branch F sample contains only 81 valid respondents."
+  ]
+}

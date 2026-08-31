@@ -1,0 +1,11 @@
+check,passed
+cross-algorithm source minimum size >= 15,False
+Gower silhouette >= 0.25,True
+ensemble bootstrap mean ARI >= 0.80,True
+final minimum profile size >= 15,False
+ARI with full K-medoids >= 0.60,True
+ARI with full spectral >= 0.60,True
+maximum single-feature ARI < 0.90,False
+permutation p < 0.05,False
+ambiguous consensus <= 20%,True
+low Gower confidence <= 20%,True

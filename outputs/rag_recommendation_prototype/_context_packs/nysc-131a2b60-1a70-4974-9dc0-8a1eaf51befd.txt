@@ -1,0 +1,1091 @@
+====================================================================================================
+CONTEXT PACK FOR RESPONDENT nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd  (branch E)
+====================================================================================================
+
+SECTION 1: DIRECT RESPONDENT FACTS
+(Source: outputs/rag_respondent_evidence/respondent_evidence.jsonl — protected/proxy and
+ technical fields already excluded upstream. 'answered' fields only; anything not listed
+ was missing, structurally not applicable, or routing-conditional in the source record —
+ it must NOT be treated as a 'No'.)
+
+--- DIRECT PREFERENCE / INTENT (respondent explicitly stated what they want) ---
+  ideal_work_type: Work for a multinational or large private company
+  ideal_sector: Information technology and communications
+  desire_for_work: Yes
+  job_type_sought: Technical work
+  job_acceptance_conditions: Only a job that is stable, well paid, AND matches my qualifications
+  training_type_would_help: Professional/technical certification
+  plans_further_edu: Yes
+  expected_highest_edu_e: Post-graduate degree
+
+--- FEASIBILITY / CONSTRAINT CONTEXT (respondent explicitly reported a circumstance) ---
+  district: Gampaha
+  area_type: Large city
+  has_children: No
+  household_size: 3.0
+  household_income: LKR 120,000 – 200,000
+  household_workers: 2.0
+  household_unemployed: 1.0
+  primary_earner_status: Shared — several people contribute roughly equally
+  primary_income_source: My parents or family
+  reason_not_seeking: Arrangements for self-employment made
+  available_to_start: Yes — I was available and could have started
+  has_minimum_wage: Yes — there is a minimum I would not go below
+  willing_to_relocate: Yes — to another area within the same province
+  main_obstacle_finding_work: No suitable training available nearby
+  income_urgency: Soon — within the next 3 months
+  minimum_wage_band: LKR 50,000 – 75,000
+
+--- EDUCATION AND EXPERIENCE CONTEXT (actual background) ---
+  edu_status: Currently in higher education (degree or diploma)
+  worked_while_studying: Yes
+  current_activity_status: I have a job but was temporarily away from it last week
+  has_job_to_return: No — I do not currently have a job to return to
+  looking_while_absent: Yes
+  active_search_4weeks: No — I did not take any active steps
+  wanted_to_work: Yes — I want to work
+  job_search_duration: 1 to 4 weeks
+  ever_refused_job: No
+  employment_service_help: Information about job vacancies
+  activity_while_searching: Staying at home and focusing on the job search
+  num_applications: 6.0
+  num_interviews: 3.0
+  past_edu_usefulness: Somewhat useful — helps to some extent
+
+--- INDIVIDUAL CONTEXT ONLY (explanation-supporting, must not independently drive ranking) ---
+  age_group: 22 – 25 years
+  moved_from_origin: Yes — I grew up here and still live here
+  employment_network_quality: Yes — I know several people with useful connections
+  edu_min_for_decent_job: O/L level
+  most_important_life_goal: Building self-confidence and personal fulfilment
+  most_useful_quality_for_job: Communication and interpersonal skills
+  knows_people_in_target_sector: Yes — I know several people working in that field
+  network_helpfulness: Very helpful — I have received real leads and referrals
+  job_search_self_efficacy: Fairly confident — I think I will, though it may take time
+  job_search_autonomy_orientation: I have preferences but am flexible and will take good opportunities
+  social_support_job_search: Somewhat supported — I have some encouragement
+  future_planning_orientation: I have a general direction but no specific steps yet
+
+SECTION 2: GROUP-LEVEL PROFILE CONTEXT — NOT INDIVIDUAL FACT
+(These documents describe the RESEARCH PROFILE(S) this respondent was statistically
+ assigned to, based on frozen clustering of OTHER survey questions. Every percentage or
+ tendency below describes the GROUP, not this individual. If a group tendency conflicts
+ with this respondent's own Section 1 answer, the Section 1 answer always takes priority.)
+
+------ PROFILE DOCUMENT: E_learning_orientation_p2 (Education usefulness and further-learning orientation) ------
+====================================================================================================
+NYSC YOUTH PROFILE KNOWLEDGE DOCUMENT
+====================================================================================================
+
+profile_key: E_learning_orientation_p2
+branch: E
+retained_model_id: E_learning_orientation
+retained_dimension: Education usefulness and further-learning orientation
+profile_id: 2
+profile_label: Moderate perceived utility and mixed learning ambition
+profile_size_n: 16
+
+SOURCE OF RECORD: This document is compiled only from the frozen, audited outputs of
+the NYSC final clustering and post-cluster profiling stage (freeze date 26 August 2026):
+  - NYSC_all_branches_clustering_final_report.md (Part I: clustering method, validation,
+    decision register)
+  - NYSC_Final_Clustering_and_Post_Cluster_Profiling_Report.docx / 
+    final_cluster_profiling_report.md (Part II: post-cluster profiling)
+  - outputs/final_cluster_programme_relevant_profiles.csv (17-row profile evidence summary)
+  - outputs/final_cluster_profile_comparison_summary.csv (270-row variable-level statistics)
+No fact in this document was invented, estimated, or extrapolated beyond these sources.
+
+----------------------------------------------------------------------------------------------------
+1. PROFILE_DEFINITION
+----------------------------------------------------------------------------------------------------
+Facts that define the cluster itself. These variables and diagnostics produced the
+cluster; they are NOT re-tested as post-cluster findings (doing so would be circular).
+
+Branch: E — strict final-path analytical cohort n=34 (of 362 total strict-cohort respondents: D=191, E=34, F=81, G=56).
+Retained dimension: Education usefulness and further-learning orientation
+Number of profiles in this retained model (k): 2
+This profile's id and label: Profile 2 — "Moderate perceived utility and mixed learning ambition"
+This profile's exact frozen size: n=16 (cross-verified against the Part III freeze-verification table in the source report)
+
+Exact cluster-forming variables (the only inputs used to build this clustering; all
+other survey variables were deliberately excluded from distance calculation and are
+only used descriptively in sections 2-3 below):
+  - expected_highest_edu_e
+  - past_edu_usefulness
+  - plans_further_edu
+
+Theoretical basis and purpose: Perceived usefulness of past education combined with orientation toward further learning and expected highest education level.
+
+Clustering method: Gower distance over original mixed-type responses (no invented 0-100
+scores), consensus of repeated K-medoids and spectral clustering across 100 matched
+80% subsamples (200 base partitions), final clusters from K-medoids on (1 - co-association).
+
+Validation diagnostics for this retained model: Gower silhouette 0.567; bootstrap/subsample ARI 0.953; source-method ARIs 0.882 and 1.000; permutation p=0.040; 10 of 10 mandatory validation checks passed.
+Final decision status: Retained cautiously; strongly dependent on past education usefulness.
+Model-level caution (from the frozen decision register): Branch E has only 34 respondents and the retained solution depends strongly on perceived past-education usefulness.
+
+Additional definitional context: Removing past_edu_usefulness from the model changed cluster membership almost completely (ARI 0.039), meaning this single item effectively drives the partition. The correct narrow label is 'education-usefulness and further-learning orientation' — it must NOT be presented as a validated human-capital, readiness or ability classification. Branch E is the smallest and most sample-constrained branch (34 of 362 strict-cohort respondents); replication with more unemployed respondents is particularly important before any operational use.
+
+Interpretation of this specific profile (verbatim from the frozen report's per-model
+profile table):
+  93.8% rated education somewhat useful; 62.5% planned further education; the remainder were unsure or did not plan it.
+
+Reminder: this profile exists only WITHIN this one retained dimension. A respondent's
+membership here says nothing about their membership in any other branch's or dimension's
+profile system (see PROHIBITED_INFERENCES).
+
+----------------------------------------------------------------------------------------------------
+2. SUPPORTED_PROFILE_FINDINGS
+----------------------------------------------------------------------------------------------------
+Post-cluster comparisons that passed this model's pre-registered effect-size and
+coverage reporting screen (i.e. explicitly retained/approved profiling findings, as
+categorised in the frozen evidence summary). These are the findings that may inform a
+later programme-matching stage. Directional statements are WITHIN-PROFILE percentages
+compared against the other profile(s) in the same model.
+
+FDR-correction context for this model: Among the findings that passed the effect-size/coverage reporting screen for this model, 0 of 15 remained significant after FDR correction. All reported findings for this profile are descriptive/exploratory evidence only, not confirmed statistical differences.
+
+[Strongest additional characteristics (top approved differentiators)]
+  - Job-acceptance conditions: less often reported ‘Only a job that is stable, well paid, AND matches my qualifications’ (6/16, 37.5% vs 66.7% in other profile(s))
+  - Helpfulness of job-search contacts: less often reported ‘Very helpful — I have received real leads and referrals’ (3/16, 18.8% vs 55.6% in other profile(s)) [sparse table]
+  - Household size: had lower median household size (4.00 vs 5.00)
+  - Primary recent search method: more often reported ‘Attending job fairs’ (4/11, 36.4% vs 0.0% in other profile(s)) [conditional eligible n=26; sparse table]
+  - Social support for job search: less often reported ‘Very supported — people actively encourage and assist me’ (3/16, 18.8% vs 44.4% in other profile(s))
+
+[Barriers, support and financial context]
+  - Helpfulness of job-search contacts: less often reported ‘Very helpful — I have received real leads and referrals’ (3/16, 18.8% vs 55.6% in other profile(s)) [sparse table]
+  - Household size: had lower median household size (4.00 vs 5.00)
+  - Social support for job search: less often reported ‘Very supported — people actively encourage and assist me’ (3/16, 18.8% vs 44.4% in other profile(s))
+
+[Aspirations and preferences]
+  - Job-acceptance conditions: less often reported ‘Only a job that is stable, well paid, AND matches my qualifications’ (6/16, 37.5% vs 66.7% in other profile(s))
+  - Minimum acceptable wage band: more often reported ‘LKR 50,000 – 75,000’ (5/12, 41.7% vs 12.5% in other profile(s)) [conditional eligible n=28]
+
+[Education, training and employment characteristics]
+  - Primary recent search method: more often reported ‘Attending job fairs’ (4/11, 36.4% vs 0.0% in other profile(s)) [conditional eligible n=26; sparse table]
+  - Number of applications: had lower median number of applications (5.50 vs 12.50)
+
+[Programme-relevant evidence]
+  - Job-acceptance conditions: less often reported ‘Only a job that is stable, well paid, AND matches my qualifications’ (6/16, 37.5% vs 66.7% in other profile(s))
+  - Helpfulness of job-search contacts: less often reported ‘Very helpful — I have received real leads and referrals’ (3/16, 18.8% vs 55.6% in other profile(s)) [sparse table]
+  - Primary recent search method: more often reported ‘Attending job fairs’ (4/11, 36.4% vs 0.0% in other profile(s)) [conditional eligible n=26; sparse table]
+  - Social support for job search: less often reported ‘Very supported — people actively encourage and assist me’ (3/16, 18.8% vs 44.4% in other profile(s))
+
+Statistical support detail for the variables named above (effect size is the primary
+ranking evidence; p-values, raw and BH-adjusted, are supporting evidence only):
+
+  - Job-acceptance conditions (job_acceptance_conditions): coverage 100.0% of the model cohort; effect size absolute rank-biserial correlation = 0.406; raw p = 0.02906; BH-adjusted p = 0.374 (NOT significant at FDR<0.05 (descriptive only)); programme relevance rated 'high'.
+  - Helpfulness of job-search contacts (network_helpfulness): coverage 100.0% of the model cohort; effect size bias-corrected Cramér's V = 0.467; raw p = 0.01628; BH-adjusted p = 0.374 (NOT significant at FDR<0.05 (descriptive only)); programme relevance rated 'high'. [sparse cells]
+  - Household size (household_size): coverage 100.0% of the model cohort; effect size absolute rank-biserial correlation = 0.372; raw p = 0.05377; BH-adjusted p = 0.4033 (NOT significant at FDR<0.05 (descriptive only)); programme relevance rated 'medium'.
+  - Primary recent search method (search_method_primary): coverage 76.5% of the model cohort; effect size bias-corrected Cramér's V = 0.597; raw p = 0.02363; BH-adjusted p = 0.374 (NOT significant at FDR<0.05 (descriptive only)); programme relevance rated 'high'. [sparse cells, conditional (gateway: active_search_4weeks)]
+  - Social support for job search (social_support_job_search): coverage 100.0% of the model cohort; effect size absolute rank-biserial correlation = 0.271; raw p = 0.1624; BH-adjusted p = 0.5218 (NOT significant at FDR<0.05 (descriptive only)); programme relevance rated 'high'.
+  - Job-search confidence (job_search_self_efficacy): coverage 100.0% of the model cohort; effect size absolute rank-biserial correlation = 0.260; raw p = 0.146; BH-adjusted p = 0.5218 (NOT significant at FDR<0.05 (descriptive only)); programme relevance rated 'high'.
+  - Knows people in target sector (knows_people_in_target_sector): coverage 100.0% of the model cohort; effect size bias-corrected Cramér's V = 0.398; raw p = 0.04; BH-adjusted p = 0.374 (NOT significant at FDR<0.05 (descriptive only)); programme relevance rated 'high'. [sparse cells]
+  - Number of applications (num_applications): coverage 100.0% of the model cohort; effect size absolute rank-biserial correlation = 0.288; raw p = 0.1553; BH-adjusted p = 0.5218 (NOT significant at FDR<0.05 (descriptive only)); programme relevance rated 'medium'.
+  - Minimum acceptable wage band (minimum_wage_band): coverage 82.4% of the model cohort; effect size absolute rank-biserial correlation = 0.271; raw p = 0.2213; BH-adjusted p = 0.6224 (NOT significant at FDR<0.05 (descriptive only)); programme relevance rated 'high'. [conditional (gateway: has_minimum_wage)]
+  - Useful employment/training contacts (employment_network_quality): coverage 100.0% of the model cohort; effect size absolute rank-biserial correlation = 0.215; raw p = 0.2731; BH-adjusted p = 0.6312 (NOT significant at FDR<0.05 (descriptive only)); programme relevance rated 'high'.
+  - Training believed most helpful (training_type_would_help): coverage 100.0% of the model cohort; effect size bias-corrected Cramér's V = 0.317; raw p = 0.161; BH-adjusted p = 0.5218 (NOT significant at FDR<0.05 (descriptive only)); programme relevance rated 'high'. [sparse cells]
+  - Ideal work type (ideal_work_type): coverage 100.0% of the model cohort; effect size bias-corrected Cramér's V = 0.311; raw p = 0.1538; BH-adjusted p = 0.5218 (NOT significant at FDR<0.05 (descriptive only)); programme relevance rated 'high'. [sparse cells]
+  - Job-search autonomy orientation (job_search_autonomy_orientation): coverage 100.0% of the model cohort; effect size absolute rank-biserial correlation = 0.236; raw p = 0.2124; BH-adjusted p = 0.6224 (NOT significant at FDR<0.05 (descriptive only)); programme relevance rated 'medium'.
+  - Ideal sector (ideal_sector): coverage 100.0% of the model cohort; effect size bias-corrected Cramér's V = 0.257; raw p = 0.2546; BH-adjusted p = 0.6312 (NOT significant at FDR<0.05 (descriptive only)); programme relevance rated 'high'. [sparse cells]
+  - Ever refused a job (ever_refused_job): coverage 100.0% of the model cohort; effect size bias-corrected Cramér's V = 0.192; raw p = 0.1343; BH-adjusted p = 0.5218 (NOT significant at FDR<0.05 (descriptive only)); programme relevance rated 'medium'.
+
+----------------------------------------------------------------------------------------------------
+3. DIRECT_GROUP_DISTRIBUTIONS
+----------------------------------------------------------------------------------------------------
+The complete observed distribution of THIS profile's survey answers for every
+non-cluster-forming variable tested against this model (not only the ones highlighted
+as approved findings above). Included so no descriptive detail is summarised away.
+Entries marked [SCREENED FINDING] passed the reporting screen in section 2 above;
+entries marked [tested, not highlighted] did not meet that screen and must be read as
+raw descriptive data only, not as a vetted group difference.
+
+* Area type [area_type] — type: categorical, theme: access, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=16): Metropolitan suburb: 5 (31.2%); Large city: 5 (31.2%); Small town: 4 (25.0%); Rural area: 2 (12.5%)
+
+* District [district] — type: categorical, theme: access, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously; related model note: Many district categories can create sparse tables.)
+    This profile's observed distribution (eligible n=16): Colombo: 5 (31.2%); Galle: 2 (12.5%); Kegalle: 2 (12.5%); Kalutara: 2 (12.5%); Gampaha: 1 (6.2%); Puttalam: 1 (6.2%); Ampara: 1 (6.2%); Hambantota: 1 (6.2%); Ratnapura: 1 (6.2%)
+
+* Ideal sector [ideal_sector] — type: categorical, theme: aspiration, cohort coverage: 100.0% [SCREENED FINDING] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=16): Information technology and communications: 5 (31.2%); Manufacturing or production: 4 (25.0%); Education and teaching: 2 (12.5%); Hotels, restaurants, and hospitality: 1 (6.2%); Wholesale, retail, or repair: 1 (6.2%); Personal services (beauty, fitness, wellness): 1 (6.2%); Not sure: 1 (6.2%); Finance, banking, and insurance: 1 (6.2%)
+
+* Ideal work type [ideal_work_type] — type: categorical, theme: aspiration, cohort coverage: 100.0% [SCREENED FINDING] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=16): Work for a local private Sri Lankan company: 5 (31.2%); Work for a multinational or large private company: 5 (31.2%); Start my own business: 2 (12.5%); Work for the government or public sector: 1 (6.2%); Work in a family business (non-farming): 1 (6.2%); Not sure yet: 1 (6.2%); Work for a non-profit or NGO: 1 (6.2%)
+
+* Most important life goal [most_important_life_goal] — type: categorical, theme: aspiration, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=16): Having financial security or earning a lot: 6 (37.5%); Being successful in work or my career: 5 (31.2%); Building self-confidence and personal fulfilment: 2 (12.5%); Making a meaningful contribution to society: 1 (6.2%); Finding purpose and meaning in life: 1 (6.2%); Having leisure, freedom, and personal time: 1 (6.2%)
+
+* Quality considered most useful for a good job [most_useful_quality_for_job] — type: categorical, theme: aspiration, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=16): IT and digital skills: 4 (25.0%); Communication and interpersonal skills: 4 (25.0%); Ambition and drive: 3 (18.8%); Command of languages (English, etc.): 2 (12.5%); Completion of apprenticeship or vocational training: 1 (6.2%); Teamwork and collaboration skills: 1 (6.2%); Scientific or technical qualifications: 1 (6.2%)
+
+* Type of job sought [job_type_sought] — type: categorical, theme: aspiration, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=16): Technical work: 4 (25.0%); Any available job: 3 (18.8%); Professional work (law, medicine, engineering, etc.): 3 (18.8%); Creative or media work: 2 (12.5%); Managerial work: 1 (6.2%); Manual or trade work: 1 (6.2%); Self-employment or starting a business: 1 (6.2%); Clerical or administrative work: 1 (6.2%)
+
+* Ever refused a job [ever_refused_job] — type: categorical, theme: barrier, cohort coverage: 100.0% [SCREENED FINDING]
+    This profile's observed distribution (eligible n=16): No: 12 (75.0%); Yes: 4 (25.0%)
+
+* Job-search duration [job_search_duration] — type: ordered, theme: barrier, cohort coverage: 100.0% [tested, not highlighted]
+    This profile's observed distribution (eligible n=16): median=4.00, IQR=2.75–5.25
+
+* Main obstacle to finding work [main_obstacle_finding_work] — type: categorical, theme: barrier, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=16): Employers need higher qualifications than I have: 3 (18.8%); No suitable training available nearby: 3 (18.8%); Working conditions in available jobs are poor: 2 (12.5%); No work experience: 2 (12.5%); Other obstacle: 1 (6.2%); Vocational training not suited to available jobs: 1 (6.2%); Considered too young by employers: 1 (6.2%); Wages in available jobs are too low: 1 (6.2%); Not enough jobs available in this area: 1 (6.2%); General education not suited to available jobs: 1 (6.2%)
+
+* Reason for refusing a job [reason_refused_job] — type: categorical, theme: barrier, cohort coverage: 38.2% [tested, not highlighted] (conditional on: ever_refused_job; sparse cells - interpret cautiously; small-sample flag)
+    This profile's observed distribution (eligible n=4): Did not match my level of qualifications: 2 (50.0%); No possibility for career advancement: 2 (50.0%)
+
+* Father's education [father_edu] — type: ordered, theme: education, cohort coverage: 94.1% [tested, not highlighted]
+    This profile's observed distribution (eligible n=16): median=3.50, IQR=2.00–5.00
+
+* Mother's education [mother_edu] — type: ordered, theme: education, cohort coverage: 94.1% [tested, not highlighted]
+    This profile's observed distribution (eligible n=16): median=3.00, IQR=2.00–4.25
+
+* Recent education status [edu_status] — type: categorical, theme: education, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=16): Currently in higher education (degree or diploma): 11 (68.8%); I have completed my education and am not currently studying: 3 (18.8%); Currently doing post-graduate studies: 1 (6.2%); I left school or education before completing it: 1 (6.2%)
+
+* Active search in last four weeks [active_search_4weeks] — type: categorical, theme: employment, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=16): Yes — I took active steps in the past four weeks: 11 (68.8%); No — I did not take any active steps: 5 (31.2%)
+
+* Main activity while searching [activity_while_searching] — type: categorical, theme: employment, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=16): Staying at home and focusing on the job search: 5 (31.2%); Taking additional education or training courses: 4 (25.0%); Staying at home and managing household responsibilities: 2 (12.5%); Spending time with friends or on personal activities: 1 (6.2%); Planning to start my own business: 1 (6.2%); Other: 1 (6.2%); Helping in a family business or farm: 1 (6.2%); Doing volunteer or community work: 1 (6.2%)
+
+* Number of applications [num_applications] — type: numeric, theme: employment, cohort coverage: 100.0% [SCREENED FINDING]
+    This profile's observed distribution (eligible n=16): median=5.50, IQR=2.75–23.50
+
+* Number of interviews [num_interviews] — type: numeric, theme: employment, cohort coverage: 100.0% [tested, not highlighted]
+    This profile's observed distribution (eligible n=16): median=2.00, IQR=0.00–3.25
+
+* Type of work while studying [work_while_study_type] — type: categorical, theme: employment, cohort coverage: 29.4% [tested, not highlighted] (conditional on: worked_while_studying; sparse cells - interpret cautiously; small-sample flag)
+    This profile's observed distribution (eligible n=4): Internship or apprenticeship in a private company: 3 (75.0%); Paid work in a company (not internship): 1 (25.0%)
+
+* Worked while studying [worked_while_studying] — type: categorical, theme: employment, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=16): No: 12 (75.0%); Yes: 4 (25.0%)
+
+* Age group [age_group] — type: categorical, theme: equity, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=16): 22 – 25 years: 7 (43.8%); 26 – 29 years: 5 (31.2%); 18 – 21 years: 4 (25.0%)
+
+* Gender [gender] — type: categorical, theme: equity, cohort coverage: 100.0% [tested, not highlighted]
+    This profile's observed distribution (eligible n=16): Female: 9 (56.2%); Male: 7 (43.8%)
+
+* Has a minimum acceptable wage [has_minimum_wage] — type: categorical, theme: feasibility, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=16): Yes — there is a minimum I would not go below: 12 (75.0%); No — I would accept whatever is offered: 4 (25.0%)
+
+* Has children [has_children] — type: categorical, theme: feasibility, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=16): No: 16 (100.0%)
+
+* Job-acceptance conditions [job_acceptance_conditions] — type: ordered, theme: feasibility, cohort coverage: 100.0% [SCREENED FINDING]
+    This profile's observed distribution (eligible n=16): median=3.50, IQR=2.00–5.00
+
+* Marital status [marital_status] — type: categorical, theme: feasibility, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=16): Never married: 15 (93.8%); Engaged to be married: 1 (6.2%)
+
+* Minimum acceptable wage band [minimum_wage_band] — type: ordered, theme: feasibility, cohort coverage: 82.4% [SCREENED FINDING] (conditional on: has_minimum_wage; small-sample flag)
+    This profile's observed distribution (eligible n=12): median=3.00, IQR=2.75–4.00
+
+* Household income band [household_income] — type: ordered, theme: financial, cohort coverage: 85.3% [tested, not highlighted] (small-sample flag)
+    This profile's observed distribution (eligible n=14): median=3.00, IQR=2.25–5.00
+
+* Household size [household_size] — type: numeric, theme: financial, cohort coverage: 100.0% [SCREENED FINDING]
+    This profile's observed distribution (eligible n=16): median=4.00, IQR=4.00–5.00
+
+* Primary personal income source [primary_income_source] — type: categorical, theme: financial, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=16): My parents or family: 15 (93.8%); Other source: 1 (6.2%)
+
+* Primary-earner status [primary_earner_status] — type: categorical, theme: financial, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=16): No — someone else is the main provider: 14 (87.5%); Shared — several people contribute roughly equally: 2 (12.5%)
+
+* Reason for working while studying [work_while_study_motivation] — type: categorical, theme: financial, cohort coverage: 29.4% [tested, not highlighted] (conditional on: worked_while_studying; sparse cells - interpret cautiously; small-sample flag)
+    This profile's observed distribution (eligible n=4): To gain work experience and build my CV: 3 (75.0%); To earn money: 1 (25.0%)
+
+* Urgency to start earning [income_urgency] — type: ordered, theme: financial, cohort coverage: 100.0% [tested, not highlighted]
+    This profile's observed distribution (eligible n=16): median=1.00, IQR=1.00–2.00
+
+* Lives in the same area where they grew up [moved_from_origin] — type: categorical, theme: mobility, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=16): Yes — I grew up here and still live here: 12 (75.0%); No — I moved from somewhere else: 4 (25.0%)
+
+* Reason for moving [move_reason] — type: categorical, theme: mobility, cohort coverage: 23.5% [tested, not highlighted] (conditional on: moved_from_origin; sparse cells - interpret cautiously; small-sample flag)
+    This profile's observed distribution (eligible n=4): To accompany family: 2 (50.0%); For education or training: 1 (25.0%); For work or employment reasons: 1 (25.0%)
+
+* Willingness to relocate [willing_to_relocate] — type: categorical, theme: mobility, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=16): Yes — to another area within the same province: 4 (25.0%); Yes — to another province in Sri Lanka: 4 (25.0%); No — I would not move: 4 (25.0%); I have no strong preference: 2 (12.5%); Yes — to another country: 2 (12.5%)
+
+* Employment/careers service help [employment_service_help] — type: categorical, theme: service, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=16): No — none at all: 8 (50.0%); Advice on how to search for jobs: 4 (25.0%); Information about job vacancies: 3 (18.8%); Guidance on education and training options: 1 (6.2%)
+
+* Primary recent search method [search_method_primary] — type: categorical, theme: service, cohort coverage: 76.5% [SCREENED FINDING] (conditional on: active_search_4weeks; sparse cells - interpret cautiously; small-sample flag)
+    This profile's observed distribution (eligible n=11): Attending job fairs: 4 (36.4%); Online job ads (internet, social media): 4 (36.4%); Public employment office registration: 1 (9.1%); Through education or training institution: 1 (9.1%); Private employment agency: 1 (9.1%)
+
+* Future planning and direction [future_planning_orientation] — type: ordered, theme: support, cohort coverage: 100.0% [tested, not highlighted]
+    This profile's observed distribution (eligible n=16): median=2.00, IQR=1.00–2.25
+
+* Helpfulness of job-search contacts [network_helpfulness] — type: categorical, theme: support, cohort coverage: 100.0% [SCREENED FINDING] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=16): Somewhat helpful — useful advice but no direct opportunities yet: 7 (43.8%); Not very helpful — my network has not opened many doors: 6 (37.5%); Very helpful — I have received real leads and referrals: 3 (18.8%)
+
+* Job-search autonomy orientation [job_search_autonomy_orientation] — type: ordered, theme: support, cohort coverage: 100.0% [SCREENED FINDING]
+    This profile's observed distribution (eligible n=16): median=2.00, IQR=1.75–3.00
+
+* Job-search confidence [job_search_self_efficacy] — type: ordered, theme: support, cohort coverage: 100.0% [SCREENED FINDING]
+    This profile's observed distribution (eligible n=16): median=2.00, IQR=2.00–2.00
+
+* Knows people in target sector [knows_people_in_target_sector] — type: categorical, theme: support, cohort coverage: 100.0% [SCREENED FINDING] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=16): Not really — only very distant or indirect connections: 6 (37.5%); Yes — I know one or two people: 4 (25.0%); Yes — I know several people working in that field: 3 (18.8%); No — I have no contacts in that field: 3 (18.8%)
+
+* Social support for job search [social_support_job_search] — type: ordered, theme: support, cohort coverage: 100.0% [SCREENED FINDING]
+    This profile's observed distribution (eligible n=16): median=2.00, IQR=2.00–3.00
+
+* Useful employment/training contacts [employment_network_quality] — type: ordered, theme: support, cohort coverage: 100.0% [SCREENED FINDING]
+    This profile's observed distribution (eligible n=16): median=2.50, IQR=1.75–4.00
+
+* Training believed most helpful [training_type_would_help] — type: categorical, theme: training, cohort coverage: 100.0% [SCREENED FINDING] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=16): Completion of secondary/A-Level education: 3 (18.8%); Professional/technical certification: 3 (18.8%); University degree: 3 (18.8%); Apprenticeship with an employer: 2 (12.5%); Computer and IT training: 2 (12.5%); Other type of training: 2 (12.5%); Completion of vocational/NVQ training: 1 (6.2%)
+
+----------------------------------------------------------------------------------------------------
+4. CAUTIONS
+----------------------------------------------------------------------------------------------------
+Model-level caution: Branch E has only 34 respondents and the retained solution depends strongly on perceived past-education usefulness.
+Additional model context: Removing past_edu_usefulness from the model changed cluster membership almost completely (ARI 0.039), meaning this single item effectively drives the partition. The correct narrow label is 'education-usefulness and further-learning orientation' — it must NOT be presented as a validated human-capital, readiness or ability classification. Branch E is the smallest and most sample-constrained branch (34 of 362 strict-cohort respondents); replication with more unemployed respondents is particularly important before any operational use.
+FDR-correction context: Among the findings that passed the effect-size/coverage reporting screen for this model, 0 of 15 remained significant after FDR correction. All reported findings for this profile are descriptive/exploratory evidence only, not confirmed statistical differences.
+
+Profile-specific caution (verbatim from the frozen evidence summary): Branch E has only 34 respondents and the retained solution depends strongly on perceived past-education usefulness. Small profile (n=16). Some reported findings use eligible-subgroup denominators. Some categorical comparisons contain sparse cells. None of the selected comparisons remained below FDR 0.05; effect sizes are descriptive evidence.
+
+Small-profile caution: this profile's size (n=16) is small; percentages within it are more sensitive to individual respondents and less stable than in larger profiles.
+
+Conditional-denominator caution: 6 of 46 variables tested against this model are conditional (asked only of an eligible subgroup via survey routing, e.g. only active jobseekers, only those who worked while studying). Their percentages use the eligible-subgroup denominator shown in section 3, not the full profile size. A blank caused by survey routing was never treated as a 'No' answer during profiling.
+
+Cross-dimensional caution: the following variables tested against this model also form part of another retained clustering model; their relationship to this profile is descriptive only and is NOT independent statistical validation of this model:
+  - District: Many district categories can create sparse tables.
+
+Sparse-cell caution: 29 of 46 variables tested against this model contain sparse expected-cell counts (categorical tables with rare category combinations); percentages built from sparse tables are listed in section 3 and should be read with extra caution, especially for high-cardinality variables such as district, sector or stated obstacle.
+
+General measurement cautions (apply to every profile in this knowledge base):
+  - A reported percentage is a within-profile percentage in this 362-respondent strict
+    cohort, not a population estimate for all Sri Lankan youth.
+  - Effect sizes rank descriptive differences; they do not prove that cluster membership
+    caused the characteristic.
+  - Consensus clustering stability shows reproducibility under the specified procedure;
+    it does not prove a natural, causal, or permanent youth type.
+  - Profile names are descriptive and must not stigmatise respondents or be used to deny
+    programme access.
+
+----------------------------------------------------------------------------------------------------
+5. PROHIBITED_INFERENCES
+----------------------------------------------------------------------------------------------------
+Statements that must NOT be assumed true for an individual merely because they belong
+to this profile. These are hard constraints for any downstream system (including a RAG
+recommendation layer) consuming this document.
+
+Universal (applies to all 17 retained profiles):
+  - Do not assume that a specific individual assigned to this profile personally holds any characteristic reported as a group percentage. A group finding such as 'X% of this profile reported Y' describes the profile as a whole; it is not a fact about any one person in it — a sizeable minority (and in close splits, close to half) of the profile did NOT report Y.
+  - Do not treat profile membership as a diagnosis, permanent trait, or whole-person label. Profiles are exploratory response-pattern groups within ONE retained dimension only. The same respondent can simultaneously belong to different profiles across different retained dimensions (for example a Branch D respondent has independent motivation, economic and educational-trajectory profile memberships) — no single profile describes the whole person.
+  - Do not use profile membership, alone, as an eligibility gate, a reason to deny access to a programme, or a reason to prioritise/deprioritise a youth for any service.
+  - Do not treat effect sizes or association strength as evidence of causation. A reported association (e.g. 'Profile A more often reported X') describes a measured difference in this sample; it does not establish that being in Profile A caused X, or that X caused profile membership.
+  - Do not treat a finding that did not pass this model's effect-size/coverage reporting screen (see DIRECT_GROUP_DISTRIBUTIONS) as an approved or reportable difference. Untagged distributions are raw descriptive data only, not vetted findings.
+  - Do not treat a finding as statistically confirmed population evidence merely because it appears here. Most models in this knowledge base have few or zero findings that remain significant after Benjamini-Hochberg FDR correction (see this profile's CAUTIONS section and fdr_note) — effect sizes are the primary ranking evidence, and p-values (raw or adjusted) are supporting evidence only.
+  - Do not generalise any percentage in this document to Sri Lankan youth generally, to NYSC's wider applicant pool, or to any group outside the 362-respondent strict analytical cohort (D=191, E=34, F=81, G=56) from which these profiles were derived.
+  - Do not infer, invent, or assume any need, barrier, preference or characteristic for this profile that is not explicitly present in the source data below. If a data point is absent, it must be reported as absent/not tested, never filled in by assumption.
+  - Do not use this document, on its own, to select or recommend a specific NYSC course or programme. Course/programme recommendation requires a separate, transparent, expert-reviewed matching stage that combines this profile information with the individual's own stated preferences, eligibility and the structured NYSC course catalogue.
+
+Specific to the 'Education usefulness and further-learning orientation' model:
+  - Do not present this profile as a validated human-capital, job-readiness, or ability classification — it is a two-item-dominated split driven overwhelmingly by one question (perceived past-education usefulness).
+  - Do not treat any finding in this profile as confirmed at the population level: zero of the model's screened findings survived FDR correction, and the branch cohort (n=34) is the smallest and least stable of the four branches.
+
+Worked counter-example for this specific profile (do NOT do this):
+  WRONG: "This youth is in profile 'Moderate perceived utility and mixed learning ambition', so they must have this characteristic: Job-acceptance conditions: less often reported ‘Only a job that is stable, well paid, AND matches my qualifications’ (6/16, 37.5% vs 66.7% in other profile(s))"
+  RIGHT: "This youth is in profile 'Moderate perceived utility and mixed learning ambition' (n=16). Within this profile, the group-level pattern was: Job-acceptance conditions: less often reported ‘Only a job that is stable, well paid, AND matches my qualifications’ (6/16, 37.5% vs 66.7% in other profile(s)). This is evidence about the group, not a confirmed fact about this individual, who must be asked directly."
+
+====================================================================================================
+END OF DOCUMENT
+====================================================================================================
+
+SECTION 3: RETRIEVED FULL NYSC COURSE DOCUMENTS
+(Source: outputs/rag_course_knowledge/validated_documents/ — retrieved via BM25 lexical
+ search over section-aware child chunks, deduplicated to parent course. RETRIEVAL RANK/
+ SCORE IS NOT SUITABILITY — some retrieved courses may be lexically matched but not
+ actually relevant; judge each on its full text below, not on its rank.)
+
+------ RANK 1 (BM25 score 27.661): COURSE-006 ------
+COURSE DOCUMENT ID: COURSE-006
+
+COURSE NAME: National Diploma In Information & Communication Technology
+
+VALIDATION STATUS: VALIDATED
+
+SOURCE TYPE: COURSE_DETAIL_SCREENSHOT
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.21.55.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.25.19.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-006
+
+UNCERTAINTY MARKERS PRESENT: NO
+
+PROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.
+
+SOURCE CONFLICT NOTE: NONE
+
+COMPLETE EXTRACTED COURSE TEXT
+
+National Diploma In Information & Communication
+Technology
+LANGUAGE
+MAX STUDENTS
+English
+20
+APPLY NOW
+Course Overview
+1. System Analysis & Design - Semester 1
+2. Software Programming - Semester 1
+3. Database System - Semester 1
+4. Computer Graphics Design -
+Semester 1
+5. Manage Workplace Information -
+6. Manage Workplace Communication -
+7. Documents & Resource Level 5 -
+8. Database Systems II - Semester 2
+9. Software Testing - Semester 2
+10. Web Programming - Semester 2
+11. Local Area Network - Semester 2
+12. Planing & Scheduling Work at
+Workplace - Semester 2
+The National Youth Service Council has initiated several Course programs to enable the youth to
+develop their skills while also providing an opportunity to achieve their future job aspirations.
+Information & Communication Multimedia Technology will give you theoretical knowledge as well as
+job oriented practical that is necessary for employment and higher education. This is a full time
+course which will be held on weekdays.
+It is our objective to show the correct path that will direct youth to their desired occupations while at
+the same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and
+gentle attitudes within a disciplined environment.
+By completing this course , can achieve Competency Level 5 under the National Vocational
+Qualifications Competency Standards through following a variety of full time study programs covering
+a variety of occupations.
+
+
+------ RANK 2 (BM25 score 18.177): COURSE-059 ------
+COURSE DOCUMENT ID: COURSE-059
+
+COURSE NAME: Non-Liner Video Editing With Digital 3D Animation
+
+VALIDATION STATUS: VALIDATED_WITH_LIMITATIONS
+
+SOURCE TYPE: COURSE_DETAIL_SCREENSHOT
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.53.12.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.57.21.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-059
+
+UNCERTAINTY MARKERS PRESENT: NO
+
+PROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.
+
+SOURCE CONFLICT NOTE: NONE
+
+COMPLETE EXTRACTED COURSE TEXT
+
+Non-Liner Video Editing With Digital 3D Animation
+LANGUAGE
+MAX STUDENTS
+English
+25
++ APPLY NOW
+The National Youth Service Council has initiated several course programs to enable the youth to
+develop their skills while also providing an opportunity to achieve their future job aspirations.
+Computerized Non-linear Video Editing with Digital 3D Animation course will give you theoretical
+knowledge as well as job oriented practical that is necessary for employment and higher education.
+This is a part time course which will be held on weekends.
+It is our objective to show the correct path that will direct youth to their desired occupations while at
+the same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and
+gentle attitudes within a disciplined environment.
+
+
+------ RANK 3 (BM25 score 12.9333): COURSE-055 ------
+COURSE DOCUMENT ID: COURSE-055
+
+COURSE NAME: Computer Hardware Technician
+
+VALIDATION STATUS: VALIDATED_WITH_LIMITATIONS
+
+SOURCE TYPE: COURSE_DETAIL_SCREENSHOT
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.51.41.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.52.40.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-055
+
+UNCERTAINTY MARKERS PRESENT: NO
+
+PROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.
+
+SOURCE CONFLICT NOTE: NONE
+
+COMPLETE EXTRACTED COURSE TEXT
+
+Computer Hardware Technician
+LANGUAGE
+MAX STUDENTS
+English
+25
++ APPLY NOW
+Course Overview
+The National Youth Service Council has initiated several course programs to enable the youth to
+develop their skills while also providing an opportunity to achieve their future job aspirations.
+1. PC assembling
+Computer Hardware Technician course will give you theoretical knowledge as well as job oriented
+2. Maintence Repair PCs
+practical that is necessary for employment and higher education. This is a part time course which will
+3. Install and Configure Internal, External
+Devices
+be held on weekends.
+4. Software Installation
+It is our objective to show the correct path that will direct youth to their desired occupations while at
+5. Network and Internet
+the same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and
+gentle attitudes within a disciplined environment.
+
+
+------ RANK 4 (BM25 score 12.7907): COURSE-073 ------
+COURSE DOCUMENT ID: COURSE-073
+
+COURSE NAME: Java Programming With Software Applications Development
+
+VALIDATION STATUS: VALIDATED
+
+SOURCE TYPE: COURSE_DETAIL_SCREENSHOT
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.58.15.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 23.00.22.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-073
+
+UNCERTAINTY MARKERS PRESENT: NO
+
+PROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.
+
+SOURCE CONFLICT NOTE: NONE
+
+COMPLETE EXTRACTED COURSE TEXT
+
+Java Programming With Software Applications
+Development
+LANGUAGE
+MAX STUDENTS
+English
+25
+→ APPLY NOW
+The National Youth Service Council has initiated several course programs to enable the youth to
+develop their skills while also providing an opportunity to achieve their future job aspirations. Java
+courses will give you theoretical knowledge as well as job oriented practical skills that are necessary
+for employment and higher education. This is a part time course which will be held on weekends.
+It is our objective to show the correct path that will direct youth to their desired occupations while at
+the same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and
+gentle attitudes within a disciplined environment.
+
+
+------ RANK 5 (BM25 score 12.3165): COURSE-009 ------
+COURSE DOCUMENT ID: COURSE-009
+
+COURSE NAME: Information And Communication Technolory Technician
+
+VALIDATION STATUS: VALIDATED_WITH_LIMITATIONS
+
+SOURCE TYPE: COURSE_DETAIL_SCREENSHOT
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.23.01.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.25.19.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-009
+
+UNCERTAINTY MARKERS PRESENT: NO
+
+PROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.
+
+SOURCE CONFLICT NOTE: NONE
+
+COMPLETE EXTRACTED COURSE TEXT
+
+Information And Communication Technolory Technician
+LANGUAGE
+MAX STUDENTS
+English
+20
+APPLY NOW
+Course Overview
+1. Maintain Files and Folders
+2. Perform word processing
+3. Prepare spreadsheet
+4. Prepare presentations
+5. Maintain databases
+6. Perform internet and electronic mail
+operation
+7. Install and configure operating system
+8. Conduct installation and
+troubleshooting of network
+9. Develop graphics for online / print
+media
+10. Design and develop static web pages
+1l. Develop basic software solution
+The National Youth Service Council has initiated several Course programs to enable the youth to
+develop their skills while also providing an opportunity to achieve their future job aspirations.
+Quantity Surveyor will give you theoretical knowledge as well as job oriented practical that is
+necessary for employment and higher education. This is a full time course which will be held on
+weekdays.
+Screenshot
+
+
+------ RANK 6 (BM25 score 12.1039): COURSE-056 ------
+COURSE DOCUMENT ID: COURSE-056
+
+COURSE NAME: Computer Hardware And Network Technician
+
+VALIDATION STATUS: VALIDATED
+
+SOURCE TYPE: COURSE_DETAIL_SCREENSHOT
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.51.57.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.52.40.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-056
+
+UNCERTAINTY MARKERS PRESENT: NO
+
+PROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.
+
+SOURCE CONFLICT NOTE: NONE
+
+COMPLETE EXTRACTED COURSE TEXT
+
+Computer Hardware And Network Technician
+LANGUAGE
+MAX STUDENTS
+English
+25
+→ APPLY NOW
+The National Youth Service Council has initiated several course programs to enable the youth to
+develop their skills while also providing an opportunity to achieve their future job aspirations.
+Computer Hardware With Network course will give you theoretical knowledge as well as job oriented
+practical that is necessary for employment and higher education. This is a part time course which will
+be held on weekends.
+It is our objective to show the correct path that will direct youth to their desired occupations while at
+the same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and
+gentle attitudes within a disciplined environment.
+
+
+------ RANK 7 (BM25 score 11.2702): COURSE-052 ------
+COURSE DOCUMENT ID: COURSE-052
+
+COURSE NAME: Cisco Certified Network Associate
+
+VALIDATION STATUS: VALIDATED
+
+SOURCE TYPE: COURSE_DETAIL_SCREENSHOT
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.50.07.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.52.40.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-052
+
+UNCERTAINTY MARKERS PRESENT: NO
+
+PROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.
+
+SOURCE CONFLICT NOTE: NONE
+
+COMPLETE EXTRACTED COURSE TEXT
+
+Cisco Certified Network Associate
+LANGUAGE
+MAX STUDENTS
+English
+25
++ APPLY NOW
+The National Youth Service Council has initiated several course programs to enable the youth to
+develop their skills while also providing an opportunity to achieve their future job aspirations. CISCO
+Network Associate course will give you theoretical knowledge as well as job oriented practical that is
+necessary for employment and higher education. This is a part time course which will be held on
+weekends.
+It is our objective to show the correct path that will direct youth to their desired occupations while at
+the same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and
+gentle attitudes within a disciplined environment.
+
+
+------ RANK 8 (BM25 score 11.1967): COURSE-035 ------
+COURSE DOCUMENT ID: COURSE-035
+
+COURSE NAME: Secretary (Secretarial Practices)
+
+VALIDATION STATUS: VALIDATED
+
+SOURCE TYPE: COURSE_DETAIL_SCREENSHOT
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.43.21.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.48.17.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-035
+
+UNCERTAINTY MARKERS PRESENT: NO
+
+PROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.
+
+SOURCE CONFLICT NOTE: NONE
+
+COMPLETE EXTRACTED COURSE TEXT
+
+Secretary (Secretarial Practices)
+LANGUAGE
+MAX STUDENTS
+sinhala
+20
+APPLY NOW
+Course Overview
+1. Communication Skills
+2. Managing Office
+3. Meetings, Filling, Handle Mail
+4. Computer, Word, Internet and Email
+5. Travel Arrangements
+6. Handle correspondence (workshop,
+Seminaces, Fieldvisit)
+The National Youth Service Council has initiated several course programs to enable the youth to
+develop their skills while also providing an opportunity to achieve their future job aspirations. The
+Secretary (Secretarial Practices) course will give you theoretical knowledge as well as job oriented
+practical that is necessary for employment and higher education.
+This is a full time course which will be held on weekdays
+It is our objective to show the correct path that will direct youth to their desired occupations while at
+the same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and
+gentle attitudes within a disciplined environment.
+By completing this course, You can achieve competency Level 4 under the National Vocational
+Qualifications Competency Standards.
+
+
+------ RANK 9 (BM25 score 9.4209): COURSE-058 ------
+COURSE DOCUMENT ID: COURSE-058
+
+COURSE NAME: Computer Based Accounting
+
+VALIDATION STATUS: VALIDATED_WITH_LIMITATIONS
+
+SOURCE TYPE: COURSE_DETAIL_SCREENSHOT
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.52.25.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.52.40.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-058
+
+UNCERTAINTY MARKERS PRESENT: NO
+
+PROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.
+
+SOURCE CONFLICT NOTE: NONE
+
+COMPLETE EXTRACTED COURSE TEXT
+
+Computer Based Accounting
+LANGUAGE
+MAX STUDENTS
+English
+25
++ APPLY NOW
+Course Overview
+The National Youth Service Council has initiated several course programs to enable the youth to
+develop their skills while also providing an opportunity to achieve their future job aspirations.
+1. Peachtree Accounting Package
+Computerised Accounting course will give you theoretical knowledge as well as job oriented practical
+2. Sage, MYOB, ACC Package
+that is necessary for employment and higher education. This is a part time course which will be held
+3. Quick Books Accounting Package
+on weekends.
+4. Final Project with a Presentation
+It is our objective to show the correct path that will direct youth to their desired occupations while at
+the same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and
+gentle attitudes within a disciplined environment.
+
+
+------ RANK 10 (BM25 score 9.3074): COURSE-001 ------
+COURSE DOCUMENT ID: COURSE-001
+
+COURSE NAME: Freelancer Of Web Design & Development
+
+VALIDATION STATUS: VALIDATED
+
+SOURCE TYPE: COURSE_DETAIL_SCREENSHOT
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.18.27.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.25.19.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-001
+
+UNCERTAINTY MARKERS PRESENT: NO
+
+PROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.
+
+SOURCE CONFLICT NOTE: NONE
+
+COMPLETE EXTRACTED COURSE TEXT
+
+Freelancer Of Web Design & Development
+LANGUAGE
+English and Sinhala
+MAX STUDENTS
+30
+APPLY NOW
+තමන්ගේම Skill එකක්
+Develop කරගෙන
+දේශීයව සහ විදේශීයව
+මුදල් උපයන්න.
+Freelancer.of.
+Web Development
+පාඨමාලා කාලය මාස 03
+2024
+පළමු කණ්ඩායම සඳහා
+බඳවා ගැනීම
+දැන් සිදු කෙරේ
+වයස අවු. 15-45 අතර අයට අයදුම් කල හැකිය
+පාඨමාලා ගාස්තුව
+20,000/=
+පාඨමාලාව අවසානයේ
+රජයේ පිළිගත් වටිනා සහතික පතක්
+වැඩිදුර විස්තර සඳහා අමතන්න
+011 285 0986 / 011 284 8771
+රට තුල පවතින ආර්ථික අර්බුදය හමුවේ තමන්ගේම Skill එකක් හදාගෙන ගොඩ යන්න කැමතිද?.... 📚🥇
+ඔබ වියදම් කරන කිසිදු මුදලක් අපතේ නොයන ලෙස අප විසින් මේ පාඨමාලාව සකසා ඇත....
+ආරම්භය Feburary 9 වනදා
+දේශීය හා විදේශීය වශයෙන් තමන්ගේම මුදලක් උපයන ක්‍රම අපි ඔයාලට කියලා දෙනවා...
+තමන්ගේම Business එකක් Development කරගෙන ඒ හරහා Income එකක් ගන්න විදිය....
+Industry එකේ වසර 6කට වඩා පළපුරුද්දක් සහිත ගුරුවරයෙකු විසින් මෙහෙයවීම
+Hosting එකක් හරහා තමන්ගේම Web site එකක් Development කරගන්නා ආකාරය..
+Domain Management & Hosting Management කරගන්නා ආකාරය සරල හා පහසුව ඉගැන්වීම
+Fiver සහා අනෙකුත් Account සාදා ගන්නා ආකාරය සහා මුදල් උපයන හරිම Methods අපි ඔයාලට කියලා දෙනවා.
+
+
+------ RANK 11 (BM25 score 9.2202): COURSE-031 ------
+COURSE DOCUMENT ID: COURSE-031
+
+COURSE NAME: National Diploma In Television Program Production
+
+VALIDATION STATUS: VALIDATED
+
+SOURCE TYPE: COURSE_DETAIL_SCREENSHOT
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.36.17.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.38.08.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-031
+
+UNCERTAINTY MARKERS PRESENT: NO
+
+PROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.
+
+SOURCE CONFLICT NOTE: NONE
+
+COMPLETE EXTRACTED COURSE TEXT
+
+National Diploma In Television Program Production
+LANGUAGE
+MAX STUDENTS
+sinhala
+20
+APPLY NOW
+Course Overview
+The National Youth Service Council has initiated several course programs to enable the youth to
+develop their skills while also providing an opportunity to achieve their future job aspirations.
+National Diploma in T V Programme & Production Technology course will give you theoretical
+knowledge as well as job oriented practical that is necessary for employment and higher education.
+This is a full time course which will be held on weekdays.
+It is our objective to show the correct path that will direct youth to their desired occupations while at
+the same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and
+gentle attitudes within a disciplined environment.
+By completing this course , You can achieve competency Level 5 under the National Vocational
+Qualifications Competency Standards.
+
+
+------ RANK 12 (BM25 score 8.8634): COURSE-057 ------
+COURSE DOCUMENT ID: COURSE-057
+
+COURSE NAME: Multimedia & Web Design
+
+VALIDATION STATUS: VALIDATED
+
+SOURCE TYPE: COURSE_DETAIL_SCREENSHOT
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.52.09.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.52.40.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-057
+
+UNCERTAINTY MARKERS PRESENT: NO
+
+PROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.
+
+SOURCE CONFLICT NOTE: NONE
+
+COMPLETE EXTRACTED COURSE TEXT
+
+Multimedia & Web Design
+LANGUAGE
+MAX STUDENTS
+English
+50
+→ APPLY NOW
+The National Youth Service Council has initiated several course programs to enable the youth to
+develop their skills while also providing an opportunity to achieve their future job aspirations.
+Computer Multimedia Designing course will give you theoretical knowledge as well as job oriented
+practical that is necessary for employment and higher education. This is a part time course which will
+be held on weekends.
+It is our objective to show the correct path that will direct youth to their desired occupations while at
+the same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and
+gentle attitudes within a disciplined environment.
+
+
+------ RANK 13 (BM25 score 8.6585): COURSE-053 ------
+COURSE DOCUMENT ID: COURSE-053
+
+COURSE NAME: Computer Applications Assistant
+
+VALIDATION STATUS: VALIDATED_WITH_LIMITATIONS
+
+SOURCE TYPE: COURSE_DETAIL_SCREENSHOT
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.50.24.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.52.40.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-053
+
+UNCERTAINTY MARKERS PRESENT: NO
+
+PROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.
+
+SOURCE CONFLICT NOTE: NONE
+
+COMPLETE EXTRACTED COURSE TEXT
+
+Computer Applications Assistant
+LANGUAGE
+MAX STUDENTS
+English
+20
++ APPLY NOW
+Course Overview
+The National Youth Service Council has initiated several course programs to enable the youth to
+1. ICT introduction
+develop their skills while also providing an opportunity to achieve their future job aspirations.
+Computer Application Assistant course will give you theoretical knowledge as well as job oriented
+2. MS- Office
+practical that is necessary for employment and higher education. This is a part time course which will
+3. Using Internet & E-mail
+be held on weekends.
+It is our objective to show the correct path that will direct youth to their desired occupations while at
+the same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and
+gentle attitudes within a disciplined environment.
+
+
+------ RANK 14 (BM25 score 8.2793): COURSE-022 ------
+COURSE DOCUMENT ID: COURSE-022
+
+COURSE NAME: Computer Network Technician
+
+VALIDATION STATUS: VALIDATED
+
+SOURCE TYPE: COURSE_DETAIL_SCREENSHOT
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.31.21.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.31.50.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-022
+
+UNCERTAINTY MARKERS PRESENT: NO
+
+PROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.
+
+SOURCE CONFLICT NOTE: NONE
+
+COMPLETE EXTRACTED COURSE TEXT
+
+Computer Network Technician
+LANGUAGE
+MAX STUDENTS
+English / Sinhala
+20
+APPLY NOW
+Course Overview
+The National Youth Service Council has initiated several course programs to enable the youth to
+develop their skills while also providing an opportunity to achieve their future job aspirations.
+Computer Network Technician course will give you theoretical knowledge as well as job oriented
+practical that is necessary for employment and higher education. This is a full time course which will
+be held on weekdays.
+It is our objective to show the correct path that will direct youth to their desired occupations while at
+the same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and
+gentle attitudes within a disciplined environment.
+By completing this course , You can achieve competency Level 4 under the National Vocational
+Qualifications Competency Standards.
+
+
+------ RANK 15 (BM25 score 8.2656): COURSE-008 ------
+COURSE DOCUMENT ID: COURSE-008
+
+COURSE NAME: Computer Hardware Technician
+
+VALIDATION STATUS: VALIDATED
+
+SOURCE TYPE: COURSE_DETAIL_SCREENSHOT
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.22.37.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.25.19.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-008
+
+UNCERTAINTY MARKERS PRESENT: NO
+
+PROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.
+
+SOURCE CONFLICT NOTE: NONE
+
+COMPLETE EXTRACTED COURSE TEXT
+
+Computer Hardware Technician
+LANGUAGE
+MAX STUDENTS
+English
+20
+APPLY NOW
+Course Overview
+1. Introduction
+2. Assembling
+3. Disassembling
+4. Trouble shooting
+5. Preventive Maintenance
+6. Estimating
+The National Youth Service Council has initiated several course programs to enable the youth to
+develop their skills while also providing an opportunity to achieve their future job aspirations. A
+computer hardware technician course will give you theoretical knowledge as well as job oriented
+practical that is necessary for employment and higher education. This is a full time course which will
+be held on weekdays.
+It is our objective to show the correct path that will direct youth to their desired occupations while at
+the same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and
+gentle attitudes within a disciplined environment.
+By completing this course, You can achieve competency Level 4 under the National Vocational
+Qualifications Competency Standards.
+
+
+SECTION 4: RECOMMENDATION INSTRUCTIONS
+Considering the respondent's actual reported circumstances, preferences, education/work/
+training history, future intentions and barriers (Section 1); their group-level research
+profile context (Section 2); and the complete available information about the retrieved
+NYSC programmes (Section 3), identify the programmes that appear most suitable for this
+respondent. Reason holistically. Make reasonable contextual inferences where justified, but
+label them as inferences and connect each to both a real respondent/context fact and a real
+documented course property. Do not invent respondent or programme information. Return up to
+~3-5 recommendations where evidence supports them; return fewer, or NO_DEFENSIBLE_
+RECOMMENDATION with reasons, if the evidence does not support more.

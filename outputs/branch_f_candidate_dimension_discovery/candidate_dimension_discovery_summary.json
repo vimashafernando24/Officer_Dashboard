@@ -1,0 +1,40 @@
+{
+  "cohort": {
+    "branch": "F",
+    "records": 81,
+    "eligible_variables": 34,
+    "excluded_non_clustering_variables": 71
+  },
+  "variable_group_discovery": {
+    "bootstrap_repetitions": 60,
+    "descriptive_selected_group_count": 8,
+    "selection_rule": "highest bootstrap median ARI; descriptive only"
+  },
+  "respondent_subset_search": {
+    "candidate_rows": 414,
+    "shortlisted_rows": 15,
+    "subset_sizes": [
+      2,
+      4
+    ],
+    "k_values": [
+      2,
+      3,
+      4
+    ],
+    "skipped_pools": [
+      "D7 \u2014 Professional social capital"
+    ]
+  },
+  "validation": {
+    "prediction_splits": 30,
+    "null_repetitions": 30,
+    "recommended_null_repetitions_before_thesis_reporting": 200,
+    "pac_policy": "comparative only; no absolute cutoff"
+  },
+  "interpretation": {
+    "automatically_confirmed_dimensions": 0,
+    "reason": "statistical screening cannot establish theoretical construct validity",
+    "required_next_gate": "review shortlisted variable groups for theoretical coherence before any final clustering"
+  }
+}

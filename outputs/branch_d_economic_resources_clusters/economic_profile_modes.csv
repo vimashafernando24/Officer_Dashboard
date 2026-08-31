@@ -1,0 +1,9 @@
+economic_profile_id,variable,response,records,within_profile_percent
+1,edu_funding_source,Government-funded or free of charge,33,75.0
+1,household_income,"LKR 120,000 – 200,000",10,22.727272727272727
+1,primary_earner_status,No — someone else is the main provider,36,81.81818181818181
+1,primary_income_source,My parents or family,30,68.18181818181819
+2,edu_funding_source,Paid for by my family,139,94.5578231292517
+2,household_income,"Above LKR 200,000",58,39.45578231292517
+2,primary_earner_status,No — someone else is the main provider,134,91.15646258503402
+2,primary_income_source,My parents or family,119,80.95238095238095

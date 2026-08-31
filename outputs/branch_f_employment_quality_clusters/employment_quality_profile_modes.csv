@@ -1,0 +1,31 @@
+employment_quality_profile_id,variable,role,response,records,within_profile_percent
+1,contract_satisfaction,subjective_contract_descriptor,Satisfied — it gives me the flexibility I need,9,31.03448275862069
+1,contract_type,cluster_input,Written contract — temporary (under 12 months),11,37.93103448275862
+1,employment_status,work_arrangement_descriptor,For an employer — for a salary or wage,19,65.51724137931035
+1,hopes_to_change_job,transition_intention_descriptor,Yes — I want to change,18,62.06896551724138
+1,income_hours_preference,cluster_input,Keep things the same as they are now,23,79.3103448275862
+1,insecurity_bothers,conditional_security_descriptor,Yes — it worries or stresses me,12,41.37931034482759
+1,job_satisfaction,cluster_input,Somewhat satisfied,16,55.172413793103445
+1,job_security_12months,cluster_input,Likely but not certain — I have some concern,12,41.37931034482759
+1,monthly_income_band,cluster_input,"LKR 20,000 – 40,000",11,37.93103448275862
+1,sector_formality,cluster_input,"Fully formal — registered employer, written contract, statutory benefits",17,58.62068965517241
+2,contract_satisfaction,subjective_contract_descriptor,Satisfied — it gives me the flexibility I need,11,44.0
+2,contract_type,cluster_input,Written contract — permanent/unlimited,23,92.0
+2,employment_status,work_arrangement_descriptor,For an employer — for a salary or wage,22,88.0
+2,hopes_to_change_job,transition_intention_descriptor,Not sure,10,40.0
+2,income_hours_preference,cluster_input,Keep things the same as they are now,24,96.0
+2,insecurity_bothers,conditional_security_descriptor,No — I accept it or it does not concern me,17,68.0
+2,job_satisfaction,cluster_input,Somewhat satisfied,13,52.0
+2,job_security_12months,cluster_input,Very likely — my job is secure,15,60.0
+2,monthly_income_band,cluster_input,"Above LKR 200,000",14,56.0
+2,sector_formality,cluster_input,"Fully formal — registered employer, written contract, statutory benefits",17,68.0
+3,contract_satisfaction,subjective_contract_descriptor,Satisfied — it gives me the job security I need,11,40.74074074074074
+3,contract_type,cluster_input,Written contract — permanent/unlimited,16,59.25925925925926
+3,employment_status,work_arrangement_descriptor,For an employer — for a salary or wage,21,77.77777777777777
+3,hopes_to_change_job,transition_intention_descriptor,Yes — I want to change,19,70.37037037037037
+3,income_hours_preference,cluster_input,More hours and correspondingly more income,26,96.29629629629629
+3,insecurity_bothers,conditional_security_descriptor,No — I accept it or it does not concern me,18,66.66666666666667
+3,job_satisfaction,cluster_input,Somewhat satisfied,16,59.25925925925926
+3,job_security_12months,cluster_input,Very likely — my job is secure,17,62.96296296296296
+3,monthly_income_band,cluster_input,"LKR 70,000 – 120,000",8,29.62962962962963
+3,sector_formality,cluster_input,"Fully formal — registered employer, written contract, statutory benefits",17,62.96296296296296

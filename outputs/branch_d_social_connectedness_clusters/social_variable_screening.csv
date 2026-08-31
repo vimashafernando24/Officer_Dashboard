@@ -1,0 +1,5 @@
+variable,role,observed,missing,coverage_percent,unique_observed_responses,dominant_response,dominant_response_percent
+employment_network_quality,cluster_input,191,0,100.0,4,Yes — I know one or two people who might help,32.98429319371728
+relatedness_at_institution,cluster_input,191,0,100.0,4,Somewhat — I have some connections but am not deeply involved,48.167539267015705
+social_capital_in_edu_access,education_access_pathway_descriptor,191,0,100.0,5,I researched and applied entirely on my own initiative,49.73821989528796
+institution_type,context_descriptor,191,0,100.0,6,Private school or private degree-awarding institute,57.59162303664922

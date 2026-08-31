@@ -1,0 +1,46 @@
+model,branch,frozen_profile_id,frozen_profile_label,predicted_profile_id,predicted_profile_label,count,within_frozen_profile_percent
+D_motivation,D,1,"Consensus motivation profile 1: externally or uncertainly motivated, with moderate study support",1,"Consensus motivation profile 1: externally or uncertainly motivated, with moderate study support",47,100.0
+D_motivation,D,1,"Consensus motivation profile 1: externally or uncertainly motivated, with moderate study support",2,Consensus motivation profile 2: goal-aligned motivation with mixed study confidence and support,0,0.0
+D_motivation,D,1,"Consensus motivation profile 1: externally or uncertainly motivated, with moderate study support",3,"Consensus motivation profile 3: highly self-directed, capable and connected",0,0.0
+D_motivation,D,2,Consensus motivation profile 2: goal-aligned motivation with mixed study confidence and support,1,"Consensus motivation profile 1: externally or uncertainly motivated, with moderate study support",7,9.333333333333334
+D_motivation,D,2,Consensus motivation profile 2: goal-aligned motivation with mixed study confidence and support,2,Consensus motivation profile 2: goal-aligned motivation with mixed study confidence and support,68,90.66666666666666
+D_motivation,D,2,Consensus motivation profile 2: goal-aligned motivation with mixed study confidence and support,3,"Consensus motivation profile 3: highly self-directed, capable and connected",0,0.0
+D_motivation,D,3,"Consensus motivation profile 3: highly self-directed, capable and connected",1,"Consensus motivation profile 1: externally or uncertainly motivated, with moderate study support",1,1.4492753623188406
+D_motivation,D,3,"Consensus motivation profile 3: highly self-directed, capable and connected",2,Consensus motivation profile 2: goal-aligned motivation with mixed study confidence and support,0,0.0
+D_motivation,D,3,"Consensus motivation profile 3: highly self-directed, capable and connected",3,"Consensus motivation profile 3: highly self-directed, capable and connected",68,98.55072463768117
+D_economic,D,1,Economic profile 1: relatively lower household economic position,1,Economic profile 1: relatively lower household economic position,43,97.72727272727273
+D_economic,D,1,Economic profile 1: relatively lower household economic position,2,Economic profile 2: relatively higher household economic position,1,2.272727272727273
+D_economic,D,2,Economic profile 2: relatively higher household economic position,1,Economic profile 1: relatively lower household economic position,1,0.6802721088435374
+D_economic,D,2,Economic profile 2: relatively higher household economic position,2,Economic profile 2: relatively higher household economic position,146,99.31972789115646
+D_educational_cultural,D,1,"Re-entered students, often with degree-educated parents",1,"Re-entered students, often with degree-educated parents",15,100.0
+D_educational_cultural,D,1,"Re-entered students, often with degree-educated parents",2,State-institution students without work exposure,0,0.0
+D_educational_cultural,D,1,"Re-entered students, often with degree-educated parents",3,Private-institution students without work exposure,0,0.0
+D_educational_cultural,D,1,"Re-entered students, often with degree-educated parents",4,"Work-experienced students, mainly in private institutions",0,0.0
+D_educational_cultural,D,2,State-institution students without work exposure,1,"Re-entered students, often with degree-educated parents",1,1.8867924528301887
+D_educational_cultural,D,2,State-institution students without work exposure,2,State-institution students without work exposure,50,94.33962264150944
+D_educational_cultural,D,2,State-institution students without work exposure,3,Private-institution students without work exposure,2,3.7735849056603774
+D_educational_cultural,D,2,State-institution students without work exposure,4,"Work-experienced students, mainly in private institutions",0,0.0
+D_educational_cultural,D,3,Private-institution students without work exposure,1,"Re-entered students, often with degree-educated parents",5,8.771929824561402
+D_educational_cultural,D,3,Private-institution students without work exposure,2,State-institution students without work exposure,1,1.7543859649122806
+D_educational_cultural,D,3,Private-institution students without work exposure,3,Private-institution students without work exposure,51,89.47368421052632
+D_educational_cultural,D,3,Private-institution students without work exposure,4,"Work-experienced students, mainly in private institutions",0,0.0
+D_educational_cultural,D,4,"Work-experienced students, mainly in private institutions",1,"Re-entered students, often with degree-educated parents",2,3.0303030303030303
+D_educational_cultural,D,4,"Work-experienced students, mainly in private institutions",2,State-institution students without work exposure,7,10.606060606060606
+D_educational_cultural,D,4,"Work-experienced students, mainly in private institutions",3,Private-institution students without work exposure,0,0.0
+D_educational_cultural,D,4,"Work-experienced students, mainly in private institutions",4,"Work-experienced students, mainly in private institutions",57,86.36363636363636
+E_learning_orientation,E,1,High perceived education utility and strong learning ambition,1,High perceived education utility and strong learning ambition,17,94.44444444444444
+E_learning_orientation,E,1,High perceived education utility and strong learning ambition,2,Moderate perceived utility and mixed learning ambition,1,5.555555555555555
+E_learning_orientation,E,2,Moderate perceived utility and mixed learning ambition,1,High perceived education utility and strong learning ambition,0,0.0
+E_learning_orientation,E,2,Moderate perceived utility and mixed learning ambition,2,Moderate perceived utility and mixed learning ambition,16,100.0
+F_employment_security,F,1,Temporary/no-contract employment with uncertain security,1,Temporary/no-contract employment with uncertain security,29,100.0
+F_employment_security,F,1,Temporary/no-contract employment with uncertain security,2,Predominantly permanent employment with stronger security,0,0.0
+F_employment_security,F,2,Predominantly permanent employment with stronger security,1,Temporary/no-contract employment with uncertain security,1,1.9230769230769231
+F_employment_security,F,2,Predominantly permanent employment with stronger security,2,Predominantly permanent employment with stronger security,51,98.07692307692307
+G_economic_role,G,1,Predominantly family/partner-supported non-provider,1,Predominantly family/partner-supported non-provider,40,97.5609756097561
+G_economic_role,G,1,Predominantly family/partner-supported non-provider,2,Predominantly self-income provider/contributor,1,2.4390243902439024
+G_economic_role,G,2,Predominantly self-income provider/contributor,1,Predominantly family/partner-supported non-provider,1,6.666666666666667
+G_economic_role,G,2,Predominantly self-income provider/contributor,2,Predominantly self-income provider/contributor,14,93.33333333333333
+G_future_engagement,G,1,"Work-and-education engaged, mostly prior work experience",1,"Work-and-education engaged, mostly prior work experience",35,100.0
+G_future_engagement,G,1,"Work-and-education engaged, mostly prior work experience",2,"Low/uncertain engagement, mostly no prior work experience",0,0.0
+G_future_engagement,G,2,"Low/uncertain engagement, mostly no prior work experience",1,"Work-and-education engaged, mostly prior work experience",7,33.33333333333333
+G_future_engagement,G,2,"Low/uncertain engagement, mostly no prior work experience",2,"Low/uncertain engagement, mostly no prior work experience",14,66.66666666666666

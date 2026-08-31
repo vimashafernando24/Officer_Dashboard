@@ -1,0 +1,16 @@
+dimension,band,rows
+economic_resources,high,151
+economic_resources,moderate,38
+economic_resources,low,2
+human_capital_trajectory,moderate,113
+human_capital_trajectory,high,73
+human_capital_trajectory,low,5
+career_transition_readiness,high,159
+career_transition_readiness,moderate,27
+career_transition_readiness,low,5
+social_capital_belonging,moderate,127
+social_capital_belonging,high,53
+social_capital_belonging,low,11
+agency_study_engagement,high,121
+agency_study_engagement,moderate,62
+agency_study_engagement,low,8

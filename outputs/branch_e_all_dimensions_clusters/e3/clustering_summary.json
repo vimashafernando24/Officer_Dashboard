@@ -1,0 +1,106 @@
+{
+  "dimension_code": "E3",
+  "dimension_name": "Economic urgency and job-acceptance constraints",
+  "records": 34,
+  "source_variables": [
+    "income_urgency",
+    "job_acceptance_conditions",
+    "has_minimum_wage"
+  ],
+  "clustering_features": [
+    "income_urgency",
+    "job_acceptance_conditions",
+    "has_minimum_wage"
+  ],
+  "feature_types": {
+    "income_urgency": "ordinal",
+    "job_acceptance_conditions": "ordinal",
+    "has_minimum_wage": "binary"
+  },
+  "profile_sizes": {
+    "1": 28,
+    "2": 6
+  },
+  "profile_labels": {
+    "1": "Diagnostic: stated minimum-wage boundary",
+    "2": "Diagnostic: no stated minimum-wage boundary"
+  },
+  "profile_modes": [
+    {
+      "profile_id": 1,
+      "variable": "has_minimum_wage",
+      "response": "Yes \u2014 there is a minimum I would not go below",
+      "records": 28,
+      "within_profile_percent": 100.0
+    },
+    {
+      "profile_id": 1,
+      "variable": "income_urgency",
+      "response": "Immediately \u2014 I need income as soon as possible",
+      "records": 18,
+      "within_profile_percent": 64.28571428571429
+    },
+    {
+      "profile_id": 1,
+      "variable": "job_acceptance_conditions",
+      "response": "Only a job that is stable, well paid, AND matches my qualifications",
+      "records": 16,
+      "within_profile_percent": 57.142857142857146
+    },
+    {
+      "profile_id": 2,
+      "variable": "has_minimum_wage",
+      "response": "No \u2014 I would accept whatever is offered",
+      "records": 6,
+      "within_profile_percent": 100.0
+    },
+    {
+      "profile_id": 2,
+      "variable": "income_urgency",
+      "response": "Immediately \u2014 I need income as soon as possible",
+      "records": 4,
+      "within_profile_percent": 66.66666666666667
+    },
+    {
+      "profile_id": 2,
+      "variable": "job_acceptance_conditions",
+      "response": "Any job, provided it is stable and secure",
+      "records": 2,
+      "within_profile_percent": 33.333333333333336
+    }
+  ],
+  "metrics": {
+    "gower_silhouette": 0.6196265722942096,
+    "consensus_silhouette": 0.8893183424465485,
+    "source_minimum_cluster_size": 6,
+    "final_minimum_cluster_size": 6,
+    "kmedoids_subsample_stability_mean": 0.5328176815143629,
+    "spectral_subsample_stability_mean": 0.9495028775873205,
+    "ensemble_bootstrap_ari_mean": 1.0,
+    "ensemble_bootstrap_ari_p10": 1.0,
+    "ari_vs_full_kmedoids": 1.0,
+    "ari_vs_full_spectral": 1.0,
+    "maximum_single_feature_ari": 1.0,
+    "dominant_single_feature": "has_minimum_wage",
+    "minimum_leave_one_feature_out_ari": 0.0009713453132588635,
+    "ambiguous_consensus_percent": 0.0,
+    "low_gower_confidence_percent": 0.0,
+    "pac_10_90": 0.47058823529411764,
+    "permutation_valid_repetitions": 0,
+    "permutation_null_p95": null,
+    "empirical_permutation_p": NaN,
+    "raw_vs_log_count_encoding_minimum_ari": null,
+    "structural_resource_only_ari": null
+  },
+  "automatic_screen_pass": false,
+  "checks_passed": 6,
+  "checks_total": 10,
+  "decision": "reject",
+  "limitations": [
+    "Branch E contains only 34 strict respondents, so only k=2 can satisfy the minimum profile size of 15.",
+    "No dimension score or psychometric scale is constructed.",
+    "PAC is reported descriptively because there is only one eligible candidate k.",
+    "Automatic screening does not replace single-feature and leave-one-feature-out substantive review.",
+    "A retained result with leave-one-feature-out ARI below 0.10 is explicitly marked feature-dependent and must be interpreted around its central indicator rather than as a broad latent scale."
+  ]
+}

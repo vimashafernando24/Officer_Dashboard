@@ -1,0 +1,3 @@
+economic_profile_id,economic_profile_label,records,low_gower_confidence_records,mean_gower_silhouette,mean_consensus_silhouette,percent
+1,Household-economic response profile 1,21,0,0.5033607360066993,0.9011279270399729,25.925925925925927
+2,Household-economic response profile 2,60,4,0.45788802542922014,0.952463380464962,74.07407407407408

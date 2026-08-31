@@ -1,0 +1,6 @@
+feature,source_variables,type,observed,missing,maximum_distance_weight
+household_income_position,household_income,ordinal,66,15,0.2
+household_worker_share,household_size + household_workers,continuous,76,5,0.2
+household_unemployed_share,household_size + household_unemployed,continuous,76,5,0.2
+primary_earner_responsibility,primary_earner_status,ordinal,81,0,0.2
+primary_income_source,primary_income_source,nominal,81,0,0.2

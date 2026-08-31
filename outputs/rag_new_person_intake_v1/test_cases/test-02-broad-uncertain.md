@@ -1,0 +1,36 @@
+# Your NYSC Programme Recommendations
+(Test person: test-02-broad-uncertain — Broad/uncertain programme preference — no skill area determinable, expect zero candidates / NO_DEFENSIBLE_RECOMMENDATION.)
+
+## YOUR YOUTH PROFILE
+
+- **Motivation profile 3: highly self-directed, capable and connected** (`D_motivation_p3`)
+  - Assignment similarity: 61% (distance-based similarity to this profile vs. the next-closest one — NOT a validated accuracy figure)
+  - Model reliability: SAFE for new-user nearest-medoid assignment (published accuracy 95.8% on known cases)
+- **Economic profile 2: relatively higher household economic position** (`D_economic_p2`)
+  - Assignment similarity: 100% (distance-based similarity to this profile vs. the next-closest one — NOT a validated accuracy figure)
+  - Model reliability: SAFE for new-user nearest-medoid assignment (published accuracy 99.0% on known cases)
+- **State-institution students without work exposure** (`D_educational_cultural_p2`)
+  - Assignment similarity: 54% (distance-based similarity to this profile vs. the next-closest one — NOT a validated accuracy figure)
+  - Model reliability: NEEDS REVIEW (published accuracy 90.6% on known cases)
+
+## PEOPLE WITH SIMILAR PROFILE PATTERNS
+
+**D_motivation_p3:**
+  Useful employment/training contacts: more often reported ‘Yes — I know several people with useful connections’ (21/69, 30.4% vs 15.6% in other profile(s))
+
+*These percentages describe patterns observed in the group and do not mean that every person in the profile has these characteristics.*
+
+## WHAT YOU TOLD US
+
+- [YOUR ANSWER] Sector: Not sure
+- [YOUR ANSWER] Occupation/course focus: Not sure
+- [YOUR ANSWER] Main reason for training: Build general skills, not sure about the next step yet
+- [YOUR ANSWER] Schedule preference: No strong preference
+- [YOUR ANSWER] Language preference: No strong preference
+- [YOUR ANSWER] Qualification preference: Not sure
+
+## RECOMMENDED NYSC PROGRAMMES
+
+*Candidate selection note: No skill area could be determined from the selected sectors (respondent answered 'Not sure' or an unbridged sector). No candidates were selected — this is expected to lead to NO_DEFENSIBLE_RECOMMENDATION unless other evidence justifies an exception.*
+
+*(Offline run — no LLM call made; showing deterministic candidate selection only.)*

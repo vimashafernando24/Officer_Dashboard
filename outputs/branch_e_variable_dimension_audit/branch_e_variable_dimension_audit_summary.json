@@ -1,0 +1,95 @@
+{
+  "cohort": {
+    "branch": "E",
+    "records": 34,
+    "routing_source": "translated_final_active_branch"
+  },
+  "inventory": {
+    "collectively_answerable_variables": 75,
+    "proposed_clustering_inputs": 24,
+    "skipped_clustering_inputs": 3,
+    "profile_programme_mapping_descriptors": 26,
+    "conditional_descriptors": 16,
+    "routing_audit_variables": 6
+  },
+  "candidate_dimensions": {
+    "E1 \u2014 Job-search psychological readiness and support": {
+      "variables": [
+        "job_search_self_efficacy",
+        "job_search_autonomy_orientation",
+        "social_support_job_search",
+        "future_planning_orientation"
+      ],
+      "number_of_inputs": 4,
+      "minimum_coverage_percent": 100.0
+    },
+    "E2 \u2014 Search intensity and accumulated exposure": {
+      "variables": [
+        "active_search_4weeks",
+        "job_search_duration",
+        "num_applications",
+        "num_interviews"
+      ],
+      "number_of_inputs": 4,
+      "minimum_coverage_percent": 100.0
+    },
+    "E3 \u2014 Economic urgency and job-acceptance constraints": {
+      "variables": [
+        "income_urgency",
+        "job_acceptance_conditions",
+        "has_minimum_wage"
+      ],
+      "number_of_inputs": 3,
+      "minimum_coverage_percent": 100.0
+    },
+    "E4 \u2014 Education-to-work preparedness and learning orientation": {
+      "variables": [
+        "past_edu_usefulness",
+        "plans_further_edu",
+        "expected_highest_edu_e"
+      ],
+      "number_of_inputs": 3,
+      "minimum_coverage_percent": 100.0
+    },
+    "E5 \u2014 Household economic resources and dependency": {
+      "variables": [
+        "household_income",
+        "household_size",
+        "household_workers",
+        "household_unemployed",
+        "primary_earner_status",
+        "primary_income_source"
+      ],
+      "number_of_inputs": 6,
+      "minimum_coverage_percent": 100.0
+    },
+    "E6 \u2014 Educational and inherited cultural capital": {
+      "variables": [
+        "father_edu",
+        "mother_edu",
+        "edu_status",
+        "worked_while_studying"
+      ],
+      "number_of_inputs": 4,
+      "minimum_coverage_percent": 100.0
+    },
+    "E7 \u2014 Job-search social capital": {
+      "variables": [
+        "employment_network_quality",
+        "knows_people_in_target_sector",
+        "network_helpfulness"
+      ],
+      "number_of_inputs": 3,
+      "minimum_coverage_percent": 100.0
+    }
+  },
+  "quality": {
+    "household_count_conflicts": 0,
+    "household_income_refusals": 5
+  },
+  "decision": {
+    "clustering_run": false,
+    "reason": "variable/dimension audit must be reviewed before clustering",
+    "recommended_first_dimension": "E1 \u2014 Job-search psychological readiness and support"
+  }
+}

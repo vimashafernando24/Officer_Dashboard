@@ -1,0 +1,3 @@
+profile_id,profile_label,respondent_id,profile_n,minimum_distance_tie_count,variables_used,past_edu_usefulness__response,plans_further_edu__response,expected_highest_edu_e__response,past_edu_usefulness,plans_further_edu,expected_highest_edu_e
+1,High perceived education utility and strong learning ambition,nysc-ad0f277c-93a6-4b49-9bd7-e5aa00ca2e3d,18,9,past_edu_usefulness | plans_further_edu | expected_highest_edu_e,"Very useful — directly relevant, employers value it",Yes,Post-graduate degree,1.0,yes,1.0
+2,Moderate perceived utility and mixed learning ambition,nysc-abca8662-4f8d-4ca6-b0d8-22b1718fc758,16,4,past_edu_usefulness | plans_further_edu | expected_highest_edu_e,Somewhat useful — helps to some extent,Yes,Bachelor's degree,2.0,yes,0.8571428571428571

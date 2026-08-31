@@ -1,0 +1,6 @@
+check,value,passed
+overall silhouette >= 0.25,0.18605192224602995,False
+bootstrap mean ARI >= 0.75,0.5742252467540104,False
+minimum profile size >= 15,52.0,True
+K-medoids agreement ARI >= 0.60,0.5049845434514827,False
+median leave-one-dimension-out ARI >= 0.50,0.653802811655411,True

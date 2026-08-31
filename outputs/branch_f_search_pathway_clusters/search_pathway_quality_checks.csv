@@ -1,0 +1,9 @@
+check,value,passed
+original Gower silhouette >= 0.25,0.16461080255180396,False
+ensemble bootstrap mean ARI >= 0.80,0.5315649792504964,False
+minimum profile size >= 15,33.0,True
+minimum source-algorithm profile size >= 15,20.0,True
+ARI with full K-medoids >= 0.60,1.0,True
+ARI with full spectral >= 0.60,0.03793103448275862,False
+ambiguous respondents <= 20% (analyst caution rule),27.160493827160494,False
+low-confidence respondents <= 20% (analyst caution rule),35.80246913580247,False

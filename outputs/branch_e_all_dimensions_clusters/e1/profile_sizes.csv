@@ -1,0 +1,3 @@
+profile_id,profile_label,records,mean_gower_silhouette,mean_consensus_silhouette,percent
+1,Diagnostic: general-direction and flexible-search pattern,17,0.21480694428517086,0.6529374280162473,50.0
+2,Diagnostic: clear-plan and specific-search pattern,17,0.5464811641507772,0.7666361681383874,50.0

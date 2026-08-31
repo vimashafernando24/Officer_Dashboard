@@ -1,0 +1,18 @@
+profile_key,branch,model,profile_id,profile_label,n,document_path
+D_economic_p1,D,D_economic,1,Economic profile 1: relatively lower household economic position,44,outputs/rag_profile_knowledge/documents/D_economic_p1.txt
+D_economic_p2,D,D_economic,2,Economic profile 2: relatively higher household economic position,147,outputs/rag_profile_knowledge/documents/D_economic_p2.txt
+D_educational_cultural_p1,D,D_educational_cultural,1,"Re-entered students, often with degree-educated parents",15,outputs/rag_profile_knowledge/documents/D_educational_cultural_p1.txt
+D_educational_cultural_p2,D,D_educational_cultural,2,State-institution students without work exposure,53,outputs/rag_profile_knowledge/documents/D_educational_cultural_p2.txt
+D_educational_cultural_p3,D,D_educational_cultural,3,Private-institution students without work exposure,57,outputs/rag_profile_knowledge/documents/D_educational_cultural_p3.txt
+D_educational_cultural_p4,D,D_educational_cultural,4,"Work-experienced students, mainly in private institutions",66,outputs/rag_profile_knowledge/documents/D_educational_cultural_p4.txt
+D_motivation_p1,D,D_motivation,1,"Consensus motivation profile 1: externally or uncertainly motivated, with moderate study support",47,outputs/rag_profile_knowledge/documents/D_motivation_p1.txt
+D_motivation_p2,D,D_motivation,2,Consensus motivation profile 2: goal-aligned motivation with mixed study confidence and support,75,outputs/rag_profile_knowledge/documents/D_motivation_p2.txt
+D_motivation_p3,D,D_motivation,3,"Consensus motivation profile 3: highly self-directed, capable and connected",69,outputs/rag_profile_knowledge/documents/D_motivation_p3.txt
+E_learning_orientation_p1,E,E_learning_orientation,1,High perceived education utility and strong learning ambition,18,outputs/rag_profile_knowledge/documents/E_learning_orientation_p1.txt
+E_learning_orientation_p2,E,E_learning_orientation,2,Moderate perceived utility and mixed learning ambition,16,outputs/rag_profile_knowledge/documents/E_learning_orientation_p2.txt
+F_employment_security_p1,F,F_employment_security,1,Temporary/no-contract employment with uncertain security,29,outputs/rag_profile_knowledge/documents/F_employment_security_p1.txt
+F_employment_security_p2,F,F_employment_security,2,Predominantly permanent employment with stronger security,52,outputs/rag_profile_knowledge/documents/F_employment_security_p2.txt
+G_economic_role_p1,G,G_economic_role,1,Predominantly family/partner-supported non-provider,41,outputs/rag_profile_knowledge/documents/G_economic_role_p1.txt
+G_economic_role_p2,G,G_economic_role,2,Predominantly self-income provider/contributor,15,outputs/rag_profile_knowledge/documents/G_economic_role_p2.txt
+G_future_engagement_p1,G,G_future_engagement,1,"Work-and-education engaged, mostly prior work experience",35,outputs/rag_profile_knowledge/documents/G_future_engagement_p1.txt
+G_future_engagement_p2,G,G_future_engagement,2,"Low/uncertain engagement, mostly no prior work experience",21,outputs/rag_profile_knowledge/documents/G_future_engagement_p2.txt

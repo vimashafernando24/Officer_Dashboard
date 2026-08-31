@@ -1,0 +1,5 @@
+feature,type,observed,missing,maximum_distance_weight
+work_autonomy,ordinal,81,0,0.25
+competence_growth_at_work,ordinal,81,0,0.25
+relatedness_at_work,ordinal,81,0,0.25
+work_motivation_type,ordinal,81,0,0.25

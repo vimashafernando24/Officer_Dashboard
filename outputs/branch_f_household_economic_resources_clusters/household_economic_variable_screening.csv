@@ -1,0 +1,7 @@
+variable,observed,missing,unique_observed_responses,dominant_response,dominant_response_percent
+household_income,81,0,5,"Above LKR 200,000",53.086419753086425
+household_size,81,0,8,4.0,34.5679012345679
+household_workers,81,0,5,2.0,44.44444444444444
+household_unemployed,81,0,4,0.0,50.617283950617285
+primary_earner_status,81,0,3,No — someone else is the main provider,70.37037037037037
+primary_income_source,81,0,5,My regular job or business,69.1358024691358

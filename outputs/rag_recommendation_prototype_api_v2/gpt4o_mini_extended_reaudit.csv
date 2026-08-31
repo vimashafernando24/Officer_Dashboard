@@ -1,0 +1,13 @@
+respondent_id,record_type,course_id,rank,final_audit_status,mechanical_issues,cautions
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,no_defensible_recommendation_decline,(none — decline),,PASS,(none),(none)
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,recommendation,COURSE-006,1,PASS,(none),(none)
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,recommendation,COURSE-073,2,PASS,(none),(none)
+nysc-a04f7d96-0e1d-49f2-8443-5cb15eeb9bf9,no_defensible_recommendation_decline,(none — decline),,PASS,(none),(none)
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,recommendation,COURSE-006,1,PASS,(none),(none)
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,recommendation,COURSE-073,2,PASS,(none),(none)
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,no_defensible_recommendation_decline,(none — decline),,PASS,(none),(none)
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,no_defensible_recommendation_decline,(none — decline),,PASS,(none),(none)
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,no_defensible_recommendation_decline,(none — decline),,PASS,(none),(none)
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,no_defensible_recommendation_decline,(none — decline),,FAIL,text asserts an eligibility/requirement judgement while itself admitting the requirement is not explicitly stated (self-contradicting unsupported-eligibility claim) — violates the 'no eligibility claim without an explicit stated requirement' rule,(none)
+nysc-465701ee-3d2d-4f85-a044-abff06ba2e45,no_defensible_recommendation_decline,(none — decline),,PASS,(none),(none)
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,no_defensible_recommendation_decline,(none — decline),,PASS,(none),(none)

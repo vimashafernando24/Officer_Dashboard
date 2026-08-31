@@ -1,0 +1,123 @@
+{
+  "dimension_code": "E2",
+  "dimension_name": "Search intensity and accumulated exposure",
+  "records": 34,
+  "source_variables": [
+    "active_search_4weeks",
+    "job_search_duration",
+    "num_applications",
+    "num_interviews"
+  ],
+  "clustering_features": [
+    "active_search_4weeks",
+    "job_search_duration",
+    "num_applications",
+    "num_interviews"
+  ],
+  "feature_types": {
+    "active_search_4weeks": "binary",
+    "job_search_duration": "ordinal",
+    "num_applications": "continuous",
+    "num_interviews": "continuous"
+  },
+  "profile_sizes": {
+    "1": 26,
+    "2": 8
+  },
+  "profile_labels": {
+    "1": "Diagnostic: active search in the past four weeks",
+    "2": "Diagnostic: no active search in the past four weeks"
+  },
+  "profile_modes": [
+    {
+      "profile_id": 1,
+      "variable": "active_search_4weeks",
+      "response": "Yes \u2014 I took active steps in the past four weeks",
+      "records": 26,
+      "within_profile_percent": 100.0
+    },
+    {
+      "profile_id": 1,
+      "variable": "job_search_duration",
+      "response": "1 to 2 months",
+      "records": 6,
+      "within_profile_percent": 23.076923076923077
+    },
+    {
+      "profile_id": 1,
+      "variable": "num_applications",
+      "response": 10.0,
+      "records": 4,
+      "within_profile_percent": 15.384615384615385
+    },
+    {
+      "profile_id": 1,
+      "variable": "num_interviews",
+      "response": 2.0,
+      "records": 10,
+      "within_profile_percent": 38.46153846153846
+    },
+    {
+      "profile_id": 2,
+      "variable": "active_search_4weeks",
+      "response": "No \u2014 I did not take any active steps",
+      "records": 8,
+      "within_profile_percent": 100.0
+    },
+    {
+      "profile_id": 2,
+      "variable": "job_search_duration",
+      "response": "1 to 4 weeks",
+      "records": 4,
+      "within_profile_percent": 50.0
+    },
+    {
+      "profile_id": 2,
+      "variable": "num_applications",
+      "response": 5.0,
+      "records": 2,
+      "within_profile_percent": 25.0
+    },
+    {
+      "profile_id": 2,
+      "variable": "num_interviews",
+      "response": 0.0,
+      "records": 2,
+      "within_profile_percent": 25.0
+    }
+  ],
+  "metrics": {
+    "gower_silhouette": 0.5333575010323762,
+    "consensus_silhouette": 0.9973399153990942,
+    "source_minimum_cluster_size": 8,
+    "final_minimum_cluster_size": 8,
+    "kmedoids_subsample_stability_mean": 0.9577566111442551,
+    "spectral_subsample_stability_mean": 1.0,
+    "ensemble_bootstrap_ari_mean": 1.0,
+    "ensemble_bootstrap_ari_p10": 1.0,
+    "ari_vs_full_kmedoids": 1.0,
+    "ari_vs_full_spectral": 1.0,
+    "maximum_single_feature_ari": 1.0,
+    "dominant_single_feature": "active_search_4weeks",
+    "minimum_leave_one_feature_out_ari": -0.01969100272644653,
+    "ambiguous_consensus_percent": 0.0,
+    "low_gower_confidence_percent": 0.0,
+    "pac_10_90": 0.0,
+    "permutation_valid_repetitions": 1,
+    "permutation_null_p95": 0.2664212932887745,
+    "empirical_permutation_p": 0.5,
+    "raw_vs_log_count_encoding_minimum_ari": 1.0,
+    "structural_resource_only_ari": null
+  },
+  "automatic_screen_pass": false,
+  "checks_passed": 7,
+  "checks_total": 11,
+  "decision": "reject",
+  "limitations": [
+    "Branch E contains only 34 strict respondents, so only k=2 can satisfy the minimum profile size of 15.",
+    "No dimension score or psychometric scale is constructed.",
+    "PAC is reported descriptively because there is only one eligible candidate k.",
+    "Automatic screening does not replace single-feature and leave-one-feature-out substantive review.",
+    "A retained result with leave-one-feature-out ARI below 0.10 is explicitly marked feature-dependent and must be interpreted around its central indicator rather than as a broad latent scale."
+  ]
+}

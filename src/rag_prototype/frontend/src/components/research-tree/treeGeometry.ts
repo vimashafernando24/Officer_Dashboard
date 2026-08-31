@@ -55,10 +55,10 @@ const LEAF_RISE = 94;
 const MODEL_PITCH = 225;
 
 const BRANCH_LAYOUT: Record<string, { x: number; y: number; modelY: number[]; modelX: number[] }> = {
-  D: { x: 315, y: 760, modelY: [190, 190 + MODEL_PITCH, 190 + MODEL_PITCH * 2], modelX: [-44, 22, -12] },
+  D: { x: 315, y: 760, modelY: [190, 190 + MODEL_PITCH, 190 + MODEL_PITCH * 2], modelX: [-118, 92, -20] },
   E: { x: 650, y: 742, modelY: [300], modelX: [0] },
   F: { x: 950, y: 750, modelY: [340], modelX: [8] },
-  G: { x: 1215, y: 766, modelY: [190, 190 + MODEL_PITCH], modelX: [-24, 26] },
+  G: { x: 1215, y: 766, modelY: [190, 190 + MODEL_PITCH], modelX: [-65, 60] },
 };
 
 const LEAF_ANGLES = [-26, 14, -10, 24, 7, -18, 28, -5, 19, -23, 11, -15, 30, -8, 21, -28, 4];
@@ -103,15 +103,22 @@ export function getLeafAttachmentPoint(
 
 function leafStemCurve(from: Point, attachment: Point, rotation: number, variant: number): string {
   const radians = rotation * Math.PI / 180;
+  const cos = Math.cos(radians);
+  const sin = Math.sin(radians);
+  // Pull-back and perpendicular nudge defined in the leaf's own rotated frame (not world
+  // space), so the stem always meets the leaf tangent to its actual orientation instead of
+  // drifting off-angle once the leaf is rotated more than a few degrees.
+  const localBackX = -27;
+  const localPerpY = 4;
   const approach = {
-    x: attachment.x - Math.cos(radians) * 27,
-    y: attachment.y - Math.sin(radians) * 27,
+    x: attachment.x + localBackX * cos - localPerpY * sin,
+    y: attachment.y + localBackX * sin + localPerpY * cos,
   };
   const sway = ((variant % 5) - 2) * 5;
   return [
     `M ${from.x} ${from.y}`,
     `C ${from.x + sway} ${from.y - 38},`,
-    `${approach.x} ${approach.y + 4},`,
+    `${approach.x} ${approach.y},`,
     `${attachment.x} ${attachment.y}`,
   ].join(" ");
 }
@@ -159,10 +166,16 @@ export function buildTreeGeometry(tree: ResearchTreeBranch[]): TreeGeometry {
           stemPath: leafStemCurve(modelHub, attachment, rotation, variant),
         };
       });
+      // Bend proportional to this model's own horizontal offset from the branch hub, so
+      // sibling limbs sharing one hub point diverge immediately on leaving it instead of
+      // running bundled together for most of their length and only splitting apart near
+      // the top (which reads as one branch, not several, when models start close together).
+      const horizontalOffset = modelHub.x - branchHub.x;
+      const bend = horizontalOffset * 0.85;
       return {
         model,
         hub: modelHub,
-        path: verticalCurve(branchHub, modelHub, (modelIndex % 2 ? 1 : -1) * (14 + branchIndex * 2)),
+        path: verticalCurve(branchHub, modelHub, bend),
         leaves,
       };
     });
@@ -187,6 +200,8 @@ export function buildTreeGeometry(tree: ResearchTreeBranch[]): TreeGeometry {
     barkPaths: [
       `M ${ROOT.x - 5} ${ROOT.y - 18} C ${ROOT.x - 7} ${ROOT.y - 54}, ${TRUNK_SPLIT.x - 2} ${TRUNK_SPLIT.y + 50}, ${TRUNK_SPLIT.x - 3} ${TRUNK_SPLIT.y + 18}`,
       `M ${ROOT.x + 7} ${ROOT.y - 28} C ${ROOT.x + 4} ${ROOT.y - 60}, ${TRUNK_SPLIT.x + 5} ${TRUNK_SPLIT.y + 44}, ${TRUNK_SPLIT.x + 3} ${TRUNK_SPLIT.y + 30}`,
+      `M ${ROOT.x - 11} ${ROOT.y - 12} C ${ROOT.x - 13} ${ROOT.y - 46}, ${TRUNK_SPLIT.x - 6} ${TRUNK_SPLIT.y + 38}, ${TRUNK_SPLIT.x - 6} ${TRUNK_SPLIT.y + 8}`,
+      `M ${ROOT.x + 1} ${ROOT.y - 34} C ${ROOT.x - 1} ${ROOT.y - 64}, ${TRUNK_SPLIT.x} ${TRUNK_SPLIT.y + 46}, ${TRUNK_SPLIT.x - 1} ${TRUNK_SPLIT.y + 22}`,
     ],
   };
 }

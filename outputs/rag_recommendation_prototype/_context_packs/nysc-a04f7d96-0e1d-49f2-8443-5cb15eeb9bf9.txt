@@ -1,0 +1,1131 @@
+====================================================================================================
+CONTEXT PACK FOR RESPONDENT nysc-a04f7d96-0e1d-49f2-8443-5cb15eeb9bf9  (branch D)
+====================================================================================================
+
+SECTION 1: DIRECT RESPONDENT FACTS
+(Source: outputs/rag_respondent_evidence/respondent_evidence.jsonl — protected/proxy and
+ technical fields already excluded upstream. 'answered' fields only; anything not listed
+ was missing, structurally not applicable, or routing-conditional in the source record —
+ it must NOT be treated as a 'No'.)
+
+--- DIRECT PREFERENCE / INTENT (respondent explicitly stated what they want) ---
+  ideal_work_type: Not sure yet
+  ideal_sector: Not sure
+  plans_after_education: Look for a job
+  expected_highest_edu_d: Bachelor's degree
+  study_field_preference: Other field
+
+--- FEASIBILITY / CONSTRAINT CONTEXT (respondent explicitly reported a circumstance) ---
+  district: Colombo
+  area_type: Metropolitan suburb
+  has_children: No
+  household_size: 7.0
+  household_income: LKR 120,000 – 200,000
+  household_workers: 6.0
+  household_unemployed: 1.0
+  primary_earner_status: No — someone else is the main provider
+  primary_income_source: My parents or family
+  edu_funding_source: Paid for by my family
+
+--- EDUCATION AND EXPERIENCE CONTEXT (actual background) ---
+  edu_status: Currently in higher education (degree or diploma)
+  worked_while_studying: No
+  current_activity_status: Attending school, university, or a training programme
+  already_job_searching: Yes — I am already searching
+  re_entered_education: No
+  institution_type: Private school or private degree-awarding institute
+  job_search_method_d: Online job ads (internet, social media)
+
+--- INDIVIDUAL CONTEXT ONLY (explanation-supporting, must not independently drive ranking) ---
+  age_group: 22 – 25 years
+  moved_from_origin: No — I moved from somewhere else
+  move_reason: For education or training
+  employment_network_quality: No — I have no one I could call on
+  edu_min_for_decent_job: University degree
+  most_important_life_goal: Finding purpose and meaning in life
+  most_useful_quality_for_job: Ambition and drive
+  social_capital_in_edu_access: Family members advised me or guided the choice
+  study_motivation_type: I am not sure why — I am following the path I ended up on
+  autonomy_in_study: Some — there is flexibility within a mostly fixed curriculum
+  competence_in_study_field: Somewhat capable — I struggle in some areas
+  relatedness_at_institution: Somewhat — I have some connections but am not deeply involved
+
+SECTION 2: GROUP-LEVEL PROFILE CONTEXT — NOT INDIVIDUAL FACT
+(These documents describe the RESEARCH PROFILE(S) this respondent was statistically
+ assigned to, based on frozen clustering of OTHER survey questions. Every percentage or
+ tendency below describes the GROUP, not this individual. If a group tendency conflicts
+ with this respondent's own Section 1 answer, the Section 1 answer always takes priority.)
+
+------ PROFILE DOCUMENT: D_motivation_p1 (Motivation and study experience) ------
+====================================================================================================
+NYSC YOUTH PROFILE KNOWLEDGE DOCUMENT
+====================================================================================================
+
+profile_key: D_motivation_p1
+branch: D
+retained_model_id: D_motivation
+retained_dimension: Motivation and study experience
+profile_id: 1
+profile_label: Consensus motivation profile 1: externally or uncertainly motivated, with moderate study support
+profile_size_n: 47
+
+SOURCE OF RECORD: This document is compiled only from the frozen, audited outputs of
+the NYSC final clustering and post-cluster profiling stage (freeze date 26 August 2026):
+  - NYSC_all_branches_clustering_final_report.md (Part I: clustering method, validation,
+    decision register)
+  - NYSC_Final_Clustering_and_Post_Cluster_Profiling_Report.docx / 
+    final_cluster_profiling_report.md (Part II: post-cluster profiling)
+  - outputs/final_cluster_programme_relevant_profiles.csv (17-row profile evidence summary)
+  - outputs/final_cluster_profile_comparison_summary.csv (270-row variable-level statistics)
+No fact in this document was invented, estimated, or extrapolated beyond these sources.
+
+----------------------------------------------------------------------------------------------------
+1. PROFILE_DEFINITION
+----------------------------------------------------------------------------------------------------
+Facts that define the cluster itself. These variables and diagnostics produced the
+cluster; they are NOT re-tested as post-cluster findings (doing so would be circular).
+
+Branch: D — strict final-path analytical cohort n=191 (of 362 total strict-cohort respondents: D=191, E=34, F=81, G=56).
+Retained dimension: Motivation and study experience
+Number of profiles in this retained model (k): 3
+This profile's id and label: Profile 1 — "Consensus motivation profile 1: externally or uncertainly motivated, with moderate study support"
+This profile's exact frozen size: n=47 (cross-verified against the Part III freeze-verification table in the source report)
+
+Exact cluster-forming variables (the only inputs used to build this clustering; all
+other survey variables were deliberately excluded from distance calculation and are
+only used descriptively in sections 2-3 below):
+  - study_motivation_type
+  - autonomy_in_study
+  - competence_in_study_field
+  - relatedness_at_institution
+
+Theoretical basis and purpose: Self-Determination Theory (Deci & Ryan, 2000): autonomy, competence and relatedness in the study context, plus stated study-motivation type.
+
+Clustering method: Gower distance over original mixed-type responses (no invented 0-100
+scores), consensus of repeated K-medoids and spectral clustering across 100 matched
+80% subsamples (200 base partitions), final clusters from K-medoids on (1 - co-association).
+
+Validation diagnostics for this retained model: Gower silhouette 0.350; bootstrap/subsample ARI 0.981; ARI vs full K-medoids 0.968 and vs spectral 0.712; PAC (proportion of ambiguous clustering) 0.193; 7 of 8 mandatory validation checks passed.
+Final decision status: Retained for exploratory use, with ambiguity and one-item-per-construct cautions.
+Model-level caution (from the frozen decision register): Four single survey items represent motivation, autonomy, competence and relatedness; uncertain memberships must remain visible.
+
+Additional definitional context: About 23.6% of respondents in this model had low Gower membership confidence (ambiguous cluster assignment); uncertain assignments must remain flagged. The three profile labels summarise four single-item questions only — they are not clinical or psychometrically validated SDT instrument types.
+
+Interpretation of this specific profile (verbatim from the frozen report's per-model
+profile table):
+  Motivation was more external/uncertain and the combined study-support responses were moderate.
+
+Reminder: this profile exists only WITHIN this one retained dimension. A respondent's
+membership here says nothing about their membership in any other branch's or dimension's
+profile system (see PROHIBITED_INFERENCES).
+
+----------------------------------------------------------------------------------------------------
+2. SUPPORTED_PROFILE_FINDINGS
+----------------------------------------------------------------------------------------------------
+Post-cluster comparisons that passed this model's pre-registered effect-size and
+coverage reporting screen (i.e. explicitly retained/approved profiling findings, as
+categorised in the frozen evidence summary). These are the findings that may inform a
+later programme-matching stage. Directional statements are WITHIN-PROFILE percentages
+compared against the other profile(s) in the same model.
+
+FDR-correction context for this model: Among the findings that passed the effect-size/coverage reporting screen for this model, 0 of 1 remained significant after Benjamini-Hochberg FDR correction. The reported finding is descriptive/exploratory evidence only, not a confirmed statistical difference.
+
+[Strongest additional characteristics (top approved differentiators)]
+  - Useful employment/training contacts: more often reported ‘No — I have no one I could call on’ (13/47, 27.7% vs 9.7% in other profile(s))
+
+[Barriers, support and financial context]
+  - Useful employment/training contacts: more often reported ‘No — I have no one I could call on’ (13/47, 27.7% vs 9.7% in other profile(s))
+
+[Aspirations and preferences]
+  - No clear additional difference met the reporting screen for this category.
+
+[Education, training and employment characteristics]
+  - No clear additional difference met the reporting screen for this category.
+
+[Programme-relevant evidence]
+  - Useful employment/training contacts: more often reported ‘No — I have no one I could call on’ (13/47, 27.7% vs 9.7% in other profile(s))
+
+Statistical support detail for the variables named above (effect size is the primary
+ranking evidence; p-values, raw and BH-adjusted, are supporting evidence only):
+
+  - Useful employment/training contacts (employment_network_quality): coverage 100.0% of the model cohort; effect size epsilon-squared = 0.048; raw p = 0.004204; BH-adjusted p = 0.07778 (NOT significant at FDR<0.05 (descriptive only)); programme relevance rated 'high'.
+
+----------------------------------------------------------------------------------------------------
+3. DIRECT_GROUP_DISTRIBUTIONS
+----------------------------------------------------------------------------------------------------
+The complete observed distribution of THIS profile's survey answers for every
+non-cluster-forming variable tested against this model (not only the ones highlighted
+as approved findings above). Included so no descriptive detail is summarised away.
+Entries marked [SCREENED FINDING] passed the reporting screen in section 2 above;
+entries marked [tested, not highlighted] did not meet that screen and must be read as
+raw descriptive data only, not as a vetted group difference.
+
+* Area type [area_type] — type: categorical, theme: access, cohort coverage: 100.0% [tested, not highlighted]
+    This profile's observed distribution (eligible n=47): Metropolitan suburb: 18 (38.3%); Small town: 15 (31.9%); Large city: 7 (14.9%); Rural area: 7 (14.9%)
+
+* District [district] — type: categorical, theme: access, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously; related model note: Many district categories can create sparse tables.)
+    This profile's observed distribution (eligible n=47): Colombo: 15 (31.9%); Galle: 7 (14.9%); Kalutara: 4 (8.5%); Gampaha: 4 (8.5%); Puttalam: 4 (8.5%); Matara: 2 (4.3%); Jaffna: 2 (4.3%); Monaragala: 2 (4.3%); Kegalle: 1 (2.1%); Anuradhapura: 1 (2.1%); Kurunegala: 1 (2.1%); Ampara: 1 (2.1%); Hambantota: 1 (2.1%); Ratnapura: 1 (2.1%); Trincomalee: 1 (2.1%)
+
+* Current or preferred field of study [study_field_preference] — type: categorical, theme: aspiration, cohort coverage: 97.9% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=46): ICT or computing: 23 (50.0%); Science or mathematics: 7 (15.2%); Other field: 5 (10.9%); Commerce, business, or management: 4 (8.7%); Industrial or technical studies: 3 (6.5%); Education or teaching: 2 (4.3%); Literature, arts, or social sciences: 1 (2.2%); Engineering: 1 (2.2%)
+
+* Ideal sector [ideal_sector] — type: categorical, theme: aspiration, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=47): Information technology and communications: 26 (55.3%); Not sure: 9 (19.1%); Education and teaching: 4 (8.5%); Finance, banking, and insurance: 3 (6.4%); Agriculture, forestry, and fishing: 1 (2.1%); Hotels, restaurants, and hospitality: 1 (2.1%); Manufacturing or production: 1 (2.1%); Wholesale, retail, or repair: 1 (2.1%); Public administration, government, and defence: 1 (2.1%)
+
+* Ideal work type [ideal_work_type] — type: categorical, theme: aspiration, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=47): Work for a multinational or large private company: 16 (34.0%); Start my own business: 13 (27.7%); Not sure yet: 10 (21.3%); Work for the government or public sector: 5 (10.6%); Work for a local private Sri Lankan company: 3 (6.4%)
+
+* Most important life goal [most_important_life_goal] — type: categorical, theme: aspiration, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=47): Being successful in work or my career: 13 (27.7%); Having financial security or earning a lot: 11 (23.4%); Building self-confidence and personal fulfilment: 6 (12.8%); Having a good family life: 6 (12.8%); Having leisure, freedom, and personal time: 5 (10.6%); Making a meaningful contribution to society: 2 (4.3%); Finding purpose and meaning in life: 2 (4.3%); Participating in community or public affairs: 2 (4.3%)
+
+* Plans after current education [plans_after_education] — type: categorical, theme: aspiration, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=47): Look for a job: 36 (76.6%); Immediately go on to further education or training: 8 (17.0%); Do not know yet: 2 (4.3%); Start my own business: 1 (2.1%)
+
+* Quality considered most useful for a good job [most_useful_quality_for_job] — type: categorical, theme: aspiration, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=47): Communication and interpersonal skills: 16 (34.0%); Ambition and drive: 9 (19.1%); IT and digital skills: 6 (12.8%); A good general education: 4 (8.5%); Scientific or technical qualifications: 4 (8.5%); Command of languages (English, etc.): 3 (6.4%); Teamwork and collaboration skills: 3 (6.4%); Business and economic knowledge: 2 (4.3%)
+
+* Current institution type [institution_type] — type: categorical, theme: education, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously; related model note: Forms the separate D educational/cultural model.)
+    This profile's observed distribution (eligible n=47): Private school or private degree-awarding institute: 29 (61.7%); Government school or state university: 15 (31.9%); Other: 2 (4.3%); Government vocational/technical institute (NYSC, NAITA, VTA, etc.): 1 (2.1%)
+
+* Expected highest education [expected_highest_edu_d] — type: ordered, theme: education, cohort coverage: 100.0% [tested, not highlighted] (related model note: Forms the separate D educational/cultural model.)
+    This profile's observed distribution (eligible n=47): median=7.00, IQR=6.00–7.00
+
+* Father's education [father_edu] — type: ordered, theme: education, cohort coverage: 97.4% [tested, not highlighted] (related model note: Forms the separate D educational/cultural model.)
+    This profile's observed distribution (eligible n=46): median=3.00, IQR=2.25–5.00
+
+* Minimum education believed necessary for a decent job [edu_min_for_decent_job] — type: ordered, theme: education, cohort coverage: 96.9% [tested, not highlighted]
+    This profile's observed distribution (eligible n=46): median=5.00, IQR=4.00–5.00
+
+* Mother's education [mother_edu] — type: ordered, theme: education, cohort coverage: 95.8% [tested, not highlighted] (related model note: Forms the separate D educational/cultural model.)
+    This profile's observed distribution (eligible n=45): median=3.00, IQR=3.00–5.00
+
+* Re-entered education after interruption [re_entered_education] — type: categorical, theme: education, cohort coverage: 100.0% [tested, not highlighted] (related model note: Forms the separate D educational/cultural model.)
+    This profile's observed distribution (eligible n=47): No: 44 (93.6%); Yes: 3 (6.4%)
+
+* Reason for re-entering education [reason_re_entered] — type: categorical, theme: education, cohort coverage: 14.1% [tested, not highlighted] (conditional on: re_entered_education; sparse cells - interpret cautiously; small-sample flag; related model note: Follow-up to a variable forming the D educational/cultural model.)
+    This profile's observed distribution (eligible n=3): Needed different qualifications for a different career: 2 (66.7%); Could not find suitable work: 1 (33.3%)
+
+* Already searching for work/business [already_job_searching] — type: categorical, theme: employment, cohort coverage: 100.0% [tested, not highlighted]
+    This profile's observed distribution (eligible n=47): No — not yet: 25 (53.2%); Yes — I am already searching: 22 (46.8%)
+
+* Paid status of work while studying [work_while_study_paid] — type: categorical, theme: employment, cohort coverage: 38.7% [tested, not highlighted] (conditional on: worked_while_studying; small-sample flag; related model note: Conditional on a variable forming the D educational/cultural model.)
+    This profile's observed distribution (eligible n=15): Paid: 10 (66.7%); Unpaid: 5 (33.3%)
+
+* Type of work while studying [work_while_study_type] — type: categorical, theme: employment, cohort coverage: 38.7% [tested, not highlighted] (conditional on: worked_while_studying; sparse cells - interpret cautiously; small-sample flag; related model note: Conditional on a variable forming the D educational/cultural model.)
+    This profile's observed distribution (eligible n=15): Internship or apprenticeship in a private company: 11 (73.3%); Informal or casual work: 3 (20.0%); Paid work in the public sector (not internship): 1 (6.7%)
+
+* Worked while studying [worked_while_studying] — type: categorical, theme: employment, cohort coverage: 98.4% [tested, not highlighted] (related model note: Forms the separate D educational/cultural model.)
+    This profile's observed distribution (eligible n=46): No: 31 (67.4%); Yes: 15 (32.6%)
+
+* Age group [age_group] — type: categorical, theme: equity, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=47): 22 – 25 years: 38 (80.9%); 18 – 21 years: 5 (10.6%); 26 – 29 years: 4 (8.5%)
+
+* Gender [gender] — type: categorical, theme: equity, cohort coverage: 99.0% [tested, not highlighted]
+    This profile's observed distribution (eligible n=46): Female: 25 (54.3%); Male: 21 (45.7%)
+
+* Has children [has_children] — type: categorical, theme: feasibility, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=47): No: 47 (100.0%)
+
+* Hours band while studying [work_while_study_hours] — type: ordered, theme: feasibility, cohort coverage: 38.7% [tested, not highlighted] (conditional on: worked_while_studying; small-sample flag; related model note: Conditional on a variable forming the D educational/cultural model.)
+    This profile's observed distribution (eligible n=15): median=2.00, IQR=2.00–4.00
+
+* Marital status [marital_status] — type: categorical, theme: feasibility, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=47): Never married: 44 (93.6%); Engaged to be married: 2 (4.3%); Married: 1 (2.1%)
+
+* Household income band [household_income] — type: ordered, theme: financial, cohort coverage: 84.8% [tested, not highlighted] (related model note: Forms the separate D economic model.)
+    This profile's observed distribution (eligible n=41): median=4.00, IQR=3.00–4.00
+
+* Household size [household_size] — type: numeric, theme: financial, cohort coverage: 100.0% [tested, not highlighted] (related model note: Forms the separate D economic model.)
+    This profile's observed distribution (eligible n=47): median=4.00, IQR=4.00–5.00
+
+* Household unemployed jobseekers [household_unemployed] — type: numeric, theme: financial, cohort coverage: 100.0% [tested, not highlighted] (related model note: Forms the separate D economic model.)
+    This profile's observed distribution (eligible n=47): median=1.00, IQR=1.00–2.00
+
+* Household workers [household_workers] — type: numeric, theme: financial, cohort coverage: 100.0% [tested, not highlighted] (related model note: Forms the separate D economic model.)
+    This profile's observed distribution (eligible n=47): median=2.00, IQR=1.00–2.50
+
+* Main education funding source [edu_funding_source] — type: categorical, theme: financial, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously; related model note: Forms the separate D economic model.)
+    This profile's observed distribution (eligible n=47): Paid for by my family: 33 (70.2%); Government-funded or free of charge: 10 (21.3%); Scholarship or grant: 3 (6.4%); Other arrangement: 1 (2.1%)
+
+* Primary personal income source [primary_income_source] — type: categorical, theme: financial, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously; related model note: Forms the separate D economic model.)
+    This profile's observed distribution (eligible n=47): My parents or family: 43 (91.5%); My regular job or business: 3 (6.4%); Other source: 1 (2.1%)
+
+* Primary-earner status [primary_earner_status] — type: categorical, theme: financial, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously; related model note: Forms the separate D economic model.)
+    This profile's observed distribution (eligible n=47): No — someone else is the main provider: 46 (97.9%); Yes — I provide the main household income: 1 (2.1%)
+
+* Reason for working while studying [work_while_study_motivation] — type: categorical, theme: financial, cohort coverage: 38.7% [tested, not highlighted] (conditional on: worked_while_studying; sparse cells - interpret cautiously; small-sample flag; related model note: Conditional on a variable forming the D educational/cultural model.)
+    This profile's observed distribution (eligible n=15): To gain work experience and build my CV: 11 (73.3%); To earn money: 3 (20.0%); Other reason: 1 (6.7%)
+
+* Lives in the same area where they grew up [moved_from_origin] — type: categorical, theme: mobility, cohort coverage: 100.0% [tested, not highlighted]
+    This profile's observed distribution (eligible n=47): Yes — I grew up here and still live here: 33 (70.2%); No — I moved from somewhere else: 14 (29.8%)
+
+* Reason for moving [move_reason] — type: categorical, theme: mobility, cohort coverage: 30.4% [tested, not highlighted] (conditional on: moved_from_origin; sparse cells - interpret cautiously; small-sample flag)
+    This profile's observed distribution (eligible n=14): For education or training: 12 (85.7%); For work or employment reasons: 1 (7.1%); To accompany family: 1 (7.1%)
+
+* How current programme was accessed [social_capital_in_edu_access] — type: categorical, theme: service, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=47): Family members advised me or guided the choice: 20 (42.6%); I researched and applied entirely on my own initiative: 16 (34.0%); I was assigned or directed by a government programme: 7 (14.9%); A friend, teacher, or contact recommended it: 3 (6.4%); My employer or a workplace contact directed me here: 1 (2.1%)
+
+* Main job-search method while studying [job_search_method_d] — type: categorical, theme: service, cohort coverage: 58.1% [tested, not highlighted] (conditional on: already_job_searching; sparse cells - interpret cautiously; small-sample flag)
+    This profile's observed distribution (eligible n=22): Online job ads (internet, social media): 10 (45.5%); Through education or training institution: 5 (22.7%); Attending job fairs: 2 (9.1%); Checking at worksites / factory gates: 1 (4.5%); Through friends, relatives, or colleagues: 1 (4.5%); Private employment agency: 1 (4.5%); Looking for resources to start own business: 1 (4.5%); Direct application to employers: 1 (4.5%)
+
+* Useful employment/training contacts [employment_network_quality] — type: ordered, theme: support, cohort coverage: 100.0% [SCREENED FINDING]
+    This profile's observed distribution (eligible n=47): median=3.00, IQR=2.00–4.00
+
+----------------------------------------------------------------------------------------------------
+4. CAUTIONS
+----------------------------------------------------------------------------------------------------
+Model-level caution: Four single survey items represent motivation, autonomy, competence and relatedness; uncertain memberships must remain visible.
+Additional model context: About 23.6% of respondents in this model had low Gower membership confidence (ambiguous cluster assignment); uncertain assignments must remain flagged. The three profile labels summarise four single-item questions only — they are not clinical or psychometrically validated SDT instrument types.
+FDR-correction context: Among the findings that passed the effect-size/coverage reporting screen for this model, 0 of 1 remained significant after Benjamini-Hochberg FDR correction. The reported finding is descriptive/exploratory evidence only, not a confirmed statistical difference.
+
+Profile-specific caution (verbatim from the frozen evidence summary): Four single survey items represent motivation, autonomy, competence and relatedness; uncertain memberships must remain visible. None of the selected comparisons remained below FDR 0.05; effect sizes are descriptive evidence.
+
+Conditional-denominator caution: 7 of 37 variables tested against this model are conditional (asked only of an eligible subgroup via survey routing, e.g. only active jobseekers, only those who worked while studying). Their percentages use the eligible-subgroup denominator shown in section 3, not the full profile size. A blank caused by survey routing was never treated as a 'No' answer during profiling.
+
+Cross-dimensional caution: the following variables tested against this model also form part of another retained clustering model; their relationship to this profile is descriptive only and is NOT independent statistical validation of this model:
+  - Primary personal income source: Forms the separate D economic model.
+  - Worked while studying: Forms the separate D educational/cultural model.
+  - Re-entered education after interruption: Forms the separate D educational/cultural model.
+  - Primary-earner status: Forms the separate D economic model.
+  - Father's education: Forms the separate D educational/cultural model.
+  - Main education funding source: Forms the separate D economic model.
+  - Type of work while studying: Conditional on a variable forming the D educational/cultural model.
+  - Household income band: Forms the separate D economic model.
+  - Reason for working while studying: Conditional on a variable forming the D educational/cultural model.
+  - Mother's education: Forms the separate D educational/cultural model.
+  - Expected highest education: Forms the separate D educational/cultural model.
+  - Hours band while studying: Conditional on a variable forming the D educational/cultural model.
+  - District: Many district categories can create sparse tables.
+  - Household size: Forms the separate D economic model.
+  - Household workers: Forms the separate D economic model.
+  - Household unemployed jobseekers: Forms the separate D economic model.
+  - Current institution type: Forms the separate D educational/cultural model.
+  - Reason for re-entering education: Follow-up to a variable forming the D educational/cultural model.
+  - Paid status of work while studying: Conditional on a variable forming the D educational/cultural model.
+
+Sparse-cell caution: 20 of 37 variables tested against this model contain sparse expected-cell counts (categorical tables with rare category combinations); percentages built from sparse tables are listed in section 3 and should be read with extra caution, especially for high-cardinality variables such as district, sector or stated obstacle.
+
+General measurement cautions (apply to every profile in this knowledge base):
+  - A reported percentage is a within-profile percentage in this 362-respondent strict
+    cohort, not a population estimate for all Sri Lankan youth.
+  - Effect sizes rank descriptive differences; they do not prove that cluster membership
+    caused the characteristic.
+  - Consensus clustering stability shows reproducibility under the specified procedure;
+    it does not prove a natural, causal, or permanent youth type.
+  - Profile names are descriptive and must not stigmatise respondents or be used to deny
+    programme access.
+
+----------------------------------------------------------------------------------------------------
+5. PROHIBITED_INFERENCES
+----------------------------------------------------------------------------------------------------
+Statements that must NOT be assumed true for an individual merely because they belong
+to this profile. These are hard constraints for any downstream system (including a RAG
+recommendation layer) consuming this document.
+
+Universal (applies to all 17 retained profiles):
+  - Do not assume that a specific individual assigned to this profile personally holds any characteristic reported as a group percentage. A group finding such as 'X% of this profile reported Y' describes the profile as a whole; it is not a fact about any one person in it — a sizeable minority (and in close splits, close to half) of the profile did NOT report Y.
+  - Do not treat profile membership as a diagnosis, permanent trait, or whole-person label. Profiles are exploratory response-pattern groups within ONE retained dimension only. The same respondent can simultaneously belong to different profiles across different retained dimensions (for example a Branch D respondent has independent motivation, economic and educational-trajectory profile memberships) — no single profile describes the whole person.
+  - Do not use profile membership, alone, as an eligibility gate, a reason to deny access to a programme, or a reason to prioritise/deprioritise a youth for any service.
+  - Do not treat effect sizes or association strength as evidence of causation. A reported association (e.g. 'Profile A more often reported X') describes a measured difference in this sample; it does not establish that being in Profile A caused X, or that X caused profile membership.
+  - Do not treat a finding that did not pass this model's effect-size/coverage reporting screen (see DIRECT_GROUP_DISTRIBUTIONS) as an approved or reportable difference. Untagged distributions are raw descriptive data only, not vetted findings.
+  - Do not treat a finding as statistically confirmed population evidence merely because it appears here. Most models in this knowledge base have few or zero findings that remain significant after Benjamini-Hochberg FDR correction (see this profile's CAUTIONS section and fdr_note) — effect sizes are the primary ranking evidence, and p-values (raw or adjusted) are supporting evidence only.
+  - Do not generalise any percentage in this document to Sri Lankan youth generally, to NYSC's wider applicant pool, or to any group outside the 362-respondent strict analytical cohort (D=191, E=34, F=81, G=56) from which these profiles were derived.
+  - Do not infer, invent, or assume any need, barrier, preference or characteristic for this profile that is not explicitly present in the source data below. If a data point is absent, it must be reported as absent/not tested, never filled in by assumption.
+  - Do not use this document, on its own, to select or recommend a specific NYSC course or programme. Course/programme recommendation requires a separate, transparent, expert-reviewed matching stage that combines this profile information with the individual's own stated preferences, eligibility and the structured NYSC course catalogue.
+
+Specific to the 'Motivation and study experience' model:
+  - Do not treat the three motivation profile labels as clinical or psychometrically validated Self-Determination-Theory types; they summarise four single survey items only.
+  - Do not assume an individual in the 'externally or uncertainly motivated' profile lacks motivation entirely, or that an individual in the 'highly self-directed' profile has no study difficulties — these are relative, not absolute, characterisations, and 23.6% of the model's respondents had low membership confidence.
+
+Worked counter-example for this specific profile (do NOT do this):
+  WRONG: "This youth is in profile 'Consensus motivation profile 1: externally or uncertainly motivated, with moderate study support', so they must have this characteristic: Useful employment/training contacts: more often reported ‘No — I have no one I could call on’ (13/47, 27.7% vs 9.7% in other profile(s))"
+  RIGHT: "This youth is in profile 'Consensus motivation profile 1: externally or uncertainly motivated, with moderate study support' (n=47). Within this profile, the group-level pattern was: Useful employment/training contacts: more often reported ‘No — I have no one I could call on’ (13/47, 27.7% vs 9.7% in other profile(s)). This is evidence about the group, not a confirmed fact about this individual, who must be asked directly."
+
+====================================================================================================
+END OF DOCUMENT
+====================================================================================================
+
+------ PROFILE DOCUMENT: D_economic_p2 (Economic resources and household pressure) ------
+====================================================================================================
+NYSC YOUTH PROFILE KNOWLEDGE DOCUMENT
+====================================================================================================
+
+profile_key: D_economic_p2
+branch: D
+retained_model_id: D_economic
+retained_dimension: Economic resources and household pressure
+profile_id: 2
+profile_label: Economic profile 2: relatively higher household economic position
+profile_size_n: 147
+
+SOURCE OF RECORD: This document is compiled only from the frozen, audited outputs of
+the NYSC final clustering and post-cluster profiling stage (freeze date 26 August 2026):
+  - NYSC_all_branches_clustering_final_report.md (Part I: clustering method, validation,
+    decision register)
+  - NYSC_Final_Clustering_and_Post_Cluster_Profiling_Report.docx / 
+    final_cluster_profiling_report.md (Part II: post-cluster profiling)
+  - outputs/final_cluster_programme_relevant_profiles.csv (17-row profile evidence summary)
+  - outputs/final_cluster_profile_comparison_summary.csv (270-row variable-level statistics)
+No fact in this document was invented, estimated, or extrapolated beyond these sources.
+
+----------------------------------------------------------------------------------------------------
+1. PROFILE_DEFINITION
+----------------------------------------------------------------------------------------------------
+Facts that define the cluster itself. These variables and diagnostics produced the
+cluster; they are NOT re-tested as post-cluster findings (doing so would be circular).
+
+Branch: D — strict final-path analytical cohort n=191 (of 362 total strict-cohort respondents: D=191, E=34, F=81, G=56).
+Retained dimension: Economic resources and household pressure
+Number of profiles in this retained model (k): 2
+This profile's id and label: Profile 2 — "Economic profile 2: relatively higher household economic position"
+This profile's exact frozen size: n=147 (cross-verified against the Part III freeze-verification table in the source report)
+
+Exact cluster-forming variables (the only inputs used to build this clustering; all
+other survey variables were deliberately excluded from distance calculation and are
+only used descriptively in sections 2-3 below):
+  - edu_funding_source
+  - household_income
+  - household_size
+  - household_unemployed
+  - household_workers
+  - primary_earner_status
+  - primary_income_source
+
+Theoretical basis and purpose: Bourdieu economic capital and ILO School-to-Work Transition Survey household/education-financing position.
+
+Clustering method: Gower distance over original mixed-type responses (no invented 0-100
+scores), consensus of repeated K-medoids and spectral clustering across 100 matched
+80% subsamples (200 base partitions), final clusters from K-medoids on (1 - co-association).
+
+Validation diagnostics for this retained model: Gower silhouette 0.436; bootstrap/subsample ARI 0.986; source-method ARIs 0.849 and 0.796; 7 of 8 mandatory validation checks passed.
+Final decision status: Retained cautiously.
+Model-level caution (from the frozen decision register): Income refusals and household-count inconsistencies were handled pairwise in clustering; profiles indicate relative position, not poverty status.
+
+Additional definitional context: 29 of 191 Branch D respondents declined to report household income. 5 records had reported household workers plus unemployed members exceeding household size; their derived shares were treated as unavailable (missing) rather than silently corrected. Missing-aware Gower distance used only the remaining comparable components for these respondents.
+
+Interpretation of this specific profile (verbatim from the frozen report's per-model
+profile table):
+  Higher relative position across the same observed components.
+
+Reminder: this profile exists only WITHIN this one retained dimension. A respondent's
+membership here says nothing about their membership in any other branch's or dimension's
+profile system (see PROHIBITED_INFERENCES).
+
+----------------------------------------------------------------------------------------------------
+2. SUPPORTED_PROFILE_FINDINGS
+----------------------------------------------------------------------------------------------------
+Post-cluster comparisons that passed this model's pre-registered effect-size and
+coverage reporting screen (i.e. explicitly retained/approved profiling findings, as
+categorised in the frozen evidence summary). These are the findings that may inform a
+later programme-matching stage. Directional statements are WITHIN-PROFILE percentages
+compared against the other profile(s) in the same model.
+
+FDR-correction context for this model: Among the findings that passed the effect-size/coverage reporting screen for this model, 4 of 5 remained significant after FDR correction; 1 did not.
+
+[Strongest additional characteristics (top approved differentiators)]
+  - Ideal sector: more often reported ‘Information technology and communications’ (93/147, 63.3% vs 40.9% in other profile(s)) [sparse table]
+  - Current or preferred field of study: more often reported ‘ICT or computing’ (95/145, 65.5% vs 26.2% in other profile(s)) [sparse table]
+  - Current institution type: more often reported ‘Private school or private degree-awarding institute’ (106/147, 72.1% vs 9.1% in other profile(s)) [sparse table; cross-dimensional/related variable]
+  - How current programme was accessed: more often reported ‘Family members advised me or guided the choice’ (61/147, 41.5% vs 13.6% in other profile(s)) [sparse table]
+  - Main job-search method while studying: more often reported ‘Online job ads (internet, social media)’ (45/89, 50.6% vs 18.2% in other profile(s)) [conditional eligible n=111; sparse table]
+
+[Barriers, support and financial context]
+  - No clear additional difference met the reporting screen for this category.
+
+[Aspirations and preferences]
+  - Ideal sector: more often reported ‘Information technology and communications’ (93/147, 63.3% vs 40.9% in other profile(s)) [sparse table]
+  - Current or preferred field of study: more often reported ‘ICT or computing’ (95/145, 65.5% vs 26.2% in other profile(s)) [sparse table]
+
+[Education, training and employment characteristics]
+  - Current institution type: more often reported ‘Private school or private degree-awarding institute’ (106/147, 72.1% vs 9.1% in other profile(s)) [sparse table; cross-dimensional/related variable]
+  - How current programme was accessed: more often reported ‘Family members advised me or guided the choice’ (61/147, 41.5% vs 13.6% in other profile(s)) [sparse table]
+  - Main job-search method while studying: more often reported ‘Online job ads (internet, social media)’ (45/89, 50.6% vs 18.2% in other profile(s)) [conditional eligible n=111; sparse table]
+
+[Programme-relevant evidence]
+  - Ideal sector: more often reported ‘Information technology and communications’ (93/147, 63.3% vs 40.9% in other profile(s)) [sparse table]
+  - Current or preferred field of study: more often reported ‘ICT or computing’ (95/145, 65.5% vs 26.2% in other profile(s)) [sparse table]
+  - Current institution type: more often reported ‘Private school or private degree-awarding institute’ (106/147, 72.1% vs 9.1% in other profile(s)) [sparse table; cross-dimensional/related variable]
+  - Main job-search method while studying: more often reported ‘Online job ads (internet, social media)’ (45/89, 50.6% vs 18.2% in other profile(s)) [conditional eligible n=111; sparse table]
+
+Statistical support detail for the variables named above (effect size is the primary
+ranking evidence; p-values, raw and BH-adjusted, are supporting evidence only):
+
+  - Ideal sector (ideal_sector): coverage 100.0% of the model cohort; effect size bias-corrected Cramér's V = 0.381; raw p = 0.0001102; BH-adjusted p = 0.0009369 (significant at FDR<0.05); programme relevance rated 'high'. [sparse cells]
+  - Current or preferred field of study (study_field_preference): coverage 97.9% of the model cohort; effect size bias-corrected Cramér's V = 0.378; raw p = 3.15e-05; BH-adjusted p = 0.000357 (significant at FDR<0.05); programme relevance rated 'high'. [sparse cells]
+  - Current institution type (institution_type): coverage 100.0% of the model cohort; effect size bias-corrected Cramér's V = 0.566; raw p = 6.976e-13; BH-adjusted p = 2.372e-11 (significant at FDR<0.05); programme relevance rated 'high'. [sparse cells, cross-dimensional: Forms the separate D educational/cultural model.]
+  - How current programme was accessed (social_capital_in_edu_access): coverage 100.0% of the model cohort; effect size bias-corrected Cramér's V = 0.370; raw p = 4.966e-06; BH-adjusted p = 8.442e-05 (significant at FDR<0.05); programme relevance rated 'medium'. [sparse cells]
+  - Main job-search method while studying (job_search_method_d): coverage 58.1% of the model cohort; effect size bias-corrected Cramér's V = 0.300; raw p = 0.02944; BH-adjusted p = 0.1122 (NOT significant at FDR<0.05 (descriptive only)); programme relevance rated 'high'. [sparse cells, conditional (gateway: already_job_searching)]
+
+----------------------------------------------------------------------------------------------------
+3. DIRECT_GROUP_DISTRIBUTIONS
+----------------------------------------------------------------------------------------------------
+The complete observed distribution of THIS profile's survey answers for every
+non-cluster-forming variable tested against this model (not only the ones highlighted
+as approved findings above). Included so no descriptive detail is summarised away.
+Entries marked [SCREENED FINDING] passed the reporting screen in section 2 above;
+entries marked [tested, not highlighted] did not meet that screen and must be read as
+raw descriptive data only, not as a vetted group difference.
+
+* Area type [area_type] — type: categorical, theme: access, cohort coverage: 100.0% [tested, not highlighted]
+    This profile's observed distribution (eligible n=147): Metropolitan suburb: 61 (41.5%); Small town: 41 (27.9%); Large city: 28 (19.0%); Rural area: 17 (11.6%)
+
+* District [district] — type: categorical, theme: access, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously; related model note: Many district categories can create sparse tables.)
+    This profile's observed distribution (eligible n=147): Colombo: 46 (31.3%); Gampaha: 17 (11.6%); Matara: 10 (6.8%); Kalutara: 9 (6.1%); Galle: 9 (6.1%); Kandy: 9 (6.1%); Kurunegala: 8 (5.4%); Jaffna: 5 (3.4%); Puttalam: 5 (3.4%); Ratnapura: 5 (3.4%); Ampara: 4 (2.7%); Anuradhapura: 3 (2.0%); Kegalle: 3 (2.0%); Monaragala: 3 (2.0%); Hambantota: 2 (1.4%); Batticaloa: 2 (1.4%); Badulla: 2 (1.4%); Polonnaruwa: 2 (1.4%); Mullaitivu: 1 (0.7%); Nuwara Eliya: 1 (0.7%); Trincomalee: 1 (0.7%)
+
+* Current or preferred field of study [study_field_preference] — type: categorical, theme: aspiration, cohort coverage: 97.9% [SCREENED FINDING] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=145): ICT or computing: 95 (65.5%); Commerce, business, or management: 13 (9.0%); Science or mathematics: 11 (7.6%); Engineering: 8 (5.5%); Industrial or technical studies: 5 (3.4%); Other field: 5 (3.4%); Literature, arts, or social sciences: 4 (2.8%); Education or teaching: 3 (2.1%); Health sciences or nursing: 1 (0.7%)
+
+* Ideal sector [ideal_sector] — type: categorical, theme: aspiration, cohort coverage: 100.0% [SCREENED FINDING] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=147): Information technology and communications: 93 (63.3%); Not sure: 17 (11.6%); Education and teaching: 9 (6.1%); Finance, banking, and insurance: 7 (4.8%); Creative, media, and arts: 5 (3.4%); Manufacturing or production: 5 (3.4%); Hotels, restaurants, and hospitality: 4 (2.7%); Wholesale, retail, or repair: 3 (2.0%); Health, social work, and wellbeing: 2 (1.4%); Construction and building: 1 (0.7%); Public administration, government, and defence: 1 (0.7%)
+
+* Ideal work type [ideal_work_type] — type: categorical, theme: aspiration, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=147): Start my own business: 57 (38.8%); Work for a multinational or large private company: 55 (37.4%); Not sure yet: 16 (10.9%); Work for a local private Sri Lankan company: 9 (6.1%); Work for the government or public sector: 7 (4.8%); I do not wish to work: 1 (0.7%); Work in a family business (non-farming): 1 (0.7%); Work on my own or family farm or land: 1 (0.7%)
+
+* Most important life goal [most_important_life_goal] — type: categorical, theme: aspiration, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=147): Being successful in work or my career: 56 (38.1%); Building self-confidence and personal fulfilment: 24 (16.3%); Having financial security or earning a lot: 23 (15.6%); Finding purpose and meaning in life: 15 (10.2%); Having a good family life: 12 (8.2%); Having leisure, freedom, and personal time: 8 (5.4%); Making a meaningful contribution to society: 6 (4.1%); Participating in community or public affairs: 2 (1.4%); Upholding my religious or cultural values: 1 (0.7%)
+
+* Plans after current education [plans_after_education] — type: categorical, theme: aspiration, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=147): Look for a job: 91 (61.9%); Immediately go on to further education or training: 34 (23.1%); Start my own business: 14 (9.5%); Do not know yet: 8 (5.4%)
+
+* Quality considered most useful for a good job [most_useful_quality_for_job] — type: categorical, theme: aspiration, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=147): Communication and interpersonal skills: 52 (35.4%); IT and digital skills: 31 (21.1%); Ambition and drive: 19 (12.9%); Scientific or technical qualifications: 13 (8.8%); A good general education: 10 (6.8%); Teamwork and collaboration skills: 10 (6.8%); Business and economic knowledge: 7 (4.8%); Command of languages (English, etc.): 3 (2.0%); Completion of apprenticeship or vocational training: 2 (1.4%)
+
+* Current institution type [institution_type] — type: categorical, theme: education, cohort coverage: 100.0% [SCREENED FINDING] (sparse cells - interpret cautiously; related model note: Forms the separate D educational/cultural model.)
+    This profile's observed distribution (eligible n=147): Private school or private degree-awarding institute: 106 (72.1%); Government school or state university: 24 (16.3%); International school or foreign university programme: 9 (6.1%); Other: 3 (2.0%); Online or distance learning programme: 3 (2.0%); Government vocational/technical institute (NYSC, NAITA, VTA, etc.): 2 (1.4%)
+
+* Expected highest education [expected_highest_edu_d] — type: ordered, theme: education, cohort coverage: 100.0% [tested, not highlighted] (related model note: Forms the separate D educational/cultural model.)
+    This profile's observed distribution (eligible n=147): median=7.00, IQR=6.00–7.00
+
+* Father's education [father_edu] — type: ordered, theme: education, cohort coverage: 97.4% [tested, not highlighted] (related model note: Forms the separate D educational/cultural model.)
+    This profile's observed distribution (eligible n=143): median=4.00, IQR=3.00–6.00
+
+* Minimum education believed necessary for a decent job [edu_min_for_decent_job] — type: ordered, theme: education, cohort coverage: 96.9% [tested, not highlighted]
+    This profile's observed distribution (eligible n=142): median=5.00, IQR=4.00–5.00
+
+* Mother's education [mother_edu] — type: ordered, theme: education, cohort coverage: 95.8% [tested, not highlighted] (related model note: Forms the separate D educational/cultural model.)
+    This profile's observed distribution (eligible n=140): median=5.00, IQR=3.00–6.00
+
+* Re-entered education after interruption [re_entered_education] — type: categorical, theme: education, cohort coverage: 100.0% [tested, not highlighted] (related model note: Forms the separate D educational/cultural model.)
+    This profile's observed distribution (eligible n=147): No: 128 (87.1%); Yes: 19 (12.9%)
+
+* Reason for re-entering education [reason_re_entered] — type: categorical, theme: education, cohort coverage: 14.1% [tested, not highlighted] (conditional on: re_entered_education; sparse cells - interpret cautiously; small-sample flag; related model note: Follow-up to a variable forming the D educational/cultural model.)
+    This profile's observed distribution (eligible n=19): Needed different qualifications for a different career: 8 (42.1%); Could not find suitable work: 3 (15.8%); Other reason: 3 (15.8%); Did not feel ready for the working world: 3 (15.8%); Was not sure what I wanted to do: 2 (10.5%)
+
+* Already searching for work/business [already_job_searching] — type: categorical, theme: employment, cohort coverage: 100.0% [tested, not highlighted]
+    This profile's observed distribution (eligible n=147): Yes — I am already searching: 89 (60.5%); No — not yet: 58 (39.5%)
+
+* Paid status of work while studying [work_while_study_paid] — type: categorical, theme: employment, cohort coverage: 38.7% [tested, not highlighted] (conditional on: worked_while_studying; sparse cells - interpret cautiously; small-sample flag; related model note: Conditional on a variable forming the D educational/cultural model.)
+    This profile's observed distribution (eligible n=61): Paid: 43 (70.5%); Unpaid: 18 (29.5%)
+
+* Type of work while studying [work_while_study_type] — type: categorical, theme: employment, cohort coverage: 38.7% [tested, not highlighted] (conditional on: worked_while_studying; sparse cells - interpret cautiously; small-sample flag; related model note: Conditional on a variable forming the D educational/cultural model.)
+    This profile's observed distribution (eligible n=61): Internship or apprenticeship in a private company: 41 (67.2%); Internship or apprenticeship in the public sector: 7 (11.5%); Paid work in a company (not internship): 5 (8.2%); Informal or casual work: 4 (6.6%); Paid work in the public sector (not internship): 2 (3.3%); Other: 2 (3.3%)
+
+* Worked while studying [worked_while_studying] — type: categorical, theme: employment, cohort coverage: 98.4% [tested, not highlighted] (related model note: Forms the separate D educational/cultural model.)
+    This profile's observed distribution (eligible n=146): No: 85 (58.2%); Yes: 61 (41.8%)
+
+* Age group [age_group] — type: categorical, theme: equity, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=147): 22 – 25 years: 104 (70.7%); 18 – 21 years: 31 (21.1%); 26 – 29 years: 10 (6.8%); 30 – 35 years: 1 (0.7%); 15 – 17 years: 1 (0.7%)
+
+* Gender [gender] — type: categorical, theme: equity, cohort coverage: 99.0% [tested, not highlighted]
+    This profile's observed distribution (eligible n=146): Male: 81 (55.5%); Female: 65 (44.5%)
+
+* Has children [has_children] — type: categorical, theme: feasibility, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=147): No: 147 (100.0%)
+
+* Hours band while studying [work_while_study_hours] — type: ordered, theme: feasibility, cohort coverage: 38.7% [tested, not highlighted] (conditional on: worked_while_studying; small-sample flag; related model note: Conditional on a variable forming the D educational/cultural model.)
+    This profile's observed distribution (eligible n=61): median=3.00, IQR=2.00–4.00
+
+* Marital status [marital_status] — type: categorical, theme: feasibility, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=147): Never married: 143 (97.3%); Married: 2 (1.4%); Engaged to be married: 2 (1.4%)
+
+* Reason for working while studying [work_while_study_motivation] — type: categorical, theme: financial, cohort coverage: 38.7% [tested, not highlighted] (conditional on: worked_while_studying; sparse cells - interpret cautiously; small-sample flag; related model note: Conditional on a variable forming the D educational/cultural model.)
+    This profile's observed distribution (eligible n=61): To gain work experience and build my CV: 35 (57.4%); To build connections that could lead to future employment: 11 (18.0%); To earn money: 10 (16.4%); Other reason: 5 (8.2%)
+
+* Lives in the same area where they grew up [moved_from_origin] — type: categorical, theme: mobility, cohort coverage: 100.0% [tested, not highlighted]
+    This profile's observed distribution (eligible n=147): Yes — I grew up here and still live here: 105 (71.4%); No — I moved from somewhere else: 42 (28.6%)
+
+* Reason for moving [move_reason] — type: categorical, theme: mobility, cohort coverage: 30.4% [tested, not highlighted] (conditional on: moved_from_origin; sparse cells - interpret cautiously; small-sample flag)
+    This profile's observed distribution (eligible n=42): For education or training: 28 (66.7%); Other reason: 7 (16.7%); To accompany family: 4 (9.5%); For work or employment reasons: 3 (7.1%)
+
+* How current programme was accessed [social_capital_in_edu_access] — type: categorical, theme: service, cohort coverage: 100.0% [SCREENED FINDING] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=147): I researched and applied entirely on my own initiative: 70 (47.6%); Family members advised me or guided the choice: 61 (41.5%); A friend, teacher, or contact recommended it: 11 (7.5%); I was assigned or directed by a government programme: 3 (2.0%); My employer or a workplace contact directed me here: 2 (1.4%)
+
+* Main job-search method while studying [job_search_method_d] — type: categorical, theme: service, cohort coverage: 58.1% [SCREENED FINDING] (conditional on: already_job_searching; sparse cells - interpret cautiously; small-sample flag)
+    This profile's observed distribution (eligible n=89): Online job ads (internet, social media): 45 (50.6%); Attending job fairs: 10 (11.2%); Through education or training institution: 8 (9.0%); Direct application to employers: 6 (6.7%); Other method: 4 (4.5%); Checking at worksites / factory gates: 4 (4.5%); Through friends, relatives, or colleagues: 3 (3.4%); Looking for resources to start own business: 3 (3.4%); Placing or answering job advertisements: 3 (3.4%); Private employment agency: 3 (3.4%)
+
+* Institutional belonging [relatedness_at_institution] — type: ordered, theme: support, cohort coverage: 100.0% [tested, not highlighted] (related model note: Forms the separate D motivation model.)
+    This profile's observed distribution (eligible n=147): median=2.00, IQR=1.00–2.00
+
+* Perceived competence in study field [competence_in_study_field] — type: ordered, theme: support, cohort coverage: 100.0% [tested, not highlighted] (related model note: Forms the separate D motivation model.)
+    This profile's observed distribution (eligible n=147): median=2.00, IQR=1.00–2.00
+
+* Study autonomy [autonomy_in_study] — type: ordered, theme: support, cohort coverage: 100.0% [tested, not highlighted] (related model note: Forms the separate D motivation model.)
+    This profile's observed distribution (eligible n=147): median=1.00, IQR=1.00–2.00
+
+* Study motivation type [study_motivation_type] — type: ordered, theme: support, cohort coverage: 100.0% [tested, not highlighted] (related model note: Forms the separate D motivation model.)
+    This profile's observed distribution (eligible n=147): median=2.00, IQR=1.00–3.00
+
+* Useful employment/training contacts [employment_network_quality] — type: ordered, theme: support, cohort coverage: 100.0% [tested, not highlighted]
+    This profile's observed distribution (eligible n=147): median=2.00, IQR=2.00–3.00
+
+----------------------------------------------------------------------------------------------------
+4. CAUTIONS
+----------------------------------------------------------------------------------------------------
+Model-level caution: Income refusals and household-count inconsistencies were handled pairwise in clustering; profiles indicate relative position, not poverty status.
+Additional model context: 29 of 191 Branch D respondents declined to report household income. 5 records had reported household workers plus unemployed members exceeding household size; their derived shares were treated as unavailable (missing) rather than silently corrected. Missing-aware Gower distance used only the remaining comparable components for these respondents.
+FDR-correction context: Among the findings that passed the effect-size/coverage reporting screen for this model, 4 of 5 remained significant after FDR correction; 1 did not.
+
+Profile-specific caution (verbatim from the frozen evidence summary): Income refusals and household-count inconsistencies were handled pairwise in clustering; profiles indicate relative position, not poverty status. Some reported findings use eligible-subgroup denominators. Some categorical comparisons contain sparse cells.
+
+Conditional-denominator caution: 7 of 34 variables tested against this model are conditional (asked only of an eligible subgroup via survey routing, e.g. only active jobseekers, only those who worked while studying). Their percentages use the eligible-subgroup denominator shown in section 3, not the full profile size. A blank caused by survey routing was never treated as a 'No' answer during profiling.
+
+Cross-dimensional caution: the following variables tested against this model also form part of another retained clustering model; their relationship to this profile is descriptive only and is NOT independent statistical validation of this model:
+  - Current institution type: Forms the separate D educational/cultural model.
+  - Mother's education: Forms the separate D educational/cultural model.
+  - Study autonomy: Forms the separate D motivation model.
+  - Reason for working while studying: Conditional on a variable forming the D educational/cultural model.
+  - Type of work while studying: Conditional on a variable forming the D educational/cultural model.
+  - Expected highest education: Forms the separate D educational/cultural model.
+  - Worked while studying: Forms the separate D educational/cultural model.
+  - Paid status of work while studying: Conditional on a variable forming the D educational/cultural model.
+  - Institutional belonging: Forms the separate D motivation model.
+  - Study motivation type: Forms the separate D motivation model.
+  - District: Many district categories can create sparse tables.
+  - Reason for re-entering education: Follow-up to a variable forming the D educational/cultural model.
+  - Perceived competence in study field: Forms the separate D motivation model.
+  - Hours band while studying: Conditional on a variable forming the D educational/cultural model.
+  - Father's education: Forms the separate D educational/cultural model.
+  - Re-entered education after interruption: Forms the separate D educational/cultural model.
+
+Sparse-cell caution: 18 of 34 variables tested against this model contain sparse expected-cell counts (categorical tables with rare category combinations); percentages built from sparse tables are listed in section 3 and should be read with extra caution, especially for high-cardinality variables such as district, sector or stated obstacle.
+
+General measurement cautions (apply to every profile in this knowledge base):
+  - A reported percentage is a within-profile percentage in this 362-respondent strict
+    cohort, not a population estimate for all Sri Lankan youth.
+  - Effect sizes rank descriptive differences; they do not prove that cluster membership
+    caused the characteristic.
+  - Consensus clustering stability shows reproducibility under the specified procedure;
+    it does not prove a natural, causal, or permanent youth type.
+  - Profile names are descriptive and must not stigmatise respondents or be used to deny
+    programme access.
+
+----------------------------------------------------------------------------------------------------
+5. PROHIBITED_INFERENCES
+----------------------------------------------------------------------------------------------------
+Statements that must NOT be assumed true for an individual merely because they belong
+to this profile. These are hard constraints for any downstream system (including a RAG
+recommendation layer) consuming this document.
+
+Universal (applies to all 17 retained profiles):
+  - Do not assume that a specific individual assigned to this profile personally holds any characteristic reported as a group percentage. A group finding such as 'X% of this profile reported Y' describes the profile as a whole; it is not a fact about any one person in it — a sizeable minority (and in close splits, close to half) of the profile did NOT report Y.
+  - Do not treat profile membership as a diagnosis, permanent trait, or whole-person label. Profiles are exploratory response-pattern groups within ONE retained dimension only. The same respondent can simultaneously belong to different profiles across different retained dimensions (for example a Branch D respondent has independent motivation, economic and educational-trajectory profile memberships) — no single profile describes the whole person.
+  - Do not use profile membership, alone, as an eligibility gate, a reason to deny access to a programme, or a reason to prioritise/deprioritise a youth for any service.
+  - Do not treat effect sizes or association strength as evidence of causation. A reported association (e.g. 'Profile A more often reported X') describes a measured difference in this sample; it does not establish that being in Profile A caused X, or that X caused profile membership.
+  - Do not treat a finding that did not pass this model's effect-size/coverage reporting screen (see DIRECT_GROUP_DISTRIBUTIONS) as an approved or reportable difference. Untagged distributions are raw descriptive data only, not vetted findings.
+  - Do not treat a finding as statistically confirmed population evidence merely because it appears here. Most models in this knowledge base have few or zero findings that remain significant after Benjamini-Hochberg FDR correction (see this profile's CAUTIONS section and fdr_note) — effect sizes are the primary ranking evidence, and p-values (raw or adjusted) are supporting evidence only.
+  - Do not generalise any percentage in this document to Sri Lankan youth generally, to NYSC's wider applicant pool, or to any group outside the 362-respondent strict analytical cohort (D=191, E=34, F=81, G=56) from which these profiles were derived.
+  - Do not infer, invent, or assume any need, barrier, preference or characteristic for this profile that is not explicitly present in the source data below. If a data point is absent, it must be reported as absent/not tested, never filled in by assumption.
+  - Do not use this document, on its own, to select or recommend a specific NYSC course or programme. Course/programme recommendation requires a separate, transparent, expert-reviewed matching stage that combines this profile information with the individual's own stated preferences, eligibility and the structured NYSC course catalogue.
+
+Specific to the 'Economic resources and household pressure' model:
+  - Do not describe this profile using the word 'poverty' or treat it as a poverty classification — it indicates only a RELATIVE household economic position within this specific 191-respondent Branch D cohort, not an absolute income or poverty-line measurement.
+  - Do not assume the 29 respondents who declined to report household income are evenly or randomly distributed across profiles, or backfill their income with an assumed value.
+
+Worked counter-example for this specific profile (do NOT do this):
+  WRONG: "This youth is in profile 'Economic profile 2: relatively higher household economic position', so they must have this characteristic: Ideal sector: more often reported ‘Information technology and communications’ (93/147, 63.3% vs 40.9% in other profile(s)) [sparse table]"
+  RIGHT: "This youth is in profile 'Economic profile 2: relatively higher household economic position' (n=147). Within this profile, the group-level pattern was: Ideal sector: more often reported ‘Information technology and communications’ (93/147, 63.3% vs 40.9% in other profile(s)) [sparse table]. This is evidence about the group, not a confirmed fact about this individual, who must be asked directly."
+
+====================================================================================================
+END OF DOCUMENT
+====================================================================================================
+
+------ PROFILE DOCUMENT: D_educational_cultural_p3 (Educational trajectory and cultural capital) ------
+====================================================================================================
+NYSC YOUTH PROFILE KNOWLEDGE DOCUMENT
+====================================================================================================
+
+profile_key: D_educational_cultural_p3
+branch: D
+retained_model_id: D_educational_cultural
+retained_dimension: Educational trajectory and cultural capital
+profile_id: 3
+profile_label: Private-institution students without work exposure
+profile_size_n: 57
+
+SOURCE OF RECORD: This document is compiled only from the frozen, audited outputs of
+the NYSC final clustering and post-cluster profiling stage (freeze date 26 August 2026):
+  - NYSC_all_branches_clustering_final_report.md (Part I: clustering method, validation,
+    decision register)
+  - NYSC_Final_Clustering_and_Post_Cluster_Profiling_Report.docx / 
+    final_cluster_profiling_report.md (Part II: post-cluster profiling)
+  - outputs/final_cluster_programme_relevant_profiles.csv (17-row profile evidence summary)
+  - outputs/final_cluster_profile_comparison_summary.csv (270-row variable-level statistics)
+No fact in this document was invented, estimated, or extrapolated beyond these sources.
+
+----------------------------------------------------------------------------------------------------
+1. PROFILE_DEFINITION
+----------------------------------------------------------------------------------------------------
+Facts that define the cluster itself. These variables and diagnostics produced the
+cluster; they are NOT re-tested as post-cluster findings (doing so would be circular).
+
+Branch: D — strict final-path analytical cohort n=191 (of 362 total strict-cohort respondents: D=191, E=34, F=81, G=56).
+Retained dimension: Educational trajectory and cultural capital
+Number of profiles in this retained model (k): 4
+This profile's id and label: Profile 3 — "Private-institution students without work exposure"
+This profile's exact frozen size: n=57 (cross-verified against the Part III freeze-verification table in the source report)
+
+Exact cluster-forming variables (the only inputs used to build this clustering; all
+other survey variables were deliberately excluded from distance calculation and are
+only used descriptively in sections 2-3 below):
+  - expected_highest_edu_d
+  - father_edu
+  - institution_type
+  - mother_edu
+  - re_entered_education
+  - worked_while_studying
+
+Theoretical basis and purpose: Inherited educational background (Bourdieu cultural capital, proxied by parental education) plus current educational trajectory (institution type, work-while-studying, education re-entry).
+
+Clustering method: Gower distance over original mixed-type responses (no invented 0-100
+scores), consensus of repeated K-medoids and spectral clustering across 100 matched
+80% subsamples (200 base partitions), final clusters from K-medoids on (1 - co-association).
+
+Validation diagnostics for this retained model: Gower silhouette 0.427; bootstrap/subsample ARI 0.963; source-method ARIs 0.776 and 0.934; 8 of 8 mandatory validation checks passed.
+Final decision status: Retained.
+Model-level caution (from the frozen decision register): Parental education is a proxy only; work-experience and re-entry follow-ups are structurally linked to variables defining these profiles.
+
+Additional definitional context: Parental education is only a proxy for family cultural capital; it is not a measure of intelligence or merit. Sensitivity analysis showed that work-while-studying experience and institution type are important drivers of the partition and must remain explicit in interpretation, not collapsed into a single 'cultural capital' score.
+
+Interpretation of this specific profile (verbatim from the frozen report's per-model
+profile table):
+  Private-institution attendance and no work-while-studying experience.
+
+Reminder: this profile exists only WITHIN this one retained dimension. A respondent's
+membership here says nothing about their membership in any other branch's or dimension's
+profile system (see PROHIBITED_INFERENCES).
+
+----------------------------------------------------------------------------------------------------
+2. SUPPORTED_PROFILE_FINDINGS
+----------------------------------------------------------------------------------------------------
+Post-cluster comparisons that passed this model's pre-registered effect-size and
+coverage reporting screen (i.e. explicitly retained/approved profiling findings, as
+categorised in the frozen evidence summary). These are the findings that may inform a
+later programme-matching stage. Directional statements are WITHIN-PROFILE percentages
+compared against the other profile(s) in the same model.
+
+FDR-correction context for this model: Among the findings that passed the effect-size/coverage reporting screen for this model, 7 of 7 remained significant after FDR correction.
+
+[Strongest additional characteristics (top approved differentiators)]
+  - Already searching for work/business: less often reported ‘No — not yet’ (20/57, 35.1% vs 44.8% in other profile(s))
+  - Primary personal income source: more often reported ‘My parents or family’ (56/57, 98.2% vs 69.4% in other profile(s)) [sparse table; cross-dimensional/related variable]
+  - Main education funding source: more often reported ‘Paid for by my family’ (54/57, 94.7% vs 63.4% in other profile(s)) [sparse table; cross-dimensional/related variable]
+  - Household income band: less often reported ‘LKR 30,000 – 60,000’ (0/45, 0.0% vs 13.7% in other profile(s)) [cross-dimensional/related variable]
+  - Primary-earner status: more often reported ‘No — someone else is the main provider’ (56/57, 98.2% vs 85.1% in other profile(s)) [sparse table; cross-dimensional/related variable]
+
+[Barriers, support and financial context]
+  - Primary personal income source: more often reported ‘My parents or family’ (56/57, 98.2% vs 69.4% in other profile(s)) [sparse table; cross-dimensional/related variable]
+  - Main education funding source: more often reported ‘Paid for by my family’ (54/57, 94.7% vs 63.4% in other profile(s)) [sparse table; cross-dimensional/related variable]
+  - Household income band: less often reported ‘LKR 30,000 – 60,000’ (0/45, 0.0% vs 13.7% in other profile(s)) [cross-dimensional/related variable]
+
+[Aspirations and preferences]
+  - No clear additional difference met the reporting screen for this category.
+
+[Education, training and employment characteristics]
+  - Already searching for work/business: less often reported ‘No — not yet’ (20/57, 35.1% vs 44.8% in other profile(s))
+
+[Programme-relevant evidence]
+  - Already searching for work/business: less often reported ‘No — not yet’ (20/57, 35.1% vs 44.8% in other profile(s))
+  - Primary personal income source: more often reported ‘My parents or family’ (56/57, 98.2% vs 69.4% in other profile(s)) [sparse table; cross-dimensional/related variable]
+  - Main education funding source: more often reported ‘Paid for by my family’ (54/57, 94.7% vs 63.4% in other profile(s)) [sparse table; cross-dimensional/related variable]
+  - Household income band: less often reported ‘LKR 30,000 – 60,000’ (0/45, 0.0% vs 13.7% in other profile(s)) [cross-dimensional/related variable]
+
+Statistical support detail for the variables named above (effect size is the primary
+ranking evidence; p-values, raw and BH-adjusted, are supporting evidence only):
+
+  - Already searching for work/business (already_job_searching): coverage 100.0% of the model cohort; effect size bias-corrected Cramér's V = 0.263; raw p = 0.001046; BH-adjusted p = 0.004112 (significant at FDR<0.05); programme relevance rated 'high'.
+  - Primary personal income source (primary_income_source): coverage 100.0% of the model cohort; effect size bias-corrected Cramér's V = 0.365; raw p = 3.894e-12; BH-adjusted p = 1.285e-10 (significant at FDR<0.05); programme relevance rated 'high'. [sparse cells, cross-dimensional: Forms the separate D economic model.]
+  - Main education funding source (edu_funding_source): coverage 100.0% of the model cohort; effect size bias-corrected Cramér's V = 0.322; raw p = 1.109e-09; BH-adjusted p = 1.831e-08 (significant at FDR<0.05); programme relevance rated 'high'. [sparse cells, cross-dimensional: Forms the separate D economic model.]
+  - Household income band (household_income): coverage 84.8% of the model cohort; effect size epsilon-squared = 0.179; raw p = 7.53e-07; BH-adjusted p = 8.283e-06 (significant at FDR<0.05); programme relevance rated 'high'. [cross-dimensional: Forms the separate D economic model.]
+  - Primary-earner status (primary_earner_status): coverage 100.0% of the model cohort; effect size bias-corrected Cramér's V = 0.265; raw p = 1.27e-05; BH-adjusted p = 0.0001048 (significant at FDR<0.05); programme relevance rated 'high'. [sparse cells, cross-dimensional: Forms the separate D economic model.]
+  - Household unemployed jobseekers (household_unemployed): coverage 100.0% of the model cohort; effect size epsilon-squared = 0.084; raw p = 0.0003128; BH-adjusted p = 0.00172 (significant at FDR<0.05); programme relevance rated 'medium'. [cross-dimensional: Forms the separate D economic model.]
+  - Household workers (household_workers): coverage 100.0% of the model cohort; effect size epsilon-squared = 0.042; raw p = 0.0129; BH-adjusted p = 0.03871 (significant at FDR<0.05); programme relevance rated 'medium'. [cross-dimensional: Forms the separate D economic model.]
+
+----------------------------------------------------------------------------------------------------
+3. DIRECT_GROUP_DISTRIBUTIONS
+----------------------------------------------------------------------------------------------------
+The complete observed distribution of THIS profile's survey answers for every
+non-cluster-forming variable tested against this model (not only the ones highlighted
+as approved findings above). Included so no descriptive detail is summarised away.
+Entries marked [SCREENED FINDING] passed the reporting screen in section 2 above;
+entries marked [tested, not highlighted] did not meet that screen and must be read as
+raw descriptive data only, not as a vetted group difference.
+
+* Area type [area_type] — type: categorical, theme: access, cohort coverage: 100.0% [tested, not highlighted]
+    This profile's observed distribution (eligible n=57): Metropolitan suburb: 23 (40.4%); Small town: 19 (33.3%); Large city: 9 (15.8%); Rural area: 6 (10.5%)
+
+* District [district] — type: categorical, theme: access, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously; related model note: Many district categories can create sparse tables.)
+    This profile's observed distribution (eligible n=57): Colombo: 15 (26.3%); Matara: 8 (14.0%); Gampaha: 6 (10.5%); Kalutara: 5 (8.8%); Kandy: 4 (7.0%); Ampara: 3 (5.3%); Jaffna: 3 (5.3%); Galle: 2 (3.5%); Kurunegala: 2 (3.5%); Hambantota: 1 (1.8%); Mullaitivu: 1 (1.8%); Badulla: 1 (1.8%); Batticaloa: 1 (1.8%); Kegalle: 1 (1.8%); Ratnapura: 1 (1.8%); Polonnaruwa: 1 (1.8%); Trincomalee: 1 (1.8%); Monaragala: 1 (1.8%)
+
+* Current or preferred field of study [study_field_preference] — type: categorical, theme: aspiration, cohort coverage: 97.9% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=56): ICT or computing: 38 (67.9%); Commerce, business, or management: 7 (12.5%); Other field: 3 (5.4%); Science or mathematics: 3 (5.4%); Industrial or technical studies: 3 (5.4%); Engineering: 1 (1.8%); Education or teaching: 1 (1.8%)
+
+* Ideal sector [ideal_sector] — type: categorical, theme: aspiration, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=57): Information technology and communications: 41 (71.9%); Not sure: 6 (10.5%); Hotels, restaurants, and hospitality: 2 (3.5%); Finance, banking, and insurance: 2 (3.5%); Creative, media, and arts: 2 (3.5%); Construction and building: 1 (1.8%); Wholesale, retail, or repair: 1 (1.8%); Manufacturing or production: 1 (1.8%); Education and teaching: 1 (1.8%)
+
+* Ideal work type [ideal_work_type] — type: categorical, theme: aspiration, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=57): Work for a multinational or large private company: 26 (45.6%); Start my own business: 20 (35.1%); Not sure yet: 7 (12.3%); Work for the government or public sector: 2 (3.5%); Work for a local private Sri Lankan company: 1 (1.8%); Work in a family business (non-farming): 1 (1.8%)
+
+* Most important life goal [most_important_life_goal] — type: categorical, theme: aspiration, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=57): Being successful in work or my career: 21 (36.8%); Finding purpose and meaning in life: 9 (15.8%); Having financial security or earning a lot: 8 (14.0%); Having a good family life: 6 (10.5%); Building self-confidence and personal fulfilment: 6 (10.5%); Having leisure, freedom, and personal time: 4 (7.0%); Participating in community or public affairs: 2 (3.5%); Upholding my religious or cultural values: 1 (1.8%)
+
+* Plans after current education [plans_after_education] — type: categorical, theme: aspiration, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=57): Look for a job: 38 (66.7%); Immediately go on to further education or training: 11 (19.3%); Start my own business: 6 (10.5%); Do not know yet: 2 (3.5%)
+
+* Quality considered most useful for a good job [most_useful_quality_for_job] — type: categorical, theme: aspiration, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=57): Communication and interpersonal skills: 18 (31.6%); IT and digital skills: 10 (17.5%); Teamwork and collaboration skills: 7 (12.3%); Ambition and drive: 6 (10.5%); A good general education: 6 (10.5%); Scientific or technical qualifications: 6 (10.5%); Business and economic knowledge: 2 (3.5%); Command of languages (English, etc.): 1 (1.8%); Completion of apprenticeship or vocational training: 1 (1.8%)
+
+* Minimum education believed necessary for a decent job [edu_min_for_decent_job] — type: ordered, theme: education, cohort coverage: 96.9% [tested, not highlighted]
+    This profile's observed distribution (eligible n=56): median=5.00, IQR=4.00–5.00
+
+* Reason for re-entering education [reason_re_entered] — type: categorical, theme: education, cohort coverage: 14.1% [tested, not highlighted] (conditional on: re_entered_education; sparse cells - interpret cautiously; small-sample flag; related model note: Direct follow-up to a cluster-forming gateway.)
+    This profile's observed distribution (eligible n=5): Needed different qualifications for a different career: 2 (40.0%); Did not feel ready for the working world: 2 (40.0%); Other reason: 1 (20.0%)
+
+* Already searching for work/business [already_job_searching] — type: categorical, theme: employment, cohort coverage: 100.0% [SCREENED FINDING]
+    This profile's observed distribution (eligible n=57): Yes — I am already searching: 37 (64.9%); No — not yet: 20 (35.1%)
+
+* Type of work while studying [work_while_study_type] — type: categorical, theme: employment, cohort coverage: 38.7% [tested, not highlighted] (conditional on: worked_while_studying; sparse cells - interpret cautiously; small-sample flag; related model note: Direct follow-up to a cluster-forming gateway.)
+    This profile's observed distribution (eligible n=0): no eligible responses
+
+* Age group [age_group] — type: categorical, theme: equity, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=57): 22 – 25 years: 43 (75.4%); 18 – 21 years: 12 (21.1%); 26 – 29 years: 2 (3.5%)
+
+* Gender [gender] — type: categorical, theme: equity, cohort coverage: 99.0% [tested, not highlighted]
+    This profile's observed distribution (eligible n=57): Male: 30 (52.6%); Female: 27 (47.4%)
+
+* Has children [has_children] — type: categorical, theme: feasibility, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=57): No: 57 (100.0%)
+
+* Marital status [marital_status] — type: categorical, theme: feasibility, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=57): Never married: 55 (96.5%); Married: 1 (1.8%); Engaged to be married: 1 (1.8%)
+
+* Household income band [household_income] — type: ordered, theme: financial, cohort coverage: 84.8% [SCREENED FINDING] (related model note: Forms the separate D economic model.)
+    This profile's observed distribution (eligible n=45): median=4.00, IQR=3.00–5.00
+
+* Household size [household_size] — type: numeric, theme: financial, cohort coverage: 100.0% [tested, not highlighted] (related model note: Forms the separate D economic model.)
+    This profile's observed distribution (eligible n=57): median=5.00, IQR=4.00–5.00
+
+* Household unemployed jobseekers [household_unemployed] — type: numeric, theme: financial, cohort coverage: 100.0% [SCREENED FINDING] (related model note: Forms the separate D economic model.)
+    This profile's observed distribution (eligible n=57): median=1.00, IQR=1.00–2.00
+
+* Household workers [household_workers] — type: numeric, theme: financial, cohort coverage: 100.0% [SCREENED FINDING] (related model note: Forms the separate D economic model.)
+    This profile's observed distribution (eligible n=57): median=2.00, IQR=1.00–2.00
+
+* Main education funding source [edu_funding_source] — type: categorical, theme: financial, cohort coverage: 100.0% [SCREENED FINDING] (sparse cells - interpret cautiously; related model note: Forms the separate D economic model.)
+    This profile's observed distribution (eligible n=57): Paid for by my family: 54 (94.7%); Scholarship or grant: 2 (3.5%); Government-funded or free of charge: 1 (1.8%)
+
+* Primary personal income source [primary_income_source] — type: categorical, theme: financial, cohort coverage: 100.0% [SCREENED FINDING] (sparse cells - interpret cautiously; related model note: Forms the separate D economic model.)
+    This profile's observed distribution (eligible n=57): My parents or family: 56 (98.2%); My partner or spouse: 1 (1.8%)
+
+* Primary-earner status [primary_earner_status] — type: categorical, theme: financial, cohort coverage: 100.0% [SCREENED FINDING] (sparse cells - interpret cautiously; related model note: Forms the separate D economic model.)
+    This profile's observed distribution (eligible n=57): No — someone else is the main provider: 56 (98.2%); Yes — I provide the main household income: 1 (1.8%)
+
+* Reason for working while studying [work_while_study_motivation] — type: categorical, theme: financial, cohort coverage: 38.7% [tested, not highlighted] (conditional on: worked_while_studying; sparse cells - interpret cautiously; small-sample flag; related model note: Direct follow-up to a cluster-forming gateway.)
+    This profile's observed distribution (eligible n=0): no eligible responses
+
+* Lives in the same area where they grew up [moved_from_origin] — type: categorical, theme: mobility, cohort coverage: 100.0% [tested, not highlighted]
+    This profile's observed distribution (eligible n=57): Yes — I grew up here and still live here: 39 (68.4%); No — I moved from somewhere else: 18 (31.6%)
+
+* Reason for moving [move_reason] — type: categorical, theme: mobility, cohort coverage: 30.4% [tested, not highlighted] (conditional on: moved_from_origin; sparse cells - interpret cautiously; small-sample flag)
+    This profile's observed distribution (eligible n=18): For education or training: 13 (72.2%); For work or employment reasons: 3 (16.7%); To accompany family: 2 (11.1%)
+
+* How current programme was accessed [social_capital_in_edu_access] — type: categorical, theme: service, cohort coverage: 100.0% [tested, not highlighted] (sparse cells - interpret cautiously)
+    This profile's observed distribution (eligible n=57): Family members advised me or guided the choice: 29 (50.9%); I researched and applied entirely on my own initiative: 21 (36.8%); A friend, teacher, or contact recommended it: 6 (10.5%); My employer or a workplace contact directed me here: 1 (1.8%)
+
+* Main job-search method while studying [job_search_method_d] — type: categorical, theme: service, cohort coverage: 58.1% [tested, not highlighted] (conditional on: already_job_searching; sparse cells - interpret cautiously; small-sample flag)
+    This profile's observed distribution (eligible n=37): Online job ads (internet, social media): 21 (56.8%); Attending job fairs: 5 (13.5%); Through friends, relatives, or colleagues: 2 (5.4%); Direct application to employers: 2 (5.4%); Through education or training institution: 2 (5.4%); Looking for resources to start own business: 1 (2.7%); Other method: 1 (2.7%); Checking at worksites / factory gates: 1 (2.7%); Placing or answering job advertisements: 1 (2.7%); Private employment agency: 1 (2.7%)
+
+* Institutional belonging [relatedness_at_institution] — type: ordered, theme: support, cohort coverage: 100.0% [tested, not highlighted] (related model note: Forms the separate D motivation model.)
+    This profile's observed distribution (eligible n=57): median=2.00, IQR=1.00–2.00
+
+* Perceived competence in study field [competence_in_study_field] — type: ordered, theme: support, cohort coverage: 100.0% [tested, not highlighted] (related model note: Forms the separate D motivation model.)
+    This profile's observed distribution (eligible n=57): median=2.00, IQR=1.00–2.00
+
+* Study autonomy [autonomy_in_study] — type: ordered, theme: support, cohort coverage: 100.0% [tested, not highlighted] (related model note: Forms the separate D motivation model.)
+    This profile's observed distribution (eligible n=57): median=2.00, IQR=1.00–2.00
+
+* Study motivation type [study_motivation_type] — type: ordered, theme: support, cohort coverage: 100.0% [tested, not highlighted] (related model note: Forms the separate D motivation model.)
+    This profile's observed distribution (eligible n=57): median=2.00, IQR=1.00–4.00
+
+* Useful employment/training contacts [employment_network_quality] — type: ordered, theme: support, cohort coverage: 100.0% [tested, not highlighted]
+    This profile's observed distribution (eligible n=57): median=2.00, IQR=2.00–3.00
+
+----------------------------------------------------------------------------------------------------
+4. CAUTIONS
+----------------------------------------------------------------------------------------------------
+Model-level caution: Parental education is a proxy only; work-experience and re-entry follow-ups are structurally linked to variables defining these profiles.
+Additional model context: Parental education is only a proxy for family cultural capital; it is not a measure of intelligence or merit. Sensitivity analysis showed that work-while-studying experience and institution type are important drivers of the partition and must remain explicit in interpretation, not collapsed into a single 'cultural capital' score.
+FDR-correction context: Among the findings that passed the effect-size/coverage reporting screen for this model, 7 of 7 remained significant after FDR correction.
+
+Profile-specific caution (verbatim from the frozen evidence summary): Parental education is a proxy only; work-experience and re-entry follow-ups are structurally linked to variables defining these profiles. Some categorical comparisons contain sparse cells.
+
+Conditional-denominator caution: 5 of 33 variables tested against this model are conditional (asked only of an eligible subgroup via survey routing, e.g. only active jobseekers, only those who worked while studying). Their percentages use the eligible-subgroup denominator shown in section 3, not the full profile size. A blank caused by survey routing was never treated as a 'No' answer during profiling.
+
+Cross-dimensional caution: the following variables tested against this model also form part of another retained clustering model; their relationship to this profile is descriptive only and is NOT independent statistical validation of this model:
+  - Primary personal income source: Forms the separate D economic model.
+  - Main education funding source: Forms the separate D economic model.
+  - Household income band: Forms the separate D economic model.
+  - Primary-earner status: Forms the separate D economic model.
+  - District: Many district categories can create sparse tables.
+  - Household unemployed jobseekers: Forms the separate D economic model.
+  - Household workers: Forms the separate D economic model.
+  - Perceived competence in study field: Forms the separate D motivation model.
+  - Household size: Forms the separate D economic model.
+  - Study motivation type: Forms the separate D motivation model.
+  - Study autonomy: Forms the separate D motivation model.
+  - Institutional belonging: Forms the separate D motivation model.
+  - Reason for re-entering education: Direct follow-up to a cluster-forming gateway.
+  - Type of work while studying: Direct follow-up to a cluster-forming gateway.
+  - Reason for working while studying: Direct follow-up to a cluster-forming gateway.
+
+Sparse-cell caution: 19 of 33 variables tested against this model contain sparse expected-cell counts (categorical tables with rare category combinations); percentages built from sparse tables are listed in section 3 and should be read with extra caution, especially for high-cardinality variables such as district, sector or stated obstacle.
+
+General measurement cautions (apply to every profile in this knowledge base):
+  - A reported percentage is a within-profile percentage in this 362-respondent strict
+    cohort, not a population estimate for all Sri Lankan youth.
+  - Effect sizes rank descriptive differences; they do not prove that cluster membership
+    caused the characteristic.
+  - Consensus clustering stability shows reproducibility under the specified procedure;
+    it does not prove a natural, causal, or permanent youth type.
+  - Profile names are descriptive and must not stigmatise respondents or be used to deny
+    programme access.
+
+----------------------------------------------------------------------------------------------------
+5. PROHIBITED_INFERENCES
+----------------------------------------------------------------------------------------------------
+Statements that must NOT be assumed true for an individual merely because they belong
+to this profile. These are hard constraints for any downstream system (including a RAG
+recommendation layer) consuming this document.
+
+Universal (applies to all 17 retained profiles):
+  - Do not assume that a specific individual assigned to this profile personally holds any characteristic reported as a group percentage. A group finding such as 'X% of this profile reported Y' describes the profile as a whole; it is not a fact about any one person in it — a sizeable minority (and in close splits, close to half) of the profile did NOT report Y.
+  - Do not treat profile membership as a diagnosis, permanent trait, or whole-person label. Profiles are exploratory response-pattern groups within ONE retained dimension only. The same respondent can simultaneously belong to different profiles across different retained dimensions (for example a Branch D respondent has independent motivation, economic and educational-trajectory profile memberships) — no single profile describes the whole person.
+  - Do not use profile membership, alone, as an eligibility gate, a reason to deny access to a programme, or a reason to prioritise/deprioritise a youth for any service.
+  - Do not treat effect sizes or association strength as evidence of causation. A reported association (e.g. 'Profile A more often reported X') describes a measured difference in this sample; it does not establish that being in Profile A caused X, or that X caused profile membership.
+  - Do not treat a finding that did not pass this model's effect-size/coverage reporting screen (see DIRECT_GROUP_DISTRIBUTIONS) as an approved or reportable difference. Untagged distributions are raw descriptive data only, not vetted findings.
+  - Do not treat a finding as statistically confirmed population evidence merely because it appears here. Most models in this knowledge base have few or zero findings that remain significant after Benjamini-Hochberg FDR correction (see this profile's CAUTIONS section and fdr_note) — effect sizes are the primary ranking evidence, and p-values (raw or adjusted) are supporting evidence only.
+  - Do not generalise any percentage in this document to Sri Lankan youth generally, to NYSC's wider applicant pool, or to any group outside the 362-respondent strict analytical cohort (D=191, E=34, F=81, G=56) from which these profiles were derived.
+  - Do not infer, invent, or assume any need, barrier, preference or characteristic for this profile that is not explicitly present in the source data below. If a data point is absent, it must be reported as absent/not tested, never filled in by assumption.
+  - Do not use this document, on its own, to select or recommend a specific NYSC course or programme. Course/programme recommendation requires a separate, transparent, expert-reviewed matching stage that combines this profile information with the individual's own stated preferences, eligibility and the structured NYSC course catalogue.
+
+Specific to the 'Educational trajectory and cultural capital' model:
+  - Do not treat parental education (or this profile's implied 'cultural capital' framing) as a measure of a respondent's intelligence, merit, or worth.
+  - Do not assume this profile's institution-type or work-experience pattern reflects individual choice alone — cost, geography and family circumstance are plausible unmeasured contributors not tested here.
+
+Worked counter-example for this specific profile (do NOT do this):
+  WRONG: "This youth is in profile 'Private-institution students without work exposure', so they must have this characteristic: Already searching for work/business: less often reported ‘No — not yet’ (20/57, 35.1% vs 44.8% in other profile(s))"
+  RIGHT: "This youth is in profile 'Private-institution students without work exposure' (n=57). Within this profile, the group-level pattern was: Already searching for work/business: less often reported ‘No — not yet’ (20/57, 35.1% vs 44.8% in other profile(s)). This is evidence about the group, not a confirmed fact about this individual, who must be asked directly."
+
+====================================================================================================
+END OF DOCUMENT
+====================================================================================================
+
+SECTION 3: RETRIEVED FULL NYSC COURSE DOCUMENTS
+(Source: outputs/rag_course_knowledge/validated_documents/ — retrieved via BM25 lexical
+ search over section-aware child chunks, deduplicated to parent course. RETRIEVAL RANK/
+ SCORE IS NOT SUITABILITY — some retrieved courses may be lexically matched but not
+ actually relevant; judge each on its full text below, not on its rank.)
+
+------ RANK 1 (BM25 score 5.4012): COURSE-031 ------
+COURSE DOCUMENT ID: COURSE-031
+
+COURSE NAME: National Diploma In Television Program Production
+
+VALIDATION STATUS: VALIDATED
+
+SOURCE TYPE: COURSE_DETAIL_SCREENSHOT
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.36.17.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.38.08.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-031
+
+UNCERTAINTY MARKERS PRESENT: NO
+
+PROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.
+
+SOURCE CONFLICT NOTE: NONE
+
+COMPLETE EXTRACTED COURSE TEXT
+
+National Diploma In Television Program Production
+LANGUAGE
+MAX STUDENTS
+sinhala
+20
+APPLY NOW
+Course Overview
+The National Youth Service Council has initiated several course programs to enable the youth to
+develop their skills while also providing an opportunity to achieve their future job aspirations.
+National Diploma in T V Programme & Production Technology course will give you theoretical
+knowledge as well as job oriented practical that is necessary for employment and higher education.
+This is a full time course which will be held on weekdays.
+It is our objective to show the correct path that will direct youth to their desired occupations while at
+the same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and
+gentle attitudes within a disciplined environment.
+By completing this course , You can achieve competency Level 5 under the National Vocational
+Qualifications Competency Standards.
+
+
+------ RANK 2 (BM25 score 5.1856): COURSE-006 ------
+COURSE DOCUMENT ID: COURSE-006
+
+COURSE NAME: National Diploma In Information & Communication Technology
+
+VALIDATION STATUS: VALIDATED
+
+SOURCE TYPE: COURSE_DETAIL_SCREENSHOT
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.21.55.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.25.19.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-006
+
+UNCERTAINTY MARKERS PRESENT: NO
+
+PROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.
+
+SOURCE CONFLICT NOTE: NONE
+
+COMPLETE EXTRACTED COURSE TEXT
+
+National Diploma In Information & Communication
+Technology
+LANGUAGE
+MAX STUDENTS
+English
+20
+APPLY NOW
+Course Overview
+1. System Analysis & Design - Semester 1
+2. Software Programming - Semester 1
+3. Database System - Semester 1
+4. Computer Graphics Design -
+Semester 1
+5. Manage Workplace Information -
+6. Manage Workplace Communication -
+7. Documents & Resource Level 5 -
+8. Database Systems II - Semester 2
+9. Software Testing - Semester 2
+10. Web Programming - Semester 2
+11. Local Area Network - Semester 2
+12. Planing & Scheduling Work at
+Workplace - Semester 2
+The National Youth Service Council has initiated several Course programs to enable the youth to
+develop their skills while also providing an opportunity to achieve their future job aspirations.
+Information & Communication Multimedia Technology will give you theoretical knowledge as well as
+job oriented practical that is necessary for employment and higher education. This is a full time
+course which will be held on weekdays.
+It is our objective to show the correct path that will direct youth to their desired occupations while at
+the same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and
+gentle attitudes within a disciplined environment.
+By completing this course , can achieve Competency Level 5 under the National Vocational
+Qualifications Competency Standards through following a variety of full time study programs covering
+a variety of occupations.
+
+
+------ RANK 3 (BM25 score 5.1479): COURSE-026 ------
+COURSE DOCUMENT ID: COURSE-026
+
+COURSE NAME: Field Assistant (agricultural)
+
+VALIDATION STATUS: VALIDATED
+
+SOURCE TYPE: COURSE_DETAIL_SCREENSHOT
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.33.43.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.38.08.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-026
+
+UNCERTAINTY MARKERS PRESENT: NO
+
+PROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.
+
+SOURCE CONFLICT NOTE: NONE
+
+COMPLETE EXTRACTED COURSE TEXT
+
+Field Assistant (agricultural)
+LANGUAGE
+MAX STUDENTS
+Sinhala
+20
+APPLY NOW
+Course Overview
+The National Youth Service Council has initiated several course programs to enable the youth to
+develop their skills while also providing an opportunity to achieve their future job aspirations. Field
+Assistant (agricultural) course will give you theoretical knowledge as well as job oriented practical
+that is necessary for employment and higher education.
+This is a full time course which will be held on weekdays.
+It is our objective to show the correct path that will direct youth to their desired occupations while at
+the same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and
+gentle attitudes within a disciplined environment.
+By completing this course, You can achieve competency Level 4 under the National Vocational
+Qualifications Competency Standards.
+
+
+------ RANK 4 (BM25 score 5.1479): COURSE-036 ------
+COURSE DOCUMENT ID: COURSE-036
+
+COURSE NAME: Survey Field Assistant
+
+VALIDATION STATUS: VALIDATED
+
+SOURCE TYPE: COURSE_DETAIL_SCREENSHOT
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.43.44.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.48.17.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-036
+
+UNCERTAINTY MARKERS PRESENT: NO
+
+PROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.
+
+SOURCE CONFLICT NOTE: NONE
+
+COMPLETE EXTRACTED COURSE TEXT
+
+Survey Field Assistant
+LANGUAGE
+MAX STUDENTS
+English
+20
+APPLY NOW
+Course Overview
+The National Youth Service Council has initiated several course programs to enable the youth to
+develop their skills while also providing an opportunity to achieve their future job aspirations. Survey
+Field Assistant course will give you theoretical knowledge as well as job oriented practical that is
+necessary for employment and higher education.
+This is a full time course which will be held on weekdays.
+It is our objective to show the correct path that will direct youth to their desired occupations while at
+the same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and
+gentle attitudes within a disciplined environment.
+By completing this course , You can achieve competency Level 4 under the National Vocational
+Qualifications Competency Standards.
+
+
+SECTION 4: RECOMMENDATION INSTRUCTIONS
+Considering the respondent's actual reported circumstances, preferences, education/work/
+training history, future intentions and barriers (Section 1); their group-level research
+profile context (Section 2); and the complete available information about the retrieved
+NYSC programmes (Section 3), identify the programmes that appear most suitable for this
+respondent. Reason holistically. Make reasonable contextual inferences where justified, but
+label them as inferences and connect each to both a real respondent/context fact and a real
+documented course property. Do not invent respondent or programme information. Return up to
+~3-5 recommendations where evidence supports them; return fewer, or NO_DEFENSIBLE_
+RECOMMENDATION with reasons, if the evidence does not support more.

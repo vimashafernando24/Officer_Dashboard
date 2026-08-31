@@ -1,0 +1,15 @@
+earnings_time_profile_id,variable,response,records,within_profile_percent
+1,actual_hours_last_week,40.0,13,25.49019607843137
+1,has_second_job,No,42,82.3529411764706
+1,hours_below_normal,No — I worked my normal hours or more,35,68.62745098039215
+1,income_hours_preference,Keep things the same as they are now,47,92.15686274509804
+1,job_satisfaction,Somewhat satisfied,29,56.86274509803921
+1,monthly_income_band,"Above LKR 200,000",14,27.45098039215686
+1,usual_hours_per_week,40.0,18,35.294117647058826
+2,actual_hours_last_week,40.0,8,26.666666666666668
+2,has_second_job,No,19,63.333333333333336
+2,hours_below_normal,Yes — I worked fewer hours than normal,16,53.333333333333336
+2,income_hours_preference,More hours and correspondingly more income,28,93.33333333333333
+2,job_satisfaction,Somewhat satisfied,16,53.333333333333336
+2,monthly_income_band,"LKR 70,000 – 120,000",8,26.666666666666668
+2,usual_hours_per_week,40.0,8,26.666666666666668

@@ -1,0 +1,13 @@
+profile_id,variable,response,records,within_profile_percent
+1,household_income,"LKR 60,000 – 120,000",8,36.36363636363637
+1,household_size,4.0,9,40.90909090909091
+1,household_unemployed,1.0,11,50.0
+1,household_workers,1.0,16,72.72727272727273
+1,primary_earner_status,No — someone else is the main provider,19,86.36363636363636
+1,primary_income_source,My parents or family,16,72.72727272727273
+2,household_income,"Above LKR 200,000",6,50.0
+2,household_size,5.0,5,41.666666666666664
+2,household_unemployed,1.0,7,58.333333333333336
+2,household_workers,3.0,7,58.333333333333336
+2,primary_earner_status,No — someone else is the main provider,8,66.66666666666667
+2,primary_income_source,My parents or family,11,91.66666666666667

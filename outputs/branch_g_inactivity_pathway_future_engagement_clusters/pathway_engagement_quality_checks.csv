@@ -1,0 +1,11 @@
+check,value,passed
+a k=2–4 candidate meets the cross-algorithm size rule,1.0,True
+original Gower silhouette >= 0.25,0.4133529147293268,True
+ensemble bootstrap mean ARI >= 0.80,1.0,True
+minimum profile size >= 15,21.0,True
+ARI with full K-medoids >= 0.60,0.9284785435630689,True
+ARI with full spectral >= 0.60,1.0,True
+not near-exactly reproduced by one feature (ARI < 0.90),0.554492856299445,True
+permutation screening p < 0.05,0.010752688172043012,True
+ambiguous consensus respondents <= 20%,1.7857142857142856,True
+low-confidence respondents in original Gower space <= 20%,12.5,True

@@ -1,0 +1,7 @@
+variable,role,observed,missing,coverage_percent,unique_observed_responses,dominant_response,dominant_response_percent
+plans_after_education,cluster_input,191,0,100.0,5,Look for a job,62.82722513089005
+ideal_work_type,cluster_input,191,0,100.0,8,Start my own business,37.17277486910995
+ideal_sector,cluster_input,191,0,100.0,14,Information technology and communications,58.1151832460733
+study_field_preference,cluster_input,187,4,97.90575916230367,9,ICT or computing,56.68449197860963
+already_job_searching,transition_engagement_descriptor,191,0,100.0,2,Yes — I am already searching,58.1151832460733
+job_search_method_d,conditional_descriptor,111,80,58.1151832460733,11,"Online job ads (internet, social media)",44.14414414414414

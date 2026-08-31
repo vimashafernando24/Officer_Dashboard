@@ -1,0 +1,6 @@
+omitted_feature,minimum_pair_coverage,gower_silhouette_reduced,ari_reduced_kmedoids_vs_final_consensus
+household_income_position,2,0.430798613758954,0.8538167435728411
+household_worker_share,2,0.4131607118493988,1.0
+household_unemployed_share,2,0.4140648318547253,1.0
+primary_earner_responsibility,1,0.26559092407681795,0.48023731048121293
+primary_income_source,1,0.48140167736964085,0.3563218390804598

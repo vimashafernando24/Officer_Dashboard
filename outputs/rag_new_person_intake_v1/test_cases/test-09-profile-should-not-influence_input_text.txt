@@ -1,0 +1,443 @@
+{
+  "schema_version": "context_aware_programme_ranking_v3",
+  "user": {
+    "respondent_id": "test-09-profile-should-not-influence",
+    "assigned_branch": "D",
+    "questionnaire_answers": {
+      "preferred_sectors": [
+        "Information technology and communications"
+      ],
+      "preferred_skills_by_sector": {},
+      "preferred_skills": [
+        "Computer Hardware Technician"
+      ],
+      "reason_for_training": "Get a job",
+      "schedule_preference": "Full-time, weekdays",
+      "language_preference": "English",
+      "qualification_preference": "Not sure"
+    }
+  },
+  "constraints": {
+    "sectors": [
+      "Information technology and communications"
+    ],
+    "skills": {},
+    "reason": "Get a job",
+    "schedule": "Full-time, weekdays",
+    "language": "English",
+    "qualification": "Not sure"
+  },
+  "assigned_branch_research_context": [
+    {
+      "profile_key": "D_motivation_p1",
+      "model_id": "D_motivation",
+      "dimension": "Study motivation",
+      "cluster_code": "Cluster MOT-1",
+      "cluster_name": "Qualification-led study",
+      "common_description": "This cluster is centred on learners studying because a qualification is required for work. They show some choice over study, some confidence gaps and some—but not deep—connection to the institution.",
+      "validated_profile_definition": "Facts that define the cluster itself. These variables and diagnostics produced the\ncluster; they are NOT re-tested as post-cluster findings (doing so would be circular).\n\nBranch: D — strict final-path analytical cohort n=191 (of 362 total strict-cohort respondents: D=191, E=34, F=81, G=56).\nRetained dimension: Motivation and study experience\nNumber of profiles in this retained model (k): 3\nThis profile's id and label: Profile 1 — \"Consensus motivation profile 1: externally or uncertainly motivated, with moderate study support\"\nThis profile's exact frozen size: n=47 (cross-verified against the Part III freeze-verification table in the source report)\n\nExact cluster-forming variables (the only inputs used to build this clustering; all\nother survey variables were deliberately excluded from distance calculation and are\nonly used descriptively in sections 2-3 below):\n  - study_motivation_type\n  - autonomy_in_study\n  - competence_in_study_field\n  - relatedness_at_institution\n\nTheoretical basis and purpose: Self-Determination Theory (Deci & Ryan, 2000): autonomy, competence and relatedness in the study context, plus stated study-motivation type.\n\nClustering method: Gower distance over original mixed-type responses (no invented 0-100\nscores), consensus of repeated K-medoids and spectral clustering across 100 matched\n80% subsamples (200 base partitions), final clusters from K-medoids on (1 - co-association).\n\nValidation diagnostics for this retained model: Gower silhouette 0.350; bootstrap/subsample ARI 0.981; ARI vs full K-medoids 0.968 and vs spectral 0.712; PAC (proportion of ambiguous clustering) 0.193; 7 of 8 mandatory validation checks passed.\nFinal decision status: Retained for exploratory use, with ambiguity and one-item-per-construct cautions.\nModel-level caution (from the frozen decision register): Four single survey items represent motivation, autonomy, competence and relatedness; uncertain memberships must remain visible.\n\nAdditional definitional context: About 23.6% of respondents in this model had low Gower membership confidence (ambiguous cluster assignment); uncertain assignments must remain flagged. The three profile labels summarise four single-item questions only — they are not clinical or psychometrically validated SDT instrument types.\n\nInterpretation of this specific profile (verbatim from the frozen report's per-model\nprofile table):\n  Motivation was more external/uncertain and the combined study-support responses were moderate.\n\nReminder: this profile exists only WITHIN this one retained dimension. A respondent's\nmembership here says nothing about their membership in any other branch's or dimension's\nprofile system (see PROHIBITED_INFERENCES).\n\n----------------------------------------------------------------------------------------------------",
+      "validated_cluster_defining_variables": [
+        {
+          "variable": "study_motivation_type",
+          "question_id": "SC1",
+          "question": "Why are you studying right now? Which best describes your motivation?",
+          "user_answer": "I am not sure why — I am following the path I ended up on"
+        },
+        {
+          "variable": "autonomy_in_study",
+          "question_id": "SC2",
+          "question": "How much choice and control do you have over what and how you study?",
+          "user_answer": "A great deal — I have real freedom to shape my learning"
+        },
+        {
+          "variable": "competence_in_study_field",
+          "question_id": "SC3",
+          "question": "How capable and effective do you feel in your area of study?",
+          "user_answer": "Somewhat capable — I struggle in some areas"
+        },
+        {
+          "variable": "relatedness_at_institution",
+          "question_id": "SC4",
+          "question": "How much do you feel you belong and are connected to the people at your institution?",
+          "user_answer": "Not at all — I feel no sense of belonging there"
+        }
+      ],
+      "validated_profile_findings": [
+        {
+          "profile_key": "D_motivation_p1",
+          "variable": "employment_network_quality",
+          "label": "Useful employment/training contacts",
+          "finding": "Useful employment/training contacts: more often reported ‘No — I have no one I could call on’ (13/47, 27.7% vs 9.7% in other profile(s))",
+          "interpretation_guard": "Treat this only as the retained between-profile comparison stated above; do not turn it into a claim that one response was the profile's most common answer.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_motivation, profile_id=1, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_motivation, variable=employment_network_quality"
+          }
+        }
+      ]
+    },
+    {
+      "profile_key": "D_economic_p2",
+      "model_id": "D_economic",
+      "dimension": "Household resources",
+      "cluster_code": "Cluster RES-2",
+      "cluster_name": "Family-funded study with more household earners",
+      "common_description": "This cluster is centred on four-person households with two wage earners and one person seeking work. It combines a learner who is not the main earner with family-funded education. Household income is not included because it was not disclosed.",
+      "validated_profile_definition": "Facts that define the cluster itself. These variables and diagnostics produced the\ncluster; they are NOT re-tested as post-cluster findings (doing so would be circular).\n\nBranch: D — strict final-path analytical cohort n=191 (of 362 total strict-cohort respondents: D=191, E=34, F=81, G=56).\nRetained dimension: Economic resources and household pressure\nNumber of profiles in this retained model (k): 2\nThis profile's id and label: Profile 2 — \"Economic profile 2: relatively higher household economic position\"\nThis profile's exact frozen size: n=147 (cross-verified against the Part III freeze-verification table in the source report)\n\nExact cluster-forming variables (the only inputs used to build this clustering; all\nother survey variables were deliberately excluded from distance calculation and are\nonly used descriptively in sections 2-3 below):\n  - edu_funding_source\n  - household_income\n  - household_size\n  - household_unemployed\n  - household_workers\n  - primary_earner_status\n  - primary_income_source\n\nTheoretical basis and purpose: Bourdieu economic capital and ILO School-to-Work Transition Survey household/education-financing position.\n\nClustering method: Gower distance over original mixed-type responses (no invented 0-100\nscores), consensus of repeated K-medoids and spectral clustering across 100 matched\n80% subsamples (200 base partitions), final clusters from K-medoids on (1 - co-association).\n\nValidation diagnostics for this retained model: Gower silhouette 0.436; bootstrap/subsample ARI 0.986; source-method ARIs 0.849 and 0.796; 7 of 8 mandatory validation checks passed.\nFinal decision status: Retained cautiously.\nModel-level caution (from the frozen decision register): Income refusals and household-count inconsistencies were handled pairwise in clustering; profiles indicate relative position, not poverty status.\n\nAdditional definitional context: 29 of 191 Branch D respondents declined to report household income. 5 records had reported household workers plus unemployed members exceeding household size; their derived shares were treated as unavailable (missing) rather than silently corrected. Missing-aware Gower distance used only the remaining comparable components for these respondents.\n\nInterpretation of this specific profile (verbatim from the frozen report's per-model\nprofile table):\n  Higher relative position across the same observed components.\n\nReminder: this profile exists only WITHIN this one retained dimension. A respondent's\nmembership here says nothing about their membership in any other branch's or dimension's\nprofile system (see PROHIBITED_INFERENCES).\n\n----------------------------------------------------------------------------------------------------",
+      "validated_cluster_defining_variables": [
+        {
+          "variable": "household_income",
+          "question_id": "A17",
+          "question": "What is the approximate total monthly income of your household from all sources?",
+          "user_answer": "Prefer not to say"
+        },
+        {
+          "variable": "household_size",
+          "question_id": "A16",
+          "question": "How many people live in your household in total?",
+          "user_answer": "3.0"
+        },
+        {
+          "variable": "household_workers",
+          "question_id": "A18",
+          "question": "How many people in your household are currently working for a salary or wage?",
+          "user_answer": "1.0"
+        },
+        {
+          "variable": "household_unemployed",
+          "question_id": "A19",
+          "question": "How many people in your household are currently without work and actively looking for a job?",
+          "user_answer": "2.0"
+        },
+        {
+          "variable": "primary_earner_status",
+          "question_id": "A20",
+          "question": "Are you the primary income earner in your household?",
+          "user_answer": "No — someone else is the main provider"
+        },
+        {
+          "variable": "primary_income_source",
+          "question_id": "B19",
+          "question": "Currently, where does most of your money come from?",
+          "user_answer": "My parents or family"
+        },
+        {
+          "variable": "edu_funding_source",
+          "question_id": "BC2",
+          "question": "How is your current education mainly funded?",
+          "user_answer": "Paid for by my family"
+        }
+      ],
+      "validated_profile_findings": [
+        {
+          "profile_key": "D_economic_p2",
+          "variable": "ideal_sector",
+          "label": "Ideal sector",
+          "finding": "Ideal sector: more often reported ‘Information technology and communications’ (93/147, 63.3% vs 40.9% in other profile(s)) [sparse table]",
+          "interpretation_guard": "The most common answer within this profile was Information technology and communications (63.3%). Keep any wording proportional and distinguish this within-profile pattern from the retained between-profile comparison.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_economic, profile_id=2, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_economic, variable=ideal_sector"
+          }
+        },
+        {
+          "profile_key": "D_economic_p2",
+          "variable": "study_field_preference",
+          "label": "Current or preferred field of study",
+          "finding": "Current or preferred field of study: more often reported ‘ICT or computing’ (95/145, 65.5% vs 26.2% in other profile(s)) [sparse table]",
+          "interpretation_guard": "The most common answer within this profile was ICT or computing (65.5%). Keep any wording proportional and distinguish this within-profile pattern from the retained between-profile comparison.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_economic, profile_id=2, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_economic, variable=study_field_preference"
+          }
+        },
+        {
+          "profile_key": "D_economic_p2",
+          "variable": "institution_type",
+          "label": "Current institution type",
+          "finding": "Current institution type: more often reported ‘Private school or private degree-awarding institute’ (106/147, 72.1% vs 9.1% in other profile(s)) [sparse table; cross-dimensional/related variable]",
+          "interpretation_guard": "The most common answer within this profile was Private school or private degree-awarding institute (72.1%). Keep any wording proportional and distinguish this within-profile pattern from the retained between-profile comparison.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_economic, profile_id=2, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_economic, variable=institution_type"
+          }
+        },
+        {
+          "profile_key": "D_economic_p2",
+          "variable": "job_search_method_d",
+          "label": "Main job-search method while studying",
+          "finding": "Main job-search method while studying: more often reported ‘Online job ads (internet, social media)’ (45/89, 50.6% vs 18.2% in other profile(s)) [conditional eligible n=111; sparse table]",
+          "interpretation_guard": "The most common answer within this profile was Online job ads (internet, social media) (50.6%). Keep any wording proportional and distinguish this within-profile pattern from the retained between-profile comparison.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_economic, profile_id=2, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_economic, variable=job_search_method_d"
+          }
+        }
+      ]
+    },
+    {
+      "profile_key": "D_educational_cultural_p2",
+      "model_id": "D_educational_cultural",
+      "dimension": "Education background",
+      "cluster_code": "Cluster EDU-2",
+      "cluster_name": "State-study postgraduate pathway",
+      "common_description": "This cluster is centred on state-sector learners expecting postgraduate education, without reported work while studying or a stop-and-return education pathway. Parental education was not known or not disclosed.",
+      "validated_profile_definition": "Facts that define the cluster itself. These variables and diagnostics produced the\ncluster; they are NOT re-tested as post-cluster findings (doing so would be circular).\n\nBranch: D — strict final-path analytical cohort n=191 (of 362 total strict-cohort respondents: D=191, E=34, F=81, G=56).\nRetained dimension: Educational trajectory and cultural capital\nNumber of profiles in this retained model (k): 4\nThis profile's id and label: Profile 2 — \"State-institution students without work exposure\"\nThis profile's exact frozen size: n=53 (cross-verified against the Part III freeze-verification table in the source report)\n\nExact cluster-forming variables (the only inputs used to build this clustering; all\nother survey variables were deliberately excluded from distance calculation and are\nonly used descriptively in sections 2-3 below):\n  - expected_highest_edu_d\n  - father_edu\n  - institution_type\n  - mother_edu\n  - re_entered_education\n  - worked_while_studying\n\nTheoretical basis and purpose: Inherited educational background (Bourdieu cultural capital, proxied by parental education) plus current educational trajectory (institution type, work-while-studying, education re-entry).\n\nClustering method: Gower distance over original mixed-type responses (no invented 0-100\nscores), consensus of repeated K-medoids and spectral clustering across 100 matched\n80% subsamples (200 base partitions), final clusters from K-medoids on (1 - co-association).\n\nValidation diagnostics for this retained model: Gower silhouette 0.427; bootstrap/subsample ARI 0.963; source-method ARIs 0.776 and 0.934; 8 of 8 mandatory validation checks passed.\nFinal decision status: Retained.\nModel-level caution (from the frozen decision register): Parental education is a proxy only; work-experience and re-entry follow-ups are structurally linked to variables defining these profiles.\n\nAdditional definitional context: Parental education is only a proxy for family cultural capital; it is not a measure of intelligence or merit. Sensitivity analysis showed that work-while-studying experience and institution type are important drivers of the partition and must remain explicit in interpretation, not collapsed into a single 'cultural capital' score.\n\nInterpretation of this specific profile (verbatim from the frozen report's per-model\nprofile table):\n  State-institution attendance and no work-while-studying experience.\n\nReminder: this profile exists only WITHIN this one retained dimension. A respondent's\nmembership here says nothing about their membership in any other branch's or dimension's\nprofile system (see PROHIBITED_INFERENCES).\n\n----------------------------------------------------------------------------------------------------",
+      "validated_cluster_defining_variables": [
+        {
+          "variable": "father_edu",
+          "question_id": "A12",
+          "question": "What is the highest level of education your father completed?",
+          "user_answer": "A/L level (Grade 12–13)"
+        },
+        {
+          "variable": "mother_edu",
+          "question_id": "A13",
+          "question": "What is the highest level of education your mother completed?",
+          "user_answer": "A/L level (Grade 12–13)"
+        },
+        {
+          "variable": "expected_highest_edu_d",
+          "question_id": "C6",
+          "question": "What is the highest level of education or training you expect to complete in total?",
+          "user_answer": "O/L level"
+        },
+        {
+          "variable": "institution_type",
+          "question_id": "BC1",
+          "question": "What type of institution are you currently attending?",
+          "user_answer": "Government school or state university"
+        },
+        {
+          "variable": "worked_while_studying",
+          "question_id": "B9",
+          "question": "Did you work (or do you currently work) while studying?",
+          "user_answer": "No"
+        },
+        {
+          "variable": "re_entered_education",
+          "question_id": "C4",
+          "question": "Have you ever stopped your education to work or look for work, then re-entered education later?",
+          "user_answer": "No"
+        }
+      ],
+      "validated_profile_findings": [
+        {
+          "profile_key": "D_educational_cultural_p2",
+          "variable": "already_job_searching",
+          "label": "Already searching for work/business",
+          "finding": "Already searching for work/business: more often reported ‘No — not yet’ (34/53, 64.2% vs 33.3% in other profile(s))",
+          "interpretation_guard": "The most common answer within this profile was No — not yet (64.2%). Keep any wording proportional and distinguish this within-profile pattern from the retained between-profile comparison.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_educational_cultural, profile_id=2, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_educational_cultural, variable=already_job_searching"
+          }
+        },
+        {
+          "profile_key": "D_educational_cultural_p2",
+          "variable": "primary_income_source",
+          "label": "Primary personal income source",
+          "finding": "Primary personal income source: more often reported ‘My parents or family’ (50/53, 94.3% vs 71.7% in other profile(s)) [sparse table; cross-dimensional/related variable]",
+          "interpretation_guard": "The most common answer within this profile was My parents or family (94.3%). Keep any wording proportional and distinguish this within-profile pattern from the retained between-profile comparison.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_educational_cultural, profile_id=2, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_educational_cultural, variable=primary_income_source"
+          }
+        },
+        {
+          "profile_key": "D_educational_cultural_p2",
+          "variable": "edu_funding_source",
+          "label": "Main education funding source",
+          "finding": "Main education funding source: more often reported ‘Government-funded or free of charge’ (24/53, 45.3% vs 6.5% in other profile(s)) [sparse table; cross-dimensional/related variable]",
+          "interpretation_guard": "The most common answer within this profile was Paid for by my family (50.9%). The retained statement highlights Government-funded or free of charge only because it differed between profiles. Do not call the highlighted category primary, dominant, top, or most common.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_educational_cultural, profile_id=2, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_educational_cultural, variable=edu_funding_source"
+          }
+        },
+        {
+          "profile_key": "D_educational_cultural_p2",
+          "variable": "household_income",
+          "label": "Household income band",
+          "finding": "Household income band: less often reported ‘Above LKR 200,000’ (5/49, 10.2% vs 51.3% in other profile(s)) [cross-dimensional/related variable]",
+          "interpretation_guard": "Treat this only as the retained between-profile comparison stated above; do not turn it into a claim that one response was the profile's most common answer.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_educational_cultural, profile_id=2, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_educational_cultural, variable=household_income"
+          }
+        }
+      ]
+    }
+  ],
+  "catalogue_retrieval": {
+    "method": "complete selected-sector catalogue slice",
+    "sector_skill_areas": {},
+    "skill_areas": [
+      "ICT & Computing"
+    ],
+    "selected_skills_by_sector": {},
+    "required_selected_skill_coverage": [],
+    "note": "18 courses in bridged skill area(s) ['ICT & Computing']; 8 selected deterministically by score."
+  },
+  "candidate_programmes": [
+    {
+      "course_id": "COURSE-008",
+      "course_name": "Computer Hardware Technician",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "ICT & Computing",
+        "attendance_type": "Full Time",
+        "attendance_days": "Weekdays",
+        "duration_months": "6",
+        "instruction_languages": "[\"English\"]",
+        "nvq_level": "Level 4",
+        "qualification_type": "National Vocational Qualification (NVQ)"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-008\n\nCOURSE NAME: Computer Hardware Technician\n\nVALIDATION STATUS: VALIDATED\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.22.37.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.25.19.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-008\n\nUNCERTAINTY MARKERS PRESENT: NO\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nComputer Hardware Technician\nLANGUAGE\nMAX STUDENTS\nEnglish\n20\nAPPLY NOW\nCourse Overview\n1. Introduction\n2. Assembling\n3. Disassembling\n4. Trouble shooting\n5. Preventive Maintenance\n6. Estimating\nThe National Youth Service Council has initiated several course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations. A\ncomputer hardware technician course will give you theoretical knowledge as well as job oriented\npractical that is necessary for employment and higher education. This is a full time course which will\nbe held on weekdays.\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\nBy completing this course, You can achieve competency Level 4 under the National Vocational\nQualifications Competency Standards.\n"
+    },
+    {
+      "course_id": "COURSE-055",
+      "course_name": "Computer Hardware Technician",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "ICT & Computing",
+        "attendance_type": "Part Time",
+        "attendance_days": "Weekends",
+        "duration_months": "6",
+        "instruction_languages": "[\"English\"]",
+        "nvq_level": "NOT_STATED",
+        "qualification_type": "NOT_STATED"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-055\n\nCOURSE NAME: Computer Hardware Technician\n\nVALIDATION STATUS: VALIDATED_WITH_LIMITATIONS\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.51.41.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.52.40.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-055\n\nUNCERTAINTY MARKERS PRESENT: NO\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nComputer Hardware Technician\nLANGUAGE\nMAX STUDENTS\nEnglish\n25\n+ APPLY NOW\nCourse Overview\nThe National Youth Service Council has initiated several course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations.\n1. PC assembling\nComputer Hardware Technician course will give you theoretical knowledge as well as job oriented\n2. Maintence Repair PCs\npractical that is necessary for employment and higher education. This is a part time course which will\n3. Install and Configure Internal, External\nDevices\nbe held on weekends.\n4. Software Installation\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\n5. Network and Internet\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\n"
+    },
+    {
+      "course_id": "COURSE-006",
+      "course_name": "National Diploma In Information & Communication Technology",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "ICT & Computing",
+        "attendance_type": "Full Time",
+        "attendance_days": "Weekdays",
+        "duration_months": "12",
+        "instruction_languages": "[\"English\"]",
+        "nvq_level": "Level 5",
+        "qualification_type": "National Vocational Qualification (NVQ)"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-006\n\nCOURSE NAME: National Diploma In Information & Communication Technology\n\nVALIDATION STATUS: VALIDATED\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.21.55.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.25.19.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-006\n\nUNCERTAINTY MARKERS PRESENT: NO\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nNational Diploma In Information & Communication\nTechnology\nLANGUAGE\nMAX STUDENTS\nEnglish\n20\nAPPLY NOW\nCourse Overview\n1. System Analysis & Design - Semester 1\n2. Software Programming - Semester 1\n3. Database System - Semester 1\n4. Computer Graphics Design -\nSemester 1\n5. Manage Workplace Information -\n6. Manage Workplace Communication -\n7. Documents & Resource Level 5 -\n8. Database Systems II - Semester 2\n9. Software Testing - Semester 2\n10. Web Programming - Semester 2\n11. Local Area Network - Semester 2\n12. Planing & Scheduling Work at\nWorkplace - Semester 2\nThe National Youth Service Council has initiated several Course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations.\nInformation & Communication Multimedia Technology will give you theoretical knowledge as well as\njob oriented practical that is necessary for employment and higher education. This is a full time\ncourse which will be held on weekdays.\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\nBy completing this course , can achieve Competency Level 5 under the National Vocational\nQualifications Competency Standards through following a variety of full time study programs covering\na variety of occupations.\n"
+    },
+    {
+      "course_id": "COURSE-009",
+      "course_name": "Information And Communication Technolory Technician",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "ICT & Computing",
+        "attendance_type": "Full Time",
+        "attendance_days": "Weekdays",
+        "duration_months": "6",
+        "instruction_languages": "[\"English\"]",
+        "nvq_level": "Level 4",
+        "qualification_type": "National Vocational Qualification (NVQ)"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-009\n\nCOURSE NAME: Information And Communication Technolory Technician\n\nVALIDATION STATUS: VALIDATED_WITH_LIMITATIONS\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.23.01.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.25.19.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-009\n\nUNCERTAINTY MARKERS PRESENT: NO\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nInformation And Communication Technolory Technician\nLANGUAGE\nMAX STUDENTS\nEnglish\n20\nAPPLY NOW\nCourse Overview\n1. Maintain Files and Folders\n2. Perform word processing\n3. Prepare spreadsheet\n4. Prepare presentations\n5. Maintain databases\n6. Perform internet and electronic mail\noperation\n7. Install and configure operating system\n8. Conduct installation and\ntroubleshooting of network\n9. Develop graphics for online / print\nmedia\n10. Design and develop static web pages\n1l. Develop basic software solution\nThe National Youth Service Council has initiated several Course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations.\nQuantity Surveyor will give you theoretical knowledge as well as job oriented practical that is\nnecessary for employment and higher education. This is a full time course which will be held on\nweekdays.\nScreenshot\n"
+    },
+    {
+      "course_id": "COURSE-022",
+      "course_name": "Computer Network Technician",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "ICT & Computing",
+        "attendance_type": "Full Time",
+        "attendance_days": "Weekdays",
+        "duration_months": "12",
+        "instruction_languages": "[\"English\", \"Sinhala\"]",
+        "nvq_level": "Level 4",
+        "qualification_type": "National Vocational Qualification (NVQ)"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-022\n\nCOURSE NAME: Computer Network Technician\n\nVALIDATION STATUS: VALIDATED\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.31.21.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.31.50.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-022\n\nUNCERTAINTY MARKERS PRESENT: NO\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nComputer Network Technician\nLANGUAGE\nMAX STUDENTS\nEnglish / Sinhala\n20\nAPPLY NOW\nCourse Overview\nThe National Youth Service Council has initiated several course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations.\nComputer Network Technician course will give you theoretical knowledge as well as job oriented\npractical that is necessary for employment and higher education. This is a full time course which will\nbe held on weekdays.\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\nBy completing this course , You can achieve competency Level 4 under the National Vocational\nQualifications Competency Standards.\n"
+    },
+    {
+      "course_id": "COURSE-001",
+      "course_name": "Freelancer Of Web Design & Development",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "ICT & Computing",
+        "attendance_type": "Part Time",
+        "attendance_days": "Weekends",
+        "duration_months": "3",
+        "instruction_languages": "[\"English\", \"Sinhala\"]",
+        "nvq_level": "NOT_STATED",
+        "qualification_type": "NOT_STATED"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-001\n\nCOURSE NAME: Freelancer Of Web Design & Development\n\nVALIDATION STATUS: VALIDATED\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.18.27.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.25.19.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-001\n\nUNCERTAINTY MARKERS PRESENT: NO\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nFreelancer Of Web Design & Development\nLANGUAGE\nEnglish and Sinhala\nMAX STUDENTS\n30\nAPPLY NOW\nතමන්ගේම Skill එකක්\nDevelop කරගෙන\nදේශීයව සහ විදේශීයව\nමුදල් උපයන්න.\nFreelancer.of.\nWeb Development\nපාඨමාලා කාලය මාස 03\n2024\nපළමු කණ්ඩායම සඳහා\nබඳවා ගැනීම\nදැන් සිදු කෙරේ\nවයස අවු. 15-45 අතර අයට අයදුම් කල හැකිය\nපාඨමාලා ගාස්තුව\n20,000/=\nපාඨමාලාව අවසානයේ\nරජයේ පිළිගත් වටිනා සහතික පතක්\nවැඩිදුර විස්තර සඳහා අමතන්න\n011 285 0986 / 011 284 8771\nරට තුල පවතින ආර්ථික අර්බුදය හමුවේ තමන්ගේම Skill එකක් හදාගෙන ගොඩ යන්න කැමතිද?.... 📚🥇\nඔබ වියදම් කරන කිසිදු මුදලක් අපතේ නොයන ලෙස අප විසින් මේ පාඨමාලාව සකසා ඇත....\nආරම්භය Feburary 9 වනදා\nදේශීය හා විදේශීය වශයෙන් තමන්ගේම මුදලක් උපයන ක්‍රම අපි ඔයාලට කියලා දෙනවා...\nතමන්ගේම Business එකක් Development කරගෙන ඒ හරහා Income එකක් ගන්න විදිය....\nIndustry එකේ වසර 6කට වඩා පළපුරුද්දක් සහිත ගුරුවරයෙකු විසින් මෙහෙයවීම\nHosting එකක් හරහා තමන්ගේම Web site එකක් Development කරගන්නා ආකාරය..\nDomain Management & Hosting Management කරගන්නා ආකාරය සරල හා පහසුව ඉගැන්වීම\nFiver සහා අනෙකුත් Account සාදා ගන්නා ආකාරය සහා මුදල් උපයන හරිම Methods අපි ඔයාලට කියලා දෙනවා.\n"
+    },
+    {
+      "course_id": "COURSE-002",
+      "course_name": "PYTHON",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "ICT & Computing",
+        "attendance_type": "Part Time",
+        "attendance_days": "Weekends",
+        "duration_months": "3",
+        "instruction_languages": "[\"English\"]",
+        "nvq_level": "NOT_STATED",
+        "qualification_type": "NOT_STATED"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-002\n\nCOURSE NAME: PYTHON\n\nDOCUMENT STATUS: SAFE_TO_INDEX_WITH_UNCERTAINTY\n\nCORPUS VERSION: FINAL_RAG_CORPUS_V2\n\nPROMOTED SOURCE DOCUMENT: outputs/rag_course_knowledge/manual_review_resolved_candidates/course-002_python_candidate.txt\n\nSOURCE TYPE: CATALOGUE_CARD_ONLY\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.25.19.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.25.19.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-002\n\nREMAINING UNCERTAINTY MARKERS: 2\n\nCORRECTION NOTE: The clearly readable catalogue-description text \"Python මුල සිට ඉගෙන ගන්න\" has been recovered. Text inside the promotional image and the following corrupted/truncated catalogue line remain unreadable and are not guessed. The visible card still clearly establishes the course name, Part Time attendance, 20-student capacity and 03 Month duration.\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nPart Time\n[UNCLEAR]\nPYTHON\nPython මුල සිට ඉගෙන ගන්න\n[UNCLEAR]...\n20 students\n03 Month\nView\n"
+    },
+    {
+      "course_id": "COURSE-043",
+      "course_name": "AutoCAD",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "ICT & Computing",
+        "attendance_type": "Part Time",
+        "attendance_days": "Weekends",
+        "duration_months": "6",
+        "instruction_languages": "[\"English\"]",
+        "nvq_level": "NOT_STATED",
+        "qualification_type": "NOT_STATED"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-043\n\nCOURSE NAME: AutoCAD\n\nVALIDATION STATUS: VALIDATED\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.46.59.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.48.17.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-043\n\nUNCERTAINTY MARKERS PRESENT: NO\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nAutoCAD\nLANGUAGE\nMAX STUDENTS\nEnglish\n20\n+ APPLY NOW\nThe National Youth Service Council has initiated several course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations. The\nAutoCAD course will give you theoretical knowledge as well as job oriented practical skills that are\nnecessary for employment and higher education. This is a part time course which will be held on\nweekends.\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\n"
+    }
+  ],
+  "evidence_boundaries": {
+    "user_fact": "Only values in user.questionnaire_answers and validated_cluster_defining_variables.",
+    "cluster_context": "Only the assigned profiles' final-retained findings are included. They are historical group context, never personal facts about the user.",
+    "course_fact": "Only facts inside the corresponding candidate programme record."
+  }
+}

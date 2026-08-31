@@ -1,0 +1,81 @@
+{
+  "cohort": {
+    "records": 191,
+    "branch": "D",
+    "routing_source": "translated_final_active_branch"
+  },
+  "dimension": "education-to-work transition planning and direction",
+  "clustering_features": [
+    "plans_after_education",
+    "ideal_work_type",
+    "ideal_sector",
+    "study_field_preference"
+  ],
+  "descriptors": [
+    "already_job_searching",
+    "job_search_method_d"
+  ],
+  "data_quality": {
+    "records": 191,
+    "unique_ids": 191,
+    "wrong_branch": 0,
+    "wrong_routing_source": 0,
+    "not_currently_attending_by_final_status": 0,
+    "already_searching": 111,
+    "not_yet_searching": 80,
+    "search_method_observed": 111,
+    "search_method_present_for_non_searcher": 0,
+    "search_method_missing_for_searcher": 0
+  },
+  "method": {
+    "distance": "equal-weight nominal, missing-aware Gower on four original aspiration responses",
+    "candidate_k": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "selected_k": 2,
+    "ensemble": "equal-weight K-medoids plus spectral consensus",
+    "base_partitions": 200,
+    "final_method": "K-medoids on one minus co-association"
+  },
+  "profiles": {
+    "sizes": {
+      "1": 120,
+      "2": 71
+    },
+    "names": {
+      "1": "Transition profile 1",
+      "2": "Transition profile 2"
+    }
+  },
+  "metrics": {
+    "gower_silhouette": 0.2445895263760435,
+    "consensus_distance_silhouette": 0.6569086047574483,
+    "ensemble_bootstrap_ari_mean": 0.8797761896803494,
+    "ensemble_bootstrap_ari_p10": 0.7629721520892099,
+    "ari_vs_full_kmedoids": 1.0,
+    "ari_vs_full_spectral": 0.13747978028489427,
+    "ari_consensus_kmedoids_vs_hac_average": 1.0,
+    "ari_consensus_kmedoids_vs_hac_complete": 1.0,
+    "minimum_profile_size": 71,
+    "low_gower_confidence_percent": 17.277486910994764,
+    "ambiguous_consensus_percent": 15.18324607329843,
+    "pac_10_90": 0.7509506751171121
+  },
+  "decision": {
+    "primary_checks_passed": false,
+    "checks_passed": 5,
+    "checks_total": 8,
+    "status": "No sufficiently robust transition-planning segmentation found"
+  },
+  "limitations": [
+    "These profiles are exploratory response patterns, not a validated transition-readiness scale.",
+    "All four inputs are categorical, so distances are based on exact category matches and contain ties.",
+    "ICT study field and IT sector preference are common and may strongly influence grouping; leave-one-feature-out results must be reported.",
+    "Search status is kept as a descriptor because including it produced a trivial already-searching versus not-yet-searching split.",
+    "Job-search method is conditional and describes only the 111 respondents already searching.",
+    "No study-field-to-sector alignment crosswalk or score is invented."
+  ]
+}

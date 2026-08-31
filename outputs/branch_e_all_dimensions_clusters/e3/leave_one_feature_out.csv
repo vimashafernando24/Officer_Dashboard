@@ -1,0 +1,4 @@
+omitted_feature,minimum_pair_coverage,silhouette_reduced,ari_reduced_vs_final
+income_urgency,2,0.7507982177596418,1.0
+job_acceptance_conditions,2,0.7910393571570042,1.0
+has_minimum_wage,2,0.5637916845314977,0.0009713453132588635

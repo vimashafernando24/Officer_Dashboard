@@ -3,6 +3,8 @@ import { Card, StepTitle, StepHint } from "../components/Card";
 import { ChoiceGrid, MultiChoiceGrid } from "../components/ChoiceGrid";
 import type { QuestionConfig } from "../types";
 
+const NOT_SURE_SKILL = "Not sure yet";
+
 interface Props {
   config: QuestionConfig;
   idealSectors: string[];
@@ -62,10 +64,14 @@ export function Step3ProgrammeQuestions({
           {group.skills.length ? (
             <MultiChoiceGrid
               name={`skills-${group.sector}`}
-              options={group.skills.map((skill) => ({ code: skill, label: skill }))}
+              options={[
+                ...group.skills.map((skill) => ({ code: skill, label: skill })),
+                { code: NOT_SURE_SKILL, label: NOT_SURE_SKILL },
+              ]}
               value={skillsBySector[group.sector] ?? []}
               onChange={(skills) => onSkillsChange(group.sector, skills)}
               maxSelected={3}
+              exclusiveOptionCodes={[NOT_SURE_SKILL]}
             />
           ) : group.sector === "not sure" ? (
             <div className="preference-note">No sector-specific skills are required while the member is still exploring.</div>

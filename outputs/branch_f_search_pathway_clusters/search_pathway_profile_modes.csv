@@ -1,0 +1,21 @@
+search_pathway_profile_id,variable,response,records,within_profile_percent
+1,acceptance_conditions_search,"Only a job that was stable, well paid, AND matched my qualifications",30,62.5
+1,employment_service_help_f,No — none at all,39,81.25
+1,had_min_wage_during_search,Yes,34,70.83333333333333
+1,interviews_before_hire,2.0,13,27.083333333333332
+1,jobs_applied_before_hire,0.0,10,20.833333333333332
+1,obstacle_finding_this_job,No major obstacles — the process was straightforward,28,58.333333333333336
+1,reason_refused_job_f,,28,58.333333333333336
+1,registered_as_jobseeker,No,38,79.16666666666667
+1,search_duration_before_hire,1 to 4 weeks,21,43.75
+1,willing_to_relocate_f,No — I would not move,17,35.416666666666664
+2,acceptance_conditions_search,"Only a job that was stable, well paid, AND matched my qualifications",15,45.45454545454545
+2,employment_service_help_f,No — none at all,25,75.75757575757575
+2,had_min_wage_during_search,Yes,24,72.72727272727273
+2,interviews_before_hire,2.0,9,27.272727272727273
+2,jobs_applied_before_hire,10.0,9,27.272727272727273
+2,obstacle_finding_this_job,No work experience,15,45.45454545454545
+2,reason_refused_job_f,,17,51.515151515151516
+2,registered_as_jobseeker,No,23,69.6969696969697
+2,search_duration_before_hire,3 to 6 months,17,51.515151515151516
+2,willing_to_relocate_f,Yes — to another country,11,33.333333333333336

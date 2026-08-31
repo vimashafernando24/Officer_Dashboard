@@ -1,0 +1,50 @@
+{
+  "cohort": {
+    "branch": "F",
+    "records": 81
+  },
+  "open_search_pool": {
+    "eligible_variables": 61,
+    "theory_pool_variables_included": 34,
+    "descriptor_variables_added": 27,
+    "excluded_variables": 44
+  },
+  "search": {
+    "quick_mode": false,
+    "subset_sizes_searched": [
+      2,
+      4
+    ],
+    "exhaustive_size_limit": 45000,
+    "random_budget_for_larger_sizes": 4000,
+    "k_values": [
+      2,
+      3,
+      4
+    ],
+    "total_screened_fits": 125460
+  },
+  "confirmation": {
+    "shortlist_size": 40,
+    "passing_all_basic_gates": 5,
+    "single_item_dominated_at_ari": 0.9,
+    "near_duplicate_flag_threshold": 0.85
+  },
+  "omnibus_null": {
+    "repetitions_run": 8,
+    "recommended_before_reporting": 200,
+    "observed_best_silhouette": 1.0,
+    "empirical_p_value": 0.6667
+  },
+  "interpretation": {
+    "automatically_confirmed_dimensions": 0,
+    "reason": "an atheoretical open search cannot establish construct validity by itself",
+    "required_before_reporting_any_result": [
+      "theory review: does the surviving variable set map to SWTS/Bourdieu/SDT, or articulate a coherent new construct that isn't just several unrelated items?",
+      "redundancy check against retained D3 (security/formality) and the excluded D4 (earnings/hours preference) diagnostic",
+      "single-item-dominance gate at the same threshold used for D4/D5/D6",
+      "omnibus null repetitions raised from 8 to >= 200",
+      "independent-sample or future-wave confirmation before any thesis claim"
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+cluster,variable,readable_mode,observed_rows
+0,age_group,22 – 25 years,183
+0,gender,Male,183
+0,district,Colombo,183
+0,area_type,Metropolitan suburb,183
+0,moved_from_origin,Yes — I grew up here and still live here,183
+0,move_reason,For education or training,55
+0,marital_status,Never married,183
+0,age_first_married,,0
+0,spouse_activity,,0
+0,has_children,No,183
+0,num_children,,0
+0,father_edu,A/L level (Grade 12–13),183
+0,mother_edu,A/L level (Grade 12–13),183
+0,father_occ,Government / public sector employee,183
+0,mother_occ,Government / public sector employee,183
+0,household_size,4.0,183
+0,household_income,"Above LKR 200,000",183
+0,household_workers,2.0,183
+0,household_unemployed,1.0,183
+0,primary_earner_status,No — someone else is the main provider,183
+0,employment_network_quality,Yes — I know one or two people who might help,183
+0,edu_status,Currently in higher education (degree or diploma),183
+0,highest_edu_completed,Bachelor's degree,3
+0,edu_end_year,2026.0,3
+0,spell1_activity,Working for a salary or wage (employed),3
+0,spell1_is_current,Yes — this is still my current situation,3
+0,worked_while_studying,No,183
+0,edu_min_for_decent_job,University degree,183
+0,most_important_life_goal,Being successful in work or my career,183
+0,most_useful_quality_for_job,Communication and interpersonal skills,183
+0,ideal_work_type,Work for a multinational or large private company,183
+0,ideal_sector,Information technology and communications,183
+0,primary_income_source,My parents or family,183
+0,current_activity_status,"Attending school, university, or a training programme",183
+0,plans_after_education,Look for a job,183
+0,already_job_searching,Yes — I am already searching,183
+0,re_entered_education,No,183
+0,reason_re_entered,Needed different qualifications for a different career,19
+0,expected_highest_edu_d,Post-graduate degree,183
+0,study_field_preference,ICT or computing,182
+0,institution_type,Private school or private degree-awarding institute,183
+0,edu_funding_source,Paid for by my family,183
+0,social_capital_in_edu_access,I researched and applied entirely on my own initiative,183
+0,study_motivation_type,It aligns with my own goals and will lead to what I want,183
+0,autonomy_in_study,A great deal — I have real freedom to shape my learning,183
+0,competence_in_study_field,Fairly capable — mostly confident with some gaps,183
+0,relatedness_at_institution,Somewhat — I have some connections but am not deeply involved,183
+0,job_search_method_d,"Online job ads (internet, social media)",104
+1,age_group,22 – 25 years,8
+1,gender,Female,8
+1,district,Colombo,8
+1,area_type,Rural area,8
+1,moved_from_origin,Yes — I grew up here and still live here,8
+1,move_reason,For education or training,3
+1,marital_status,Never married,8
+1,age_first_married,21.0,3
+1,spouse_activity,Working for a salary or wage,3
+1,has_children,No,8
+1,num_children,2.0,2
+1,father_edu,Bachelor's degree,8
+1,mother_edu,Bachelor's degree,8
+1,father_occ,Manager / administrator,8
+1,mother_occ,Government / public sector employee,8
+1,household_size,4.0,8
+1,household_income,"Above LKR 200,000",8
+1,household_workers,3.0,8
+1,household_unemployed,3.0,8
+1,primary_earner_status,No — someone else is the main provider,8
+1,employment_network_quality,Yes — I know several people with useful connections,8
+1,edu_status,Currently doing post-graduate studies,8
+1,highest_edu_completed,,0
+1,edu_end_year,,0
+1,spell1_activity,,0
+1,spell1_is_current,,0
+1,worked_while_studying,Yes,5
+1,edu_min_for_decent_job,University degree,8
+1,most_important_life_goal,Being successful in work or my career,8
+1,most_useful_quality_for_job,IT and digital skills,8
+1,ideal_work_type,Start my own business,8
+1,ideal_sector,Education and teaching,8
+1,primary_income_source,My regular job or business,8
+1,current_activity_status,"Attending school, university, or a training programme",8
+1,plans_after_education,Start my own business,8
+1,already_job_searching,Yes — I am already searching,8
+1,re_entered_education,Yes,8
+1,reason_re_entered,Could not find suitable work,8
+1,expected_highest_edu_d,Post-graduate degree,8
+1,study_field_preference,"Commerce, business, or management",5
+1,institution_type,Private school or private degree-awarding institute,8
+1,edu_funding_source,Scholarship or grant,8
+1,social_capital_in_edu_access,I researched and applied entirely on my own initiative,8
+1,study_motivation_type,I am genuinely passionate about this subject,8
+1,autonomy_in_study,A great deal — I have real freedom to shape my learning,8
+1,competence_in_study_field,Very capable — confident and effective in my field,8
+1,relatedness_at_institution,Strongly — genuinely connected and part of the community,8
+1,job_search_method_d,Through education or training institution,7

@@ -1,0 +1,65 @@
+{
+  "cohort": {
+    "records": 81,
+    "branch": "F",
+    "strict_final_branch_records": 82,
+    "excluded_routing_integrity_records": 1
+  },
+  "dimension": "job satisfaction and mobility intention",
+  "clustering_features": [
+    "job_satisfaction",
+    "contract_satisfaction_polarity",
+    "hopes_to_change_job"
+  ],
+  "descriptors": [
+    "reason_wants_to_change",
+    "job_security_12months",
+    "insecurity_bothers"
+  ],
+  "method": {
+    "distance": "equal-weight mixed Gower on three questionnaire indicators",
+    "selected_k": 2,
+    "ensemble": "K-medoids plus spectral consensus",
+    "base_partitions": 200
+  },
+  "profiles": {
+    "sizes": {
+      "1": 34,
+      "2": 47
+    },
+    "names": {
+      "1": "Satisfied, staying or undecided",
+      "2": "Mostly satisfied but change-oriented"
+    }
+  },
+  "metrics": {
+    "gower_silhouette": 0.5672988447332697,
+    "consensus_distance_silhouette": 0.878261675286552,
+    "ensemble_bootstrap_ari_mean": 1.0,
+    "ensemble_bootstrap_ari_p10": 1.0,
+    "ari_vs_full_kmedoids": 0.7652943733176761,
+    "ari_vs_full_spectral": 1.0,
+    "ari_vs_hac_average": 1.0,
+    "ari_vs_hac_complete": 1.0,
+    "minimum_profile_size": 34,
+    "low_gower_confidence_percent": 1.2345679012345678,
+    "ambiguous_consensus_percent": 6.172839506172839,
+    "pac_10_90": 0.5194444444444445,
+    "ari_detailed_contract_reason_encoding": 0.4875055209229608
+  },
+  "decision": {
+    "primary_checks_passed": true,
+    "checks_passed": 7,
+    "checks_total": 8,
+    "status": "Cross-method-supported with consensus ambiguity caution; mobility-intention-led"
+  },
+  "limitations": [
+    "These are exploratory job-satisfaction/mobility response profiles, not a validated psychometric satisfaction scale.",
+    "Contract polarity is recoded only from the explicit Satisfied/Unsatisfied wording; the detailed contract reason is retained in the outputs.",
+    "Mobility intention is nominal; Not sure is not assigned an invented midpoint.",
+    "Desire to change jobs does not prove dissatisfaction because respondents may seek career progression while remaining satisfied.",
+    "The solution is led mainly by intention to change jobs: omitting that indicator changes the partition substantially.",
+    "PAC is above the caution threshold, so the two-profile result is retained only as exploratory and should not be called fully stable.",
+    "The one routing-corrupted final-Branch-F record is excluded from this employment analysis."
+  ]
+}

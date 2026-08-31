@@ -1,0 +1,11 @@
+respondent_id,branch,case_type_rationale,n_profile_memberships,profile_memberships,n_direct_preference_vars_used_in_query,n_context_vars_used_in_query
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,D,"CASE2 (provider+care responsibility, clear field preference)",3,D_motivation:p3;D_economic:p1;D_educational_cultural:p4,5,3
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,D,"CASE1 (strong direct ICT field preference, provider, no children)",3,D_motivation:p3;D_economic:p2;D_educational_cultural:p1,5,2
+nysc-a04f7d96-0e1d-49f2-8443-5cb15eeb9bf9,D,CASE6 (weak/unsure direct preference evidence),3,D_motivation:p1;D_economic:p2;D_educational_cultural:p3,3,2
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,E,CASE1+CASE3 (strong ICT preference + training-availability barrier),1,E_learning_orientation:p2,6,3
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,F,CASE3 (employment insecurity + job-change intent + skills barrier),1,F_employment_security:p1,4,7
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,F,"CASE4 (secure employment, prior training/experience to build on, non-ICT sector)",1,F_employment_security:p1,3,7
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,F,"CASE3 (insecure, self-employed, overqualification + training-access barrier)",1,F_employment_security:p1,4,7
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,G,"CASE5 (dual G profile membership, construction interest, employment barrier)",2,G_economic_role:p1;G_future_engagement:p2,2,4
+nysc-465701ee-3d2d-4f85-a044-abff06ba2e45,G,"CASE6+CASE5 (weak preference, dual G membership, care/home-duties context)",2,G_economic_role:p1;G_future_engagement:p1,1,3
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,G,"CASE2+CASE4 (provider+care, dual G membership, hospitality interest + prior work experience)",2,G_economic_role:p2;G_future_engagement:p1,2,4

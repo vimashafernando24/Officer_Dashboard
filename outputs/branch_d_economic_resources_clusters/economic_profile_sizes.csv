@@ -1,0 +1,3 @@
+economic_profile_id,economic_profile_label,records,low_gower_confidence_records,mean_gower_silhouette,mean_consensus_silhouette,percent
+1,Economic profile 1: relatively lower household economic position,44,11,0.19393003656434396,0.7815356040921525,23.036649214659686
+2,Economic profile 2: relatively higher household economic position,147,3,0.5088884601425813,0.9180398157539503,76.96335078534031

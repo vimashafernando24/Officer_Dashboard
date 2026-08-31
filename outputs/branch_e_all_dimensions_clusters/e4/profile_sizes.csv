@@ -1,0 +1,3 @@
+profile_id,profile_label,records,mean_gower_silhouette,mean_consensus_silhouette,percent
+1,High perceived education utility and strong learning ambition,18,0.6898056009824403,0.9147774271196146,52.94117647058823
+2,Moderate perceived utility and mixed learning ambition,16,0.4294851619476429,0.992922155026441,47.05882352941177

@@ -1,0 +1,7 @@
+feature,type,observed,missing,maximum_distance_weight
+contract_type,nominal,81,0,0.16666666666666666
+monthly_income_band,ordinal,81,0,0.16666666666666666
+income_hours_preference,nominal,81,0,0.16666666666666666
+job_satisfaction,ordinal,81,0,0.16666666666666666
+job_security_12months,ordinal_with_unknown,81,0,0.16666666666666666
+sector_formality,ordinal,81,0,0.16666666666666666

@@ -1,0 +1,89 @@
+{
+  "cohort": {
+    "records": 56,
+    "branch": "G",
+    "routing_source": "translated_final_active_branch",
+    "strict_final_branch_records": 56,
+    "excluded_routing_integrity_records": 0
+  },
+  "dimension": "inactivity pathway and future engagement intention",
+  "source_variables": [
+    "reason_not_in_labour_force",
+    "ever_worked",
+    "wants_to_work_future",
+    "wants_further_edu"
+  ],
+  "clustering_components": [
+    "reason_not_in_labour_force",
+    "ever_worked",
+    "wants_to_work_future",
+    "wants_further_edu"
+  ],
+  "data_quality": {
+    "respondents_with_fewer_than_four_observed_components": 0,
+    "minimum_pair_feature_coverage": 4
+  },
+  "method": {
+    "distance": "equal-weight Gower on four original nominal/binary survey responses",
+    "candidate_k": [
+      2,
+      3,
+      4
+    ],
+    "selected_k": 2,
+    "ensemble": "equal-weight K-medoids plus spectral consensus",
+    "base_partitions": 200,
+    "permutation_repetitions": 100,
+    "pac_policy": "comparative only; no universal absolute cutoff",
+    "candidate_size_eligible": true
+  },
+  "profiles": {
+    "sizes": {
+      "1": 35,
+      "2": 21
+    },
+    "names": {
+      "1": "Work-and-education engaged, mostly prior work experience",
+      "2": "Low/uncertain engagement, mostly no prior work experience"
+    }
+  },
+  "metrics": {
+    "gower_silhouette": 0.4133529147293268,
+    "consensus_distance_silhouette": 0.9659347740502264,
+    "ensemble_bootstrap_ari_mean": 1.0,
+    "ensemble_bootstrap_ari_p10": 1.0,
+    "ari_vs_full_kmedoids": 0.9284785435630689,
+    "ari_vs_full_spectral": 1.0,
+    "ari_vs_consensus_hac_average": 1.0,
+    "ari_vs_consensus_hac_complete": 1.0,
+    "minimum_leave_one_feature_out_ari": 0.357066950053135,
+    "maximum_single_feature_ari": 0.554492856299445,
+    "dominant_single_feature": "wants_further_edu",
+    "minimum_profile_size": 21,
+    "low_gower_confidence_percent": 12.5,
+    "ambiguous_consensus_percent": 1.7857142857142856,
+    "pac_10_90": 0.07467532467532467,
+    "observed_maximum_kmedoids_silhouette": 0.4067570169252142,
+    "permutation_null_maximum_silhouette_median": 0.31504617702148674,
+    "permutation_null_maximum_silhouette_p95": 0.352917148924936,
+    "empirical_permutation_p": 0.010752688172043012
+  },
+  "decision": {
+    "retained_for_clustering": true,
+    "checks_passed": 10,
+    "checks_total": 10,
+    "status": "Retained as exploratory future-engagement/prior-work-experience profiles; inactivity reason is descriptive rather than defining",
+    "diagnostic_only": false,
+    "interpretation_scope": "future engagement intention and prior work experience; current inactivity reason does not distinguish the final profiles"
+  },
+  "limitations": [
+    "These are exploratory inactivity-pathway and future-engagement response profiles, not permanent youth types.",
+    "The 13-category inactivity reason is nominal and has the same maximum distance weight as each binary/intention question.",
+    "Future work and education answers are stated intentions, not a validated readiness scale or guarantee of future behaviour.",
+    "Leave-one-feature-out and single-feature checks are essential because inactivity reason could directly dominate the partition.",
+    "Removing inactivity reason reproduces the final partition (ARI 1.000), so it must be described within profiles rather than claimed as their defining separation.",
+    "If no candidate satisfies the cross-algorithm minimum-size rule, the selected solution is retained only to diagnose the rejection and must not be used as a profile classification.",
+    "Permutation calibration tests whether the selected structure exceeds independently shuffled variables, but it does not establish theoretical construct validity.",
+    "The Branch G sample contains only 56 valid respondents; confirmation in additional data is required."
+  ]
+}

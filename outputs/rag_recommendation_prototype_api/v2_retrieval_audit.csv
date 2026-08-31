@@ -1,0 +1,285 @@
+respondent_id,chunk_rank,child_chunk_id,parent_course_id,course_name,section,bm25_score
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,1,COURSE-049::whole,COURSE-049,Business Managemant,whole_document,10.9244
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,2,COURSE-072::identity_and_schedule_snippet,COURSE-072,Japanese Language,identity_and_schedule_snippet,9.053
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,3,COURSE-067::whole,COURSE-067,French Language,whole_document,8.6963
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,4,COURSE-074::identity_and_schedule_snippet,COURSE-074,Korean Language,identity_and_schedule_snippet,8.4971
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,5,COURSE-086::identity_and_schedule_snippet,COURSE-086,Tamil Language,identity_and_schedule_snippet,8.3854
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,6,COURSE-001::whole,COURSE-001,Freelancer Of Web Design & Development,whole_document,7.632
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,7,COURSE-074::whole,COURSE-074,Korean Language,whole_document,7.2816
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,8,COURSE-086::whole,COURSE-086,Tamil Language,whole_document,7.2218
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,9,COURSE-071::identity_and_schedule_snippet,COURSE-071,Human Recources Management,identity_and_schedule_snippet,6.123
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,10,COURSE-075::identity_and_schedule_snippet,COURSE-075,Mass Communication,identity_and_schedule_snippet,5.7735
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,11,COURSE-074::modules_or_overview_list,COURSE-074,Korean Language,modules_or_overview_list,5.6378
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,12,COURSE-086::modules_or_overview_list,COURSE-086,Tamil Language,modules_or_overview_list,5.6378
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,13,COURSE-006::identity_and_schedule_snippet,COURSE-006,National Diploma In Information & Communication Technology,identity_and_schedule_snippet,5.4081
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,14,COURSE-009::identity_and_schedule_snippet,COURSE-009,Information And Communication Technolory Technician,identity_and_schedule_snippet,5.4081
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,15,COURSE-003::identity_and_schedule_snippet,COURSE-003,Certificate In English Communication Essentials.,identity_and_schedule_snippet,5.2427
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,16,COURSE-006::whole,COURSE-006,National Diploma In Information & Communication Technology,whole_document,4.8709
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,17,COURSE-071::whole,COURSE-071,Human Recources Management,whole_document,4.8189
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,18,COURSE-075::whole,COURSE-075,Mass Communication,whole_document,4.7105
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,19,COURSE-072::whole,COURSE-072,Japanese Language,whole_document,4.6221
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,20,COURSE-006::modules_or_overview_list,COURSE-006,National Diploma In Information & Communication Technology,modules_or_overview_list,4.2042
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,21,COURSE-084::whole,COURSE-084,Store Management,whole_document,4.1233
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,22,COURSE-003::whole,COURSE-003,Certificate In English Communication Essentials.,whole_document,4.0465
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,23,COURSE-011::modules_or_overview_list,COURSE-011,Baker,modules_or_overview_list,3.8666
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,24,COURSE-071::modules_or_overview_list,COURSE-071,Human Recources Management,modules_or_overview_list,3.8601
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,25,COURSE-047::whole,COURSE-047,Baker,whole_document,3.5185
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,26,COURSE-075::modules_or_overview_list,COURSE-075,Mass Communication,modules_or_overview_list,3.4747
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,27,COURSE-011::whole,COURSE-011,Baker,whole_document,3.3545
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,28,COURSE-024::identity_and_schedule_snippet,COURSE-024,Draughtperson,identity_and_schedule_snippet,3.2525
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,29,COURSE-047::modules_or_overview_list,COURSE-047,Baker,modules_or_overview_list,2.8466
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,30,COURSE-003::narrative_description,COURSE-003,Certificate In English Communication Essentials.,narrative_description,2.5459
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,31,COURSE-006::narrative_description,COURSE-006,National Diploma In Information & Communication Technology,narrative_description,2.5384
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,32,COURSE-024::whole,COURSE-024,Draughtperson,whole_document,2.1973
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,33,COURSE-009::whole,COURSE-009,Information And Communication Technolory Technician,whole_document,1.8225
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,34,COURSE-011::identity_and_schedule_snippet,COURSE-011,Baker,identity_and_schedule_snippet,1.6446
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,35,COURSE-047::identity_and_schedule_snippet,COURSE-047,Baker,identity_and_schedule_snippet,1.6446
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,1,COURSE-006::whole,COURSE-006,National Diploma In Information & Communication Technology,whole_document,25.328
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,2,COURSE-006::modules_or_overview_list,COURSE-006,National Diploma In Information & Communication Technology,modules_or_overview_list,24.3378
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,3,COURSE-006::identity_and_schedule_snippet,COURSE-006,National Diploma In Information & Communication Technology,identity_and_schedule_snippet,19.194
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,4,COURSE-059::whole,COURSE-059,Non-Liner Video Editing With Digital 3D Animation,whole_document,18.0182
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,5,COURSE-055::whole,COURSE-055,Computer Hardware Technician,whole_document,12.8639
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,6,COURSE-073::whole,COURSE-073,Java Programming With Software Applications Development,whole_document,12.559
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,7,COURSE-001::whole,COURSE-001,Freelancer Of Web Design & Development,whole_document,12.495
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,8,COURSE-053::modules_or_overview_list,COURSE-053,Computer Applications Assistant,modules_or_overview_list,12.4273
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,9,COURSE-009::whole,COURSE-009,Information And Communication Technolory Technician,whole_document,12.1818
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,10,COURSE-053::whole,COURSE-053,Computer Applications Assistant,whole_document,11.9788
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,11,COURSE-056::whole,COURSE-056,Computer Hardware And Network Technician,whole_document,11.936
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,12,COURSE-009::modules_or_overview_list,COURSE-009,Information And Communication Technolory Technician,modules_or_overview_list,11.9291
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,13,COURSE-055::modules_or_overview_list,COURSE-055,Computer Hardware Technician,modules_or_overview_list,11.8129
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,14,COURSE-035::modules_or_overview_list,COURSE-035,Secretary (Secretarial Practices),modules_or_overview_list,11.4046
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,15,COURSE-052::whole,COURSE-052,Cisco Certified Network Associate,whole_document,11.0129
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,16,COURSE-049::whole,COURSE-049,Business Managemant,whole_document,9.7897
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,17,COURSE-058::identity_and_schedule_snippet,COURSE-058,Computer Based Accounting,identity_and_schedule_snippet,9.6055
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,18,COURSE-006::narrative_description,COURSE-006,National Diploma In Information & Communication Technology,narrative_description,9.1473
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,19,COURSE-009::identity_and_schedule_snippet,COURSE-009,Information And Communication Technolory Technician,identity_and_schedule_snippet,8.8926
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,20,COURSE-002::whole,COURSE-002,PYTHON,whole_document,8.6185
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,21,COURSE-057::whole,COURSE-057,Multimedia & Web Design,whole_document,8.6069
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,22,COURSE-008::identity_and_schedule_snippet,COURSE-008,Computer Hardware Technician,identity_and_schedule_snippet,8.4516
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,23,COURSE-055::identity_and_schedule_snippet,COURSE-055,Computer Hardware Technician,identity_and_schedule_snippet,8.4516
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,24,COURSE-058::whole,COURSE-058,Computer Based Accounting,whole_document,7.9705
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,25,COURSE-035::whole,COURSE-035,Secretary (Secretarial Practices),whole_document,7.5967
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,26,COURSE-008::whole,COURSE-008,Computer Hardware Technician,whole_document,6.583
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,27,COURSE-058::modules_or_overview_list,COURSE-058,Computer Based Accounting,modules_or_overview_list,5.9977
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,28,COURSE-008::narrative_description,COURSE-008,Computer Hardware Technician,narrative_description,5.9589
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,29,COURSE-053::identity_and_schedule_snippet,COURSE-053,Computer Applications Assistant,identity_and_schedule_snippet,3.4286
+nysc-a04f7d96-0e1d-49f2-8443-5cb15eeb9bf9,1,COURSE-031::identity_and_schedule_snippet,COURSE-031,National Diploma In Television Program Production,identity_and_schedule_snippet,5.4926
+nysc-a04f7d96-0e1d-49f2-8443-5cb15eeb9bf9,2,COURSE-006::identity_and_schedule_snippet,COURSE-006,National Diploma In Information & Communication Technology,identity_and_schedule_snippet,5.272
+nysc-a04f7d96-0e1d-49f2-8443-5cb15eeb9bf9,3,COURSE-026::identity_and_schedule_snippet,COURSE-026,Field Assistant (agricultural),identity_and_schedule_snippet,5.2397
+nysc-a04f7d96-0e1d-49f2-8443-5cb15eeb9bf9,4,COURSE-036::identity_and_schedule_snippet,COURSE-036,Survey Field Assistant,identity_and_schedule_snippet,5.2397
+nysc-a04f7d96-0e1d-49f2-8443-5cb15eeb9bf9,5,COURSE-031::whole,COURSE-031,National Diploma In Television Program Production,whole_document,4.7417
+nysc-a04f7d96-0e1d-49f2-8443-5cb15eeb9bf9,6,COURSE-026::whole,COURSE-026,Field Assistant (agricultural),whole_document,4.6928
+nysc-a04f7d96-0e1d-49f2-8443-5cb15eeb9bf9,7,COURSE-036::whole,COURSE-036,Survey Field Assistant,whole_document,4.6928
+nysc-a04f7d96-0e1d-49f2-8443-5cb15eeb9bf9,8,COURSE-026::narrative_description,COURSE-026,Field Assistant (agricultural),narrative_description,3.6943
+nysc-a04f7d96-0e1d-49f2-8443-5cb15eeb9bf9,9,COURSE-036::narrative_description,COURSE-036,Survey Field Assistant,narrative_description,3.6943
+nysc-a04f7d96-0e1d-49f2-8443-5cb15eeb9bf9,10,COURSE-031::narrative_description,COURSE-031,National Diploma In Television Program Production,narrative_description,3.6569
+nysc-a04f7d96-0e1d-49f2-8443-5cb15eeb9bf9,11,COURSE-006::whole,COURSE-006,National Diploma In Information & Communication Technology,whole_document,1.5465
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,1,COURSE-006::whole,COURSE-006,National Diploma In Information & Communication Technology,whole_document,27.9554
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,2,COURSE-006::modules_or_overview_list,COURSE-006,National Diploma In Information & Communication Technology,modules_or_overview_list,26.9622
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,3,COURSE-006::identity_and_schedule_snippet,COURSE-006,National Diploma In Information & Communication Technology,identity_and_schedule_snippet,19.194
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,4,COURSE-059::whole,COURSE-059,Non-Liner Video Editing With Digital 3D Animation,whole_document,18.3657
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,5,COURSE-055::whole,COURSE-055,Computer Hardware Technician,whole_document,13.1705
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,6,COURSE-073::whole,COURSE-073,Java Programming With Software Applications Development,whole_document,12.9819
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,7,COURSE-009::whole,COURSE-009,Information And Communication Technolory Technician,whole_document,12.393
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,8,COURSE-056::whole,COURSE-056,Computer Hardware And Network Technician,whole_document,12.3588
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,9,COURSE-055::modules_or_overview_list,COURSE-055,Computer Hardware Technician,modules_or_overview_list,12.1528
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,10,COURSE-009::modules_or_overview_list,COURSE-009,Information And Communication Technolory Technician,modules_or_overview_list,11.9291
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,11,COURSE-052::whole,COURSE-052,Cisco Certified Network Associate,whole_document,11.4358
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,12,COURSE-035::modules_or_overview_list,COURSE-035,Secretary (Secretarial Practices),modules_or_overview_list,11.4046
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,13,COURSE-006::narrative_description,COURSE-006,National Diploma In Information & Communication Technology,narrative_description,10.8158
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,14,COURSE-058::identity_and_schedule_snippet,COURSE-058,Computer Based Accounting,identity_and_schedule_snippet,9.6055
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,15,COURSE-001::whole,COURSE-001,Freelancer Of Web Design & Development,whole_document,9.4738
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,16,COURSE-031::whole,COURSE-031,National Diploma In Television Program Production,whole_document,9.3499
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,17,COURSE-057::whole,COURSE-057,Multimedia & Web Design,whole_document,9.0415
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,18,COURSE-031::narrative_description,COURSE-031,National Diploma In Television Program Production,narrative_description,8.9069
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,19,COURSE-009::identity_and_schedule_snippet,COURSE-009,Information And Communication Technolory Technician,identity_and_schedule_snippet,8.8926
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,20,COURSE-053::modules_or_overview_list,COURSE-053,Computer Applications Assistant,modules_or_overview_list,8.8128
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,21,COURSE-053::whole,COURSE-053,Computer Applications Assistant,whole_document,8.7669
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,22,COURSE-035::whole,COURSE-035,Secretary (Secretarial Practices),whole_document,8.7081
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,23,COURSE-002::whole,COURSE-002,PYTHON,whole_document,8.6185
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,24,COURSE-008::identity_and_schedule_snippet,COURSE-008,Computer Hardware Technician,identity_and_schedule_snippet,8.4516
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,25,COURSE-055::identity_and_schedule_snippet,COURSE-055,Computer Hardware Technician,identity_and_schedule_snippet,8.4516
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,26,COURSE-058::whole,COURSE-058,Computer Based Accounting,whole_document,8.2832
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,27,COURSE-008::whole,COURSE-008,Computer Hardware Technician,whole_document,7.9314
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,28,COURSE-008::narrative_description,COURSE-008,Computer Hardware Technician,narrative_description,7.8243
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,29,COURSE-058::modules_or_overview_list,COURSE-058,Computer Based Accounting,modules_or_overview_list,6.3452
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,30,COURSE-031::identity_and_schedule_snippet,COURSE-031,National Diploma In Television Program Production,identity_and_schedule_snippet,5.4926
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,31,COURSE-053::identity_and_schedule_snippet,COURSE-053,Computer Applications Assistant,identity_and_schedule_snippet,3.4286
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,32,COURSE-035::narrative_description,COURSE-035,Secretary (Secretarial Practices),narrative_description,1.8653
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,33,COURSE-009::narrative_description,COURSE-009,Information And Communication Technolory Technician,narrative_description,0.5049
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,1,COURSE-006::whole,COURSE-006,National Diploma In Information & Communication Technology,whole_document,27.9554
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,2,COURSE-006::modules_or_overview_list,COURSE-006,National Diploma In Information & Communication Technology,modules_or_overview_list,26.9622
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,3,COURSE-006::identity_and_schedule_snippet,COURSE-006,National Diploma In Information & Communication Technology,identity_and_schedule_snippet,19.194
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,4,COURSE-059::whole,COURSE-059,Non-Liner Video Editing With Digital 3D Animation,whole_document,18.3657
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,5,COURSE-055::whole,COURSE-055,Computer Hardware Technician,whole_document,15.3275
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,6,COURSE-056::whole,COURSE-056,Computer Hardware And Network Technician,whole_document,14.2695
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,7,COURSE-055::modules_or_overview_list,COURSE-055,Computer Hardware Technician,modules_or_overview_list,13.6888
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,8,COURSE-009::whole,COURSE-009,Information And Communication Technolory Technician,whole_document,13.3471
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,9,COURSE-073::whole,COURSE-073,Java Programming With Software Applications Development,whole_document,12.9819
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,10,COURSE-001::whole,COURSE-001,Freelancer Of Web Design & Development,whole_document,12.495
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,11,COURSE-009::modules_or_overview_list,COURSE-009,Information And Communication Technolory Technician,modules_or_overview_list,11.9291
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,12,COURSE-009::identity_and_schedule_snippet,COURSE-009,Information And Communication Technolory Technician,identity_and_schedule_snippet,11.7239
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,13,COURSE-052::whole,COURSE-052,Cisco Certified Network Associate,whole_document,11.4358
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,14,COURSE-035::modules_or_overview_list,COURSE-035,Secretary (Secretarial Practices),modules_or_overview_list,11.4046
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,15,COURSE-008::identity_and_schedule_snippet,COURSE-008,Computer Hardware Technician,identity_and_schedule_snippet,11.4013
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,16,COURSE-055::identity_and_schedule_snippet,COURSE-055,Computer Hardware Technician,identity_and_schedule_snippet,11.4013
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,17,COURSE-022::whole,COURSE-022,Computer Network Technician,whole_document,11.0396
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,18,COURSE-006::narrative_description,COURSE-006,National Diploma In Information & Communication Technology,narrative_description,10.8158
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,19,COURSE-022::identity_and_schedule_snippet,COURSE-022,Computer Network Technician,identity_and_schedule_snippet,10.3224
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,20,COURSE-049::whole,COURSE-049,Business Managemant,whole_document,10.25
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,21,COURSE-008::whole,COURSE-008,Computer Hardware Technician,whole_document,10.2289
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,22,COURSE-008::narrative_description,COURSE-008,Computer Hardware Technician,narrative_description,9.904
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,23,COURSE-058::identity_and_schedule_snippet,COURSE-058,Computer Based Accounting,identity_and_schedule_snippet,9.6055
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,24,COURSE-022::narrative_description,COURSE-022,Computer Network Technician,narrative_description,9.4477
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,25,COURSE-031::whole,COURSE-031,National Diploma In Television Program Production,whole_document,9.3499
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,26,COURSE-057::whole,COURSE-057,Multimedia & Web Design,whole_document,9.0415
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,27,COURSE-031::narrative_description,COURSE-031,National Diploma In Television Program Production,narrative_description,8.9069
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,28,COURSE-035::whole,COURSE-035,Secretary (Secretarial Practices),whole_document,8.7081
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,29,COURSE-058::whole,COURSE-058,Computer Based Accounting,whole_document,8.2832
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,30,COURSE-058::modules_or_overview_list,COURSE-058,Computer Based Accounting,modules_or_overview_list,6.3452
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,31,COURSE-031::identity_and_schedule_snippet,COURSE-031,National Diploma In Television Program Production,identity_and_schedule_snippet,5.4926
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,32,COURSE-035::narrative_description,COURSE-035,Secretary (Secretarial Practices),narrative_description,1.8653
+nysc-346623df-699b-4abb-a445-51abb3f16cc5,33,COURSE-009::narrative_description,COURSE-009,Information And Communication Technolory Technician,narrative_description,0.5049
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,1,COURSE-012::identity_and_schedule_snippet,COURSE-012,Refrigeration & Air Conditioning Technician,identity_and_schedule_snippet,16.7772
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,2,COURSE-034::identity_and_schedule_snippet,COURSE-034,Refrigeration & Air Conditioning Technician,identity_and_schedule_snippet,16.7772
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,3,COURSE-031::identity_and_schedule_snippet,COURSE-031,National Diploma In Television Program Production,identity_and_schedule_snippet,13.1765
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,4,COURSE-028::identity_and_schedule_snippet,COURSE-028,Lapiderist (Gem Cutting),identity_and_schedule_snippet,12.6474
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,5,COURSE-029::identity_and_schedule_snippet,COURSE-029,Mobile Phone Repair Technician,identity_and_schedule_snippet,12.0395
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,6,COURSE-028::whole,COURSE-028,Lapiderist (Gem Cutting),whole_document,11.5532
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,7,COURSE-030::identity_and_schedule_snippet,COURSE-030,Motorcycle Mechanic,identity_and_schedule_snippet,11.5258
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,8,COURSE-034::narrative_description,COURSE-034,Refrigeration & Air Conditioning Technician,narrative_description,11.3856
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,9,COURSE-031::whole,COURSE-031,National Diploma In Television Program Production,whole_document,11.3363
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,10,COURSE-077::whole,COURSE-077,Mobile Phone Repair Technician,whole_document,11.2114
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,11,COURSE-029::whole,COURSE-029,Mobile Phone Repair Technician,whole_document,10.7895
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,12,COURSE-034::whole,COURSE-034,Refrigeration & Air Conditioning Technician,whole_document,10.5504
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,13,COURSE-030::whole,COURSE-030,Motorcycle Mechanic,whole_document,10.2728
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,14,COURSE-040::identity_and_schedule_snippet,COURSE-040,Automobile Mechanic,identity_and_schedule_snippet,10.0184
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,15,COURSE-005::identity_and_schedule_snippet,COURSE-005,Automobile Mechanic,identity_and_schedule_snippet,9.9116
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,16,COURSE-012::whole,COURSE-012,Refrigeration & Air Conditioning Technician,whole_document,9.1301
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,17,COURSE-005::whole,COURSE-005,Automobile Mechanic,whole_document,9.0418
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,18,COURSE-028::narrative_description,COURSE-028,Lapiderist (Gem Cutting),narrative_description,8.6879
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,19,COURSE-031::narrative_description,COURSE-031,National Diploma In Television Program Production,narrative_description,8.204
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,20,COURSE-078::whole,COURSE-078,Motorcycle Mechanic,whole_document,8.0105
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,21,COURSE-029::narrative_description,COURSE-029,Mobile Phone Repair Technician,narrative_description,8.0053
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,22,COURSE-042::whole,COURSE-042,Automobile Electrician,whole_document,7.6999
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,23,COURSE-030::narrative_description,COURSE-030,Motorcycle Mechanic,narrative_description,7.4025
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,24,COURSE-081::modules_or_overview_list,COURSE-081,"Radio, TV & Allied Equipment Repairer",modules_or_overview_list,7.2134
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,25,COURSE-005::modules_or_overview_list,COURSE-005,Automobile Mechanic,modules_or_overview_list,7.1844
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,26,COURSE-005::narrative_description,COURSE-005,Automobile Mechanic,narrative_description,7.1231
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,27,COURSE-081::whole,COURSE-081,"Radio, TV & Allied Equipment Repairer",whole_document,7.1014
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,28,COURSE-040::whole,COURSE-040,Automobile Mechanic,whole_document,6.905
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,29,COURSE-006::identity_and_schedule_snippet,COURSE-006,National Diploma In Information & Communication Technology,identity_and_schedule_snippet,6.8168
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,30,COURSE-006::whole,COURSE-006,National Diploma In Information & Communication Technology,whole_document,6.7083
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,31,COURSE-040::narrative_description,COURSE-040,Automobile Mechanic,narrative_description,6.6851
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,32,COURSE-021::identity_and_schedule_snippet,COURSE-021,Automobile Electrician,identity_and_schedule_snippet,6.1148
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,33,COURSE-006::modules_or_overview_list,COURSE-006,National Diploma In Information & Communication Technology,modules_or_overview_list,6.108
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,34,COURSE-042::identity_and_schedule_snippet,COURSE-042,Automobile Electrician,identity_and_schedule_snippet,6.008
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,35,COURSE-021::whole,COURSE-021,Automobile Electrician,whole_document,5.4196
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,36,COURSE-038::identity_and_schedule_snippet,COURSE-038,Three Wheeler Mechanic,identity_and_schedule_snippet,5.2473
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,37,COURSE-012::modules_or_overview_list,COURSE-012,Refrigeration & Air Conditioning Technician,modules_or_overview_list,4.5177
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,38,COURSE-038::whole,COURSE-038,Three Wheeler Mechanic,whole_document,4.4911
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,39,COURSE-042::narrative_description,COURSE-042,Automobile Electrician,narrative_description,4.2437
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,40,COURSE-021::narrative_description,COURSE-021,Automobile Electrician,narrative_description,3.5616
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,41,COURSE-038::narrative_description,COURSE-038,Three Wheeler Mechanic,narrative_description,3.0973
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,42,COURSE-081::identity_and_schedule_snippet,COURSE-081,"Radio, TV & Allied Equipment Repairer",identity_and_schedule_snippet,1.4851
+nysc-0c6c34a2-a528-4c97-b06b-3b712f4ff24d,43,COURSE-006::narrative_description,COURSE-006,National Diploma In Information & Communication Technology,narrative_description,0.4117
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,1,COURSE-035::modules_or_overview_list,COURSE-035,Secretary (Secretarial Practices),modules_or_overview_list,11.4046
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,2,COURSE-035::whole,COURSE-035,Secretary (Secretarial Practices),whole_document,11.1062
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,3,COURSE-071::whole,COURSE-071,Human Recources Management,whole_document,10.8152
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,4,COURSE-071::identity_and_schedule_snippet,COURSE-071,Human Recources Management,identity_and_schedule_snippet,10.6905
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,5,COURSE-049::whole,COURSE-049,Business Managemant,whole_document,9.7897
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,6,COURSE-071::modules_or_overview_list,COURSE-071,Human Recources Management,modules_or_overview_list,9.4606
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,7,COURSE-082::whole,COURSE-082,Secretary (Secretarial Practices),whole_document,9.2637
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,8,COURSE-082::modules_or_overview_list,COURSE-082,Secretary (Secretarial Practices),modules_or_overview_list,9.1768
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,9,COURSE-006::identity_and_schedule_snippet,COURSE-006,National Diploma In Information & Communication Technology,identity_and_schedule_snippet,9.1354
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,10,COURSE-055::whole,COURSE-055,Computer Hardware Technician,whole_document,8.651
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,11,COURSE-053::modules_or_overview_list,COURSE-053,Computer Applications Assistant,modules_or_overview_list,8.4218
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,12,COURSE-053::whole,COURSE-053,Computer Applications Assistant,whole_document,8.4194
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,13,COURSE-055::modules_or_overview_list,COURSE-055,Computer Hardware Technician,modules_or_overview_list,7.7426
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,14,COURSE-006::whole,COURSE-006,National Diploma In Information & Communication Technology,whole_document,6.9296
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,15,COURSE-009::identity_and_schedule_snippet,COURSE-009,Information And Communication Technolory Technician,identity_and_schedule_snippet,6.6946
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,16,COURSE-008::identity_and_schedule_snippet,COURSE-008,Computer Hardware Technician,identity_and_schedule_snippet,6.3783
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,17,COURSE-055::identity_and_schedule_snippet,COURSE-055,Computer Hardware Technician,identity_and_schedule_snippet,6.3783
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,18,COURSE-029::identity_and_schedule_snippet,COURSE-029,Mobile Phone Repair Technician,identity_and_schedule_snippet,6.3406
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,19,COURSE-001::whole,COURSE-001,Freelancer Of Web Design & Development,whole_document,6.2239
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,20,COURSE-022::identity_and_schedule_snippet,COURSE-022,Computer Network Technician,identity_and_schedule_snippet,6.1222
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,21,COURSE-022::whole,COURSE-022,Computer Network Technician,whole_document,5.6076
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,22,COURSE-006::modules_or_overview_list,COURSE-006,National Diploma In Information & Communication Technology,modules_or_overview_list,5.5499
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,23,COURSE-031::identity_and_schedule_snippet,COURSE-031,National Diploma In Television Program Production,identity_and_schedule_snippet,5.4926
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,24,COURSE-035::identity_and_schedule_snippet,COURSE-035,Secretary (Secretarial Practices),identity_and_schedule_snippet,5.2397
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,25,COURSE-082::identity_and_schedule_snippet,COURSE-082,Secretary (Secretarial Practices),identity_and_schedule_snippet,5.2397
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,26,COURSE-056::whole,COURSE-056,Computer Hardware And Network Technician,whole_document,5.101
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,27,COURSE-008::whole,COURSE-008,Computer Hardware Technician,whole_document,4.9681
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,28,COURSE-031::whole,COURSE-031,National Diploma In Television Program Production,whole_document,4.7417
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,29,COURSE-008::narrative_description,COURSE-008,Computer Hardware Technician,narrative_description,4.4971
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,30,COURSE-022::narrative_description,COURSE-022,Computer Network Technician,narrative_description,4.4971
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,31,COURSE-075::identity_and_schedule_snippet,COURSE-075,Mass Communication,identity_and_schedule_snippet,4.2007
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,32,COURSE-075::whole,COURSE-075,Mass Communication,whole_document,3.9082
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,33,COURSE-029::whole,COURSE-029,Mobile Phone Repair Technician,whole_document,3.8605
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,34,COURSE-009::whole,COURSE-009,Information And Communication Technolory Technician,whole_document,3.8195
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,35,COURSE-035::narrative_description,COURSE-035,Secretary (Secretarial Practices),narrative_description,3.6943
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,36,COURSE-031::narrative_description,COURSE-031,National Diploma In Television Program Production,narrative_description,3.6569
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,37,COURSE-075::modules_or_overview_list,COURSE-075,Mass Communication,modules_or_overview_list,3.4747
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,38,COURSE-053::identity_and_schedule_snippet,COURSE-053,Computer Applications Assistant,identity_and_schedule_snippet,3.4286
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,39,COURSE-006::narrative_description,COURSE-006,National Diploma In Information & Communication Technology,narrative_description,2.5384
+nysc-33aaf2f7-dc2a-4530-ae73-3bfdf5be63ab,40,COURSE-009::modules_or_overview_list,COURSE-009,Information And Communication Technolory Technician,modules_or_overview_list,2.0305
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,1,COURSE-019::identity_and_schedule_snippet,COURSE-019,Quantity Surveying Assistant,identity_and_schedule_snippet,11.6695
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,2,COURSE-019::whole,COURSE-019,Quantity Surveying Assistant,whole_document,10.4516
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,3,COURSE-049::whole,COURSE-049,Business Managemant,whole_document,9.7897
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,4,COURSE-019::narrative_description,COURSE-019,Quantity Surveying Assistant,narrative_description,8.2277
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,5,COURSE-058::whole,COURSE-058,Computer Based Accounting,whole_document,6.3282
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,6,COURSE-001::whole,COURSE-001,Freelancer Of Web Design & Development,whole_document,6.2239
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,7,COURSE-058::identity_and_schedule_snippet,COURSE-058,Computer Based Accounting,identity_and_schedule_snippet,6.1769
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,8,COURSE-058::modules_or_overview_list,COURSE-058,Computer Based Accounting,modules_or_overview_list,5.9977
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,9,COURSE-023::identity_and_schedule_snippet,COURSE-023,Construction Site Supervisor,identity_and_schedule_snippet,5.7964
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,10,COURSE-065::whole,COURSE-065,Engineering Draughtsmanship,whole_document,5.612
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,11,COURSE-060::whole,COURSE-060,Construction Site Supervisor,whole_document,5.5006
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,12,COURSE-006::modules_or_overview_list,COURSE-006,National Diploma In Information & Communication Technology,modules_or_overview_list,5.2488
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,13,COURSE-023::whole,COURSE-023,Construction Site Supervisor,whole_document,5.1915
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,14,COURSE-024::narrative_description,COURSE-024,Draughtperson,narrative_description,4.6335
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,15,COURSE-071::identity_and_schedule_snippet,COURSE-071,Human Recources Management,identity_and_schedule_snippet,4.5136
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,16,COURSE-009::narrative_description,COURSE-009,Information And Communication Technolory Technician,narrative_description,4.2485
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,17,COURSE-071::whole,COURSE-071,Human Recources Management,whole_document,4.1767
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,18,COURSE-023::narrative_description,COURSE-023,Construction Site Supervisor,narrative_description,4.0868
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,19,COURSE-024::whole,COURSE-024,Draughtperson,whole_document,4.0868
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,20,COURSE-011::modules_or_overview_list,COURSE-011,Baker,modules_or_overview_list,3.8666
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,21,COURSE-071::modules_or_overview_list,COURSE-071,Human Recources Management,modules_or_overview_list,3.8601
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,22,COURSE-006::whole,COURSE-006,National Diploma In Information & Communication Technology,whole_document,3.7651
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,23,COURSE-061::whole,COURSE-061,Designing & Space Planing For Droughtmanship,whole_document,3.6556
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,24,COURSE-084::whole,COURSE-084,Store Management,whole_document,3.0912
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,25,COURSE-064::modules_or_overview_list,COURSE-064,Electrician,modules_or_overview_list,2.8925
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,26,COURSE-064::whole,COURSE-064,Electrician,whole_document,2.722
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,27,COURSE-011::whole,COURSE-011,Baker,whole_document,2.5148
+nysc-00e2c251-39ad-4474-b077-2a2bbe78457a,28,COURSE-009::whole,COURSE-009,Information And Communication Technolory Technician,whole_document,1.7766
+nysc-465701ee-3d2d-4f85-a044-abff06ba2e45,1,COURSE-031::identity_and_schedule_snippet,COURSE-031,National Diploma In Television Program Production,identity_and_schedule_snippet,5.4926
+nysc-465701ee-3d2d-4f85-a044-abff06ba2e45,2,COURSE-006::identity_and_schedule_snippet,COURSE-006,National Diploma In Information & Communication Technology,identity_and_schedule_snippet,5.272
+nysc-465701ee-3d2d-4f85-a044-abff06ba2e45,3,COURSE-031::whole,COURSE-031,National Diploma In Television Program Production,whole_document,4.7417
+nysc-465701ee-3d2d-4f85-a044-abff06ba2e45,4,COURSE-031::narrative_description,COURSE-031,National Diploma In Television Program Production,narrative_description,3.6569
+nysc-465701ee-3d2d-4f85-a044-abff06ba2e45,5,COURSE-082::modules_or_overview_list,COURSE-082,Secretary (Secretarial Practices),modules_or_overview_list,3.3365
+nysc-465701ee-3d2d-4f85-a044-abff06ba2e45,6,COURSE-082::whole,COURSE-082,Secretary (Secretarial Practices),whole_document,3.0212
+nysc-465701ee-3d2d-4f85-a044-abff06ba2e45,7,COURSE-006::whole,COURSE-006,National Diploma In Information & Communication Technology,whole_document,1.5465
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,1,COURSE-049::whole,COURSE-049,Business Managemant,whole_document,9.7897
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,2,COURSE-011::modules_or_overview_list,COURSE-011,Baker,modules_or_overview_list,8.0073
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,3,COURSE-007::identity_and_schedule_snippet,COURSE-007,Professional Cookery,identity_and_schedule_snippet,6.4465
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,4,COURSE-001::whole,COURSE-001,Freelancer Of Web Design & Development,whole_document,6.2239
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,5,COURSE-050::whole,COURSE-050,Cake & Cake Structure,whole_document,6.1637
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,6,COURSE-050::identity_and_schedule_snippet,COURSE-050,Cake & Cake Structure,identity_and_schedule_snippet,6.0209
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,7,COURSE-050::modules_or_overview_list,COURSE-050,Cake & Cake Structure,modules_or_overview_list,6.0018
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,8,COURSE-047::modules_or_overview_list,COURSE-047,Baker,modules_or_overview_list,5.8949
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,9,COURSE-047::whole,COURSE-047,Baker,whole_document,5.4626
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,10,COURSE-011::whole,COURSE-011,Baker,whole_document,5.2079
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,11,COURSE-071::identity_and_schedule_snippet,COURSE-071,Human Recources Management,identity_and_schedule_snippet,4.5136
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,12,COURSE-007::narrative_description,COURSE-007,Professional Cookery,narrative_description,4.4874
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,13,COURSE-007::whole,COURSE-007,Professional Cookery,whole_document,4.4488
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,14,COURSE-071::whole,COURSE-071,Human Recources Management,whole_document,4.1767
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,15,COURSE-071::modules_or_overview_list,COURSE-071,Human Recources Management,modules_or_overview_list,3.8601
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,16,COURSE-084::whole,COURSE-084,Store Management,whole_document,3.0912
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,17,COURSE-003::narrative_description,COURSE-003,Certificate In English Communication Essentials.,narrative_description,3.0212
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,18,COURSE-051::whole,COURSE-051,Cake Decorator,whole_document,2.97
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,19,COURSE-064::modules_or_overview_list,COURSE-064,Electrician,modules_or_overview_list,2.8925
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,20,COURSE-025::modules_or_overview_list,COURSE-025,Electrician,modules_or_overview_list,2.7766
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,21,COURSE-064::whole,COURSE-064,Electrician,whole_document,2.722
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,22,COURSE-006::modules_or_overview_list,COURSE-006,National Diploma In Information & Communication Technology,modules_or_overview_list,2.6244
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,23,COURSE-025::whole,COURSE-025,Electrician,whole_document,2.6191
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,24,COURSE-003::whole,COURSE-003,Certificate In English Communication Essentials.,whole_document,2.2543
+nysc-55bdfdcc-30fd-4115-9e2a-4620cde38963,25,COURSE-006::whole,COURSE-006,National Diploma In Information & Communication Technology,whole_document,1.8826

@@ -1,0 +1,8 @@
+variable,role,observed,missing,unique_observed_responses,dominant_response,dominant_response_percent
+monthly_income_band,cluster_input,81,0,6,"Above LKR 200,000",24.691358024691358
+usual_hours_per_week,cluster_input,81,0,26,40.0,32.098765432098766
+income_hours_preference,cluster_input,81,0,3,Keep things the same as they are now,58.0246913580247
+actual_hours_last_week,profile_descriptor,81,0,26,40.0,25.925925925925924
+hours_below_normal,profile_descriptor,81,0,2,No — I worked my normal hours or more,60.49382716049383
+job_satisfaction,profile_descriptor,81,0,4,Somewhat satisfied,55.55555555555556
+has_second_job,profile_descriptor,81,0,2,No,75.30864197530865

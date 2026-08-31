@@ -1,0 +1,41 @@
+COURSE DOCUMENT ID: COURSE-068
+
+COURSE NAME: Graphics Designer
+
+DOCUMENT STATUS: SAFE_TO_INDEX
+
+CORPUS VERSION: FINAL_RAG_CORPUS_V2
+
+PROMOTED SOURCE DOCUMENT: outputs/rag_course_knowledge/manual_review_resolved_candidates/course-068_graphics_designer_part_time_candidate.txt
+
+SOURCE TYPE: COURSE_DETAIL_SCREENSHOT
+
+AUTHORITATIVE CONTENT SCREENSHOT: Screenshot 2026-04-12 at 22.55.38.png
+
+REJECTED FULL-TIME-VARIANT SCREENSHOT: Screenshot 2026-04-12 at 22.30.52.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.31.50.png; Screenshot 2026-04-12 at 22.57.21.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-016; COURSE-068
+
+REMAINING UNCERTAINTY MARKERS: 0
+
+CORRECTION NOTE: The candidate uses the complete English Part Time detail screenshot at 22.55.38. The screenshot at 22.30.52 explicitly describes a Sinhala / English Full Time Level 4 course and belongs with the already separate full-time Graphics Designer parent, COURSE-016. The visible Part Time catalogue cards both show 20 students and 06 Month(s).
+
+COMPLETE EXTRACTED COURSE TEXT
+
+Graphics Designer
+LANGUAGE
+MAX STUDENTS
+English
+20
+APPLY NOW
+Course Overview
+The National Youth Service Council has initiated several course programs to enable the youth to
+develop their skills while also providing an opportunity to achieve their future job aspirations. Graphic
+Designing courses will give you theoretical knowledge as well as job oriented practical skills that are
+necessary for employment and higher education. This is a part time course which will be held on
+weekends.
+It is our objective to show the correct path that will direct youth to their desired occupations while at
+the same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and
+gentle attitudes within a disciplined environment.

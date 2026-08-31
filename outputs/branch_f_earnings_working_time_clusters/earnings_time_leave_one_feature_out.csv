@@ -1,0 +1,4 @@
+omitted_feature,retained_features,minimum_pair_coverage,gower_silhouette_reduced_kmedoids,ari_reduced_kmedoids_vs_final_consensus
+monthly_income_band,2,2,0.6887370276137885,0.9020121278941565
+usual_hours_per_week,2,2,0.6245666208285884,0.9020121278941565
+income_hours_preference,2,2,0.4415404322878945,-0.012917411021025147

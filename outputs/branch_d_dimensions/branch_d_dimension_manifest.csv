@@ -1,0 +1,20 @@
+component,dimension,source_variables,construction,high_value_meaning,index_type
+income_resources,economic_resources,household_income,(income band - 1) / 4; code 99 is missing,Higher household income resources,formative
+working_household_share,economic_resources,household_workers; household_size,"workers / household size, clipped to 0–1",Larger share of household members working,formative
+low_household_unemployment,economic_resources,household_unemployed; household_size,"1 - unemployed / household size, clipped to 0–1",Lower household unemployment burden,formative
+freedom_from_primary_earner_burden,economic_resources,primary_earner_status,"no=1, shared=0.5, yes=0",Less personal responsibility for primary household income,formative
+education_funding_security,economic_resources,edu_funding_source,"government/free, scholarship, family or employer funded=1; own earnings=0; other=missing",Education funded without dependence on respondent's current earnings,formative
+current_education_stage,human_capital_trajectory,edu_status; highest_edu_completed,theory-defined education-stage map; completed uses observed highest qualification when available,More advanced current/completed educational stage,formative
+expected_education_level,human_capital_trajectory,expected_highest_edu_d,(expected education code - 1) / 6,Higher expected educational attainment,formative
+work_exposure_while_studying,human_capital_trajectory,worked_while_studying,"yes=1, no=0",Prior work exposure during education,formative
+transition_plan_present,career_transition_readiness,plans_after_education,"job, further education or business plan=1; stay home or do not know=0",Concrete education-to-work/learning transition plan,formative
+already_searching_for_work,career_transition_readiness,already_job_searching,"yes=1, no=0",Active preparation for the work transition,formative
+ideal_work_direction_defined,career_transition_readiness,ideal_work_type,defined work type=1; not sure or does not wish to work=0,Clear preferred work arrangement,formative
+ideal_sector_defined,career_transition_readiness,ideal_sector,defined sector=1; not sure=0,Clear preferred employment sector,formative
+study_career_alignment,career_transition_readiness,study_field_preference; ideal_sector,1 when study field maps to preferred sector family; 0 when both observed but not aligned,Study field and preferred employment sector are aligned,formative
+employment_network_strength,social_capital_belonging,employment_network_quality,(4 - code) / 3,Stronger useful employment contacts,formative
+supported_education_access,social_capital_belonging,social_capital_in_edu_access,family/contact/employer/government guidance=1; entirely own initiative=0,Access supported by social or institutional connections,formative
+institutional_belonging,social_capital_belonging,relatedness_at_institution,(4 - code) / 3,Stronger connection and belonging at institution,formative
+autonomous_study_motivation,agency_study_engagement,study_motivation_type,(5 - code) / 4,More autonomous/intrinsic rather than amotivated study regulation,reflective_diagnostic
+study_autonomy,agency_study_engagement,autonomy_in_study,(4 - code) / 3,Greater perceived choice and control in study,reflective_diagnostic
+study_competence,agency_study_engagement,competence_in_study_field,(4 - code) / 3,Greater perceived capability in study field,reflective_diagnostic

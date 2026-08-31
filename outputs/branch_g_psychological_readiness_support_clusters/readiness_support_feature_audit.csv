@@ -1,0 +1,4 @@
+feature,source_variables,type,observed,missing,maximum_distance_weight
+future_orientation_g,future_orientation_g,ordinal,56,0,0.3333333333333333
+employment_self_efficacy,employment_self_efficacy,ordinal,56,0,0.3333333333333333
+support_for_engagement,support_for_engagement,ordinal,56,0,0.3333333333333333

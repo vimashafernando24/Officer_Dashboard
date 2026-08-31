@@ -1,0 +1,4 @@
+omitted_feature,retained_features,minimum_pair_coverage,gower_silhouette_reduced_kmedoids,ari_reduced_kmedoids_vs_final_consensus
+job_satisfaction,2,2,0.5597465279167255,0.32589735783707047
+contract_satisfaction_polarity,2,2,0.6036127637645907,0.7652943733176761
+hopes_to_change_job,2,2,0.8433427027003779,-0.007176574432973865

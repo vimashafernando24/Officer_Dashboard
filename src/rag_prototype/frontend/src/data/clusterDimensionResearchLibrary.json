@@ -1,0 +1,112 @@
+{
+  "D_motivation": {
+    "dimension_title": "Study motivation",
+    "description": "This dimension groups current students by their stated study motivation, sense of choice, confidence in their study field, and connection to their institution.",
+    "historical_sample_size": 191,
+    "profile_count": 3,
+    "profile_sizes": [47, 75, 69],
+    "cluster_forming_variables": [
+      { "variable": "Study motivation", "variable_key": "study_motivation_type", "survey_question": "Why are you studying right now? Which best describes your motivation?" },
+      { "variable": "Choice and control in study", "variable_key": "autonomy_in_study", "survey_question": "How much choice and control do you have over what and how you study?" },
+      { "variable": "Confidence in study field", "variable_key": "competence_in_study_field", "survey_question": "How capable and effective do you feel in your area of study?" },
+      { "variable": "Connection to institution", "variable_key": "relatedness_at_institution", "survey_question": "How much do you feel you belong and are connected to the people at your institution?" }
+    ],
+    "validation": { "silhouette": 0.350397542673708, "ari": 0.9807315088034154, "pac": 0.1931110498759989 },
+    "method": { "distance": "Equal-weight ordinal Gower", "clustering": "Consensus ensemble of K-medoids and spectral clustering; final K-medoids on one minus co-association" }
+  },
+  "D_economic": {
+    "dimension_title": "Household resources",
+    "description": "This dimension groups current students by their observed household economic and education-funding situation.",
+    "historical_sample_size": 191,
+    "profile_count": 2,
+    "profile_sizes": [44, 147],
+    "cluster_forming_variables": [
+      { "variable": "Household income", "variable_key": "household_income", "survey_question": "What is the approximate total monthly income of your household from all sources?" },
+      { "variable": "Household size", "variable_key": "household_size", "survey_question": "How many people live in your household in total?" },
+      { "variable": "Household members working", "variable_key": "household_workers", "survey_question": "How many people in your household are currently working for a salary or wage?" },
+      { "variable": "Household members looking for work", "variable_key": "household_unemployed", "survey_question": "How many people in your household are currently without work and actively looking for a job?" },
+      { "variable": "Primary income-earner status", "variable_key": "primary_earner_status", "survey_question": "Are you the primary income earner in your household?" },
+      { "variable": "Main personal income source", "variable_key": "primary_income_source", "survey_question": "Currently, where does most of your money come from?" },
+      { "variable": "Education funding source", "variable_key": "edu_funding_source", "survey_question": "How is your current education mainly funded?" }
+    ],
+    "validation": { "silhouette": 0.43633259293084076, "ari": 0.9857371798272545, "pac": 0.4218241939928355 },
+    "method": { "distance": "Equal-weight mixed, missing-aware Gower", "clustering": "Consensus ensemble of K-medoids and spectral clustering; final K-medoids on one minus co-association" }
+  },
+  "D_educational_cultural": {
+    "dimension_title": "Education background",
+    "description": "This dimension groups current students by family education, expected education, institution type, work while studying, and education re-entry.",
+    "historical_sample_size": 191,
+    "profile_count": 4,
+    "profile_sizes": [15, 53, 57, 66],
+    "cluster_forming_variables": [
+      { "variable": "Father's education", "variable_key": "father_edu", "survey_question": "What is the highest level of education your father completed?" },
+      { "variable": "Mother's education", "variable_key": "mother_edu", "survey_question": "What is the highest level of education your mother completed?" },
+      { "variable": "Expected highest education", "variable_key": "expected_highest_edu_d", "survey_question": "What is the highest level of education or training you expect to complete in total?" },
+      { "variable": "Institution type", "variable_key": "institution_type", "survey_question": "What type of institution are you currently attending?" },
+      { "variable": "Work while studying", "variable_key": "worked_while_studying", "survey_question": "Did you work (or do you currently work) while studying?" },
+      { "variable": "Education re-entry", "variable_key": "re_entered_education", "survey_question": "Have you ever stopped your education to work or look for work, then re-entered education later?" }
+    ],
+    "validation": { "silhouette": 0.4268408850721272, "ari": 0.9625787891227019, "pac": 0.13414163681454946 },
+    "method": { "distance": "Equal-weight mixed, missing-aware Gower on original responses", "clustering": "Consensus ensemble of K-medoids and spectral clustering; final K-medoids on one minus co-association" }
+  },
+  "E_learning_orientation": {
+    "dimension_title": "Education and further learning",
+    "description": "This dimension groups job-seeking young people by how useful they found earlier education, their further-learning plans, and their expected education level.",
+    "historical_sample_size": 34,
+    "profile_count": 2,
+    "profile_sizes": [18, 16],
+    "cluster_forming_variables": [
+      { "variable": "Usefulness of previous education", "variable_key": "past_edu_usefulness", "survey_question": "Do you feel that the education or training you have received is useful for getting a job?" },
+      { "variable": "Plans for further education or training", "variable_key": "plans_further_edu", "survey_question": "Do you plan to pursue further education/training?" },
+      { "variable": "Expected highest education", "variable_key": "expected_highest_edu_e", "survey_question": "What is the highest education you expect to complete?" }
+    ],
+    "validation": { "silhouette": 0.567301864966065, "ari": 0.952903016542329, "pac": 0.058823529411764705 },
+    "method": { "distance": "Mixed Gower on two nominal and one ordered response", "clustering": "Consensus ensemble of K-medoids and spectral clustering; final K-medoids on one minus co-association" }
+  },
+  "F_employment_security": {
+    "dimension_title": "Employment security",
+    "description": "This dimension groups employed young people by their contract type, expected job security, and work formality.",
+    "historical_sample_size": 81,
+    "profile_count": 2,
+    "profile_sizes": [29, 52],
+    "cluster_forming_variables": [
+      { "variable": "Employment contract type", "variable_key": "contract_type", "survey_question": "What kind of employment contract are you currently working under?" },
+      { "variable": "Job security over the next 12 months", "variable_key": "job_security_12months", "survey_question": "How likely is it that you will be able to keep your main job over the next 12 months?" },
+      { "variable": "Work formality", "variable_key": "sector_formality", "survey_question": "How would you describe the formality of your work situation?" }
+    ],
+    "validation": { "silhouette": 0.36761688563659384, "ari": 0.9527213219860738, "pac": 0.42746913580246915 },
+    "method": { "distance": "Equal-weight mixed Gower on original employment responses", "clustering": "Consensus ensemble of K-medoids and spectral clustering; final K-medoids on one minus co-association" }
+  },
+  "G_economic_role": {
+    "dimension_title": "Household economic role",
+    "description": "This dimension groups young people outside work and education by their household economic role, income source, and household work situation.",
+    "historical_sample_size": 56,
+    "profile_count": 2,
+    "profile_sizes": [41, 15],
+    "cluster_forming_variables": [
+      { "variable": "Household income", "variable_key": "household_income", "survey_question": "What is the approximate total monthly income of your household from all sources?" },
+      { "variable": "Household size", "variable_key": "household_size", "survey_question": "How many people live in your household in total?" },
+      { "variable": "Household members working", "variable_key": "household_workers", "survey_question": "How many people in your household are currently working for a salary or wage?" },
+      { "variable": "Household members looking for work", "variable_key": "household_unemployed", "survey_question": "How many people in your household are currently without work and actively looking for a job?" },
+      { "variable": "Primary income-earner status", "variable_key": "primary_earner_status", "survey_question": "Are you the primary income earner in your household?" },
+      { "variable": "Main personal income source", "variable_key": "primary_income_source", "survey_question": "Currently, where does most of your money come from?" }
+    ],
+    "validation": { "silhouette": 0.37168009937936247, "ari": 1.0, "pac": 0.2681818181818182 },
+    "method": { "distance": "Equal-weight missing-aware mixed Gower on components derived from original survey variables", "clustering": "Consensus ensemble of K-medoids and spectral clustering; final K-medoids on one minus co-association" }
+  },
+  "G_future_engagement": {
+    "dimension_title": "Future work and education",
+    "description": "This dimension groups young people outside work and education by prior work experience and their stated intentions for future work and education.",
+    "historical_sample_size": 56,
+    "profile_count": 2,
+    "profile_sizes": [35, 21],
+    "cluster_forming_variables": [
+      { "variable": "Reason for not being in work or seeking work", "variable_key": "reason_not_in_labour_force", "survey_question": "What is your main reason for not currently working or actively looking for work?" },
+      { "variable": "Previous work experience", "variable_key": "ever_worked", "survey_question": "Have you ever worked for pay or profit at any point in your life?" },
+      { "variable": "Future work intention", "variable_key": "wants_to_work_future", "survey_question": "Do you want to work in the future?" },
+      { "variable": "Future education intention", "variable_key": "wants_further_edu", "survey_question": "Do you want to continue or start education or training in the future?" }
+    ],
+    "validation": { "silhouette": 0.4133529147293268, "ari": 1.0, "pac": 0.07467532467532467 },
+    "method": { "distance": "Equal-weight Gower on original nominal and binary survey responses", "clustering": "Consensus ensemble of K-medoids and spectral clustering; final K-medoids on one minus co-association" }
+  }
+}

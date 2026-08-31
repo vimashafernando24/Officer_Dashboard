@@ -1,0 +1,85 @@
+{
+  "cohort": {
+    "records": 81,
+    "branch": "F",
+    "routing_source": "translated_final_active_branch",
+    "strict_final_branch_records": 82,
+    "excluded_routing_integrity_records": 1
+  },
+  "dimension": "employment security and formality",
+  "clustering_features": [
+    "contract_type",
+    "job_security_12months",
+    "sector_formality"
+  ],
+  "descriptors": [
+    "employment_status",
+    "contract_satisfaction",
+    "hopes_to_change_job",
+    "insecurity_bothers"
+  ],
+  "data_quality": {
+    "records": 81,
+    "unique_ids": 81,
+    "wrong_branch": 0,
+    "wrong_routing_source": 0,
+    "path_disagreements_remaining": 0,
+    "integrity_issues_remaining": 0,
+    "invalid_activity_status": 0,
+    "cluster_input_missing_values": 0,
+    "invalid_security_codes": 0,
+    "invalid_formality_codes": 0
+  },
+  "method": {
+    "distance": "equal-weight mixed Gower on three original employment responses",
+    "candidate_k": [
+      2,
+      3,
+      4
+    ],
+    "selected_k": 2,
+    "ensemble": "equal-weight K-medoids plus spectral consensus",
+    "base_partitions": 200,
+    "final_method": "K-medoids on one minus co-association"
+  },
+  "profiles": {
+    "sizes": {
+      "1": 29,
+      "2": 52
+    },
+    "names": {
+      "1": "Temporary/no-contract employment with uncertain security",
+      "2": "Predominantly permanent employment with stronger security"
+    }
+  },
+  "metrics": {
+    "gower_silhouette": 0.36761688563659384,
+    "consensus_distance_silhouette": 0.8463871372884262,
+    "ensemble_bootstrap_ari_mean": 0.9527213219860738,
+    "ensemble_bootstrap_ari_p10": 0.9020007228576155,
+    "ari_vs_full_kmedoids": 0.8543747502996404,
+    "ari_vs_full_spectral": 0.9504268796474801,
+    "ari_consensus_kmedoids_vs_hac_average": 0.9504268796474801,
+    "ari_consensus_kmedoids_vs_hac_complete": 0.8543747502996404,
+    "minimum_profile_size": 29,
+    "low_gower_confidence_percent": 12.345679012345679,
+    "ambiguous_consensus_percent": 6.172839506172839,
+    "pac_10_90": 0.42746913580246915
+  },
+  "decision": {
+    "primary_checks_passed": true,
+    "checks_passed": 7,
+    "checks_total": 8,
+    "included_in_final_dimension_set": true,
+    "status": "Passes primary stability rules but retains ambiguity cautions"
+  },
+  "limitations": [
+    "These are exploratory employment-security/formality patterns, not a validated job-quality scale.",
+    "Ordinal Gower positions preserve questionnaire order only and are not respondent-level interval scores.",
+    "Contract type remains nominal because written/oral form and duration do not create one unambiguous rank order.",
+    "Job-security 'do not know' is treated as an uncertainty category, not forced above or below a known response.",
+    "PAC remains above the conservative 0.20 threshold, so some respondent pairs have uncertain co-membership even though the primary separation and stability checks pass.",
+    "Leave-one-feature-out analysis shows that contract type and perceived security principally drive the profiles; sector formality adds theoretical context but little extra separation in this sample.",
+    "The one routing-corrupted final-Branch-F record is retained in cleaned data but excluded from this analysis."
+  ]
+}

@@ -1,0 +1,738 @@
+[
+  {
+    "dimension_code": "E1",
+    "dimension_name": "Job-search psychological readiness and support",
+    "records": 34,
+    "source_variables": [
+      "job_search_self_efficacy",
+      "job_search_autonomy_orientation",
+      "social_support_job_search",
+      "future_planning_orientation"
+    ],
+    "clustering_features": [
+      "job_search_self_efficacy",
+      "job_search_autonomy_orientation",
+      "social_support_job_search",
+      "future_planning_orientation"
+    ],
+    "feature_types": {
+      "job_search_self_efficacy": "ordinal",
+      "job_search_autonomy_orientation": "ordinal",
+      "social_support_job_search": "ordinal",
+      "future_planning_orientation": "ordinal"
+    },
+    "profile_sizes": {
+      "1": 17,
+      "2": 17
+    },
+    "profile_labels": {
+      "1": "Diagnostic: general-direction and flexible-search pattern",
+      "2": "Diagnostic: clear-plan and specific-search pattern"
+    },
+    "profile_modes": [
+      {
+        "profile_id": 1,
+        "variable": "future_planning_orientation",
+        "response": "I have a general direction but no specific steps yet",
+        "records": 9,
+        "within_profile_percent": 52.94117647058823
+      },
+      {
+        "profile_id": 1,
+        "variable": "job_search_autonomy_orientation",
+        "response": "I have preferences but am flexible and will take good opportunities",
+        "records": 10,
+        "within_profile_percent": 58.8235294117647
+      },
+      {
+        "profile_id": 1,
+        "variable": "job_search_self_efficacy",
+        "response": "Fairly confident \u2014 I think I will, though it may take time",
+        "records": 10,
+        "within_profile_percent": 58.8235294117647
+      },
+      {
+        "profile_id": 1,
+        "variable": "social_support_job_search",
+        "response": "Somewhat supported \u2014 I have some encouragement",
+        "records": 7,
+        "within_profile_percent": 41.1764705882353
+      },
+      {
+        "profile_id": 2,
+        "variable": "future_planning_orientation",
+        "response": "I have a very clear, specific plan and I am actively working toward it",
+        "records": 13,
+        "within_profile_percent": 76.47058823529412
+      },
+      {
+        "profile_id": 2,
+        "variable": "job_search_autonomy_orientation",
+        "response": "I am looking specifically for work I genuinely want to do",
+        "records": 11,
+        "within_profile_percent": 64.70588235294117
+      },
+      {
+        "profile_id": 2,
+        "variable": "job_search_self_efficacy",
+        "response": "Fairly confident \u2014 I think I will, though it may take time",
+        "records": 10,
+        "within_profile_percent": 58.8235294117647
+      },
+      {
+        "profile_id": 2,
+        "variable": "social_support_job_search",
+        "response": "Very supported \u2014 people actively encourage and assist me",
+        "records": 11,
+        "within_profile_percent": 64.70588235294117
+      }
+    ],
+    "metrics": {
+      "gower_silhouette": 0.380644054217974,
+      "consensus_silhouette": 0.7097867980773174,
+      "source_minimum_cluster_size": 11,
+      "final_minimum_cluster_size": 17,
+      "kmedoids_subsample_stability_mean": 0.7578583175168561,
+      "spectral_subsample_stability_mean": 0.4489430336863577,
+      "ensemble_bootstrap_ari_mean": 0.9394935675941185,
+      "ensemble_bootstrap_ari_p10": 0.7613992397802652,
+      "ari_vs_full_kmedoids": 0.6684671059738576,
+      "ari_vs_full_spectral": 0.4028436018957346,
+      "maximum_single_feature_ari": 0.48309387490547695,
+      "dominant_single_feature": "future_planning_orientation",
+      "minimum_leave_one_feature_out_ari": 0.26066350710900477,
+      "ambiguous_consensus_percent": 17.647058823529413,
+      "low_gower_confidence_percent": 17.647058823529413,
+      "pac_10_90": 0.5828877005347594,
+      "permutation_valid_repetitions": 19,
+      "permutation_null_p95": 0.28481958243938316,
+      "empirical_permutation_p": 0.05,
+      "raw_vs_log_count_encoding_minimum_ari": null,
+      "structural_resource_only_ari": null
+    },
+    "automatic_screen_pass": false,
+    "checks_passed": 7,
+    "checks_total": 10,
+    "decision": "reject",
+    "limitations": [
+      "Branch E contains only 34 strict respondents, so only k=2 can satisfy the minimum profile size of 15.",
+      "No dimension score or psychometric scale is constructed.",
+      "PAC is reported descriptively because there is only one eligible candidate k.",
+      "Automatic screening does not replace single-feature and leave-one-feature-out substantive review.",
+      "A retained result with leave-one-feature-out ARI below 0.10 is explicitly marked feature-dependent and must be interpreted around its central indicator rather than as a broad latent scale."
+    ]
+  },
+  {
+    "dimension_code": "E2",
+    "dimension_name": "Search intensity and accumulated exposure",
+    "records": 34,
+    "source_variables": [
+      "active_search_4weeks",
+      "job_search_duration",
+      "num_applications",
+      "num_interviews"
+    ],
+    "clustering_features": [
+      "active_search_4weeks",
+      "job_search_duration",
+      "num_applications",
+      "num_interviews"
+    ],
+    "feature_types": {
+      "active_search_4weeks": "binary",
+      "job_search_duration": "ordinal",
+      "num_applications": "continuous",
+      "num_interviews": "continuous"
+    },
+    "profile_sizes": {
+      "1": 26,
+      "2": 8
+    },
+    "profile_labels": {
+      "1": "Diagnostic: active search in the past four weeks",
+      "2": "Diagnostic: no active search in the past four weeks"
+    },
+    "profile_modes": [
+      {
+        "profile_id": 1,
+        "variable": "active_search_4weeks",
+        "response": "Yes \u2014 I took active steps in the past four weeks",
+        "records": 26,
+        "within_profile_percent": 100.0
+      },
+      {
+        "profile_id": 1,
+        "variable": "job_search_duration",
+        "response": "1 to 2 months",
+        "records": 6,
+        "within_profile_percent": 23.076923076923077
+      },
+      {
+        "profile_id": 1,
+        "variable": "num_applications",
+        "response": 10.0,
+        "records": 4,
+        "within_profile_percent": 15.384615384615385
+      },
+      {
+        "profile_id": 1,
+        "variable": "num_interviews",
+        "response": 2.0,
+        "records": 10,
+        "within_profile_percent": 38.46153846153846
+      },
+      {
+        "profile_id": 2,
+        "variable": "active_search_4weeks",
+        "response": "No \u2014 I did not take any active steps",
+        "records": 8,
+        "within_profile_percent": 100.0
+      },
+      {
+        "profile_id": 2,
+        "variable": "job_search_duration",
+        "response": "1 to 4 weeks",
+        "records": 4,
+        "within_profile_percent": 50.0
+      },
+      {
+        "profile_id": 2,
+        "variable": "num_applications",
+        "response": 5.0,
+        "records": 2,
+        "within_profile_percent": 25.0
+      },
+      {
+        "profile_id": 2,
+        "variable": "num_interviews",
+        "response": 0.0,
+        "records": 2,
+        "within_profile_percent": 25.0
+      }
+    ],
+    "metrics": {
+      "gower_silhouette": 0.5333575010323762,
+      "consensus_silhouette": 0.9973399153990942,
+      "source_minimum_cluster_size": 8,
+      "final_minimum_cluster_size": 8,
+      "kmedoids_subsample_stability_mean": 0.9577566111442551,
+      "spectral_subsample_stability_mean": 1.0,
+      "ensemble_bootstrap_ari_mean": 1.0,
+      "ensemble_bootstrap_ari_p10": 1.0,
+      "ari_vs_full_kmedoids": 1.0,
+      "ari_vs_full_spectral": 1.0,
+      "maximum_single_feature_ari": 1.0,
+      "dominant_single_feature": "active_search_4weeks",
+      "minimum_leave_one_feature_out_ari": -0.01969100272644653,
+      "ambiguous_consensus_percent": 0.0,
+      "low_gower_confidence_percent": 0.0,
+      "pac_10_90": 0.0,
+      "permutation_valid_repetitions": 1,
+      "permutation_null_p95": 0.2664212932887745,
+      "empirical_permutation_p": 0.5,
+      "raw_vs_log_count_encoding_minimum_ari": 1.0,
+      "structural_resource_only_ari": null
+    },
+    "automatic_screen_pass": false,
+    "checks_passed": 7,
+    "checks_total": 11,
+    "decision": "reject",
+    "limitations": [
+      "Branch E contains only 34 strict respondents, so only k=2 can satisfy the minimum profile size of 15.",
+      "No dimension score or psychometric scale is constructed.",
+      "PAC is reported descriptively because there is only one eligible candidate k.",
+      "Automatic screening does not replace single-feature and leave-one-feature-out substantive review.",
+      "A retained result with leave-one-feature-out ARI below 0.10 is explicitly marked feature-dependent and must be interpreted around its central indicator rather than as a broad latent scale."
+    ]
+  },
+  {
+    "dimension_code": "E3",
+    "dimension_name": "Economic urgency and job-acceptance constraints",
+    "records": 34,
+    "source_variables": [
+      "income_urgency",
+      "job_acceptance_conditions",
+      "has_minimum_wage"
+    ],
+    "clustering_features": [
+      "income_urgency",
+      "job_acceptance_conditions",
+      "has_minimum_wage"
+    ],
+    "feature_types": {
+      "income_urgency": "ordinal",
+      "job_acceptance_conditions": "ordinal",
+      "has_minimum_wage": "binary"
+    },
+    "profile_sizes": {
+      "1": 28,
+      "2": 6
+    },
+    "profile_labels": {
+      "1": "Diagnostic: stated minimum-wage boundary",
+      "2": "Diagnostic: no stated minimum-wage boundary"
+    },
+    "profile_modes": [
+      {
+        "profile_id": 1,
+        "variable": "has_minimum_wage",
+        "response": "Yes \u2014 there is a minimum I would not go below",
+        "records": 28,
+        "within_profile_percent": 100.0
+      },
+      {
+        "profile_id": 1,
+        "variable": "income_urgency",
+        "response": "Immediately \u2014 I need income as soon as possible",
+        "records": 18,
+        "within_profile_percent": 64.28571428571429
+      },
+      {
+        "profile_id": 1,
+        "variable": "job_acceptance_conditions",
+        "response": "Only a job that is stable, well paid, AND matches my qualifications",
+        "records": 16,
+        "within_profile_percent": 57.142857142857146
+      },
+      {
+        "profile_id": 2,
+        "variable": "has_minimum_wage",
+        "response": "No \u2014 I would accept whatever is offered",
+        "records": 6,
+        "within_profile_percent": 100.0
+      },
+      {
+        "profile_id": 2,
+        "variable": "income_urgency",
+        "response": "Immediately \u2014 I need income as soon as possible",
+        "records": 4,
+        "within_profile_percent": 66.66666666666667
+      },
+      {
+        "profile_id": 2,
+        "variable": "job_acceptance_conditions",
+        "response": "Any job, provided it is stable and secure",
+        "records": 2,
+        "within_profile_percent": 33.333333333333336
+      }
+    ],
+    "metrics": {
+      "gower_silhouette": 0.6196265722942096,
+      "consensus_silhouette": 0.8893183424465485,
+      "source_minimum_cluster_size": 6,
+      "final_minimum_cluster_size": 6,
+      "kmedoids_subsample_stability_mean": 0.5328176815143629,
+      "spectral_subsample_stability_mean": 0.9495028775873205,
+      "ensemble_bootstrap_ari_mean": 1.0,
+      "ensemble_bootstrap_ari_p10": 1.0,
+      "ari_vs_full_kmedoids": 1.0,
+      "ari_vs_full_spectral": 1.0,
+      "maximum_single_feature_ari": 1.0,
+      "dominant_single_feature": "has_minimum_wage",
+      "minimum_leave_one_feature_out_ari": 0.0009713453132588635,
+      "ambiguous_consensus_percent": 0.0,
+      "low_gower_confidence_percent": 0.0,
+      "pac_10_90": 0.47058823529411764,
+      "permutation_valid_repetitions": 0,
+      "permutation_null_p95": null,
+      "empirical_permutation_p": NaN,
+      "raw_vs_log_count_encoding_minimum_ari": null,
+      "structural_resource_only_ari": null
+    },
+    "automatic_screen_pass": false,
+    "checks_passed": 6,
+    "checks_total": 10,
+    "decision": "reject",
+    "limitations": [
+      "Branch E contains only 34 strict respondents, so only k=2 can satisfy the minimum profile size of 15.",
+      "No dimension score or psychometric scale is constructed.",
+      "PAC is reported descriptively because there is only one eligible candidate k.",
+      "Automatic screening does not replace single-feature and leave-one-feature-out substantive review.",
+      "A retained result with leave-one-feature-out ARI below 0.10 is explicitly marked feature-dependent and must be interpreted around its central indicator rather than as a broad latent scale."
+    ]
+  },
+  {
+    "dimension_code": "E4",
+    "dimension_name": "Education-to-work preparedness and learning orientation",
+    "records": 34,
+    "source_variables": [
+      "past_edu_usefulness",
+      "plans_further_edu",
+      "expected_highest_edu_e"
+    ],
+    "clustering_features": [
+      "past_edu_usefulness",
+      "plans_further_edu",
+      "expected_highest_edu_e"
+    ],
+    "feature_types": {
+      "past_edu_usefulness": "nominal",
+      "plans_further_edu": "nominal",
+      "expected_highest_edu_e": "ordinal"
+    },
+    "profile_sizes": {
+      "1": 18,
+      "2": 16
+    },
+    "profile_labels": {
+      "1": "High perceived education utility and strong learning ambition",
+      "2": "Moderate perceived utility and mixed learning ambition"
+    },
+    "profile_modes": [
+      {
+        "profile_id": 1,
+        "variable": "expected_highest_edu_e",
+        "response": "Post-graduate degree",
+        "records": 12,
+        "within_profile_percent": 66.66666666666667
+      },
+      {
+        "profile_id": 1,
+        "variable": "past_edu_usefulness",
+        "response": "Very useful \u2014 directly relevant, employers value it",
+        "records": 15,
+        "within_profile_percent": 83.33333333333333
+      },
+      {
+        "profile_id": 1,
+        "variable": "plans_further_edu",
+        "response": "Yes",
+        "records": 17,
+        "within_profile_percent": 94.44444444444444
+      },
+      {
+        "profile_id": 2,
+        "variable": "expected_highest_edu_e",
+        "response": "Post-graduate degree",
+        "records": 6,
+        "within_profile_percent": 37.5
+      },
+      {
+        "profile_id": 2,
+        "variable": "past_edu_usefulness",
+        "response": "Somewhat useful \u2014 helps to some extent",
+        "records": 15,
+        "within_profile_percent": 93.75
+      },
+      {
+        "profile_id": 2,
+        "variable": "plans_further_edu",
+        "response": "Yes",
+        "records": 10,
+        "within_profile_percent": 62.5
+      }
+    ],
+    "metrics": {
+      "gower_silhouette": 0.567301864966065,
+      "consensus_silhouette": 0.9515514167228271,
+      "source_minimum_cluster_size": 16,
+      "final_minimum_cluster_size": 16,
+      "kmedoids_subsample_stability_mean": 0.9908690012970169,
+      "spectral_subsample_stability_mean": 0.8513199273044569,
+      "ensemble_bootstrap_ari_mean": 0.952903016542329,
+      "ensemble_bootstrap_ari_p10": 0.8822575413558222,
+      "ari_vs_full_kmedoids": 0.8822575413558222,
+      "ari_vs_full_spectral": 1.0,
+      "maximum_single_feature_ari": 0.6683069176632145,
+      "dominant_single_feature": "past_edu_usefulness",
+      "minimum_leave_one_feature_out_ari": 0.03914851969659897,
+      "ambiguous_consensus_percent": 2.941176470588235,
+      "low_gower_confidence_percent": 2.941176470588235,
+      "pac_10_90": 0.058823529411764705,
+      "permutation_valid_repetitions": 100,
+      "permutation_null_p95": 0.5501500511853299,
+      "empirical_permutation_p": 0.039603960396039604,
+      "raw_vs_log_count_encoding_minimum_ari": null,
+      "structural_resource_only_ari": null
+    },
+    "automatic_screen_pass": true,
+    "checks_passed": 10,
+    "checks_total": 10,
+    "decision": "retain_cautiously_feature_dependent",
+    "limitations": [
+      "Branch E contains only 34 strict respondents, so only k=2 can satisfy the minimum profile size of 15.",
+      "No dimension score or psychometric scale is constructed.",
+      "PAC is reported descriptively because there is only one eligible candidate k.",
+      "Automatic screening does not replace single-feature and leave-one-feature-out substantive review.",
+      "A retained result with leave-one-feature-out ARI below 0.10 is explicitly marked feature-dependent and must be interpreted around its central indicator rather than as a broad latent scale."
+    ]
+  },
+  {
+    "dimension_code": "E5",
+    "dimension_name": "Household economic resources and dependency",
+    "records": 34,
+    "source_variables": [
+      "household_income",
+      "household_size",
+      "household_workers",
+      "household_unemployed",
+      "primary_earner_status",
+      "primary_income_source"
+    ],
+    "clustering_features": [
+      "household_income_position",
+      "household_worker_share",
+      "household_unemployed_share",
+      "primary_earner_responsibility",
+      "primary_income_source"
+    ],
+    "feature_types": {
+      "household_income_position": "ordinal",
+      "household_worker_share": "continuous",
+      "household_unemployed_share": "continuous",
+      "primary_earner_responsibility": "ordinal",
+      "primary_income_source": "nominal"
+    },
+    "profile_sizes": {
+      "1": 22,
+      "2": 12
+    },
+    "profile_labels": {
+      "1": "Diagnostic household-economic response profile 1",
+      "2": "Diagnostic household-economic response profile 2"
+    },
+    "profile_modes": [
+      {
+        "profile_id": 1,
+        "variable": "household_income",
+        "response": "LKR 60,000 \u2013 120,000",
+        "records": 8,
+        "within_profile_percent": 36.36363636363637
+      },
+      {
+        "profile_id": 1,
+        "variable": "household_size",
+        "response": 4.0,
+        "records": 9,
+        "within_profile_percent": 40.90909090909091
+      },
+      {
+        "profile_id": 1,
+        "variable": "household_unemployed",
+        "response": 1.0,
+        "records": 11,
+        "within_profile_percent": 50.0
+      },
+      {
+        "profile_id": 1,
+        "variable": "household_workers",
+        "response": 1.0,
+        "records": 16,
+        "within_profile_percent": 72.72727272727273
+      },
+      {
+        "profile_id": 1,
+        "variable": "primary_earner_status",
+        "response": "No \u2014 someone else is the main provider",
+        "records": 19,
+        "within_profile_percent": 86.36363636363636
+      },
+      {
+        "profile_id": 1,
+        "variable": "primary_income_source",
+        "response": "My parents or family",
+        "records": 16,
+        "within_profile_percent": 72.72727272727273
+      },
+      {
+        "profile_id": 2,
+        "variable": "household_income",
+        "response": "Above LKR 200,000",
+        "records": 6,
+        "within_profile_percent": 50.0
+      },
+      {
+        "profile_id": 2,
+        "variable": "household_size",
+        "response": 5.0,
+        "records": 5,
+        "within_profile_percent": 41.666666666666664
+      },
+      {
+        "profile_id": 2,
+        "variable": "household_unemployed",
+        "response": 1.0,
+        "records": 7,
+        "within_profile_percent": 58.333333333333336
+      },
+      {
+        "profile_id": 2,
+        "variable": "household_workers",
+        "response": 3.0,
+        "records": 7,
+        "within_profile_percent": 58.333333333333336
+      },
+      {
+        "profile_id": 2,
+        "variable": "primary_earner_status",
+        "response": "No \u2014 someone else is the main provider",
+        "records": 8,
+        "within_profile_percent": 66.66666666666667
+      },
+      {
+        "profile_id": 2,
+        "variable": "primary_income_source",
+        "response": "My parents or family",
+        "records": 11,
+        "within_profile_percent": 91.66666666666667
+      }
+    ],
+    "metrics": {
+      "gower_silhouette": 0.2569586870591487,
+      "consensus_silhouette": 0.618223904098688,
+      "source_minimum_cluster_size": 17,
+      "final_minimum_cluster_size": 12,
+      "kmedoids_subsample_stability_mean": 0.4111977241966283,
+      "spectral_subsample_stability_mean": 0.3405958790159896,
+      "ensemble_bootstrap_ari_mean": 0.8983921087081561,
+      "ensemble_bootstrap_ari_p10": 0.7718120805369127,
+      "ari_vs_full_kmedoids": 0.48398576512455516,
+      "ari_vs_full_spectral": 0.48398576512455516,
+      "maximum_single_feature_ari": 0.7718120805369127,
+      "dominant_single_feature": "household_worker_share",
+      "minimum_leave_one_feature_out_ari": 0.080393414581997,
+      "ambiguous_consensus_percent": 38.23529411764706,
+      "low_gower_confidence_percent": 20.588235294117645,
+      "pac_10_90": 0.7914438502673797,
+      "permutation_valid_repetitions": 35,
+      "permutation_null_p95": 0.24831412671268954,
+      "empirical_permutation_p": 0.5833333333333334,
+      "raw_vs_log_count_encoding_minimum_ari": null,
+      "structural_resource_only_ari": 0.7718120805369127
+    },
+    "automatic_screen_pass": false,
+    "checks_passed": 4,
+    "checks_total": 10,
+    "decision": "reject",
+    "limitations": [
+      "Branch E contains only 34 strict respondents, so only k=2 can satisfy the minimum profile size of 15.",
+      "No dimension score or psychometric scale is constructed.",
+      "PAC is reported descriptively because there is only one eligible candidate k.",
+      "Automatic screening does not replace single-feature and leave-one-feature-out substantive review.",
+      "A retained result with leave-one-feature-out ARI below 0.10 is explicitly marked feature-dependent and must be interpreted around its central indicator rather than as a broad latent scale."
+    ]
+  },
+  {
+    "dimension_code": "E6",
+    "dimension_name": "Educational and inherited cultural capital",
+    "records": 34,
+    "source_variables": [
+      "father_edu",
+      "mother_edu",
+      "edu_status",
+      "worked_while_studying"
+    ],
+    "clustering_features": [
+      "father_edu",
+      "mother_edu",
+      "edu_status",
+      "worked_while_studying"
+    ],
+    "feature_types": {
+      "father_edu": "ordinal",
+      "mother_edu": "ordinal",
+      "edu_status": "nominal",
+      "worked_while_studying": "binary"
+    },
+    "profile_sizes": {
+      "1": 24,
+      "2": 10
+    },
+    "profile_labels": {
+      "1": "Diagnostic: did not work while studying",
+      "2": "Diagnostic: worked while studying"
+    },
+    "profile_modes": [
+      {
+        "profile_id": 1,
+        "variable": "edu_status",
+        "response": "Currently in higher education (degree or diploma)",
+        "records": 18,
+        "within_profile_percent": 75.0
+      },
+      {
+        "profile_id": 1,
+        "variable": "father_edu",
+        "response": "A/L level (Grade 12\u201313)",
+        "records": 6,
+        "within_profile_percent": 25.0
+      },
+      {
+        "profile_id": 1,
+        "variable": "mother_edu",
+        "response": "O/L level (Grade 9\u201311)",
+        "records": 8,
+        "within_profile_percent": 33.333333333333336
+      },
+      {
+        "profile_id": 1,
+        "variable": "worked_while_studying",
+        "response": "No",
+        "records": 24,
+        "within_profile_percent": 100.0
+      },
+      {
+        "profile_id": 2,
+        "variable": "edu_status",
+        "response": "Currently in higher education (degree or diploma)",
+        "records": 7,
+        "within_profile_percent": 70.0
+      },
+      {
+        "profile_id": 2,
+        "variable": "father_edu",
+        "response": "Diploma",
+        "records": 4,
+        "within_profile_percent": 40.0
+      },
+      {
+        "profile_id": 2,
+        "variable": "mother_edu",
+        "response": "A/L level (Grade 12\u201313)",
+        "records": 4,
+        "within_profile_percent": 40.0
+      },
+      {
+        "profile_id": 2,
+        "variable": "worked_while_studying",
+        "response": "Yes",
+        "records": 10,
+        "within_profile_percent": 100.0
+      }
+    ],
+    "metrics": {
+      "gower_silhouette": 0.5845723108660765,
+      "consensus_silhouette": 1.0,
+      "source_minimum_cluster_size": 10,
+      "final_minimum_cluster_size": 10,
+      "kmedoids_subsample_stability_mean": 1.0,
+      "spectral_subsample_stability_mean": 1.0,
+      "ensemble_bootstrap_ari_mean": 1.0,
+      "ensemble_bootstrap_ari_p10": 1.0,
+      "ari_vs_full_kmedoids": 1.0,
+      "ari_vs_full_spectral": 1.0,
+      "maximum_single_feature_ari": 1.0,
+      "dominant_single_feature": "worked_while_studying",
+      "minimum_leave_one_feature_out_ari": -0.0018840153076243745,
+      "ambiguous_consensus_percent": 0.0,
+      "low_gower_confidence_percent": 0.0,
+      "pac_10_90": 0.0,
+      "permutation_valid_repetitions": 0,
+      "permutation_null_p95": null,
+      "empirical_permutation_p": NaN,
+      "raw_vs_log_count_encoding_minimum_ari": null,
+      "structural_resource_only_ari": null
+    },
+    "automatic_screen_pass": false,
+    "checks_passed": 6,
+    "checks_total": 10,
+    "decision": "reject",
+    "limitations": [
+      "Branch E contains only 34 strict respondents, so only k=2 can satisfy the minimum profile size of 15.",
+      "No dimension score or psychometric scale is constructed.",
+      "PAC is reported descriptively because there is only one eligible candidate k.",
+      "Automatic screening does not replace single-feature and leave-one-feature-out substantive review.",
+      "A retained result with leave-one-feature-out ARI below 0.10 is explicitly marked feature-dependent and must be interpreted around its central indicator rather than as a broad latent scale."
+    ]
+  }
+]

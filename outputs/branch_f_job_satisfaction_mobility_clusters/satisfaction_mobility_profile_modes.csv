@@ -1,0 +1,15 @@
+satisfaction_mobility_profile_id,variable,response,records,within_profile_percent
+1,contract_satisfaction,Satisfied — it gives me the job security I need,13,38.23529411764706
+1,contract_satisfaction_polarity,Satisfied,34,100.0
+1,hopes_to_change_job,Not sure,18,52.94117647058823
+1,insecurity_bothers,,27,79.41176470588235
+1,job_satisfaction,Very satisfied,19,55.88235294117647
+1,job_security_12months,Very likely — my job is secure,20,58.8235294117647
+1,reason_wants_to_change,,34,100.0
+2,contract_satisfaction,Satisfied — it gives me the flexibility I need,18,38.297872340425535
+2,contract_satisfaction_polarity,Satisfied,36,76.59574468085107
+2,hopes_to_change_job,Yes — I want to change,46,97.87234042553192
+2,insecurity_bothers,,20,42.5531914893617
+2,job_satisfaction,Somewhat satisfied,32,68.08510638297872
+2,job_security_12months,Likely but not certain — I have some concern,23,48.93617021276596
+2,reason_wants_to_change,To get better career prospects and advancement,16,34.04255319148936

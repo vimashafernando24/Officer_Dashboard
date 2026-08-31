@@ -1,0 +1,7 @@
+omitted_feature,retained_features,minimum_pair_coverage,gower_silhouette_reduced_kmedoids,ari_reduced_kmedoids_vs_final_consensus
+father_education,5,3,0.5166214182310038,0.8167227118101833
+mother_education,5,3,0.4811803708482034,0.8700076498704822
+expected_education,5,2,0.4658002264203101,0.8077794920397217
+institution_type,5,2,0.37015961141786946,0.5455967442110491
+worked_while_studying,5,3,0.49152706305138444,0.38329957072608534
+re_entered_education,5,2,0.46653337534959666,0.719898499029911

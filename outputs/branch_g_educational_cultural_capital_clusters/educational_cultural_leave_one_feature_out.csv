@@ -1,0 +1,5 @@
+omitted_feature,minimum_pair_coverage,gower_silhouette_reduced,ari_reduced_kmedoids_vs_final_consensus
+father_edu,2,0.5262441096480418,1.0
+mother_edu,2,0.5177426003262902,1.0
+edu_status,1,0.7395672334860862,1.0
+worked_while_studying,1,0.41371370958104353,0.004042037186742118

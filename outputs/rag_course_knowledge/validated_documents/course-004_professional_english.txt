@@ -1,0 +1,29 @@
+COURSE DOCUMENT ID: COURSE-004
+
+COURSE NAME: Professional English
+
+VALIDATION STATUS: NEEDS_MANUAL_REVIEW_DO_NOT_INDEX
+
+SOURCE TYPE: CATALOGUE_CARD_ONLY
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.25.19.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.25.19.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-004
+
+UNCERTAINTY MARKERS PRESENT: NO
+
+PROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.
+
+SOURCE CONFLICT NOTE: The screenshot card says Full Time, while the structured cross-check has only a Part Time Professional English record corresponding to another source.
+
+COMPLETE EXTRACTED COURSE TEXT
+
+Full Time
+English
+Professional English
+....
+25 students
+06 Month
+View

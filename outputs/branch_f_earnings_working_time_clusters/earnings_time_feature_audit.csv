@@ -1,0 +1,4 @@
+feature,type,observed,missing,maximum_distance_weight
+monthly_income_band,ordinal,81,0,0.3333333333333333
+usual_hours_per_week,continuous,81,0,0.3333333333333333
+income_hours_preference,nominal,81,0,0.3333333333333333

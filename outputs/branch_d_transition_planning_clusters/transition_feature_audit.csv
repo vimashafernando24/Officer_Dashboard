@@ -1,0 +1,5 @@
+feature,type,observed,missing,maximum_distance_weight
+plans_after_education,nominal,191,0,0.25
+ideal_work_type,nominal,191,0,0.25
+ideal_sector,nominal,191,0,0.25
+study_field_preference,nominal,187,4,0.25

@@ -1,0 +1,12 @@
+respondent_id,submitted_at,entry_branch,stale_active_branch,last_active_section,corrected_final_branch,activity_status
+nysc-31cab333-afc9-48c5-baec-8ba48e14defb,2026-05-09 09:18:15.305000+00:00,E,E,F,G,unemployed
+nysc-9a123603-4572-4552-aceb-dfb609277901,2026-05-09 13:55:15.207000+00:00,F,F,F,G,temp_absent
+nysc-f3fcb021-3af8-4a20-bc37-5a8c05409f8d,2026-05-09 14:48:56.381000+00:00,F,F,F,G,temp_absent
+nysc-7461ca22-c4f5-449e-a85b-1228930b73ec,2026-08-04 12:47:31.893000+00:00,E,E,F,G,unemployed
+nysc-5242257e-4708-442a-a41f-1081109194a9,2026-08-05 12:21:18.923000+00:00,F,F,F,G,finished_plan_work
+nysc-727a27bc-7f06-4df3-9d33-9e89832b63fd,2026-08-08 03:21:23.379000+00:00,E,E,F,G,unemployed
+nysc-9ca93a7c-2fdc-4cc9-9141-a79a6e78d214,2026-08-08 05:28:17.032000+00:00,E,E,F,G,finished_plan_look
+nysc-b8fb3c50-5810-4e71-9133-6fa7cf5cb36f,2026-08-08 10:56:03.212000+00:00,F,F,F,G,finished_plan_work
+nysc-9cb7eb74-e559-499a-bb4f-b009c74c71d9,2026-08-09 10:24:00.479000+00:00,E,E,F,G,unemployed
+nysc-131a2b60-1a70-4974-9dc0-8a1eaf51befd,2026-08-09 16:04:35.053000+00:00,F,F,D,E,temp_absent
+nysc-30cb4a32-2c6f-465c-8c7e-f91bf87fbd69,2026-08-10 10:24:39.518000+00:00,E,E,F,G,finished_plan_look

@@ -1,0 +1,5 @@
+omitted_feature,retained_features,respondents_compared,minimum_pair_coverage,gower_silhouette_reduced_kmedoids,ari_reduced_kmedoids_vs_final_consensus
+work_autonomy,3,81,3,0.5210357875600433,0.3880998074191319
+competence_growth_at_work,3,81,3,0.5498849164932412,0.8030123053201732
+relatedness_at_work,3,81,3,0.45668874751877314,0.7084057912910129
+work_motivation_type,3,81,3,0.5418271267356071,0.6479820479602358

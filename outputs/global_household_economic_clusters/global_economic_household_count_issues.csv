@@ -1,0 +1,16 @@
+respondent_id,branch,household_size,household_workers,household_unemployed,issue
+nysc-31cab333-afc9-48c5-baec-8ba48e14defb,G,23.0,23.0,2.0,workers plus unemployed exceeds household size
+nysc-a8a47401-005b-42ef-b494-19fadefdd779,F,2.0,2.0,2.0,workers plus unemployed exceeds household size
+nysc-9a123603-4572-4552-aceb-dfb609277901,G,2.0,2.0,2.0,workers plus unemployed exceeds household size
+nysc-7f7d7d2a-1592-4a24-8512-5986c27ddd28,D,3.0,2.0,2.0,workers plus unemployed exceeds household size
+nysc-73308960-9069-4fd2-b338-345f6aa4c884,G,2.0,2.0,2.0,workers plus unemployed exceeds household size
+nysc-a0a7bc76-6c7b-427e-a91c-dd69d7367b25,G,2.0,2.0,2.0,workers plus unemployed exceeds household size
+nysc-9cb7eb74-e559-499a-bb4f-b009c74c71d9,G,2.0,2.0,2.0,workers plus unemployed exceeds household size
+nysc-3382bd6d-487e-4959-9964-4f8635ddbc99,D,2.0,2.0,1.0,workers plus unemployed exceeds household size
+nysc-ba493d73-e13b-4596-9620-38276a76bac6,F,1.0,1.0,1.0,workers plus unemployed exceeds household size
+nysc-c74b80fb-a56d-43d8-85a7-8b1965db1fba,F,3.0,2.0,2.0,workers plus unemployed exceeds household size
+nysc-83390495-2ae4-4bf8-a9e9-24b6e6fbb9cb,D,4.0,4.0,2.0,workers plus unemployed exceeds household size
+nysc-ccf3a41b-8d48-4c15-81fb-1f2c0256355a,F,4.0,3.0,2.0,workers plus unemployed exceeds household size
+nysc-f918d234-ce06-4499-9a4f-d27a9e51c063,F,3.0,3.0,1.0,workers plus unemployed exceeds household size
+nysc-836e4ae3-c8a3-4aa4-9a9e-a1a3326a9598,D,5.0,3.0,3.0,workers plus unemployed exceeds household size
+nysc-25c345ec-5f45-4616-adb8-c96e31f3511c,D,4.0,3.0,4.0,workers plus unemployed exceeds household size

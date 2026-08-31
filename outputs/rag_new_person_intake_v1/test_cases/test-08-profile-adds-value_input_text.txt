@@ -1,0 +1,324 @@
+{
+  "schema_version": "context_aware_programme_ranking_v3",
+  "user": {
+    "respondent_id": "test-08-profile-adds-value",
+    "assigned_branch": "G",
+    "questionnaire_answers": {
+      "preferred_sectors": [
+        "Wholesale, retail, or repair"
+      ],
+      "preferred_skills_by_sector": {},
+      "preferred_skills": [
+        "Business Management"
+      ],
+      "reason_for_training": "Start my own business",
+      "schedule_preference": "No strong preference",
+      "language_preference": "No strong preference",
+      "qualification_preference": "Not sure"
+    }
+  },
+  "constraints": {
+    "sectors": [
+      "Wholesale, retail, or repair"
+    ],
+    "skills": {},
+    "reason": "Start my own business",
+    "schedule": "No strong preference",
+    "language": "No strong preference",
+    "qualification": "Not sure"
+  },
+  "assigned_branch_research_context": [
+    {
+      "profile_key": "G_economic_role_p1",
+      "model_id": "G_economic_role",
+      "dimension": "Household economic role",
+      "cluster_code": "Cluster G-ROLE-1",
+      "cluster_name": "Family-supported non-provider",
+      "common_description": "This cluster is centred on youth outside work and education who were not the main household provider and relied mainly on family or a partner for income.",
+      "validated_profile_definition": "Facts that define the cluster itself. These variables and diagnostics produced the\ncluster; they are NOT re-tested as post-cluster findings (doing so would be circular).\n\nBranch: G — strict final-path analytical cohort n=56 (of 362 total strict-cohort respondents: D=191, E=34, F=81, G=56).\nRetained dimension: Household economic role and dependency\nNumber of profiles in this retained model (k): 2\nThis profile's id and label: Profile 1 — \"Predominantly family/partner-supported non-provider\"\nThis profile's exact frozen size: n=41 (cross-verified against the Part III freeze-verification table in the source report)\n\nExact cluster-forming variables (the only inputs used to build this clustering; all\nother survey variables were deliberately excluded from distance calculation and are\nonly used descriptively in sections 2-3 below):\n  - household_income\n  - household_size\n  - household_unemployed\n  - household_workers\n  - primary_earner_status\n  - primary_income_source\n\nTheoretical basis and purpose: Household economic role/dependency position (Bourdieu economic capital / ILO SWTS household framework).\n\nClustering method: Gower distance over original mixed-type responses (no invented 0-100\nscores), consensus of repeated K-medoids and spectral clustering across 100 matched\n80% subsamples (200 base partitions), final clusters from K-medoids on (1 - co-association).\n\nValidation diagnostics for this retained model: Gower silhouette 0.372; bootstrap/subsample ARI 1.000; source-method ARIs 0.854 and 0.718; permutation p=0.012; 9 of 9 mandatory validation checks passed.\nFinal decision status: Retained narrowly; describes role/dependency, not resource level.\nModel-level caution (from the frozen decision register): This is an economic-role/dependency pattern, not a low-versus-high household-resource classification.\n\nAdditional definitional context: The original working title implied household resource LEVEL, but structural household-resource variables alone had ARI -0.016 with the final grouping — resource level does not explain this partition. Primary income source was the strongest single item, though no single item alone exactly reproduced membership. The defensible interpretation is therefore economic ROLE/DEPENDENCY (whether the respondent is a provider/contributor vs. supported by family/partner), not household wealth.\n\nInterpretation of this specific profile (verbatim from the frozen report's per-model\nprofile table):\n  90.2% were not the main provider; 75.6% relied mainly on parents/family and 14.6% on a partner/spouse.\n\nReminder: this profile exists only WITHIN this one retained dimension. A respondent's\nmembership here says nothing about their membership in any other branch's or dimension's\nprofile system (see PROHIBITED_INFERENCES).\n\n----------------------------------------------------------------------------------------------------",
+      "validated_cluster_defining_variables": [
+        {
+          "variable": "household_income",
+          "question_id": "A17",
+          "question": "What is the approximate total monthly income of your household from all sources?",
+          "user_answer": "LKR 30,000 – 60,000"
+        },
+        {
+          "variable": "household_size",
+          "question_id": "A16",
+          "question": "How many people live in your household in total?",
+          "user_answer": "23.0"
+        },
+        {
+          "variable": "household_workers",
+          "question_id": "A18",
+          "question": "How many people in your household are currently working for a salary or wage?",
+          "user_answer": "23"
+        },
+        {
+          "variable": "household_unemployed",
+          "question_id": "A19",
+          "question": "How many people in your household are currently without work and actively looking for a job?",
+          "user_answer": "2"
+        },
+        {
+          "variable": "primary_earner_status",
+          "question_id": "A20",
+          "question": "Are you the primary income earner in your household?",
+          "user_answer": "No — someone else is the main provider"
+        },
+        {
+          "variable": "primary_income_source",
+          "question_id": "B19",
+          "question": "Currently, where does most of your money come from?",
+          "user_answer": "My partner or spouse"
+        }
+      ],
+      "validated_profile_findings": [
+        {
+          "profile_key": "G_economic_role_p1",
+          "variable": "employment_network_quality",
+          "label": "Useful employment/training contacts",
+          "finding": "Useful employment/training contacts: less often reported ‘Yes — I know several people with useful connections’ (9/41, 22.0% vs 60.0% in other profile(s))",
+          "interpretation_guard": "Treat this only as the retained between-profile comparison stated above; do not turn it into a claim that one response was the profile's most common answer.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=G_economic_role, profile_id=1, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=G_economic_role, variable=employment_network_quality"
+          }
+        },
+        {
+          "profile_key": "G_economic_role_p1",
+          "variable": "labour_market_connection",
+          "label": "Connection to labour-market information/opportunities",
+          "finding": "Connection to labour-market information/opportunities: less often reported ‘Very connected — I hear about jobs and training opportunities regularly’ (11/41, 26.8% vs 66.7% in other profile(s))",
+          "interpretation_guard": "Treat this only as the retained between-profile comparison stated above; do not turn it into a claim that one response was the profile's most common answer.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=G_economic_role, profile_id=1, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=G_economic_role, variable=labour_market_connection"
+          }
+        },
+        {
+          "profile_key": "G_economic_role_p1",
+          "variable": "employment_self_efficacy",
+          "label": "Employment/training self-efficacy",
+          "finding": "Employment/training self-efficacy: less often reported ‘Very confident — I believe I could find something suitable’ (14/41, 34.1% vs 53.3% in other profile(s))",
+          "interpretation_guard": "Treat this only as the retained between-profile comparison stated above; do not turn it into a claim that one response was the profile's most common answer.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=G_economic_role, profile_id=1, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=G_economic_role, variable=employment_self_efficacy"
+          }
+        },
+        {
+          "profile_key": "G_economic_role_p1",
+          "variable": "most_important_life_goal",
+          "label": "Most important life goal",
+          "finding": "Most important life goal: more often reported ‘Finding purpose and meaning in life’ (6/41, 14.6% vs 0.0% in other profile(s)) [sparse table]",
+          "interpretation_guard": "The most common answer within this profile was Having financial security or earning a lot (26.8%). The retained statement highlights Finding purpose and meaning in life only because it differed between profiles. Do not call the highlighted category primary, dominant, top, or most common.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=G_economic_role, profile_id=1, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=G_economic_role, variable=most_important_life_goal"
+          }
+        }
+      ]
+    },
+    {
+      "profile_key": "G_future_engagement_p2",
+      "model_id": "G_future_engagement",
+      "dimension": "Future work and education",
+      "cluster_code": "Cluster G-FUTURE-2",
+      "cluster_name": "Low or uncertain future engagement",
+      "common_description": "This cluster is centred on youth with little or no previous work experience and lower or uncertain interest in future work and further education.",
+      "validated_profile_definition": "Facts that define the cluster itself. These variables and diagnostics produced the\ncluster; they are NOT re-tested as post-cluster findings (doing so would be circular).\n\nBranch: G — strict final-path analytical cohort n=56 (of 362 total strict-cohort respondents: D=191, E=34, F=81, G=56).\nRetained dimension: Future engagement and prior work experience\nNumber of profiles in this retained model (k): 2\nThis profile's id and label: Profile 2 — \"Low/uncertain engagement, mostly no prior work experience\"\nThis profile's exact frozen size: n=21 (cross-verified against the Part III freeze-verification table in the source report)\n\nExact cluster-forming variables (the only inputs used to build this clustering; all\nother survey variables were deliberately excluded from distance calculation and are\nonly used descriptively in sections 2-3 below):\n  - ever_worked\n  - reason_not_in_labour_force\n  - wants_further_edu\n  - wants_to_work_future\n\nTheoretical basis and purpose: Future work/education engagement intention combined with prior work experience.\n\nClustering method: Gower distance over original mixed-type responses (no invented 0-100\nscores), consensus of repeated K-medoids and spectral clustering across 100 matched\n80% subsamples (200 base partitions), final clusters from K-medoids on (1 - co-association).\n\nValidation diagnostics for this retained model: Gower silhouette 0.413; bootstrap/subsample ARI 1.000; source-method ARIs 0.928 and 1.000; permutation p=0.011; 10 of 10 mandatory validation checks passed.\nFinal decision status: Retained with narrowed interpretation.\nModel-level caution (from the frozen decision register): Current inactivity reason did not define this partition; desired education is conditional on an intention that forms the clusters.\n\nAdditional definitional context: Removing the 13-category current-inactivity-reason variable reproduced the final membership exactly (ARI 1.000), confirming that variable did NOT create the split; it should instead be used to describe the concrete barriers and circumstances inside each profile, not treated as a cluster-forming driver. No single remaining item alone recreated the cluster; the maximum single-item ARI was 0.554.\n\nInterpretation of this specific profile (verbatim from the frozen report's per-model\nprofile table):\n  71.4% did not want future work, 61.9% were unsure about further education and 76.2% had never worked.\n\nReminder: this profile exists only WITHIN this one retained dimension. A respondent's\nmembership here says nothing about their membership in any other branch's or dimension's\nprofile system (see PROHIBITED_INFERENCES).\n\n----------------------------------------------------------------------------------------------------",
+      "validated_cluster_defining_variables": [
+        {
+          "variable": "reason_not_in_labour_force",
+          "question_id": "F1",
+          "question": "What is your main reason for not currently working or actively looking for work?",
+          "user_answer": "Awaiting the busy season (seasonal worker)"
+        },
+        {
+          "variable": "ever_worked",
+          "question_id": "F2",
+          "question": "Have you ever worked for pay or profit at any point in your life?",
+          "user_answer": "No — I have never worked"
+        },
+        {
+          "variable": "wants_to_work_future",
+          "question_id": "F3",
+          "question": "Do you want to work in the future?",
+          "user_answer": "No — I do not want to work"
+        },
+        {
+          "variable": "wants_further_edu",
+          "question_id": "F4",
+          "question": "Do you want to continue or start education or training in the future?",
+          "user_answer": "Not sure yet"
+        }
+      ],
+      "validated_profile_findings": [
+        {
+          "profile_key": "G_future_engagement_p2",
+          "variable": "employment_self_efficacy",
+          "label": "Employment/training self-efficacy",
+          "finding": "Employment/training self-efficacy: less often reported ‘Very confident — I believe I could find something suitable’ (2/21, 9.5% vs 57.1% in other profile(s))",
+          "interpretation_guard": "Treat this only as the retained between-profile comparison stated above; do not turn it into a claim that one response was the profile's most common answer.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=G_future_engagement, profile_id=2, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=G_future_engagement, variable=employment_self_efficacy"
+          }
+        },
+        {
+          "profile_key": "G_future_engagement_p2",
+          "variable": "support_for_engagement",
+          "label": "Expected support for work/study engagement",
+          "finding": "Expected support for work/study engagement: less often reported ‘A great deal — people would actively support and encourage me’ (4/21, 19.0% vs 51.4% in other profile(s))",
+          "interpretation_guard": "Treat this only as the retained between-profile comparison stated above; do not turn it into a claim that one response was the profile's most common answer.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=G_future_engagement, profile_id=2, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=G_future_engagement, variable=support_for_engagement"
+          }
+        },
+        {
+          "profile_key": "G_future_engagement_p2",
+          "variable": "labour_market_connection",
+          "label": "Connection to labour-market information/opportunities",
+          "finding": "Connection to labour-market information/opportunities: less often reported ‘Very connected — I hear about jobs and training opportunities regularly’ (3/21, 14.3% vs 51.4% in other profile(s))",
+          "interpretation_guard": "Treat this only as the retained between-profile comparison stated above; do not turn it into a claim that one response was the profile's most common answer.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=G_future_engagement, profile_id=2, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=G_future_engagement, variable=labour_market_connection"
+          }
+        },
+        {
+          "profile_key": "G_future_engagement_p2",
+          "variable": "future_orientation_g",
+          "label": "Future orientation",
+          "finding": "Future orientation: more often reported ‘I feel quite lost and uncertain about what the future holds for me’ (8/21, 38.1% vs 8.6% in other profile(s))",
+          "interpretation_guard": "Treat this only as the retained between-profile comparison stated above; do not turn it into a claim that one response was the profile's most common answer.",
+          "research_role": "Final-retained profiling finding available for holistic programme interpretation.",
+          "provenance": {
+            "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=G_future_engagement, profile_id=2, column=programme_relevant_findings",
+            "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+            "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=G_future_engagement, variable=future_orientation_g"
+          }
+        }
+      ]
+    }
+  ],
+  "catalogue_retrieval": {
+    "method": "complete selected-sector catalogue slice",
+    "sector_skill_areas": {},
+    "skill_areas": [
+      "Business, Management & Administration"
+    ],
+    "selected_skills_by_sector": {},
+    "required_selected_skill_coverage": [],
+    "note": "5 courses in bridged skill area(s) ['Business, Management & Administration']; 5 selected deterministically by score. None scored above 0 (selected skills and schedule/language/qualification answers were all unspecified/no preference, or didn't match any pool course) — these are the top courses by ID within the sector only, not preference-matched; disclose this to the respondent rather than presenting them as personally tailored."
+  },
+  "candidate_programmes": [
+    {
+      "course_id": "COURSE-035",
+      "course_name": "Secretary (Secretarial Practices)",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "Business, Management & Administration",
+        "attendance_type": "Full Time",
+        "attendance_days": "Weekdays",
+        "duration_months": "6",
+        "instruction_languages": "[\"Sinhala\"]",
+        "nvq_level": "Level 4",
+        "qualification_type": "National Vocational Qualification (NVQ)"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-035\n\nCOURSE NAME: Secretary (Secretarial Practices)\n\nVALIDATION STATUS: VALIDATED\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.43.21.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.48.17.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-035\n\nUNCERTAINTY MARKERS PRESENT: NO\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nSecretary (Secretarial Practices)\nLANGUAGE\nMAX STUDENTS\nsinhala\n20\nAPPLY NOW\nCourse Overview\n1. Communication Skills\n2. Managing Office\n3. Meetings, Filling, Handle Mail\n4. Computer, Word, Internet and Email\n5. Travel Arrangements\n6. Handle correspondence (workshop,\nSeminaces, Fieldvisit)\nThe National Youth Service Council has initiated several course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations. The\nSecretary (Secretarial Practices) course will give you theoretical knowledge as well as job oriented\npractical that is necessary for employment and higher education.\nThis is a full time course which will be held on weekdays\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\nBy completing this course, You can achieve competency Level 4 under the National Vocational\nQualifications Competency Standards.\n"
+    },
+    {
+      "course_id": "COURSE-049",
+      "course_name": "Business Managemant",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "Business, Management & Administration",
+        "attendance_type": "Part Time",
+        "attendance_days": "Weekends",
+        "duration_months": "6",
+        "instruction_languages": "[\"English\"]",
+        "nvq_level": "NOT_STATED",
+        "qualification_type": "NOT_STATED"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-049\n\nCOURSE NAME: Business Managemant\n\nVALIDATION STATUS: VALIDATED\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.49.20.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.52.40.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-049\n\nUNCERTAINTY MARKERS PRESENT: NO\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nBusiness Managemant\nLANGUAGE\nMAX STUDENTS\nEnglish\n25\n→ APPLY NOW\nThe National Youth Service Council has initiated several course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations.\nBusiness Management course will give you theoretical knowledge as well as job oriented practical\nthat is necessary for employment and higher education. This is a part time course which will be held\non weekends.\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\n"
+    },
+    {
+      "course_id": "COURSE-071",
+      "course_name": "Human Recources Management",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "Business, Management & Administration",
+        "attendance_type": "Part Time",
+        "attendance_days": "Weekends",
+        "duration_months": "6",
+        "instruction_languages": "[\"English\"]",
+        "nvq_level": "NOT_STATED",
+        "qualification_type": "NOT_STATED"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-071\n\nCOURSE NAME: Human Recources Management\n\nVALIDATION STATUS: VALIDATED_WITH_LIMITATIONS\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.57.47.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 23.00.22.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-071\n\nUNCERTAINTY MARKERS PRESENT: YES\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nHuman Recources Management\nLANGUAGE\nMAX STUDENTS\nEnglish\n30\n→ APPLY NOW\nCourse Overview\nThe National Youth Service Council has initiated several course programs to enable the youth to\n1. Introduction to Management and HRM,\ndevelop their skills while also providing an opportunity to achieve their future job aspirations. Human\n[UNCLEAR]\nResources Management courses will give you theoretical knowledge as well as job oriented practical\n2. JD, JA Recruitment, Selection, Hiring,\nskills that are necessary for employment and higher education. This is a part time course which will\nInduction\nbe held on weekends.\n3. Discripline Management, PE System, T\nand D\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\n4. LR System, Employee welfare, Labour\nlaw\ngentle attitudes within a disciplined environment.\n"
+    },
+    {
+      "course_id": "COURSE-082",
+      "course_name": "Secretary (Secretarial Practices)",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "Business, Management & Administration",
+        "attendance_type": "Part Time",
+        "attendance_days": "Weekends",
+        "duration_months": "6",
+        "instruction_languages": "[\"English\"]",
+        "nvq_level": "NOT_STATED",
+        "qualification_type": "NOT_STATED"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-082\n\nCOURSE NAME: Secretary (Secretarial Practices)\n\nVALIDATION STATUS: VALIDATED_WITH_LIMITATIONS\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 23.00.09.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 23.00.22.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-082\n\nUNCERTAINTY MARKERS PRESENT: NO\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nSecretary (Secretarial Practices)\nLANGUAGE\nMAX STUDENTS\nEnglish\n30\n→ APPLY NOW\nCourse Overview\nThe National Youth Service Council has initiated several course programs to enable the youth to\n1. Basic - The role of a Secretary\ndevelop their skills while also providing an opportunity to achieve their future job aspirations.\nSecretary (Secretarial Practice) Repair courses will give you theoretical knowledge as well as job\n2. Secretarial Duties for Meeting, Mailing,\nCommunicating, Handling\noriented practical skills that are necessary for employment and higher education. This is a part time\ncorrspondence, Traveling etc\ncourse which will be held on weekends.\n3. Workshops ,Seminars.\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\n"
+    },
+    {
+      "course_id": "COURSE-084",
+      "course_name": "Store Management",
+      "matched_selected_sectors": [],
+      "selected_skills_in_those_sectors": {},
+      "exact_selected_skill_matches": [],
+      "structured_course_facts": {
+        "skill_area": "Business, Management & Administration",
+        "attendance_type": "Part Time",
+        "attendance_days": "Weekends",
+        "duration_months": "6",
+        "instruction_languages": "[\"Sinhala\"]",
+        "nvq_level": "NOT_STATED",
+        "qualification_type": "NOT_STATED"
+      },
+      "verified_course_document": "COURSE DOCUMENT ID: COURSE-084\n\nCOURSE NAME: Store Management\n\nVALIDATION STATUS: VALIDATED\n\nSOURCE TYPE: COURSE_DETAIL_SCREENSHOT\n\nSOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 23.01.00.png\n\nSUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 23.02.00.png\n\nRAW SOURCE DOCUMENT ID(S): COURSE-084\n\nUNCERTAINTY MARKERS PRESENT: NO\n\nPROVENANCE NOTE: Validated non-destructive copy of the corresponding raw course document.\n\nSOURCE CONFLICT NOTE: NONE\n\nCOMPLETE EXTRACTED COURSE TEXT\n\nStore Management\nLANGUAGE\nMAX STUDENTS\nSinhala\n25\n+ APPLY NOW\nThe National Youth Service Council has initiated several course programs to enable the youth to\ndevelop their skills while also providing an opportunity to achieve their future job aspirations. Store\nKeeper courses will give you theoretical knowledge as well as job oriented practical skills that are\nnecessary for employment and higher education. This is a part time course which will be held on\nweekends.\nIt is our objective to show the correct path that will direct youth to their desired occupations while at\nthe same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and\ngentle attitudes within a disciplined environment.\n"
+    }
+  ],
+  "evidence_boundaries": {
+    "user_fact": "Only values in user.questionnaire_answers and validated_cluster_defining_variables.",
+    "cluster_context": "Only the assigned profiles' final-retained findings are included. They are historical group context, never personal facts about the user.",
+    "course_fact": "Only facts inside the corresponding candidate programme record."
+  }
+}

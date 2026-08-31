@@ -1,0 +1,22 @@
+qualification_utilisation_profile_id,variable,response,records,within_profile_percent
+1,past_edu_useful_for_job,Very useful — directly relevant and applied daily,38,97.43589743589743
+1,qualification_job_match,Very well — my qualifications are central to this job,38,97.43589743589743
+1,received_training,Yes,33,84.61538461538461
+1,training_duration,1 to 4 weeks,11,28.205128205128204
+1,training_provider,My employer (on-the-job),24,61.53846153846154
+1,training_type_received,Training in new technologies,11,28.205128205128204
+1,who_paid_training,My employer,23,58.97435897435897
+2,past_edu_useful_for_job,Somewhat useful — helps in some areas,21,77.77777777777777
+2,qualification_job_match,Very well — my qualifications are central to this job,17,62.96296296296296
+2,received_training,Yes,19,70.37037037037037
+2,training_duration,,8,29.62962962962963
+2,training_provider,My employer (on-the-job),14,51.851851851851855
+2,training_type_received,,8,29.62962962962963
+2,who_paid_training,My employer,13,48.148148148148145
+3,past_edu_useful_for_job,Very useful — directly relevant and applied daily,15,100.0
+3,qualification_job_match,Fairly well — some of my training is relevant,10,66.66666666666667
+3,received_training,Yes,13,86.66666666666667
+3,training_duration,1 to 3 months,4,26.666666666666668
+3,training_provider,My employer (on-the-job),9,60.0
+3,training_type_received,On-the-job mentoring with a colleague,7,46.666666666666664
+3,who_paid_training,My employer,10,66.66666666666667

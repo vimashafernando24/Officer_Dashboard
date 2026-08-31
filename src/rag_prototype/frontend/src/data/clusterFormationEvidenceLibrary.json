@@ -1,0 +1,3485 @@
+{
+  "schema_version": "cluster_formation_evidence_library_v1",
+  "description": "Deterministic evidence for the exact variables used to form each retained frozen cluster model.",
+  "models": {
+    "D_motivation": {
+      "model_key": "D_motivation",
+      "dimension_title": "Study motivation",
+      "source_file": "05_branch_d_motivation_clustering.ipynb",
+      "profiles": [
+        {
+          "profile_key": "D_motivation_p1",
+          "profile_code": "MOT-1",
+          "profile_name": "Motivation profile 1: externally or uncertainly motivated, with moderate study support",
+          "historical_profile_size": 46
+        },
+        {
+          "profile_key": "D_motivation_p2",
+          "profile_code": "MOT-2",
+          "profile_name": "Motivation profile 2: goal-aligned motivation with mixed study confidence and support",
+          "historical_profile_size": 77
+        },
+        {
+          "profile_key": "D_motivation_p3",
+          "profile_code": "MOT-3",
+          "profile_name": "Motivation profile 3: highly self-directed, capable and connected",
+          "historical_profile_size": 68
+        }
+      ],
+      "cluster_forming_variables": [
+        {
+          "variable": "study_motivation_type",
+          "display_name": "Study motivation",
+          "question_id": "SC1",
+          "survey_question": "Why are you studying right now? Which best describes your motivation?",
+          "provenance": "05_branch_d_motivation_clustering.ipynb cells 6/8",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "External: qualification required for a job",
+              "profile_values": [
+                {
+                  "profile_key": "D_motivation_p1",
+                  "count": 33,
+                  "denominator": 46,
+                  "percentage": 71.73913043478261
+                },
+                {
+                  "profile_key": "D_motivation_p2",
+                  "count": 0,
+                  "denominator": 77,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_motivation_p3",
+                  "count": 2,
+                  "denominator": 68,
+                  "percentage": 2.9411764705882355
+                }
+              ]
+            },
+            {
+              "answer": "Amotivated/uncertain: following the path ended up on",
+              "profile_values": [
+                {
+                  "profile_key": "D_motivation_p1",
+                  "count": 13,
+                  "denominator": 46,
+                  "percentage": 28.26086956521739
+                },
+                {
+                  "profile_key": "D_motivation_p2",
+                  "count": 0,
+                  "denominator": 77,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_motivation_p3",
+                  "count": 0,
+                  "denominator": 68,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "Intrinsic: genuinely passionate about the subject",
+              "profile_values": [
+                {
+                  "profile_key": "D_motivation_p1",
+                  "count": 0,
+                  "denominator": 46,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_motivation_p2",
+                  "count": 30,
+                  "denominator": 77,
+                  "percentage": 38.96103896103896
+                },
+                {
+                  "profile_key": "D_motivation_p3",
+                  "count": 29,
+                  "denominator": 68,
+                  "percentage": 42.64705882352941
+                }
+              ]
+            },
+            {
+              "answer": "Identified: aligned with own goals",
+              "profile_values": [
+                {
+                  "profile_key": "D_motivation_p1",
+                  "count": 0,
+                  "denominator": 46,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_motivation_p2",
+                  "count": 38,
+                  "denominator": 77,
+                  "percentage": 49.35064935064935
+                },
+                {
+                  "profile_key": "D_motivation_p3",
+                  "count": 34,
+                  "denominator": 68,
+                  "percentage": 50.0
+                }
+              ]
+            },
+            {
+              "answer": "Introjected: avoid guilt or disappointing family",
+              "profile_values": [
+                {
+                  "profile_key": "D_motivation_p1",
+                  "count": 0,
+                  "denominator": 46,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_motivation_p2",
+                  "count": 9,
+                  "denominator": 77,
+                  "percentage": 11.688311688311689
+                },
+                {
+                  "profile_key": "D_motivation_p3",
+                  "count": 3,
+                  "denominator": 68,
+                  "percentage": 4.411764705882353
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        },
+        {
+          "variable": "autonomy_in_study",
+          "display_name": "Choice and control in study",
+          "question_id": "SC2",
+          "survey_question": "How much choice and control do you have over what and how you study?",
+          "provenance": "05_branch_d_motivation_clustering.ipynb cells 6/8",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "A great deal of choice and control",
+              "profile_values": [
+                {
+                  "profile_key": "D_motivation_p1",
+                  "count": 15,
+                  "denominator": 46,
+                  "percentage": 32.608695652173914
+                },
+                {
+                  "profile_key": "D_motivation_p2",
+                  "count": 23,
+                  "denominator": 77,
+                  "percentage": 29.87012987012987
+                },
+                {
+                  "profile_key": "D_motivation_p3",
+                  "count": 62,
+                  "denominator": 68,
+                  "percentage": 91.17647058823529
+                }
+              ]
+            },
+            {
+              "answer": "Some flexibility within a mostly fixed curriculum",
+              "profile_values": [
+                {
+                  "profile_key": "D_motivation_p1",
+                  "count": 21,
+                  "denominator": 46,
+                  "percentage": 45.65217391304348
+                },
+                {
+                  "profile_key": "D_motivation_p2",
+                  "count": 44,
+                  "denominator": 77,
+                  "percentage": 57.142857142857146
+                },
+                {
+                  "profile_key": "D_motivation_p3",
+                  "count": 3,
+                  "denominator": 68,
+                  "percentage": 4.411764705882353
+                }
+              ]
+            },
+            {
+              "answer": "Very little choice; prescribed and fixed",
+              "profile_values": [
+                {
+                  "profile_key": "D_motivation_p1",
+                  "count": 7,
+                  "denominator": 46,
+                  "percentage": 15.217391304347826
+                },
+                {
+                  "profile_key": "D_motivation_p2",
+                  "count": 9,
+                  "denominator": 77,
+                  "percentage": 11.688311688311689
+                },
+                {
+                  "profile_key": "D_motivation_p3",
+                  "count": 2,
+                  "denominator": 68,
+                  "percentage": 2.9411764705882355
+                }
+              ]
+            },
+            {
+              "answer": "No choice or control",
+              "profile_values": [
+                {
+                  "profile_key": "D_motivation_p1",
+                  "count": 3,
+                  "denominator": 46,
+                  "percentage": 6.521739130434782
+                },
+                {
+                  "profile_key": "D_motivation_p2",
+                  "count": 1,
+                  "denominator": 77,
+                  "percentage": 1.2987012987012987
+                },
+                {
+                  "profile_key": "D_motivation_p3",
+                  "count": 1,
+                  "denominator": 68,
+                  "percentage": 1.4705882352941178
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        },
+        {
+          "variable": "competence_in_study_field",
+          "display_name": "Confidence in study field",
+          "question_id": "SC3",
+          "survey_question": "How capable and effective do you feel in your area of study?",
+          "provenance": "05_branch_d_motivation_clustering.ipynb cells 6/8",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "Very capable and confident",
+              "profile_values": [
+                {
+                  "profile_key": "D_motivation_p1",
+                  "count": 5,
+                  "denominator": 46,
+                  "percentage": 10.869565217391305
+                },
+                {
+                  "profile_key": "D_motivation_p2",
+                  "count": 7,
+                  "denominator": 77,
+                  "percentage": 9.090909090909092
+                },
+                {
+                  "profile_key": "D_motivation_p3",
+                  "count": 56,
+                  "denominator": 68,
+                  "percentage": 82.3529411764706
+                }
+              ]
+            },
+            {
+              "answer": "Fairly capable with some gaps",
+              "profile_values": [
+                {
+                  "profile_key": "D_motivation_p1",
+                  "count": 24,
+                  "denominator": 46,
+                  "percentage": 52.17391304347826
+                },
+                {
+                  "profile_key": "D_motivation_p2",
+                  "count": 47,
+                  "denominator": 77,
+                  "percentage": 61.03896103896104
+                },
+                {
+                  "profile_key": "D_motivation_p3",
+                  "count": 12,
+                  "denominator": 68,
+                  "percentage": 17.647058823529413
+                }
+              ]
+            },
+            {
+              "answer": "Somewhat capable; struggles in some areas",
+              "profile_values": [
+                {
+                  "profile_key": "D_motivation_p1",
+                  "count": 15,
+                  "denominator": 46,
+                  "percentage": 32.608695652173914
+                },
+                {
+                  "profile_key": "D_motivation_p2",
+                  "count": 21,
+                  "denominator": 77,
+                  "percentage": 27.272727272727273
+                },
+                {
+                  "profile_key": "D_motivation_p3",
+                  "count": 0,
+                  "denominator": 68,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "Not very capable; frequently out of depth",
+              "profile_values": [
+                {
+                  "profile_key": "D_motivation_p1",
+                  "count": 2,
+                  "denominator": 46,
+                  "percentage": 4.3478260869565215
+                },
+                {
+                  "profile_key": "D_motivation_p2",
+                  "count": 2,
+                  "denominator": 77,
+                  "percentage": 2.5974025974025974
+                },
+                {
+                  "profile_key": "D_motivation_p3",
+                  "count": 0,
+                  "denominator": 68,
+                  "percentage": 0.0
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        },
+        {
+          "variable": "relatedness_at_institution",
+          "display_name": "Connection to institution",
+          "question_id": "SC4",
+          "survey_question": "How much do you feel you belong and are connected to the people at your institution?",
+          "provenance": "05_branch_d_motivation_clustering.ipynb cells 6/8",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "Strongly connected and part of the community",
+              "profile_values": [
+                {
+                  "profile_key": "D_motivation_p1",
+                  "count": 12,
+                  "denominator": 46,
+                  "percentage": 26.08695652173913
+                },
+                {
+                  "profile_key": "D_motivation_p2",
+                  "count": 15,
+                  "denominator": 77,
+                  "percentage": 19.48051948051948
+                },
+                {
+                  "profile_key": "D_motivation_p3",
+                  "count": 56,
+                  "denominator": 68,
+                  "percentage": 82.3529411764706
+                }
+              ]
+            },
+            {
+              "answer": "Some connections but not deeply involved",
+              "profile_values": [
+                {
+                  "profile_key": "D_motivation_p1",
+                  "count": 26,
+                  "denominator": 46,
+                  "percentage": 56.52173913043478
+                },
+                {
+                  "profile_key": "D_motivation_p2",
+                  "count": 54,
+                  "denominator": 77,
+                  "percentage": 70.12987012987013
+                },
+                {
+                  "profile_key": "D_motivation_p3",
+                  "count": 12,
+                  "denominator": 68,
+                  "percentage": 17.647058823529413
+                }
+              ]
+            },
+            {
+              "answer": "Weakly connected or isolated",
+              "profile_values": [
+                {
+                  "profile_key": "D_motivation_p1",
+                  "count": 5,
+                  "denominator": 46,
+                  "percentage": 10.869565217391305
+                },
+                {
+                  "profile_key": "D_motivation_p2",
+                  "count": 6,
+                  "denominator": 77,
+                  "percentage": 7.792207792207792
+                },
+                {
+                  "profile_key": "D_motivation_p3",
+                  "count": 0,
+                  "denominator": 68,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "No sense of belonging",
+              "profile_values": [
+                {
+                  "profile_key": "D_motivation_p1",
+                  "count": 3,
+                  "denominator": 46,
+                  "percentage": 6.521739130434782
+                },
+                {
+                  "profile_key": "D_motivation_p2",
+                  "count": 2,
+                  "denominator": 77,
+                  "percentage": 2.5974025974025974
+                },
+                {
+                  "profile_key": "D_motivation_p3",
+                  "count": 0,
+                  "denominator": 68,
+                  "percentage": 0.0
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        }
+      ]
+    },
+    "D_economic": {
+      "model_key": "D_economic",
+      "dimension_title": "Household resources",
+      "source_file": "08_branch_d_economic_resources_clustering.ipynb",
+      "profiles": [
+        {
+          "profile_key": "D_economic_p1",
+          "profile_code": "RES-1",
+          "profile_name": "Economic profile 1: relatively lower household economic position",
+          "historical_profile_size": 44
+        },
+        {
+          "profile_key": "D_economic_p2",
+          "profile_code": "RES-2",
+          "profile_name": "Economic profile 2: relatively higher household economic position",
+          "historical_profile_size": 147
+        }
+      ],
+      "cluster_forming_variables": [
+        {
+          "variable": "household_income",
+          "display_name": "Household income",
+          "question_id": "A17",
+          "survey_question": "What is the approximate total monthly income of your household from all sources?",
+          "provenance": "08_branch_d_economic_resources_clustering.ipynb cells 6/8",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "Above LKR 200,000",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 5,
+                  "denominator": 44,
+                  "percentage": 11.363636363636363
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 58,
+                  "denominator": 147,
+                  "percentage": 39.45578231292517
+                }
+              ]
+            },
+            {
+              "answer": "Below LKR 30,000",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 6,
+                  "denominator": 44,
+                  "percentage": 13.636363636363637
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 3,
+                  "denominator": 147,
+                  "percentage": 2.0408163265306123
+                }
+              ]
+            },
+            {
+              "answer": "LKR 120,000 – 200,000",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 10,
+                  "denominator": 44,
+                  "percentage": 22.727272727272727
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 26,
+                  "denominator": 147,
+                  "percentage": 17.687074829931973
+                }
+              ]
+            },
+            {
+              "answer": "LKR 30,000 – 60,000",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 8,
+                  "denominator": 44,
+                  "percentage": 18.181818181818183
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 8,
+                  "denominator": 147,
+                  "percentage": 5.442176870748299
+                }
+              ]
+            },
+            {
+              "answer": "LKR 60,000 – 120,000",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 10,
+                  "denominator": 44,
+                  "percentage": 22.727272727272727
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 28,
+                  "denominator": 147,
+                  "percentage": 19.047619047619047
+                }
+              ]
+            },
+            {
+              "answer": "Prefer not to say",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 5,
+                  "denominator": 44,
+                  "percentage": 11.363636363636363
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 24,
+                  "denominator": 147,
+                  "percentage": 16.3265306122449
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        },
+        {
+          "variable": "household_size",
+          "display_name": "Household size",
+          "question_id": "A16",
+          "survey_question": "How many people live in your household in total?",
+          "provenance": "08_branch_d_economic_resources_clustering.ipynb cells 6/8",
+          "kind": "numeric_summary",
+          "availability": "profile_summary",
+          "numeric_values": [
+            {
+              "profile_key": "D_economic_p1",
+              "denominator": 44,
+              "observed": 44,
+              "missing": 0,
+              "mean": 4.2727272727272725,
+              "median": 4.0,
+              "iqr": 1.0
+            },
+            {
+              "profile_key": "D_economic_p2",
+              "denominator": 147,
+              "observed": 147,
+              "missing": 0,
+              "mean": 4.326530612244898,
+              "median": 4.0,
+              "iqr": 1.0
+            }
+          ],
+          "note": "Numeric values are shown as profile summaries; no arbitrary bins were created."
+        },
+        {
+          "variable": "household_workers",
+          "display_name": "Household members working",
+          "question_id": "A18",
+          "survey_question": "How many people in your household are currently working for a salary or wage?",
+          "provenance": "08_branch_d_economic_resources_clustering.ipynb cells 6/8",
+          "kind": "numeric_summary",
+          "availability": "profile_summary",
+          "numeric_values": [
+            {
+              "profile_key": "D_economic_p1",
+              "denominator": 44,
+              "observed": 44,
+              "missing": 0,
+              "mean": 1.6590909090909092,
+              "median": 2.0,
+              "iqr": 1.0
+            },
+            {
+              "profile_key": "D_economic_p2",
+              "denominator": 147,
+              "observed": 147,
+              "missing": 0,
+              "mean": 2.0408163265306123,
+              "median": 2.0,
+              "iqr": 2.0
+            }
+          ],
+          "note": "Numeric values are shown as profile summaries; no arbitrary bins were created."
+        },
+        {
+          "variable": "household_unemployed",
+          "display_name": "Household members looking for work",
+          "question_id": "A19",
+          "survey_question": "How many people in your household are currently without work and actively looking for a job?",
+          "provenance": "08_branch_d_economic_resources_clustering.ipynb cells 6/8",
+          "kind": "numeric_summary",
+          "availability": "profile_summary",
+          "numeric_values": [
+            {
+              "profile_key": "D_economic_p1",
+              "denominator": 44,
+              "observed": 44,
+              "missing": 0,
+              "mean": 1.25,
+              "median": 1.0,
+              "iqr": 1.0
+            },
+            {
+              "profile_key": "D_economic_p2",
+              "denominator": 147,
+              "observed": 147,
+              "missing": 0,
+              "mean": 1.0476190476190477,
+              "median": 1.0,
+              "iqr": 2.0
+            }
+          ],
+          "note": "Numeric values are shown as profile summaries; no arbitrary bins were created."
+        },
+        {
+          "variable": "primary_earner_status",
+          "display_name": "Primary income-earner status",
+          "question_id": "A20",
+          "survey_question": "Are you the primary income earner in your household?",
+          "provenance": "08_branch_d_economic_resources_clustering.ipynb cells 6/8",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "No — someone else is the main provider",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 36,
+                  "denominator": 44,
+                  "percentage": 81.81818181818181
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 134,
+                  "denominator": 147,
+                  "percentage": 91.15646258503402
+                }
+              ]
+            },
+            {
+              "answer": "Shared — several people contribute roughly equally",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 3,
+                  "denominator": 44,
+                  "percentage": 6.818181818181818
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 8,
+                  "denominator": 147,
+                  "percentage": 5.442176870748299
+                }
+              ]
+            },
+            {
+              "answer": "Yes — I provide the main household income",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 5,
+                  "denominator": 44,
+                  "percentage": 11.363636363636363
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 5,
+                  "denominator": 147,
+                  "percentage": 3.401360544217687
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        },
+        {
+          "variable": "primary_income_source",
+          "display_name": "Main personal income source",
+          "question_id": "B19",
+          "survey_question": "Currently, where does most of your money come from?",
+          "provenance": "08_branch_d_economic_resources_clustering.ipynb cells 6/8",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "An education grant, scholarship, or training allowance",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 3,
+                  "denominator": 44,
+                  "percentage": 6.818181818181818
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 3,
+                  "denominator": 147,
+                  "percentage": 2.0408163265306123
+                }
+              ]
+            },
+            {
+              "answer": "Casual or informal work",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 3,
+                  "denominator": 44,
+                  "percentage": 6.818181818181818
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 3,
+                  "denominator": 147,
+                  "percentage": 2.0408163265306123
+                }
+              ]
+            },
+            {
+              "answer": "My parents or family",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 30,
+                  "denominator": 44,
+                  "percentage": 68.18181818181819
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 119,
+                  "denominator": 147,
+                  "percentage": 80.95238095238095
+                }
+              ]
+            },
+            {
+              "answer": "My regular job or business",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 7,
+                  "denominator": 44,
+                  "percentage": 15.909090909090908
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 16,
+                  "denominator": 147,
+                  "percentage": 10.884353741496598
+                }
+              ]
+            },
+            {
+              "answer": "Other source",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 1,
+                  "denominator": 44,
+                  "percentage": 2.272727272727273
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 3,
+                  "denominator": 147,
+                  "percentage": 2.0408163265306123
+                }
+              ]
+            },
+            {
+              "answer": "My partner or spouse",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 0,
+                  "denominator": 44,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 2,
+                  "denominator": 147,
+                  "percentage": 1.3605442176870748
+                }
+              ]
+            },
+            {
+              "answer": "Unemployment or social security benefits",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 0,
+                  "denominator": 44,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 1,
+                  "denominator": 147,
+                  "percentage": 0.6802721088435374
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        },
+        {
+          "variable": "edu_funding_source",
+          "display_name": "Education funding source",
+          "question_id": "BC2",
+          "survey_question": "How is your current education mainly funded?",
+          "provenance": "08_branch_d_economic_resources_clustering.ipynb cells 6/8",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "Government-funded or free of charge",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 33,
+                  "denominator": 44,
+                  "percentage": 75.0
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 0,
+                  "denominator": 147,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "I pay from my own earnings",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 6,
+                  "denominator": 44,
+                  "percentage": 13.636363636363637
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 1,
+                  "denominator": 147,
+                  "percentage": 0.6802721088435374
+                }
+              ]
+            },
+            {
+              "answer": "Other arrangement",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 2,
+                  "denominator": 44,
+                  "percentage": 4.545454545454546
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 1,
+                  "denominator": 147,
+                  "percentage": 0.6802721088435374
+                }
+              ]
+            },
+            {
+              "answer": "Scholarship or grant",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 3,
+                  "denominator": 44,
+                  "percentage": 6.818181818181818
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 5,
+                  "denominator": 147,
+                  "percentage": 3.401360544217687
+                }
+              ]
+            },
+            {
+              "answer": "Employer-sponsored",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 0,
+                  "denominator": 44,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 1,
+                  "denominator": 147,
+                  "percentage": 0.6802721088435374
+                }
+              ]
+            },
+            {
+              "answer": "Paid for by my family",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 0,
+                  "denominator": 44,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 139,
+                  "denominator": 147,
+                  "percentage": 94.5578231292517
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        }
+      ]
+    },
+    "D_educational_cultural": {
+      "model_key": "D_educational_cultural",
+      "dimension_title": "Education background",
+      "source_file": "09_branch_d_educational_cultural_capital_clustering.py",
+      "profiles": [
+        {
+          "profile_key": "D_educational_cultural_p1",
+          "profile_code": "EDU-1",
+          "profile_name": "Re-entered students, often with degree-educated parents",
+          "historical_profile_size": 15
+        },
+        {
+          "profile_key": "D_educational_cultural_p2",
+          "profile_code": "EDU-2",
+          "profile_name": "State-institution students without work exposure",
+          "historical_profile_size": 53
+        },
+        {
+          "profile_key": "D_educational_cultural_p3",
+          "profile_code": "EDU-3",
+          "profile_name": "Private-institution students without work exposure",
+          "historical_profile_size": 57
+        },
+        {
+          "profile_key": "D_educational_cultural_p4",
+          "profile_code": "EDU-4",
+          "profile_name": "Work-experienced students, mainly in private institutions",
+          "historical_profile_size": 66
+        }
+      ],
+      "cluster_forming_variables": [
+        {
+          "variable": "father_edu",
+          "display_name": "Father's education",
+          "question_id": "A12",
+          "survey_question": "What is the highest level of education your father completed?",
+          "provenance": "09_branch_d_educational_cultural_capital_clustering.py",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "A/L level (Grade 12–13)",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 1,
+                  "denominator": 15,
+                  "percentage": 6.666666666666667
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 11,
+                  "denominator": 53,
+                  "percentage": 20.754716981132077
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 28,
+                  "denominator": 57,
+                  "percentage": 49.12280701754386
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 17,
+                  "denominator": 66,
+                  "percentage": 25.757575757575758
+                }
+              ]
+            },
+            {
+              "answer": "Bachelor's degree",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 12,
+                  "denominator": 15,
+                  "percentage": 80.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 14,
+                  "denominator": 53,
+                  "percentage": 26.41509433962264
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 11,
+                  "denominator": 57,
+                  "percentage": 19.29824561403509
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 20,
+                  "denominator": 66,
+                  "percentage": 30.303030303030305
+                }
+              ]
+            },
+            {
+              "answer": "O/L level (Grade 9–11)",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 1,
+                  "denominator": 15,
+                  "percentage": 6.666666666666667
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 14,
+                  "denominator": 53,
+                  "percentage": 26.41509433962264
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 3,
+                  "denominator": 57,
+                  "percentage": 5.2631578947368425
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 7,
+                  "denominator": 66,
+                  "percentage": 10.606060606060606
+                }
+              ]
+            },
+            {
+              "answer": "Vocational certificate / NVQ",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 1,
+                  "denominator": 15,
+                  "percentage": 6.666666666666667
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 4,
+                  "denominator": 53,
+                  "percentage": 7.547169811320755
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 4,
+                  "denominator": 57,
+                  "percentage": 7.017543859649122
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 8,
+                  "denominator": 66,
+                  "percentage": 12.121212121212121
+                }
+              ]
+            },
+            {
+              "answer": "Diploma",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 7,
+                  "denominator": 53,
+                  "percentage": 13.20754716981132
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 2,
+                  "denominator": 57,
+                  "percentage": 3.508771929824561
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 7,
+                  "denominator": 66,
+                  "percentage": 10.606060606060606
+                }
+              ]
+            },
+            {
+              "answer": "Do not know / prefer not to say",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 1,
+                  "denominator": 53,
+                  "percentage": 1.8867924528301887
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 2,
+                  "denominator": 57,
+                  "percentage": 3.508771929824561
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 2,
+                  "denominator": 66,
+                  "percentage": 3.0303030303030303
+                }
+              ]
+            },
+            {
+              "answer": "Post-graduate (Masters/PhD)",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 1,
+                  "denominator": 53,
+                  "percentage": 1.8867924528301887
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 6,
+                  "denominator": 57,
+                  "percentage": 10.526315789473685
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 3,
+                  "denominator": 66,
+                  "percentage": 4.545454545454546
+                }
+              ]
+            },
+            {
+              "answer": "Primary/Elementary (Grade 1–5)",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 1,
+                  "denominator": 53,
+                  "percentage": 1.8867924528301887
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 1,
+                  "denominator": 57,
+                  "percentage": 1.7543859649122806
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 2,
+                  "denominator": 66,
+                  "percentage": 3.0303030303030303
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        },
+        {
+          "variable": "mother_edu",
+          "display_name": "Mother's education",
+          "question_id": "A13",
+          "survey_question": "What is the highest level of education your mother completed?",
+          "provenance": "09_branch_d_educational_cultural_capital_clustering.py",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "Bachelor's degree",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 11,
+                  "denominator": 15,
+                  "percentage": 73.33333333333333
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 7,
+                  "denominator": 53,
+                  "percentage": 13.20754716981132
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 16,
+                  "denominator": 57,
+                  "percentage": 28.07017543859649
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 13,
+                  "denominator": 66,
+                  "percentage": 19.696969696969695
+                }
+              ]
+            },
+            {
+              "answer": "Diploma",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 2,
+                  "denominator": 15,
+                  "percentage": 13.333333333333334
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 7,
+                  "denominator": 53,
+                  "percentage": 13.20754716981132
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 10,
+                  "denominator": 57,
+                  "percentage": 17.54385964912281
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 18,
+                  "denominator": 66,
+                  "percentage": 27.272727272727273
+                }
+              ]
+            },
+            {
+              "answer": "Post-graduate (Masters/PhD)",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 1,
+                  "denominator": 15,
+                  "percentage": 6.666666666666667
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 0,
+                  "denominator": 53,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 3,
+                  "denominator": 57,
+                  "percentage": 5.2631578947368425
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 3,
+                  "denominator": 66,
+                  "percentage": 4.545454545454546
+                }
+              ]
+            },
+            {
+              "answer": "Vocational certificate / NVQ",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 1,
+                  "denominator": 15,
+                  "percentage": 6.666666666666667
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 1,
+                  "denominator": 53,
+                  "percentage": 1.8867924528301887
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 5,
+                  "denominator": 57,
+                  "percentage": 8.771929824561404
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 2,
+                  "denominator": 66,
+                  "percentage": 3.0303030303030303
+                }
+              ]
+            },
+            {
+              "answer": "A/L level (Grade 12–13)",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 22,
+                  "denominator": 53,
+                  "percentage": 41.509433962264154
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 18,
+                  "denominator": 57,
+                  "percentage": 31.57894736842105
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 21,
+                  "denominator": 66,
+                  "percentage": 31.818181818181817
+                }
+              ]
+            },
+            {
+              "answer": "Do not know / prefer not to say",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 2,
+                  "denominator": 53,
+                  "percentage": 3.7735849056603774
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 3,
+                  "denominator": 57,
+                  "percentage": 5.2631578947368425
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 3,
+                  "denominator": 66,
+                  "percentage": 4.545454545454546
+                }
+              ]
+            },
+            {
+              "answer": "O/L level (Grade 9–11)",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 14,
+                  "denominator": 53,
+                  "percentage": 26.41509433962264
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 2,
+                  "denominator": 57,
+                  "percentage": 3.508771929824561
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 5,
+                  "denominator": 66,
+                  "percentage": 7.575757575757576
+                }
+              ]
+            },
+            {
+              "answer": "Primary/Elementary (Grade 1–5)",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 0,
+                  "denominator": 53,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 0,
+                  "denominator": 57,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 1,
+                  "denominator": 66,
+                  "percentage": 1.5151515151515151
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        },
+        {
+          "variable": "expected_highest_edu_d",
+          "display_name": "Expected highest education",
+          "question_id": "C6",
+          "survey_question": "What is the highest level of education or training you expect to complete in total?",
+          "provenance": "09_branch_d_educational_cultural_capital_clustering.py",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "Bachelor's degree",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 8,
+                  "denominator": 15,
+                  "percentage": 53.333333333333336
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 16,
+                  "denominator": 53,
+                  "percentage": 30.18867924528302
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 20,
+                  "denominator": 57,
+                  "percentage": 35.08771929824562
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 19,
+                  "denominator": 66,
+                  "percentage": 28.78787878787879
+                }
+              ]
+            },
+            {
+              "answer": "O/L level",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 1,
+                  "denominator": 15,
+                  "percentage": 6.666666666666667
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 1,
+                  "denominator": 53,
+                  "percentage": 1.8867924528301887
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 1,
+                  "denominator": 57,
+                  "percentage": 1.7543859649122806
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 0,
+                  "denominator": 66,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "Post-graduate degree",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 5,
+                  "denominator": 15,
+                  "percentage": 33.333333333333336
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 33,
+                  "denominator": 53,
+                  "percentage": 62.264150943396224
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 35,
+                  "denominator": 57,
+                  "percentage": 61.40350877192982
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 43,
+                  "denominator": 66,
+                  "percentage": 65.15151515151516
+                }
+              ]
+            },
+            {
+              "answer": "Primary school",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 1,
+                  "denominator": 15,
+                  "percentage": 6.666666666666667
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 0,
+                  "denominator": 53,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 0,
+                  "denominator": 57,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 0,
+                  "denominator": 66,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "Diploma",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 3,
+                  "denominator": 53,
+                  "percentage": 5.660377358490566
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 0,
+                  "denominator": 57,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 3,
+                  "denominator": 66,
+                  "percentage": 4.545454545454546
+                }
+              ]
+            },
+            {
+              "answer": "A/L level",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 0,
+                  "denominator": 53,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 1,
+                  "denominator": 57,
+                  "percentage": 1.7543859649122806
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 1,
+                  "denominator": 66,
+                  "percentage": 1.5151515151515151
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        },
+        {
+          "variable": "institution_type",
+          "display_name": "Institution type",
+          "question_id": "BC1",
+          "survey_question": "What type of institution are you currently attending?",
+          "provenance": "09_branch_d_educational_cultural_capital_clustering.py",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "Government school or state university",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 3,
+                  "denominator": 15,
+                  "percentage": 20.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 44,
+                  "denominator": 53,
+                  "percentage": 83.01886792452831
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 0,
+                  "denominator": 57,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 10,
+                  "denominator": 66,
+                  "percentage": 15.151515151515152
+                }
+              ]
+            },
+            {
+              "answer": "International school or foreign university programme",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 4,
+                  "denominator": 15,
+                  "percentage": 26.666666666666668
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 5,
+                  "denominator": 53,
+                  "percentage": 9.433962264150944
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 0,
+                  "denominator": 57,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 5,
+                  "denominator": 66,
+                  "percentage": 7.575757575757576
+                }
+              ]
+            },
+            {
+              "answer": "Other",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 1,
+                  "denominator": 15,
+                  "percentage": 6.666666666666667
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 2,
+                  "denominator": 53,
+                  "percentage": 3.7735849056603774
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 0,
+                  "denominator": 57,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 2,
+                  "denominator": 66,
+                  "percentage": 3.0303030303030303
+                }
+              ]
+            },
+            {
+              "answer": "Private school or private degree-awarding institute",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 7,
+                  "denominator": 15,
+                  "percentage": 46.666666666666664
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 0,
+                  "denominator": 53,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 56,
+                  "denominator": 57,
+                  "percentage": 98.24561403508773
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 47,
+                  "denominator": 66,
+                  "percentage": 71.21212121212122
+                }
+              ]
+            },
+            {
+              "answer": "Online or distance learning programme",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 2,
+                  "denominator": 53,
+                  "percentage": 3.7735849056603774
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 0,
+                  "denominator": 57,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 1,
+                  "denominator": 66,
+                  "percentage": 1.5151515151515151
+                }
+              ]
+            },
+            {
+              "answer": "Government vocational/technical institute (NYSC, NAITA, VTA, etc.)",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 0,
+                  "denominator": 53,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 1,
+                  "denominator": 57,
+                  "percentage": 1.7543859649122806
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 1,
+                  "denominator": 66,
+                  "percentage": 1.5151515151515151
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        },
+        {
+          "variable": "worked_while_studying",
+          "display_name": "Work while studying",
+          "question_id": "B9",
+          "survey_question": "Did you work (or do you currently work) while studying?",
+          "provenance": "09_branch_d_educational_cultural_capital_clustering.py",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "No",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 4,
+                  "denominator": 15,
+                  "percentage": 26.666666666666668
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 53,
+                  "denominator": 53,
+                  "percentage": 100.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 57,
+                  "denominator": 57,
+                  "percentage": 100.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 0,
+                  "denominator": 66,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "Yes",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 8,
+                  "denominator": 15,
+                  "percentage": 53.333333333333336
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 0,
+                  "denominator": 53,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 0,
+                  "denominator": 57,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 66,
+                  "denominator": 66,
+                  "percentage": 100.0
+                }
+              ]
+            },
+            {
+              "answer": "",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 3,
+                  "denominator": 15,
+                  "percentage": 20.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 0,
+                  "denominator": 53,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 0,
+                  "denominator": 57,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 0,
+                  "denominator": 66,
+                  "percentage": 0.0
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        },
+        {
+          "variable": "re_entered_education",
+          "display_name": "Education re-entry",
+          "question_id": "C4",
+          "survey_question": "Have you ever stopped your education to work or look for work, then re-entered education later?",
+          "provenance": "09_branch_d_educational_cultural_capital_clustering.py",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "Yes",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 15,
+                  "denominator": 15,
+                  "percentage": 100.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 5,
+                  "denominator": 53,
+                  "percentage": 9.433962264150944
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 5,
+                  "denominator": 57,
+                  "percentage": 8.771929824561404
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 2,
+                  "denominator": 66,
+                  "percentage": 3.0303030303030303
+                }
+              ]
+            },
+            {
+              "answer": "No",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 48,
+                  "denominator": 53,
+                  "percentage": 90.56603773584905
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 52,
+                  "denominator": 57,
+                  "percentage": 91.2280701754386
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 64,
+                  "denominator": 66,
+                  "percentage": 96.96969696969697
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        }
+      ]
+    },
+    "E_learning_orientation": {
+      "model_key": "E_learning_orientation",
+      "dimension_title": "Education and further learning",
+      "source_file": "29_branch_e_all_dimensions_clustering.py (retained E4 model)",
+      "profiles": [
+        {
+          "profile_key": "E_learning_orientation_p1",
+          "profile_code": "E-LEARN-1",
+          "profile_name": "High perceived education utility and strong learning ambition",
+          "historical_profile_size": 18
+        },
+        {
+          "profile_key": "E_learning_orientation_p2",
+          "profile_code": "E-LEARN-2",
+          "profile_name": "Moderate perceived utility and mixed learning ambition",
+          "historical_profile_size": 16
+        }
+      ],
+      "cluster_forming_variables": [
+        {
+          "variable": "past_edu_usefulness",
+          "display_name": "Usefulness of previous education",
+          "question_id": "D19",
+          "survey_question": "Do you feel that the education or training you have received is useful for getting a job?",
+          "provenance": "29_branch_e_all_dimensions_clustering.py, retained E4 model",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "Do not know",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "count": 2,
+                  "denominator": 18,
+                  "percentage": 11.11111111111111
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "count": 1,
+                  "denominator": 16,
+                  "percentage": 6.25
+                }
+              ]
+            },
+            {
+              "answer": "Not useful — little relevance to jobs I am looking for",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "count": 1,
+                  "denominator": 18,
+                  "percentage": 5.555555555555555
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "count": 0,
+                  "denominator": 16,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "Very useful — directly relevant, employers value it",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "count": 15,
+                  "denominator": 18,
+                  "percentage": 83.33333333333333
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "count": 0,
+                  "denominator": 16,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "Somewhat useful — helps to some extent",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "count": 0,
+                  "denominator": 18,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "count": 15,
+                  "denominator": 16,
+                  "percentage": 93.75
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        },
+        {
+          "variable": "plans_further_edu",
+          "display_name": "Plans for further education or training",
+          "question_id": "D21",
+          "survey_question": "Do you plan to continue your education or training in the future?",
+          "provenance": "29_branch_e_all_dimensions_clustering.py, retained E4 model",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "Do not know yet",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "count": 1,
+                  "denominator": 18,
+                  "percentage": 5.555555555555555
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "count": 3,
+                  "denominator": 16,
+                  "percentage": 18.75
+                }
+              ]
+            },
+            {
+              "answer": "Yes",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "count": 17,
+                  "denominator": 18,
+                  "percentage": 94.44444444444444
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "count": 10,
+                  "denominator": 16,
+                  "percentage": 62.5
+                }
+              ]
+            },
+            {
+              "answer": "No",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "count": 0,
+                  "denominator": 18,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "count": 3,
+                  "denominator": 16,
+                  "percentage": 18.75
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        },
+        {
+          "variable": "expected_highest_edu_e",
+          "display_name": "Expected highest education",
+          "question_id": "D22",
+          "survey_question": "What is the highest level of education or training you expect to eventually achieve?",
+          "provenance": "29_branch_e_all_dimensions_clustering.py, retained E4 model",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "Bachelor's degree",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "count": 6,
+                  "denominator": 18,
+                  "percentage": 33.333333333333336
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "count": 5,
+                  "denominator": 16,
+                  "percentage": 31.25
+                }
+              ]
+            },
+            {
+              "answer": "Post-graduate degree",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "count": 12,
+                  "denominator": 18,
+                  "percentage": 66.66666666666667
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "count": 6,
+                  "denominator": 16,
+                  "percentage": 37.5
+                }
+              ]
+            },
+            {
+              "answer": "Diploma",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "count": 0,
+                  "denominator": 18,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "count": 3,
+                  "denominator": 16,
+                  "percentage": 18.75
+                }
+              ]
+            },
+            {
+              "answer": "O/L level",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "count": 0,
+                  "denominator": 18,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "count": 1,
+                  "denominator": 16,
+                  "percentage": 6.25
+                }
+              ]
+            },
+            {
+              "answer": "Vocational certificate or NVQ",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "count": 0,
+                  "denominator": 18,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "count": 1,
+                  "denominator": 16,
+                  "percentage": 6.25
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        }
+      ]
+    },
+    "F_employment_security": {
+      "model_key": "F_employment_security",
+      "dimension_title": "Employment security",
+      "source_file": "12_branch_f_employment_security_formality_clustering.py",
+      "profiles": [
+        {
+          "profile_key": "F_employment_security_p1",
+          "profile_code": "F-SEC-1",
+          "profile_name": "Temporary/no-contract employment with uncertain security",
+          "historical_profile_size": 29
+        },
+        {
+          "profile_key": "F_employment_security_p2",
+          "profile_code": "F-SEC-2",
+          "profile_name": "Predominantly permanent employment with stronger security",
+          "historical_profile_size": 52
+        }
+      ],
+      "cluster_forming_variables": [
+        {
+          "variable": "contract_type",
+          "display_name": "Employment contract type",
+          "question_id": "E8",
+          "survey_question": "What kind of employment contract are you currently working under?",
+          "provenance": "12_branch_f_employment_security_formality_clustering.py",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "Do not know",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 1,
+                  "denominator": 29,
+                  "percentage": 3.4482758620689653
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 2,
+                  "denominator": 52,
+                  "percentage": 3.8461538461538463
+                }
+              ]
+            },
+            {
+              "answer": "No contract at all",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 5,
+                  "denominator": 29,
+                  "percentage": 17.24137931034483
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 3,
+                  "denominator": 52,
+                  "percentage": 5.769230769230769
+                }
+              ]
+            },
+            {
+              "answer": "Oral contract — temporary (12–36 months)",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 2,
+                  "denominator": 29,
+                  "percentage": 6.896551724137931
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 1,
+                  "denominator": 52,
+                  "percentage": 1.9230769230769231
+                }
+              ]
+            },
+            {
+              "answer": "Oral contract — temporary (under 12 months)",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 1,
+                  "denominator": 29,
+                  "percentage": 3.4482758620689653
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 1,
+                  "denominator": 52,
+                  "percentage": 1.9230769230769231
+                }
+              ]
+            },
+            {
+              "answer": "Written contract — temporary (12–36 months)",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 8,
+                  "denominator": 29,
+                  "percentage": 27.586206896551722
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 3,
+                  "denominator": 52,
+                  "percentage": 5.769230769230769
+                }
+              ]
+            },
+            {
+              "answer": "Written contract — temporary (under 12 months)",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 12,
+                  "denominator": 29,
+                  "percentage": 41.37931034482759
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 0,
+                  "denominator": 52,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "Oral contract — permanent/unlimited",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 0,
+                  "denominator": 29,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 2,
+                  "denominator": 52,
+                  "percentage": 3.8461538461538463
+                }
+              ]
+            },
+            {
+              "answer": "Written contract — permanent/unlimited",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 0,
+                  "denominator": 29,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 40,
+                  "denominator": 52,
+                  "percentage": 76.92307692307692
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        },
+        {
+          "variable": "job_security_12months",
+          "display_name": "Job security over the next 12 months",
+          "question_id": "E20",
+          "survey_question": "How likely is it that you will be able to keep your main job over the next 12 months?",
+          "provenance": "12_branch_f_employment_security_formality_clustering.py",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "I do not know",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 8,
+                  "denominator": 29,
+                  "percentage": 27.586206896551722
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 2,
+                  "denominator": 52,
+                  "percentage": 3.8461538461538463
+                }
+              ]
+            },
+            {
+              "answer": "Likely but not certain — I have some concern",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 15,
+                  "denominator": 29,
+                  "percentage": 51.724137931034484
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 13,
+                  "denominator": 52,
+                  "percentage": 25.0
+                }
+              ]
+            },
+            {
+              "answer": "Not likely — I doubt I will still have this job",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 5,
+                  "denominator": 29,
+                  "percentage": 17.24137931034483
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 1,
+                  "denominator": 52,
+                  "percentage": 1.9230769230769231
+                }
+              ]
+            },
+            {
+              "answer": "Very likely — my job is secure",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 1,
+                  "denominator": 29,
+                  "percentage": 3.4482758620689653
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 36,
+                  "denominator": 52,
+                  "percentage": 69.23076923076923
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        },
+        {
+          "variable": "sector_formality",
+          "display_name": "Work formality",
+          "question_id": "BE2",
+          "survey_question": "How would you describe the formality of your work situation?",
+          "provenance": "12_branch_f_employment_security_formality_clustering.py",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "Fully formal — registered employer, written contract, statutory benefits",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 16,
+                  "denominator": 29,
+                  "percentage": 55.172413793103445
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 35,
+                  "denominator": 52,
+                  "percentage": 67.3076923076923
+                }
+              ]
+            },
+            {
+              "answer": "Mixed — some formal, some informal aspects",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 7,
+                  "denominator": 29,
+                  "percentage": 24.137931034482758
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 7,
+                  "denominator": 52,
+                  "percentage": 13.461538461538462
+                }
+              ]
+            },
+            {
+              "answer": "Mostly formal — some documentation but not fully compliant",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 6,
+                  "denominator": 29,
+                  "percentage": 20.689655172413794
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 8,
+                  "denominator": 52,
+                  "percentage": 15.384615384615385
+                }
+              ]
+            },
+            {
+              "answer": "Fully informal — no documentation, cash only",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 0,
+                  "denominator": 29,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 2,
+                  "denominator": 52,
+                  "percentage": 3.8461538461538463
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        }
+      ]
+    },
+    "G_economic_role": {
+      "model_key": "G_economic_role",
+      "dimension_title": "Household economic role",
+      "source_file": "24_branch_g_household_economic_resources_clustering.py",
+      "profiles": [
+        {
+          "profile_key": "G_economic_role_p1",
+          "profile_code": "G-ROLE-1",
+          "profile_name": "Predominantly family/partner-supported non-provider",
+          "historical_profile_size": 41
+        },
+        {
+          "profile_key": "G_economic_role_p2",
+          "profile_code": "G-ROLE-2",
+          "profile_name": "Predominantly self-income provider/contributor",
+          "historical_profile_size": 15
+        }
+      ],
+      "cluster_forming_variables": [
+        {
+          "variable": "household_income",
+          "display_name": "Household income",
+          "question_id": "A17",
+          "survey_question": "What is the approximate total monthly income of your household from all sources?",
+          "provenance": "24_branch_g_household_economic_resources_clustering.py",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "Above LKR 200,000",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 11,
+                  "denominator": 41,
+                  "percentage": 26.829268292682926
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 2,
+                  "denominator": 15,
+                  "percentage": 13.333333333333334
+                }
+              ]
+            },
+            {
+              "answer": "Below LKR 30,000",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 6,
+                  "denominator": 41,
+                  "percentage": 14.634146341463415
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 1,
+                  "denominator": 15,
+                  "percentage": 6.666666666666667
+                }
+              ]
+            },
+            {
+              "answer": "LKR 120,000 – 200,000",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 4,
+                  "denominator": 41,
+                  "percentage": 9.75609756097561
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 6,
+                  "denominator": 15,
+                  "percentage": 40.0
+                }
+              ]
+            },
+            {
+              "answer": "LKR 30,000 – 60,000",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 6,
+                  "denominator": 41,
+                  "percentage": 14.634146341463415
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 3,
+                  "denominator": 15,
+                  "percentage": 20.0
+                }
+              ]
+            },
+            {
+              "answer": "LKR 60,000 – 120,000",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 12,
+                  "denominator": 41,
+                  "percentage": 29.26829268292683
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 2,
+                  "denominator": 15,
+                  "percentage": 13.333333333333334
+                }
+              ]
+            },
+            {
+              "answer": "Prefer not to say",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 2,
+                  "denominator": 41,
+                  "percentage": 4.878048780487805
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 1,
+                  "denominator": 15,
+                  "percentage": 6.666666666666667
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        },
+        {
+          "variable": "household_size",
+          "display_name": "Household size",
+          "question_id": "A16",
+          "survey_question": "How many people live in your household in total?",
+          "provenance": "24_branch_g_household_economic_resources_clustering.py",
+          "kind": "numeric_summary",
+          "availability": "profile_summary",
+          "numeric_values": [
+            {
+              "profile_key": "G_economic_role_p1",
+              "denominator": 41,
+              "observed": 41,
+              "missing": 0,
+              "mean": 5.170731707317073,
+              "median": 4.0,
+              "iqr": 1.0
+            },
+            {
+              "profile_key": "G_economic_role_p2",
+              "denominator": 15,
+              "observed": 15,
+              "missing": 0,
+              "mean": 3.6666666666666665,
+              "median": 4.0,
+              "iqr": 1.0
+            }
+          ],
+          "note": "Numeric values are shown as profile summaries; no arbitrary bins were created."
+        },
+        {
+          "variable": "household_workers",
+          "display_name": "Household members working",
+          "question_id": "A18",
+          "survey_question": "How many people in your household are currently working for a salary or wage?",
+          "provenance": "24_branch_g_household_economic_resources_clustering.py",
+          "kind": "numeric_summary",
+          "availability": "profile_summary",
+          "numeric_values": [
+            {
+              "profile_key": "G_economic_role_p1",
+              "denominator": 41,
+              "observed": 41,
+              "missing": 0,
+              "mean": 2.3902439024390243,
+              "median": 2.0,
+              "iqr": 1.0
+            },
+            {
+              "profile_key": "G_economic_role_p2",
+              "denominator": 15,
+              "observed": 15,
+              "missing": 0,
+              "mean": 1.7333333333333334,
+              "median": 2.0,
+              "iqr": 0.5
+            }
+          ],
+          "note": "Numeric values are shown as profile summaries; no arbitrary bins were created."
+        },
+        {
+          "variable": "household_unemployed",
+          "display_name": "Household members looking for work",
+          "question_id": "A19",
+          "survey_question": "How many people in your household are currently without work and actively looking for a job?",
+          "provenance": "24_branch_g_household_economic_resources_clustering.py",
+          "kind": "numeric_summary",
+          "availability": "profile_summary",
+          "numeric_values": [
+            {
+              "profile_key": "G_economic_role_p1",
+              "denominator": 41,
+              "observed": 41,
+              "missing": 0,
+              "mean": 1.2439024390243902,
+              "median": 1.0,
+              "iqr": 2.0
+            },
+            {
+              "profile_key": "G_economic_role_p2",
+              "denominator": 15,
+              "observed": 15,
+              "missing": 0,
+              "mean": 1.2,
+              "median": 1.0,
+              "iqr": 2.0
+            }
+          ],
+          "note": "Numeric values are shown as profile summaries; no arbitrary bins were created."
+        },
+        {
+          "variable": "primary_earner_status",
+          "display_name": "Primary income-earner status",
+          "question_id": "A20",
+          "survey_question": "Are you the primary income earner in your household?",
+          "provenance": "24_branch_g_household_economic_resources_clustering.py",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "No — someone else is the main provider",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 37,
+                  "denominator": 41,
+                  "percentage": 90.2439024390244
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 2,
+                  "denominator": 15,
+                  "percentage": 13.333333333333334
+                }
+              ]
+            },
+            {
+              "answer": "Shared — several people contribute roughly equally",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 2,
+                  "denominator": 41,
+                  "percentage": 4.878048780487805
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 6,
+                  "denominator": 15,
+                  "percentage": 40.0
+                }
+              ]
+            },
+            {
+              "answer": "Yes — I provide the main household income",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 2,
+                  "denominator": 41,
+                  "percentage": 4.878048780487805
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 7,
+                  "denominator": 15,
+                  "percentage": 46.666666666666664
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        },
+        {
+          "variable": "primary_income_source",
+          "display_name": "Main personal income source",
+          "question_id": "B19",
+          "survey_question": "Currently, where does most of your money come from?",
+          "provenance": "24_branch_g_household_economic_resources_clustering.py",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "Casual or informal work",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 2,
+                  "denominator": 41,
+                  "percentage": 4.878048780487805
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 1,
+                  "denominator": 15,
+                  "percentage": 6.666666666666667
+                }
+              ]
+            },
+            {
+              "answer": "My parents or family",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 31,
+                  "denominator": 41,
+                  "percentage": 75.60975609756098
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "My partner or spouse",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 6,
+                  "denominator": 41,
+                  "percentage": 14.634146341463415
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 1,
+                  "denominator": 15,
+                  "percentage": 6.666666666666667
+                }
+              ]
+            },
+            {
+              "answer": "Other source",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 2,
+                  "denominator": 41,
+                  "percentage": 4.878048780487805
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 1,
+                  "denominator": 15,
+                  "percentage": 6.666666666666667
+                }
+              ]
+            },
+            {
+              "answer": "An education grant, scholarship, or training allowance",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 0,
+                  "denominator": 41,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 1,
+                  "denominator": 15,
+                  "percentage": 6.666666666666667
+                }
+              ]
+            },
+            {
+              "answer": "My regular job or business",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 0,
+                  "denominator": 41,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 10,
+                  "denominator": 15,
+                  "percentage": 66.66666666666667
+                }
+              ]
+            },
+            {
+              "answer": "Unemployment or social security benefits",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 0,
+                  "denominator": 41,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 1,
+                  "denominator": 15,
+                  "percentage": 6.666666666666667
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        }
+      ]
+    },
+    "G_future_engagement": {
+      "model_key": "G_future_engagement",
+      "dimension_title": "Future work and education",
+      "source_file": "26_branch_g_inactivity_pathway_future_engagement_clustering.py",
+      "profiles": [
+        {
+          "profile_key": "G_future_engagement_p1",
+          "profile_code": "G-FUTURE-1",
+          "profile_name": "Work-and-education engaged, mostly prior work experience",
+          "historical_profile_size": 35
+        },
+        {
+          "profile_key": "G_future_engagement_p2",
+          "profile_code": "G-FUTURE-2",
+          "profile_name": "Low/uncertain engagement, mostly no prior work experience",
+          "historical_profile_size": 21
+        }
+      ],
+      "cluster_forming_variables": [
+        {
+          "variable": "reason_not_in_labour_force",
+          "display_name": "Reason for not working or seeking work",
+          "question_id": "F1",
+          "survey_question": "What is your main reason for not currently working or actively looking for work?",
+          "provenance": "26_branch_g_inactivity_pathway_future_engagement_clustering.py",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "Already arranged self-employment to start in the future",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "count": 1,
+                  "denominator": 35,
+                  "percentage": 2.857142857142857
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "count": 1,
+                  "denominator": 21,
+                  "percentage": 4.761904761904762
+                }
+              ]
+            },
+            {
+              "answer": "Already found work to start in the future",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "count": 1,
+                  "denominator": 35,
+                  "percentage": 2.857142857142857
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "count": 1,
+                  "denominator": 21,
+                  "percentage": 4.761904761904762
+                }
+              ]
+            },
+            {
+              "answer": "Awaiting recall to a former job",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "count": 2,
+                  "denominator": 35,
+                  "percentage": 5.714285714285714
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "count": 0,
+                  "denominator": 21,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "Believe there is no suitable work available in this area",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "count": 1,
+                  "denominator": 35,
+                  "percentage": 2.857142857142857
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "count": 1,
+                  "denominator": 21,
+                  "percentage": 4.761904761904762
+                }
+              ]
+            },
+            {
+              "answer": "Could not find suitable work after trying",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "count": 2,
+                  "denominator": 35,
+                  "percentage": 5.714285714285714
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "count": 2,
+                  "denominator": 21,
+                  "percentage": 9.523809523809524
+                }
+              ]
+            },
+            {
+              "answer": "Currently in education or training",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "count": 11,
+                  "denominator": 35,
+                  "percentage": 31.428571428571427
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "count": 3,
+                  "denominator": 21,
+                  "percentage": 14.285714285714286
+                }
+              ]
+            },
+            {
+              "answer": "Do not know how or where to look for work",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "count": 1,
+                  "denominator": 35,
+                  "percentage": 2.857142857142857
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "count": 2,
+                  "denominator": 21,
+                  "percentage": 9.523809523809524
+                }
+              ]
+            },
+            {
+              "answer": "Have not started looking yet",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "count": 4,
+                  "denominator": 35,
+                  "percentage": 11.428571428571429
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "count": 2,
+                  "denominator": 21,
+                  "percentage": 9.523809523809524
+                }
+              ]
+            },
+            {
+              "answer": "Other reason",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "count": 3,
+                  "denominator": 35,
+                  "percentage": 8.571428571428571
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "count": 4,
+                  "denominator": 21,
+                  "percentage": 19.047619047619047
+                }
+              ]
+            },
+            {
+              "answer": "Own illness, injury, or pregnancy",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "count": 2,
+                  "denominator": 35,
+                  "percentage": 5.714285714285714
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "count": 0,
+                  "denominator": 21,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "Personal or family responsibilities (caring for children, elderly, etc.)",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "count": 7,
+                  "denominator": 35,
+                  "percentage": 20.0
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "count": 2,
+                  "denominator": 21,
+                  "percentage": 9.523809523809524
+                }
+              ]
+            },
+            {
+              "answer": "Awaiting the busy season (seasonal worker)",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "count": 0,
+                  "denominator": 35,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "count": 2,
+                  "denominator": 21,
+                  "percentage": 9.523809523809524
+                }
+              ]
+            },
+            {
+              "answer": "I do not meet employers' requirements — feel I lack qualifications",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "count": 0,
+                  "denominator": 35,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "count": 1,
+                  "denominator": 21,
+                  "percentage": 4.761904761904762
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        },
+        {
+          "variable": "ever_worked",
+          "display_name": "Previous work experience",
+          "question_id": "F2",
+          "survey_question": "Have you ever worked for pay or profit at any point in your life?",
+          "provenance": "26_branch_g_inactivity_pathway_future_engagement_clustering.py",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "No — I have never worked",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "count": 6,
+                  "denominator": 35,
+                  "percentage": 17.142857142857142
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "count": 16,
+                  "denominator": 21,
+                  "percentage": 76.19047619047619
+                }
+              ]
+            },
+            {
+              "answer": "Yes — I have worked before",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "count": 29,
+                  "denominator": 35,
+                  "percentage": 82.85714285714286
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "count": 5,
+                  "denominator": 21,
+                  "percentage": 23.80952380952381
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        },
+        {
+          "variable": "wants_to_work_future",
+          "display_name": "Future work intention",
+          "question_id": "F3",
+          "survey_question": "Do you want to work in the future?",
+          "provenance": "26_branch_g_inactivity_pathway_future_engagement_clustering.py",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "No — I do not want to work",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "count": 1,
+                  "denominator": 35,
+                  "percentage": 2.857142857142857
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "count": 15,
+                  "denominator": 21,
+                  "percentage": 71.42857142857143
+                }
+              ]
+            },
+            {
+              "answer": "Yes — I want to work at some point",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "count": 34,
+                  "denominator": 35,
+                  "percentage": 97.14285714285714
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "count": 6,
+                  "denominator": 21,
+                  "percentage": 28.571428571428573
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        },
+        {
+          "variable": "wants_further_edu",
+          "display_name": "Future education intention",
+          "question_id": "F4",
+          "survey_question": "Do you want to continue or start education or training in the future?",
+          "provenance": "26_branch_g_inactivity_pathway_future_engagement_clustering.py",
+          "kind": "categorical",
+          "availability": "complete",
+          "answer_distribution": [
+            {
+              "answer": "No",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "count": 1,
+                  "denominator": 35,
+                  "percentage": 2.857142857142857
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "count": 6,
+                  "denominator": 21,
+                  "percentage": 28.571428571428573
+                }
+              ]
+            },
+            {
+              "answer": "Not sure yet",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "count": 4,
+                  "denominator": 35,
+                  "percentage": 11.428571428571429
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "count": 13,
+                  "denominator": 21,
+                  "percentage": 61.904761904761905
+                }
+              ]
+            },
+            {
+              "answer": "Yes",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "count": 30,
+                  "denominator": 35,
+                  "percentage": 85.71428571428571
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "count": 2,
+                  "denominator": 21,
+                  "percentage": 9.523809523809524
+                }
+              ]
+            }
+          ],
+          "note": "Percentages are within-profile percentages from the final model population."
+        }
+      ]
+    }
+  }
+}

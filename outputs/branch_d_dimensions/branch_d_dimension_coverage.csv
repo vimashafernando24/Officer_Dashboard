@@ -1,0 +1,6 @@
+dimension,component_count,minimum_components_required,scored_rows,score_coverage_pct
+economic_resources,5,3,191,100.0
+human_capital_trajectory,3,2,191,100.0
+career_transition_readiness,5,3,191,100.0
+social_capital_belonging,3,2,191,100.0
+agency_study_engagement,3,2,191,100.0

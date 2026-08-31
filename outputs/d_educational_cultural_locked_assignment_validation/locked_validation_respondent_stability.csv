@@ -1,0 +1,192 @@
+respondent_id,frozen_profile_id,frozen_profile_label,correct_repetitions,correct_percent,mismatched_repetitions,distance_tie_repetitions,most_frequent_predicted_profile_id,most_frequent_prediction_percent,predicted_profile_1_repetitions,predicted_profile_2_repetitions,predicted_profile_3_repetitions,predicted_profile_4_repetitions
+nysc-ff80760d-b56d-4a8b-80b4-149228cb9a2f,2,State-institution students without work exposure,14,2.8,486,0,3,97.2,0,14,486,0
+nysc-7f7d7d2a-1592-4a24-8512-5986c27ddd28,2,State-institution students without work exposure,16,3.2,484,0,3,96.8,0,16,484,0
+nysc-acaf63b5-6e8f-45fb-9d5a-cef8d615799b,4,"Work-experienced students, mainly in private institutions",55,11.0,445,0,1,89.0,445,0,0,55
+nysc-f231f23b-41a4-44e3-aeb8-db489acaa603,4,"Work-experienced students, mainly in private institutions",98,19.6,402,0,1,80.4,402,0,0,98
+nysc-3a86d117-1b8c-4f8d-8d53-d6765b4a4034,1,"Re-entered students, often with degree-educated parents",444,88.8,56,1,1,88.8,444,0,56,0
+nysc-4321c45b-467f-41b0-bd23-76872b91a382,1,"Re-entered students, often with degree-educated parents",446,89.2,54,0,1,89.2,446,0,54,0
+nysc-c6a55d29-9761-420f-8f52-aaa2f80c3edf,2,State-institution students without work exposure,449,89.8,51,0,2,89.8,0,449,51,0
+nysc-3382bd6d-487e-4959-9964-4f8635ddbc99,3,Private-institution students without work exposure,482,96.4,18,0,3,96.4,18,0,482,0
+nysc-7810096e-b016-46fc-aef7-c1fa25233c09,1,"Re-entered students, often with degree-educated parents",483,96.6,17,0,1,96.6,483,17,0,0
+nysc-bd678a30-66d4-48f7-b65b-eff26a93c7f4,1,"Re-entered students, often with degree-educated parents",494,98.8,6,0,1,98.8,494,0,0,6
+nysc-0603ae2f-8945-4514-93c2-2f847deaceb9,2,State-institution students without work exposure,498,99.6,2,0,2,99.6,2,498,0,0
+nysc-eebbdd4a-7e4b-4c76-83a2-aa9d07cc2f74,2,State-institution students without work exposure,498,99.6,2,0,2,99.6,0,498,2,0
+nysc-6a02d434-4a7b-4c31-9bed-942f6a286890,3,Private-institution students without work exposure,498,99.6,2,0,3,99.6,0,2,498,0
+nysc-25c345ec-5f45-4616-adb8-c96e31f3511c,1,"Re-entered students, often with degree-educated parents",500,100.0,0,0,1,100.0,500,0,0,0
+nysc-46543894-831f-47f1-b238-e70730231c75,1,"Re-entered students, often with degree-educated parents",500,100.0,0,0,1,100.0,500,0,0,0
+nysc-4eae9a51-70b3-48ae-ae06-6fe372ac0230,1,"Re-entered students, often with degree-educated parents",500,100.0,0,0,1,100.0,500,0,0,0
+nysc-7c63ea1a-ee4f-4edf-959a-7e303d32a5d1,1,"Re-entered students, often with degree-educated parents",500,100.0,0,0,1,100.0,500,0,0,0
+nysc-82bf0cc7-400c-4bd5-9650-95fdb88ad484,1,"Re-entered students, often with degree-educated parents",500,100.0,0,0,1,100.0,500,0,0,0
+nysc-8354ff61-e07e-4184-8983-8c6c405a8fa9,1,"Re-entered students, often with degree-educated parents",500,100.0,0,0,1,100.0,500,0,0,0
+nysc-836e4ae3-c8a3-4aa4-9a9e-a1a3326a9598,1,"Re-entered students, often with degree-educated parents",500,100.0,0,0,1,100.0,500,0,0,0
+nysc-a3a70af6-24ca-4298-98ca-4390e9366605,1,"Re-entered students, often with degree-educated parents",500,100.0,0,0,1,100.0,500,0,0,0
+nysc-d52a16f7-438b-41cf-992d-e79069705e8a,1,"Re-entered students, often with degree-educated parents",500,100.0,0,0,1,100.0,500,0,0,0
+nysc-e2e20ea3-60b0-4231-9ac3-50743313d1f7,1,"Re-entered students, often with degree-educated parents",500,100.0,0,0,1,100.0,500,0,0,0
+nysc-e4c077ac-93a9-49f5-a197-07c16f95ecb8,1,"Re-entered students, often with degree-educated parents",500,100.0,0,0,1,100.0,500,0,0,0
+nysc-0187df02-695a-45ad-996f-c0460ca36441,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-01e38620-3a4e-468b-b93c-cea2657c1c29,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-11152a5f-e17f-48cd-a78e-3b6b4c544ed8,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-15a74ec0-011b-4f61-804e-72de37c73705,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-1b6014e7-1bd9-44b0-af53-c904aef0d82d,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-22f5d16e-32ff-404f-b4ae-221e8c2e458c,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-251c78ef-cafb-435d-9294-34377cba5de0,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-3150bfcf-c92e-4aed-9cf4-e69efe51e156,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-40bcfdd5-a729-40a0-b511-9df22516eb9b,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-4401e631-9304-4f41-9ba4-6f84d659f7c8,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-462bfdcf-2d71-451e-83a3-22ce79e1f8a9,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-4be90741-5e5e-4836-b3ff-1068b15e480e,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-4e38db03-e477-420e-9afd-d3f92b53995d,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-52c2d24f-6cda-4556-93e0-4a978eb0500d,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-5485623a-a8af-45bd-8554-967d757dc700,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-551458c0-39de-44d8-9e52-72fac1791314,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-60e05c3c-697b-4719-9b78-49d257d0cd08,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-6d5169c0-ad82-46a8-8c4a-fe9763a770b3,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-6e235aa0-4d5b-4430-97dc-3ecd61f101b0,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-6eb51e19-bd00-4581-82b1-9897b587921d,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-83197f70-fe61-445a-ba86-951d51e03cca,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-83451ae5-b134-4626-a065-05ad52e61eb0,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-8655de31-fe75-44d2-8abe-8a80746b08c8,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-8c1790a3-c1b9-43c4-adcc-e1d4c03d4c60,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-91338cce-f72e-4ef3-89e8-85e1f5a568ab,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-91a4625c-6b6f-4951-a5bb-8ef463e139ad,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-94205260-e3df-45c0-8eac-032a3b3009a7,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-94649718-b86a-4296-a170-3d218dad18ba,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-9b42c85f-482b-45e4-9dbb-210a851dca75,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-9fbe588c-d76c-4c6b-b589-8e6d72fea677,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-9fdc3785-108e-4d7b-9546-d7d711522b36,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-a040f0a7-aad3-4254-a4ec-c6fc28e9741c,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-a403550c-55da-4e7c-b8bc-67dd73b59142,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-a549da09-003d-4ad3-bfc8-5569d70058bd,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-a715c1e3-4b5f-4b80-97d6-cdb0e2e6e6b3,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-b72e1593-1ea4-478a-b3f1-f16d01e40aba,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-b9864af9-c3fc-4326-b6ed-fd12ca45dad4,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-bb28e1a6-f66a-4ced-8bf4-e88fa2012208,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-bdde0374-5b22-4ebd-9399-25aad880d656,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-c1dd1288-16b3-42f5-b64f-89c7228ccb1d,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-d9c7fb02-437c-4f77-a612-cbc3df9cb796,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-db513af3-228d-404e-a2ef-3a4fa073fae5,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-e3cebb3b-7433-40b9-8a3b-09d02df7b566,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-e6ce351f-abb6-4f59-8326-317261dac6ce,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-edaf37b2-0534-4518-affa-b7a02a23d465,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-eecef39a-6cfc-4203-a8e5-989c363b8b54,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-f3ecc798-9f85-4113-9479-86dce44d7e8d,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-fed59855-669a-4b8e-8bc8-9c987544b8e3,2,State-institution students without work exposure,500,100.0,0,0,2,100.0,0,500,0,0
+nysc-0c5dbce2-a77f-4464-89ac-e9e6b015a901,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-1056a79a-db60-49c1-af6e-6663213c2bca,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-198c66ee-d0fb-41df-951d-f74aa4f31b3e,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-1a4c520c-4dab-4e86-872b-086d76411320,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-1ec865bf-bf7f-48eb-9818-6b7c9b941cf0,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-2649b288-d2be-4898-a61a-ecd37d41c495,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-2bbd6dcf-2d9a-49d6-a8e3-1c8202524d63,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-35aba858-8df1-413a-aa2e-cfdae2a19dcd,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-3bb7a6ce-be77-42b3-a7c9-e1221e0dfa8d,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-3c51e4ff-4f3c-4306-b962-4476efe9ff1e,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-411126ad-2e9c-4725-a35f-10052dce382e,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-655bc404-2db6-4d20-99f4-13d5f57ca8cb,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-66dfcf78-04b8-40ff-84f3-8e87d6db0857,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-6a985a60-e930-4fe6-8987-eadceec50810,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-6cfd39bf-4132-41e7-9f51-3e8eca0b2d7f,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-74903c0a-9b4c-4194-9808-b59a70e60af2,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-77e03902-bd00-43fa-9d54-aa42b4152192,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-7826245c-f16e-4769-a06f-8df52cce0d5b,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-78500966-0f0e-4183-ac40-3c750f6ca446,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-7d4b4782-be0a-4e38-9215-990c928f6d74,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-83390495-2ae4-4bf8-a9e9-24b6e6fbb9cb,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-846eb822-3037-4b6f-85a5-fca258ac6b75,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-85711c81-ecaf-4b76-b288-b2b5f4b6f5c7,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-8bfccae7-814e-4173-8d05-1c1f729faba6,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-919079f2-a517-443e-8c92-f2fa4abda84e,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-92b8ed33-7ce2-4db1-be0f-7f23e1c1a251,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-93d88403-fb70-43a0-99aa-33ffe6deb244,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-969e7b0a-640f-48fb-a7f6-529b1d2bc895,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-9eb9de4f-ae93-4dc3-b100-553beffad0c1,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-a04f7d96-0e1d-49f2-8443-5cb15eeb9bf9,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-a2bc8c69-0c67-4453-a218-798e1d35c586,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-a7054e99-f9f1-40c2-86f8-27e55ee61d97,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-a8734961-39e9-42dc-87f3-5939365f535d,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-b02645b5-56ad-4913-9906-f89daa185ed1,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-b15f8801-1fc4-432e-8dbe-21d56d62d803,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-b25652af-2328-4895-b9ea-ca3d59df59bd,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-b38887b8-c6e0-40be-bb94-60a0e1f32aa8,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-b556590a-0e0d-4d6f-8b9e-f148e18ca930,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-b7aa3e79-d114-40e1-8e80-6dd96166abef,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-c386bb4b-e1e2-4302-8bdd-add4bcca014a,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-c4d85e3c-e59b-4d42-84d8-30537b7238ed,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-d5cbbba9-4ef5-4a60-a47e-378ce936ed0b,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-d8ce654a-8e92-4af3-a2da-a1be5577974c,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-dc16ab6c-f0d2-438b-bd29-716a893d5d5b,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-dcd40c72-4822-4042-9deb-29863a447808,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-deececdb-cfb2-489f-ad41-86e7acbbb0f0,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-df011237-28c3-4dfa-93fd-8a36e6cc7403,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-e29059e6-0ceb-403f-829c-0bdab2f7914e,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-e49f1cfe-9cf3-4091-8c51-01c2913290b3,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-e8a917af-25d9-4fdc-833b-863b009353f4,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-e9fe6ac2-e7a9-4914-b369-3a40b465fd6e,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-ec5deba1-8fef-4922-9399-5e1db20be549,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-ee72507f-87a4-4775-bc01-7810f82a5478,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-fb122898-5bb1-4256-84fc-d37c251ce04c,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-ff48328f-8571-4b91-bb73-1b5015c8c413,3,Private-institution students without work exposure,500,100.0,0,0,3,100.0,0,0,500,0
+nysc-0566257f-e441-4134-9a0f-ebedde047f88,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-077f0842-d2be-43df-8791-8ac0def15608,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-0b01ea3c-bf16-40ab-bfd1-9449f38b1104,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-0cba8a68-ebf6-47cb-bd45-e2a1d78ad74b,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-0d099a8b-7f90-43c3-8b8d-6eb1c4c23e88,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-0fe7c8ab-dcf1-4528-9aca-829fdcee308d,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-1786255247606,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-1b3c704d-ae24-4df1-a2d3-f2d1708a195a,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-1cb44ad9-76e2-4cc5-b885-6820b2db4305,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-1e50af08-2b49-4712-8895-ab5ffd30df2e,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-1edeca6e-aa9d-4902-9e48-e29a0ab2b0c7,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-1fb6387a-fd09-429f-b3bb-b9cad7f1c8b0,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-1feacefc-c2f4-4f15-9b32-1b3a2e4f9294,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-25ced9b5-db08-41f0-ac03-e278dac4692d,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-2cdc6e3e-5f62-4bcc-9bec-d42c7442b342,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-2fc9d5a2-55c9-47d7-b262-c3908ad44387,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-36450001-60ad-4304-8803-1d44154fc685,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-39693971-77d0-4bb6-b26f-0b5ffd8b49f8,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-3a22ad4e-3e4f-4b11-b724-57805a8e9176,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-3c91096f-7a45-449f-85bc-773cd2cbfb1b,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-3e11953a-28ea-4a61-be16-e4aca9a8fea5,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-43976cf8-c8e3-4455-ad51-1a94b8827cbe,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-4982439a-20d2-4d82-9433-b70c1f2bd8b8,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-4c7c621c-800b-4d43-a78a-4214f7b3f9e3,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-4e050368-767c-4189-b7b0-9076a11301be,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-515dbda4-d209-46f1-b1cd-a9f996f9cebd,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-58a537a5-6c14-4165-a03c-7c5a608d4af2,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-674abcc8-fa1f-4a6b-bfac-c236a682fcb8,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-674f3124-d069-4a9f-adf6-3b3b9e589bd2,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-6f33c832-06fe-4c10-9878-4c485ee17f00,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-78bb1df4-a7b5-4eda-8f9f-48b34cd093d5,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-82b26d6d-bd58-4825-83eb-a74b1609a8f5,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-83e14d0a-14e2-42d9-9dd4-eb9c0538bfbc,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-8ae4a1d8-97c7-4bc4-9dc9-cb7eea0c897f,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-8b245a61-ea87-4d47-9ecf-3a1c7d567d14,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-8b5fce61-d757-46ba-8e13-6bf40584aef3,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-8c1d9068-f4de-4676-bfba-3964485371aa,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-8f9e4a18-f8d5-472a-bf2d-490f08b462bb,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-8faa61d1-cfb6-4b82-80d6-deb283fa56f5,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-910f1480-b2bc-4139-b04e-c2d2b7b8fb2f,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-91656981-a2c2-46db-84a2-89ff78907497,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-92bb46d3-d37e-4d18-b6ca-4374cbd8da80,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-99b2852a-62c3-43a0-bd25-8afd6a8aa63d,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-9bfcac34-380f-4595-880d-968f64c34a6d,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-9cbbd83e-994f-4af9-88a3-0a6f0082853b,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-a410b358-9b5c-4564-a2c6-e41d03001dd8,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-a8576020-97d5-46a1-922b-0e7735de36d5,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-bb2a69cc-6a7f-49ed-8186-d9f94b07c600,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-bcdfff18-bd81-42f1-b214-d059cef323ec,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-be480dc1-a2d3-4ad5-9cda-e022cfdb6666,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-c5fa0b58-f71d-4d26-b3b0-e6e001812a89,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-c8603d12-b6e9-434b-b007-a86c8c49b8ec,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-ceab10f5-2d89-4ce9-bc84-c1c0f30a7fb6,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-d5d5296a-0d78-4d06-a82e-69e16821c8c8,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-e3550453-f36d-4d57-9322-fc200d33d3bc,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-eb4fa0e5-a458-4b04-9ad2-fe1b74573db6,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-ef51c15f-8e75-4579-a21c-8b766467fbe6,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-f082f4a0-4c25-4f16-a1a5-237b5a9a9afc,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-f4838d8a-d485-42c0-8eff-dcf7a07715a1,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-f73ce24e-0e7e-4640-a105-f70e73989176,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-f874794a-b1bf-4c82-ad69-493bbd6c1129,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-fc475b43-928f-4e88-a74e-5815c795c629,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-fd8f808f-7496-4cf3-afaf-1c7c28b97d44,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500
+nysc-fed70a80-bbb3-4218-b9be-82fbc1db449a,4,"Work-experienced students, mainly in private institutions",500,100.0,0,0,4,100.0,0,0,0,500

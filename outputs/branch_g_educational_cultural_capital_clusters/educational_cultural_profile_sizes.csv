@@ -1,0 +1,3 @@
+education_profile_id,education_profile_label,records,low_gower_confidence_records,mean_gower_silhouette,mean_consensus_silhouette,percent
+1,Diagnostic: did not work while studying,38,0,0.4681595823861266,1.0,67.85714285714286
+2,Diagnostic: worked while studying,18,0,0.48775735225634353,0.9349029029178426,32.142857142857146

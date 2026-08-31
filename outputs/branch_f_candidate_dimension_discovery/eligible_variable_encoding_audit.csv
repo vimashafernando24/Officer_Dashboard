@@ -1,0 +1,35 @@
+variable,theory_pool,type,transformation,observed,missing_or_unknown,unique_encoded,dominant_response_percent
+father_edu,D2 — Educational and inherited cultural capital,ordinal,"questionnaire-order range [0,1]",78,3,7,30.864197530864196
+mother_edu,D2 — Educational and inherited cultural capital,ordinal,"questionnaire-order range [0,1]",79,2,6,35.80246913580247
+household_size,D1 — Household economic resources and responsibility,continuous,none,81,0,8,34.5679012345679
+household_income,D1 — Household economic resources and responsibility,ordinal,"questionnaire-order range [0,1]",66,15,4,53.086419753086425
+household_workers,D1 — Household economic resources and responsibility,continuous,none,81,0,5,44.44444444444444
+household_unemployed,D1 — Household economic resources and responsibility,continuous,none,81,0,4,50.617283950617285
+primary_earner_status,D1 — Household economic resources and responsibility,nominal,none,81,0,3,70.37037037037037
+employment_network_quality,D7 — Professional social capital,ordinal,"questionnaire-order range [0,1]",81,0,4,43.20987654320987
+edu_status,D2 — Educational and inherited cultural capital,nominal,none,81,0,6,55.55555555555556
+worked_while_studying,D2 — Educational and inherited cultural capital,nominal,none,81,0,2,77.77777777777779
+primary_income_source,D1 — Household economic resources and responsibility,nominal,none,81,0,5,69.1358024691358
+qualification_job_match,D6 — Qualification use and skill development,ordinal,"questionnaire-order range [0,1]",81,0,5,67.90123456790124
+work_autonomy,D8 — Work motivation and psychological need experience,ordinal,"questionnaire-order range [0,1]",81,0,4,51.85185185185185
+sector_formality,D3 — Employment security and formality,ordinal,"questionnaire-order range [0,1]",81,0,4,62.96296296296296
+competence_growth_at_work,D8 — Work motivation and psychological need experience,ordinal,"questionnaire-order range [0,1]",81,0,4,72.8395061728395
+professional_network_growth,D7 — Professional social capital,ordinal,"questionnaire-order range [0,1]",81,0,4,69.1358024691358
+relatedness_at_work,D8 — Work motivation and psychological need experience,ordinal,"questionnaire-order range [0,1]",81,0,4,71.60493827160494
+work_motivation_type,D8 — Work motivation and psychological need experience,ordinal,"questionnaire-order range [0,1]",81,0,5,40.74074074074074
+contract_type,D3 — Employment security and formality,nominal,none,81,0,8,49.382716049382715
+contract_satisfaction,D5 — Subjective job satisfaction and mobility intention,nominal,none,81,0,8,34.5679012345679
+usual_hours_per_week,D4 — Earnings and working-time adequacy,continuous,none,81,0,26,32.098765432098766
+income_hours_preference,D4 — Earnings and working-time adequacy,nominal,none,81,0,3,58.0246913580247
+monthly_income_band,D4 — Earnings and working-time adequacy,ordinal,"questionnaire-order range [0,1]",81,0,6,24.691358024691358
+job_satisfaction,D5 — Subjective job satisfaction and mobility intention,ordinal,"questionnaire-order range [0,1]",81,0,4,55.55555555555556
+hopes_to_change_job,D5 — Subjective job satisfaction and mobility intention,nominal,none,81,0,3,56.79012345679012
+job_security_12months,D3 — Employment security and formality,ordinal,"questionnaire-order range [0,1]",71,10,3,45.67901234567901
+received_training,D6 — Qualification use and skill development,nominal,none,81,0,2,80.24691358024691
+registered_as_jobseeker,D9 — Transition-to-work search pathway and barriers,nominal,none,81,0,2,75.30864197530865
+employment_service_help_f,D9 — Transition-to-work search pathway and barriers,nominal,none,81,0,4,79.01234567901234
+jobs_applied_before_hire,D9 — Transition-to-work search pathway and barriers,continuous,log1p,81,0,19,16.049382716049383
+interviews_before_hire,D9 — Transition-to-work search pathway and barriers,continuous,log1p,81,0,10,27.160493827160494
+search_duration_before_hire,D9 — Transition-to-work search pathway and barriers,ordinal,"questionnaire-order range [0,1]",81,0,6,28.39506172839506
+obstacle_finding_this_job,D9 — Transition-to-work search pathway and barriers,nominal,none,81,0,10,34.5679012345679
+past_edu_useful_for_job,D6 — Qualification use and skill development,ordinal,"questionnaire-order range [0,1]",78,3,3,65.4320987654321

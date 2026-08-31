@@ -24,6 +24,7 @@ const INITIAL_STATE: IntakeState = {
 
 function App() {
   const [state, setState] = useState<IntakeState>(INITIAL_STATE);
+  const [highestReachedStep, setHighestReachedStep] = useState(0);
   const [config, setConfig] = useState<QuestionConfig | null>(null);
   const [configLoading, setConfigLoading] = useState(false);
   const [result, setResult] = useState<RecommendResponse | null>(null);
@@ -38,15 +39,21 @@ function App() {
   }
 
   async function selectBranch(branch: string) {
+    if (branch === state.branch && config) {
+      goTo(1);
+      return;
+    }
     const requestId = ++branchRequestId.current;
     invalidateBriefing();
     setConfig(null);
+    setHighestReachedStep(0);
     setState({ ...INITIAL_STATE, branch });
     setConfigLoading(true);
     try {
       const cfg = await fetchQuestionConfig(branch);
       if (requestId !== branchRequestId.current) return;
       setConfig(cfg);
+      setHighestReachedStep(1);
       setState((s) => (s.branch === branch ? { ...s, step: 1 } : s));
     } finally {
       if (requestId === branchRequestId.current) setConfigLoading(false);
@@ -90,6 +97,12 @@ function App() {
   }
 
   function goTo(step: number) {
+    setHighestReachedStep((highest) => Math.max(highest, step));
+    setState((s) => ({ ...s, step }));
+  }
+
+  function reviewSection(step: number) {
+    if (step > highestReachedStep || step === state.step) return;
     setState((s) => ({ ...s, step }));
   }
 
@@ -151,7 +164,11 @@ function App() {
         </div>
         <img className="header-mascot" src={officerMascot} alt="" aria-hidden="true" />
       </header>
-      <StepProgress step={state.step} />
+      <StepProgress
+        step={state.step}
+        highestReachedStep={highestReachedStep}
+        onNavigate={reviewSection}
+      />
       <main className="app-main">
         {state.step === 0 && <Step0Branch value={state.branch} onSelect={selectBranch} />}
 

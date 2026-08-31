@@ -1,0 +1,9 @@
+pathway_profile_id,variable,response,records,within_profile_percent
+1,ever_worked,Yes — I have worked before,29,82.85714285714286
+1,reason_not_in_labour_force,Currently in education or training,11,31.428571428571427
+1,wants_further_edu,Yes,30,85.71428571428571
+1,wants_to_work_future,Yes — I want to work at some point,34,97.14285714285714
+2,ever_worked,No — I have never worked,16,76.19047619047619
+2,reason_not_in_labour_force,Other reason,4,19.047619047619047
+2,wants_further_edu,Not sure yet,13,61.904761904761905
+2,wants_to_work_future,No — I do not want to work,15,71.42857142857143

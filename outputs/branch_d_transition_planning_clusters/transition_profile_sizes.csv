@@ -1,0 +1,3 @@
+transition_profile_id,transition_profile_label,records,low_gower_confidence_records,mean_gower_silhouette,mean_consensus_silhouette,percent
+1,Transition profile 1,120,33,0.18934186046142337,0.6415919798295452,62.82722513089005
+2,Transition profile 2,71,0,0.33796586313314786,0.6827958581567205,37.17277486910995

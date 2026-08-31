@@ -1,0 +1,9 @@
+education_profile_id,variable,response,records,within_profile_percent
+1,edu_status,Currently in higher education (degree or diploma),16,42.10526315789474
+1,father_edu,O/L level (Grade 9–11),12,31.57894736842105
+1,mother_edu,O/L level (Grade 9–11),13,34.21052631578947
+1,worked_while_studying,No,38,100.0
+2,edu_status,Currently in higher education (degree or diploma),10,55.55555555555556
+2,father_edu,O/L level (Grade 9–11),7,38.888888888888886
+2,mother_edu,A/L level (Grade 12–13),5,27.77777777777778
+2,worked_while_studying,Yes,18,100.0

@@ -1,0 +1,7 @@
+variable,role,observed,missing,unique_observed_responses,dominant_response,dominant_response_percent
+job_satisfaction,cluster_input,81,0,4,Somewhat satisfied,55.55555555555556
+contract_satisfaction,cluster_input,81,0,8,Satisfied — it gives me the flexibility I need,34.5679012345679
+hopes_to_change_job,cluster_input,81,0,3,Yes — I want to change,56.79012345679012
+reason_wants_to_change,profile_descriptor,46,35,7,nan,43.20987654320987
+job_security_12months,profile_descriptor,81,0,4,Very likely — my job is secure,45.67901234567901
+insecurity_bothers,profile_descriptor,34,47,2,nan,58.0246913580247

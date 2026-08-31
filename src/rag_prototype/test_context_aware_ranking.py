@@ -5,9 +5,11 @@ import officer_recommendation_service as service
 from new_person_recommendation_schema import (
     CourseFactCitation,
     NewPersonRecommendationResponse,
+    ProfileFindingCitation,
     SuggestedProgramme,
     UserFactCitation,
 )
+from new_person_profile_context import build_profile_context
 from profile_explorer_app import decode_new_person_intake, load_survey_question_map
 
 
@@ -36,6 +38,17 @@ BODY = {
 
 
 branch, cluster_answers, sectors, officer_context = decode_new_person_intake(BODY)
+profile_entries = build_profile_context(branch, cluster_answers, officer_context)
+retained_finding = profile_entries[0].retained_evidence[0]
+cluster_finding_summary = (
+    "People in the matched profile tended to have varied conditions for accepting work. "
+    "This supports reviewing a practical programme with a clear route towards employment."
+)
+questions_to_discuss = [
+    "Would a full-time weekday course fit your current responsibilities?",
+    "Would Sinhala instruction help you participate confidently in the practical training?",
+    "What conditions would make this route into employment workable for you?",
+]
 
 parsed = NewPersonRecommendationResponse(
     recommendation_status="RECOMMENDATIONS_AVAILABLE",
@@ -64,7 +77,13 @@ parsed = NewPersonRecommendationResponse(
                     source_reference="COURSE-044",
                 ),
             ],
-            profile_findings_used=[],
+            profile_findings_used=[ProfileFindingCitation(
+                profile_key=profile_entries[0].profile_key,
+                variable=retained_finding["variable"],
+                finding=retained_finding["finding"],
+            )],
+            cluster_finding_summary=cluster_finding_summary,
+            questions_to_discuss=questions_to_discuss,
         ),
     ],
 )
@@ -97,16 +116,31 @@ finally:
 
 assert status == 200, response
 assert response["candidate_programme_count"] == 40
-assert response["suggested_programmes"] == [{
-    "rank": 1,
-    "course_id": "COURSE-044",
-    "course_name": "Machinist",
-    "why_it_may_suit_this_user": parsed.suggested_programmes[0].why_it_may_suit_this_user,
-}]
+programmes_by_id = {
+    programme["course_id"]: programme for programme in response["suggested_programmes"]
+}
+assert {"COURSE-044", "COURSE-056", "COURSE-064"} <= set(programmes_by_id)
+assert programmes_by_id["COURSE-044"]["why_it_may_suit_this_user"] == (
+    parsed.suggested_programmes[0].why_it_may_suit_this_user
+)
+assert programmes_by_id["COURSE-044"]["cluster_finding_summary"] == cluster_finding_summary
+assert programmes_by_id["COURSE-044"]["questions_to_discuss"] == questions_to_discuss
+assert all(
+    question.endswith("?")
+    for question in programmes_by_id["COURSE-044"]["questions_to_discuss"]
+)
+assert "important_mismatches" in programmes_by_id["COURSE-044"]
 assert "questions_to_discuss" not in response
-assert not response["evidence_safeguard_violations"]
+assert any(
+    "COURSE-056" in violation and "restored from governed catalogue facts" in violation
+    for violation in response["evidence_safeguard_violations"]
+)
+assert any(
+    "COURSE-064" in violation and "restored from governed catalogue facts" in violation
+    for violation in response["evidence_safeguard_violations"]
+)
 
 print(
     "CONTEXT-AWARE RANKING CHECK PASSED — complete 40-course sector slice, "
-    "LLM-only final order, explanation-only officer output"
+    "mandatory exact-skill coverage, separate governed cluster-finding summary"
 )

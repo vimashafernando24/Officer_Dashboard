@@ -1,0 +1,7 @@
+feature,source_variable,type,observed,missing,maximum_distance_weight
+father_education,father_edu,ordinal,186,5,0.16666666666666666
+mother_education,mother_edu,ordinal,183,8,0.16666666666666666
+expected_education,expected_highest_edu_d,ordinal,191,0,0.16666666666666666
+institution_type,institution_type,nominal,191,0,0.16666666666666666
+worked_while_studying,worked_while_studying,binary,188,3,0.16666666666666666
+re_entered_education,re_entered_education,binary,191,0,0.16666666666666666

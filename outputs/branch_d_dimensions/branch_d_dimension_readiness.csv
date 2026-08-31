@@ -1,0 +1,6 @@
+dimension,coverage_pct,standard_deviation,unique_scores,coverage_pass_90pct,variation_pass_std5,ready_for_integrated_clustering
+economic_resources,100.0,12.772689496006373,56,True,True,True
+human_capital_trajectory,100.0,19.24276606602863,18,True,True,True
+career_transition_readiness,100.0,18.931974932414054,8,True,True,True
+social_capital_belonging,100.0,20.693901309612443,9,True,True,True
+agency_study_engagement,100.0,20.291435214383192,28,True,True,True

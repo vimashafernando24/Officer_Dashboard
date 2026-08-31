@@ -1,0 +1,373 @@
+{
+  "schema_version": "branch_d_profile_dossier_v2",
+  "profile": {
+    "profile_key": "D_educational_cultural_p1",
+    "branch": "D",
+    "model_id": "D_educational_cultural",
+    "dimension": "Educational trajectory and cultural capital",
+    "profile_id": 1,
+    "analysis_label": "Re-entered students, often with degree-educated parents",
+    "cluster_code": "Cluster EDU-1",
+    "cluster_name": "Education re-entry with graduate family background",
+    "historical_profile_size": 15
+  },
+  "cluster_definition": {
+    "raw_cluster_forming_variables": [
+      "father_edu",
+      "mother_edu",
+      "expected_highest_edu_d",
+      "institution_type",
+      "worked_while_studying",
+      "re_entered_education"
+    ],
+    "derived_distance_features": [
+      "father_education",
+      "mother_education",
+      "expected_education",
+      "institution_type",
+      "worked_while_studying",
+      "re_entered_education"
+    ],
+    "medoid_pattern": [
+      {
+        "variable": "father_edu",
+        "question_id": "A12",
+        "question": "What is the highest level of education your father completed?",
+        "medoid_answer": "Bachelor's degree"
+      },
+      {
+        "variable": "mother_edu",
+        "question_id": "A13",
+        "question": "What is the highest level of education your mother completed?",
+        "medoid_answer": "Bachelor's degree"
+      },
+      {
+        "variable": "expected_highest_edu_d",
+        "question_id": "C6",
+        "question": "What is the highest level of education or training you expect to complete in total?",
+        "medoid_answer": "Bachelor's degree"
+      },
+      {
+        "variable": "institution_type",
+        "question_id": "BC1",
+        "question": "What type of institution are you currently attending?",
+        "medoid_answer": "Private school or private degree-awarding institute"
+      },
+      {
+        "variable": "worked_while_studying",
+        "question_id": "B9",
+        "question": "Did you work (or do you currently work) while studying?",
+        "medoid_answer": null
+      },
+      {
+        "variable": "re_entered_education",
+        "question_id": "C4",
+        "question": "Have you ever stopped your education to work or look for work, then re-entered education later?",
+        "medoid_answer": "Yes"
+      }
+    ],
+    "saved_officer_description": "This cluster is centred on learners who returned to education after stopping to work or seek work. The educational pattern includes graduate parents, private-institution study and an expected bachelor’s degree.",
+    "final_definition_text": "Facts that define the cluster itself. These variables and diagnostics produced the\ncluster; they are NOT re-tested as post-cluster findings (doing so would be circular).\n\nBranch: D — strict final-path analytical cohort n=191 (of 362 total strict-cohort respondents: D=191, E=34, F=81, G=56).\nRetained dimension: Educational trajectory and cultural capital\nNumber of profiles in this retained model (k): 4\nThis profile's id and label: Profile 1 — \"Re-entered students, often with degree-educated parents\"\nThis profile's exact frozen size: n=15 (cross-verified against the Part III freeze-verification table in the source report)\n\nExact cluster-forming variables (the only inputs used to build this clustering; all\nother survey variables were deliberately excluded from distance calculation and are\nonly used descriptively in sections 2-3 below):\n  - expected_highest_edu_d\n  - father_edu\n  - institution_type\n  - mother_edu\n  - re_entered_education\n  - worked_while_studying\n\nTheoretical basis and purpose: Inherited educational background (Bourdieu cultural capital, proxied by parental education) plus current educational trajectory (institution type, work-while-studying, education re-entry).\n\nClustering method: Gower distance over original mixed-type responses (no invented 0-100\nscores), consensus of repeated K-medoids and spectral clustering across 100 matched\n80% subsamples (200 base partitions), final clusters from K-medoids on (1 - co-association).\n\nValidation diagnostics for this retained model: Gower silhouette 0.427; bootstrap/subsample ARI 0.963; source-method ARIs 0.776 and 0.934; 8 of 8 mandatory validation checks passed.\nFinal decision status: Retained.\nModel-level caution (from the frozen decision register): Parental education is a proxy only; work-experience and re-entry follow-ups are structurally linked to variables defining these profiles.\n\nAdditional definitional context: Parental education is only a proxy for family cultural capital; it is not a measure of intelligence or merit. Sensitivity analysis showed that work-while-studying experience and institution type are important drivers of the partition and must remain explicit in interpretation, not collapsed into a single 'cultural capital' score.\n\nInterpretation of this specific profile (verbatim from the frozen report's per-model\nprofile table):\n  Re-entry into education was prominent, often alongside higher parental education.\n\nReminder: this profile exists only WITHIN this one retained dimension. A respondent's\nmembership here says nothing about their membership in any other branch's or dimension's\nprofile system (see PROHIBITED_INFERENCES).\n\n----------------------------------------------------------------------------------------------------"
+  },
+  "approved_post_cluster_findings": [
+    {
+      "evidence_id": "D_educational_cultural_p1:already_job_searching",
+      "variable": "already_job_searching",
+      "label": "Already searching for work/business",
+      "finding": "Already searching for work/business: more often reported ‘Yes — I am already searching’ (12/15, 80.0% vs 56.2% in other profile(s))",
+      "interpretation_guard": "The most common answer within this profile was Yes — I am already searching (80.0%). Keep any wording proportional and distinguish this within-profile pattern from the retained between-profile comparison.",
+      "is_programme_relevant_subset": true,
+      "statistical_support": {
+        "label": "Already searching for work/business",
+        "variable": "already_job_searching",
+        "coverage_pct": 100.0,
+        "effect_size_name": "bias-corrected Cramér's V",
+        "effect_size": 0.263,
+        "raw_p": "0.001046",
+        "bh_adjusted_p": "0.004112",
+        "significant_note": "significant at FDR<0.05",
+        "programme_relevance": "high"
+      },
+      "survey_question": {
+        "question_id": "C2",
+        "section": "C",
+        "framework": "SWTS",
+        "question_text": "Have you already started looking for a job or trying to set up a business?"
+      },
+      "profile_distribution": {
+        "eligible_n": 15,
+        "distribution": [
+          {
+            "value": "No — not yet",
+            "count": 3,
+            "percent": 20.0
+          },
+          {
+            "value": "Yes — I am already searching",
+            "count": 12,
+            "percent": 80.0
+          }
+        ]
+      },
+      "provenance": {
+        "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_educational_cultural, profile_id=1, column=strongest_non_clustering_characteristics",
+        "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+        "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_educational_cultural, variable=already_job_searching"
+      }
+    },
+    {
+      "evidence_id": "D_educational_cultural_p1:primary_income_source",
+      "variable": "primary_income_source",
+      "label": "Primary personal income source",
+      "finding": "Primary personal income source: less often reported ‘My parents or family’ (3/15, 20.0% vs 83.0% in other profile(s)) [sparse table; cross-dimensional/related variable]",
+      "interpretation_guard": "The most common answer within this profile was My regular job or business (53.3%). The retained statement highlights My parents or family only because it differed between profiles. Do not call the highlighted category primary, dominant, top, or most common.",
+      "is_programme_relevant_subset": true,
+      "statistical_support": {
+        "label": "Primary personal income source",
+        "variable": "primary_income_source",
+        "coverage_pct": 100.0,
+        "effect_size_name": "bias-corrected Cramér's V",
+        "effect_size": 0.365,
+        "raw_p": "3.894e-12",
+        "bh_adjusted_p": "1.285e-10",
+        "significant_note": "significant at FDR<0.05",
+        "programme_relevance": "high"
+      },
+      "survey_question": {
+        "question_id": "B19",
+        "section": "B",
+        "framework": "SWTS",
+        "question_text": "Currently, where does most of your money come from?"
+      },
+      "profile_distribution": {
+        "eligible_n": 15,
+        "distribution": [
+          {
+            "value": "My regular job or business",
+            "count": 8,
+            "percent": 53.3
+          },
+          {
+            "value": "Unemployment or social security benefits",
+            "count": 0,
+            "percent": 0.0
+          },
+          {
+            "value": "An education grant, scholarship, or training allowance",
+            "count": 3,
+            "percent": 20.0
+          },
+          {
+            "value": "My parents or family",
+            "count": 3,
+            "percent": 20.0
+          },
+          {
+            "value": "My partner or spouse",
+            "count": 0,
+            "percent": 0.0
+          },
+          {
+            "value": "Casual or informal work",
+            "count": 0,
+            "percent": 0.0
+          },
+          {
+            "value": "Other source",
+            "count": 1,
+            "percent": 6.7
+          }
+        ]
+      },
+      "provenance": {
+        "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_educational_cultural, profile_id=1, column=strongest_non_clustering_characteristics",
+        "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+        "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_educational_cultural, variable=primary_income_source"
+      }
+    },
+    {
+      "evidence_id": "D_educational_cultural_p1:edu_funding_source",
+      "variable": "edu_funding_source",
+      "label": "Main education funding source",
+      "finding": "Main education funding source: less often reported ‘Paid for by my family’ (7/15, 46.7% vs 75.0% in other profile(s)) [sparse table; cross-dimensional/related variable]",
+      "interpretation_guard": "The most common answer within this profile was Paid for by my family (46.7%). Keep any wording proportional and distinguish this within-profile pattern from the retained between-profile comparison.",
+      "is_programme_relevant_subset": true,
+      "statistical_support": {
+        "label": "Main education funding source",
+        "variable": "edu_funding_source",
+        "coverage_pct": 100.0,
+        "effect_size_name": "bias-corrected Cramér's V",
+        "effect_size": 0.322,
+        "raw_p": "1.109e-09",
+        "bh_adjusted_p": "1.831e-08",
+        "significant_note": "significant at FDR<0.05",
+        "programme_relevance": "high"
+      },
+      "survey_question": {
+        "question_id": "BC2",
+        "section": "C",
+        "framework": "Bourdieu",
+        "question_text": "How is your current education mainly funded?"
+      },
+      "profile_distribution": {
+        "eligible_n": 15,
+        "distribution": [
+          {
+            "value": "Government-funded or free of charge",
+            "count": 2,
+            "percent": 13.3
+          },
+          {
+            "value": "Scholarship or grant",
+            "count": 3,
+            "percent": 20.0
+          },
+          {
+            "value": "Paid for by my family",
+            "count": 7,
+            "percent": 46.7
+          },
+          {
+            "value": "I pay from my own earnings",
+            "count": 3,
+            "percent": 20.0
+          },
+          {
+            "value": "Employer-sponsored",
+            "count": 0,
+            "percent": 0.0
+          },
+          {
+            "value": "Other arrangement",
+            "count": 0,
+            "percent": 0.0
+          }
+        ]
+      },
+      "provenance": {
+        "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_educational_cultural, profile_id=1, column=strongest_non_clustering_characteristics",
+        "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+        "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_educational_cultural, variable=edu_funding_source"
+      }
+    },
+    {
+      "evidence_id": "D_educational_cultural_p1:household_income",
+      "variable": "household_income",
+      "label": "Household income band",
+      "finding": "Household income band: less often reported ‘LKR 60,000 – 120,000’ (1/13, 7.7% vs 24.8% in other profile(s)) [cross-dimensional/related variable]",
+      "interpretation_guard": "Treat this only as the retained between-profile comparison stated above; do not turn it into a claim that one response was the profile's most common answer.",
+      "is_programme_relevant_subset": true,
+      "statistical_support": {
+        "label": "Household income band",
+        "variable": "household_income",
+        "coverage_pct": 84.8,
+        "effect_size_name": "epsilon-squared",
+        "effect_size": 0.179,
+        "raw_p": "7.53e-07",
+        "bh_adjusted_p": "8.283e-06",
+        "significant_note": "significant at FDR<0.05",
+        "programme_relevance": "high"
+      },
+      "survey_question": {
+        "question_id": "A17",
+        "section": "A",
+        "framework": "SWTS",
+        "question_text": "What is the approximate total monthly income of your household from all sources?"
+      },
+      "profile_distribution": {
+        "eligible_n": 13,
+        "distribution": [
+          {
+            "value": "Below LKR 30,000",
+            "count": 1,
+            "percent": 7.7
+          },
+          {
+            "value": "LKR 30,000 – 60,000",
+            "count": 1,
+            "percent": 7.7
+          },
+          {
+            "value": "LKR 60,000 – 120,000",
+            "count": 1,
+            "percent": 7.7
+          },
+          {
+            "value": "LKR 120,000 – 200,000",
+            "count": 4,
+            "percent": 30.8
+          },
+          {
+            "value": "Above LKR 200,000",
+            "count": 6,
+            "percent": 46.2
+          }
+        ]
+      },
+      "provenance": {
+        "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_educational_cultural, profile_id=1, column=strongest_non_clustering_characteristics",
+        "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+        "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_educational_cultural, variable=household_income"
+      }
+    },
+    {
+      "evidence_id": "D_educational_cultural_p1:primary_earner_status",
+      "variable": "primary_earner_status",
+      "label": "Primary-earner status",
+      "finding": "Primary-earner status: less often reported ‘No — someone else is the main provider’ (9/15, 60.0% vs 91.5% in other profile(s)) [sparse table; cross-dimensional/related variable]",
+      "interpretation_guard": "The most common answer within this profile was No — someone else is the main provider (60.0%). Keep any wording proportional and distinguish this within-profile pattern from the retained between-profile comparison.",
+      "is_programme_relevant_subset": false,
+      "statistical_support": {
+        "label": "Primary-earner status",
+        "variable": "primary_earner_status",
+        "coverage_pct": 100.0,
+        "effect_size_name": "bias-corrected Cramér's V",
+        "effect_size": 0.265,
+        "raw_p": "1.27e-05",
+        "bh_adjusted_p": "0.0001048",
+        "significant_note": "significant at FDR<0.05",
+        "programme_relevance": "high"
+      },
+      "survey_question": {
+        "question_id": "A20",
+        "section": "A",
+        "framework": "Bourdieu",
+        "question_text": "Are you the primary income earner in your household?"
+      },
+      "profile_distribution": {
+        "eligible_n": 15,
+        "distribution": [
+          {
+            "value": "No — someone else is the main provider",
+            "count": 9,
+            "percent": 60.0
+          },
+          {
+            "value": "Shared — several people contribute roughly equally",
+            "count": 1,
+            "percent": 6.7
+          },
+          {
+            "value": "Yes — I provide the main household income",
+            "count": 5,
+            "percent": 33.3
+          }
+        ]
+      },
+      "provenance": {
+        "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_educational_cultural, profile_id=1, column=strongest_non_clustering_characteristics",
+        "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+        "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_educational_cultural, variable=primary_earner_status"
+      }
+    }
+  ],
+  "cautions": "Model-level caution: Parental education is a proxy only; work-experience and re-entry follow-ups are structurally linked to variables defining these profiles.\nAdditional model context: Parental education is only a proxy for family cultural capital; it is not a measure of intelligence or merit. Sensitivity analysis showed that work-while-studying experience and institution type are important drivers of the partition and must remain explicit in interpretation, not collapsed into a single 'cultural capital' score.\nFDR-correction context: Among the findings that passed the effect-size/coverage reporting screen for this model, 7 of 7 remained significant after FDR correction.\n\nProfile-specific caution (verbatim from the frozen evidence summary): Parental education is a proxy only; work-experience and re-entry follow-ups are structurally linked to variables defining these profiles. Small profile (n=15). Some categorical comparisons contain sparse cells.\n\nSmall-profile caution: this profile's size (n=15) is small; percentages within it are more sensitive to individual respondents and less stable than in larger profiles.\n\nConditional-denominator caution: 5 of 33 variables tested against this model are conditional (asked only of an eligible subgroup via survey routing, e.g. only active jobseekers, only those who worked while studying). Their percentages use the eligible-subgroup denominator shown in section 3, not the full profile size. A blank caused by survey routing was never treated as a 'No' answer during profiling.\n\nCross-dimensional caution: the following variables tested against this model also form part of another retained clustering model; their relationship to this profile is descriptive only and is NOT independent statistical validation of this model:\n  - Primary personal income source: Forms the separate D economic model.\n  - Main education funding source: Forms the separate D economic model.\n  - Household income band: Forms the separate D economic model.\n  - Primary-earner status: Forms the separate D economic model.\n  - District: Many district categories can create sparse tables.\n  - Household unemployed jobseekers: Forms the separate D economic model.\n  - Household workers: Forms the separate D economic model.\n  - Perceived competence in study field: Forms the separate D motivation model.\n  - Household size: Forms the separate D economic model.\n  - Study motivation type: Forms the separate D motivation model.\n  - Study autonomy: Forms the separate D motivation model.\n  - Institutional belonging: Forms the separate D motivation model.\n  - Reason for re-entering education: Direct follow-up to a cluster-forming gateway.\n  - Type of work while studying: Direct follow-up to a cluster-forming gateway.\n  - Reason for working while studying: Direct follow-up to a cluster-forming gateway.\n\nSparse-cell caution: 19 of 33 variables tested against this model contain sparse expected-cell counts (categorical tables with rare category combinations); percentages built from sparse tables are listed in section 3 and should be read with extra caution, especially for high-cardinality variables such as district, sector or stated obstacle.\n\nGeneral measurement cautions (apply to every profile in this knowledge base):\n  - A reported percentage is a within-profile percentage in this 362-respondent strict\n    cohort, not a population estimate for all Sri Lankan youth.\n  - Effect sizes rank descriptive differences; they do not prove that cluster membership\n    caused the characteristic.\n  - Consensus clustering stability shows reproducibility under the specified procedure;\n    it does not prove a natural, causal, or permanent youth type.\n  - Profile names are descriptive and must not stigmatise respondents or be used to deny\n    programme access.\n\n----------------------------------------------------------------------------------------------------",
+  "prohibited_inferences": "Statements that must NOT be assumed true for an individual merely because they belong\nto this profile. These are hard constraints for any downstream system (including a RAG\nrecommendation layer) consuming this document.\n\nUniversal (applies to all 17 retained profiles):\n  - Do not assume that a specific individual assigned to this profile personally holds any characteristic reported as a group percentage. A group finding such as 'X% of this profile reported Y' describes the profile as a whole; it is not a fact about any one person in it — a sizeable minority (and in close splits, close to half) of the profile did NOT report Y.\n  - Do not treat profile membership as a diagnosis, permanent trait, or whole-person label. Profiles are exploratory response-pattern groups within ONE retained dimension only. The same respondent can simultaneously belong to different profiles across different retained dimensions (for example a Branch D respondent has independent motivation, economic and educational-trajectory profile memberships) — no single profile describes the whole person.\n  - Do not use profile membership, alone, as an eligibility gate, a reason to deny access to a programme, or a reason to prioritise/deprioritise a youth for any service.\n  - Do not treat effect sizes or association strength as evidence of causation. A reported association (e.g. 'Profile A more often reported X') describes a measured difference in this sample; it does not establish that being in Profile A caused X, or that X caused profile membership.\n  - Do not treat a finding that did not pass this model's effect-size/coverage reporting screen (see DIRECT_GROUP_DISTRIBUTIONS) as an approved or reportable difference. Untagged distributions are raw descriptive data only, not vetted findings.\n  - Do not treat a finding as statistically confirmed population evidence merely because it appears here. Most models in this knowledge base have few or zero findings that remain significant after Benjamini-Hochberg FDR correction (see this profile's CAUTIONS section and fdr_note) — effect sizes are the primary ranking evidence, and p-values (raw or adjusted) are supporting evidence only.\n  - Do not generalise any percentage in this document to Sri Lankan youth generally, to NYSC's wider applicant pool, or to any group outside the 362-respondent strict analytical cohort (D=191, E=34, F=81, G=56) from which these profiles were derived.\n  - Do not infer, invent, or assume any need, barrier, preference or characteristic for this profile that is not explicitly present in the source data below. If a data point is absent, it must be reported as absent/not tested, never filled in by assumption.\n  - Do not use this document, on its own, to select or recommend a specific NYSC course or programme. Course/programme recommendation requires a separate, transparent, expert-reviewed matching stage that combines this profile information with the individual's own stated preferences, eligibility and the structured NYSC course catalogue.\n\nSpecific to the 'Educational trajectory and cultural capital' model:\n  - Do not treat parental education (or this profile's implied 'cultural capital' framing) as a measure of a respondent's intelligence, merit, or worth.\n  - Do not assume this profile's institution-type or work-experience pattern reflects individual choice alone — cost, geography and family circumstance are plausible unmeasured contributors not tested here.\n\nWorked counter-example for this specific profile (do NOT do this):\n  WRONG: \"This youth is in profile 'Re-entered students, often with degree-educated parents', so they must have this characteristic: Already searching for work/business: more often reported ‘Yes — I am already searching’ (12/15, 80.0% vs 56.2% in other profile(s))\"\n  RIGHT: \"This youth is in profile 'Re-entered students, often with degree-educated parents' (n=15). Within this profile, the group-level pattern was: Already searching for work/business: more often reported ‘Yes — I am already searching’ (12/15, 80.0% vs 56.2% in other profile(s)). This is evidence about the group, not a confirmed fact about this individual, who must be asked directly.\"\n\n====================================================================================================\nEND OF DOCUMENT\n====================================================================================================",
+  "sources": [
+    "NYSC_all_branches_clustering_final_report.md",
+    "final_cluster_profiling_report.md",
+    "outputs/final_cluster_programme_relevant_profiles.csv",
+    "outputs/final_cluster_profile_comparison_summary.csv",
+    "outputs/branch_d_educational_cultural_capital_clusters/educational_cultural_final_profile_gower_medoids.csv"
+  ]
+}

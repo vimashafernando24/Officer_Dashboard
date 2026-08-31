@@ -1,0 +1,7 @@
+comparison,ari
+Consensus vs full K-medoids k=3,0.9675880340017039
+Consensus vs full spectral k=3,0.7122085751291078
+Full K-medoids vs full spectral k=3,0.6850077708884789
+Consensus K-medoids vs consensus HAC average,0.953248181043029
+Consensus K-medoids vs consensus HAC complete,0.953248181043029
+Full K-medoids vs previous notebook K-medoids,1.0

@@ -1,0 +1,13 @@
+{
+  "corpus_sha256": "f864505e3c590c73b5af1ae9a7bb0dae31083eadef1f0d329ec59c99f0056f30",
+  "descriptive_count": 47,
+  "fdr_supported_count": 42,
+  "finding_count": 89,
+  "profile_count": 17,
+  "schema_version": "research_wizard_corpus_v1",
+  "source_sha256": {
+    "outputs/final_cluster_profile_comparison_summary.csv": "a47f7b4a8649ddb3611bd7d1f3506a0f246d7ec8562b54b9d20dd70aa8a91bc9",
+    "outputs/final_cluster_programme_relevant_profiles.csv": "4dd1ee377d4fad476d75ff975b4ae4f394b1315d423a359bf797053c6844cd3f",
+    "outputs/nysc_survey_feature_manifest.csv": "be822b2974aafd5b7c64ae7480e6cfff7128bd1844c72a30aab074a74c82e1b9"
+  }
+}

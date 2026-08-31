@@ -1,0 +1,32 @@
+COURSE DOCUMENT ID: COURSE-002
+
+COURSE NAME: PYTHON
+
+DOCUMENT STATUS: SAFE_TO_INDEX_WITH_UNCERTAINTY
+
+CORPUS VERSION: FINAL_RAG_CORPUS_V2
+
+PROMOTED SOURCE DOCUMENT: outputs/rag_course_knowledge/manual_review_resolved_candidates/course-002_python_candidate.txt
+
+SOURCE TYPE: CATALOGUE_CARD_ONLY
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.25.19.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.25.19.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-002
+
+REMAINING UNCERTAINTY MARKERS: 2
+
+CORRECTION NOTE: The clearly readable catalogue-description text "Python මුල සිට ඉගෙන ගන්න" has been recovered. Text inside the promotional image and the following corrupted/truncated catalogue line remain unreadable and are not guessed. The visible card still clearly establishes the course name, Part Time attendance, 20-student capacity and 03 Month duration.
+
+COMPLETE EXTRACTED COURSE TEXT
+
+Part Time
+[UNCLEAR]
+PYTHON
+Python මුල සිට ඉගෙන ගන්න
+[UNCLEAR]...
+20 students
+03 Month
+View

@@ -1,0 +1,71 @@
+work_motivation_profile_id,variable,response,records,within_profile_percent
+1,work_autonomy,A great deal — real freedom in how I approach my work,36,100.0
+2,work_autonomy,None — I follow instructions with no discretion,1,3.5714285714285716
+2,work_autonomy,Some — flexibility within defined boundaries,26,92.85714285714286
+2,work_autonomy,Very little — most things are prescribed for me,1,3.5714285714285716
+3,work_autonomy,A great deal — real freedom in how I approach my work,6,35.294117647058826
+3,work_autonomy,None — I follow instructions with no discretion,1,5.882352941176471
+3,work_autonomy,Some — flexibility within defined boundaries,8,47.05882352941177
+3,work_autonomy,Very little — most things are prescribed for me,2,11.764705882352942
+1,competence_growth_at_work,Somewhat — there is some growth but it has slowed,5,13.88888888888889
+1,competence_growth_at_work,Yes — I am constantly learning and growing in this role,31,86.11111111111111
+2,competence_growth_at_work,Somewhat — there is some growth but it has slowed,4,14.285714285714286
+2,competence_growth_at_work,Yes — I am constantly learning and growing in this role,24,85.71428571428571
+3,competence_growth_at_work,No — this job does not help me develop at all,2,11.764705882352942
+3,competence_growth_at_work,Not much — I feel my skills are stagnating,2,11.764705882352942
+3,competence_growth_at_work,Somewhat — there is some growth but it has slowed,9,52.94117647058823
+3,competence_growth_at_work,Yes — I am constantly learning and growing in this role,4,23.529411764705884
+1,relatedness_at_work,Very connected — genuinely part of the team and valued,36,100.0
+2,relatedness_at_work,Somewhat connected — reasonable working relationships,7,25.0
+2,relatedness_at_work,Very connected — genuinely part of the team and valued,21,75.0
+3,relatedness_at_work,Disconnected — I feel isolated or invisible at work,1,5.882352941176471
+3,relatedness_at_work,Somewhat connected — reasonable working relationships,14,82.3529411764706
+3,relatedness_at_work,Very connected — genuinely part of the team and valued,1,5.882352941176471
+3,relatedness_at_work,"Weakly connected — mostly transactional, little real connection",1,5.882352941176471
+1,work_motivation_type,I find the work genuinely interesting and meaningful in itself,24,66.66666666666667
+1,work_motivation_type,It aligns with my personal goals and who I want to become,11,30.555555555555557
+1,work_motivation_type,Primarily for the income — I need the money,1,2.7777777777777777
+2,work_motivation_type,I feel I should — to meet family expectations or avoid guilt,1,3.5714285714285716
+2,work_motivation_type,I find the work genuinely interesting and meaningful in itself,9,32.142857142857146
+2,work_motivation_type,I have little choice right now — it was available,1,3.5714285714285716
+2,work_motivation_type,It aligns with my personal goals and who I want to become,17,60.714285714285715
+3,work_motivation_type,I feel I should — to meet family expectations or avoid guilt,3,17.647058823529413
+3,work_motivation_type,I have little choice right now — it was available,1,5.882352941176471
+3,work_motivation_type,It aligns with my personal goals and who I want to become,5,29.41176470588235
+3,work_motivation_type,Primarily for the income — I need the money,8,47.05882352941177
+1,job_satisfaction,Somewhat satisfied,17,47.22222222222222
+1,job_satisfaction,Somewhat unsatisfied,3,8.333333333333334
+1,job_satisfaction,Very satisfied,16,44.44444444444444
+2,job_satisfaction,Somewhat satisfied,19,67.85714285714286
+2,job_satisfaction,Somewhat unsatisfied,1,3.5714285714285716
+2,job_satisfaction,Very satisfied,8,28.571428571428573
+3,job_satisfaction,Somewhat satisfied,9,52.94117647058823
+3,job_satisfaction,Somewhat unsatisfied,5,29.41176470588235
+3,job_satisfaction,Very satisfied,2,11.764705882352942
+3,job_satisfaction,Very unsatisfied,1,5.882352941176471
+1,hopes_to_change_job,No — I want to stay in this job,11,30.555555555555557
+1,hopes_to_change_job,Not sure,10,27.77777777777778
+1,hopes_to_change_job,Yes — I want to change,15,41.666666666666664
+2,hopes_to_change_job,No — I want to stay in this job,5,17.857142857142858
+2,hopes_to_change_job,Not sure,7,25.0
+2,hopes_to_change_job,Yes — I want to change,16,57.142857142857146
+3,hopes_to_change_job,Not sure,2,11.764705882352942
+3,hopes_to_change_job,Yes — I want to change,15,88.23529411764706
+1,job_security_12months,I do not know,5,13.88888888888889
+1,job_security_12months,Likely but not certain — I have some concern,9,25.0
+1,job_security_12months,Not likely — I doubt I will still have this job,2,5.555555555555555
+1,job_security_12months,Very likely — my job is secure,20,55.55555555555556
+2,job_security_12months,I do not know,4,14.285714285714286
+2,job_security_12months,Likely but not certain — I have some concern,11,39.285714285714285
+2,job_security_12months,Not likely — I doubt I will still have this job,1,3.5714285714285716
+2,job_security_12months,Very likely — my job is secure,12,42.857142857142854
+3,job_security_12months,I do not know,1,5.882352941176471
+3,job_security_12months,Likely but not certain — I have some concern,8,47.05882352941177
+3,job_security_12months,Not likely — I doubt I will still have this job,3,17.647058823529413
+3,job_security_12months,Very likely — my job is secure,5,29.41176470588235
+1,received_training,No,5,13.88888888888889
+1,received_training,Yes,31,86.11111111111111
+2,received_training,No,7,25.0
+2,received_training,Yes,21,75.0
+3,received_training,No,4,23.529411764705884
+3,received_training,Yes,13,76.47058823529412

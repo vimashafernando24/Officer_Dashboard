@@ -1,0 +1,3 @@
+employment_security_profile_id,employment_security_profile_label,records,low_gower_confidence_records,mean_gower_silhouette,mean_consensus_silhouette,percent
+1,Temporary/no-contract employment with uncertain security,29,9,0.1529225959752912,0.6898059695169807,35.80246913580247
+2,Predominantly permanent employment with stronger security,52,1,0.4873502394861665,0.9337112500840404,64.19753086419753

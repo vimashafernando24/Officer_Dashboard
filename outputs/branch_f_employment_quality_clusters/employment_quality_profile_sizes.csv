@@ -1,0 +1,4 @@
+employment_quality_profile_id,employment_quality_profile_label,records,low_gower_confidence_records,mean_gower_silhouette,mean_consensus_silhouette,percent
+1,Employment quality profile 1,29,15,0.06591087868362178,0.6770246555479924,35.80246913580247
+2,Employment quality profile 2,25,0,0.5100018567406501,0.921876541812766,30.864197530864196
+3,Employment quality profile 3,27,1,0.24671449031228623,0.7091953524676055,33.333333333333336

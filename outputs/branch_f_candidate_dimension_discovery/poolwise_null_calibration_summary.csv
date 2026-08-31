@@ -1,0 +1,9 @@
+theory_pool,observed_maximum_kmedoids_silhouette,null_repetitions_with_valid_solution,null_maximum_silhouette_median,null_maximum_silhouette_p95,empirical_poolwise_p_value,screening_only_because_null_repetitions_below_200
+D1 — Household economic resources and responsibility,0.7666645963117679,30,0.7564804850522102,0.7676306602671129,0.12903225806451613,True
+D2 — Educational and inherited cultural capital,0.8142016528728324,30,0.8091571940002635,0.8147854064156158,0.16129032258064516,True
+D3 — Employment security and formality,0.5615531252807759,30,0.5609671783529984,0.5892978116217007,0.4838709677419355,True
+D4 — Earnings and working-time adequacy,0.6887370276137885,30,0.684175985897157,0.6959881266230679,0.25806451612903225,True
+D5 — Subjective job satisfaction and mobility intention,0.8369294601338269,30,0.8187186999378063,0.8386049830685207,0.12903225806451613,True
+D6 — Qualification use and skill development,0.8326516814457329,30,0.828387372507275,0.8369187879722637,0.1935483870967742,True
+D8 — Work motivation and psychological need experience,0.7669402638852307,30,0.7692354743028339,0.8181256414486893,0.5806451612903226,True
+D9 — Transition-to-work search pathway and barriers,0.8005752651641074,30,0.7952104031200983,0.8333524288324483,0.2903225806451613,True

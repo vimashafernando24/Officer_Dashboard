@@ -1,0 +1,9 @@
+proposed_role,proposed_dimension,variables,variable_count,minimum_coverage_percent
+conditional descriptor,Not used in all-Branch-G distance,"age_first_married, spouse_activity, num_children, reason_left_edu, highest_edu_completed, edu_end_year, spell1_activity, spell2_activity, spell1_is_current, spell2_is_current, spell1_contract, spell1_satisfaction, spell1_end_reason",13,7.1
+profile/programme-mapping descriptor,Not a clustering dimension,"age_group, gender, district, area_type, moved_from_origin, move_reason, marital_status, has_children, father_occ, mother_occ, work_while_study_type, work_while_study_paid, work_while_study_hours, work_while_study_motivation, edu_min_for_decent_job, most_important_life_goal, most_useful_quality_for_job, ideal_work_type, ideal_sector, time_use_decision_maker, expected_highest_edu_g",21,26.8
+proposed clustering input,G1 — Household economic resources and dependency,"household_size, household_income, household_workers, household_unemployed, primary_earner_status, primary_income_source",6,100.0
+proposed clustering input,G2 — Educational and inherited cultural capital,"father_edu, mother_edu, edu_status, worked_while_studying",4,100.0
+proposed clustering input,G3 — Inactivity pathway and future engagement intention,"reason_not_in_labour_force, ever_worked, wants_to_work_future, wants_further_edu",4,100.0
+proposed clustering input,G4 — Psychological readiness and support for engagement,"future_orientation_g, employment_self_efficacy, support_for_engagement",3,100.0
+proposed clustering input,G5 — Labour-market social connection,"employment_network_quality, labour_market_connection",2,100.0
+routing/audit only,Not a clustering dimension,"current_activity_status, desire_for_work, active_search_4weeks, search_method_primary, wanted_to_work, reason_not_seeking, available_to_start, has_job_to_return, looking_while_absent",9,8.9

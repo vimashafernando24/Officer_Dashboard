@@ -1,0 +1,4 @@
+feature,type,observed,missing,maximum_distance_weight
+contract_type,nominal,81,0,0.3333333333333333
+job_security_12months,ordinal_with_unknown,81,0,0.3333333333333333
+sector_formality,ordinal,81,0,0.3333333333333333

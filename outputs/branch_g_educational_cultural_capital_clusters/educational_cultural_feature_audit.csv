@@ -1,0 +1,5 @@
+feature,source_variables,type,observed,missing,maximum_distance_weight
+father_edu,father_edu,ordinal,51,5,0.25
+mother_edu,mother_edu,ordinal,52,4,0.25
+edu_status,edu_status,nominal,56,0,0.25
+worked_while_studying,worked_while_studying,binary,56,0,0.25

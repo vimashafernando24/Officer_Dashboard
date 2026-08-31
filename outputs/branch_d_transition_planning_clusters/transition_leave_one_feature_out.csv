@@ -1,0 +1,5 @@
+omitted_feature,retained_features,minimum_pair_coverage,gower_silhouette_reduced_kmedoids,ari_reduced_kmedoids_vs_final_consensus
+plans_after_education,3,2,0.2747348236719186,0.897263126236278
+ideal_work_type,3,2,0.33239394914646364,-0.02048183348860795
+ideal_sector,3,2,0.31417606644288265,1.0
+study_field_preference,3,3,0.31082063253796577,1.0

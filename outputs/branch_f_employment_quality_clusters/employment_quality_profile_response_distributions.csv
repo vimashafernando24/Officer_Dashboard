@@ -1,0 +1,123 @@
+employment_quality_profile_id,variable,role,response,records,within_profile_percent
+1,contract_type,cluster_input,Do not know,1,3.4482758620689653
+1,contract_type,cluster_input,No contract at all,5,17.24137931034483
+1,contract_type,cluster_input,Oral contract — temporary (12–36 months),3,10.344827586206897
+1,contract_type,cluster_input,Oral contract — temporary (under 12 months),1,3.4482758620689653
+1,contract_type,cluster_input,Written contract — permanent/unlimited,1,3.4482758620689653
+1,contract_type,cluster_input,Written contract — temporary (12–36 months),7,24.137931034482758
+1,contract_type,cluster_input,Written contract — temporary (under 12 months),11,37.93103448275862
+2,contract_type,cluster_input,Do not know,1,4.0
+2,contract_type,cluster_input,Oral contract — permanent/unlimited,1,4.0
+2,contract_type,cluster_input,Written contract — permanent/unlimited,23,92.0
+3,contract_type,cluster_input,Do not know,1,3.7037037037037037
+3,contract_type,cluster_input,No contract at all,3,11.11111111111111
+3,contract_type,cluster_input,Oral contract — permanent/unlimited,1,3.7037037037037037
+3,contract_type,cluster_input,Oral contract — temporary (under 12 months),1,3.7037037037037037
+3,contract_type,cluster_input,Written contract — permanent/unlimited,16,59.25925925925926
+3,contract_type,cluster_input,Written contract — temporary (12–36 months),4,14.814814814814815
+3,contract_type,cluster_input,Written contract — temporary (under 12 months),1,3.7037037037037037
+1,monthly_income_band,cluster_input,"Below LKR 20,000",5,17.24137931034483
+1,monthly_income_band,cluster_input,"LKR 120,000 – 200,000",2,6.896551724137931
+1,monthly_income_band,cluster_input,"LKR 20,000 – 40,000",11,37.93103448275862
+1,monthly_income_band,cluster_input,"LKR 40,000 – 70,000",8,27.586206896551722
+1,monthly_income_band,cluster_input,"LKR 70,000 – 120,000",3,10.344827586206897
+2,monthly_income_band,cluster_input,"Above LKR 200,000",14,56.0
+2,monthly_income_band,cluster_input,"LKR 120,000 – 200,000",6,24.0
+2,monthly_income_band,cluster_input,"LKR 40,000 – 70,000",2,8.0
+2,monthly_income_band,cluster_input,"LKR 70,000 – 120,000",3,12.0
+3,monthly_income_band,cluster_input,"Above LKR 200,000",6,22.22222222222222
+3,monthly_income_band,cluster_input,"Below LKR 20,000",2,7.407407407407407
+3,monthly_income_band,cluster_input,"LKR 120,000 – 200,000",4,14.814814814814815
+3,monthly_income_band,cluster_input,"LKR 20,000 – 40,000",3,11.11111111111111
+3,monthly_income_band,cluster_input,"LKR 40,000 – 70,000",4,14.814814814814815
+3,monthly_income_band,cluster_input,"LKR 70,000 – 120,000",8,29.62962962962963
+1,income_hours_preference,cluster_input,Fewer hours and correspondingly less income,4,13.793103448275861
+1,income_hours_preference,cluster_input,Keep things the same as they are now,23,79.3103448275862
+1,income_hours_preference,cluster_input,More hours and correspondingly more income,2,6.896551724137931
+2,income_hours_preference,cluster_input,Fewer hours and correspondingly less income,1,4.0
+2,income_hours_preference,cluster_input,Keep things the same as they are now,24,96.0
+3,income_hours_preference,cluster_input,Fewer hours and correspondingly less income,1,3.7037037037037037
+3,income_hours_preference,cluster_input,More hours and correspondingly more income,26,96.29629629629629
+1,job_satisfaction,cluster_input,Somewhat satisfied,16,55.172413793103445
+1,job_satisfaction,cluster_input,Somewhat unsatisfied,7,24.137931034482758
+1,job_satisfaction,cluster_input,Very satisfied,5,17.24137931034483
+1,job_satisfaction,cluster_input,Very unsatisfied,1,3.4482758620689653
+2,job_satisfaction,cluster_input,Somewhat satisfied,13,52.0
+2,job_satisfaction,cluster_input,Somewhat unsatisfied,1,4.0
+2,job_satisfaction,cluster_input,Very satisfied,11,44.0
+3,job_satisfaction,cluster_input,Somewhat satisfied,16,59.25925925925926
+3,job_satisfaction,cluster_input,Somewhat unsatisfied,1,3.7037037037037037
+3,job_satisfaction,cluster_input,Very satisfied,10,37.03703703703704
+1,job_security_12months,cluster_input,I do not know,7,24.137931034482758
+1,job_security_12months,cluster_input,Likely but not certain — I have some concern,12,41.37931034482759
+1,job_security_12months,cluster_input,Not likely — I doubt I will still have this job,5,17.24137931034483
+1,job_security_12months,cluster_input,Very likely — my job is secure,5,17.24137931034483
+2,job_security_12months,cluster_input,I do not know,2,8.0
+2,job_security_12months,cluster_input,Likely but not certain — I have some concern,7,28.0
+2,job_security_12months,cluster_input,Not likely — I doubt I will still have this job,1,4.0
+2,job_security_12months,cluster_input,Very likely — my job is secure,15,60.0
+3,job_security_12months,cluster_input,I do not know,1,3.7037037037037037
+3,job_security_12months,cluster_input,Likely but not certain — I have some concern,9,33.333333333333336
+3,job_security_12months,cluster_input,Very likely — my job is secure,17,62.96296296296296
+1,sector_formality,cluster_input,"Fully formal — registered employer, written contract, statutory benefits",17,58.62068965517241
+1,sector_formality,cluster_input,"Fully informal — no documentation, cash only",1,3.4482758620689653
+1,sector_formality,cluster_input,"Mixed — some formal, some informal aspects",5,17.24137931034483
+1,sector_formality,cluster_input,Mostly formal — some documentation but not fully compliant,6,20.689655172413794
+2,sector_formality,cluster_input,"Fully formal — registered employer, written contract, statutory benefits",17,68.0
+2,sector_formality,cluster_input,"Mixed — some formal, some informal aspects",4,16.0
+2,sector_formality,cluster_input,Mostly formal — some documentation but not fully compliant,4,16.0
+3,sector_formality,cluster_input,"Fully formal — registered employer, written contract, statutory benefits",17,62.96296296296296
+3,sector_formality,cluster_input,"Fully informal — no documentation, cash only",1,3.7037037037037037
+3,sector_formality,cluster_input,"Mixed — some formal, some informal aspects",5,18.51851851851852
+3,sector_formality,cluster_input,Mostly formal — some documentation but not fully compliant,4,14.814814814814815
+1,employment_status,work_arrangement_descriptor,For an employer — for a salary or wage,19,65.51724137931035
+1,employment_status,work_arrangement_descriptor,For an employer — without direct pay,3,10.344827586206897
+1,employment_status,work_arrangement_descriptor,In a family business or farm for the family's benefit,2,6.896551724137931
+1,employment_status,work_arrangement_descriptor,In my own business or self-employed (no employees),5,17.24137931034483
+2,employment_status,work_arrangement_descriptor,As a member of a cooperative,1,4.0
+2,employment_status,work_arrangement_descriptor,For an employer — for a salary or wage,22,88.0
+2,employment_status,work_arrangement_descriptor,In a family business or farm for the family's benefit,1,4.0
+2,employment_status,work_arrangement_descriptor,In my own business as an employer — I hire others,1,4.0
+3,employment_status,work_arrangement_descriptor,As a member of a cooperative,1,3.7037037037037037
+3,employment_status,work_arrangement_descriptor,For an employer — for a salary or wage,21,77.77777777777777
+3,employment_status,work_arrangement_descriptor,For an employer — without direct pay,2,7.407407407407407
+3,employment_status,work_arrangement_descriptor,In my own business as an employer — I hire others,1,3.7037037037037037
+3,employment_status,work_arrangement_descriptor,In my own business or self-employed (no employees),2,7.407407407407407
+1,contract_satisfaction,subjective_contract_descriptor,Satisfied — for another reason,6,20.689655172413794
+1,contract_satisfaction,subjective_contract_descriptor,Satisfied — it gives me the flexibility I need,9,31.03448275862069
+1,contract_satisfaction,subjective_contract_descriptor,Satisfied — it gives me the job security I need,5,17.24137931034483
+1,contract_satisfaction,subjective_contract_descriptor,Satisfied — the wage is high enough that I accept the terms,3,10.344827586206897
+1,contract_satisfaction,subjective_contract_descriptor,Unsatisfied — I do not get the same benefits as permanent employees,2,6.896551724137931
+1,contract_satisfaction,subjective_contract_descriptor,Unsatisfied — for another reason,2,6.896551724137931
+1,contract_satisfaction,subjective_contract_descriptor,Unsatisfied — it does not give me the flexibility I need,1,3.4482758620689653
+1,contract_satisfaction,subjective_contract_descriptor,Unsatisfied — it does not give me the security I need,1,3.4482758620689653
+2,contract_satisfaction,subjective_contract_descriptor,Satisfied — for another reason,1,4.0
+2,contract_satisfaction,subjective_contract_descriptor,Satisfied — it gives me the flexibility I need,11,44.0
+2,contract_satisfaction,subjective_contract_descriptor,Satisfied — it gives me the job security I need,8,32.0
+2,contract_satisfaction,subjective_contract_descriptor,Satisfied — the wage is high enough that I accept the terms,3,12.0
+2,contract_satisfaction,subjective_contract_descriptor,Unsatisfied — it does not give me the flexibility I need,1,4.0
+2,contract_satisfaction,subjective_contract_descriptor,Unsatisfied — it does not give me the security I need,1,4.0
+3,contract_satisfaction,subjective_contract_descriptor,Satisfied — for another reason,3,11.11111111111111
+3,contract_satisfaction,subjective_contract_descriptor,Satisfied — it gives me the flexibility I need,8,29.62962962962963
+3,contract_satisfaction,subjective_contract_descriptor,Satisfied — it gives me the job security I need,11,40.74074074074074
+3,contract_satisfaction,subjective_contract_descriptor,Satisfied — the wage is high enough that I accept the terms,2,7.407407407407407
+3,contract_satisfaction,subjective_contract_descriptor,Unsatisfied — for another reason,1,3.7037037037037037
+3,contract_satisfaction,subjective_contract_descriptor,Unsatisfied — it does not give me the flexibility I need,1,3.7037037037037037
+3,contract_satisfaction,subjective_contract_descriptor,Unsatisfied — it does not give me the security I need,1,3.7037037037037037
+1,hopes_to_change_job,transition_intention_descriptor,No — I want to stay in this job,2,6.896551724137931
+1,hopes_to_change_job,transition_intention_descriptor,Not sure,9,31.03448275862069
+1,hopes_to_change_job,transition_intention_descriptor,Yes — I want to change,18,62.06896551724138
+2,hopes_to_change_job,transition_intention_descriptor,No — I want to stay in this job,6,24.0
+2,hopes_to_change_job,transition_intention_descriptor,Not sure,10,40.0
+2,hopes_to_change_job,transition_intention_descriptor,Yes — I want to change,9,36.0
+3,hopes_to_change_job,transition_intention_descriptor,No — I want to stay in this job,8,29.62962962962963
+3,hopes_to_change_job,transition_intention_descriptor,Yes — I want to change,19,70.37037037037037
+1,insecurity_bothers,conditional_security_descriptor,No — I accept it or it does not concern me,7,24.137931034482758
+1,insecurity_bothers,conditional_security_descriptor,Yes — it worries or stresses me,10,34.48275862068966
+1,insecurity_bothers,conditional_security_descriptor,,12,41.37931034482759
+2,insecurity_bothers,conditional_security_descriptor,No — I accept it or it does not concern me,5,20.0
+2,insecurity_bothers,conditional_security_descriptor,Yes — it worries or stresses me,3,12.0
+2,insecurity_bothers,conditional_security_descriptor,,17,68.0
+3,insecurity_bothers,conditional_security_descriptor,No — I accept it or it does not concern me,6,22.22222222222222
+3,insecurity_bothers,conditional_security_descriptor,Yes — it worries or stresses me,3,11.11111111111111
+3,insecurity_bothers,conditional_security_descriptor,,18,66.66666666666667

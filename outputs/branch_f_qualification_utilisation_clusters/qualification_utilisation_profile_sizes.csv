@@ -1,0 +1,4 @@
+qualification_utilisation_profile_id,qualification_utilisation_profile_label,records,low_gower_confidence_records,mean_gower_silhouette,mean_consensus_silhouette,percent
+1,Rejected diagnostic profile 1,39,1,0.8929394277220363,0.92798802418454,48.148148148148145
+2,Rejected diagnostic profile 2,27,2,0.28697178324850775,0.4420263823484625,33.333333333333336
+3,Rejected diagnostic profile 3,15,0,0.45079941232391324,0.8652709378489011,18.51851851851852

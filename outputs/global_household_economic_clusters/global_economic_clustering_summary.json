@@ -1,0 +1,98 @@
+{
+  "cohort": {
+    "records": 363,
+    "routing_source": "translated_final_active_branch",
+    "branch_counts": {
+      "D": 191,
+      "E": 34,
+      "F": 82,
+      "G": 56
+    },
+    "branch_used_as_clustering_input": false
+  },
+  "dimension": "global household economic resource structure",
+  "source_variables": [
+    "household_income",
+    "household_size",
+    "household_workers",
+    "household_unemployed",
+    "primary_earner_status",
+    "primary_income_source"
+  ],
+  "clustering_features": [
+    "household_income",
+    "household_size",
+    "household_workers",
+    "household_unemployed"
+  ],
+  "descriptors": [
+    "primary_earner_status",
+    "primary_income_source"
+  ],
+  "data_quality": {
+    "records": 363,
+    "unique_ids": 363,
+    "wrong_routing_source": 0,
+    "branch_D": 191,
+    "branch_E": 34,
+    "branch_F": 82,
+    "branch_G": 56,
+    "household_count_conflicts": 15,
+    "income_prefer_not_to_say": 52
+  },
+  "method": {
+    "distance": "equal-maximum-weight, missing-aware mixed Gower on four original household-resource responses",
+    "candidate_k": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "selected_k": 2,
+    "ensemble": "equal-weight K-medoids plus spectral consensus",
+    "base_partitions": 200,
+    "final_method": "K-medoids on one minus co-association"
+  },
+  "profiles": {
+    "sizes": {
+      "1": 135,
+      "2": 228
+    },
+    "names": {
+      "1": "Exploratory lower-income/fewer-worker household pattern",
+      "2": "Exploratory higher-income/more-worker household pattern"
+    }
+  },
+  "metrics": {
+    "gower_silhouette": 0.36542652511051166,
+    "consensus_distance_silhouette": 0.6694745650654694,
+    "ensemble_bootstrap_ari_mean": 0.9010606143287946,
+    "ensemble_bootstrap_ari_p10": 0.9669875711033157,
+    "ari_vs_full_kmedoids": 0.011106926489486012,
+    "ari_vs_full_spectral": 0.9561437352632072,
+    "ari_consensus_kmedoids_vs_hac_average": 0.9779264955628235,
+    "ari_consensus_kmedoids_vs_hac_complete": 0.9779264955628235,
+    "raw_count_sensitivity_ari": 0.011106926489486012,
+    "minimum_profile_size": 135,
+    "low_gower_confidence_percent": 6.887052341597796,
+    "ambiguous_consensus_percent": 16.2534435261708,
+    "pac_10_90": 0.6093785671887129
+  },
+  "decision": {
+    "primary_checks_passed": false,
+    "checks_passed": 6,
+    "checks_total": 9,
+    "status": "No sufficiently robust global household-economic segmentation found"
+  },
+  "limitations": [
+    "These are exploratory household-economic response profiles, not a validated economic-capital scale.",
+    "Household income 'prefer not to say' is unavailable in pairwise distance rather than forced into the income ordering.",
+    "Worker and unemployed counts are unavailable for 15 internally inconsistent households; original values remain in the audit.",
+    "Two unusually large households are retained because the survey contains no evidence that they are impossible; ordered count positions are primary and raw-count sensitivity is reported.",
+    "Household worker count asks about salary/wage workers and may not capture every form of household work.",
+    "Primary income source is a descriptor because using it in distance mainly reproduced current activity/branch status in the initial screening run.",
+    "Primary-earner status is a descriptor because using it in distance produced the direct no-versus-shared/yes questionnaire split rather than a multidimensional resource profile.",
+    "K-medoids and spectral clustering disagree strongly on the four-feature solution; the displayed profiles are exploratory and must not be used as a validated global classification.",
+    "Branch is used only after clustering for composition analysis and never determines global profile membership."
+  ]
+}

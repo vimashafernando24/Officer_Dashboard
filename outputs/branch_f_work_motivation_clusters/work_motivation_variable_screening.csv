@@ -1,0 +1,9 @@
+variable,role,observed,missing,unique_observed_responses,dominant_response,dominant_response_percent
+work_autonomy,cluster_input,81,0,4,A great deal — real freedom in how I approach my work,51.85185185185185
+competence_growth_at_work,cluster_input,81,0,4,Yes — I am constantly learning and growing in this role,72.8395061728395
+relatedness_at_work,cluster_input,81,0,4,Very connected — genuinely part of the team and valued,71.60493827160494
+work_motivation_type,cluster_input,81,0,5,It aligns with my personal goals and who I want to become,40.74074074074074
+job_satisfaction,profile_descriptor,81,0,4,Somewhat satisfied,55.55555555555556
+hopes_to_change_job,profile_descriptor,81,0,3,Yes — I want to change,56.79012345679012
+job_security_12months,profile_descriptor,81,0,4,Very likely — my job is secure,45.67901234567901
+received_training,profile_descriptor,81,0,2,Yes,80.24691358024691

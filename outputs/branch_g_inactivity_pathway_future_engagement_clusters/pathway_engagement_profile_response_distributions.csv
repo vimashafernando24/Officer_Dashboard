@@ -1,0 +1,37 @@
+pathway_profile_id,variable,response,records,within_profile_percent
+1,reason_not_in_labour_force,Already arranged self-employment to start in the future,1,2.857142857142857
+1,reason_not_in_labour_force,Already found work to start in the future,1,2.857142857142857
+1,reason_not_in_labour_force,Awaiting recall to a former job,2,5.714285714285714
+1,reason_not_in_labour_force,Believe there is no suitable work available in this area,1,2.857142857142857
+1,reason_not_in_labour_force,Could not find suitable work after trying,2,5.714285714285714
+1,reason_not_in_labour_force,Currently in education or training,11,31.428571428571427
+1,reason_not_in_labour_force,Do not know how or where to look for work,1,2.857142857142857
+1,reason_not_in_labour_force,Have not started looking yet,4,11.428571428571429
+1,reason_not_in_labour_force,Other reason,3,8.571428571428571
+1,reason_not_in_labour_force,"Own illness, injury, or pregnancy",2,5.714285714285714
+1,reason_not_in_labour_force,"Personal or family responsibilities (caring for children, elderly, etc.)",7,20.0
+2,reason_not_in_labour_force,Already arranged self-employment to start in the future,1,4.761904761904762
+2,reason_not_in_labour_force,Already found work to start in the future,1,4.761904761904762
+2,reason_not_in_labour_force,Awaiting the busy season (seasonal worker),2,9.523809523809524
+2,reason_not_in_labour_force,Believe there is no suitable work available in this area,1,4.761904761904762
+2,reason_not_in_labour_force,Could not find suitable work after trying,2,9.523809523809524
+2,reason_not_in_labour_force,Currently in education or training,3,14.285714285714286
+2,reason_not_in_labour_force,Do not know how or where to look for work,2,9.523809523809524
+2,reason_not_in_labour_force,Have not started looking yet,2,9.523809523809524
+2,reason_not_in_labour_force,I do not meet employers' requirements — feel I lack qualifications,1,4.761904761904762
+2,reason_not_in_labour_force,Other reason,4,19.047619047619047
+2,reason_not_in_labour_force,"Personal or family responsibilities (caring for children, elderly, etc.)",2,9.523809523809524
+1,ever_worked,No — I have never worked,6,17.142857142857142
+1,ever_worked,Yes — I have worked before,29,82.85714285714286
+2,ever_worked,No — I have never worked,16,76.19047619047619
+2,ever_worked,Yes — I have worked before,5,23.80952380952381
+1,wants_to_work_future,No — I do not want to work,1,2.857142857142857
+1,wants_to_work_future,Yes — I want to work at some point,34,97.14285714285714
+2,wants_to_work_future,No — I do not want to work,15,71.42857142857143
+2,wants_to_work_future,Yes — I want to work at some point,6,28.571428571428573
+1,wants_further_edu,No,1,2.857142857142857
+1,wants_further_edu,Not sure yet,4,11.428571428571429
+1,wants_further_edu,Yes,30,85.71428571428571
+2,wants_further_edu,No,6,28.571428571428573
+2,wants_further_edu,Not sure yet,13,61.904761904761905
+2,wants_further_edu,Yes,2,9.523809523809524

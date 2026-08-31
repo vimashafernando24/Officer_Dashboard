@@ -1,0 +1,45 @@
+qualification_skills_profile_id,variable,response,records,within_profile_percent
+1,qualification_job_match,Fairly well — some of my training is relevant,13,20.0
+1,qualification_job_match,Not at all — the job is unrelated to my training,3,4.615384615384615
+1,qualification_job_match,Partially — I am somewhat over-qualified or under-qualified,4,6.153846153846154
+1,qualification_job_match,Very well — my qualifications are central to this job,45,69.23076923076923
+2,qualification_job_match,Fairly well — some of my training is relevant,1,6.25
+2,qualification_job_match,Partially — I am somewhat over-qualified or under-qualified,3,18.75
+2,qualification_job_match,Poorly — I am significantly over-qualified for this job,2,12.5
+2,qualification_job_match,Very well — my qualifications are central to this job,10,62.5
+1,past_edu_useful_for_job,Do not know,3,4.615384615384615
+1,past_edu_useful_for_job,Not useful — there is little connection,3,4.615384615384615
+1,past_edu_useful_for_job,Somewhat useful — helps in some areas,14,21.53846153846154
+1,past_edu_useful_for_job,Very useful — directly relevant and applied daily,45,69.23076923076923
+2,past_edu_useful_for_job,Not useful — there is little connection,1,6.25
+2,past_edu_useful_for_job,Somewhat useful — helps in some areas,7,43.75
+2,past_edu_useful_for_job,Very useful — directly relevant and applied daily,8,50.0
+1,received_training,Yes,65,100.0
+2,received_training,No,16,100.0
+1,training_type_received,Accounting or bookkeeping,1,1.5384615384615385
+1,training_type_received,Apprenticeship training,9,13.846153846153847
+1,training_type_received,Business or entrepreneurship training,4,6.153846153846154
+1,training_type_received,On-the-job mentoring with a colleague,22,33.84615384615385
+1,training_type_received,Other,6,9.23076923076923
+1,training_type_received,Training in new technologies,21,32.30769230769231
+1,training_type_received,Vocational or NVQ programme,2,3.076923076923077
+2,training_type_received,,16,100.0
+1,training_provider,"A government training institution (NYSC, NAITA, VTA, etc.)",2,3.076923076923077
+1,training_provider,A private contractor or trainer,4,6.153846153846154
+1,training_provider,A private training institution,5,7.6923076923076925
+1,training_provider,My employer (on-the-job),47,72.3076923076923
+1,training_provider,Other,7,10.76923076923077
+2,training_provider,,16,100.0
+1,training_duration,1 to 3 months,8,12.307692307692308
+1,training_duration,1 to 4 weeks,21,32.30769230769231
+1,training_duration,3 to 6 months,12,18.46153846153846
+1,training_duration,6 months to 1 year,7,10.76923076923077
+1,training_duration,Less than one week,14,21.53846153846154
+1,training_duration,More than 1 year,3,4.615384615384615
+2,training_duration,,16,100.0
+1,who_paid_training,An international organization or donor,2,3.076923076923077
+1,who_paid_training,My employer,46,70.76923076923077
+1,who_paid_training,Myself or my family,6,9.23076923076923
+1,who_paid_training,Other,9,13.846153846153847
+1,who_paid_training,The government,2,3.076923076923077
+2,who_paid_training,,16,100.0

@@ -1,0 +1,41 @@
+variables,variable_count,k,kmedoids_silhouette,spectral_silhouette,cross_algorithm_ari,kmedoids_minimum_cluster_size,spectral_minimum_cluster_size,bootstrap_ari_mean,bootstrap_ari_p10,dominant_single_variable,single_variable_max_ari,single_item_dominated,max_pairwise_association_in_subset,near_duplicate_variables_flagged,passes_basic_gates
+has_children | has_second_job | received_training,3,3,0.9190672153635117,0.9190672153635117,1.0,16,16,0.9713733494524285,0.9266710391593501,has_second_job,0.574562306900103,False,0.161,False,True
+received_training | registered_as_jobseeker,2,3,0.9358024691358025,0.9358024691358025,1.0,16,16,0.9711350901950041,0.9262361519115547,registered_as_jobseeker,0.574562306900103,False,0.0,False,True
+worked_while_studying | registered_as_jobseeker,2,3,0.9346405228758171,0.9346405228758171,1.0,17,17,0.962437848102308,0.9265581945556162,worked_while_studying,0.5423689138576779,False,0.0,False,True
+has_second_job | received_training,2,3,0.9358024691358025,0.9358024691358025,1.0,16,16,0.9513256768278269,0.9264783638950477,has_second_job,0.574562306900103,False,0.0,False,True
+relatedness_at_work | has_second_job,2,3,0.9193467270975284,0.7175212160592279,0.8926563791346168,18,15,1.0,1.0,has_second_job,0.5479884643114636,False,0.072,False,True
+has_children | worked_while_studying,2,2,0.9814814814814816,0.9814814814814816,1.0,18,18,1.0,1.0,worked_while_studying,1.0,True,0.0,False,False
+has_children | hours_below_normal,2,2,0.9814814814814816,0.9814814814814816,1.0,32,32,1.0,1.0,hours_below_normal,1.0,True,0.0,False,False
+has_children | ever_refused_job_f,2,2,0.9814814814814816,0.9814814814814816,1.0,36,36,1.0,1.0,ever_refused_job_f,1.0,True,0.056,False,False
+has_children | received_training,2,2,0.9814814814814815,0.9814814814814815,1.0,16,16,1.0,1.0,received_training,1.0,True,0.0,False,False
+moved_from_origin | has_children,2,2,0.9814814814814815,0.9814814814814815,1.0,31,31,1.0,1.0,moved_from_origin,1.0,True,0.088,False,False
+has_children | has_second_job,2,2,0.9814814814814815,0.9814814814814815,1.0,20,20,1.0,1.0,has_second_job,1.0,True,0.161,False,False
+has_children | hopes_to_change_job,2,3,0.9814814814814815,0.9814814814814815,1.0,16,16,1.0,1.0,hopes_to_change_job,1.0,True,0.162,False,False
+has_children | registered_as_jobseeker,2,2,0.9814814814814813,0.9814814814814813,1.0,20,20,1.0,1.0,registered_as_jobseeker,1.0,True,0.0,False,False
+has_children | had_min_wage_during_search,2,2,0.9814814814814813,0.9814814814814813,1.0,23,23,1.0,1.0,had_min_wage_during_search,1.0,True,0.0,False,False
+has_second_job | jobs_applied_before_hire,2,2,0.9226259832668187,0.9226259832668187,1.0,20,20,1.0,1.0,has_second_job,1.0,True,0.199,False,False
+hours_below_normal | jobs_applied_before_hire,2,2,0.9222408339453696,0.9222408339453696,1.0,32,32,1.0,1.0,hours_below_normal,1.0,True,0.207,False,False
+registered_as_jobseeker | jobs_applied_before_hire,2,2,0.9214075688745524,0.9214075688745524,1.0,20,20,1.0,1.0,registered_as_jobseeker,1.0,True,0.119,False,False
+jobs_applied_before_hire | had_min_wage_during_search,2,2,0.9212182612366292,0.9212182612366292,1.0,23,23,1.0,1.0,had_min_wage_during_search,1.0,True,0.103,False,False
+moved_from_origin | jobs_applied_before_hire,2,2,0.9208531210829342,0.9208531210829342,1.0,31,31,1.0,1.0,moved_from_origin,1.0,True,0.044,False,False
+worked_while_studying | jobs_applied_before_hire,2,2,0.9205318950334141,0.9205318950334141,1.0,18,18,1.0,1.0,worked_while_studying,1.0,True,0.097,False,False
+jobs_applied_before_hire | ever_refused_job_f,2,2,0.9205247044358376,0.9205247044358376,1.0,36,36,1.0,1.0,ever_refused_job_f,1.0,True,0.096,False,False
+received_training | jobs_applied_before_hire,2,2,0.9204908296757085,0.9204908296757085,1.0,16,16,1.0,1.0,received_training,1.0,True,0.013,False,False
+hopes_to_change_job | jobs_applied_before_hire,2,3,0.92040336876567,0.92040336876567,1.0,16,16,1.0,1.0,hopes_to_change_job,1.0,True,0.144,False,False
+has_children | registered_as_jobseeker,2,3,0.9876543209876543,0.9876543209876543,1.0,1,1,0.9884735297400968,0.9511458694253329,registered_as_jobseeker,0.9609387558270375,True,0.0,False,False
+has_children | hours_below_normal,2,3,0.9876543209876543,0.9876543209876543,1.0,1,1,0.985083146536817,0.9612930667800936,hours_below_normal,0.9703680218520596,True,0.0,False,False
+has_children | had_min_wage_during_search,2,3,0.9876543209876543,0.9876543209876543,1.0,1,1,0.9799016939627005,0.952618326770659,had_min_wage_during_search,0.9639142664873191,True,0.0,False,False
+worked_while_studying | relatedness_at_work,2,3,0.9244116302213617,0.7564160119715676,0.9147674279564749,18,14,0.9819954885262197,1.0,relatedness_at_work,0.5456272084805653,False,0.094,False,False
+has_children | hopes_to_change_job,2,4,0.9876543209876543,0.41358024691358025,0.9064519970982795,1,3,0.9954528086715289,0.9862468296260375,hopes_to_change_job,0.9904087301869232,True,0.162,False,False
+moved_from_origin | has_children,2,4,0.9876543209876543,0.36419753086419754,0.8933285629462723,1,1,0.9936298201389299,0.9752008534055526,moved_from_origin,0.9814617027769301,True,0.088,False,False
+moved_from_origin | has_children,2,3,0.9876543209876543,0.36419753086419754,0.8681303633375935,1,4,0.990470886510589,0.9760852484143704,moved_from_origin,0.9814617027769301,True,0.088,False,False
+has_children | registered_as_jobseeker,2,4,0.9876543209876543,0.24691358024691357,0.8596187175043327,1,1,0.9851209273055334,0.9493169669372401,registered_as_jobseeker,0.9609387558270375,True,0.0,False,False
+has_children | ever_refused_job_f,2,3,0.9876543209876543,0.4259259259259258,0.8334308025731879,1,6,0.9893488206414359,0.971216221006487,ever_refused_job_f,0.9783950617283951,True,0.056,False,False
+hours_below_normal | jobs_applied_before_hire | ever_refused_job_f,3,4,0.9206762562016164,0.6164017121153336,0.765660087270149,15,4,1.0,1.0,ever_refused_job_f,0.5228395061728395,False,0.207,False,False
+has_children | has_second_job,2,4,0.9814814814814815,0.22839506172839505,0.7588917722485117,20,3,0.9929343583796898,0.9834707863982446,has_second_job,1.0,True,0.161,False,False
+hours_below_normal | ever_refused_job_f,2,4,1.0,0.4265232974910394,0.7106273923419674,15,5,1.0,1.0,ever_refused_job_f,0.5228395061728395,False,0.087,False,False
+has_children | hours_below_normal | ever_refused_job_f,3,4,0.9814814814814816,0.7039663777252431,0.6280577046277183,15,1,0.9949074079158791,1.0,ever_refused_job_f,0.5228395061728395,False,0.087,False,False
+relatedness_at_work | had_min_wage_during_search,2,3,0.9403479236812571,0.8644502202007074,0.5281256548237382,16,7,1.0,1.0,had_min_wage_during_search,0.6019300891181646,False,0.127,False,False
+relatedness_at_work | received_training,2,3,0.9434172984429772,0.8559900426219871,0.4628755383327436,16,4,1.0,1.0,relatedness_at_work,0.5938187094419569,False,0.048,False,False
+has_children | received_training,2,4,0.9876543209876543,0.19753086419753085,0.4549858700040371,1,1,0.9862826190534479,0.9421206225680934,received_training,0.9554087530966143,True,0.0,False,False
+has_children | worked_while_studying,2,4,0.9876543209876543,0.2222222222222222,0.45414727736311084,1,1,0.9822373708956201,0.9448751981047568,worked_while_studying,0.9584673097534834,True,0.0,False,False

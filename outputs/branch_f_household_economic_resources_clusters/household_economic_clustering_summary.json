@@ -1,0 +1,90 @@
+{
+  "cohort": {
+    "records": 81,
+    "branch": "F",
+    "routing_source": "translated_final_active_branch",
+    "strict_final_branch_records": 82,
+    "excluded_routing_integrity_records": 1
+  },
+  "dimension": "household economic resources and responsibility",
+  "source_variables": [
+    "household_income",
+    "household_size",
+    "household_workers",
+    "household_unemployed",
+    "primary_earner_status",
+    "primary_income_source"
+  ],
+  "clustering_components": [
+    "household_income_position",
+    "household_worker_share",
+    "household_unemployed_share",
+    "primary_earner_responsibility",
+    "primary_income_source"
+  ],
+  "data_quality": {
+    "income_prefer_not_to_say": 15,
+    "household_count_conflicts": 5,
+    "respondents_with_fewer_than_three_observed_components": 1,
+    "minimum_pair_feature_coverage": 2
+  },
+  "method": {
+    "distance": "equal-weight missing-aware mixed Gower on five components derived from six original survey variables",
+    "candidate_k": [
+      2,
+      3,
+      4
+    ],
+    "selected_k": 2,
+    "ensemble": "equal-weight K-medoids plus spectral consensus",
+    "base_partitions": 200,
+    "permutation_repetitions": 100,
+    "pac_policy": "comparative only; no universal absolute cutoff"
+  },
+  "profiles": {
+    "sizes": {
+      "1": 21,
+      "2": 60
+    },
+    "names": {
+      "1": "Household-economic response profile 1",
+      "2": "Household-economic response profile 2"
+    }
+  },
+  "metrics": {
+    "gower_silhouette": 0.4696772466900481,
+    "consensus_distance_silhouette": 0.9391541888362611,
+    "ensemble_bootstrap_ari_mean": 0.9943168771526981,
+    "ensemble_bootstrap_ari_p10": 0.9483352468427095,
+    "ari_vs_full_kmedoids": 0.8961740654205608,
+    "ari_vs_full_spectral": 0.8984865790976585,
+    "ari_vs_consensus_hac_average": 0.8984865790976585,
+    "ari_vs_consensus_hac_complete": 0.8961740654205608,
+    "structural_resource_only_sensitivity_ari": 0.0,
+    "maximum_single_feature_ari": 0.8452380952380952,
+    "dominant_single_feature": "primary_income_source",
+    "minimum_profile_size": 21,
+    "low_gower_confidence_percent": 4.938271604938271,
+    "ambiguous_consensus_percent": 4.938271604938271,
+    "pac_10_90": 0.1404320987654321,
+    "observed_maximum_kmedoids_silhouette": 0.463609725968559,
+    "permutation_null_maximum_silhouette_median": 0.4418747931044633,
+    "permutation_null_maximum_silhouette_p95": 0.45953279790358253,
+    "empirical_permutation_p": 0.0594059405940594
+  },
+  "decision": {
+    "retained_for_clustering": false,
+    "checks_passed": 8,
+    "checks_total": 9,
+    "status": "No sufficiently robust Branch F household-economic segmentation found"
+  },
+  "limitations": [
+    "These are exploratory household-economic response profiles, not validated economic-capital classes.",
+    "Household size is used as a denominator for worker/unemployed shares rather than receiving an additional distance weight.",
+    "Income prefer-not-to-say is pairwise unavailable rather than ranked as an income level.",
+    "One respondent has only two usable components after an income refusal and an internally inconsistent household count; this record is retained and explicitly flagged.",
+    "Primary income source is nominal and may create a direct job-versus-family-support split; single-feature and structural-only sensitivity are reported.",
+    "Permutation calibration tests whether the selected structure exceeds independently shuffled variables, but it does not establish theoretical construct validity.",
+    "The Branch F sample contains only 81 valid respondents; confirmation in additional data is required."
+  ]
+}

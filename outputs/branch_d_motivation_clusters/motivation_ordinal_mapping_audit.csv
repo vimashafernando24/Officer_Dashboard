@@ -1,0 +1,18 @@
+variable,ordinal_code,canonical_interpretation,readable_labels_observed,records
+study_motivation_type,1,Intrinsic: genuinely passionate about the subject,Because I am genuinely passionate about this subject | I am genuinely passionate about this subject,59
+study_motivation_type,2,Identified: aligned with own goals,Because it aligns with my own goals and will lead to what I want | It aligns with my own goals and will lead to what I want,72
+study_motivation_type,3,Introjected: avoid guilt or disappointing family,To avoid disappointing my family or feeling guilty about not studying,12
+study_motivation_type,4,External: qualification required for a job,Because I need the qualification for a job — it is a requirement | I need the qualification for a job — it is a requirement,35
+study_motivation_type,5,Amotivated/uncertain: following the path ended up on,I am not sure why — I am following the path I ended up on,13
+autonomy_in_study,1,A great deal of choice and control,A great deal — I have real freedom to shape my learning,100
+autonomy_in_study,2,Some flexibility within a mostly fixed curriculum,Some — there is flexibility within a mostly fixed curriculum,68
+autonomy_in_study,3,Very little choice; prescribed and fixed,Very little — everything is prescribed and fixed,18
+autonomy_in_study,4,No choice or control,None — I have no say in what or how I study,5
+competence_in_study_field,1,Very capable and confident,Very capable — confident and effective in my field,68
+competence_in_study_field,2,Fairly capable with some gaps,Fairly capable — mostly confident with some gaps,83
+competence_in_study_field,3,Somewhat capable; struggles in some areas,Somewhat capable — I struggle in some areas,36
+competence_in_study_field,4,Not very capable; frequently out of depth,Not very capable — I frequently feel out of my depth,4
+relatedness_at_institution,1,Strongly connected and part of the community,Strongly — genuinely connected and part of the community,83
+relatedness_at_institution,2,Some connections but not deeply involved,Somewhat — I have some connections but am not deeply involved,92
+relatedness_at_institution,3,Weakly connected or isolated,Weakly — I feel fairly isolated or disconnected,11
+relatedness_at_institution,4,No sense of belonging,Not at all — I feel no sense of belonging there,5

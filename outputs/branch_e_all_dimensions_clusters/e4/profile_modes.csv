@@ -1,0 +1,7 @@
+profile_id,variable,response,records,within_profile_percent
+1,expected_highest_edu_e,Post-graduate degree,12,66.66666666666667
+1,past_edu_usefulness,"Very useful — directly relevant, employers value it",15,83.33333333333333
+1,plans_further_edu,Yes,17,94.44444444444444
+2,expected_highest_edu_e,Post-graduate degree,6,37.5
+2,past_edu_usefulness,Somewhat useful — helps to some extent,15,93.75
+2,plans_further_edu,Yes,10,62.5

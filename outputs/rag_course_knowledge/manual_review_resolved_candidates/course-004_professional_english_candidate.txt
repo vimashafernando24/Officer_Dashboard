@@ -1,0 +1,27 @@
+COURSE DOCUMENT ID: COURSE-004
+
+COURSE NAME: Professional English
+
+PROPOSED STATUS: SAFE_TO_INDEX
+
+SOURCE TYPE: CATALOGUE_CARD_ONLY
+
+SOURCE SCREENSHOT FILENAME(S): Screenshot 2026-04-12 at 22.25.19.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.25.19.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-004
+
+REMAINING UNCERTAINTY MARKERS: 0
+
+CORRECTION NOTE: No screenshot text was changed. The complete visible card is reliable despite being short. Its Full Time attendance is preserved because the screenshot is authoritative. The structured catalogue contains only a separate Part Time Professional English record and is not used to overwrite this card.
+
+COMPLETE EXTRACTED COURSE TEXT
+
+Full Time
+English
+Professional English
+....
+25 students
+06 Month
+View

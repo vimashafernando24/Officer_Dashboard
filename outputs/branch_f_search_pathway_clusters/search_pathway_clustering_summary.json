@@ -1,0 +1,73 @@
+{
+  "cohort": {
+    "records": 81,
+    "branch": "F",
+    "strict_final_branch_records": 82,
+    "excluded_routing_integrity_records": 1
+  },
+  "dimension": "transition-to-work search pathway and barriers",
+  "clustering_features": [
+    "registered_as_jobseeker",
+    "employment_service_help_f",
+    "jobs_applied_before_hire",
+    "interviews_before_hire",
+    "search_duration_before_hire",
+    "obstacle_finding_this_job"
+  ],
+  "descriptors": [
+    "reason_refused_job_f",
+    "acceptance_conditions_search",
+    "had_min_wage_during_search",
+    "willing_to_relocate_f"
+  ],
+  "method": {
+    "distance": "equal-weight mixed Gower on six questionnaire indicators; counts use log1p",
+    "selected_k": 2,
+    "ensemble": "K-medoids plus spectral consensus",
+    "base_partitions": 200
+  },
+  "profiles": {
+    "sizes": {
+      "1": 48,
+      "2": 33
+    },
+    "names": {
+      "1": "Rejected diagnostic profile 1",
+      "2": "Rejected diagnostic profile 2"
+    }
+  },
+  "metrics": {
+    "gower_silhouette": 0.16461080255180396,
+    "consensus_distance_silhouette": 0.6205970218001067,
+    "ensemble_bootstrap_ari_mean": 0.5315649792504964,
+    "ensemble_bootstrap_ari_p10": 0.049794363631345054,
+    "ari_vs_full_kmedoids": 1.0,
+    "ari_vs_full_spectral": 0.03793103448275862,
+    "ari_vs_hac_average": 0.03793103448275862,
+    "ari_vs_hac_complete": 0.03793103448275862,
+    "minimum_profile_size": 33,
+    "low_gower_confidence_percent": 35.80246913580247,
+    "ambiguous_consensus_percent": 27.160493827160494,
+    "pac_10_90": 0.553395061728395,
+    "candidate_pac_rank_all": 3.0,
+    "ari_raw_count_encoding": 0.9023753947549087
+  },
+  "decision": {
+    "retained_for_clustering": false,
+    "diagnostic_partition_only": true,
+    "primary_checks_passed": false,
+    "checks_passed": 3,
+    "checks_total": 8,
+    "status": "No sufficiently robust search-pathway/barriers segmentation found"
+  },
+  "limitations": [
+    "These are exploratory search-pathway response profiles, not a validated search-difficulty scale.",
+    "Applications and interviews are self-reported approximate counts; four records have interviews exceeding applications and are flagged but not automatically removed.",
+    "Log1p count preprocessing limits domination by the applications maximum of 300; raw-count sensitivity is reported separately.",
+    "Main obstacle is nominal, so no severity ordering is imposed across qualitatively different barriers.",
+    "The selected diagnostic k=2 had Gower silhouette 0.165, ensemble bootstrap mean ARI 0.532, and spectral agreement ARI 0.038.",
+    "Raw-versus-log count encoding agreement was ARI 0.902, so preprocessing choice does not explain the broader instability.",
+    "PAC is reported comparatively across k=2 to k=4; no universal absolute PAC pass/fail cutoff is imposed.",
+    "The one routing-corrupted final-Branch-F record is excluded from this employment analysis."
+  ]
+}

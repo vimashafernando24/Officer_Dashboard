@@ -1,0 +1,5 @@
+variable,observed,missing,unique_observed_responses,dominant_response,dominant_response_percent
+reason_not_in_labour_force,56,0,13,Currently in education or training,25.0
+ever_worked,56,0,2,Yes — I have worked before,60.71428571428571
+wants_to_work_future,56,0,2,Yes — I want to work at some point,71.42857142857143
+wants_further_edu,56,0,3,Yes,57.14285714285714

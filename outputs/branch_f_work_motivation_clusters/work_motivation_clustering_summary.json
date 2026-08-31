@@ -1,0 +1,74 @@
+{
+  "cohort": {
+    "records": 81,
+    "branch": "F",
+    "strict_final_branch_records": 82,
+    "excluded_routing_integrity_records": 1
+  },
+  "dimension": "work motivation and psychological need experience",
+  "clustering_features": [
+    "work_autonomy",
+    "competence_growth_at_work",
+    "relatedness_at_work",
+    "work_motivation_type"
+  ],
+  "descriptors": [
+    "job_satisfaction",
+    "hopes_to_change_job",
+    "job_security_12months",
+    "received_training"
+  ],
+  "method": {
+    "distance": "equal-weight mixed Gower on four questionnaire indicators",
+    "selected_k": 3,
+    "ensemble": "K-medoids plus spectral consensus",
+    "base_partitions": 200
+  },
+  "profiles": {
+    "sizes": {
+      "1": 36,
+      "2": 28,
+      "3": 17
+    },
+    "names": {
+      "1": "Rejected diagnostic profile 1",
+      "2": "Rejected diagnostic profile 2",
+      "3": "Rejected diagnostic profile 3"
+    }
+  },
+  "metrics": {
+    "gower_silhouette": 0.4512250127812743,
+    "consensus_distance_silhouette": 0.8800031250944825,
+    "ensemble_bootstrap_ari_mean": 0.9863527605527088,
+    "ensemble_bootstrap_ari_p10": 0.9650070783402788,
+    "ari_vs_full_kmedoids": 1.0,
+    "ari_vs_full_spectral": 0.3300747556066705,
+    "ari_vs_hac_average": 1.0,
+    "ari_vs_hac_complete": 1.0,
+    "minimum_profile_size": 17,
+    "low_gower_confidence_percent": 13.580246913580247,
+    "ambiguous_consensus_percent": 13.580246913580247,
+    "pac_10_90": 0.42592592592592593,
+    "candidate_pac_rank_all": 1.0,
+    "ari_nominal_motivation_encoding": 0.24825217711271924
+  },
+  "decision": {
+    "retained_for_clustering": false,
+    "diagnostic_partition_only": true,
+    "primary_checks_passed": false,
+    "checks_passed": 6,
+    "checks_total": 8,
+    "status": "No sufficiently robust work-motivation/psychological-needs segmentation found"
+  },
+  "limitations": [
+    "These are exploratory work-motivation/psychological-needs response profiles, not validated SDT subscales.",
+    "Each SDT construct is represented by one survey item, so no reliability coefficient or total SDT score is claimed.",
+    "The motivation-type continuum is theoretically ordered; a nominal-encoding sensitivity result is reported separately.",
+    "High need-experience responses are strongly dominant in this sample, which can leave small contrasting groups.",
+    "No k=2 to k=4 candidate met the minimum-profile-size rule across both source algorithms.",
+    "For diagnostic k=3, K-medoids and spectral agreement was ARI 0.330, below the cross-method requirement.",
+    "Treating motivation type as nominal produced only ARI 0.248 agreement with the ordinal-continuum result, so the apparent profiles are encoding-sensitive.",
+    "PAC is reported comparatively across k=2 to k=4; no universal absolute PAC pass/fail cutoff is imposed.",
+    "The one routing-corrupted final-Branch-F record is excluded from this employment analysis."
+  ]
+}

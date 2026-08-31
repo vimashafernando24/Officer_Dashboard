@@ -1,0 +1,3 @@
+profile_id,profile_label,records,mean_gower_silhouette,mean_consensus_silhouette,percent
+1,Diagnostic household-economic response profile 1,22,0.15300611825543026,0.48601166536410484,64.70588235294117
+2,Diagnostic household-economic response profile 2,12,0.44753839653263244,0.8606130084454238,35.294117647058826

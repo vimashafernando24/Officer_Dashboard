@@ -1,0 +1,5 @@
+feature,source_variables,type,observed,missing,maximum_distance_weight
+reason_not_in_labour_force,reason_not_in_labour_force,nominal,56,0,0.25
+ever_worked,ever_worked,nominal,56,0,0.25
+wants_to_work_future,wants_to_work_future,nominal,56,0,0.25
+wants_further_edu,wants_further_edu,nominal,56,0,0.25

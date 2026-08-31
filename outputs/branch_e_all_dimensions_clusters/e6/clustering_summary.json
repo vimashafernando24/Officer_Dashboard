@@ -1,0 +1,123 @@
+{
+  "dimension_code": "E6",
+  "dimension_name": "Educational and inherited cultural capital",
+  "records": 34,
+  "source_variables": [
+    "father_edu",
+    "mother_edu",
+    "edu_status",
+    "worked_while_studying"
+  ],
+  "clustering_features": [
+    "father_edu",
+    "mother_edu",
+    "edu_status",
+    "worked_while_studying"
+  ],
+  "feature_types": {
+    "father_edu": "ordinal",
+    "mother_edu": "ordinal",
+    "edu_status": "nominal",
+    "worked_while_studying": "binary"
+  },
+  "profile_sizes": {
+    "1": 24,
+    "2": 10
+  },
+  "profile_labels": {
+    "1": "Diagnostic: did not work while studying",
+    "2": "Diagnostic: worked while studying"
+  },
+  "profile_modes": [
+    {
+      "profile_id": 1,
+      "variable": "edu_status",
+      "response": "Currently in higher education (degree or diploma)",
+      "records": 18,
+      "within_profile_percent": 75.0
+    },
+    {
+      "profile_id": 1,
+      "variable": "father_edu",
+      "response": "A/L level (Grade 12\u201313)",
+      "records": 6,
+      "within_profile_percent": 25.0
+    },
+    {
+      "profile_id": 1,
+      "variable": "mother_edu",
+      "response": "O/L level (Grade 9\u201311)",
+      "records": 8,
+      "within_profile_percent": 33.333333333333336
+    },
+    {
+      "profile_id": 1,
+      "variable": "worked_while_studying",
+      "response": "No",
+      "records": 24,
+      "within_profile_percent": 100.0
+    },
+    {
+      "profile_id": 2,
+      "variable": "edu_status",
+      "response": "Currently in higher education (degree or diploma)",
+      "records": 7,
+      "within_profile_percent": 70.0
+    },
+    {
+      "profile_id": 2,
+      "variable": "father_edu",
+      "response": "Diploma",
+      "records": 4,
+      "within_profile_percent": 40.0
+    },
+    {
+      "profile_id": 2,
+      "variable": "mother_edu",
+      "response": "A/L level (Grade 12\u201313)",
+      "records": 4,
+      "within_profile_percent": 40.0
+    },
+    {
+      "profile_id": 2,
+      "variable": "worked_while_studying",
+      "response": "Yes",
+      "records": 10,
+      "within_profile_percent": 100.0
+    }
+  ],
+  "metrics": {
+    "gower_silhouette": 0.5845723108660765,
+    "consensus_silhouette": 1.0,
+    "source_minimum_cluster_size": 10,
+    "final_minimum_cluster_size": 10,
+    "kmedoids_subsample_stability_mean": 1.0,
+    "spectral_subsample_stability_mean": 1.0,
+    "ensemble_bootstrap_ari_mean": 1.0,
+    "ensemble_bootstrap_ari_p10": 1.0,
+    "ari_vs_full_kmedoids": 1.0,
+    "ari_vs_full_spectral": 1.0,
+    "maximum_single_feature_ari": 1.0,
+    "dominant_single_feature": "worked_while_studying",
+    "minimum_leave_one_feature_out_ari": -0.0018840153076243745,
+    "ambiguous_consensus_percent": 0.0,
+    "low_gower_confidence_percent": 0.0,
+    "pac_10_90": 0.0,
+    "permutation_valid_repetitions": 0,
+    "permutation_null_p95": null,
+    "empirical_permutation_p": NaN,
+    "raw_vs_log_count_encoding_minimum_ari": null,
+    "structural_resource_only_ari": null
+  },
+  "automatic_screen_pass": false,
+  "checks_passed": 6,
+  "checks_total": 10,
+  "decision": "reject",
+  "limitations": [
+    "Branch E contains only 34 strict respondents, so only k=2 can satisfy the minimum profile size of 15.",
+    "No dimension score or psychometric scale is constructed.",
+    "PAC is reported descriptively because there is only one eligible candidate k.",
+    "Automatic screening does not replace single-feature and leave-one-feature-out substantive review.",
+    "A retained result with leave-one-feature-out ARI below 0.10 is explicitly marked feature-dependent and must be interpreted around its central indicator rather than as a broad latent scale."
+  ]
+}

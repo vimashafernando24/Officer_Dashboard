@@ -1,0 +1,18 @@
+profile_id,variable,response,records,within_profile_percent
+1,past_edu_usefulness,Do not know,2,11.11111111111111
+1,past_edu_usefulness,Not useful — little relevance to jobs I am looking for,1,5.555555555555555
+1,past_edu_usefulness,"Very useful — directly relevant, employers value it",15,83.33333333333333
+2,past_edu_usefulness,Do not know,1,6.25
+2,past_edu_usefulness,Somewhat useful — helps to some extent,15,93.75
+1,plans_further_edu,Do not know yet,1,5.555555555555555
+1,plans_further_edu,Yes,17,94.44444444444444
+2,plans_further_edu,Do not know yet,3,18.75
+2,plans_further_edu,No,3,18.75
+2,plans_further_edu,Yes,10,62.5
+1,expected_highest_edu_e,Bachelor's degree,6,33.333333333333336
+1,expected_highest_edu_e,Post-graduate degree,12,66.66666666666667
+2,expected_highest_edu_e,Bachelor's degree,5,31.25
+2,expected_highest_edu_e,Diploma,3,18.75
+2,expected_highest_edu_e,O/L level,1,6.25
+2,expected_highest_edu_e,Post-graduate degree,6,37.5
+2,expected_highest_edu_e,Vocational certificate or NVQ,1,6.25

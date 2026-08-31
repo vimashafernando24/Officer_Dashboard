@@ -1,0 +1,5 @@
+omitted_feature,minimum_pair_coverage,ari_reduced_vs_diagnostic_kmedoids,reduced_minimum_cluster_size
+father_edu,2,1.0,21
+mother_edu,2,0.8471698113207548,20
+edu_status,1,0.5714285714285714,18
+worked_while_studying,1,0.24317617866004962,33

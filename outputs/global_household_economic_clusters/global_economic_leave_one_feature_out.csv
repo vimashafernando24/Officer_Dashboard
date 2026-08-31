@@ -1,0 +1,5 @@
+omitted_feature,retained_features,minimum_pair_coverage,clusters_recovered,gower_silhouette_reduced_kmedoids,ari_reduced_kmedoids_vs_final_consensus
+household_income,3,1,2,0.2981105897071135,0.011106926489486012
+household_size,3,0,1,,0.0
+household_workers,3,1,2,0.23772076403069892,0.011106926489486012
+household_unemployed,3,1,2,0.23018681960424872,0.004715341522685235

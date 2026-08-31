@@ -1,0 +1,3 @@
+satisfaction_mobility_profile_id,satisfaction_mobility_profile_label,records,low_gower_confidence_records,mean_gower_silhouette,mean_consensus_silhouette,percent
+1,"Satisfied, staying or undecided",34,0,0.5100241837833949,0.8070031742188074,41.97530864197531
+2,Mostly satisfied but change-oriented,47,1,0.6087315781863707,0.9298103781866227,58.02469135802469

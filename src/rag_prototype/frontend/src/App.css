@@ -113,7 +113,7 @@ input[type="number"] {
   background: var(--surface);
   color: var(--ink);
   font-family: "JetBrains Mono", monospace;
-  font-size: 15px;
+  font-size: 17px;
   transition: border-color 0.14s ease, box-shadow 0.14s ease;
 }
 
@@ -139,7 +139,7 @@ button.btn-ghost {
   border-radius: 14px;
   padding: 12px 21px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
   transition: transform 0.14s ease, background 0.14s ease, border-color 0.14s ease, box-shadow 0.14s ease;
 }
@@ -188,7 +188,7 @@ button.btn-ghost:hover {
   background: var(--yc-warning-soft);
   color: #75492f;
   padding: 13px 16px;
-  font-size: 13px;
+  font-size: 15.5px;
   line-height: 1.65;
   margin-bottom: 18px;
 }
@@ -1307,9 +1307,9 @@ button.btn-ghost:hover {
 .q-label {
   margin-bottom: 10px;
   color: var(--ink);
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.5;
+  font-size: 17px;
+  font-weight: 750;
+  line-height: 1.55;
 }
 
 .sector-skill-group {
@@ -1321,10 +1321,10 @@ button.btn-ghost:hover {
 }
 
 .sector-skill-heading { margin-bottom: 13px; }
-.sector-skill-heading span { color: var(--yc-orange-deep); font: 800 9px "JetBrains Mono", monospace; letter-spacing: .08em; text-transform: uppercase; }
-.sector-skill-heading h3 { margin: 3px 0 3px; font: 500 25px/1.1 "Instrument Serif", serif; }
-.sector-skill-heading p { margin: 0; color: var(--yc-muted); font-size: 11px; }
-.preference-note { padding: 13px 15px; border-radius: 14px; background: var(--yc-green-soft); color: var(--yc-green-deep); font-size: 13px; }
+.sector-skill-heading span { color: var(--yc-orange-deep); font: 800 12px var(--yc-font-reading); letter-spacing: .08em; text-transform: uppercase; }
+.sector-skill-heading h3 { margin: 5px 0 5px; font: 750 24px/1.25 var(--yc-font-reading); }
+.sector-skill-heading p { margin: 0; color: var(--yc-muted); font-size: 14px; line-height: 1.55; }
+.preference-note { padding: 13px 15px; border-radius: 14px; background: var(--yc-green-soft); color: var(--yc-green-deep); font-size: 15.5px; line-height: 1.6; }
 
 .q-model-badge {
   margin: 28px 0 10px;
@@ -1332,7 +1332,7 @@ button.btn-ghost:hover {
   border-top: 1px solid var(--line-soft);
   color: var(--yc-green-deep);
   font-family: "JetBrains Mono", monospace;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;

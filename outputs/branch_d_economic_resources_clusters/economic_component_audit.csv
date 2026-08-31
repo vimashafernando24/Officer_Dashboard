@@ -1,0 +1,7 @@
+component,type,source,observed,missing,maximum_distance_weight
+household_income_position,ordinal,household_income,162,29,0.16666666666666666
+household_worker_share,continuous proportion,household_workers / household_size,186,5,0.16666666666666666
+household_unemployed_share,continuous proportion,household_unemployed / household_size,186,5,0.16666666666666666
+primary_earner_responsibility,ordinal,primary_earner_status,191,0,0.16666666666666666
+primary_income_source,nominal,primary_income_source,191,0,0.16666666666666666
+education_funding_source,nominal,edu_funding_source,191,0,0.16666666666666666

@@ -1,0 +1,92 @@
+{
+  "cohort": {
+    "records": 56,
+    "branch": "G",
+    "routing_source": "translated_final_active_branch",
+    "strict_final_branch_records": 56,
+    "excluded_routing_integrity_records": 0
+  },
+  "dimension": "household economic resources and dependency",
+  "source_variables": [
+    "household_income",
+    "household_size",
+    "household_workers",
+    "household_unemployed",
+    "primary_earner_status",
+    "primary_income_source"
+  ],
+  "clustering_components": [
+    "household_income_position",
+    "household_worker_share",
+    "household_unemployed_share",
+    "primary_earner_responsibility",
+    "primary_income_source"
+  ],
+  "data_quality": {
+    "income_prefer_not_to_say": 3,
+    "household_count_conflicts": 5,
+    "respondents_with_fewer_than_three_observed_components": 0,
+    "minimum_pair_feature_coverage": 2
+  },
+  "method": {
+    "distance": "equal-weight missing-aware mixed Gower on five components derived from six original survey variables",
+    "candidate_k": [
+      2,
+      3,
+      4
+    ],
+    "selected_k": 2,
+    "ensemble": "equal-weight K-medoids plus spectral consensus",
+    "base_partitions": 200,
+    "permutation_repetitions": 100,
+    "pac_policy": "comparative only; no universal absolute cutoff"
+  },
+  "profiles": {
+    "sizes": {
+      "1": 41,
+      "2": 15
+    },
+    "names": {
+      "1": "Predominantly family/partner-supported non-provider",
+      "2": "Predominantly self-income provider/contributor"
+    }
+  },
+  "metrics": {
+    "gower_silhouette": 0.37168009937936247,
+    "consensus_distance_silhouette": 0.9045752965868328,
+    "ensemble_bootstrap_ari_mean": 1.0,
+    "ensemble_bootstrap_ari_p10": 1.0,
+    "ari_vs_full_kmedoids": 0.8538167435728411,
+    "ari_vs_full_spectral": 0.718461876510657,
+    "ari_vs_consensus_hac_average": 1.0,
+    "ari_vs_consensus_hac_complete": 1.0,
+    "structural_resource_only_sensitivity_ari": -0.01590845660061401,
+    "minimum_leave_one_feature_out_ari": 0.3563218390804598,
+    "maximum_single_feature_ari": 0.6396255850234009,
+    "dominant_single_feature": "primary_income_source",
+    "minimum_profile_size": 15,
+    "low_gower_confidence_percent": 10.714285714285714,
+    "ambiguous_consensus_percent": 3.571428571428571,
+    "pac_10_90": 0.2681818181818182,
+    "observed_maximum_kmedoids_silhouette": 0.34562232869831966,
+    "permutation_null_maximum_silhouette_median": 0.2755206145908743,
+    "permutation_null_maximum_silhouette_p95": 0.3099673225301872,
+    "empirical_permutation_p": 0.011764705882352941
+  },
+  "decision": {
+    "retained_for_clustering": true,
+    "checks_passed": 9,
+    "checks_total": 9,
+    "status": "Retained as an exploratory household economic role/dependency segmentation; not interpreted as resource level alone"
+  },
+  "limitations": [
+    "These are exploratory household-economic response profiles, not validated economic-capital classes.",
+    "Household size is used as a denominator for worker/unemployed shares rather than receiving an additional distance weight.",
+    "Income prefer-not-to-say is pairwise unavailable rather than ranked as an income level.",
+    "Respondents with fewer than three usable components after income refusal/count checks are retained and explicitly flagged rather than imputed or deleted.",
+    "Primary income source is nominal and may create a direct job-versus-family-support split; single-feature and structural-only sensitivity are reported.",
+    "The structural-resource-only partition has ARI near zero with the final profiles, so the result must be interpreted mainly as household economic role/dependency, not as low-versus-high household resources.",
+    "Permutation calibration tests whether the selected structure exceeds independently shuffled variables, but it does not establish theoretical construct validity.",
+    "The Branch G sample contains only 56 valid respondents; confirmation in additional data is required."
+  ]
+}

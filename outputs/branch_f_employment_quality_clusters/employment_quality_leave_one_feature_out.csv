@@ -1,0 +1,7 @@
+omitted_feature,retained_features,minimum_pair_coverage,gower_silhouette_reduced_kmedoids,ari_reduced_kmedoids_vs_final_consensus
+contract_type,5,5,0.2515422214209604,0.6807820240698579
+monthly_income_band,5,5,0.28431645344276524,0.7030378794773563
+income_hours_preference,5,5,0.3928267066162644,0.29801383819610827
+job_satisfaction,5,5,0.2931690504421428,0.798391400522084
+job_security_12months,5,5,0.30180536554710513,0.7253209973463787
+sector_formality,5,5,0.3018856572061939,0.798391400522084

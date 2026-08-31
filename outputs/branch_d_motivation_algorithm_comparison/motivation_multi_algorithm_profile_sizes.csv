@@ -1,0 +1,18 @@
+algorithm,algorithm_label,selected_k,profile_id,records,percent
+kmedoids,K-medoids (Gower),3,1,46,24.083769633507853
+kmedoids,K-medoids (Gower),3,2,77,40.31413612565445
+kmedoids,K-medoids (Gower),3,3,68,35.602094240837694
+hac_average,HAC average-link (Gower),4,1,2,1.0471204188481675
+hac_average,HAC average-link (Gower),4,2,1,0.5235602094240838
+hac_average,HAC average-link (Gower),4,3,48,25.130890052356023
+hac_average,HAC average-link (Gower),4,4,140,73.29842931937172
+hac_complete,HAC complete-link (Gower),2,1,48,25.130890052356023
+hac_complete,HAC complete-link (Gower),2,2,143,74.86910994764398
+spectral,Spectral (Gower affinity),4,1,44,23.036649214659686
+spectral,Spectral (Gower affinity),4,2,56,29.319371727748692
+spectral,Spectral (Gower affinity),4,3,28,14.659685863874346
+spectral,Spectral (Gower affinity),4,4,63,32.98429319371728
+kmeans,K-means (normalized ordinal),2,1,73,38.21989528795812
+kmeans,K-means (normalized ordinal),2,2,118,61.78010471204188
+gmm,Gaussian mixture (normalized ordinal),2,1,87,45.54973821989529
+gmm,Gaussian mixture (normalized ordinal),2,2,104,54.45026178010471

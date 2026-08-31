@@ -1,0 +1,85 @@
+{
+  "cohort": {
+    "records": 56,
+    "branch": "G",
+    "routing_source": "translated_final_active_branch",
+    "strict_final_branch_records": 56,
+    "excluded_routing_integrity_records": 0
+  },
+  "dimension": "psychological readiness and support for engagement",
+  "source_variables": [
+    "future_orientation_g",
+    "employment_self_efficacy",
+    "support_for_engagement"
+  ],
+  "clustering_components": [
+    "future_orientation_g",
+    "employment_self_efficacy",
+    "support_for_engagement"
+  ],
+  "data_quality": {
+    "respondents_with_fewer_than_three_observed_components": 0,
+    "minimum_pair_feature_coverage": 3
+  },
+  "method": {
+    "distance": "equal-weight Gower on three original four-level ordered survey responses",
+    "candidate_k": [
+      2,
+      3,
+      4
+    ],
+    "selected_k": 2,
+    "ensemble": "equal-weight K-medoids plus spectral consensus",
+    "base_partitions": 200,
+    "permutation_repetitions": 100,
+    "pac_policy": "comparative only; no universal absolute cutoff",
+    "candidate_size_eligible": false
+  },
+  "profiles": {
+    "sizes": {
+      "1": 45,
+      "2": 11
+    },
+    "names": {
+      "1": "Diagnostic: more direction, confidence and support",
+      "2": "Diagnostic: lost, low-confidence and low-support"
+    }
+  },
+  "metrics": {
+    "gower_silhouette": 0.5389508108636275,
+    "consensus_distance_silhouette": 0.8150363762855353,
+    "ensemble_bootstrap_ari_mean": 0.9840492321943602,
+    "ensemble_bootstrap_ari_p10": 0.9195402298850575,
+    "ari_vs_full_kmedoids": 0.5900439238653001,
+    "ari_vs_full_spectral": 1.0,
+    "ari_vs_consensus_hac_average": 1.0,
+    "ari_vs_consensus_hac_complete": 1.0,
+    "minimum_leave_one_feature_out_ari": -0.016869728209934397,
+    "maximum_single_feature_ari": 0.23244755244755244,
+    "dominant_single_feature": "future_orientation_g",
+    "minimum_profile_size": 11,
+    "low_gower_confidence_percent": 5.357142857142857,
+    "ambiguous_consensus_percent": 10.714285714285714,
+    "pac_10_90": 0.561038961038961,
+    "observed_maximum_kmedoids_silhouette": 0.5112063540777966,
+    "permutation_null_maximum_silhouette_median": 0.3286360612378221,
+    "permutation_null_maximum_silhouette_p95": 0.3830293476885002,
+    "empirical_permutation_p": 0.009900990099009901
+  },
+  "decision": {
+    "retained_for_clustering": false,
+    "checks_passed": 7,
+    "checks_total": 10,
+    "status": "No sufficiently robust Branch G psychological readiness/support segmentation found",
+    "diagnostic_only": true
+  },
+  "limitations": [
+    "These are exploratory readiness/support response profiles, not diagnoses or validated psychological classes.",
+    "Each construct is represented by one survey item; the analysis does not create or validate an SDT scale.",
+    "Equal spacing between the four ordered response categories is a transparent distance assumption, not a psychometric finding.",
+    "Leave-one-feature-out and single-feature checks are essential because only three questions enter the distance.",
+    "If no candidate satisfies the cross-algorithm minimum-size rule, the selected solution is retained only to diagnose the rejection and must not be used as a profile classification.",
+    "Permutation calibration tests whether the selected structure exceeds independently shuffled variables, but it does not establish theoretical construct validity.",
+    "The Branch G sample contains only 56 valid respondents; confirmation in additional data is required."
+  ]
+}

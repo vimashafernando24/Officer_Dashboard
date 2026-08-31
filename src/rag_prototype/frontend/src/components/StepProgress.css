@@ -8,7 +8,38 @@
 }
 
 .step-item {
+  appearance: none;
   min-width: 0;
+  padding: 3px 2px 5px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  font: inherit;
+  text-align: left;
+}
+
+.step-item.reviewable {
+  cursor: pointer;
+}
+
+.step-item.locked {
+  cursor: default;
+}
+
+.step-item.reviewable:hover {
+  background: rgba(101, 141, 109, 0.07);
+}
+
+.step-item.reviewable:hover .step-label {
+  color: var(--yc-green-deep);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.step-item.reviewable:focus-visible {
+  outline: 2px solid var(--yc-green);
+  outline-offset: 3px;
 }
 
 .step-dot {
@@ -29,13 +60,18 @@
   box-shadow: 0 0 0 3px rgba(210, 141, 70, 0.12);
 }
 
+.step-dot.reached {
+  background: var(--yc-green);
+  opacity: 0.72;
+}
+
 .step-label {
   display: block;
   overflow: hidden;
   color: var(--ink-faint);
-  font-family: "JetBrains Mono", monospace;
-  font-size: 9px;
-  font-weight: 600;
+  font-family: var(--yc-font-reading);
+  font-size: 12px;
+  font-weight: 700;
   letter-spacing: 0.035em;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -47,6 +83,10 @@
 }
 
 .step-item.done .step-label {
+  color: var(--yc-green-deep);
+}
+
+.step-item.reached .step-label {
   color: var(--yc-green-deep);
 }
 
@@ -63,6 +103,6 @@
 
   .step-label::after {
     content: attr(data-short-label);
-    font-size: 8px;
+    font-size: 10px;
   }
 }

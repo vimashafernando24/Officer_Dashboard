@@ -1,0 +1,4 @@
+work_motivation_profile_id,work_motivation_profile_label,records,low_gower_confidence_records,mean_gower_silhouette,mean_consensus_silhouette,percent
+1,Rejected diagnostic profile 1,36,0,0.6982417277810883,0.965635215731133,44.44444444444444
+2,Rejected diagnostic profile 2,28,1,0.36188029324329285,0.9153325041630139,34.5679012345679
+3,Rejected diagnostic profile 3,17,10,0.0752868014324611,0.6404750146922298,20.987654320987655

@@ -1,0 +1,4 @@
+consensus_profile_id,consensus_profile_label,records,low_gower_confidence_records,mean_gower_silhouette,mean_consensus_silhouette,percent
+1,"Consensus motivation profile 1: externally or uncertainly motivated, with moderate study support",47,7,0.27019581327668935,0.9618682518516541,24.607329842931936
+2,Consensus motivation profile 2: goal-aligned motivation with mixed study confidence and support,75,37,0.22084342384484254,0.7605113232397783,39.26701570680628
+3,"Consensus motivation profile 3: highly self-directed, capable and connected",69,1,0.5458474005552265,0.9562026100859731,36.12565445026178

@@ -1,0 +1,9 @@
+contract_type__label,"Fully formal — registered employer, written contract, statutory benefits","Fully informal — no documentation, cash only","Mixed — some formal, some informal aspects",Mostly formal — some documentation but not fully compliant
+Do not know,2,0,1,0
+No contract at all,1,2,2,3
+Oral contract — permanent/unlimited,0,0,1,1
+Oral contract — temporary (12–36 months),0,0,0,3
+Oral contract — temporary (under 12 months),0,0,0,2
+Written contract — permanent/unlimited,31,0,5,4
+Written contract — temporary (12–36 months),6,0,4,1
+Written contract — temporary (under 12 months),11,0,1,0

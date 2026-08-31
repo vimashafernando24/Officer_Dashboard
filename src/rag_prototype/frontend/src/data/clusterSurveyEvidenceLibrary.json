@@ -1,0 +1,3730 @@
+{
+  "schema_version": "cluster_survey_evidence_library_v1",
+  "model_count": 7,
+  "finding_count": 39,
+  "retained_source_finding_count": 89,
+  "source_files": {
+    "outputs/final_cluster_profile_comparison_summary.csv": "a47f7b4a8649ddb3611bd7d1f3506a0f246d7ec8562b54b9d20dd70aa8a91bc9",
+    "outputs/final_cluster_programme_relevant_profiles.csv": "4dd1ee377d4fad476d75ff975b4ae4f394b1315d423a359bf797053c6844cd3f",
+    "outputs/nysc_survey_feature_manifest.csv": "be822b2974aafd5b7c64ae7480e6cfff7128bd1844c72a30aab074a74c82e1b9",
+    "outputs/rag_profile_knowledge/profile_document_index.csv": "cce2dc5cd1ed2e089db002c987df1f94765467ac0ee765ab18cd54387c438198",
+    "final_cluster_profiling_report.md": "81ab010a7fbc1b49964f6ac42a8eb5a92ca944f189234331297ff5c42c453051",
+    "NYSC_all_branches_clustering_final_report.md": "1e0def0d40abac9107320da432863bb6f30981f354abbe6f2fec37c8e3fea972",
+    "src/rag_prototype/new_respondent_cluster_assignment.py": "f45715ecbcaf92d70d8d2835d8733f68e3bc055e5a05ecf0de3a9ef8cc82d456",
+    "src/rag_prototype/cluster_catalogue.py": "b11de45baf04495a8f0f84978f317fe701ef9138de9288841e42eb94cc5e030b",
+    "src/rag_prototype/research_wizard_evidence_registry.py": "406a4b631393951373ec9f3dad052c361a97720e6ff8671efd9da9e81d54cf4e"
+  },
+  "models": {
+    "D_motivation": {
+      "dimension_title": "Study motivation",
+      "profiles": [
+        {
+          "profile_key": "D_motivation_p1",
+          "profile_code": "MOT-1",
+          "profile_name": "Qualification-led study",
+          "historical_profile_size": 47
+        },
+        {
+          "profile_key": "D_motivation_p2",
+          "profile_code": "MOT-2",
+          "profile_name": "Goal-led study with developing confidence",
+          "historical_profile_size": 75
+        },
+        {
+          "profile_key": "D_motivation_p3",
+          "profile_code": "MOT-3",
+          "profile_name": "Goal-led, confident and connected study",
+          "historical_profile_size": 69
+        }
+      ],
+      "findings": [
+        {
+          "evidence_id": "D_motivation:employment_network_quality",
+          "source_evidence_ids": [
+            "D_motivation_p1:employment_network_quality",
+            "D_motivation_p2:employment_network_quality",
+            "D_motivation_p3:employment_network_quality"
+          ],
+          "title": "Useful employment/training contacts",
+          "survey_question": "Do you personally know people who could help you find employment or training opportunities?",
+          "question_id": "A21",
+          "evidence_status": "Retained descriptive",
+          "cautions": [],
+          "comparison_type": "retained_category_contrast",
+          "answer_categories": [
+            "No — I have no one I could call on",
+            "Yes — I know several people with useful connections"
+          ],
+          "retained_contrasts": [
+            {
+              "source_evidence_id": "D_motivation_p1:employment_network_quality",
+              "answer": "No — I have no one I could call on",
+              "focus_profile_key": "D_motivation_p1",
+              "profile_values": [
+                {
+                  "profile_key": "D_motivation_p1",
+                  "profile_label": "Qualification-led study",
+                  "count": 13,
+                  "denominator": 47,
+                  "percentage": 27.7
+                },
+                {
+                  "profile_key": null,
+                  "profile_label": "Other sibling profiles collectively",
+                  "count": null,
+                  "denominator": 144,
+                  "percentage": 9.7
+                }
+              ]
+            },
+            {
+              "source_evidence_id": "D_motivation_p2:employment_network_quality",
+              "answer": "Yes — I know several people with useful connections",
+              "focus_profile_key": "D_motivation_p2",
+              "profile_values": [
+                {
+                  "profile_key": "D_motivation_p2",
+                  "profile_label": "Goal-led study with developing confidence",
+                  "count": 12,
+                  "denominator": 75,
+                  "percentage": 16.0
+                },
+                {
+                  "profile_key": null,
+                  "profile_label": "Other sibling profiles collectively",
+                  "count": null,
+                  "denominator": 116,
+                  "percentage": 24.1
+                }
+              ]
+            },
+            {
+              "source_evidence_id": "D_motivation_p3:employment_network_quality",
+              "answer": "Yes — I know several people with useful connections",
+              "focus_profile_key": "D_motivation_p3",
+              "profile_values": [
+                {
+                  "profile_key": "D_motivation_p3",
+                  "profile_label": "Goal-led, confident and connected study",
+                  "count": 21,
+                  "denominator": 69,
+                  "percentage": 30.4
+                },
+                {
+                  "profile_key": null,
+                  "profile_label": "Other sibling profiles collectively",
+                  "count": null,
+                  "denominator": 122,
+                  "percentage": 15.6
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“No — I have no one I could call on” was more common in MOT-1 than in the other profiles collectively."
+        }
+      ]
+    },
+    "D_economic": {
+      "dimension_title": "Household resources",
+      "profiles": [
+        {
+          "profile_key": "D_economic_p1",
+          "profile_code": "RES-1",
+          "profile_name": "Family-supported, government-funded study",
+          "historical_profile_size": 44
+        },
+        {
+          "profile_key": "D_economic_p2",
+          "profile_code": "RES-2",
+          "profile_name": "Family-funded study with more household earners",
+          "historical_profile_size": 147
+        }
+      ],
+      "findings": [
+        {
+          "evidence_id": "D_economic:ideal_sector",
+          "source_evidence_ids": [
+            "D_economic_p1:ideal_sector",
+            "D_economic_p2:ideal_sector"
+          ],
+          "title": "Ideal sector",
+          "survey_question": "Ideally, in which sector or industry do you want to work?",
+          "question_id": "B18",
+          "evidence_status": "FDR-supported",
+          "cautions": [
+            "Some response cells were sparse; interpret the pattern cautiously."
+          ],
+          "comparison_type": "full_categorical_distribution",
+          "answer_categories": [
+            "Information technology and communications",
+            "Manufacturing or production",
+            "Agriculture, forestry, and fishing",
+            "Health, social work, and wellbeing",
+            "Education and teaching",
+            "Not sure",
+            "Finance, banking, and insurance",
+            "Personal services (beauty, fitness, wellness)",
+            "Hotels, restaurants, and hospitality",
+            "Construction and building",
+            "Transport, storage, and logistics",
+            "Creative, media, and arts",
+            "Wholesale, retail, or repair",
+            "Public administration, government, and defence"
+          ],
+          "answer_distribution": [
+            {
+              "answer": "Information technology and communications",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 18,
+                  "denominator": 44,
+                  "percentage": 40.9
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 93,
+                  "denominator": 147,
+                  "percentage": 63.3
+                }
+              ]
+            },
+            {
+              "answer": "Manufacturing or production",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 6,
+                  "denominator": 44,
+                  "percentage": 13.6
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 5,
+                  "denominator": 147,
+                  "percentage": 3.4
+                }
+              ]
+            },
+            {
+              "answer": "Agriculture, forestry, and fishing",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 4,
+                  "denominator": 44,
+                  "percentage": 9.1
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 0,
+                  "denominator": 147,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "Health, social work, and wellbeing",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 3,
+                  "denominator": 44,
+                  "percentage": 6.8
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 2,
+                  "denominator": 147,
+                  "percentage": 1.4
+                }
+              ]
+            },
+            {
+              "answer": "Education and teaching",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 3,
+                  "denominator": 44,
+                  "percentage": 6.8
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 9,
+                  "denominator": 147,
+                  "percentage": 6.1
+                }
+              ]
+            },
+            {
+              "answer": "Not sure",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 3,
+                  "denominator": 44,
+                  "percentage": 6.8
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 17,
+                  "denominator": 147,
+                  "percentage": 11.6
+                }
+              ]
+            },
+            {
+              "answer": "Finance, banking, and insurance",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 2,
+                  "denominator": 44,
+                  "percentage": 4.5
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 7,
+                  "denominator": 147,
+                  "percentage": 4.8
+                }
+              ]
+            },
+            {
+              "answer": "Personal services (beauty, fitness, wellness)",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 2,
+                  "denominator": 44,
+                  "percentage": 4.5
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 0,
+                  "denominator": 147,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "Hotels, restaurants, and hospitality",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 1,
+                  "denominator": 44,
+                  "percentage": 2.3
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 4,
+                  "denominator": 147,
+                  "percentage": 2.7
+                }
+              ]
+            },
+            {
+              "answer": "Construction and building",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 1,
+                  "denominator": 44,
+                  "percentage": 2.3
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 1,
+                  "denominator": 147,
+                  "percentage": 0.7
+                }
+              ]
+            },
+            {
+              "answer": "Transport, storage, and logistics",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 1,
+                  "denominator": 44,
+                  "percentage": 2.3
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 0,
+                  "denominator": 147,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "Creative, media, and arts",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 0,
+                  "denominator": 44,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 5,
+                  "denominator": 147,
+                  "percentage": 3.4
+                }
+              ]
+            },
+            {
+              "answer": "Wholesale, retail, or repair",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 0,
+                  "denominator": 44,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 3,
+                  "denominator": 147,
+                  "percentage": 2.0
+                }
+              ]
+            },
+            {
+              "answer": "Public administration, government, and defence",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 0,
+                  "denominator": 44,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 1,
+                  "denominator": 147,
+                  "percentage": 0.7
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“Information technology and communications” was less common in RES-1 than in RES-2."
+        },
+        {
+          "evidence_id": "D_economic:study_field_preference",
+          "source_evidence_ids": [
+            "D_economic_p1:study_field_preference",
+            "D_economic_p2:study_field_preference"
+          ],
+          "title": "Current or preferred field of study",
+          "survey_question": "What field of study are you in, or would you like to be in?",
+          "question_id": "C7",
+          "evidence_status": "FDR-supported",
+          "cautions": [
+            "Some response cells were sparse; interpret the pattern cautiously."
+          ],
+          "comparison_type": "full_categorical_distribution",
+          "answer_categories": [
+            "Science or mathematics",
+            "ICT or computing",
+            "Engineering",
+            "Other field",
+            "Commerce, business, or management",
+            "Education or teaching",
+            "Health sciences or nursing",
+            "Industrial or technical studies",
+            "Literature, arts, or social sciences"
+          ],
+          "answer_distribution": [
+            {
+              "answer": "Science or mathematics",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 11,
+                  "denominator": 42,
+                  "percentage": 26.2
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 11,
+                  "denominator": 145,
+                  "percentage": 7.6
+                }
+              ]
+            },
+            {
+              "answer": "ICT or computing",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 11,
+                  "denominator": 42,
+                  "percentage": 26.2
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 95,
+                  "denominator": 145,
+                  "percentage": 65.5
+                }
+              ]
+            },
+            {
+              "answer": "Engineering",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 7,
+                  "denominator": 42,
+                  "percentage": 16.7
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 8,
+                  "denominator": 145,
+                  "percentage": 5.5
+                }
+              ]
+            },
+            {
+              "answer": "Other field",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 4,
+                  "denominator": 42,
+                  "percentage": 9.5
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 5,
+                  "denominator": 145,
+                  "percentage": 3.4
+                }
+              ]
+            },
+            {
+              "answer": "Commerce, business, or management",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 4,
+                  "denominator": 42,
+                  "percentage": 9.5
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 13,
+                  "denominator": 145,
+                  "percentage": 9.0
+                }
+              ]
+            },
+            {
+              "answer": "Education or teaching",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 3,
+                  "denominator": 42,
+                  "percentage": 7.1
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 3,
+                  "denominator": 145,
+                  "percentage": 2.1
+                }
+              ]
+            },
+            {
+              "answer": "Health sciences or nursing",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 2,
+                  "denominator": 42,
+                  "percentage": 4.8
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 1,
+                  "denominator": 145,
+                  "percentage": 0.7
+                }
+              ]
+            },
+            {
+              "answer": "Industrial or technical studies",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 0,
+                  "denominator": 42,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 5,
+                  "denominator": 145,
+                  "percentage": 3.4
+                }
+              ]
+            },
+            {
+              "answer": "Literature, arts, or social sciences",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 0,
+                  "denominator": 42,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 4,
+                  "denominator": 145,
+                  "percentage": 2.8
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“ICT or computing” was less common in RES-1 than in RES-2."
+        },
+        {
+          "evidence_id": "D_economic:institution_type",
+          "source_evidence_ids": [
+            "D_economic_p1:institution_type",
+            "D_economic_p2:institution_type"
+          ],
+          "title": "Current institution type",
+          "survey_question": "What type of institution are you currently attending?",
+          "question_id": "BC1",
+          "evidence_status": "FDR-supported",
+          "cautions": [
+            "Some response cells were sparse; interpret the pattern cautiously."
+          ],
+          "comparison_type": "full_categorical_distribution",
+          "answer_categories": [
+            "Government school or state university",
+            "International school or foreign university programme",
+            "Private school or private degree-awarding institute",
+            "Other",
+            "Online or distance learning programme",
+            "Government vocational/technical institute (NYSC, NAITA, VTA, etc.)"
+          ],
+          "answer_distribution": [
+            {
+              "answer": "Government school or state university",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 33,
+                  "denominator": 44,
+                  "percentage": 75.0
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 24,
+                  "denominator": 147,
+                  "percentage": 16.3
+                }
+              ]
+            },
+            {
+              "answer": "International school or foreign university programme",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 5,
+                  "denominator": 44,
+                  "percentage": 11.4
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 9,
+                  "denominator": 147,
+                  "percentage": 6.1
+                }
+              ]
+            },
+            {
+              "answer": "Private school or private degree-awarding institute",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 4,
+                  "denominator": 44,
+                  "percentage": 9.1
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 106,
+                  "denominator": 147,
+                  "percentage": 72.1
+                }
+              ]
+            },
+            {
+              "answer": "Other",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 2,
+                  "denominator": 44,
+                  "percentage": 4.5
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 3,
+                  "denominator": 147,
+                  "percentage": 2.0
+                }
+              ]
+            },
+            {
+              "answer": "Online or distance learning programme",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 0,
+                  "denominator": 44,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 3,
+                  "denominator": 147,
+                  "percentage": 2.0
+                }
+              ]
+            },
+            {
+              "answer": "Government vocational/technical institute (NYSC, NAITA, VTA, etc.)",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 0,
+                  "denominator": 44,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 2,
+                  "denominator": 147,
+                  "percentage": 1.4
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“Private school or private degree-awarding institute” was less common in RES-1 than in RES-2."
+        },
+        {
+          "evidence_id": "D_economic:social_capital_in_edu_access",
+          "source_evidence_ids": [
+            "D_economic_p1:social_capital_in_edu_access",
+            "D_economic_p2:social_capital_in_edu_access"
+          ],
+          "title": "How current programme was accessed",
+          "survey_question": "How did you learn about and gain access to your current programme?",
+          "question_id": "BC3",
+          "evidence_status": "FDR-supported",
+          "cautions": [
+            "Some response cells were sparse; interpret the pattern cautiously."
+          ],
+          "comparison_type": "full_categorical_distribution",
+          "answer_categories": [
+            "I researched and applied entirely on my own initiative",
+            "I was assigned or directed by a government programme",
+            "Family members advised me or guided the choice",
+            "A friend, teacher, or contact recommended it",
+            "My employer or a workplace contact directed me here"
+          ],
+          "answer_distribution": [
+            {
+              "answer": "I researched and applied entirely on my own initiative",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 25,
+                  "denominator": 44,
+                  "percentage": 56.8
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 70,
+                  "denominator": 147,
+                  "percentage": 47.6
+                }
+              ]
+            },
+            {
+              "answer": "I was assigned or directed by a government programme",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 10,
+                  "denominator": 44,
+                  "percentage": 22.7
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 3,
+                  "denominator": 147,
+                  "percentage": 2.0
+                }
+              ]
+            },
+            {
+              "answer": "Family members advised me or guided the choice",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 6,
+                  "denominator": 44,
+                  "percentage": 13.6
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 61,
+                  "denominator": 147,
+                  "percentage": 41.5
+                }
+              ]
+            },
+            {
+              "answer": "A friend, teacher, or contact recommended it",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 2,
+                  "denominator": 44,
+                  "percentage": 4.5
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 11,
+                  "denominator": 147,
+                  "percentage": 7.5
+                }
+              ]
+            },
+            {
+              "answer": "My employer or a workplace contact directed me here",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 1,
+                  "denominator": 44,
+                  "percentage": 2.3
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 2,
+                  "denominator": 147,
+                  "percentage": 1.4
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“Family members advised me or guided the choice” was less common in RES-1 than in RES-2."
+        },
+        {
+          "evidence_id": "D_economic:job_search_method_d",
+          "source_evidence_ids": [
+            "D_economic_p1:job_search_method_d",
+            "D_economic_p2:job_search_method_d"
+          ],
+          "title": "Main job-search method while studying",
+          "survey_question": "How are you mainly looking for a job while still studying?",
+          "question_id": "C3",
+          "evidence_status": "Retained descriptive",
+          "cautions": [
+            "This question used an eligible-subgroup denominator.",
+            "Some response cells were sparse; interpret the pattern cautiously.",
+            "The eligible sample was small."
+          ],
+          "comparison_type": "full_categorical_distribution",
+          "answer_categories": [
+            "Through education or training institution",
+            "Online job ads (internet, social media)",
+            "Direct application to employers",
+            "Attending job fairs",
+            "Placing or answering job advertisements",
+            "Checking at worksites / factory gates",
+            "Private employment agency",
+            "Public employment office registration",
+            "Other method",
+            "Through friends, relatives, or colleagues",
+            "Looking for resources to start own business"
+          ],
+          "answer_distribution": [
+            {
+              "answer": "Through education or training institution",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 7,
+                  "denominator": 22,
+                  "percentage": 31.8
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 8,
+                  "denominator": 89,
+                  "percentage": 9.0
+                }
+              ]
+            },
+            {
+              "answer": "Online job ads (internet, social media)",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 4,
+                  "denominator": 22,
+                  "percentage": 18.2
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 45,
+                  "denominator": 89,
+                  "percentage": 50.6
+                }
+              ]
+            },
+            {
+              "answer": "Direct application to employers",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 3,
+                  "denominator": 22,
+                  "percentage": 13.6
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 6,
+                  "denominator": 89,
+                  "percentage": 6.7
+                }
+              ]
+            },
+            {
+              "answer": "Attending job fairs",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 3,
+                  "denominator": 22,
+                  "percentage": 13.6
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 10,
+                  "denominator": 89,
+                  "percentage": 11.2
+                }
+              ]
+            },
+            {
+              "answer": "Placing or answering job advertisements",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 2,
+                  "denominator": 22,
+                  "percentage": 9.1
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 3,
+                  "denominator": 89,
+                  "percentage": 3.4
+                }
+              ]
+            },
+            {
+              "answer": "Checking at worksites / factory gates",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 1,
+                  "denominator": 22,
+                  "percentage": 4.5
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 4,
+                  "denominator": 89,
+                  "percentage": 4.5
+                }
+              ]
+            },
+            {
+              "answer": "Private employment agency",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 1,
+                  "denominator": 22,
+                  "percentage": 4.5
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 3,
+                  "denominator": 89,
+                  "percentage": 3.4
+                }
+              ]
+            },
+            {
+              "answer": "Public employment office registration",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 1,
+                  "denominator": 22,
+                  "percentage": 4.5
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 0,
+                  "denominator": 89,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "Other method",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 0,
+                  "denominator": 22,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 4,
+                  "denominator": 89,
+                  "percentage": 4.5
+                }
+              ]
+            },
+            {
+              "answer": "Through friends, relatives, or colleagues",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 0,
+                  "denominator": 22,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 3,
+                  "denominator": 89,
+                  "percentage": 3.4
+                }
+              ]
+            },
+            {
+              "answer": "Looking for resources to start own business",
+              "profile_values": [
+                {
+                  "profile_key": "D_economic_p1",
+                  "count": 0,
+                  "denominator": 22,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_economic_p2",
+                  "count": 3,
+                  "denominator": 89,
+                  "percentage": 3.4
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“Online job ads (internet, social media)” was less common in RES-1 than in RES-2."
+        }
+      ]
+    },
+    "D_educational_cultural": {
+      "dimension_title": "Education background",
+      "profiles": [
+        {
+          "profile_key": "D_educational_cultural_p1",
+          "profile_code": "EDU-1",
+          "profile_name": "Education re-entry with graduate family background",
+          "historical_profile_size": 15
+        },
+        {
+          "profile_key": "D_educational_cultural_p2",
+          "profile_code": "EDU-2",
+          "profile_name": "State-study postgraduate pathway",
+          "historical_profile_size": 53
+        },
+        {
+          "profile_key": "D_educational_cultural_p3",
+          "profile_code": "EDU-3",
+          "profile_name": "Private-study bachelor pathway without work exposure",
+          "historical_profile_size": 57
+        },
+        {
+          "profile_key": "D_educational_cultural_p4",
+          "profile_code": "EDU-4",
+          "profile_name": "Private-study bachelor pathway with work exposure",
+          "historical_profile_size": 66
+        }
+      ],
+      "findings": [
+        {
+          "evidence_id": "D_educational_cultural:already_job_searching",
+          "source_evidence_ids": [
+            "D_educational_cultural_p1:already_job_searching",
+            "D_educational_cultural_p2:already_job_searching",
+            "D_educational_cultural_p3:already_job_searching",
+            "D_educational_cultural_p4:already_job_searching"
+          ],
+          "title": "Already searching for work/business",
+          "survey_question": "Have you already started looking for a job or trying to set up a business?",
+          "question_id": "C2",
+          "evidence_status": "FDR-supported",
+          "cautions": [],
+          "comparison_type": "full_categorical_distribution",
+          "answer_categories": [
+            "Yes — I am already searching",
+            "No — not yet"
+          ],
+          "answer_distribution": [
+            {
+              "answer": "Yes — I am already searching",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 12,
+                  "denominator": 15,
+                  "percentage": 80.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 19,
+                  "denominator": 53,
+                  "percentage": 35.8
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 37,
+                  "denominator": 57,
+                  "percentage": 64.9
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 43,
+                  "denominator": 66,
+                  "percentage": 65.2
+                }
+              ]
+            },
+            {
+              "answer": "No — not yet",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 3,
+                  "denominator": 15,
+                  "percentage": 20.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 34,
+                  "denominator": 53,
+                  "percentage": 64.2
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 20,
+                  "denominator": 57,
+                  "percentage": 35.1
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 23,
+                  "denominator": 66,
+                  "percentage": 34.8
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“Yes — I am already searching” was more common in EDU-1 than in the other profiles collectively."
+        },
+        {
+          "evidence_id": "D_educational_cultural:primary_income_source",
+          "source_evidence_ids": [
+            "D_educational_cultural_p1:primary_income_source",
+            "D_educational_cultural_p2:primary_income_source",
+            "D_educational_cultural_p3:primary_income_source",
+            "D_educational_cultural_p4:primary_income_source"
+          ],
+          "title": "Primary personal income source",
+          "survey_question": "Currently, where does most of your money come from?",
+          "question_id": "B19",
+          "evidence_status": "FDR-supported",
+          "cautions": [
+            "Some response cells were sparse; interpret the pattern cautiously."
+          ],
+          "comparison_type": "full_categorical_distribution",
+          "answer_categories": [
+            "My regular job or business",
+            "An education grant, scholarship, or training allowance",
+            "My parents or family",
+            "Other source",
+            "My partner or spouse",
+            "Casual or informal work",
+            "Unemployment or social security benefits"
+          ],
+          "answer_distribution": [
+            {
+              "answer": "My regular job or business",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 8,
+                  "denominator": 15,
+                  "percentage": 53.3
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 0,
+                  "denominator": 53,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 0,
+                  "denominator": 57,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 15,
+                  "denominator": 66,
+                  "percentage": 22.7
+                }
+              ]
+            },
+            {
+              "answer": "An education grant, scholarship, or training allowance",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 3,
+                  "denominator": 15,
+                  "percentage": 20.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 3,
+                  "denominator": 53,
+                  "percentage": 5.7
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 0,
+                  "denominator": 57,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 0,
+                  "denominator": 66,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "My parents or family",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 3,
+                  "denominator": 15,
+                  "percentage": 20.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 50,
+                  "denominator": 53,
+                  "percentage": 94.3
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 56,
+                  "denominator": 57,
+                  "percentage": 98.2
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 40,
+                  "denominator": 66,
+                  "percentage": 60.6
+                }
+              ]
+            },
+            {
+              "answer": "Other source",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 1,
+                  "denominator": 15,
+                  "percentage": 6.7
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 0,
+                  "denominator": 53,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 0,
+                  "denominator": 57,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 3,
+                  "denominator": 66,
+                  "percentage": 4.5
+                }
+              ]
+            },
+            {
+              "answer": "My partner or spouse",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 0,
+                  "denominator": 53,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 1,
+                  "denominator": 57,
+                  "percentage": 1.8
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 1,
+                  "denominator": 66,
+                  "percentage": 1.5
+                }
+              ]
+            },
+            {
+              "answer": "Casual or informal work",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 0,
+                  "denominator": 53,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 0,
+                  "denominator": 57,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 6,
+                  "denominator": 66,
+                  "percentage": 9.1
+                }
+              ]
+            },
+            {
+              "answer": "Unemployment or social security benefits",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 0,
+                  "denominator": 53,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 0,
+                  "denominator": 57,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 1,
+                  "denominator": 66,
+                  "percentage": 1.5
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“My parents or family” was less common in EDU-1 than in the other profiles collectively."
+        },
+        {
+          "evidence_id": "D_educational_cultural:edu_funding_source",
+          "source_evidence_ids": [
+            "D_educational_cultural_p1:edu_funding_source",
+            "D_educational_cultural_p2:edu_funding_source",
+            "D_educational_cultural_p3:edu_funding_source",
+            "D_educational_cultural_p4:edu_funding_source"
+          ],
+          "title": "Main education funding source",
+          "survey_question": "How is your current education mainly funded?",
+          "question_id": "BC2",
+          "evidence_status": "FDR-supported",
+          "cautions": [
+            "Some response cells were sparse; interpret the pattern cautiously."
+          ],
+          "comparison_type": "full_categorical_distribution",
+          "answer_categories": [
+            "Paid for by my family",
+            "Scholarship or grant",
+            "I pay from my own earnings",
+            "Government-funded or free of charge",
+            "Other arrangement",
+            "Employer-sponsored"
+          ],
+          "answer_distribution": [
+            {
+              "answer": "Paid for by my family",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 7,
+                  "denominator": 15,
+                  "percentage": 46.7
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 27,
+                  "denominator": 53,
+                  "percentage": 50.9
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 54,
+                  "denominator": 57,
+                  "percentage": 94.7
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 51,
+                  "denominator": 66,
+                  "percentage": 77.3
+                }
+              ]
+            },
+            {
+              "answer": "Scholarship or grant",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 3,
+                  "denominator": 15,
+                  "percentage": 20.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 1,
+                  "denominator": 53,
+                  "percentage": 1.9
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 2,
+                  "denominator": 57,
+                  "percentage": 3.5
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 2,
+                  "denominator": 66,
+                  "percentage": 3.0
+                }
+              ]
+            },
+            {
+              "answer": "I pay from my own earnings",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 3,
+                  "denominator": 15,
+                  "percentage": 20.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 0,
+                  "denominator": 53,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 0,
+                  "denominator": 57,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 4,
+                  "denominator": 66,
+                  "percentage": 6.1
+                }
+              ]
+            },
+            {
+              "answer": "Government-funded or free of charge",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 2,
+                  "denominator": 15,
+                  "percentage": 13.3
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 24,
+                  "denominator": 53,
+                  "percentage": 45.3
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 1,
+                  "denominator": 57,
+                  "percentage": 1.8
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 6,
+                  "denominator": 66,
+                  "percentage": 9.1
+                }
+              ]
+            },
+            {
+              "answer": "Other arrangement",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 1,
+                  "denominator": 53,
+                  "percentage": 1.9
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 0,
+                  "denominator": 57,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 2,
+                  "denominator": 66,
+                  "percentage": 3.0
+                }
+              ]
+            },
+            {
+              "answer": "Employer-sponsored",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 0,
+                  "denominator": 53,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 0,
+                  "denominator": 57,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 1,
+                  "denominator": 66,
+                  "percentage": 1.5
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“Paid for by my family” was less common in EDU-1 than in the other profiles collectively."
+        },
+        {
+          "evidence_id": "D_educational_cultural:household_income",
+          "source_evidence_ids": [
+            "D_educational_cultural_p1:household_income",
+            "D_educational_cultural_p2:household_income",
+            "D_educational_cultural_p3:household_income",
+            "D_educational_cultural_p4:household_income"
+          ],
+          "title": "Household income band",
+          "survey_question": "What is the approximate total monthly income of your household from all sources?",
+          "question_id": "A17",
+          "evidence_status": "FDR-supported",
+          "cautions": [],
+          "comparison_type": "retained_category_contrast",
+          "answer_categories": [
+            "LKR 60,000 – 120,000",
+            "Above LKR 200,000",
+            "LKR 30,000 – 60,000"
+          ],
+          "retained_contrasts": [
+            {
+              "source_evidence_id": "D_educational_cultural_p1:household_income",
+              "answer": "LKR 60,000 – 120,000",
+              "focus_profile_key": "D_educational_cultural_p1",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "profile_label": "Education re-entry with graduate family background",
+                  "count": 1,
+                  "denominator": 13,
+                  "percentage": 7.7
+                },
+                {
+                  "profile_key": null,
+                  "profile_label": "Other sibling profiles collectively",
+                  "count": null,
+                  "denominator": 149,
+                  "percentage": 24.8
+                }
+              ]
+            },
+            {
+              "source_evidence_id": "D_educational_cultural_p2:household_income",
+              "answer": "Above LKR 200,000",
+              "focus_profile_key": "D_educational_cultural_p2",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "profile_label": "State-study postgraduate pathway",
+                  "count": 5,
+                  "denominator": 49,
+                  "percentage": 10.2
+                },
+                {
+                  "profile_key": null,
+                  "profile_label": "Other sibling profiles collectively",
+                  "count": null,
+                  "denominator": 113,
+                  "percentage": 51.3
+                }
+              ]
+            },
+            {
+              "source_evidence_id": "D_educational_cultural_p3:household_income",
+              "answer": "LKR 30,000 – 60,000",
+              "focus_profile_key": "D_educational_cultural_p3",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "profile_label": "Private-study bachelor pathway without work exposure",
+                  "count": 0,
+                  "denominator": 45,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": null,
+                  "profile_label": "Other sibling profiles collectively",
+                  "count": null,
+                  "denominator": 117,
+                  "percentage": 13.7
+                }
+              ]
+            },
+            {
+              "source_evidence_id": "D_educational_cultural_p4:household_income",
+              "answer": "Above LKR 200,000",
+              "focus_profile_key": "D_educational_cultural_p4",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "profile_label": "Private-study bachelor pathway with work exposure",
+                  "count": 31,
+                  "denominator": 55,
+                  "percentage": 56.4
+                },
+                {
+                  "profile_key": null,
+                  "profile_label": "Other sibling profiles collectively",
+                  "count": null,
+                  "denominator": 107,
+                  "percentage": 29.9
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“Above LKR 200,000” was less common in EDU-2 than in the other profiles collectively."
+        },
+        {
+          "evidence_id": "D_educational_cultural:primary_earner_status",
+          "source_evidence_ids": [
+            "D_educational_cultural_p1:primary_earner_status",
+            "D_educational_cultural_p2:primary_earner_status",
+            "D_educational_cultural_p3:primary_earner_status",
+            "D_educational_cultural_p4:primary_earner_status"
+          ],
+          "title": "Primary-earner status",
+          "survey_question": "Are you the primary income earner in your household?",
+          "question_id": "A20",
+          "evidence_status": "FDR-supported",
+          "cautions": [
+            "Some response cells were sparse; interpret the pattern cautiously."
+          ],
+          "comparison_type": "full_categorical_distribution",
+          "answer_categories": [
+            "No — someone else is the main provider",
+            "Yes — I provide the main household income",
+            "Shared — several people contribute roughly equally"
+          ],
+          "answer_distribution": [
+            {
+              "answer": "No — someone else is the main provider",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 9,
+                  "denominator": 15,
+                  "percentage": 60.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 46,
+                  "denominator": 53,
+                  "percentage": 86.8
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 56,
+                  "denominator": 57,
+                  "percentage": 98.2
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 59,
+                  "denominator": 66,
+                  "percentage": 89.4
+                }
+              ]
+            },
+            {
+              "answer": "Yes — I provide the main household income",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 5,
+                  "denominator": 15,
+                  "percentage": 33.3
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 3,
+                  "denominator": 53,
+                  "percentage": 5.7
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 1,
+                  "denominator": 57,
+                  "percentage": 1.8
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 1,
+                  "denominator": 66,
+                  "percentage": 1.5
+                }
+              ]
+            },
+            {
+              "answer": "Shared — several people contribute roughly equally",
+              "profile_values": [
+                {
+                  "profile_key": "D_educational_cultural_p1",
+                  "count": 1,
+                  "denominator": 15,
+                  "percentage": 6.7
+                },
+                {
+                  "profile_key": "D_educational_cultural_p2",
+                  "count": 4,
+                  "denominator": 53,
+                  "percentage": 7.5
+                },
+                {
+                  "profile_key": "D_educational_cultural_p3",
+                  "count": 0,
+                  "denominator": 57,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "D_educational_cultural_p4",
+                  "count": 6,
+                  "denominator": 66,
+                  "percentage": 9.1
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“No — someone else is the main provider” was less common in EDU-1 than in the other profiles collectively."
+        }
+      ]
+    },
+    "E_learning_orientation": {
+      "dimension_title": "Education and further learning",
+      "profiles": [
+        {
+          "profile_key": "E_learning_orientation_p1",
+          "profile_code": "E-LEARN-1",
+          "profile_name": "High education value and strong learning ambition",
+          "historical_profile_size": 18
+        },
+        {
+          "profile_key": "E_learning_orientation_p2",
+          "profile_code": "E-LEARN-2",
+          "profile_name": "Moderate education value and mixed learning plans",
+          "historical_profile_size": 16
+        }
+      ],
+      "findings": [
+        {
+          "evidence_id": "E_learning_orientation:job_acceptance_conditions",
+          "source_evidence_ids": [
+            "E_learning_orientation_p1:job_acceptance_conditions",
+            "E_learning_orientation_p2:job_acceptance_conditions"
+          ],
+          "title": "Job-acceptance conditions",
+          "survey_question": "If you were offered a job today, which best describes what you would accept?",
+          "question_id": "D11",
+          "evidence_status": "Retained descriptive",
+          "cautions": [],
+          "comparison_type": "retained_category_contrast",
+          "answer_categories": [
+            "Only a job that is stable, well paid, and matches my qualifications"
+          ],
+          "retained_contrasts": [
+            {
+              "source_evidence_id": "E_learning_orientation_p1:job_acceptance_conditions",
+              "answer": "Only a job that is stable, well paid, and matches my qualifications",
+              "focus_profile_key": "E_learning_orientation_p1",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "profile_label": "High education value and strong learning ambition",
+                  "count": 12,
+                  "denominator": 18,
+                  "percentage": 66.7
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "profile_label": "Moderate education value and mixed learning plans",
+                  "count": null,
+                  "denominator": 16,
+                  "percentage": 37.5
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“Only a job that is stable, well paid, and matches my qualifications” was more common in E-LEARN-1 than in E-LEARN-2."
+        },
+        {
+          "evidence_id": "E_learning_orientation:network_helpfulness",
+          "source_evidence_ids": [
+            "E_learning_orientation_p1:network_helpfulness",
+            "E_learning_orientation_p2:network_helpfulness"
+          ],
+          "title": "Helpfulness of job-search contacts",
+          "survey_question": "How helpful have your personal contacts actually been in your job search so far?",
+          "question_id": "BD2",
+          "evidence_status": "Retained descriptive",
+          "cautions": [
+            "Some response cells were sparse; interpret the pattern cautiously."
+          ],
+          "comparison_type": "full_categorical_distribution",
+          "answer_categories": [
+            "Very helpful — I have received real leads and referrals",
+            "Somewhat helpful — useful advice but no direct opportunities yet",
+            "Not helpful at all — I cannot use my connections for this",
+            "Not very helpful — my network has not opened many doors"
+          ],
+          "answer_distribution": [
+            {
+              "answer": "Very helpful — I have received real leads and referrals",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "count": 10,
+                  "denominator": 18,
+                  "percentage": 55.6
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "count": 3,
+                  "denominator": 16,
+                  "percentage": 18.8
+                }
+              ]
+            },
+            {
+              "answer": "Somewhat helpful — useful advice but no direct opportunities yet",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "count": 3,
+                  "denominator": 18,
+                  "percentage": 16.7
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "count": 7,
+                  "denominator": 16,
+                  "percentage": 43.8
+                }
+              ]
+            },
+            {
+              "answer": "Not helpful at all — I cannot use my connections for this",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "count": 3,
+                  "denominator": 18,
+                  "percentage": 16.7
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "count": 0,
+                  "denominator": 16,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "Not very helpful — my network has not opened many doors",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "count": 2,
+                  "denominator": 18,
+                  "percentage": 11.1
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "count": 6,
+                  "denominator": 16,
+                  "percentage": 37.5
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“Very helpful — I have received real leads and referrals” was more common in E-LEARN-1 than in E-LEARN-2."
+        },
+        {
+          "evidence_id": "E_learning_orientation:household_size",
+          "source_evidence_ids": [
+            "E_learning_orientation_p1:household_size",
+            "E_learning_orientation_p2:household_size"
+          ],
+          "title": "Household size",
+          "survey_question": "How many people live in your household in total?",
+          "question_id": "A16",
+          "evidence_status": "Retained descriptive",
+          "cautions": [],
+          "comparison_type": "numeric_summary",
+          "numeric_values": [
+            {
+              "profile_key": "E_learning_orientation_p1",
+              "denominator": 18,
+              "median": 5.0,
+              "iqr": "4.00–5.00"
+            },
+            {
+              "profile_key": "E_learning_orientation_p2",
+              "denominator": 16,
+              "median": 4.0,
+              "iqr": "4.00–5.00"
+            }
+          ],
+          "simple_conclusion": "The typical household size was higher in E-LEARN-1 than in E-LEARN-2."
+        },
+        {
+          "evidence_id": "E_learning_orientation:search_method_primary",
+          "source_evidence_ids": [
+            "E_learning_orientation_p1:search_method_primary",
+            "E_learning_orientation_p2:search_method_primary"
+          ],
+          "title": "Primary recent search method",
+          "survey_question": "What was the most active method you used to look for work in the past four weeks?",
+          "question_id": "D3",
+          "evidence_status": "Retained descriptive",
+          "cautions": [
+            "This question used an eligible-subgroup denominator.",
+            "Some response cells were sparse; interpret the pattern cautiously.",
+            "The eligible sample was small."
+          ],
+          "comparison_type": "full_categorical_distribution",
+          "answer_categories": [
+            "Online job ads (internet, social media)",
+            "Looking for resources to start own business",
+            "Placing or answering job advertisements",
+            "Direct application to employers",
+            "Attending job fairs",
+            "Public employment office registration",
+            "Through education or training institution",
+            "Private employment agency"
+          ],
+          "answer_distribution": [
+            {
+              "answer": "Online job ads (internet, social media)",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "count": 6,
+                  "denominator": 15,
+                  "percentage": 40.0
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "count": 4,
+                  "denominator": 11,
+                  "percentage": 36.4
+                }
+              ]
+            },
+            {
+              "answer": "Looking for resources to start own business",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "count": 5,
+                  "denominator": 15,
+                  "percentage": 33.3
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "count": 0,
+                  "denominator": 11,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "Placing or answering job advertisements",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "count": 3,
+                  "denominator": 15,
+                  "percentage": 20.0
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "count": 0,
+                  "denominator": 11,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "Direct application to employers",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "count": 1,
+                  "denominator": 15,
+                  "percentage": 6.7
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "count": 0,
+                  "denominator": 11,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "Attending job fairs",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "count": 4,
+                  "denominator": 11,
+                  "percentage": 36.4
+                }
+              ]
+            },
+            {
+              "answer": "Public employment office registration",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "count": 1,
+                  "denominator": 11,
+                  "percentage": 9.1
+                }
+              ]
+            },
+            {
+              "answer": "Through education or training institution",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "count": 1,
+                  "denominator": 11,
+                  "percentage": 9.1
+                }
+              ]
+            },
+            {
+              "answer": "Private employment agency",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "count": 1,
+                  "denominator": 11,
+                  "percentage": 9.1
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“Attending job fairs” was less common in E-LEARN-1 than in E-LEARN-2."
+        },
+        {
+          "evidence_id": "E_learning_orientation:social_support_job_search",
+          "source_evidence_ids": [
+            "E_learning_orientation_p1:social_support_job_search",
+            "E_learning_orientation_p2:social_support_job_search"
+          ],
+          "title": "Social support for job search",
+          "survey_question": "How supported do you feel by the people around you in your efforts to find work?",
+          "question_id": "SD3",
+          "evidence_status": "Retained descriptive",
+          "cautions": [],
+          "comparison_type": "retained_category_contrast",
+          "answer_categories": [
+            "Very supported — people actively encourage and assist me"
+          ],
+          "retained_contrasts": [
+            {
+              "source_evidence_id": "E_learning_orientation_p1:social_support_job_search",
+              "answer": "Very supported — people actively encourage and assist me",
+              "focus_profile_key": "E_learning_orientation_p1",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "profile_label": "High education value and strong learning ambition",
+                  "count": 8,
+                  "denominator": 18,
+                  "percentage": 44.4
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "profile_label": "Moderate education value and mixed learning plans",
+                  "count": null,
+                  "denominator": 16,
+                  "percentage": 18.8
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“Very supported — people actively encourage and assist me” was more common in E-LEARN-1 than in E-LEARN-2."
+        },
+        {
+          "evidence_id": "E_learning_orientation:minimum_wage_band",
+          "source_evidence_ids": [
+            "E_learning_orientation_p1:minimum_wage_band",
+            "E_learning_orientation_p2:minimum_wage_band"
+          ],
+          "title": "Minimum acceptable wage band",
+          "survey_question": "What is the approximate minimum monthly income you would need to accept a job?",
+          "question_id": "D12b",
+          "evidence_status": "Retained descriptive",
+          "cautions": [
+            "This question used an eligible-subgroup denominator.",
+            "The eligible sample was small."
+          ],
+          "comparison_type": "retained_category_contrast",
+          "answer_categories": [
+            "LKR 50,000 – 75,000"
+          ],
+          "retained_contrasts": [
+            {
+              "source_evidence_id": "E_learning_orientation_p1:minimum_wage_band",
+              "answer": "LKR 50,000 – 75,000",
+              "focus_profile_key": "E_learning_orientation_p1",
+              "profile_values": [
+                {
+                  "profile_key": "E_learning_orientation_p1",
+                  "profile_label": "High education value and strong learning ambition",
+                  "count": 2,
+                  "denominator": 16,
+                  "percentage": 12.5
+                },
+                {
+                  "profile_key": "E_learning_orientation_p2",
+                  "profile_label": "Moderate education value and mixed learning plans",
+                  "count": null,
+                  "denominator": 12,
+                  "percentage": 41.7
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“LKR 50,000 – 75,000” was less common in E-LEARN-1 than in E-LEARN-2."
+        },
+        {
+          "evidence_id": "E_learning_orientation:num_applications",
+          "source_evidence_ids": [
+            "E_learning_orientation_p1:num_applications",
+            "E_learning_orientation_p2:num_applications"
+          ],
+          "title": "Number of applications",
+          "survey_question": "Since you started looking for work, approximately how many jobs have you applied for?",
+          "question_id": "D15",
+          "evidence_status": "Retained descriptive",
+          "cautions": [],
+          "comparison_type": "numeric_summary",
+          "numeric_values": [
+            {
+              "profile_key": "E_learning_orientation_p1",
+              "denominator": 18,
+              "median": 12.5,
+              "iqr": "10.00–25.75"
+            },
+            {
+              "profile_key": "E_learning_orientation_p2",
+              "denominator": 16,
+              "median": 5.5,
+              "iqr": "2.75–23.50"
+            }
+          ],
+          "simple_conclusion": "The typical number of applications was higher in E-LEARN-1 than in E-LEARN-2."
+        }
+      ]
+    },
+    "F_employment_security": {
+      "dimension_title": "Employment security",
+      "profiles": [
+        {
+          "profile_key": "F_employment_security_p1",
+          "profile_code": "F-SEC-1",
+          "profile_name": "Temporary work with uncertain security",
+          "historical_profile_size": 29
+        },
+        {
+          "profile_key": "F_employment_security_p2",
+          "profile_code": "F-SEC-2",
+          "profile_name": "Permanent work with stronger security",
+          "historical_profile_size": 52
+        }
+      ],
+      "findings": [
+        {
+          "evidence_id": "F_employment_security:monthly_income_band",
+          "source_evidence_ids": [
+            "F_employment_security_p1:monthly_income_band",
+            "F_employment_security_p2:monthly_income_band"
+          ],
+          "title": "Monthly work-income band",
+          "survey_question": "On average, what is your total income from work per month?",
+          "question_id": "E16",
+          "evidence_status": "FDR-supported",
+          "cautions": [],
+          "comparison_type": "retained_category_contrast",
+          "answer_categories": [
+            "Above LKR 200,000"
+          ],
+          "retained_contrasts": [
+            {
+              "source_evidence_id": "F_employment_security_p1:monthly_income_band",
+              "answer": "Above LKR 200,000",
+              "focus_profile_key": "F_employment_security_p1",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "profile_label": "Temporary work with uncertain security",
+                  "count": 1,
+                  "denominator": 29,
+                  "percentage": 3.4
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "profile_label": "Permanent work with stronger security",
+                  "count": null,
+                  "denominator": 52,
+                  "percentage": 36.5
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“Above LKR 200,000” was less common in F-SEC-1 than in F-SEC-2."
+        },
+        {
+          "evidence_id": "F_employment_security:primary_income_source",
+          "source_evidence_ids": [
+            "F_employment_security_p1:primary_income_source",
+            "F_employment_security_p2:primary_income_source"
+          ],
+          "title": "Primary personal income source",
+          "survey_question": "Currently, where does most of your money come from?",
+          "question_id": "B19",
+          "evidence_status": "FDR-supported",
+          "cautions": [
+            "Some response cells were sparse; interpret the pattern cautiously."
+          ],
+          "comparison_type": "full_categorical_distribution",
+          "answer_categories": [
+            "My parents or family",
+            "My regular job or business",
+            "An education grant, scholarship, or training allowance",
+            "Casual or informal work",
+            "Other source"
+          ],
+          "answer_distribution": [
+            {
+              "answer": "My parents or family",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 14,
+                  "denominator": 29,
+                  "percentage": 48.3
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 4,
+                  "denominator": 52,
+                  "percentage": 7.7
+                }
+              ]
+            },
+            {
+              "answer": "My regular job or business",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 11,
+                  "denominator": 29,
+                  "percentage": 37.9
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 45,
+                  "denominator": 52,
+                  "percentage": 86.5
+                }
+              ]
+            },
+            {
+              "answer": "An education grant, scholarship, or training allowance",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 2,
+                  "denominator": 29,
+                  "percentage": 6.9
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 0,
+                  "denominator": 52,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "Casual or informal work",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 1,
+                  "denominator": 29,
+                  "percentage": 3.4
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 2,
+                  "denominator": 52,
+                  "percentage": 3.8
+                }
+              ]
+            },
+            {
+              "answer": "Other source",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 1,
+                  "denominator": 29,
+                  "percentage": 3.4
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 1,
+                  "denominator": 52,
+                  "percentage": 1.9
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“My regular job or business” was less common in F-SEC-1 than in F-SEC-2."
+        },
+        {
+          "evidence_id": "F_employment_security:hopes_to_change_job",
+          "source_evidence_ids": [
+            "F_employment_security_p1:hopes_to_change_job",
+            "F_employment_security_p2:hopes_to_change_job"
+          ],
+          "title": "Hopes to change job",
+          "survey_question": "Do you hope to change your main job in the future?",
+          "question_id": "E18",
+          "evidence_status": "Retained descriptive",
+          "cautions": [],
+          "comparison_type": "full_categorical_distribution",
+          "answer_categories": [
+            "Yes — I want to change",
+            "Not sure",
+            "No — I want to stay in this job"
+          ],
+          "answer_distribution": [
+            {
+              "answer": "Yes — I want to change",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 18,
+                  "denominator": 29,
+                  "percentage": 62.1
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 28,
+                  "denominator": 52,
+                  "percentage": 53.8
+                }
+              ]
+            },
+            {
+              "answer": "Not sure",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 10,
+                  "denominator": 29,
+                  "percentage": 34.5
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 9,
+                  "denominator": 52,
+                  "percentage": 17.3
+                }
+              ]
+            },
+            {
+              "answer": "No — I want to stay in this job",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 1,
+                  "denominator": 29,
+                  "percentage": 3.4
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 15,
+                  "denominator": 52,
+                  "percentage": 28.8
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“No — I want to stay in this job” was less common in F-SEC-1 than in F-SEC-2."
+        },
+        {
+          "evidence_id": "F_employment_security:job_satisfaction",
+          "source_evidence_ids": [
+            "F_employment_security_p1:job_satisfaction",
+            "F_employment_security_p2:job_satisfaction"
+          ],
+          "title": "Overall job satisfaction",
+          "survey_question": "Overall, how satisfied are you with your main job?",
+          "question_id": "E17",
+          "evidence_status": "Retained descriptive",
+          "cautions": [],
+          "comparison_type": "retained_category_contrast",
+          "answer_categories": [
+            "Very satisfied"
+          ],
+          "retained_contrasts": [
+            {
+              "source_evidence_id": "F_employment_security_p1:job_satisfaction",
+              "answer": "Very satisfied",
+              "focus_profile_key": "F_employment_security_p1",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "profile_label": "Temporary work with uncertain security",
+                  "count": 5,
+                  "denominator": 29,
+                  "percentage": 17.2
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "profile_label": "Permanent work with stronger security",
+                  "count": null,
+                  "denominator": 52,
+                  "percentage": 40.4
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“Very satisfied” was less common in F-SEC-1 than in F-SEC-2."
+        },
+        {
+          "evidence_id": "F_employment_security:received_training",
+          "source_evidence_ids": [
+            "F_employment_security_p1:received_training",
+            "F_employment_security_p2:received_training"
+          ],
+          "title": "Received training for current job",
+          "survey_question": "Did you receive any training or development specifically for your current job?",
+          "question_id": "E27",
+          "evidence_status": "Retained descriptive",
+          "cautions": [],
+          "comparison_type": "full_categorical_distribution",
+          "answer_categories": [
+            "Yes",
+            "No"
+          ],
+          "answer_distribution": [
+            {
+              "answer": "Yes",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 20,
+                  "denominator": 29,
+                  "percentage": 69.0
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 45,
+                  "denominator": 52,
+                  "percentage": 86.5
+                }
+              ]
+            },
+            {
+              "answer": "No",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 9,
+                  "denominator": 29,
+                  "percentage": 31.0
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 7,
+                  "denominator": 52,
+                  "percentage": 13.5
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“No” was more common in F-SEC-1 than in F-SEC-2."
+        },
+        {
+          "evidence_id": "F_employment_security:who_paid_training",
+          "source_evidence_ids": [
+            "F_employment_security_p1:who_paid_training",
+            "F_employment_security_p2:who_paid_training"
+          ],
+          "title": "Who paid for training",
+          "survey_question": "Who mainly paid for that training?",
+          "question_id": "E31",
+          "evidence_status": "Retained descriptive",
+          "cautions": [
+            "This question used an eligible-subgroup denominator.",
+            "Some response cells were sparse; interpret the pattern cautiously.",
+            "The eligible sample was small."
+          ],
+          "comparison_type": "full_categorical_distribution",
+          "answer_categories": [
+            "My employer",
+            "Other",
+            "Myself or my family",
+            "The government",
+            "An international organization or donor"
+          ],
+          "answer_distribution": [
+            {
+              "answer": "My employer",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 10,
+                  "denominator": 20,
+                  "percentage": 50.0
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 36,
+                  "denominator": 45,
+                  "percentage": 80.0
+                }
+              ]
+            },
+            {
+              "answer": "Other",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 4,
+                  "denominator": 20,
+                  "percentage": 20.0
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 5,
+                  "denominator": 45,
+                  "percentage": 11.1
+                }
+              ]
+            },
+            {
+              "answer": "Myself or my family",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 3,
+                  "denominator": 20,
+                  "percentage": 15.0
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 3,
+                  "denominator": 45,
+                  "percentage": 6.7
+                }
+              ]
+            },
+            {
+              "answer": "The government",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 2,
+                  "denominator": 20,
+                  "percentage": 10.0
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 0,
+                  "denominator": 45,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "An international organization or donor",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 1,
+                  "denominator": 20,
+                  "percentage": 5.0
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 1,
+                  "denominator": 45,
+                  "percentage": 2.2
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“My employer” was less common in F-SEC-1 than in F-SEC-2."
+        },
+        {
+          "evidence_id": "F_employment_security:work_while_study_type",
+          "source_evidence_ids": [
+            "F_employment_security_p1:work_while_study_type",
+            "F_employment_security_p2:work_while_study_type"
+          ],
+          "title": "Type of work while studying",
+          "survey_question": "How would you describe that work experience while studying?",
+          "question_id": "B10",
+          "evidence_status": "FDR-supported",
+          "cautions": [
+            "This question used an eligible-subgroup denominator.",
+            "Some response cells were sparse; interpret the pattern cautiously.",
+            "The eligible sample was small."
+          ],
+          "comparison_type": "full_categorical_distribution",
+          "answer_categories": [
+            "Informal or casual work",
+            "Internship or apprenticeship in a private company",
+            "Internship or apprenticeship in the public sector",
+            "Paid work in a company (not internship)",
+            "Paid work in the public sector (not internship)",
+            "Volunteer or community work (unpaid)",
+            "Work in a family business or farm"
+          ],
+          "answer_distribution": [
+            {
+              "answer": "Informal or casual work",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 0,
+                  "denominator": 22,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 1,
+                  "denominator": 41,
+                  "percentage": 2.4
+                }
+              ]
+            },
+            {
+              "answer": "Internship or apprenticeship in a private company",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 17,
+                  "denominator": 22,
+                  "percentage": 77.3
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 12,
+                  "denominator": 41,
+                  "percentage": 29.3
+                }
+              ]
+            },
+            {
+              "answer": "Internship or apprenticeship in the public sector",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 1,
+                  "denominator": 22,
+                  "percentage": 4.5
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 0,
+                  "denominator": 41,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "Paid work in a company (not internship)",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 3,
+                  "denominator": 22,
+                  "percentage": 13.6
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 23,
+                  "denominator": 41,
+                  "percentage": 56.1
+                }
+              ]
+            },
+            {
+              "answer": "Paid work in the public sector (not internship)",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 0,
+                  "denominator": 22,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 4,
+                  "denominator": 41,
+                  "percentage": 9.8
+                }
+              ]
+            },
+            {
+              "answer": "Volunteer or community work (unpaid)",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 0,
+                  "denominator": 22,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 1,
+                  "denominator": 41,
+                  "percentage": 2.4
+                }
+              ]
+            },
+            {
+              "answer": "Work in a family business or farm",
+              "profile_values": [
+                {
+                  "profile_key": "F_employment_security_p1",
+                  "count": 1,
+                  "denominator": 22,
+                  "percentage": 4.5
+                },
+                {
+                  "profile_key": "F_employment_security_p2",
+                  "count": 0,
+                  "denominator": 41,
+                  "percentage": 0.0
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "Among members who worked while studying, 17 of 22 (77.3%) had a private-company internship or apprenticeship. This was the main form of earlier work experience in this historical profile."
+        }
+      ]
+    },
+    "G_economic_role": {
+      "dimension_title": "Household economic role",
+      "profiles": [
+        {
+          "profile_key": "G_economic_role_p1",
+          "profile_code": "G-ROLE-1",
+          "profile_name": "Family-supported non-provider",
+          "historical_profile_size": 41
+        },
+        {
+          "profile_key": "G_economic_role_p2",
+          "profile_code": "G-ROLE-2",
+          "profile_name": "Self-income provider or contributor",
+          "historical_profile_size": 15
+        }
+      ],
+      "findings": [
+        {
+          "evidence_id": "G_economic_role:employment_network_quality",
+          "source_evidence_ids": [
+            "G_economic_role_p1:employment_network_quality",
+            "G_economic_role_p2:employment_network_quality"
+          ],
+          "title": "Useful employment/training contacts",
+          "survey_question": "Do you personally know people who could help you find employment or training opportunities?",
+          "question_id": "A21",
+          "evidence_status": "Retained descriptive",
+          "cautions": [],
+          "comparison_type": "retained_category_contrast",
+          "answer_categories": [
+            "Yes — I know several people with useful connections"
+          ],
+          "retained_contrasts": [
+            {
+              "source_evidence_id": "G_economic_role_p1:employment_network_quality",
+              "answer": "Yes — I know several people with useful connections",
+              "focus_profile_key": "G_economic_role_p1",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "profile_label": "Family-supported non-provider",
+                  "count": 9,
+                  "denominator": 41,
+                  "percentage": 22.0
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "profile_label": "Self-income provider or contributor",
+                  "count": null,
+                  "denominator": 15,
+                  "percentage": 60.0
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“Yes — I know several people with useful connections” was less common in G-ROLE-1 than in G-ROLE-2."
+        },
+        {
+          "evidence_id": "G_economic_role:labour_market_connection",
+          "source_evidence_ids": [
+            "G_economic_role_p1:labour_market_connection",
+            "G_economic_role_p2:labour_market_connection"
+          ],
+          "title": "Connection to labour-market information/opportunities",
+          "survey_question": "How connected do you feel to information and opportunities about employment and training?",
+          "question_id": "BF2",
+          "evidence_status": "Retained descriptive",
+          "cautions": [],
+          "comparison_type": "retained_category_contrast",
+          "answer_categories": [
+            "Very connected — I hear about jobs and training opportunities regularly"
+          ],
+          "retained_contrasts": [
+            {
+              "source_evidence_id": "G_economic_role_p1:labour_market_connection",
+              "answer": "Very connected — I hear about jobs and training opportunities regularly",
+              "focus_profile_key": "G_economic_role_p1",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "profile_label": "Family-supported non-provider",
+                  "count": 11,
+                  "denominator": 41,
+                  "percentage": 26.8
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "profile_label": "Self-income provider or contributor",
+                  "count": null,
+                  "denominator": 15,
+                  "percentage": 66.7
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“Very connected — I hear about jobs and training opportunities regularly” was less common in G-ROLE-1 than in G-ROLE-2."
+        },
+        {
+          "evidence_id": "G_economic_role:employment_self_efficacy",
+          "source_evidence_ids": [
+            "G_economic_role_p1:employment_self_efficacy",
+            "G_economic_role_p2:employment_self_efficacy"
+          ],
+          "title": "Employment/training self-efficacy",
+          "survey_question": "If you decided to actively look for work or training right now, how confident are you that you could be successful?",
+          "question_id": "SF2",
+          "evidence_status": "Retained descriptive",
+          "cautions": [],
+          "comparison_type": "retained_category_contrast",
+          "answer_categories": [
+            "Very confident — I believe I could find something suitable"
+          ],
+          "retained_contrasts": [
+            {
+              "source_evidence_id": "G_economic_role_p1:employment_self_efficacy",
+              "answer": "Very confident — I believe I could find something suitable",
+              "focus_profile_key": "G_economic_role_p1",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "profile_label": "Family-supported non-provider",
+                  "count": 14,
+                  "denominator": 41,
+                  "percentage": 34.1
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "profile_label": "Self-income provider or contributor",
+                  "count": null,
+                  "denominator": 15,
+                  "percentage": 53.3
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“Very confident — I believe I could find something suitable” was less common in G-ROLE-1 than in G-ROLE-2."
+        },
+        {
+          "evidence_id": "G_economic_role:most_important_life_goal",
+          "source_evidence_ids": [
+            "G_economic_role_p1:most_important_life_goal",
+            "G_economic_role_p2:most_important_life_goal"
+          ],
+          "title": "Most important life goal",
+          "survey_question": "What is the most important goal in your life right now?",
+          "question_id": "B15",
+          "evidence_status": "Retained descriptive",
+          "cautions": [
+            "Some response cells were sparse; interpret the pattern cautiously."
+          ],
+          "comparison_type": "full_categorical_distribution",
+          "answer_categories": [
+            "Having financial security or earning a lot",
+            "Being successful in work or my career",
+            "Having leisure, freedom, and personal time",
+            "Finding purpose and meaning in life",
+            "Having a good family life",
+            "Building self-confidence and personal fulfilment",
+            "Upholding my religious or cultural values",
+            "Making a meaningful contribution to society",
+            "Participating in community or public affairs"
+          ],
+          "answer_distribution": [
+            {
+              "answer": "Having financial security or earning a lot",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 11,
+                  "denominator": 41,
+                  "percentage": 26.8
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 2,
+                  "denominator": 15,
+                  "percentage": 13.3
+                }
+              ]
+            },
+            {
+              "answer": "Being successful in work or my career",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 9,
+                  "denominator": 41,
+                  "percentage": 22.0
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 3,
+                  "denominator": 15,
+                  "percentage": 20.0
+                }
+              ]
+            },
+            {
+              "answer": "Having leisure, freedom, and personal time",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 6,
+                  "denominator": 41,
+                  "percentage": 14.6
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 3,
+                  "denominator": 15,
+                  "percentage": 20.0
+                }
+              ]
+            },
+            {
+              "answer": "Finding purpose and meaning in life",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 6,
+                  "denominator": 41,
+                  "percentage": 14.6
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "Having a good family life",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 4,
+                  "denominator": 41,
+                  "percentage": 9.8
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 3,
+                  "denominator": 15,
+                  "percentage": 20.0
+                }
+              ]
+            },
+            {
+              "answer": "Building self-confidence and personal fulfilment",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 4,
+                  "denominator": 41,
+                  "percentage": 9.8
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "Upholding my religious or cultural values",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 1,
+                  "denominator": 41,
+                  "percentage": 2.4
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 1,
+                  "denominator": 15,
+                  "percentage": 6.7
+                }
+              ]
+            },
+            {
+              "answer": "Making a meaningful contribution to society",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 0,
+                  "denominator": 41,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 2,
+                  "denominator": 15,
+                  "percentage": 13.3
+                }
+              ]
+            },
+            {
+              "answer": "Participating in community or public affairs",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 0,
+                  "denominator": 41,
+                  "percentage": 0.0
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 1,
+                  "denominator": 15,
+                  "percentage": 6.7
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“Finding purpose and meaning in life” was more common in G-ROLE-1 than in G-ROLE-2."
+        },
+        {
+          "evidence_id": "G_economic_role:support_for_engagement",
+          "source_evidence_ids": [
+            "G_economic_role_p1:support_for_engagement",
+            "G_economic_role_p2:support_for_engagement"
+          ],
+          "title": "Expected support for work/study engagement",
+          "survey_question": "If you were to start working or studying, how much support could you expect from the people around you?",
+          "question_id": "SF3",
+          "evidence_status": "Retained descriptive",
+          "cautions": [],
+          "comparison_type": "retained_category_contrast",
+          "answer_categories": [
+            "Very little — most people would be indifferent"
+          ],
+          "retained_contrasts": [
+            {
+              "source_evidence_id": "G_economic_role_p1:support_for_engagement",
+              "answer": "Very little — most people would be indifferent",
+              "focus_profile_key": "G_economic_role_p1",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "profile_label": "Family-supported non-provider",
+                  "count": 7,
+                  "denominator": 41,
+                  "percentage": 17.1
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "profile_label": "Self-income provider or contributor",
+                  "count": null,
+                  "denominator": 15,
+                  "percentage": 0.0
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“Very little — most people would be indifferent” was more common in G-ROLE-1 than in G-ROLE-2."
+        },
+        {
+          "evidence_id": "G_economic_role:edu_status",
+          "source_evidence_ids": [
+            "G_economic_role_p1:edu_status",
+            "G_economic_role_p2:edu_status"
+          ],
+          "title": "Recent education status",
+          "survey_question": "Which best describes your most recent education?",
+          "question_id": "B1",
+          "evidence_status": "Retained descriptive",
+          "cautions": [
+            "Some response cells were sparse; interpret the pattern cautiously."
+          ],
+          "comparison_type": "full_categorical_distribution",
+          "answer_categories": [
+            "Currently in higher education (degree or diploma)",
+            "Currently in secondary education (O/L or A/L)",
+            "I left school or education before completing it",
+            "I have completed my education and am not currently studying",
+            "Currently attending a vocational or NVQ programme",
+            "Currently doing post-graduate studies"
+          ],
+          "answer_distribution": [
+            {
+              "answer": "Currently in higher education (degree or diploma)",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 22,
+                  "denominator": 41,
+                  "percentage": 53.7
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 4,
+                  "denominator": 15,
+                  "percentage": 26.7
+                }
+              ]
+            },
+            {
+              "answer": "Currently in secondary education (O/L or A/L)",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 8,
+                  "denominator": 41,
+                  "percentage": 19.5
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 2,
+                  "denominator": 15,
+                  "percentage": 13.3
+                }
+              ]
+            },
+            {
+              "answer": "I left school or education before completing it",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 5,
+                  "denominator": 41,
+                  "percentage": 12.2
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 2,
+                  "denominator": 15,
+                  "percentage": 13.3
+                }
+              ]
+            },
+            {
+              "answer": "I have completed my education and am not currently studying",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 4,
+                  "denominator": 41,
+                  "percentage": 9.8
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 4,
+                  "denominator": 15,
+                  "percentage": 26.7
+                }
+              ]
+            },
+            {
+              "answer": "Currently attending a vocational or NVQ programme",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 1,
+                  "denominator": 41,
+                  "percentage": 2.4
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 0,
+                  "denominator": 15,
+                  "percentage": 0.0
+                }
+              ]
+            },
+            {
+              "answer": "Currently doing post-graduate studies",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 1,
+                  "denominator": 41,
+                  "percentage": 2.4
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 3,
+                  "denominator": 15,
+                  "percentage": 20.0
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“Currently in higher education (degree or diploma)” was more common in G-ROLE-1 than in G-ROLE-2."
+        },
+        {
+          "evidence_id": "G_economic_role:ever_worked",
+          "source_evidence_ids": [
+            "G_economic_role_p1:ever_worked",
+            "G_economic_role_p2:ever_worked"
+          ],
+          "title": "Ever worked for pay/profit",
+          "survey_question": "Have you ever worked for pay or profit at any point in your life?",
+          "question_id": "F2",
+          "evidence_status": "Retained descriptive",
+          "cautions": [],
+          "comparison_type": "full_categorical_distribution",
+          "answer_categories": [
+            "Yes — I have worked before",
+            "No — I have never worked"
+          ],
+          "answer_distribution": [
+            {
+              "answer": "Yes — I have worked before",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 22,
+                  "denominator": 41,
+                  "percentage": 53.7
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 12,
+                  "denominator": 15,
+                  "percentage": 80.0
+                }
+              ]
+            },
+            {
+              "answer": "No — I have never worked",
+              "profile_values": [
+                {
+                  "profile_key": "G_economic_role_p1",
+                  "count": 19,
+                  "denominator": 41,
+                  "percentage": 46.3
+                },
+                {
+                  "profile_key": "G_economic_role_p2",
+                  "count": 3,
+                  "denominator": 15,
+                  "percentage": 20.0
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“No — I have never worked” was more common in G-ROLE-1 than in G-ROLE-2."
+        }
+      ]
+    },
+    "G_future_engagement": {
+      "dimension_title": "Future work and education",
+      "profiles": [
+        {
+          "profile_key": "G_future_engagement_p1",
+          "profile_code": "G-FUTURE-1",
+          "profile_name": "Work-and-education engaged",
+          "historical_profile_size": 35
+        },
+        {
+          "profile_key": "G_future_engagement_p2",
+          "profile_code": "G-FUTURE-2",
+          "profile_name": "Low or uncertain future engagement",
+          "historical_profile_size": 21
+        }
+      ],
+      "findings": [
+        {
+          "evidence_id": "G_future_engagement:employment_self_efficacy",
+          "source_evidence_ids": [
+            "G_future_engagement_p1:employment_self_efficacy",
+            "G_future_engagement_p2:employment_self_efficacy"
+          ],
+          "title": "Employment/training self-efficacy",
+          "survey_question": "If you decided to actively look for work or training right now, how confident are you that you could be successful?",
+          "question_id": "SF2",
+          "evidence_status": "FDR-supported",
+          "cautions": [],
+          "comparison_type": "retained_category_contrast",
+          "answer_categories": [
+            "Very confident — I believe I could find something suitable"
+          ],
+          "retained_contrasts": [
+            {
+              "source_evidence_id": "G_future_engagement_p1:employment_self_efficacy",
+              "answer": "Very confident — I believe I could find something suitable",
+              "focus_profile_key": "G_future_engagement_p1",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "profile_label": "Work-and-education engaged",
+                  "count": 20,
+                  "denominator": 35,
+                  "percentage": 57.1
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "profile_label": "Low or uncertain future engagement",
+                  "count": null,
+                  "denominator": 21,
+                  "percentage": 9.5
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“Very confident — I believe I could find something suitable” was more common in G-FUTURE-1 than in G-FUTURE-2."
+        },
+        {
+          "evidence_id": "G_future_engagement:support_for_engagement",
+          "source_evidence_ids": [
+            "G_future_engagement_p1:support_for_engagement",
+            "G_future_engagement_p2:support_for_engagement"
+          ],
+          "title": "Expected support for work/study engagement",
+          "survey_question": "If you were to start working or studying, how much support could you expect from the people around you?",
+          "question_id": "SF3",
+          "evidence_status": "FDR-supported",
+          "cautions": [],
+          "comparison_type": "retained_category_contrast",
+          "answer_categories": [
+            "A great deal — people would actively support and encourage me"
+          ],
+          "retained_contrasts": [
+            {
+              "source_evidence_id": "G_future_engagement_p1:support_for_engagement",
+              "answer": "A great deal — people would actively support and encourage me",
+              "focus_profile_key": "G_future_engagement_p1",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "profile_label": "Work-and-education engaged",
+                  "count": 18,
+                  "denominator": 35,
+                  "percentage": 51.4
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "profile_label": "Low or uncertain future engagement",
+                  "count": null,
+                  "denominator": 21,
+                  "percentage": 19.0
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“A great deal — people would actively support and encourage me” was more common in G-FUTURE-1 than in G-FUTURE-2."
+        },
+        {
+          "evidence_id": "G_future_engagement:labour_market_connection",
+          "source_evidence_ids": [
+            "G_future_engagement_p1:labour_market_connection",
+            "G_future_engagement_p2:labour_market_connection"
+          ],
+          "title": "Connection to labour-market information/opportunities",
+          "survey_question": "How connected do you feel to information and opportunities about employment and training?",
+          "question_id": "BF2",
+          "evidence_status": "FDR-supported",
+          "cautions": [],
+          "comparison_type": "retained_category_contrast",
+          "answer_categories": [
+            "Very connected — I hear about jobs and training opportunities regularly"
+          ],
+          "retained_contrasts": [
+            {
+              "source_evidence_id": "G_future_engagement_p1:labour_market_connection",
+              "answer": "Very connected — I hear about jobs and training opportunities regularly",
+              "focus_profile_key": "G_future_engagement_p1",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "profile_label": "Work-and-education engaged",
+                  "count": 18,
+                  "denominator": 35,
+                  "percentage": 51.4
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "profile_label": "Low or uncertain future engagement",
+                  "count": null,
+                  "denominator": 21,
+                  "percentage": 14.3
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“Very connected — I hear about jobs and training opportunities regularly” was more common in G-FUTURE-1 than in G-FUTURE-2."
+        },
+        {
+          "evidence_id": "G_future_engagement:future_orientation_g",
+          "source_evidence_ids": [
+            "G_future_engagement_p1:future_orientation_g",
+            "G_future_engagement_p2:future_orientation_g"
+          ],
+          "title": "Future orientation",
+          "survey_question": "How would you describe your sense of direction about your future?",
+          "question_id": "SF1",
+          "evidence_status": "FDR-supported",
+          "cautions": [],
+          "comparison_type": "retained_category_contrast",
+          "answer_categories": [
+            "I feel quite lost and uncertain about what the future holds for me"
+          ],
+          "retained_contrasts": [
+            {
+              "source_evidence_id": "G_future_engagement_p1:future_orientation_g",
+              "answer": "I feel quite lost and uncertain about what the future holds for me",
+              "focus_profile_key": "G_future_engagement_p1",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "profile_label": "Work-and-education engaged",
+                  "count": 3,
+                  "denominator": 35,
+                  "percentage": 8.6
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "profile_label": "Low or uncertain future engagement",
+                  "count": null,
+                  "denominator": 21,
+                  "percentage": 38.1
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“I feel quite lost and uncertain about what the future holds for me” was less common in G-FUTURE-1 than in G-FUTURE-2."
+        },
+        {
+          "evidence_id": "G_future_engagement:employment_network_quality",
+          "source_evidence_ids": [
+            "G_future_engagement_p1:employment_network_quality",
+            "G_future_engagement_p2:employment_network_quality"
+          ],
+          "title": "Useful employment/training contacts",
+          "survey_question": "Do you personally know people who could help you find employment or training opportunities?",
+          "question_id": "A21",
+          "evidence_status": "Retained descriptive",
+          "cautions": [],
+          "comparison_type": "retained_category_contrast",
+          "answer_categories": [
+            "Yes — I know several people with useful connections"
+          ],
+          "retained_contrasts": [
+            {
+              "source_evidence_id": "G_future_engagement_p1:employment_network_quality",
+              "answer": "Yes — I know several people with useful connections",
+              "focus_profile_key": "G_future_engagement_p1",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "profile_label": "Work-and-education engaged",
+                  "count": 14,
+                  "denominator": 35,
+                  "percentage": 40.0
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "profile_label": "Low or uncertain future engagement",
+                  "count": null,
+                  "denominator": 21,
+                  "percentage": 19.0
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“Yes — I know several people with useful connections” was more common in G-FUTURE-1 than in G-FUTURE-2."
+        },
+        {
+          "evidence_id": "G_future_engagement:moved_from_origin",
+          "source_evidence_ids": [
+            "G_future_engagement_p1:moved_from_origin",
+            "G_future_engagement_p2:moved_from_origin"
+          ],
+          "title": "Lives in the same area where they grew up",
+          "survey_question": "Do you live in the same area where you grew up?",
+          "question_id": "A5",
+          "evidence_status": "Retained descriptive",
+          "cautions": [],
+          "comparison_type": "full_categorical_distribution",
+          "answer_categories": [
+            "Yes — I grew up here and still live here",
+            "No — I moved from somewhere else"
+          ],
+          "answer_distribution": [
+            {
+              "answer": "Yes — I grew up here and still live here",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "count": 29,
+                  "denominator": 35,
+                  "percentage": 82.9
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "count": 12,
+                  "denominator": 21,
+                  "percentage": 57.1
+                }
+              ]
+            },
+            {
+              "answer": "No — I moved from somewhere else",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "count": 6,
+                  "denominator": 35,
+                  "percentage": 17.1
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "count": 9,
+                  "denominator": 21,
+                  "percentage": 42.9
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“Yes — I grew up here and still live here” was more common in G-FUTURE-1 than in G-FUTURE-2."
+        },
+        {
+          "evidence_id": "G_future_engagement:edu_min_for_decent_job",
+          "source_evidence_ids": [
+            "G_future_engagement_p1:edu_min_for_decent_job",
+            "G_future_engagement_p2:edu_min_for_decent_job"
+          ],
+          "title": "Minimum education believed necessary for a decent job",
+          "survey_question": "In your opinion, what is the minimum level of education a person needs to get a decent job today?",
+          "question_id": "B14",
+          "evidence_status": "Retained descriptive",
+          "cautions": [],
+          "comparison_type": "retained_category_contrast",
+          "answer_categories": [
+            "University degree"
+          ],
+          "retained_contrasts": [
+            {
+              "source_evidence_id": "G_future_engagement_p1:edu_min_for_decent_job",
+              "answer": "University degree",
+              "focus_profile_key": "G_future_engagement_p1",
+              "profile_values": [
+                {
+                  "profile_key": "G_future_engagement_p1",
+                  "profile_label": "Work-and-education engaged",
+                  "count": 21,
+                  "denominator": 34,
+                  "percentage": 61.8
+                },
+                {
+                  "profile_key": "G_future_engagement_p2",
+                  "profile_label": "Low or uncertain future engagement",
+                  "count": null,
+                  "denominator": 19,
+                  "percentage": 15.8
+                }
+              ]
+            }
+          ],
+          "simple_conclusion": "“University degree” was more common in G-FUTURE-1 than in G-FUTURE-2."
+        }
+      ]
+    }
+  }
+}

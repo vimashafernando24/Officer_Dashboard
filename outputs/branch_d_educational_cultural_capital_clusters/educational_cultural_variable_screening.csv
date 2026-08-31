@@ -1,0 +1,9 @@
+variable,observed,missing,coverage_percent,unique_observed_responses,dominant_response,dominant_response_percent,decision,reason
+father_edu,191,0,100.0,8,A/L level (Grade 12–13),29.84293193717277,include,family institutionalised cultural-capital indicator
+mother_edu,191,0,100.0,8,A/L level (Grade 12–13),31.93717277486911,include,family institutionalised cultural-capital indicator
+edu_status,191,0,100.0,6,Currently in higher education (degree or diploma),90.57591623036649,exclude_from_distance,over 90% one category and six responses conflict with final current-attendance status
+highest_edu_completed,3,188,1.5706806282722512,1,Bachelor's degree,100.0,exclude_from_distance,observed for only three respondents in this current-student branch
+expected_highest_edu_d,191,0,100.0,6,Post-graduate degree,60.73298429319372,include,expected educational trajectory
+institution_type,191,0,100.0,6,Private school or private degree-awarding institute,57.59162303664922,include,current institutional position
+worked_while_studying,188,3,98.42931937172776,2,No,60.63829787234043,include,work exposure during education
+re_entered_education,191,0,100.0,2,No,85.86387434554975,include,interrupted/non-linear education trajectory

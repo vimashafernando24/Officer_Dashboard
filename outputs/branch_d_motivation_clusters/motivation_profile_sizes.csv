@@ -1,0 +1,4 @@
+motivation_profile_id,motivation_profile_label,records,low_confidence_records,mean_individual_silhouette,percent
+1,"Motivation profile 1: externally or uncertainly motivated, with moderate study support",46,6,0.28015550181247273,24.083769633507853
+2,Motivation profile 2: goal-aligned motivation with mixed study confidence and support,77,39,0.2085927140546055,40.31413612565445
+3,"Motivation profile 3: highly self-directed, capable and connected",68,0,0.5622244302746172,35.602094240837694

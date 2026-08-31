@@ -1,0 +1,45 @@
+social_profile_id,variable,role,response,records,within_profile_percent
+1,employment_network_quality,cluster_input,Yes — I know one or two people who might help,33,64.70588235294117
+1,employment_network_quality,cluster_input,Yes — I know several people with useful connections,18,35.294117647058826
+2,employment_network_quality,cluster_input,No — I have no one I could call on,11,13.25301204819277
+2,employment_network_quality,cluster_input,Not really — I have very few useful contacts,20,24.096385542168676
+2,employment_network_quality,cluster_input,Yes — I know one or two people who might help,30,36.144578313253014
+2,employment_network_quality,cluster_input,Yes — I know several people with useful connections,22,26.50602409638554
+3,employment_network_quality,cluster_input,No — I have no one I could call on,16,28.07017543859649
+3,employment_network_quality,cluster_input,Not really — I have very few useful contacts,41,71.9298245614035
+1,relatedness_at_institution,cluster_input,Not at all — I feel no sense of belonging there,1,1.9607843137254901
+1,relatedness_at_institution,cluster_input,Somewhat — I have some connections but am not deeply involved,45,88.23529411764706
+1,relatedness_at_institution,cluster_input,Weakly — I feel fairly isolated or disconnected,5,9.803921568627452
+2,relatedness_at_institution,cluster_input,Strongly — genuinely connected and part of the community,83,100.0
+3,relatedness_at_institution,cluster_input,Not at all — I feel no sense of belonging there,4,7.017543859649122
+3,relatedness_at_institution,cluster_input,Somewhat — I have some connections but am not deeply involved,47,82.45614035087719
+3,relatedness_at_institution,cluster_input,Weakly — I feel fairly isolated or disconnected,6,10.526315789473685
+1,social_capital_in_edu_access,education_access_pathway_descriptor,"A friend, teacher, or contact recommended it",3,5.882352941176471
+1,social_capital_in_edu_access,education_access_pathway_descriptor,Family members advised me or guided the choice,22,43.13725490196079
+1,social_capital_in_edu_access,education_access_pathway_descriptor,I researched and applied entirely on my own initiative,25,49.01960784313726
+1,social_capital_in_edu_access,education_access_pathway_descriptor,I was assigned or directed by a government programme,1,1.9607843137254901
+2,social_capital_in_edu_access,education_access_pathway_descriptor,"A friend, teacher, or contact recommended it",7,8.433734939759036
+2,social_capital_in_edu_access,education_access_pathway_descriptor,Family members advised me or guided the choice,22,26.50602409638554
+2,social_capital_in_edu_access,education_access_pathway_descriptor,I researched and applied entirely on my own initiative,46,55.42168674698795
+2,social_capital_in_edu_access,education_access_pathway_descriptor,I was assigned or directed by a government programme,6,7.228915662650603
+2,social_capital_in_edu_access,education_access_pathway_descriptor,My employer or a workplace contact directed me here,2,2.4096385542168677
+3,social_capital_in_edu_access,education_access_pathway_descriptor,"A friend, teacher, or contact recommended it",3,5.2631578947368425
+3,social_capital_in_edu_access,education_access_pathway_descriptor,Family members advised me or guided the choice,23,40.35087719298246
+3,social_capital_in_edu_access,education_access_pathway_descriptor,I researched and applied entirely on my own initiative,24,42.10526315789474
+3,social_capital_in_edu_access,education_access_pathway_descriptor,I was assigned or directed by a government programme,6,10.526315789473685
+3,social_capital_in_edu_access,education_access_pathway_descriptor,My employer or a workplace contact directed me here,1,1.7543859649122806
+1,institution_type,context_descriptor,Government school or state university,12,23.529411764705884
+1,institution_type,context_descriptor,International school or foreign university programme,6,11.764705882352942
+1,institution_type,context_descriptor,Online or distance learning programme,1,1.9607843137254901
+1,institution_type,context_descriptor,Private school or private degree-awarding institute,32,62.745098039215684
+2,institution_type,context_descriptor,Government school or state university,24,28.91566265060241
+2,institution_type,context_descriptor,"Government vocational/technical institute (NYSC, NAITA, VTA, etc.)",2,2.4096385542168677
+2,institution_type,context_descriptor,International school or foreign university programme,6,7.228915662650603
+2,institution_type,context_descriptor,Online or distance learning programme,1,1.2048192771084338
+2,institution_type,context_descriptor,Other,3,3.6144578313253013
+2,institution_type,context_descriptor,Private school or private degree-awarding institute,47,56.626506024096386
+3,institution_type,context_descriptor,Government school or state university,21,36.8421052631579
+3,institution_type,context_descriptor,International school or foreign university programme,2,3.508771929824561
+3,institution_type,context_descriptor,Online or distance learning programme,1,1.7543859649122806
+3,institution_type,context_descriptor,Other,2,3.508771929824561
+3,institution_type,context_descriptor,Private school or private degree-awarding institute,31,54.3859649122807

@@ -1,0 +1,45 @@
+variable,proposed_role,coverage_percent,exclusion_reason
+age_first_married,conditional descriptor,7.4,role not in scope of this open search
+spouse_activity,conditional descriptor,7.4,role not in scope of this open search
+num_children,conditional descriptor,1.2,role not in scope of this open search
+reason_left_edu,conditional descriptor,1.2,role not in scope of this open search
+highest_edu_completed,conditional descriptor,25.9,role not in scope of this open search
+edu_end_year,conditional descriptor,25.9,role not in scope of this open search
+spell1_activity,conditional descriptor,25.9,role not in scope of this open search
+spell2_activity,conditional descriptor,7.4,role not in scope of this open search
+spell3_activity,conditional descriptor,4.9,role not in scope of this open search
+spell1_is_current,conditional descriptor,25.9,role not in scope of this open search
+spell2_is_current,conditional descriptor,7.4,role not in scope of this open search
+spell1_contract,conditional descriptor,2.5,role not in scope of this open search
+spell2_contract,conditional descriptor,3.7,role not in scope of this open search
+spell1_satisfaction,conditional descriptor,2.5,role not in scope of this open search
+spell2_satisfaction,conditional descriptor,3.7,role not in scope of this open search
+spell1_end_reason,conditional descriptor,2.5,role not in scope of this open search
+spell2_end_reason,conditional descriptor,3.7,role not in scope of this open search
+current_activity_status,routing/audit only,100.0,role not in scope of this open search
+has_job_to_return,routing/audit only,21.0,role not in scope of this open search
+reason_temp_absence,conditional descriptor,21.0,role not in scope of this open search
+reason_below_normal_hours,conditional descriptor,39.5,role not in scope of this open search
+reason_wants_to_change,conditional descriptor,56.8,role not in scope of this open search
+insecurity_bothers,conditional descriptor,42.0,role not in scope of this open search
+reason_not_union,conditional descriptor,92.6,role not in scope of this open search
+training_type_received,conditional descriptor,80.2,role not in scope of this open search
+training_provider,conditional descriptor,80.2,role not in scope of this open search
+training_duration,conditional descriptor,80.2,role not in scope of this open search
+who_paid_training,conditional descriptor,80.2,role not in scope of this open search
+reason_refused_job_f,conditional descriptor,44.4,role not in scope of this open search
+job_recruitment_method,wage-worker subgroup description,86.4,role not in scope of this open search
+enterprise_size,wage-worker subgroup description,86.4,role not in scope of this open search
+gender_equality_at_work,wage-worker subgroup description,86.4,role not in scope of this open search
+reason_self_employed,self-employed subgroup description,13.6,role not in scope of this open search
+business_helpers,self-employed subgroup description,13.6,role not in scope of this open search
+business_funding_source,self-employed subgroup description,13.6,role not in scope of this open search
+business_profitability,self-employed subgroup description,13.6,role not in scope of this open search
+main_business_obstacle,self-employed subgroup description,13.6,role not in scope of this open search
+move_reason,profile/programme-mapping descriptor,38.3,coverage below 95.0% of the strict cohort
+work_while_study_type,profile/programme-mapping descriptor,77.8,coverage below 95.0% of the strict cohort
+work_while_study_paid,profile/programme-mapping descriptor,77.8,coverage below 95.0% of the strict cohort
+work_while_study_hours,profile/programme-mapping descriptor,77.8,coverage below 95.0% of the strict cohort
+work_while_study_motivation,profile/programme-mapping descriptor,77.8,coverage below 95.0% of the strict cohort
+expected_highest_edu_f,profile/programme-mapping descriptor,87.7,coverage below 95.0% of the strict cohort
+employment_status,profile/programme-mapping descriptor,100.0,circular with branch/subgroup membership

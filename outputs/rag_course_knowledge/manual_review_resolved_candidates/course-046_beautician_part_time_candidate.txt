@@ -1,0 +1,42 @@
+COURSE DOCUMENT ID: COURSE-046
+
+COURSE NAME: Beautician
+
+PROPOSED STATUS: SAFE_TO_INDEX
+
+SOURCE TYPE: COURSE_DETAIL_SCREENSHOT
+
+AUTHORITATIVE CONTENT SCREENSHOT: Screenshot 2026-04-12 at 22.48.00.png
+
+REJECTED CONFLICTING DUPLICATE SCREENSHOT: Screenshot 2026-04-12 at 23.01.50.png
+
+SUPPORTING CATALOGUE-PAGE SCREENSHOT(S): Screenshot 2026-04-12 at 22.48.17.png; Screenshot 2026-04-12 at 23.02.00.png
+
+RAW SOURCE DOCUMENT ID(S): COURSE-046; COURSE-010
+
+REMAINING UNCERTAINTY MARKERS: 0
+
+CORRECTION NOTE: The candidate uses the complete Part Time detail screenshot at 22.48.00. Both linked catalogue cards say Part Time, 20 students and 06 Months. The duplicate 23.01.50 detail screenshot states Full Time and is excluded from this Part Time candidate; independently captured full-time Beautician evidence remains in COURSE-010.
+
+COMPLETE EXTRACTED COURSE TEXT
+
+Beautician
+LANGUAGE
+MAX STUDENTS
+Sinhala
+20
+APPLY NOW
+Course Overview
+1. Facial
+2. Menicure
+3. Pedicure
+4. Makeup
+5. Flower Bouques & Bridal Dressing
+The National Youth Service Council has initiated several course programs to enable the youth to
+develop their skills while also providing an opportunity to achieve their future job aspirations.
+Beautician course will give you theoretical knowledge as well as job oriented practical skills that are
+necessary for employment and higher education. This is a part time course which will be held on
+weekends.
+It is our objective to show the correct path that will direct youth to their desired occupations while at
+the same time developing entrepreneurial abilities by obtaining the necessary knowledge, skills and
+gentle attitudes within a disciplined environment.

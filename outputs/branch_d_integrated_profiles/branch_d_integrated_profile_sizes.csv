@@ -1,0 +1,4 @@
+profile_id,profile_label,records,low_confidence_records,mean_individual_silhouette,percent
+1,Profile 1: lower agency and study engagement and lower career-transition readiness,52,27,0.1018294229860453,27.225130890052355
+2,Profile 2: lower human-capital trajectory and higher agency and study engagement,87,18,0.1837257539479518,45.54973821989529
+3,Profile 3: higher human-capital trajectory and higher economic resources,52,2,0.2741662800047224,27.225130890052355

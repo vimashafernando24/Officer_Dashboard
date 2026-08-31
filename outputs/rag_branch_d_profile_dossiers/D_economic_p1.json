@@ -1,0 +1,490 @@
+{
+  "schema_version": "branch_d_profile_dossier_v2",
+  "profile": {
+    "profile_key": "D_economic_p1",
+    "branch": "D",
+    "model_id": "D_economic",
+    "dimension": "Economic resources and household pressure",
+    "profile_id": 1,
+    "analysis_label": "Economic profile 1: relatively lower household economic position",
+    "cluster_code": "Cluster RES-1",
+    "cluster_name": "Family-supported, government-funded study",
+    "historical_profile_size": 44
+  },
+  "cluster_definition": {
+    "raw_cluster_forming_variables": [
+      "household_income",
+      "household_size",
+      "household_workers",
+      "household_unemployed",
+      "primary_earner_status",
+      "primary_income_source",
+      "edu_funding_source"
+    ],
+    "derived_distance_features": [
+      "household_income_position",
+      "household_worker_share",
+      "household_unemployed_share",
+      "primary_earner_responsibility",
+      "primary_income_source",
+      "education_funding_source"
+    ],
+    "medoid_pattern": [
+      {
+        "variable": "household_income",
+        "question_id": "A17",
+        "question": "What is the approximate total monthly income of your household from all sources?",
+        "medoid_answer": "LKR 60,000 – 120,000"
+      },
+      {
+        "variable": "household_size",
+        "question_id": "A16",
+        "question": "How many people live in your household in total?",
+        "medoid_answer": "3.0"
+      },
+      {
+        "variable": "household_workers",
+        "question_id": "A18",
+        "question": "How many people in your household are currently working for a salary or wage?",
+        "medoid_answer": "1.0"
+      },
+      {
+        "variable": "household_unemployed",
+        "question_id": "A19",
+        "question": "How many people in your household are currently without work and actively looking for a job?",
+        "medoid_answer": "1.0"
+      },
+      {
+        "variable": "primary_earner_status",
+        "question_id": "A20",
+        "question": "Are you the primary income earner in your household?",
+        "medoid_answer": "No — someone else is the main provider"
+      },
+      {
+        "variable": "primary_income_source",
+        "question_id": "B19",
+        "question": "Currently, where does most of your money come from?",
+        "medoid_answer": "My parents or family"
+      },
+      {
+        "variable": "edu_funding_source",
+        "question_id": "BC2",
+        "question": "How is your current education mainly funded?",
+        "medoid_answer": "Government-funded or free of charge"
+      }
+    ],
+    "saved_officer_description": "This cluster is centred on household situations with income between LKR 60,000 and 120,000, three household members, one wage earner and one person seeking work. It combines family financial support with government-funded or free education.",
+    "final_definition_text": "Facts that define the cluster itself. These variables and diagnostics produced the\ncluster; they are NOT re-tested as post-cluster findings (doing so would be circular).\n\nBranch: D — strict final-path analytical cohort n=191 (of 362 total strict-cohort respondents: D=191, E=34, F=81, G=56).\nRetained dimension: Economic resources and household pressure\nNumber of profiles in this retained model (k): 2\nThis profile's id and label: Profile 1 — \"Economic profile 1: relatively lower household economic position\"\nThis profile's exact frozen size: n=44 (cross-verified against the Part III freeze-verification table in the source report)\n\nExact cluster-forming variables (the only inputs used to build this clustering; all\nother survey variables were deliberately excluded from distance calculation and are\nonly used descriptively in sections 2-3 below):\n  - edu_funding_source\n  - household_income\n  - household_size\n  - household_unemployed\n  - household_workers\n  - primary_earner_status\n  - primary_income_source\n\nTheoretical basis and purpose: Bourdieu economic capital and ILO School-to-Work Transition Survey household/education-financing position.\n\nClustering method: Gower distance over original mixed-type responses (no invented 0-100\nscores), consensus of repeated K-medoids and spectral clustering across 100 matched\n80% subsamples (200 base partitions), final clusters from K-medoids on (1 - co-association).\n\nValidation diagnostics for this retained model: Gower silhouette 0.436; bootstrap/subsample ARI 0.986; source-method ARIs 0.849 and 0.796; 7 of 8 mandatory validation checks passed.\nFinal decision status: Retained cautiously.\nModel-level caution (from the frozen decision register): Income refusals and household-count inconsistencies were handled pairwise in clustering; profiles indicate relative position, not poverty status.\n\nAdditional definitional context: 29 of 191 Branch D respondents declined to report household income. 5 records had reported household workers plus unemployed members exceeding household size; their derived shares were treated as unavailable (missing) rather than silently corrected. Missing-aware Gower distance used only the remaining comparable components for these respondents.\n\nInterpretation of this specific profile (verbatim from the frozen report's per-model\nprofile table):\n  Lower relative position across the observed income, household-labour, earner-responsibility and education-funding pattern.\n\nReminder: this profile exists only WITHIN this one retained dimension. A respondent's\nmembership here says nothing about their membership in any other branch's or dimension's\nprofile system (see PROHIBITED_INFERENCES).\n\n----------------------------------------------------------------------------------------------------"
+  },
+  "approved_post_cluster_findings": [
+    {
+      "evidence_id": "D_economic_p1:ideal_sector",
+      "variable": "ideal_sector",
+      "label": "Ideal sector",
+      "finding": "Ideal sector: less often reported ‘Information technology and communications’ (18/44, 40.9% vs 63.3% in other profile(s)) [sparse table]",
+      "interpretation_guard": "The most common answer within this profile was Information technology and communications (40.9%). Keep any wording proportional and distinguish this within-profile pattern from the retained between-profile comparison.",
+      "is_programme_relevant_subset": true,
+      "statistical_support": {
+        "label": "Ideal sector",
+        "variable": "ideal_sector",
+        "coverage_pct": 100.0,
+        "effect_size_name": "bias-corrected Cramér's V",
+        "effect_size": 0.381,
+        "raw_p": "0.0001102",
+        "bh_adjusted_p": "0.0009369",
+        "significant_note": "significant at FDR<0.05",
+        "programme_relevance": "high"
+      },
+      "survey_question": {
+        "question_id": "B18",
+        "section": "B",
+        "framework": "SWTS",
+        "question_text": "Ideally, in which sector or industry do you want to work?"
+      },
+      "profile_distribution": {
+        "eligible_n": 44,
+        "distribution": [
+          {
+            "value": "Agriculture, forestry, and fishing",
+            "count": 4,
+            "percent": 9.1
+          },
+          {
+            "value": "Manufacturing or production",
+            "count": 6,
+            "percent": 13.6
+          },
+          {
+            "value": "Construction and building",
+            "count": 1,
+            "percent": 2.3
+          },
+          {
+            "value": "Wholesale, retail, or repair",
+            "count": 0,
+            "percent": 0.0
+          },
+          {
+            "value": "Hotels, restaurants, and hospitality",
+            "count": 1,
+            "percent": 2.3
+          },
+          {
+            "value": "Transport, storage, and logistics",
+            "count": 1,
+            "percent": 2.3
+          },
+          {
+            "value": "Information technology and communications",
+            "count": 18,
+            "percent": 40.9
+          },
+          {
+            "value": "Finance, banking, and insurance",
+            "count": 2,
+            "percent": 4.5
+          },
+          {
+            "value": "Public administration, government, and defence",
+            "count": 0,
+            "percent": 0.0
+          },
+          {
+            "value": "Education and teaching",
+            "count": 3,
+            "percent": 6.8
+          },
+          {
+            "value": "Health, social work, and wellbeing",
+            "count": 3,
+            "percent": 6.8
+          },
+          {
+            "value": "Creative, media, and arts",
+            "count": 0,
+            "percent": 0.0
+          },
+          {
+            "value": "Personal services (beauty, fitness, wellness)",
+            "count": 2,
+            "percent": 4.5
+          },
+          {
+            "value": "Not sure",
+            "count": 3,
+            "percent": 6.8
+          }
+        ]
+      },
+      "provenance": {
+        "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_economic, profile_id=1, column=strongest_non_clustering_characteristics",
+        "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+        "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_economic, variable=ideal_sector"
+      }
+    },
+    {
+      "evidence_id": "D_economic_p1:study_field_preference",
+      "variable": "study_field_preference",
+      "label": "Current or preferred field of study",
+      "finding": "Current or preferred field of study: less often reported ‘ICT or computing’ (11/42, 26.2% vs 65.5% in other profile(s)) [sparse table]",
+      "interpretation_guard": "Within this profile there is a joint-highest tie at 26.2% between: Science or mathematics; ICT or computing. The retained statement about ICT or computing is a between-profile difference, not evidence that it is the sole primary, dominant, top, or most common response. Mention the tie whenever summarising this finding.",
+      "is_programme_relevant_subset": true,
+      "statistical_support": {
+        "label": "Current or preferred field of study",
+        "variable": "study_field_preference",
+        "coverage_pct": 97.9,
+        "effect_size_name": "bias-corrected Cramér's V",
+        "effect_size": 0.378,
+        "raw_p": "3.15e-05",
+        "bh_adjusted_p": "0.000357",
+        "significant_note": "significant at FDR<0.05",
+        "programme_relevance": "high"
+      },
+      "survey_question": {
+        "question_id": "C7",
+        "section": "C",
+        "framework": "SWTS",
+        "question_text": "What field of study are you in, or would you like to be in?"
+      },
+      "profile_distribution": {
+        "eligible_n": 42,
+        "distribution": [
+          {
+            "value": "Science or mathematics",
+            "count": 11,
+            "percent": 26.2
+          },
+          {
+            "value": "Literature, arts, or social sciences",
+            "count": 0,
+            "percent": 0.0
+          },
+          {
+            "value": "Commerce, business, or management",
+            "count": 4,
+            "percent": 9.5
+          },
+          {
+            "value": "Industrial or technical studies",
+            "count": 0,
+            "percent": 0.0
+          },
+          {
+            "value": "Engineering",
+            "count": 7,
+            "percent": 16.7
+          },
+          {
+            "value": "ICT or computing",
+            "count": 11,
+            "percent": 26.2
+          },
+          {
+            "value": "Health sciences or nursing",
+            "count": 2,
+            "percent": 4.8
+          },
+          {
+            "value": "Education or teaching",
+            "count": 3,
+            "percent": 7.1
+          },
+          {
+            "value": "Other field",
+            "count": 4,
+            "percent": 9.5
+          }
+        ]
+      },
+      "provenance": {
+        "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_economic, profile_id=1, column=strongest_non_clustering_characteristics",
+        "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+        "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_economic, variable=study_field_preference"
+      }
+    },
+    {
+      "evidence_id": "D_economic_p1:institution_type",
+      "variable": "institution_type",
+      "label": "Current institution type",
+      "finding": "Current institution type: less often reported ‘Private school or private degree-awarding institute’ (4/44, 9.1% vs 72.1% in other profile(s)) [sparse table; cross-dimensional/related variable]",
+      "interpretation_guard": "The most common answer within this profile was Government school or state university (75.0%). The retained statement highlights Private school or private degree-awarding institute only because it differed between profiles. Do not call the highlighted category primary, dominant, top, or most common.",
+      "is_programme_relevant_subset": true,
+      "statistical_support": {
+        "label": "Current institution type",
+        "variable": "institution_type",
+        "coverage_pct": 100.0,
+        "effect_size_name": "bias-corrected Cramér's V",
+        "effect_size": 0.566,
+        "raw_p": "6.976e-13",
+        "bh_adjusted_p": "2.372e-11",
+        "significant_note": "significant at FDR<0.05",
+        "programme_relevance": "high"
+      },
+      "survey_question": {
+        "question_id": "BC1",
+        "section": "C",
+        "framework": "Bourdieu",
+        "question_text": "What type of institution are you currently attending?"
+      },
+      "profile_distribution": {
+        "eligible_n": 44,
+        "distribution": [
+          {
+            "value": "Government school or state university",
+            "count": 33,
+            "percent": 75.0
+          },
+          {
+            "value": "Government vocational/technical institute (NYSC, NAITA, VTA, etc.)",
+            "count": 0,
+            "percent": 0.0
+          },
+          {
+            "value": "Private school or private degree-awarding institute",
+            "count": 4,
+            "percent": 9.1
+          },
+          {
+            "value": "International school or foreign university programme",
+            "count": 5,
+            "percent": 11.4
+          },
+          {
+            "value": "Online or distance learning programme",
+            "count": 0,
+            "percent": 0.0
+          },
+          {
+            "value": "Other",
+            "count": 2,
+            "percent": 4.5
+          }
+        ]
+      },
+      "provenance": {
+        "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_economic, profile_id=1, column=strongest_non_clustering_characteristics",
+        "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+        "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_economic, variable=institution_type"
+      }
+    },
+    {
+      "evidence_id": "D_economic_p1:social_capital_in_edu_access",
+      "variable": "social_capital_in_edu_access",
+      "label": "How current programme was accessed",
+      "finding": "How current programme was accessed: less often reported ‘Family members advised me or guided the choice’ (6/44, 13.6% vs 41.5% in other profile(s)) [sparse table]",
+      "interpretation_guard": "The most common answer within this profile was I researched and applied entirely on my own initiative (56.8%). The retained statement highlights Family members advised me or guided the choice only because it differed between profiles. Do not call the highlighted category primary, dominant, top, or most common.",
+      "is_programme_relevant_subset": false,
+      "statistical_support": {
+        "label": "How current programme was accessed",
+        "variable": "social_capital_in_edu_access",
+        "coverage_pct": 100.0,
+        "effect_size_name": "bias-corrected Cramér's V",
+        "effect_size": 0.37,
+        "raw_p": "4.966e-06",
+        "bh_adjusted_p": "8.442e-05",
+        "significant_note": "significant at FDR<0.05",
+        "programme_relevance": "medium"
+      },
+      "survey_question": {
+        "question_id": "BC3",
+        "section": "C",
+        "framework": "Bourdieu",
+        "question_text": "How did you learn about and gain access to your current programme?"
+      },
+      "profile_distribution": {
+        "eligible_n": 44,
+        "distribution": [
+          {
+            "value": "I researched and applied entirely on my own initiative",
+            "count": 25,
+            "percent": 56.8
+          },
+          {
+            "value": "Family members advised me or guided the choice",
+            "count": 6,
+            "percent": 13.6
+          },
+          {
+            "value": "A friend, teacher, or contact recommended it",
+            "count": 2,
+            "percent": 4.5
+          },
+          {
+            "value": "My employer or a workplace contact directed me here",
+            "count": 1,
+            "percent": 2.3
+          },
+          {
+            "value": "I was assigned or directed by a government programme",
+            "count": 10,
+            "percent": 22.7
+          }
+        ]
+      },
+      "provenance": {
+        "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_economic, profile_id=1, column=strongest_non_clustering_characteristics",
+        "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+        "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_economic, variable=social_capital_in_edu_access"
+      }
+    },
+    {
+      "evidence_id": "D_economic_p1:job_search_method_d",
+      "variable": "job_search_method_d",
+      "label": "Main job-search method while studying",
+      "finding": "Main job-search method while studying: less often reported ‘Online job ads (internet, social media)’ (4/22, 18.2% vs 50.6% in other profile(s)) [conditional eligible n=111; sparse table]",
+      "interpretation_guard": "The most common answer within this profile was Through education or training institution (31.8%). The retained statement highlights Online job ads (internet, social media) only because it differed between profiles. Do not call the highlighted category primary, dominant, top, or most common.",
+      "is_programme_relevant_subset": true,
+      "statistical_support": {
+        "label": "Main job-search method while studying",
+        "variable": "job_search_method_d",
+        "coverage_pct": 58.1,
+        "effect_size_name": "bias-corrected Cramér's V",
+        "effect_size": 0.3,
+        "raw_p": "0.02944",
+        "bh_adjusted_p": "0.1122",
+        "significant_note": "NOT significant at FDR<0.05 (descriptive only)",
+        "programme_relevance": "high"
+      },
+      "survey_question": {
+        "question_id": "C3",
+        "section": "C",
+        "framework": "SWTS",
+        "question_text": "How are you mainly looking for a job while still studying?"
+      },
+      "profile_distribution": {
+        "eligible_n": 22,
+        "distribution": [
+          {
+            "value": "Through education or training institution",
+            "count": 7,
+            "percent": 31.8
+          },
+          {
+            "value": "Attending job fairs",
+            "count": 3,
+            "percent": 13.6
+          },
+          {
+            "value": "Public employment office registration",
+            "count": 1,
+            "percent": 4.5
+          },
+          {
+            "value": "Private employment agency",
+            "count": 1,
+            "percent": 4.5
+          },
+          {
+            "value": "Direct application to employers",
+            "count": 3,
+            "percent": 13.6
+          },
+          {
+            "value": "Checking at worksites / factory gates",
+            "count": 1,
+            "percent": 4.5
+          },
+          {
+            "value": "Placing or answering job advertisements",
+            "count": 2,
+            "percent": 9.1
+          },
+          {
+            "value": "Online job ads (internet, social media)",
+            "count": 4,
+            "percent": 18.2
+          },
+          {
+            "value": "Through friends, relatives, or colleagues",
+            "count": 0,
+            "percent": 0.0
+          },
+          {
+            "value": "Looking for resources to start own business",
+            "count": 0,
+            "percent": 0.0
+          },
+          {
+            "value": "Other method",
+            "count": 0,
+            "percent": 0.0
+          }
+        ]
+      },
+      "provenance": {
+        "retention_source": "outputs/final_cluster_programme_relevant_profiles.csv row model_id=D_economic, profile_id=1, column=strongest_non_clustering_characteristics",
+        "analysis_source": "30_final_cluster_profile_analysis.ipynb -> final_cluster_profiling_report.md",
+        "statistical_source": "outputs/final_cluster_profile_comparison_summary.csv row model_id=D_economic, variable=job_search_method_d"
+      }
+    }
+  ],
+  "cautions": "Model-level caution: Income refusals and household-count inconsistencies were handled pairwise in clustering; profiles indicate relative position, not poverty status.\nAdditional model context: 29 of 191 Branch D respondents declined to report household income. 5 records had reported household workers plus unemployed members exceeding household size; their derived shares were treated as unavailable (missing) rather than silently corrected. Missing-aware Gower distance used only the remaining comparable components for these respondents.\nFDR-correction context: Among the findings that passed the effect-size/coverage reporting screen for this model, 4 of 5 remained significant after FDR correction; 1 did not.\n\nProfile-specific caution (verbatim from the frozen evidence summary): Income refusals and household-count inconsistencies were handled pairwise in clustering; profiles indicate relative position, not poverty status. Some reported findings use eligible-subgroup denominators. Some categorical comparisons contain sparse cells.\n\nConditional-denominator caution: 7 of 34 variables tested against this model are conditional (asked only of an eligible subgroup via survey routing, e.g. only active jobseekers, only those who worked while studying). Their percentages use the eligible-subgroup denominator shown in section 3, not the full profile size. A blank caused by survey routing was never treated as a 'No' answer during profiling.\n\nCross-dimensional caution: the following variables tested against this model also form part of another retained clustering model; their relationship to this profile is descriptive only and is NOT independent statistical validation of this model:\n  - Current institution type: Forms the separate D educational/cultural model.\n  - Mother's education: Forms the separate D educational/cultural model.\n  - Study autonomy: Forms the separate D motivation model.\n  - Reason for working while studying: Conditional on a variable forming the D educational/cultural model.\n  - Type of work while studying: Conditional on a variable forming the D educational/cultural model.\n  - Expected highest education: Forms the separate D educational/cultural model.\n  - Worked while studying: Forms the separate D educational/cultural model.\n  - Paid status of work while studying: Conditional on a variable forming the D educational/cultural model.\n  - Institutional belonging: Forms the separate D motivation model.\n  - Study motivation type: Forms the separate D motivation model.\n  - District: Many district categories can create sparse tables.\n  - Reason for re-entering education: Follow-up to a variable forming the D educational/cultural model.\n  - Perceived competence in study field: Forms the separate D motivation model.\n  - Hours band while studying: Conditional on a variable forming the D educational/cultural model.\n  - Father's education: Forms the separate D educational/cultural model.\n  - Re-entered education after interruption: Forms the separate D educational/cultural model.\n\nSparse-cell caution: 18 of 34 variables tested against this model contain sparse expected-cell counts (categorical tables with rare category combinations); percentages built from sparse tables are listed in section 3 and should be read with extra caution, especially for high-cardinality variables such as district, sector or stated obstacle.\n\nGeneral measurement cautions (apply to every profile in this knowledge base):\n  - A reported percentage is a within-profile percentage in this 362-respondent strict\n    cohort, not a population estimate for all Sri Lankan youth.\n  - Effect sizes rank descriptive differences; they do not prove that cluster membership\n    caused the characteristic.\n  - Consensus clustering stability shows reproducibility under the specified procedure;\n    it does not prove a natural, causal, or permanent youth type.\n  - Profile names are descriptive and must not stigmatise respondents or be used to deny\n    programme access.\n\n----------------------------------------------------------------------------------------------------",
+  "prohibited_inferences": "Statements that must NOT be assumed true for an individual merely because they belong\nto this profile. These are hard constraints for any downstream system (including a RAG\nrecommendation layer) consuming this document.\n\nUniversal (applies to all 17 retained profiles):\n  - Do not assume that a specific individual assigned to this profile personally holds any characteristic reported as a group percentage. A group finding such as 'X% of this profile reported Y' describes the profile as a whole; it is not a fact about any one person in it — a sizeable minority (and in close splits, close to half) of the profile did NOT report Y.\n  - Do not treat profile membership as a diagnosis, permanent trait, or whole-person label. Profiles are exploratory response-pattern groups within ONE retained dimension only. The same respondent can simultaneously belong to different profiles across different retained dimensions (for example a Branch D respondent has independent motivation, economic and educational-trajectory profile memberships) — no single profile describes the whole person.\n  - Do not use profile membership, alone, as an eligibility gate, a reason to deny access to a programme, or a reason to prioritise/deprioritise a youth for any service.\n  - Do not treat effect sizes or association strength as evidence of causation. A reported association (e.g. 'Profile A more often reported X') describes a measured difference in this sample; it does not establish that being in Profile A caused X, or that X caused profile membership.\n  - Do not treat a finding that did not pass this model's effect-size/coverage reporting screen (see DIRECT_GROUP_DISTRIBUTIONS) as an approved or reportable difference. Untagged distributions are raw descriptive data only, not vetted findings.\n  - Do not treat a finding as statistically confirmed population evidence merely because it appears here. Most models in this knowledge base have few or zero findings that remain significant after Benjamini-Hochberg FDR correction (see this profile's CAUTIONS section and fdr_note) — effect sizes are the primary ranking evidence, and p-values (raw or adjusted) are supporting evidence only.\n  - Do not generalise any percentage in this document to Sri Lankan youth generally, to NYSC's wider applicant pool, or to any group outside the 362-respondent strict analytical cohort (D=191, E=34, F=81, G=56) from which these profiles were derived.\n  - Do not infer, invent, or assume any need, barrier, preference or characteristic for this profile that is not explicitly present in the source data below. If a data point is absent, it must be reported as absent/not tested, never filled in by assumption.\n  - Do not use this document, on its own, to select or recommend a specific NYSC course or programme. Course/programme recommendation requires a separate, transparent, expert-reviewed matching stage that combines this profile information with the individual's own stated preferences, eligibility and the structured NYSC course catalogue.\n\nSpecific to the 'Economic resources and household pressure' model:\n  - Do not describe this profile using the word 'poverty' or treat it as a poverty classification — it indicates only a RELATIVE household economic position within this specific 191-respondent Branch D cohort, not an absolute income or poverty-line measurement.\n  - Do not assume the 29 respondents who declined to report household income are evenly or randomly distributed across profiles, or backfill their income with an assumed value.\n\nWorked counter-example for this specific profile (do NOT do this):\n  WRONG: \"This youth is in profile 'Economic profile 1: relatively lower household economic position', so they must have this characteristic: Ideal sector: less often reported ‘Information technology and communications’ (18/44, 40.9% vs 63.3% in other profile(s)) [sparse table]\"\n  RIGHT: \"This youth is in profile 'Economic profile 1: relatively lower household economic position' (n=44). Within this profile, the group-level pattern was: Ideal sector: less often reported ‘Information technology and communications’ (18/44, 40.9% vs 63.3% in other profile(s)) [sparse table]. This is evidence about the group, not a confirmed fact about this individual, who must be asked directly.\"\n\n====================================================================================================\nEND OF DOCUMENT\n====================================================================================================",
+  "sources": [
+    "NYSC_all_branches_clustering_final_report.md",
+    "final_cluster_profiling_report.md",
+    "outputs/final_cluster_programme_relevant_profiles.csv",
+    "outputs/final_cluster_profile_comparison_summary.csv",
+    "outputs/branch_d_economic_resources_clusters/economic_final_profile_gower_medoids.csv"
+  ]
+}

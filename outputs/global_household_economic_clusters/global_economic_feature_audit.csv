@@ -1,0 +1,5 @@
+feature,type,observed,missing,maximum_weight_when_observed
+household_income,ordinal,311,52,0.25
+household_size,ordinal,363,0,0.25
+household_workers,ordinal,348,15,0.25
+household_unemployed,ordinal,348,15,0.25

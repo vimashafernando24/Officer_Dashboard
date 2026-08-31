@@ -1,12 +1,37 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, type CSSProperties } from "react";
 import { createPortal } from "react-dom";
 import type { ClusterCatalogueEntry } from "../../types";
+import profileMeaningLibraryJson from "../../data/clusterProfileMeaningLibrary.json";
+
+interface SiblingProfile {
+  profile_key: string;
+  profile_name: string;
+}
+
+interface SummaryEvidence {
+  evidence_id: string;
+  evidence_status: "fdr_supported" | "retained_descriptive";
+}
+
+interface ProfileMeaning {
+  model_key: string;
+  profile_code: string;
+  profile_name: string;
+  historical_profile_size: number;
+  sibling_profiles: SiblingProfile[];
+  comparison_summary: string;
+  summary_evidence: SummaryEvidence[];
+}
+
+const profileMeaningLibrary = profileMeaningLibraryJson as Record<string, ProfileMeaning>;
 
 interface Props {
   profile: ClusterCatalogueEntry;
   assigned: boolean;
   anchor: SVGGElement;
   container: HTMLDivElement;
+  peerIndex: number;
+  peerCount: number;
   onClose: () => void;
 }
 
@@ -14,21 +39,22 @@ interface PopoverPosition {
   left: number;
   top: number;
   width: number;
+  maxHeight?: number;
   tailX: number;
   placement: "above" | "below";
-}
-
-function shortCode(code: string) {
-  return code.replace(/^Cluster\s+/i, "");
+  layout: "single" | "side-by-side" | "stacked";
 }
 
 function clamp(value: number, minimum: number, maximum: number) {
   return Math.min(Math.max(value, minimum), maximum);
 }
 
-export function ClusterProfilePopover({ profile, assigned, anchor, container, onClose }: Props) {
+export function ClusterProfilePopover({
+  profile, assigned, anchor, container, peerIndex, peerCount, onClose,
+}: Props) {
   const bubble = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState<PopoverPosition | null>(null);
+  const meaning = profileMeaningLibrary[profile.profile_key];
   const closeAndRestoreFocus = useCallback(() => {
     onClose();
     window.requestAnimationFrame(() => anchor.focus());
@@ -52,12 +78,24 @@ export function ClusterProfilePopover({ profile, assigned, anchor, container, on
 
     const outerPadding = 12;
     const gap = 18;
-    const width = Math.min(360, Math.max(270, containerRect.width - outerPadding * 2), window.innerWidth - outerPadding * 2);
-    const height = bubble.current?.offsetHeight ?? 220;
+    const viewportLeft = Math.max(containerRect.left, 0) + outerPadding;
+    const viewportRight = Math.min(containerRect.right, window.innerWidth) - outerPadding;
+    const availableWidth = Math.max(0, viewportRight - viewportLeft);
+    const peerGap = 16;
+    const sideBySide = peerCount === 2 && availableWidth >= 620;
+    const stacked = peerCount === 2 && !sideBySide;
+    const width = sideBySide
+      ? Math.min(420, (availableWidth - peerGap) / 2)
+      : Math.min(440, Math.max(290, containerRect.width - outerPadding * 2), window.innerWidth - outerPadding * 2);
+    const height = bubble.current?.offsetHeight ?? 430;
     const anchorX = leafRect.left + leafRect.width / 2;
     const minLeft = Math.max(containerRect.left + outerPadding, outerPadding);
     const maxLeft = Math.max(minLeft, Math.min(containerRect.right, window.innerWidth) - width - outerPadding);
-    const left = clamp(anchorX - width / 2, minLeft, maxLeft);
+    const groupWidth = width * 2 + peerGap;
+    const groupLeft = viewportLeft + Math.max(0, (availableWidth - groupWidth) / 2);
+    const left = sideBySide
+      ? groupLeft + peerIndex * (width + peerGap)
+      : clamp(anchorX - width / 2, minLeft, maxLeft);
 
     const topBoundary = Math.max(containerRect.top + outerPadding, outerPadding);
     const bottomBoundary = Math.min(containerRect.bottom - outerPadding, window.innerHeight - outerPadding);
@@ -73,20 +111,33 @@ export function ClusterProfilePopover({ profile, assigned, anchor, container, on
           ? "above"
           : "below";
     const preferredTop = placement === "above" ? aboveTop : belowTop;
-    const top = clamp(preferredTop, topBoundary, Math.max(topBoundary, bottomBoundary - height));
+    const stackedHeight = stacked ? Math.max(100, (bottomBoundary - topBoundary - peerGap) / 2) : undefined;
+    const top = stacked && stackedHeight !== undefined
+      ? topBoundary + peerIndex * (stackedHeight + peerGap)
+      : clamp(preferredTop, topBoundary, Math.max(topBoundary, bottomBoundary - height));
     const tailX = clamp(anchorX - left, 34, width - 34);
 
     setPosition((current) => {
-      const next = { left, top, width, tailX, placement };
+      const next: PopoverPosition = {
+        left,
+        top,
+        width,
+        maxHeight: stackedHeight,
+        tailX,
+        placement,
+        layout: sideBySide ? "side-by-side" : stacked ? "stacked" : "single",
+      };
       return current
         && Math.abs(current.left - next.left) < 0.5
         && Math.abs(current.top - next.top) < 0.5
         && current.width === next.width
         && current.placement === next.placement
+        && current.layout === next.layout
+        && current.maxHeight === next.maxHeight
         ? current
         : next;
     });
-  }, [anchor, container, onClose]);
+  }, [anchor, container, onClose, peerCount, peerIndex]);
 
   useLayoutEffect(() => {
     updatePosition();
@@ -106,10 +157,12 @@ export function ClusterProfilePopover({ profile, assigned, anchor, container, on
     const onPointerDown = (event: PointerEvent) => {
       const target = event.target as Node;
       if (bubble.current?.contains(target) || anchor.contains(target)) return;
+      const element = target instanceof Element ? target : null;
+      if (element?.closest(".research-leaf, .research-profile-popover, .cluster-survey-evidence-layer")) return;
       onClose();
     };
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") closeAndRestoreFocus();
+      if (event.key === "Escape" && !document.querySelector(".cluster-survey-evidence-layer")) closeAndRestoreFocus();
     };
     document.addEventListener("pointerdown", onPointerDown);
     window.addEventListener("keydown", onKeyDown);
@@ -123,23 +176,44 @@ export function ClusterProfilePopover({ profile, assigned, anchor, container, on
     left: position.left,
     top: position.top,
     width: position.width,
+    maxHeight: position.maxHeight,
     "--research-popover-tail-x": `${position.tailX}px`,
   } as CSSProperties) : undefined;
+
+  if (!meaning) return null;
+  const idSuffix = profile.profile_key.replace(/[^a-zA-Z0-9_-]/g, "-");
+  const titleId = `research-popover-title-${idSuffix}`;
+  const descriptionId = `research-popover-description-${idSuffix}`;
+  const siblingLabel = meaning.sibling_profiles.length === 1
+    ? "Compared with:"
+    : "Compared with other profiles in this dimension:";
+  const siblingNames = meaning.sibling_profiles.map((sibling) => sibling.profile_name).join(" · ");
 
   return createPortal(
     <div
       ref={bubble}
-      className={`research-profile-popover is-${position?.placement ?? "above"}${position ? " is-positioned" : ""}`}
+      className={`research-profile-popover is-${position?.placement ?? "above"}${position ? ` is-positioned is-${position.layout}` : ""}`}
       style={style}
       role="dialog"
-      aria-labelledby="research-popover-title"
-      aria-describedby="research-popover-description"
+      aria-labelledby={titleId}
+      aria-describedby={descriptionId}
     >
       <button className="research-popover-close" type="button" onClick={closeAndRestoreFocus} aria-label="Close profile description">×</button>
-      <span className="research-popover-code">{shortCode(profile.cluster_code)}</span>
-      {assigned ? <span className="research-popover-assigned">Your assigned profile</span> : null}
-      <h2 id="research-popover-title">{profile.cluster_name}</h2>
-      <p id="research-popover-description">{profile.common_description}</p>
+      <span className="research-popover-code">{meaning.profile_code}</span>
+      {assigned ? <span className="research-popover-assigned">MEMBER’S ASSIGNED PROFILE</span> : null}
+      <h2 id={titleId}>{meaning.profile_name}</h2>
+      <p className="research-popover-profile-size">Historical profile size: <strong>{meaning.historical_profile_size}</strong></p>
+
+      <div className="research-popover-comparison">
+        <span>{siblingLabel}</span>
+        <p>{siblingNames}</p>
+      </div>
+
+      <section className="research-popover-meaning">
+        <h3>What distinguishes this profile</h3>
+        <p id={descriptionId}>{meaning.comparison_summary}</p>
+      </section>
+
     </div>,
     document.body,
   );

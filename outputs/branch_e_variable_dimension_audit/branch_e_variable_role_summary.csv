@@ -1,0 +1,11 @@
+proposed_role,proposed_dimension,variables,variable_count,minimum_coverage_percent
+conditional descriptor,Not used in all-Branch-E distance,"age_first_married, spouse_activity, reason_left_edu, highest_edu_completed, edu_end_year, spell1_activity, spell2_activity, spell1_is_current, spell2_is_current, spell1_contract, spell1_satisfaction, spell1_end_reason, search_method_primary, reason_not_seeking, reason_refused_job, minimum_wage_band",16,2.9
+profile/programme-mapping descriptor,Not a clustering dimension,"age_group, gender, district, area_type, moved_from_origin, move_reason, marital_status, has_children, father_occ, mother_occ, work_while_study_type, work_while_study_paid, work_while_study_hours, work_while_study_motivation, edu_min_for_decent_job, most_important_life_goal, most_useful_quality_for_job, ideal_work_type, ideal_sector, job_type_sought, ever_refused_job, employment_service_help, activity_while_searching, willing_to_relocate, main_obstacle_finding_work, training_type_would_help",26,23.5
+proposed clustering input,E1 — Job-search psychological readiness and support,"job_search_self_efficacy, job_search_autonomy_orientation, social_support_job_search, future_planning_orientation",4,100.0
+proposed clustering input,E2 — Search intensity and accumulated exposure,"active_search_4weeks, job_search_duration, num_applications, num_interviews",4,100.0
+proposed clustering input,E3 — Economic urgency and job-acceptance constraints,"income_urgency, job_acceptance_conditions, has_minimum_wage",3,100.0
+proposed clustering input,E4 — Education-to-work preparedness and learning orientation,"past_edu_usefulness, plans_further_edu, expected_highest_edu_e",3,100.0
+proposed clustering input,E5 — Household economic resources and dependency,"household_size, household_income, household_workers, household_unemployed, primary_earner_status, primary_income_source",6,100.0
+proposed clustering input,E6 — Educational and inherited cultural capital,"father_edu, mother_edu, edu_status, worked_while_studying",4,100.0
+routing/audit only,Not a clustering dimension,"current_activity_status, desire_for_work, wanted_to_work, available_to_start, has_job_to_return, looking_while_absent",6,14.7
+skipped clustering input,E7 — Job-search social capital,"employment_network_quality, knows_people_in_target_sector, network_helpfulness",3,100.0

@@ -1,0 +1,123 @@
+search_pathway_profile_id,variable,response,records,within_profile_percent
+1,registered_as_jobseeker,No,38,79.16666666666667
+1,registered_as_jobseeker,Yes,10,20.833333333333332
+2,registered_as_jobseeker,No,23,69.6969696969697
+2,registered_as_jobseeker,Yes,10,30.303030303030305
+1,employment_service_help_f,Guidance on education or training options,3,6.25
+1,employment_service_help_f,Information about job vacancies,6,12.5
+1,employment_service_help_f,No — none at all,39,81.25
+2,employment_service_help_f,Advice on how to search for jobs,3,9.090909090909092
+2,employment_service_help_f,Guidance on education or training options,1,3.0303030303030303
+2,employment_service_help_f,Information about job vacancies,4,12.121212121212121
+2,employment_service_help_f,No — none at all,25,75.75757575757575
+1,jobs_applied_before_hire,0.0,10,20.833333333333332
+1,jobs_applied_before_hire,1.0,2,4.166666666666667
+1,jobs_applied_before_hire,2.0,9,18.75
+1,jobs_applied_before_hire,3.0,8,16.666666666666668
+1,jobs_applied_before_hire,5.0,3,6.25
+1,jobs_applied_before_hire,8.0,1,2.0833333333333335
+1,jobs_applied_before_hire,9.0,1,2.0833333333333335
+1,jobs_applied_before_hire,10.0,4,8.333333333333334
+1,jobs_applied_before_hire,20.0,1,2.0833333333333335
+1,jobs_applied_before_hire,22.0,1,2.0833333333333335
+1,jobs_applied_before_hire,30.0,2,4.166666666666667
+1,jobs_applied_before_hire,47.0,1,2.0833333333333335
+1,jobs_applied_before_hire,50.0,2,4.166666666666667
+1,jobs_applied_before_hire,90.0,1,2.0833333333333335
+1,jobs_applied_before_hire,100.0,2,4.166666666666667
+2,jobs_applied_before_hire,0.0,1,3.0303030303030303
+2,jobs_applied_before_hire,1.0,1,3.0303030303030303
+2,jobs_applied_before_hire,2.0,3,9.090909090909092
+2,jobs_applied_before_hire,3.0,2,6.0606060606060606
+2,jobs_applied_before_hire,4.0,1,3.0303030303030303
+2,jobs_applied_before_hire,5.0,4,12.121212121212121
+2,jobs_applied_before_hire,6.0,1,3.0303030303030303
+2,jobs_applied_before_hire,10.0,9,27.272727272727273
+2,jobs_applied_before_hire,20.0,5,15.151515151515152
+2,jobs_applied_before_hire,30.0,2,6.0606060606060606
+2,jobs_applied_before_hire,80.0,1,3.0303030303030303
+2,jobs_applied_before_hire,100.0,2,6.0606060606060606
+2,jobs_applied_before_hire,300.0,1,3.0303030303030303
+1,interviews_before_hire,0.0,11,22.916666666666668
+1,interviews_before_hire,1.0,9,18.75
+1,interviews_before_hire,2.0,13,27.083333333333332
+1,interviews_before_hire,3.0,4,8.333333333333334
+1,interviews_before_hire,4.0,1,2.0833333333333335
+1,interviews_before_hire,5.0,5,10.416666666666666
+1,interviews_before_hire,8.0,1,2.0833333333333335
+1,interviews_before_hire,10.0,3,6.25
+1,interviews_before_hire,20.0,1,2.0833333333333335
+2,interviews_before_hire,0.0,4,12.121212121212121
+2,interviews_before_hire,1.0,2,6.0606060606060606
+2,interviews_before_hire,2.0,9,27.272727272727273
+2,interviews_before_hire,3.0,4,12.121212121212121
+2,interviews_before_hire,4.0,6,18.181818181818183
+2,interviews_before_hire,5.0,3,9.090909090909092
+2,interviews_before_hire,6.0,3,9.090909090909092
+2,interviews_before_hire,20.0,2,6.0606060606060606
+1,search_duration_before_hire,1 to 2 months,10,20.833333333333332
+1,search_duration_before_hire,1 to 4 weeks,21,43.75
+1,search_duration_before_hire,3 to 6 months,2,4.166666666666667
+1,search_duration_before_hire,6 months to 1 year,1,2.0833333333333335
+1,search_duration_before_hire,Less than 1 week — I was recruited or it was immediate,10,20.833333333333332
+1,search_duration_before_hire,More than 1 year,4,8.333333333333334
+2,search_duration_before_hire,1 to 2 months,8,24.242424242424242
+2,search_duration_before_hire,1 to 4 weeks,2,6.0606060606060606
+2,search_duration_before_hire,3 to 6 months,17,51.515151515151516
+2,search_duration_before_hire,6 months to 1 year,4,12.121212121212121
+2,search_duration_before_hire,Less than 1 week — I was recruited or it was immediate,1,3.0303030303030303
+2,search_duration_before_hire,More than 1 year,1,3.0303030303030303
+1,obstacle_finding_this_job,Employers need higher qualifications than I have,2,4.166666666666667
+1,obstacle_finding_this_job,No education or qualifications,2,4.166666666666667
+1,obstacle_finding_this_job,No major obstacles — the process was straightforward,28,58.333333333333336
+1,obstacle_finding_this_job,Not enough jobs available in this area,6,12.5
+1,obstacle_finding_this_job,Other obstacle,6,12.5
+1,obstacle_finding_this_job,Wages in available jobs are too low,3,6.25
+1,obstacle_finding_this_job,Working conditions in available jobs are poor,1,2.0833333333333335
+2,obstacle_finding_this_job,Employers need higher qualifications than I have,3,9.090909090909092
+2,obstacle_finding_this_job,General education not suited to available jobs,3,9.090909090909092
+2,obstacle_finding_this_job,No suitable training available nearby,1,3.0303030303030303
+2,obstacle_finding_this_job,No work experience,15,45.45454545454545
+2,obstacle_finding_this_job,Not enough jobs available in this area,6,18.181818181818183
+2,obstacle_finding_this_job,Other obstacle,1,3.0303030303030303
+2,obstacle_finding_this_job,Wages in available jobs are too low,3,9.090909090909092
+2,obstacle_finding_this_job,Working conditions in available jobs are poor,1,3.0303030303030303
+1,reason_refused_job_f,Did not match my qualifications,3,6.25
+1,reason_refused_job_f,No advancement prospects,2,4.166666666666667
+1,reason_refused_job_f,No or too-short contract,1,2.0833333333333335
+1,reason_refused_job_f,Other,3,6.25
+1,reason_refused_job_f,Too many hours,1,2.0833333333333335
+1,reason_refused_job_f,Wages were too low,4,8.333333333333334
+1,reason_refused_job_f,Waiting for a better offer,4,8.333333333333334
+1,reason_refused_job_f,Work was not interesting,2,4.166666666666667
+1,reason_refused_job_f,,28,58.333333333333336
+2,reason_refused_job_f,Did not match my qualifications,3,9.090909090909092
+2,reason_refused_job_f,Location not convenient,2,6.0606060606060606
+2,reason_refused_job_f,Other,1,3.0303030303030303
+2,reason_refused_job_f,Wages were too low,5,15.151515151515152
+2,reason_refused_job_f,Waiting for a better offer,3,9.090909090909092
+2,reason_refused_job_f,Work was not interesting,2,6.0606060606060606
+2,reason_refused_job_f,,17,51.515151515151516
+1,acceptance_conditions_search,"Any job, provided it matched my qualifications",8,16.666666666666668
+1,acceptance_conditions_search,"Any job, provided it paid well enough",4,8.333333333333334
+1,acceptance_conditions_search,"Any job, provided it was stable",5,10.416666666666666
+1,acceptance_conditions_search,"Any job, whatever the conditions",1,2.0833333333333335
+1,acceptance_conditions_search,"Only a job that was stable, well paid, AND matched my qualifications",30,62.5
+2,acceptance_conditions_search,"Any job, provided it matched my qualifications",9,27.272727272727273
+2,acceptance_conditions_search,"Any job, provided it paid well enough",6,18.181818181818183
+2,acceptance_conditions_search,"Any job, provided it was stable",3,9.090909090909092
+2,acceptance_conditions_search,"Only a job that was stable, well paid, AND matched my qualifications",15,45.45454545454545
+1,had_min_wage_during_search,No — I would have accepted any wage,14,29.166666666666668
+1,had_min_wage_during_search,Yes,34,70.83333333333333
+2,had_min_wage_during_search,No — I would have accepted any wage,9,27.272727272727273
+2,had_min_wage_during_search,Yes,24,72.72727272727273
+1,willing_to_relocate_f,I have no strong preference,9,18.75
+1,willing_to_relocate_f,No — I would not move,17,35.416666666666664
+1,willing_to_relocate_f,Yes — to another country,11,22.916666666666668
+1,willing_to_relocate_f,Yes — to another province in Sri Lanka,4,8.333333333333334
+1,willing_to_relocate_f,Yes — within the same province,7,14.583333333333334
+2,willing_to_relocate_f,I have no strong preference,4,12.121212121212121
+2,willing_to_relocate_f,No — I would not move,8,24.242424242424242
+2,willing_to_relocate_f,Yes — to another country,11,33.333333333333336
+2,willing_to_relocate_f,Yes — to another province in Sri Lanka,1,3.0303030303030303
+2,willing_to_relocate_f,Yes — within the same province,9,27.272727272727273

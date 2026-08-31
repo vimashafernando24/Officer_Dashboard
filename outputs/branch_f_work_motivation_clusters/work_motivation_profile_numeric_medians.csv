@@ -1,0 +1,4 @@
+work_motivation_profile_id,median_autonomy_code,median_competence_code,median_relatedness_code,median_motivation_type_code,percent_received_training,percent_wants_to_change_job
+1,1.0,1.0,1.0,1.0,86.11111111111111,41.66666666666667
+2,2.0,1.0,1.0,2.0,75.0,57.14285714285714
+3,2.0,2.0,2.0,4.0,76.47058823529412,88.23529411764706

@@ -1,0 +1,5 @@
+omitted_feature,minimum_pair_coverage,gower_silhouette_reduced,ari_reduced_kmedoids_vs_final_consensus
+reason_not_in_labour_force,3,0.570161611213014,1.0
+ever_worked,3,0.4356477000472924,0.44902309058614565
+wants_to_work_future,3,0.36504273456263936,0.357066950053135
+wants_further_edu,3,0.3865714196187912,0.610504573620537

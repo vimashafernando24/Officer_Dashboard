@@ -1,0 +1,53 @@
+{
+  "cohort_definition": {
+    "branch": "D",
+    "branch_routing_source": "translated_final_active_branch",
+    "records": 191
+  },
+  "split": {
+    "training_records": 152,
+    "holdout_records": 39,
+    "random_state": 42
+  },
+  "features": {
+    "input_variables": 48,
+    "numeric_ordinal_binary": 25,
+    "nominal": 23,
+    "all_missing_excluded": [
+      "reason_left_edu",
+      "spell1_contract",
+      "spell2_activity",
+      "spell2_is_current",
+      "spell3_activity"
+    ],
+    "final_expanded_features": 197
+  },
+  "pca": {
+    "variance_target": 0.85,
+    "components": 71,
+    "variance_retained": 0.8512776123486603
+  },
+  "clustering": {
+    "tested_k": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "valid_statistical_solution_found": false,
+    "provisional_recommended_k": null,
+    "diagnostic_k": 2,
+    "algorithm": "K-Means",
+    "cluster_sizes": {
+      "0": 183,
+      "1": 8
+    },
+    "all_clusters_meet_30_respondent_guideline": false
+  },
+  "validation": {
+    "training_silhouette": 0.4102533311258495,
+    "holdout_silhouette": null,
+    "holdout_clusters_represented": 1
+  },
+  "interpretation_status": "No acceptable k found; diagnostic assignments must not be treated as a youth typology."
+}

@@ -1,0 +1,68 @@
+{
+  "cohort": {
+    "records": 81,
+    "branch": "F",
+    "strict_final_branch_records": 82,
+    "excluded_routing_integrity_records": 1
+  },
+  "dimension": "earnings and working-time preference patterns",
+  "clustering_features": [
+    "monthly_income_band",
+    "usual_hours_per_week",
+    "income_hours_preference"
+  ],
+  "descriptors": [
+    "actual_hours_last_week",
+    "hours_below_normal",
+    "job_satisfaction",
+    "has_second_job"
+  ],
+  "method": {
+    "distance": "equal-weight mixed Gower on three original responses",
+    "selected_k": 2,
+    "ensemble": "K-medoids plus spectral consensus",
+    "base_partitions": 200
+  },
+  "profiles": {
+    "sizes": {
+      "1": 51,
+      "2": 30
+    },
+    "names": {
+      "1": "Mostly current-hours preference",
+      "2": "More-hours/more-income preference"
+    }
+  },
+  "metrics": {
+    "gower_silhouette": 0.5248539186635579,
+    "consensus_distance_silhouette": 0.9472729841583009,
+    "ensemble_bootstrap_ari_mean": 0.9950498453076659,
+    "ensemble_bootstrap_ari_p10": 0.9950498453076659,
+    "ari_vs_full_kmedoids": 0.9020121278941565,
+    "ari_vs_full_spectral": 1.0,
+    "ari_vs_hac_average": 1.0,
+    "ari_vs_hac_complete": 1.0,
+    "minimum_profile_size": 30,
+    "low_gower_confidence_percent": 7.4074074074074066,
+    "ambiguous_consensus_percent": 2.4691358024691357,
+    "pac_10_90": 0.14290123456790124
+  },
+  "decision": {
+    "primary_checks_passed": true,
+    "checks_passed": 8,
+    "checks_total": 8,
+    "statistical_status": "Stable, cross-method-supported but preference-led segmentation",
+    "included_in_final_dimension_set": false,
+    "exclusion_reason": "Final researcher scope decision: retain only the multidimensional employment-security/formality clustering; this solution is primarily a direct hours/income-preference segmentation.",
+    "status": "Excluded from the final Branch F dimension set despite statistical stability"
+  },
+  "limitations": [
+    "These are exploratory earnings/working-time response profiles, not a validated employment-adequacy scale.",
+    "Hours/income preference is nominal; no numeric desirability order is imposed.",
+    "Usual weekly hours are self-reported and do not by themselves identify overwork or underemployment.",
+    "Job satisfaction and actual hours describe profiles but do not determine distance.",
+    "The result is driven mainly by hours/income preference: omitting that feature changes the partition substantially, so this is not evidence of two broad earnings levels.",
+    "The one routing-corrupted final-Branch-F record is excluded from this employment analysis.",
+    "Final framework decision: keep this result only as a descriptive diagnostic; it is not part of the retained Branch F clustering set."
+  ]
+}

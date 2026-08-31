@@ -1,0 +1,3 @@
+cluster,training_rows,holdout_rows,train_holdout_centroid_distance,combined_rows
+0,148,39,1.637521316222391,187
+1,4,0,,4
