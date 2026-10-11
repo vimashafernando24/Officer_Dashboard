@@ -2175,12 +2175,12 @@
             },
             {
               "profile_key": "D_educational_cultural_p3",
-              "canonical_profile_name": "Private-study bachelor pathway without work exposure",
+              "canonical_profile_name": "Private-study pathway without work exposure",
               "historical_profile_size": 57
             },
             {
               "profile_key": "D_educational_cultural_p4",
-              "canonical_profile_name": "Private-study bachelor pathway with work exposure",
+              "canonical_profile_name": "Private-study pathway with work exposure",
               "historical_profile_size": 66
             }
           ],
@@ -2252,7 +2252,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p3",
-                    "profile_name": "Private-study bachelor pathway without work exposure",
+                    "profile_name": "Private-study pathway without work exposure",
                     "denominator": 57,
                     "answers": [
                       {
@@ -2273,7 +2273,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p4",
-                    "profile_name": "Private-study bachelor pathway with work exposure",
+                    "profile_name": "Private-study pathway with work exposure",
                     "denominator": 66,
                     "answers": [
                       {
@@ -2404,7 +2404,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p3",
-                    "profile_name": "Private-study bachelor pathway without work exposure",
+                    "profile_name": "Private-study pathway without work exposure",
                     "denominator": 57,
                     "answers": [
                       {
@@ -2425,7 +2425,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p4",
-                    "profile_name": "Private-study bachelor pathway with work exposure",
+                    "profile_name": "Private-study pathway with work exposure",
                     "denominator": 66,
                     "answers": [
                       {
@@ -2599,7 +2599,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p3",
-                    "profile_name": "Private-study bachelor pathway without work exposure",
+                    "profile_name": "Private-study pathway without work exposure",
                     "denominator": 57,
                     "answers": [
                       {
@@ -2627,7 +2627,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p4",
-                    "profile_name": "Private-study bachelor pathway with work exposure",
+                    "profile_name": "Private-study pathway with work exposure",
                     "denominator": 66,
                     "answers": [
                       {
@@ -2860,7 +2860,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p3",
-                    "profile_name": "Private-study bachelor pathway without work exposure",
+                    "profile_name": "Private-study pathway without work exposure",
                     "denominator": 57,
                     "answers": [
                       {
@@ -2881,7 +2881,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p4",
-                    "profile_name": "Private-study bachelor pathway with work exposure",
+                    "profile_name": "Private-study pathway with work exposure",
                     "denominator": 66,
                     "answers": [
                       {
@@ -2952,12 +2952,12 @@
             },
             {
               "profile_key": "D_educational_cultural_p3",
-              "canonical_profile_name": "Private-study bachelor pathway without work exposure",
+              "canonical_profile_name": "Private-study pathway without work exposure",
               "historical_profile_size": 57
             },
             {
               "profile_key": "D_educational_cultural_p4",
-              "canonical_profile_name": "Private-study bachelor pathway with work exposure",
+              "canonical_profile_name": "Private-study pathway with work exposure",
               "historical_profile_size": 66
             }
           ],
@@ -3029,7 +3029,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p3",
-                    "profile_name": "Private-study bachelor pathway without work exposure",
+                    "profile_name": "Private-study pathway without work exposure",
                     "denominator": 57,
                     "answers": [
                       {
@@ -3050,7 +3050,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p4",
-                    "profile_name": "Private-study bachelor pathway with work exposure",
+                    "profile_name": "Private-study pathway with work exposure",
                     "denominator": 66,
                     "answers": [
                       {
@@ -3181,7 +3181,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p3",
-                    "profile_name": "Private-study bachelor pathway without work exposure",
+                    "profile_name": "Private-study pathway without work exposure",
                     "denominator": 57,
                     "answers": [
                       {
@@ -3202,7 +3202,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p4",
-                    "profile_name": "Private-study bachelor pathway with work exposure",
+                    "profile_name": "Private-study pathway with work exposure",
                     "denominator": 66,
                     "answers": [
                       {
@@ -3376,7 +3376,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p3",
-                    "profile_name": "Private-study bachelor pathway without work exposure",
+                    "profile_name": "Private-study pathway without work exposure",
                     "denominator": 57,
                     "answers": [
                       {
@@ -3404,7 +3404,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p4",
-                    "profile_name": "Private-study bachelor pathway with work exposure",
+                    "profile_name": "Private-study pathway with work exposure",
                     "denominator": 66,
                     "answers": [
                       {
@@ -3637,7 +3637,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p3",
-                    "profile_name": "Private-study bachelor pathway without work exposure",
+                    "profile_name": "Private-study pathway without work exposure",
                     "denominator": 57,
                     "answers": [
                       {
@@ -3658,7 +3658,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p4",
-                    "profile_name": "Private-study bachelor pathway with work exposure",
+                    "profile_name": "Private-study pathway with work exposure",
                     "denominator": 66,
                     "answers": [
                       {
@@ -3719,7 +3719,7 @@
           "model_key": "D_educational_cultural",
           "model_title": "Education background",
           "profile_key": "D_educational_cultural_p3",
-          "canonical_profile_name": "Private-study bachelor pathway without work exposure",
+          "canonical_profile_name": "Private-study pathway without work exposure",
           "historical_profile_size": 57,
           "sibling_profiles": [
             {
@@ -3734,7 +3734,7 @@
             },
             {
               "profile_key": "D_educational_cultural_p4",
-              "canonical_profile_name": "Private-study bachelor pathway with work exposure",
+              "canonical_profile_name": "Private-study pathway with work exposure",
               "historical_profile_size": 66
             }
           ],
@@ -3806,7 +3806,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p3",
-                    "profile_name": "Private-study bachelor pathway without work exposure",
+                    "profile_name": "Private-study pathway without work exposure",
                     "denominator": 57,
                     "answers": [
                       {
@@ -3827,7 +3827,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p4",
-                    "profile_name": "Private-study bachelor pathway with work exposure",
+                    "profile_name": "Private-study pathway with work exposure",
                     "denominator": 66,
                     "answers": [
                       {
@@ -3958,7 +3958,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p3",
-                    "profile_name": "Private-study bachelor pathway without work exposure",
+                    "profile_name": "Private-study pathway without work exposure",
                     "denominator": 57,
                     "answers": [
                       {
@@ -3979,7 +3979,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p4",
-                    "profile_name": "Private-study bachelor pathway with work exposure",
+                    "profile_name": "Private-study pathway with work exposure",
                     "denominator": 66,
                     "answers": [
                       {
@@ -4153,7 +4153,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p3",
-                    "profile_name": "Private-study bachelor pathway without work exposure",
+                    "profile_name": "Private-study pathway without work exposure",
                     "denominator": 57,
                     "answers": [
                       {
@@ -4181,7 +4181,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p4",
-                    "profile_name": "Private-study bachelor pathway with work exposure",
+                    "profile_name": "Private-study pathway with work exposure",
                     "denominator": 66,
                     "answers": [
                       {
@@ -4280,7 +4280,7 @@
                 "profiles": [
                   {
                     "profile_key": "D_educational_cultural_p3",
-                    "profile_name": "Private-study bachelor pathway without work exposure",
+                    "profile_name": "Private-study pathway without work exposure",
                     "denominator": 45,
                     "answers": [
                       {
@@ -4414,7 +4414,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p3",
-                    "profile_name": "Private-study bachelor pathway without work exposure",
+                    "profile_name": "Private-study pathway without work exposure",
                     "denominator": 57,
                     "answers": [
                       {
@@ -4435,7 +4435,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p4",
-                    "profile_name": "Private-study bachelor pathway with work exposure",
+                    "profile_name": "Private-study pathway with work exposure",
                     "denominator": 66,
                     "answers": [
                       {
@@ -4496,7 +4496,7 @@
           "model_key": "D_educational_cultural",
           "model_title": "Education background",
           "profile_key": "D_educational_cultural_p4",
-          "canonical_profile_name": "Private-study bachelor pathway with work exposure",
+          "canonical_profile_name": "Private-study pathway with work exposure",
           "historical_profile_size": 66,
           "sibling_profiles": [
             {
@@ -4511,7 +4511,7 @@
             },
             {
               "profile_key": "D_educational_cultural_p3",
-              "canonical_profile_name": "Private-study bachelor pathway without work exposure",
+              "canonical_profile_name": "Private-study pathway without work exposure",
               "historical_profile_size": 57
             }
           ],
@@ -4583,7 +4583,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p3",
-                    "profile_name": "Private-study bachelor pathway without work exposure",
+                    "profile_name": "Private-study pathway without work exposure",
                     "denominator": 57,
                     "answers": [
                       {
@@ -4604,7 +4604,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p4",
-                    "profile_name": "Private-study bachelor pathway with work exposure",
+                    "profile_name": "Private-study pathway with work exposure",
                     "denominator": 66,
                     "answers": [
                       {
@@ -4735,7 +4735,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p3",
-                    "profile_name": "Private-study bachelor pathway without work exposure",
+                    "profile_name": "Private-study pathway without work exposure",
                     "denominator": 57,
                     "answers": [
                       {
@@ -4756,7 +4756,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p4",
-                    "profile_name": "Private-study bachelor pathway with work exposure",
+                    "profile_name": "Private-study pathway with work exposure",
                     "denominator": 66,
                     "answers": [
                       {
@@ -4930,7 +4930,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p3",
-                    "profile_name": "Private-study bachelor pathway without work exposure",
+                    "profile_name": "Private-study pathway without work exposure",
                     "denominator": 57,
                     "answers": [
                       {
@@ -4958,7 +4958,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p4",
-                    "profile_name": "Private-study bachelor pathway with work exposure",
+                    "profile_name": "Private-study pathway with work exposure",
                     "denominator": 66,
                     "answers": [
                       {
@@ -5057,7 +5057,7 @@
                 "profiles": [
                   {
                     "profile_key": "D_educational_cultural_p4",
-                    "profile_name": "Private-study bachelor pathway with work exposure",
+                    "profile_name": "Private-study pathway with work exposure",
                     "denominator": 55,
                     "answers": [
                       {
@@ -5191,7 +5191,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p3",
-                    "profile_name": "Private-study bachelor pathway without work exposure",
+                    "profile_name": "Private-study pathway without work exposure",
                     "denominator": 57,
                     "answers": [
                       {
@@ -5212,7 +5212,7 @@
                   },
                   {
                     "profile_key": "D_educational_cultural_p4",
-                    "profile_name": "Private-study bachelor pathway with work exposure",
+                    "profile_name": "Private-study pathway with work exposure",
                     "denominator": 66,
                     "answers": [
                       {

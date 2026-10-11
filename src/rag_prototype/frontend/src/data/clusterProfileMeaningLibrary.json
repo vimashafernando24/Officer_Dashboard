@@ -134,11 +134,11 @@
       },
       {
         "profile_key": "D_educational_cultural_p3",
-        "profile_name": "Private-study bachelor pathway without work exposure"
+        "profile_name": "Private-study pathway without work exposure"
       },
       {
         "profile_key": "D_educational_cultural_p4",
-        "profile_name": "Private-study bachelor pathway with work exposure"
+        "profile_name": "Private-study pathway with work exposure"
       }
     ],
     "comparison_summary": "Compared with the other education-background profiles, this historical group was more often already searching for work and less often relied on parents or family as its main personal income or education-funding source.",
@@ -169,11 +169,11 @@
       },
       {
         "profile_key": "D_educational_cultural_p3",
-        "profile_name": "Private-study bachelor pathway without work exposure"
+        "profile_name": "Private-study pathway without work exposure"
       },
       {
         "profile_key": "D_educational_cultural_p4",
-        "profile_name": "Private-study bachelor pathway with work exposure"
+        "profile_name": "Private-study pathway with work exposure"
       }
     ],
     "comparison_summary": "Compared with the other education-background profiles, this historical group more often had not yet begun searching for work, relied on parents or family for personal income, and studied through government-funded or free education.",
@@ -195,7 +195,7 @@
   "D_educational_cultural_p3": {
     "model_key": "D_educational_cultural",
     "profile_code": "EDU-3",
-    "profile_name": "Private-study bachelor pathway without work exposure",
+    "profile_name": "Private-study pathway without work exposure",
     "historical_profile_size": 57,
     "sibling_profiles": [
       {
@@ -208,7 +208,7 @@
       },
       {
         "profile_key": "D_educational_cultural_p4",
-        "profile_name": "Private-study bachelor pathway with work exposure"
+        "profile_name": "Private-study pathway with work exposure"
       }
     ],
     "comparison_summary": "Compared with the other education-background profiles, this historical group less often said they had not yet begun searching for work, while parents or family were more prominent as both personal income and education funding.",
@@ -230,7 +230,7 @@
   "D_educational_cultural_p4": {
     "model_key": "D_educational_cultural",
     "profile_code": "EDU-4",
-    "profile_name": "Private-study bachelor pathway with work exposure",
+    "profile_name": "Private-study pathway with work exposure",
     "historical_profile_size": 66,
     "sibling_profiles": [
       {
@@ -243,7 +243,7 @@
       },
       {
         "profile_key": "D_educational_cultural_p3",
-        "profile_name": "Private-study bachelor pathway without work exposure"
+        "profile_name": "Private-study pathway without work exposure"
       }
     ],
     "comparison_summary": "Compared with the other education-background profiles, this historical group less often said they had not yet begun searching for work, relied less on parents or family as its main personal income source, and more often reported the highest household-income band.",
