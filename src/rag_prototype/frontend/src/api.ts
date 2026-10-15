@@ -1,6 +1,10 @@
 import type { EvidencePreview, QuestionConfig, RecommendResponse } from "./types";
 
-const API_BASE = "http://127.0.0.1:5055";
+// Local development keeps using the Flask server. In a Vercel deployment the
+// browser talks to the same origin, whose /api routes are served by the small
+// Python adapter in the repository root.
+const API_BASE = import.meta.env.VITE_API_BASE
+  ?? (import.meta.env.DEV ? "http://127.0.0.1:5055" : "");
 
 export async function fetchQuestionConfig(branch: string): Promise<QuestionConfig> {
   const res = await fetch(`${API_BASE}/api/question_config?branch=${encodeURIComponent(branch)}`);

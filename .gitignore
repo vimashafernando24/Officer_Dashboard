@@ -20,3 +20,4 @@ dist/
 
 # Local assistant/editor settings
 .claude/
+.vercel

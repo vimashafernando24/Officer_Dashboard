@@ -19,15 +19,16 @@ Then open http://127.0.0.1:5055/
 """
 import csv
 import json
+import os
 import sys
 from pathlib import Path
 
-from flask import Flask, jsonify, request, Response
+from flask import Flask, jsonify, request, Response, send_from_directory
 from flask_cors import CORS
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from corpus_v2 import BASE, verify_corpus
-from env_config import get_production_model, verify_production_model, has_api_key
+from env_config import get_production_model, verify_production_model
 import context_pack_v2
 import new_respondent_cluster_assignment as nrca
 from profile_data_parser import parse_profile_document
@@ -113,6 +114,17 @@ LABELS_CSV = BASE / "outputs/nysc_survey_cleaned_labels.csv"
 
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": ["http://localhost:5173", "http://127.0.0.1:5173"]}})
+
+LEGACY_PARTICIPANT_EXPLORER_PATHS = frozenset({"/api/respondents", "/api/explore"})
+
+
+@app.before_request
+def guard_legacy_participant_explorer():
+    if (
+        request.path.rstrip("/") in LEGACY_PARTICIPANT_EXPLORER_PATHS
+        and os.environ.get("ENABLE_LEGACY_PARTICIPANT_EXPLORER") != "true"
+    ):
+        return jsonify({"error": "Not found"}), 404
 
 VAR_LISTS = {
     "D_motivation": ["study_motivation_type", "autonomy_in_study", "competence_in_study_field",
@@ -377,7 +389,6 @@ def api_question_config():
         "q3_options": ["Full-time, weekdays", "Part-time, weekends", "No strong preference"],
         "q4_options": ["Sinhala", "English", "No strong preference"],
         "q5_options": ["Yes, I want a formal NVQ or qualification", "Not necessarily — I mainly want the practical skills", "Not sure"],
-        "has_api_key": has_api_key(),
     })
 
 
@@ -515,6 +526,9 @@ def api_new_person_evidence_preview():
             "cluster_code": metadata["cluster_code"],
             "cluster_name": metadata["cluster_name"],
             "common_description": metadata["common_description"],
+            "model_published_accuracy": entry.model_published_accuracy,
+            "model_judgment": entry.model_judgment,
+            "needs_review_model": entry.model_judgment == "NEEDS REVIEW",
         })
 
     return jsonify({
@@ -803,11 +817,21 @@ def _legacy_api_new_person_recommend():
 
 INDEX_HTML_PATH = Path(__file__).resolve().parent / "profile_explorer_static" / "index.html"
 WALKTHROUGH_HTML_PATH = Path(__file__).resolve().parent / "profile_explorer_static" / "walkthrough.html"
+FRONTEND_DIST_PATH = Path(__file__).resolve().parent / "frontend" / "dist"
 
 
 @app.route("/")
 def index():
+    vite_index = FRONTEND_DIST_PATH / "index.html"
+    if vite_index.exists():
+        return Response(vite_index.read_text(encoding="utf-8"), mimetype="text/html")
     return Response(INDEX_HTML_PATH.read_text(encoding="utf-8"), mimetype="text/html")
+
+
+@app.route("/assets/<path:asset_path>")
+def frontend_asset(asset_path):
+    """Serve Vite's hashed production assets when Flask is hosted on Vercel."""
+    return send_from_directory(FRONTEND_DIST_PATH / "assets", asset_path)
 
 
 @app.route("/new-person")

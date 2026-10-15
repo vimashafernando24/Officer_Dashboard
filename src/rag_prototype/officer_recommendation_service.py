@@ -400,6 +400,9 @@ def generate_officer_briefing(
             "cluster_code": metadata["cluster_code"],
             "cluster_name": metadata["cluster_name"],
             "common_description": metadata["common_description"],
+            "model_published_accuracy": entry.model_published_accuracy,
+            "model_judgment": entry.model_judgment,
+            "needs_review_model": entry.model_judgment == "NEEDS REVIEW",
         })
 
     base_response = {

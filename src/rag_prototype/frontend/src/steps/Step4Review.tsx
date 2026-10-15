@@ -3,6 +3,7 @@ import { fetchEvidencePreview } from "../api";
 import { ClusterResearchTree } from "../components/research-tree/ClusterResearchTree";
 import { ResultView } from "../components/ResultView";
 import { ClusterResearchTeachingPanel } from "../components/ClusterResearchTeachingPanel";
+import { ModelReliabilityWarnings } from "../components/ModelReliabilityWarnings";
 import type { ClusterQuestionGroup, EvidencePreview, IntakeState, Option, RecommendResponse } from "../types";
 import officerMascot from "../../../../mascots/small/rabbit4.png";
 import supportMascot from "../../../../mascots/small/rabbit2.png";
@@ -115,6 +116,10 @@ export function Step4Review({ state, idealSectorOptions, onBack, onSubmit, loadi
               {!preview && !previewError ? <div className="simple-loading">Assigning the profile…</div> : null}
               {preview ? (
                 <>
+                  <ModelReliabilityWarnings
+                    assignedProfiles={preview.assigned_profiles}
+                    catalogue={preview.cluster_catalogue}
+                  />
                   <ClusterResearchTree
                     assignedBranch={preview.branch}
                     assignedProfiles={preview.assigned_profiles}
