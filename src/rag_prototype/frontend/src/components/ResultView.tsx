@@ -1,8 +1,11 @@
 import { useState } from "react";
-import type { RecommendResponse, SuggestedProgramme } from "../types";
+import type { ProgrammeTranslation, RecommendResponse, SuggestedProgramme } from "../types";
 import { ModelReliabilityWarnings } from "./ModelReliabilityWarnings";
 import { EnglishOnlyNotice, EnglishOriginal } from "../i18n/LanguageControls";
 import { useLocalizer } from "../i18n/languageContext";
+import { createLocalizer } from "../i18n/localize";
+import type { MessageKey } from "../i18n/messages";
+import { useRecommendationTranslation } from "./useRecommendationTranslation";
 import ideaRabbit from "../../../../mascots/small/rabbit3.png";
 import discussionRabbit from "../../../../mascots/small/rabbit4.png";
 
@@ -11,7 +14,21 @@ interface MemberAnswer {
   value: string;
 }
 
-function ProgrammeCard({ programme }: { programme: SuggestedProgramme }) {
+// The fixed mismatch templates are translated locally (no API call) so the
+// Sinhala view is fully Sinhala even when the interface is in English.
+const sinhalaLocalizer = createLocalizer("si");
+
+const TRANSLATION_ERRORS: Record<string, MessageKey> = {
+  translation_unavailable: "translate.error.unavailable",
+  translation_timeout: "translate.error.timeout",
+  translation_invalid: "translate.error.invalid",
+  invalid_translation_request: "translate.error.request",
+};
+
+// Course names, ranks, IDs and mismatch notices always come from the
+// English result; only the three AI-written text fields are swapped.
+function ProgrammeCard({ programme, translation }: { programme: SuggestedProgramme; translation: ProgrammeTranslation | null }) {
+  const textLang = translation ? "si" : "en";
   const [flipped, setFlipped] = useState(false);
   const localizer = useLocalizer();
 
@@ -23,12 +40,16 @@ function ProgrammeCard({ programme }: { programme: SuggestedProgramme }) {
             <span className="programme-rank">{programme.rank}</span>
           </div>
           <h3>{programme.course_name}</h3>
-          <p className="programme-why">{programme.why_it_may_suit_this_user}</p>
+          <p className="programme-why" lang={textLang}>{translation?.why_it_may_suit_this_user ?? programme.why_it_may_suit_this_user}</p>
           {programme.important_mismatches?.length ? (
             <div className="programme-mismatch-box" role="note" aria-label={localizer.t("result.importantLabel")}>
               <strong>{localizer.t("result.important")}</strong>
               <ul>
-                {programme.important_mismatches.map((mismatch) => <li key={mismatch}>{localizer.mismatch(mismatch)}</li>)}
+                {programme.important_mismatches.map((mismatch) => (
+                  <li key={mismatch} lang={translation ? "si" : undefined}>
+                    {(translation ? sinhalaLocalizer : localizer).mismatch(mismatch)}
+                  </li>
+                ))}
               </ul>
             </div>
           ) : null}
@@ -43,7 +64,7 @@ function ProgrammeCard({ programme }: { programme: SuggestedProgramme }) {
                 <span className="cluster-finding-toggle" aria-hidden="true">⌄</span>
               </summary>
               <div className="cluster-finding-content">
-                <p>{programme.cluster_finding_summary}</p>
+                <p lang={textLang}>{translation?.cluster_finding_summary ?? programme.cluster_finding_summary}</p>
                 <small>{localizer.t("result.clusterFindingBoundary")}</small>
               </div>
             </details>
@@ -72,7 +93,7 @@ function ProgrammeCard({ programme }: { programme: SuggestedProgramme }) {
             {programme.questions_to_discuss.map((question, index) => (
               <li key={index}>
                 <span>{index + 1}</span>
-                <p>{question}</p>
+                <p lang={textLang}>{translation?.questions_to_discuss[index] ?? question}</p>
               </li>
             ))}
           </ol>
@@ -91,8 +112,55 @@ function ProgrammeCard({ programme }: { programme: SuggestedProgramme }) {
   );
 }
 
+function TranslationControls({ state }: { state: ReturnType<typeof useRecommendationTranslation> }) {
+  const localizer = useLocalizer();
+  if (!state.available) return null;
+  if (state.status === "ready") {
+    return (
+      <div className="recommendation-translation">
+        <div className="translation-view-switch" role="group" aria-label={localizer.t("translate.viewLabel")}>
+          <button type="button" lang="si" aria-pressed={state.view === "si"} className={state.view === "si" ? "is-active" : ""} onClick={() => state.setView("si")}>
+            {localizer.t("translate.viewSinhala")}
+          </button>
+          <button type="button" lang="en" aria-pressed={state.view === "en"} className={state.view === "en" ? "is-active" : ""} onClick={() => state.setView("en")}>
+            {localizer.t("translate.viewEnglish")}
+          </button>
+        </div>
+        {state.view === "si" ? (
+          <p className="translation-notice" role="note">
+            <span lang="si">{localizer.t("translate.noticeSinhala")}</span>
+            {!localizer.isSinhala ? <span lang="en">{localizer.t("translate.noticeEnglish")}</span> : null}
+          </p>
+        ) : null}
+      </div>
+    );
+  }
+  const loading = state.status === "loading";
+  return (
+    <div className="recommendation-translation">
+      <button
+        type="button"
+        className="translate-recommendations-button"
+        onClick={() => void state.translate()}
+        disabled={loading}
+        aria-busy={loading}
+      >
+        {loading ? <span className="translation-spinner" aria-hidden="true" /> : null}
+        {localizer.t(loading ? "translate.loading" : "translate.button")}
+      </button>
+      {state.status === "error" ? (
+        <p className="translation-error" role="alert">
+          {localizer.t(TRANSLATION_ERRORS[state.errorCode ?? ""] ?? "translate.error.unavailable")}
+        </p>
+      ) : null}
+    </div>
+  );
+}
+
 export function ResultView({ data, memberAnswers }: { data: RecommendResponse; memberAnswers: MemberAnswer[] }) {
   const localizer = useLocalizer();
+  const translationState = useRecommendationTranslation(data);
+  const translation = translationState.translation;
   if (data.error) {
     const message = localizer.serviceMessage(data.error);
     return (
@@ -102,9 +170,10 @@ export function ResultView({ data, memberAnswers }: { data: RecommendResponse; m
       </div>
     );
   }
-  const noRecommendationReason = data.no_recommendation_reason
-    ? localizer.serviceMessage(data.no_recommendation_reason)
-    : localizer.t("result.noRecommendation");
+  const noRecommendationReason = translation?.no_recommendation_reason
+    ?? (data.no_recommendation_reason
+      ? localizer.serviceMessage(data.no_recommendation_reason)
+      : localizer.t("result.noRecommendation"));
 
   return (
     <div className="simple-results" aria-live="polite">
@@ -144,12 +213,13 @@ export function ResultView({ data, memberAnswers }: { data: RecommendResponse; m
                 </div>
                 <h2 id="programme-options-title">{localizer.t("result.heading")}</h2>
                 <p>{localizer.t("result.intro")}</p>
-                <EnglishOnlyNotice>{localizer.t("result.aiEnglishNotice")}</EnglishOnlyNotice>
+                {translation ? null : <EnglishOnlyNotice>{localizer.t("result.aiEnglishNotice")}</EnglishOnlyNotice>}
               </div>
             </div>
+            <TranslationControls state={translationState} />
 
             {data.recommendation_status === "NO_DEFENSIBLE_RECOMMENDATION" ? (
-              <div className="simple-alert">
+              <div className="simple-alert" lang={translation?.no_recommendation_reason ? "si" : undefined}>
                 {noRecommendationReason}
                 {data.no_recommendation_reason && noRecommendationReason !== data.no_recommendation_reason ? (
                   <EnglishOriginal text={data.no_recommendation_reason} />
@@ -157,8 +227,12 @@ export function ResultView({ data, memberAnswers }: { data: RecommendResponse; m
               </div>
             ) : (
               <div className="programme-grid">
-                {data.suggested_programmes.map((programme) => (
-                  <ProgrammeCard programme={programme} key={programme.course_id} />
+                {data.suggested_programmes.map((programme, index) => (
+                  <ProgrammeCard
+                    programme={programme}
+                    translation={translation?.programmes[index] ?? null}
+                    key={programme.course_id}
+                  />
                 ))}
               </div>
             )}

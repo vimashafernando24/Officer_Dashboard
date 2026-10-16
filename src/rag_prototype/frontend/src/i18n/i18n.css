@@ -127,3 +127,107 @@ html[lang="si"] .simple-brand {
     font-size: 13px;
   }
 }
+
+/* On-demand Sinhala translation of AI recommendation text. */
+.recommendation-translation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  margin: 4px 0 18px;
+}
+
+.translate-recommendations-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 42px;
+  padding: 9px 18px;
+  border: 1px solid var(--yc-orange);
+  border-radius: 999px;
+  background: var(--yc-orange-soft);
+  color: var(--yc-orange-deep);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.translate-recommendations-button:hover:not(:disabled) {
+  background: var(--yc-orange);
+  color: #fff;
+}
+
+.translate-recommendations-button:disabled {
+  cursor: progress;
+  opacity: 0.8;
+}
+
+.translation-spinner {
+  width: 15px;
+  height: 15px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: translation-spin 0.8s linear infinite;
+}
+
+@keyframes translation-spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .translation-spinner { animation: none; }
+}
+
+.translation-view-switch {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--yc-border);
+  border-radius: 999px;
+  background: var(--yc-white);
+}
+
+.translation-view-switch button {
+  min-height: 36px;
+  padding: 6px 15px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--yc-muted);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.translation-view-switch button.is-active {
+  background: var(--yc-green);
+  color: #fff;
+}
+
+.translation-notice {
+  display: grid;
+  gap: 2px;
+  margin: 0;
+  padding: 8px 12px;
+  border-left: 3px solid var(--yc-warning);
+  border-radius: 8px;
+  background: var(--yc-warning-soft);
+  color: var(--yc-text);
+  font-size: 13.5px;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.translation-error {
+  flex-basis: 100%;
+  margin: 0;
+  color: #9b3b2f;
+  font-size: 14px;
+}
+
+/* Sinhala recommendation text shown inside an English interface. */
+html:not([lang="si"]) [lang="si"] {
+  font-family: "Noto Sans Sinhala", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif !important;
+  letter-spacing: normal !important;
+}

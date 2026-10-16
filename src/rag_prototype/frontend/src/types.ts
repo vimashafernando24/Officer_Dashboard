@@ -331,3 +331,26 @@ export interface IntakeState {
   q4: string | null;
   q5: string | null;
 }
+
+// On-demand Sinhala translation of an existing recommendation result.
+export interface RecommendationTranslationRequest {
+  programmes: {
+    course_name: string;
+    why_it_may_suit_this_user: string;
+    cluster_finding_summary: string | null;
+    questions_to_discuss: string[];
+  }[];
+  no_recommendation_reason: string | null;
+}
+
+export interface ProgrammeTranslation {
+  why_it_may_suit_this_user: string;
+  cluster_finding_summary: string | null;
+  questions_to_discuss: string[];
+}
+
+export interface RecommendationTranslation {
+  language: "si";
+  programmes: ProgrammeTranslation[];
+  no_recommendation_reason: string | null;
+}

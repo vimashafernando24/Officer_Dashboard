@@ -1,4 +1,10 @@
-import type { EvidencePreview, QuestionConfig, RecommendResponse } from "./types";
+import type {
+  EvidencePreview,
+  QuestionConfig,
+  RecommendationTranslation,
+  RecommendationTranslationRequest,
+  RecommendResponse,
+} from "./types";
 
 // Local development keeps using the Flask server. In a Vercel deployment the
 // browser talks to the same origin, whose /api routes are served by the small
@@ -42,4 +48,32 @@ export async function fetchEvidencePreview(payload: RecommendPayload): Promise<E
   const data = await res.json();
   if (!res.ok) throw new Error(data.error ?? `evidence preview failed: ${res.status}`);
   return data as EvidencePreview;
+}
+
+export class TranslationError extends Error {
+  readonly code: string;
+
+  constructor(code: string) {
+    super(code);
+    this.code = code;
+  }
+}
+
+// One request per call; never touches the recommendation endpoint.
+export async function translateRecommendations(
+  payload: RecommendationTranslationRequest,
+): Promise<RecommendationTranslation> {
+  let res: Response;
+  try {
+    res = await fetch(`${API_BASE}/api/new_person_translate_recommendations`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+  } catch {
+    throw new TranslationError("translation_unavailable");
+  }
+  const data = await res.json().catch(() => null);
+  if (!res.ok || !data) throw new TranslationError(data?.error_code ?? "translation_unavailable");
+  return data as RecommendationTranslation;
 }

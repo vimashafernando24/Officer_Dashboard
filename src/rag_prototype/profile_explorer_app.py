@@ -45,6 +45,7 @@ from evidence_safeguards import (
 from profile_response_distributions import profile_response_distribution
 from cluster_catalogue import catalogue_for_branch, full_research_tree, metadata_for_profile
 from officer_recommendation_service import generate_officer_briefing
+import recommendation_translation
 
 FEATURE_MANIFEST_CSV = BASE / "outputs/nysc_survey_feature_manifest.csv"
 Q1_OPTIONS_PATH = BASE / "outputs/rag_new_person_intake_v1/q1_occupation_options_by_skill_area.json"
@@ -557,6 +558,21 @@ def api_new_person_recommend():
         raw_body=body,
         question_map=load_survey_question_map(),
     )
+    return jsonify(response), status
+
+
+@app.route("/api/new_person_translate_recommendations", methods=["POST"])
+def api_new_person_translate_recommendations():
+    """Translate an already-generated recommendation result's explanation text.
+
+    Separate from /api/new_person_recommend: it never generates, ranks or
+    filters programmes, and accepts only the fixed translation schema.
+    """
+    if request.content_length is None or request.content_length > recommendation_translation.MAX_REQUEST_BYTES:
+        body, status = recommendation_translation.safe_error("invalid_request")
+        return jsonify(body), 413 if request.content_length else status
+    body = request.get_json(silent=True)
+    response, status = recommendation_translation.translate_recommendations(body)
     return jsonify(response), status
 
 
