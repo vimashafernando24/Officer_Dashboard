@@ -1,4 +1,5 @@
 import { useCallback, useMemo, useState } from "react";
+import { useLocalizer } from "../../i18n/languageContext";
 import type { AssignedProfile, ClusterCatalogueEntry, ResearchTreeBranch } from "../../types";
 import { ClusterDimensionPopover } from "./ClusterDimensionPopover";
 import { ClusterFormationEvidenceModal } from "./ClusterFormationEvidenceModal";
@@ -28,6 +29,7 @@ interface FormationEvidenceSelection {
 }
 
 export function ClusterResearchTree({ assignedBranch, assignedProfiles, tree }: Props) {
+  const localizer = useLocalizer();
   const [treeContainer, setTreeContainer] = useState<HTMLDivElement | null>(null);
   const [selectedLeaves, setSelectedLeaves] = useState<LeafSelection[]>([]);
   const [selectedDimension, setSelectedDimension] = useState<DimensionSelection | null>(null);
@@ -84,17 +86,17 @@ export function ClusterResearchTree({ assignedBranch, assignedProfiles, tree }: 
     <section className="research-tree-panel" aria-labelledby="research-tree-title">
       <div className="research-tree-heading">
         <div>
-          <span className="section-kicker">Complete research map</span>
-          <h2 id="research-tree-title">Where this member fits</h2>
-          <p>All retained branches and profiles are visible. The illuminated route shows this member’s assignment.</p>
+          <span className="section-kicker">{localizer.t("tree.kicker")}</span>
+          <h2 id="research-tree-title">{localizer.t("tree.heading")}</h2>
+          <p>{localizer.t("tree.intro")}</p>
         </div>
-        <div className="research-tree-legend" aria-label="Tree legend">
-          <span><i className="legend-route" aria-hidden="true" />Assigned route</span>
-          <span><i className="legend-leaf" aria-hidden="true" />Assigned profile</span>
+        <div className="research-tree-legend" aria-label={localizer.t("tree.legendLabel")}>
+          <span><i className="legend-route" aria-hidden="true" />{localizer.t("tree.legendRoute")}</span>
+          <span><i className="legend-leaf" aria-hidden="true" />{localizer.t("tree.legendLeaf")}</span>
         </div>
       </div>
 
-      <div ref={setTreeContainer} className="research-tree-scroll" tabIndex={0} aria-label="Scrollable complete cluster research tree">
+      <div ref={setTreeContainer} className="research-tree-scroll" tabIndex={0} aria-label={localizer.t("tree.scrollLabel")}>
         <svg
           className="research-tree-svg"
           viewBox={geometry.viewBox}
@@ -103,8 +105,8 @@ export function ClusterResearchTree({ assignedBranch, assignedProfiles, tree }: 
           role="img"
           aria-labelledby="research-tree-svg-title research-tree-svg-desc"
         >
-          <title id="research-tree-svg-title">Complete Youth Circles cluster research tree</title>
-          <desc id="research-tree-svg-desc">Branches D, E, F and G and all seventeen retained profiles. The member’s assigned route is highlighted.</desc>
+          <title id="research-tree-svg-title">{localizer.t("tree.svgTitle")}</title>
+          <desc id="research-tree-svg-desc">{localizer.t("tree.svgDesc")}</desc>
           <defs>
             <linearGradient id="trunkGradient" x1="0" y1="0" x2="1" y2="0">
               <stop offset="0" stopColor="#755b43" />
@@ -152,14 +154,14 @@ export function ClusterResearchTree({ assignedBranch, assignedProfiles, tree }: 
             ))}
             <g className="research-root" aria-hidden="true">
               <ellipse cx={geometry.root.x} cy={geometry.root.y} rx="63" ry="41" />
-              <text x={geometry.root.x} y={geometry.root.y - 6} textAnchor="middle">RESPONDENT</text>
-              <text x={geometry.root.x} y={geometry.root.y + 15} textAnchor="middle">ROOT</text>
+              <text x={geometry.root.x} y={geometry.root.y - 6} textAnchor="middle">{localizer.t("tree.rootLine1")}</text>
+              <text x={geometry.root.x} y={geometry.root.y + 15} textAnchor="middle">{localizer.t("tree.rootLine2")}</text>
             </g>
           </g>
         </svg>
       </div>
 
-      <p className="research-tree-note">Select any leaf to read its canonical profile description. Exploring another leaf never changes this member’s assignment.</p>
+      <p className="research-tree-note">{localizer.t("tree.note")}</p>
 
       {treeContainer ? selectedLeaves.map((selection, index) => (
         <ClusterProfilePopover

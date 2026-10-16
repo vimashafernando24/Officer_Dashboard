@@ -1,3 +1,4 @@
+import { useLocalizer } from "../../i18n/languageContext";
 import type { ClusterCatalogueEntry } from "../../types";
 import { LEAF_HEIGHT, LEAF_WIDTH, type LeafGeometry } from "./treeGeometry";
 
@@ -13,6 +14,7 @@ function shortCode(code: string) {
 }
 
 export function ClusterLeaf({ geometry, assigned, selected, onOpen }: Props) {
+  const localizer = useLocalizer();
   const { profile, point, rotation } = geometry;
   const activate = (anchor: SVGGElement) => onOpen(profile, anchor);
   return (
@@ -24,7 +26,7 @@ export function ClusterLeaf({ geometry, assigned, selected, onOpen }: Props) {
         aria-pressed={selected}
         aria-haspopup="dialog"
         aria-expanded={selected}
-        aria-label={`${profile.cluster_code}: ${profile.cluster_name}${assigned ? ", your assigned profile" : ""}`}
+        aria-label={`${profile.cluster_code}: ${localizer.profileName(profile.profile_key, profile.cluster_name)}${assigned ? localizer.t("tree.leafAssigned") : ""}`}
         onClick={(event) => activate(event.currentTarget)}
         onKeyDown={(event) => {
           if (event.key === "Enter" || event.key === " ") {

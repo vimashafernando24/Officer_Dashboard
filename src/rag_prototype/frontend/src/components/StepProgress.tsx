@@ -1,6 +1,14 @@
 import "./StepProgress.css";
+import { useLocalizer } from "../i18n/languageContext";
+import type { MessageKey } from "../i18n/messages";
 
-const STEP_NAMES = ["Situation", "Background", "Sector", "Programme match", "Briefing"];
+const STEP_NAMES: MessageKey[] = [
+  "steps.situation",
+  "steps.background",
+  "steps.sector",
+  "steps.programmeMatch",
+  "steps.briefing",
+];
 
 interface Props {
   step: number;
@@ -9,19 +17,21 @@ interface Props {
 }
 
 export function StepProgress({ step, highestReachedStep, onNavigate }: Props) {
+  const localizer = useLocalizer();
   return (
-    <nav className="steps-nav" aria-label="Intake progress">
-      {STEP_NAMES.map((name, i) => {
+    <nav className="steps-nav" aria-label={localizer.t("steps.navLabel")}>
+      {STEP_NAMES.map((nameKey, i) => {
+        const name = localizer.t(nameKey);
         const current = i === step;
         const reviewable = i <= highestReachedStep && !current;
         const completed = i < step;
         const previouslyReached = reviewable && i > step;
         const className = `step-item${completed ? " done" : ""}${current ? " active" : ""}${previouslyReached ? " reached" : ""}${reviewable ? " reviewable" : " locked"}`;
-        const stateLabel = current ? "current section" : reviewable ? "available for review" : "not yet available";
+        const stateLabel = localizer.t(current ? "steps.current" : reviewable ? "steps.reviewable" : "steps.locked");
 
         return (
           <button
-            key={name}
+            key={nameKey}
             type="button"
             className={className}
             aria-current={current ? "step" : undefined}

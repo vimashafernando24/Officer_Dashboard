@@ -2,6 +2,8 @@ import { useCallback, useEffect, useLayoutEffect, useRef, useState, type CSSProp
 import { createPortal } from "react-dom";
 import type { ClusterCatalogueEntry } from "../../types";
 import profileMeaningLibraryJson from "../../data/clusterProfileMeaningLibrary.json";
+import { EnglishOriginal } from "../../i18n/LanguageControls";
+import { useLocalizer } from "../../i18n/languageContext";
 
 interface SiblingProfile {
   profile_key: string;
@@ -55,6 +57,7 @@ export function ClusterProfilePopover({
   const bubble = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState<PopoverPosition | null>(null);
   const meaning = profileMeaningLibrary[profile.profile_key];
+  const localizer = useLocalizer();
   const closeAndRestoreFocus = useCallback(() => {
     onClose();
     window.requestAnimationFrame(() => anchor.focus());
@@ -151,7 +154,7 @@ export function ClusterProfilePopover({
       window.removeEventListener("resize", updatePosition);
       window.removeEventListener("scroll", updatePosition, true);
     };
-  }, [container, updatePosition]);
+  }, [container, updatePosition, localizer]);
 
   useEffect(() => {
     const onPointerDown = (event: PointerEvent) => {
@@ -184,10 +187,11 @@ export function ClusterProfilePopover({
   const idSuffix = profile.profile_key.replace(/[^a-zA-Z0-9_-]/g, "-");
   const titleId = `research-popover-title-${idSuffix}`;
   const descriptionId = `research-popover-description-${idSuffix}`;
-  const siblingLabel = meaning.sibling_profiles.length === 1
-    ? "Compared with:"
-    : "Compared with other profiles in this dimension:";
-  const siblingNames = meaning.sibling_profiles.map((sibling) => sibling.profile_name).join(" · ");
+  const siblingLabel = localizer.t(meaning.sibling_profiles.length === 1 ? "profile.comparedOne" : "profile.comparedMany");
+  const siblingNames = meaning.sibling_profiles
+    .map((sibling) => localizer.profileName(sibling.profile_key, sibling.profile_name))
+    .join(" · ");
+  const profileName = localizer.profileName(profile.profile_key, meaning.profile_name);
 
   return createPortal(
     <div
@@ -198,11 +202,14 @@ export function ClusterProfilePopover({
       aria-labelledby={titleId}
       aria-describedby={descriptionId}
     >
-      <button className="research-popover-close" type="button" onClick={closeAndRestoreFocus} aria-label="Close profile description">×</button>
+      <button className="research-popover-close" type="button" onClick={closeAndRestoreFocus} aria-label={localizer.t("profile.close")}>×</button>
       <span className="research-popover-code">{meaning.profile_code}</span>
-      {assigned ? <span className="research-popover-assigned">MEMBER’S ASSIGNED PROFILE</span> : null}
-      <h2 id={titleId}>{meaning.profile_name}</h2>
-      <p className="research-popover-profile-size">Historical profile size: <strong>{meaning.historical_profile_size}</strong></p>
+      {assigned ? <span className="research-popover-assigned">{localizer.t("profile.assigned")}</span> : null}
+      <h2 id={titleId}>
+        {profileName}
+        {profileName !== meaning.profile_name ? <EnglishOriginal text={meaning.profile_name} /> : null}
+      </h2>
+      <p className="research-popover-profile-size">{localizer.t("profile.size")} <strong>{meaning.historical_profile_size}</strong></p>
 
       <div className="research-popover-comparison">
         <span>{siblingLabel}</span>
@@ -210,8 +217,8 @@ export function ClusterProfilePopover({
       </div>
 
       <section className="research-popover-meaning">
-        <h3>What distinguishes this profile</h3>
-        <p id={descriptionId}>{meaning.comparison_summary}</p>
+        <h3>{localizer.t("profile.distinguishes")}</h3>
+        <p id={descriptionId}>{localizer.profileSummary(profile.profile_key, meaning.comparison_summary)}</p>
       </section>
 
     </div>,

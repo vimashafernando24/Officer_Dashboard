@@ -1,6 +1,8 @@
 import { useMemo } from "react";
 import { Card, StepTitle, StepHint } from "../components/Card";
 import { ChoiceGrid, MultiChoiceGrid } from "../components/ChoiceGrid";
+import { EnglishOnlyNotice } from "../i18n/LanguageControls";
+import { useLocalizer } from "../i18n/languageContext";
 import type { QuestionConfig } from "../types";
 
 const NOT_SURE_SKILL = "Not sure yet";
@@ -32,6 +34,11 @@ export function Step3ProgrammeQuestions({
   onBack,
   onNext,
 }: Props) {
+  const localizer = useLocalizer();
+  // Option codes stay the canonical English values sent to the backend;
+  // only the visible labels are localized.
+  const programmeOptions = (values: string[]) =>
+    values.map((value) => ({ code: value, label: localizer.programmeOption(value) }));
   const sectorGroups = useMemo(() => {
     const byArea: Record<string, string[]> = JSON.parse(config.q1_options_by_skill_area);
     const labels = new Map(config.ideal_sector_options.map((option) => [option.code, option.label]));
@@ -49,24 +56,25 @@ export function Step3ProgrammeQuestions({
 
   return (
     <Card>
-      <StepTitle>Skills and programme preferences</StepTitle>
-      <StepHint>
-        Choose up to three skills within each selected sector. These are the member’s own interests and will guide the course shortlist.
-      </StepHint>
+      <StepTitle>{localizer.t("step3.title")}</StepTitle>
+      <StepHint>{localizer.t("step3.hint")}</StepHint>
+      <EnglishOnlyNotice>{localizer.t("step3.skillNamesNote")}</EnglishOnlyNotice>
 
       {sectorGroups.map((group, index) => (
         <section className="sector-skill-group" key={group.sector} aria-labelledby={`skills-sector-${index}`}>
           <div className="sector-skill-heading">
-            <span>Selected sector</span>
-            <h3 id={`skills-sector-${index}`}>{group.label}</h3>
-            {group.areas.length ? <p>Catalogue area: {group.areas.join(", ")}</p> : null}
+            <span>{localizer.t("step3.selectedSector")}</span>
+            <h3 id={`skills-sector-${index}`}>{localizer.sector(group.sector, group.label)}</h3>
+            {group.areas.length ? (
+              <p>{localizer.t("step3.catalogueArea", { areas: group.areas.map(localizer.skillArea).join(", ") })}</p>
+            ) : null}
           </div>
           {group.skills.length ? (
             <MultiChoiceGrid
               name={`skills-${group.sector}`}
               options={[
-                ...group.skills.map((skill) => ({ code: skill, label: skill })),
-                { code: NOT_SURE_SKILL, label: NOT_SURE_SKILL },
+                ...group.skills.map((skill) => ({ code: skill, label: localizer.skill(skill) })),
+                { code: NOT_SURE_SKILL, label: localizer.answer(NOT_SURE_SKILL) },
               ]}
               value={skillsBySector[group.sector] ?? []}
               onChange={(skills) => onSkillsChange(group.sector, skills)}
@@ -74,33 +82,33 @@ export function Step3ProgrammeQuestions({
               exclusiveOptionCodes={[NOT_SURE_SKILL]}
             />
           ) : group.sector === "not sure" ? (
-            <div className="preference-note">No sector-specific skills are required while the member is still exploring.</div>
+            <div className="preference-note">{localizer.t("step3.exploringNote")}</div>
           ) : (
-            <div className="warn-box">No catalogue skills currently map to this sector.</div>
+            <div className="warn-box">{localizer.t("step3.noSkills")}</div>
           )}
         </section>
       ))}
 
       <div className="q-block">
-        <div className="q-label">What is the main reason they want this training?</div>
-        <ChoiceGrid name="q2" options={config.q2_options.map((o) => ({ code: o, label: o }))} value={q2} onChange={(v) => onChange("q2", v)} />
+        <div className="q-label">{localizer.t("step3.q2")}</div>
+        <ChoiceGrid name="q2" options={programmeOptions(config.q2_options)} value={q2} onChange={(v) => onChange("q2", v)} />
       </div>
       <div className="q-block">
-        <div className="q-label">Which training schedule works best for them?</div>
-        <ChoiceGrid name="q3" options={config.q3_options.map((o) => ({ code: o, label: o }))} value={q3} onChange={(v) => onChange("q3", v)} />
+        <div className="q-label">{localizer.t("step3.q3")}</div>
+        <ChoiceGrid name="q3" options={programmeOptions(config.q3_options)} value={q3} onChange={(v) => onChange("q3", v)} />
       </div>
       <div className="q-block">
-        <div className="q-label">Which language would they prefer to study in?</div>
-        <ChoiceGrid name="q4" options={config.q4_options.map((o) => ({ code: o, label: o }))} value={q4} onChange={(v) => onChange("q4", v)} />
+        <div className="q-label">{localizer.t("step3.q4")}</div>
+        <ChoiceGrid name="q4" options={programmeOptions(config.q4_options)} value={q4} onChange={(v) => onChange("q4", v)} />
       </div>
       <div className="q-block">
-        <div className="q-label">Is a formal NVQ or qualification important to them?</div>
-        <ChoiceGrid name="q5" options={config.q5_options.map((o) => ({ code: o, label: o }))} value={q5} onChange={(v) => onChange("q5", v)} />
+        <div className="q-label">{localizer.t("step3.q5")}</div>
+        <ChoiceGrid name="q5" options={programmeOptions(config.q5_options)} value={q5} onChange={(v) => onChange("q5", v)} />
       </div>
 
       <div className="btn-row">
-        <button className="btn-ghost" onClick={onBack}>&larr; back</button>
-        <button className="btn-primary" disabled={!complete} onClick={onNext}>Review &amp; get briefing</button>
+        <button className="btn-ghost" onClick={onBack}>{localizer.t("common.back")}</button>
+        <button className="btn-primary" disabled={!complete} onClick={onNext}>{localizer.t("step3.submit")}</button>
       </div>
     </Card>
   );

@@ -4,6 +4,8 @@ import { ClusterResearchTree } from "../components/research-tree/ClusterResearch
 import { ResultView } from "../components/ResultView";
 import { ClusterResearchTeachingPanel } from "../components/ClusterResearchTeachingPanel";
 import { ModelReliabilityWarnings } from "../components/ModelReliabilityWarnings";
+import { LanguageSwitch } from "../i18n/LanguageControls";
+import { useLocalizer } from "../i18n/languageContext";
 import type { ClusterQuestionGroup, EvidencePreview, IntakeState, Option, RecommendResponse } from "../types";
 import officerMascot from "../../../../mascots/small/rabbit4.png";
 import supportMascot from "../../../../mascots/small/rabbit2.png";
@@ -25,23 +27,31 @@ export function Step4Review({ state, idealSectorOptions, onBack, onSubmit, loadi
   const [preview, setPreview] = useState<EvidencePreview | null>(null);
   const [previewError, setPreviewError] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<TabId>("profile");
+  const localizer = useLocalizer();
 
   useEffect(() => {
     if (result) setActiveTab("programmes");
   }, [result]);
 
   const sectorLabel = (code: string) =>
-    idealSectorOptions.find((option) => option.code === code)?.label ?? code;
+    localizer.sector(code, idealSectorOptions.find((option) => option.code === code)?.label ?? code);
+  const skillLabel = (skill: string) =>
+    skill === "Not sure yet" ? localizer.answer(skill) : localizer.skill(skill);
+  const preferenceLabel = (value: string | null) =>
+    value ? localizer.programmeOption(value) : localizer.t("step4.notStated");
 
+  // Display-only summary. The canonical answers in `state` are sent unchanged.
   const memberAnswers = [
     ...state.idealSectors.map((code) => ({
       label: sectorLabel(code),
-      value: state.skillsBySector[code]?.length ? state.skillsBySector[code].join(", ") : "No specific skill selected",
+      value: state.skillsBySector[code]?.length
+        ? state.skillsBySector[code].map(skillLabel).join(", ")
+        : localizer.t("step4.noSkill"),
     })),
-    { label: "Reason for training", value: state.q2 ?? "Not stated" },
-    { label: "Schedule preference", value: state.q3 ?? "Not stated" },
-    { label: "Language preference", value: state.q4 ?? "Not stated" },
-    { label: "Qualification preference", value: state.q5 ?? "Not stated" },
+    { label: localizer.t("step4.answerReason"), value: preferenceLabel(state.q2) },
+    { label: localizer.t("step4.answerSchedule"), value: preferenceLabel(state.q3) },
+    { label: localizer.t("step4.answerLanguage"), value: preferenceLabel(state.q4) },
+    { label: localizer.t("step4.answerQualification"), value: preferenceLabel(state.q5) },
   ];
 
   useEffect(() => {
@@ -67,17 +77,18 @@ export function Step4Review({ state, idealSectorOptions, onBack, onSubmit, loadi
       <header className="simple-header">
         <div>
           <span className="simple-brand">Youth Circles</span>
-          <span className="simple-product">Youth Services Officer</span>
-          <h1>Member profile and programme options</h1>
+          <span className="simple-product">{localizer.t("app.eyebrow")}</span>
+          <h1>{localizer.t("step4.title")}</h1>
         </div>
+        <LanguageSwitch />
         <img src={officerMascot} alt="" aria-hidden="true" />
       </header>
 
       <div className="simple-body">
-        <nav className="simple-sidebar" aria-label="Officer workflow">
+        <nav className="simple-sidebar" aria-label={localizer.t("step4.workflowLabel")}>
           <button type="button" className="sidebar-tab is-done" onClick={onBack}>
             <span className="sidebar-tab-number">1</span>
-            <strong>Intake</strong>
+            <strong>{localizer.t("step4.tabIntake")}</strong>
           </button>
           <button
             type="button"
@@ -85,7 +96,7 @@ export function Step4Review({ state, idealSectorOptions, onBack, onSubmit, loadi
             onClick={() => setActiveTab("profile")}
           >
             <span className="sidebar-tab-number">2</span>
-            <strong>Cluster assignment</strong>
+            <strong>{localizer.t("step4.tabCluster")}</strong>
           </button>
           <button
             type="button"
@@ -93,7 +104,7 @@ export function Step4Review({ state, idealSectorOptions, onBack, onSubmit, loadi
             onClick={() => setActiveTab("programmes")}
           >
             <span className="sidebar-tab-number">3</span>
-            <strong>Programme options</strong>
+            <strong>{localizer.t("step4.tabProgrammes")}</strong>
           </button>
         </nav>
 
@@ -106,14 +117,14 @@ export function Step4Review({ state, idealSectorOptions, onBack, onSubmit, loadi
               <div className="flow-section-heading">
                 <span className="step-number">2</span>
                 <div>
-                  <span className="section-kicker">Cluster assignment</span>
-                  <h2 id="profile-step-title">Branch and cluster assignment</h2>
-                  <p>The assignment below uses the existing frozen nearest-match models.</p>
+                  <span className="section-kicker">{localizer.t("step4.tabCluster")}</span>
+                  <h2 id="profile-step-title">{localizer.t("step4.clusterHeading")}</h2>
+                  <p>{localizer.t("step4.clusterIntro")}</p>
                 </div>
               </div>
 
-              {previewError ? <div className="simple-alert">Could not load the profile assignment: {previewError}</div> : null}
-              {!preview && !previewError ? <div className="simple-loading">Assigning the profile…</div> : null}
+              {previewError ? <div className="simple-alert">{localizer.t("step4.previewError", { error: previewError })}</div> : null}
+              {!preview && !previewError ? <div className="simple-loading">{localizer.t("step4.assigning")}</div> : null}
               {preview ? (
                 <>
                   <ModelReliabilityWarnings
@@ -133,25 +144,25 @@ export function Step4Review({ state, idealSectorOptions, onBack, onSubmit, loadi
               ) : null}
 
               <div className="profile-actions">
-                <button className="simple-back" type="button" onClick={onBack}>← Back to intake</button>
+                <button className="simple-back" type="button" onClick={onBack}>{localizer.t("step4.backToIntake")}</button>
                 {!result ? (
                   <div className="generate-action">
                     <img src={supportMascot} alt="" aria-hidden="true" />
-                    <div><small>Ready for officer review</small><span>Generates concise options and follow-up questions.</span></div>
+                    <div><small>{localizer.t("step4.readyLabel")}</small><span>{localizer.t("step4.readyDetail")}</span></div>
                     <button className="simple-primary" type="button" onClick={onSubmit} disabled={loading || !preview}>
-                      {loading ? "Preparing options…" : "Get programme options"}
+                      {loading ? localizer.t("step4.preparing") : localizer.t("step4.getOptions")}
                     </button>
                   </div>
                 ) : (
                   <button className="simple-primary" type="button" onClick={() => setActiveTab("programmes")}>
-                    View programme options →
+                    {localizer.t("step4.viewOptions")}
                   </button>
                 )}
               </div>
           </section>
 
           {activeTab !== "profile" && loading ? (
-            <div className="simple-loading result-loading">Reviewing the member’s answers and course catalogue…</div>
+            <div className="simple-loading result-loading">{localizer.t("step4.reviewing")}</div>
           ) : null}
 
           {activeTab === "programmes" && !loading ? (
@@ -159,7 +170,7 @@ export function Step4Review({ state, idealSectorOptions, onBack, onSubmit, loadi
               <ResultView data={result} memberAnswers={memberAnswers} />
             ) : (
               <div className="simple-loading">
-                No programme options yet — finish the profile step and click “Get programme options”.
+                {localizer.t("step4.noOptionsYet")}
               </div>
             )
           ) : null}

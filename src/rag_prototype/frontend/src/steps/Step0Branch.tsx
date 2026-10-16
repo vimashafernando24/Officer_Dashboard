@@ -1,5 +1,6 @@
 import { Card, StepTitle, StepHint } from "../components/Card";
 import { ChoiceGrid } from "../components/ChoiceGrid";
+import { useLocalizer } from "../i18n/languageContext";
 import inEducationMascot from "../../../../mascots/small/ineducation.png";
 import unemployedMascot from "../../../../mascots/small/unemployed.png";
 import employedMascot from "../../../../mascots/small/employed.png";
@@ -26,16 +27,19 @@ export function Step0Branch({
   value: string | null;
   onSelect: (branch: string) => void;
 }) {
+  const localizer = useLocalizer();
+  // Branch codes (D/E/F/G) are the submitted values; only labels change.
+  const options = BRANCH_OPTIONS.map((option) => ({
+    code: option.code,
+    label: localizer.branchOption(option.code, option.label),
+  }));
   return (
     <Card>
-      <StepTitle>Which best describes the member's current situation?</StepTitle>
-      <StepHint>
-        Ask the member this directly. It determines which set of cluster-assignment questions
-        applies — the same branch logic used for the original 362-respondent study.
-      </StepHint>
+      <StepTitle>{localizer.t("step0.title")}</StepTitle>
+      <StepHint>{localizer.t("step0.hint")}</StepHint>
       <ChoiceGrid
         name="branch"
-        options={BRANCH_OPTIONS}
+        options={options}
         value={value}
         onChange={onSelect}
         optionImages={BRANCH_MASCOTS}

@@ -2,6 +2,8 @@ import { useEffect, useId, useRef, type CSSProperties } from "react";
 import { createPortal } from "react-dom";
 import formationLibraryJson from "../../data/clusterFormationEvidenceLibrary.json";
 import "./ClusterFormationEvidenceModal.css";
+import { EnglishOnlyNotice } from "../../i18n/LanguageControls";
+import { useLocalizer } from "../../i18n/languageContext";
 
 interface ProfileValue {
   profile_key: string;
@@ -77,14 +79,16 @@ function profileCode(model: FormationModel, key: string) {
 }
 
 function CategoricalChart({ variable, model }: { variable: FormationVariable; model: FormationModel }) {
+  const localizer = useLocalizer();
   const rows = variable.answer_distribution ?? [];
+  const variableName = localizer.variableName(variable.variable, variable.display_name);
   return (
     <div className="formation-chart-wrap">
-      <div className="formation-chart-axis-label">Percentage of respondents in each historical profile</div>
+      <div className="formation-chart-axis-label">{localizer.t("formation.axis")}</div>
       <div
         className={`formation-chart has-${model.profiles.length}-profiles`}
         role="img"
-        aria-label={`Response distribution by profile for ${variable.display_name}`}
+        aria-label={localizer.t("formation.chartLabel", { variable: variableName })}
       >
         {rows.map((row) => (
           <div className="formation-chart-category" key={row.answer}>
@@ -105,7 +109,7 @@ function CategoricalChart({ variable, model }: { variable: FormationVariable; mo
                 </div>
               ))}
             </div>
-            <div className="formation-chart-category-label">{row.answer}</div>
+            <div className="formation-chart-category-label">{localizer.answer(row.answer)}</div>
           </div>
         ))}
       </div>
@@ -114,18 +118,22 @@ function CategoricalChart({ variable, model }: { variable: FormationVariable; mo
 }
 
 function NumericSummary({ variable, model }: { variable: FormationVariable; model: FormationModel }) {
+  const localizer = useLocalizer();
+  const variableName = localizer.variableName(variable.variable, variable.display_name);
   return (
-    <div className="formation-numeric-summary" aria-label={`Numeric profile summaries for ${variable.display_name}`}>
+    <div className="formation-numeric-summary" aria-label={localizer.t("formation.numericLabel", { variable: variableName })}>
       {(variable.numeric_values ?? []).map((value) => (
         <div className="formation-numeric-profile" key={value.profile_key}>
           <strong>{profileCode(model, value.profile_key)}</strong>
-          <span>n = {value.denominator} · observed {value.observed}</span>
+          <span>{localizer.t("formation.observed", { n: value.denominator, observed: value.observed })}</span>
           <dl>
-            <div><dt>Mean</dt><dd>{number(value.mean)}</dd></div>
-            <div><dt>Median</dt><dd>{number(value.median)}</dd></div>
-            <div><dt>IQR</dt><dd>{number(value.iqr)}</dd></div>
+            <div><dt>{localizer.t("formation.mean")}</dt><dd>{number(value.mean)}</dd></div>
+            <div><dt>{localizer.t("formation.median")}</dt><dd>{number(value.median)}</dd></div>
+            <div><dt>{localizer.t("formation.iqr")}</dt><dd>{number(value.iqr)}</dd></div>
           </dl>
-          {value.missing > 0 ? <small>{value.missing} response{value.missing === 1 ? "" : "s"} missing</small> : null}
+          {value.missing > 0 ? (
+            <small>{localizer.t(value.missing === 1 ? "formation.missingOne" : "formation.missingMany", { n: value.missing })}</small>
+          ) : null}
         </div>
       ))}
     </div>
@@ -134,6 +142,7 @@ function NumericSummary({ variable, model }: { variable: FormationVariable; mode
 
 export function ClusterFormationEvidenceModal({ modelKey, onClose }: Props) {
   const model = formationLibrary.models[modelKey];
+  const localizer = useLocalizer();
   const titleId = useId();
   const closeButton = useRef<HTMLButtonElement>(null);
 
@@ -154,23 +163,24 @@ export function ClusterFormationEvidenceModal({ modelKey, onClose }: Props) {
       onMouseDown={(event) => { if (event.target === event.currentTarget) onClose(); }}
     >
       <section className="cluster-formation-evidence-modal" role="dialog" aria-modal="true" aria-labelledby={titleId}>
-        <button ref={closeButton} className="formation-evidence-close" type="button" onClick={onClose} aria-label="Close survey evidence">×</button>
+        <button ref={closeButton} className="formation-evidence-close" type="button" onClick={onClose} aria-label={localizer.t("formation.close")}>×</button>
         <header className="formation-evidence-header">
-          <span>Cluster-forming evidence</span>
-          <h2 id={titleId}>{model.dimension_title}</h2>
-          <p>These are the survey variables used to form this historical clustering model. The charts show how responses were distributed across the resulting profiles.</p>
+          <span>{localizer.t("formation.kicker")}</span>
+          <h2 id={titleId}>{localizer.modelLabel(model.model_key, model.dimension_title)}</h2>
+          <p>{localizer.t("formation.intro")}</p>
+          <EnglishOnlyNotice>{localizer.t("dimension.questionsNote")}</EnglishOnlyNotice>
         </header>
 
-        <div className="formation-evidence-profiles" aria-label="Profiles compared">
+        <div className="formation-evidence-profiles" aria-label={localizer.t("formation.profilesLabel")}>
           {model.profiles.map((profile, index) => (
             <div className={`formation-evidence-profile series-${index + 1}`} key={profile.profile_key}>
               <strong>{profile.profile_code}</strong>
-              <span>{profile.profile_name}</span>
-              <small>Historical profile size: n = {profile.historical_profile_size}</small>
+              <span>{localizer.profileName(profile.profile_key, profile.profile_name)}</span>
+              <small>{localizer.t("formation.profileSize", { n: profile.historical_profile_size })}</small>
             </div>
           ))}
         </div>
-        <div className="formation-evidence-legend" aria-label="Chart legend">
+        <div className="formation-evidence-legend" aria-label={localizer.t("formation.legendLabel")}>
           {model.profiles.map((profile, index) => <span className={`series-${index + 1}`} key={profile.profile_key}><i aria-hidden="true" />{profile.profile_code}</span>)}
         </div>
 
@@ -178,21 +188,21 @@ export function ClusterFormationEvidenceModal({ modelKey, onClose }: Props) {
           {model.cluster_forming_variables.map((variable) => (
             <article className="formation-evidence-card" key={variable.variable}>
               <header>
-                <span>Cluster-forming variable</span>
-                <h3>{variable.display_name}</h3>
-                {variable.question_id ? <small>Survey question {variable.question_id}</small> : null}
+                <span>{localizer.t("formation.variable")}</span>
+                <h3>{localizer.variableName(variable.variable, variable.display_name)}</h3>
+                {variable.question_id ? <small>{localizer.t("formation.questionId", { id: variable.question_id })}</small> : null}
               </header>
               {variable.survey_question ? (
                 <div className="formation-evidence-question">
-                  <span>Survey question</span>
-                  <p>{variable.survey_question}</p>
+                  <span>{localizer.t("formation.question")}</span>
+                  <p lang="en">{variable.survey_question}</p>
                 </div>
               ) : null}
               {variable.kind === "categorical" ? <CategoricalChart variable={variable} model={model} /> : null}
               {variable.kind === "numeric_summary" ? <NumericSummary variable={variable} model={model} /> : null}
-              {variable.kind === "unavailable" ? <p className="formation-evidence-unavailable">No final distribution or profile summary was available for this variable.</p> : null}
-              {variable.note ? <small className="formation-evidence-note">{variable.note}</small> : null}
-              <small className="formation-evidence-provenance">Source: {variable.provenance}</small>
+              {variable.kind === "unavailable" ? <p className="formation-evidence-unavailable">{localizer.t("formation.unavailable")}</p> : null}
+              {variable.note ? <small className="formation-evidence-note">{localizer.evidenceText(variable.note)}</small> : null}
+              <small className="formation-evidence-provenance">{localizer.t("formation.source", { source: variable.provenance })}</small>
             </article>
           ))}
         </div>

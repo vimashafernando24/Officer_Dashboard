@@ -1,4 +1,5 @@
 import "./ChoiceGrid.css";
+import { useLocalizer } from "../i18n/languageContext";
 import type { Option } from "../types";
 
 export function ChoiceGrid({
@@ -58,6 +59,7 @@ export function MultiChoiceGrid({
   maxSelected?: number;
   exclusiveOptionCodes?: string[];
 }) {
+  const localizer = useLocalizer();
   const selected = new Set(value);
   const exclusiveOptions = new Set(exclusiveOptionCodes);
   const selectedNonExclusive = value.filter((code) => !exclusiveOptions.has(code));
@@ -97,7 +99,7 @@ export function MultiChoiceGrid({
       })}
       {maxSelected !== undefined ? (
         <div className="choice-limit" aria-live="polite">
-          {value.length} of {maxSelected} selected
+          {localizer.t("common.selectedCount", { count: value.length, max: maxSelected })}
         </div>
       ) : null}
     </div>

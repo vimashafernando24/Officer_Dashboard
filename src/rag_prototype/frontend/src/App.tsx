@@ -7,6 +7,8 @@ import { Step2Sector } from "./steps/Step2Sector";
 import { Step3ProgrammeQuestions } from "./steps/Step3ProgrammeQuestions";
 import { Step4Review } from "./steps/Step4Review";
 import { fetchQuestionConfig, submitRecommendation } from "./api";
+import { LanguageSwitch } from "./i18n/LanguageControls";
+import { useLocalizer } from "./i18n/languageContext";
 import type { IntakeState, QuestionConfig, RecommendResponse } from "./types";
 import officerMascot from "../../../mascots/small/rabbit4.png";
 
@@ -23,6 +25,7 @@ const INITIAL_STATE: IntakeState = {
 };
 
 function App() {
+  const localizer = useLocalizer();
   const [state, setState] = useState<IntakeState>(INITIAL_STATE);
   const [highestReachedStep, setHighestReachedStep] = useState(0);
   const [config, setConfig] = useState<QuestionConfig | null>(null);
@@ -158,10 +161,11 @@ function App() {
         <div className="app-header-inner">
           <div>
             <div className="product-mark">Youth Circles</div>
-            <div className="eyebrow">Youth Services Officer</div>
-            <h1>Member intake and programme support</h1>
+            <div className="eyebrow">{localizer.t("app.eyebrow")}</div>
+            <h1>{localizer.t("app.title")}</h1>
           </div>
         </div>
+        <LanguageSwitch />
         <img className="header-mascot" src={officerMascot} alt="" aria-hidden="true" />
       </header>
       <StepProgress

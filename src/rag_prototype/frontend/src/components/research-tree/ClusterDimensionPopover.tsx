@@ -1,6 +1,8 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, type CSSProperties } from "react";
 import { createPortal } from "react-dom";
 import dimensionLibraryJson from "../../data/clusterDimensionResearchLibrary.json";
+import { EnglishOnlyNotice } from "../../i18n/LanguageControls";
+import { useLocalizer } from "../../i18n/languageContext";
 
 interface ClusterFormingVariable {
   variable: string;
@@ -56,6 +58,7 @@ export function ClusterDimensionPopover({ modelId, anchor, container, onClose, o
   const bubble = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState<PopoverPosition | null>(null);
   const research = dimensionLibrary[modelId];
+  const localizer = useLocalizer();
   const closeAndRestoreFocus = useCallback(() => {
     onClose();
     window.requestAnimationFrame(() => anchor.focus());
@@ -110,7 +113,7 @@ export function ClusterDimensionPopover({ modelId, anchor, container, onClose, o
       window.removeEventListener("resize", updatePosition);
       window.removeEventListener("scroll", updatePosition, true);
     };
-  }, [container, updatePosition]);
+  }, [container, updatePosition, localizer]);
 
   useEffect(() => {
     const onPointerDown = (event: PointerEvent) => {
@@ -146,50 +149,51 @@ export function ClusterDimensionPopover({ modelId, anchor, container, onClose, o
       aria-labelledby="dimension-research-title"
       style={style}
     >
-      <button type="button" className="research-popover-close" onClick={closeAndRestoreFocus} aria-label="Close dimension research">×</button>
-      <span className="research-dimension-kicker">How this clustering dimension was created</span>
-      <h2 id="dimension-research-title">{research.dimension_title}</h2>
+      <button type="button" className="research-popover-close" onClick={closeAndRestoreFocus} aria-label={localizer.t("dimension.close")}>×</button>
+      <span className="research-dimension-kicker">{localizer.t("dimension.kicker")}</span>
+      <h2 id="dimension-research-title">{localizer.modelLabel(modelId, research.dimension_title)}</h2>
 
       <section className="research-dimension-section">
-        <h3>What this dimension represents</h3>
-        <p>{research.description}</p>
+        <h3>{localizer.t("dimension.represents")}</h3>
+        <p>{localizer.modelDescription(modelId, research.description)}</p>
       </section>
 
       <section className="research-dimension-section">
-        <h3>Variables used to form these clusters</h3>
+        <h3>{localizer.t("dimension.variables")}</h3>
+        <EnglishOnlyNotice>{localizer.t("dimension.questionsNote")}</EnglishOnlyNotice>
         <ul className="research-dimension-variables">
           {research.cluster_forming_variables.map((variable) => (
             <li key={variable.variable_key}>
-              <strong>{variable.variable}</strong>
-              {variable.survey_question ? <span>{variable.survey_question}</span> : null}
+              <strong>{localizer.variableName(variable.variable_key, variable.variable)}</strong>
+              {variable.survey_question ? <span lang="en">{variable.survey_question}</span> : null}
             </li>
           ))}
         </ul>
-        <small>These variables were used in the historical clustering model.</small>
+        <small>{localizer.t("dimension.variablesNote")}</small>
       </section>
 
       <section className="research-dimension-section">
-        <h3>Historical model</h3>
+        <h3>{localizer.t("dimension.model")}</h3>
         <dl className="research-dimension-model-facts">
-          <div><dt>Respondents</dt><dd>{research.historical_sample_size}</dd></div>
-          <div><dt>Profiles</dt><dd>{research.profile_count}</dd></div>
-          <div><dt>Profile sizes</dt><dd>{research.profile_sizes.join(" / ")}</dd></div>
-          {research.validation.silhouette !== undefined ? <div><dt>Profile separation</dt><dd>{metric(research.validation.silhouette)}</dd></div> : null}
-          {research.validation.ari !== undefined ? <div><dt>Validation stability</dt><dd>{metric(research.validation.ari)}</dd></div> : null}
-          {research.validation.pac !== undefined ? <div><dt>Assignment ambiguity</dt><dd>{metric(research.validation.pac)}</dd></div> : null}
+          <div><dt>{localizer.t("dimension.respondents")}</dt><dd>{research.historical_sample_size}</dd></div>
+          <div><dt>{localizer.t("dimension.profiles")}</dt><dd>{research.profile_count}</dd></div>
+          <div><dt>{localizer.t("dimension.profileSizes")}</dt><dd>{research.profile_sizes.join(" / ")}</dd></div>
+          {research.validation.silhouette !== undefined ? <div><dt>{localizer.t("dimension.separation")}</dt><dd>{metric(research.validation.silhouette)}</dd></div> : null}
+          {research.validation.ari !== undefined ? <div><dt>{localizer.t("dimension.stability")}</dt><dd>{metric(research.validation.ari)}</dd></div> : null}
+          {research.validation.pac !== undefined ? <div><dt>{localizer.t("dimension.ambiguity")}</dt><dd>{metric(research.validation.pac)}</dd></div> : null}
         </dl>
       </section>
 
       {research.method?.distance || research.method?.clustering ? (
         <section className="research-dimension-method">
-          <h3>Method</h3>
-          {research.method.distance ? <p><strong>Distance:</strong> {research.method.distance}</p> : null}
-          {research.method.clustering ? <p><strong>Clustering:</strong> {research.method.clustering}</p> : null}
+          <h3>{localizer.t("dimension.method")}</h3>
+          {research.method.distance ? <p><strong>{localizer.t("dimension.distance")}</strong> <span lang="en">{research.method.distance}</span></p> : null}
+          {research.method.clustering ? <p><strong>{localizer.t("dimension.clustering")}</strong> <span lang="en">{research.method.clustering}</span></p> : null}
         </section>
       ) : null}
 
       <button type="button" className="research-dimension-evidence-button" onClick={onViewEvidence}>
-        View survey evidence
+        {localizer.t("dimension.viewEvidence")}
       </button>
     </div>,
     document.body,

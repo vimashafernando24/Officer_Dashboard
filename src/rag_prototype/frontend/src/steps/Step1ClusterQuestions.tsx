@@ -1,5 +1,7 @@
 import { Card, StepTitle, StepHint } from "../components/Card";
 import { ChoiceGrid } from "../components/ChoiceGrid";
+import { EnglishOnlyNotice, EnglishOriginal } from "../i18n/LanguageControls";
+import { useLocalizer } from "../i18n/languageContext";
 import type { ClusterQuestionGroup } from "../types";
 
 export function Step1ClusterQuestions({
@@ -15,23 +17,25 @@ export function Step1ClusterQuestions({
   onBack: () => void;
   onNext: () => void;
 }) {
+  const localizer = useLocalizer();
   const allVars = groups.flatMap((g) => g.questions.map((q) => q.variable));
   const complete = allVars.every((v) => answers[v] !== undefined && answers[v] !== "");
 
   return (
     <Card>
-      <StepTitle>A few background questions to ask the member</StepTitle>
-      <StepHint>
-        These are the exact, already-validated cluster-forming questions for this branch — the
-        same items the original study used to build these profile models.
-      </StepHint>
+      <StepTitle>{localizer.t("step1.title")}</StepTitle>
+      <StepHint>{localizer.t("step1.hint")}</StepHint>
+      <EnglishOnlyNotice>{localizer.t("step1.translationNote")}</EnglishOnlyNotice>
       {groups.map((g) => (
         <div key={g.model_id}>
-          <div className="q-model-badge">{g.model_id.replace(/_/g, " ")}</div>
+          <div className="q-model-badge">{localizer.modelLabel(g.model_id, g.model_id.replace(/_/g, " "))}</div>
           {g.questions.map((q) =>
             q.type === "number" ? (
               <div className="q-block" key={q.variable}>
-                <div className="q-label">{q.question}</div>
+                <div className="q-label">
+                  {localizer.question(q.variable, q.question)}
+                  <EnglishOriginal text={q.question} />
+                </div>
                 <input
                   type="number"
                   min={0}
@@ -41,10 +45,16 @@ export function Step1ClusterQuestions({
               </div>
             ) : (
               <div className="q-block" key={q.variable}>
-                <div className="q-label">{q.question}</div>
+                <div className="q-label">
+                  {localizer.question(q.variable, q.question)}
+                  <EnglishOriginal text={q.question} />
+                </div>
                 <ChoiceGrid
                   name={q.variable}
-                  options={q.options ?? []}
+                  options={(q.options ?? []).map((option) => ({
+                    code: option.code,
+                    label: localizer.answer(option.label),
+                  }))}
                   value={answers[q.variable] ?? null}
                   onChange={(code) => onAnswer(q.variable, code)}
                 />
@@ -55,10 +65,10 @@ export function Step1ClusterQuestions({
       ))}
       <div className="btn-row">
         <button className="btn-ghost" onClick={onBack}>
-          &larr; back
+          {localizer.t("common.back")}
         </button>
         <button className="btn-primary" disabled={!complete} onClick={onNext}>
-          Next
+          {localizer.t("common.next")}
         </button>
       </div>
     </Card>
