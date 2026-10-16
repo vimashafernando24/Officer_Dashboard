@@ -1,0 +1,4 @@
+{
+  "buildCommand": "cd src/rag_prototype/frontend && npm ci && npm run build",
+  "outputDirectory": "src/rag_prototype/frontend/dist"
+}

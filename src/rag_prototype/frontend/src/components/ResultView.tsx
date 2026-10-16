@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { RecommendResponse, SuggestedProgramme } from "../types";
+import { ModelReliabilityWarnings } from "./ModelReliabilityWarnings";
 import ideaRabbit from "../../../../mascots/small/rabbit3.png";
 import discussionRabbit from "../../../../mascots/small/rabbit4.png";
 
@@ -115,12 +116,19 @@ export function ResultView({ data, memberAnswers }: { data: RecommendResponse; m
           </aside>
 
           <div className="programme-main">
+            <ModelReliabilityWarnings
+              assignedProfiles={data.assigned_profiles}
+              catalogue={data.cluster_catalogue}
+            />
             <div className="flow-section-heading">
               <span className="step-number">3</span>
               <div>
-                <span className="section-kicker">Programme options</span>
+                <div className="programme-heading-labels">
+                  <span className="section-kicker">Programme options</span>
+                  <span className="ai-generated-label">AI-generated</span>
+                </div>
                 <h2 id="programme-options-title">Options to review together</h2>
-                <p>These suggestions combine the member’s answers, course facts and relevant profile context.</p>
+                <p>These AI-generated suggestions combine the member’s answers, course facts and relevant profile context.</p>
               </div>
             </div>
 

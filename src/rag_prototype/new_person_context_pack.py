@@ -37,6 +37,19 @@ interaction between:
 - the full set of retained findings for those assigned profiles when they genuinely
   help interpret the programme decision.
 
+Keep participant choices separate from catalogue metadata. Only preferred_sectors and
+preferred_skills_by_sector represent sectors and skills explicitly selected by the
+participant. sector_skill_areas, skill_areas, and structured_course_facts.skill_area are
+internal catalogue classifications. You may describe an internal classification neutrally
+as a course fact, but never say the participant selected, chose, requested, or preferred
+that classification unless its exact label is also present in their explicit selections.
+
+Treat schedule facts and schedule preferences separately. "No strong preference" means
+the participant expressed no preference for weekday/full-time or weekend/part-time study.
+You may state a verified course schedule neutrally, but do not claim that it matches, fits,
+or satisfies a participant preference unless the participant explicitly expressed that
+schedule preference.
+
 Personal answers and verified course facts are the strongest evidence. Cluster
 descriptions and retained findings are historical group context: they can deepen or
 qualify an explanation, but they cannot replace the member's answers and must never

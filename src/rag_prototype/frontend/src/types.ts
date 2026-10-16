@@ -26,7 +26,6 @@ export interface QuestionConfig {
   q3_options: string[];
   q4_options: string[];
   q5_options: string[];
-  has_api_key: boolean;
 }
 
 export interface SurveyQuestion {
@@ -292,6 +291,9 @@ export interface AssignedProfile {
   cluster_code: string;
   cluster_name: string;
   common_description: string;
+  model_published_accuracy: number;
+  model_judgment: string;
+  needs_review_model: boolean;
 }
 
 export interface SuggestedProgramme {
