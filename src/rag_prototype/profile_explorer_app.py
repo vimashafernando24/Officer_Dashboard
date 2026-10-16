@@ -825,7 +825,7 @@ def index():
     vite_index = FRONTEND_DIST_PATH / "index.html"
     if vite_index.exists():
         return Response(vite_index.read_text(encoding="utf-8"), mimetype="text/html")
-    return Response(INDEX_HTML_PATH.read_text(encoding="utf-8"), mimetype="text/html")
+    return jsonify({"error": "Not found"}), 404
 
 
 @app.route("/assets/<path:asset_path>")
@@ -836,7 +836,7 @@ def frontend_asset(asset_path):
 
 @app.route("/new-person")
 def new_person_page():
-    return Response(WALKTHROUGH_HTML_PATH.read_text(encoding="utf-8"), mimetype="text/html")
+    return jsonify({"error": "Not found"}), 404
 
 
 if __name__ == "__main__":
