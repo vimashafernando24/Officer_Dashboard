@@ -199,6 +199,7 @@ export const en = {
   "teaching.assignedSize": "Assigned profile · historical n={n}",
   "teaching.comparedWith": "Compared with",
   "teaching.viewEvidence": "View survey evidence",
+  "teaching.assignedClusterBadge": "Member's assigned cluster",
   "teaching.boundary": "Use these findings to understand the historical profile. Do not treat them as this member’s answers or as programme eligibility rules.",
   "teaching.conclusionsEnglish": "",
 } as const;
@@ -402,6 +403,7 @@ export const si: Record<MessageKey, string> = {
   "teaching.assignedSize": "පැවරූ කාණ්ඩය · පෙර සමීක්ෂණ n={n}",
   "teaching.comparedWith": "සසඳන ලද්දේ",
   "teaching.viewEvidence": "සමීක්ෂණ සාක්ෂි බලන්න",
+  "teaching.assignedClusterBadge": "සාමාජිකයාට පැවරූ කාණ්ඩය",
   "teaching.boundary": "පෙර සමීක්ෂණ කාණ්ඩ තේරුම් ගැනීමට මෙම සොයාගැනීම් භාවිත කරන්න. මේවා මෙම සාමාජිකයාගේ පිළිතුරු ලෙස හෝ වැඩසටහන් සුදුසුකම් නීති ලෙස නොසලකන්න.",
   "teaching.conclusionsEnglish": "එක් එක් සොයාගැනීමේ සවිස්තරාත්මක නිගමනය සහ පිළිතුරු කිහිපයක් දැනට ඉංග්‍රීසියෙන් පමණක් දැක්වේ.",
 };

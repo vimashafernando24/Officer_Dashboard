@@ -75,6 +75,18 @@
 .research-status-badge.fdr_supported { background: var(--yc-green-soft); color: var(--yc-green-deep); }
 .research-distribution { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(310px, 100%), 1fr)); gap: 14px; }
 .research-profile-chart { padding: 18px; border: 1px solid rgba(101,141,109,.32); border-radius: 16px; background: linear-gradient(145deg, #f5f9f3, #fff); }
+/* Survey Evidence: the member's own cluster is highlighted; comparison boxes stay neutral. */
+.research-profile-chart.is-comparison-group { border-color: var(--yc-border); background: var(--yc-white); }
+.research-profile-chart.is-assigned-cluster { position: relative; border: 2px solid var(--yc-green); box-shadow: 0 0 0 4px rgba(101,141,109,.16); animation: assigned-cluster-pulse 1.6s ease-in-out 3; }
+.assigned-cluster-badge { display: inline-flex; align-items: center; gap: 6px; margin: -4px 0 12px; padding: 4px 11px; border-radius: 999px; background: var(--yc-green); color: #fff; font-size: 12px; font-weight: 800; line-height: 1.5; }
+.assigned-cluster-badge::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: #fff; }
+@keyframes assigned-cluster-pulse {
+  0%, 100% { box-shadow: 0 0 0 4px rgba(101,141,109,.16); }
+  50% { box-shadow: 0 0 0 10px rgba(101,141,109,.30); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .research-profile-chart.is-assigned-cluster { animation: none; }
+}
 .research-profile-chart-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; padding-bottom: 13px; border-bottom: 1px solid rgba(101,141,109,.2); }
 .research-profile-chart-heading h4 { margin: 0; font-family: var(--yc-font-reading); font-size: 17px; line-height: 1.4; }
 .research-profile-chart-heading span { flex: 0 0 auto; color: var(--yc-green-deep); font: 750 11px "JetBrains Mono", monospace; }

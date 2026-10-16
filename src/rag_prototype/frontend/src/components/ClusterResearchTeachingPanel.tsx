@@ -22,6 +22,7 @@ interface Props {
 interface EvidenceModalProps {
   finding: ClusterResearchTeachingFinding;
   profile: ClusterResearchTeachingProfile;
+  assignedProfileKeys: ReadonlySet<string>;
   onClose: () => void;
 }
 
@@ -36,7 +37,7 @@ function displayMetric(answer: TeachingDistributionAnswer, localizer: Localizer)
   return localizer.t("teaching.notAvailable");
 }
 
-function EvidenceModal({ finding, profile, onClose }: EvidenceModalProps) {
+function EvidenceModal({ finding, profile, assignedProfileKeys, onClose }: EvidenceModalProps) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const localizer = useLocalizer();
 
@@ -46,6 +47,15 @@ function EvidenceModal({ finding, profile, onClose }: EvidenceModalProps) {
     dialog.showModal();
     return () => { if (dialog.open) dialog.close(); };
   }, []);
+
+  // The member's box is the one whose profile_key is this assigned profile.
+  // Box order is not guaranteed, and the pooled "other profiles" box has no
+  // key, so if exactly one box does not match, no badge is shown at all.
+  const assignedMatches = finding.distribution.profiles.filter((item) =>
+    item.profile_key !== null
+    && item.profile_key === profile.profile_key
+    && assignedProfileKeys.has(item.profile_key));
+  const assignedChartKey = assignedMatches.length === 1 ? assignedMatches[0].profile_key : null;
 
   const numericValues = finding.distribution.profiles.flatMap((item) =>
     item.answers.flatMap((answer) => answer.value === null ? [] : [answer.value]),
@@ -97,8 +107,15 @@ function EvidenceModal({ finding, profile, onClose }: EvidenceModalProps) {
                     iqr: null,
                   }
                 ));
+            const isAssigned = assignedChartKey !== null && distributionProfile.profile_key === assignedChartKey;
             return (
-              <article className="research-profile-chart" key={distributionProfile.profile_key ?? distributionProfile.profile_name}>
+              <article
+                className={`research-profile-chart ${isAssigned ? "is-assigned-cluster" : "is-comparison-group"}`}
+                key={distributionProfile.profile_key ?? distributionProfile.profile_name}
+              >
+                {isAssigned ? (
+                  <span className="assigned-cluster-badge">{localizer.t("teaching.assignedClusterBadge")}</span>
+                ) : null}
                 <div className="research-profile-chart-heading">
                   <h4>{localizer.profileName(distributionProfile.profile_key, distributionProfile.profile_name)}</h4>
                   <span>{distributionProfile.denominator === null ? localizer.t("teaching.denominatorMissing") : `n=${distributionProfile.denominator}`}</span>
@@ -150,14 +167,15 @@ function EvidenceModal({ finding, profile, onClose }: EvidenceModalProps) {
 
 export function ClusterResearchTeachingPanel({ assignedProfiles }: Props) {
   const localizer = useLocalizer();
-  const assignedTeachingProfiles = useMemo(() => {
-    const assignedKeys = new Set(assignedProfiles.map((profile) => profile.profile_key));
-    return teachingLibrary.models.flatMap((model) =>
-      model.profiles
-        .filter((profile) => assignedKeys.has(profile.profile_key))
-        .map((profile) => ({ model, profile })),
-    );
-  }, [assignedProfiles]);
+  const assignedProfileKeys = useMemo(
+    () => new Set(assignedProfiles.map((profile) => profile.profile_key)),
+    [assignedProfiles],
+  );
+  const assignedTeachingProfiles = useMemo(() => teachingLibrary.models.flatMap((model) =>
+    model.profiles
+      .filter((profile) => assignedProfileKeys.has(profile.profile_key))
+      .map((profile) => ({ model, profile })),
+  ), [assignedProfileKeys]);
   const [selectedModelKey, setSelectedModelKey] = useState(assignedTeachingProfiles[0]?.model.model_key ?? "");
   const [openFinding, setOpenFinding] = useState<ClusterResearchTeachingFinding | null>(null);
   const selected = assignedTeachingProfiles.find((item) => item.model.model_key === selectedModelKey)
@@ -233,7 +251,12 @@ export function ClusterResearchTeachingPanel({ assignedProfiles }: Props) {
       </p>
 
       {openFinding ? (
-        <EvidenceModal finding={openFinding} profile={selected.profile} onClose={() => setOpenFinding(null)} />
+        <EvidenceModal
+          finding={openFinding}
+          profile={selected.profile}
+          assignedProfileKeys={assignedProfileKeys}
+          onClose={() => setOpenFinding(null)}
+        />
       ) : null}
     </section>
   );
