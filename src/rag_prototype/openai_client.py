@@ -1,29 +1,29 @@
 """
 Thin, auditable wrapper around the OpenAI Responses API for the course-recommendation
 prototype ONLY. Uses structured-output parsing (client.responses.parse with a Pydantic
-text_format) instead of prose + regex parsing. Records token usage per call and applies
-a conservative, bounded retry policy — never retries indefinitely.
+text_format) instead of prose + regex parsing. Records token usage per call and disables
+both SDK and application retries so each invocation makes at most one provider request.
 
-SECURITY: this module never logs, prints, or returns the API key. If a call raises, the
-exception is re-raised as-is only after confirming (via _scrub) that no environment dump
-or key-bearing string is attached to the error message we surface.
+SECURITY: this module never logs, prints, or returns the API key or raw provider errors.
 """
-import threading
 import time
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Optional
 
 from env_config import get_api_key
 from recommendation_schema import RespondentRecommendationResponse
 from context_pack_v2 import GOVERNANCE_INSTRUCTIONS
 
-MAX_RETRIES = 3
-RETRY_BACKOFF_SECONDS = 2.0
-# The SDK's own default read timeout is 600s; combined with MAX_RETRIES a single
-# genuinely-hanging respondent could otherwise block for up to ~40 minutes before
-# surfacing as a failure. Bounded explicitly so a stall fails fast and retries
-# instead of hanging silently.
-REQUEST_TIMEOUT_SECONDS = 120.0
+SDK_MAX_RETRIES = 0
+REQUEST_TIMEOUT_SECONDS = 90.0
+
+PUBLIC_ERROR_MESSAGES = {
+    "missing_configuration": "Programme recommendation service is temporarily unavailable.",
+    "authentication_failure": "Programme recommendation service is temporarily unavailable.",
+    "provider_unavailable": "Programme recommendation service is temporarily unavailable.",
+    "upstream_timeout": "Programme recommendation service timed out. Please try again.",
+    "invalid_provider_output": "Programme recommendation service returned an invalid response.",
+}
 
 
 def _is_reasoning_model(model: str) -> bool:
@@ -36,49 +36,43 @@ def _is_reasoning_model(model: str) -> bool:
     return m.startswith("gpt-5") or m.startswith("o1") or m.startswith("o3") or m.startswith("o4")
 
 
-# Error types worth retrying (transient/server-side). Everything else (bad request,
-# auth, not-found, permission, unprocessable, conflict) fails fast on attempt 1 —
-# retrying a malformed/rejected request 3 times with backoff wastes time and, for a
-# paid API, potentially money, without any chance of a different outcome.
-def _is_retryable(exc: Exception) -> bool:
+class MissingAPIKeyError(RuntimeError):
+    """Internal configuration category; never returned verbatim to API clients."""
+
+
+class InvalidProviderOutputError(ValueError):
+    """The provider completed, but did not return the requested structured object."""
+
+
+def _provider_error_category(exc: Exception) -> str:
+    """Classify an SDK failure without retaining or exposing its message."""
+    if isinstance(exc, MissingAPIKeyError):
+        return "missing_configuration"
+    if isinstance(exc, InvalidProviderOutputError):
+        return "invalid_provider_output"
+
     import openai
-    return isinstance(exc, (openai.RateLimitError, openai.InternalServerError,
-                             openai.APIConnectionError, openai.APITimeoutError,
-                             HardTimeoutError))
+    if isinstance(exc, openai.APITimeoutError):
+        return "upstream_timeout"
+    if isinstance(exc, openai.AuthenticationError):
+        return "authentication_failure"
+    if isinstance(exc, (
+        openai.RateLimitError,
+        openai.InternalServerError,
+        openai.APIConnectionError,
+    )):
+        return "provider_unavailable"
 
-
-class HardTimeoutError(Exception):
-    """Raised when a call exceeds REQUEST_TIMEOUT_SECONDS even though the SDK's own
-    `timeout=` parameter did not raise. Observed in practice: some calls to gpt-5-mini
-    hung well past their configured SDK-level timeout (confirmed by direct, isolated
-    diagnostic calls with no other explanation — the same input succeeded quickly on a
-    later attempt, and a trivial unrelated call succeeded in ~5s throughout, so it was
-    not a broad connectivity/auth problem). This wraps the call in a DAEMON worker
-    thread and enforces a hard wall-clock bound at the Python level, independent of
-    SDK/httpx internals. A daemon thread does not block process/script exit, so an
-    abandoned call is simply left to finish (or not) in the background and its result
-    discarded — the caller never waits for it."""
-
-
-def _run_with_hard_timeout(fn, timeout_seconds, /, **kwargs):
-    result_box = {}
-
-    def _target():
-        try:
-            result_box["value"] = fn(**kwargs)
-        except Exception as exc:  # noqa: BLE001
-            result_box["error"] = exc
-
-    t = threading.Thread(target=_target, daemon=True)
-    t.start()
-    t.join(timeout=timeout_seconds)
-    if t.is_alive():
-        raise HardTimeoutError(
-            f"call exceeded hard timeout of {timeout_seconds}s (SDK-level timeout did not trigger)"
-        )
-    if "error" in result_box:
-        raise result_box["error"]
-    return result_box["value"]
+    try:
+        from pydantic import ValidationError
+    except ImportError:  # pragma: no cover - pydantic is a required dependency
+        ValidationError = None
+    if (
+        (ValidationError is not None and isinstance(exc, ValidationError))
+        or isinstance(exc, (ValueError, TypeError))
+    ):
+        return "invalid_provider_output"
+    return "provider_unavailable"
 
 
 @dataclass
@@ -86,7 +80,7 @@ class CallResult:
     respondent_id: str
     model: str
     success: bool
-    parsed: Optional[RespondentRecommendationResponse] = None
+    parsed: Optional[object] = None
     input_tokens: Optional[int] = None
     output_tokens: Optional[int] = None
     total_tokens: Optional[int] = None
@@ -94,32 +88,38 @@ class CallResult:
     reasoning_tokens: Optional[int] = None
     duration_seconds: Optional[float] = None
     retry_count: int = 0
+    error_category: Optional[str] = None
     error_message: Optional[str] = None
     response_id: Optional[str] = None
 
 
-def _scrub(text: str, api_key: Optional[str]) -> str:
-    """Removes the literal API key from any string before it is ever surfaced."""
-    if api_key and api_key in text:
-        text = text.replace(api_key, "[REDACTED]")
-    return text
+def _failure_result(respondent_id: str, model: str, started_at: float,
+                    exc: Exception) -> CallResult:
+    category = _provider_error_category(exc)
+    return CallResult(
+        respondent_id=respondent_id,
+        model=model,
+        success=False,
+        duration_seconds=round(time.monotonic() - started_at, 3),
+        retry_count=0,
+        error_category=category,
+        error_message=PUBLIC_ERROR_MESSAGES[category],
+    )
 
 
 def get_client():
-    """Raises RuntimeError (never prints the key) if no key is configured."""
+    """Build a no-retry SDK client without ever printing or returning the key."""
     api_key = get_api_key()
     if not api_key:
-        raise RuntimeError(
-            "OPENAI_API_KEY is not configured. Set it in ClusterRP/.env — see .env.example."
-        )
+        raise MissingAPIKeyError("OpenAI credentials are unavailable")
     from openai import OpenAI
-    return OpenAI(api_key=api_key)
+    return OpenAI(api_key=api_key, max_retries=SDK_MAX_RETRIES)
 
 
 def call_recommendation_api(respondent_id: str, input_text: str, model: str) -> CallResult:
     """
-    Makes one structured-output call for one respondent, with a bounded retry policy.
-    Never retries more than MAX_RETRIES times; never silently duplicates a successful call.
+    Makes one synchronous structured-output call for one respondent. SDK and
+    application retries are disabled so one invocation means one paid request.
 
     `model` is REQUIRED with no default and no .env fallback — this is deliberate.
     A silent fallback here was a confirmed latent bug: if a caller ever omitted the
@@ -133,64 +133,41 @@ def call_recommendation_api(respondent_id: str, input_text: str, model: str) -> 
             "call_recommendation_api() requires an explicit, non-empty model argument — "
             "there is no default and no .env fallback. Use env_config.get_production_model()."
         )
-    api_key = get_api_key()  # only used for scrubbing error text below; never logged
-    client = get_client()
+    start = time.monotonic()
+    try:
+        client = get_client()
+        call_kwargs = dict(
+            model=model,
+            instructions=GOVERNANCE_INSTRUCTIONS,
+            input=input_text,
+            text_format=RespondentRecommendationResponse,
+            timeout=REQUEST_TIMEOUT_SECONDS,
+        )
+        if _is_reasoning_model(model):
+            call_kwargs["reasoning"] = {"effort": "low"}
+        else:
+            call_kwargs["temperature"] = 0
 
-    call_kwargs = dict(
-        model=model,
-        instructions=GOVERNANCE_INSTRUCTIONS,
-        input=input_text,
-        text_format=RespondentRecommendationResponse,
-        timeout=REQUEST_TIMEOUT_SECONDS,
-    )
-    if _is_reasoning_model(model):
-        # Cost-conscious: low reasoning effort keeps a reasoning-tier model fast/cheap
-        # for this structured-extraction-style task rather than defaulting to a
-        # higher, slower, more expensive effort level.
-        call_kwargs["reasoning"] = {"effort": "low"}
-    else:
-        call_kwargs["temperature"] = 0  # deterministic-as-possible; not supported by reasoning models
-
-    last_error = None
-    for attempt in range(MAX_RETRIES + 1):
-        start = time.monotonic()
-        try:
-            # Hard, Python-level bound: the SDK's own `timeout=` kwarg has been
-            # observed NOT to reliably bound every call (see HardTimeoutError
-            # docstring), so the call runs in a daemon worker thread with an enforced
-            # wall-clock cutoff that cannot be defeated by SDK/httpx internals and
-            # cannot block process exit.
-            response = _run_with_hard_timeout(
-                client.responses.parse, REQUEST_TIMEOUT_SECONDS + 5.0, **call_kwargs
-            )
-            duration = time.monotonic() - start
-            parsed = response.output_parsed
-            usage = response.usage
-            return CallResult(
-                respondent_id=respondent_id,
-                model=model,
-                success=True,
-                parsed=parsed,
-                input_tokens=usage.input_tokens if usage else None,
-                output_tokens=usage.output_tokens if usage else None,
-                total_tokens=usage.total_tokens if usage else None,
-                cached_input_tokens=usage.input_tokens_details.cached_tokens if usage else None,
-                reasoning_tokens=usage.output_tokens_details.reasoning_tokens if usage else None,
-                duration_seconds=round(duration, 3),
-                retry_count=attempt,
-                response_id=response.id,
-            )
-        except Exception as exc:  # noqa: BLE001 — deliberately broad; this is a leaf I/O boundary
-            duration = time.monotonic() - start
-            last_error = _scrub(f"{type(exc).__name__}: {exc}", api_key)
-            if attempt < MAX_RETRIES and _is_retryable(exc):
-                time.sleep(RETRY_BACKOFF_SECONDS * (attempt + 1))
-                continue
-            return CallResult(
-                respondent_id=respondent_id,
-                model=model,
-                success=False,
-                duration_seconds=round(duration, 3),
-                retry_count=attempt,
-                error_message=last_error,
-            )
+        response = client.responses.parse(**call_kwargs)
+        parsed = response.output_parsed
+        if parsed is None or not isinstance(parsed, RespondentRecommendationResponse):
+            raise InvalidProviderOutputError("Structured response was absent or invalid")
+        usage = response.usage
+        input_details = getattr(usage, "input_tokens_details", None) if usage else None
+        output_details = getattr(usage, "output_tokens_details", None) if usage else None
+        return CallResult(
+            respondent_id=respondent_id,
+            model=model,
+            success=True,
+            parsed=parsed,
+            input_tokens=usage.input_tokens if usage else None,
+            output_tokens=usage.output_tokens if usage else None,
+            total_tokens=usage.total_tokens if usage else None,
+            cached_input_tokens=getattr(input_details, "cached_tokens", None),
+            reasoning_tokens=getattr(output_details, "reasoning_tokens", None),
+            duration_seconds=round(time.monotonic() - start, 3),
+            retry_count=0,
+            response_id=response.id,
+        )
+    except Exception as exc:  # noqa: BLE001 - leaf provider boundary
+        return _failure_result(respondent_id, model, start, exc)

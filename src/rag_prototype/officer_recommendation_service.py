@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 import logging
 import re
+import time
 
 from cluster_catalogue import catalogue_for_branch, metadata_for_profile
 import context_pack_v2
@@ -21,6 +22,46 @@ from new_person_recommendation_schema import NewPersonRecommendationResponse
 
 
 LOGGER = logging.getLogger(__name__)
+
+APPLICATION_DEADLINE_SECONDS = 270.0
+PRIMARY_OPENAI_TIMEOUT_SECONDS = 90.0
+REPAIR_OPENAI_TIMEOUT_SECONDS = 60.0
+MIN_POST_PROCESSING_RESERVE_SECONDS = 20.0
+REPAIR_MINIMUM_REMAINING_SECONDS = (
+    REPAIR_OPENAI_TIMEOUT_SECONDS + MIN_POST_PROCESSING_RESERVE_SECONDS
+)
+
+_ERROR_HTTP_STATUS = {
+    "missing_configuration": 503,
+    "authentication_failure": 503,
+    "provider_unavailable": 503,
+    "upstream_timeout": 504,
+    "invalid_provider_output": 502,
+}
+_ERROR_PUBLIC_CODE = {
+    "missing_configuration": "recommendation_unavailable",
+    "authentication_failure": "recommendation_unavailable",
+    "provider_unavailable": "recommendation_unavailable",
+    "upstream_timeout": "recommendation_timeout",
+    "invalid_provider_output": "invalid_recommendation_response",
+}
+_ERROR_PUBLIC_MESSAGE = {
+    "missing_configuration": "Programme recommendation service is temporarily unavailable.",
+    "authentication_failure": "Programme recommendation service is temporarily unavailable.",
+    "provider_unavailable": "Programme recommendation service is temporarily unavailable.",
+    "upstream_timeout": "Programme recommendation service timed out. Please try again.",
+    "invalid_provider_output": "Programme recommendation service returned an invalid response.",
+}
+
+
+def _controlled_failure(base_response: dict, category: str) -> tuple[dict, int]:
+    safe_category = category if category in _ERROR_HTTP_STATUS else "provider_unavailable"
+    return {
+        **base_response,
+        "error": _ERROR_PUBLIC_MESSAGE[safe_category],
+        "error_code": _ERROR_PUBLIC_CODE[safe_category],
+        "suggested_programmes": [],
+    }, _ERROR_HTTP_STATUS[safe_category]
 
 
 def _finding_json(finding) -> dict:
@@ -299,6 +340,7 @@ def generate_officer_briefing(
     raw_body: dict,
     question_map: dict,
 ) -> tuple[dict, int]:
+    deadline_at = time.monotonic() + APPLICATION_DEADLINE_SECONDS
     manifest, _ = verify_corpus(verbose=False)
     manifest_by_id = {row["course_id"]: row for row in manifest}
     entries = profile_context.build_profile_context(branch, cluster_answers, officer_context)
@@ -349,48 +391,6 @@ def generate_officer_briefing(
         manifest_by_id,
     )
 
-    model = get_production_model()
-    verify_production_model(model)
-    api_result = call_new_person_recommendation_api(
-        person_id,
-        input_text,
-        model,
-        context_pack.RANKING_INSTRUCTIONS,
-        NewPersonRecommendationResponse,
-    )
-    api_results = [api_result]
-    required_coverage = selection.get("required_selected_skill_coverage", [])
-    required_course_ids = {
-        item["required_course_id"] for item in required_coverage
-    }
-    if api_result.success:
-        returned_ids = {
-            programme.course_id for programme in api_result.parsed.suggested_programmes
-        }
-        missing_required_ids = sorted(required_course_ids - returned_ids)
-        if missing_required_ids:
-            LOGGER.warning(
-                "Ranking output omitted mandatory exact selected-skill courses; requesting one repair: %s",
-                ", ".join(missing_required_ids),
-            )
-            repair_instructions = (
-                context_pack.RANKING_INSTRUCTIONS
-                + "\n\nCORRECTION REQUIRED: The previous response omitted mandatory exact selected-skill "
-                + "course IDs: " + ", ".join(missing_required_ids) + ". Return a fresh complete ranking "
-                "that includes every required_course_id in required_selected_skill_coverage exactly once. "
-                "Keep conflicting preferences as explicit cautions; do not omit these courses."
-            )
-            repaired = call_new_person_recommendation_api(
-                person_id + "-coverage-repair",
-                input_text,
-                model,
-                repair_instructions,
-                NewPersonRecommendationResponse,
-            )
-            api_results.append(repaired)
-            if repaired.success:
-                api_result = repaired
-
     assignments = []
     for entry in entries:
         metadata = metadata_for_profile(entry.profile_key)
@@ -411,12 +411,73 @@ def generate_officer_briefing(
         "assigned_profiles": assignments,
         "cluster_catalogue": catalogue_for_branch(branch, question_map),
     }
+
+    remaining_before_primary = deadline_at - time.monotonic()
+    if remaining_before_primary < (
+        PRIMARY_OPENAI_TIMEOUT_SECONDS + MIN_POST_PROCESSING_RESERVE_SECONDS
+    ):
+        LOGGER.warning("Primary recommendation skipped: insufficient execution budget.")
+        return _controlled_failure(base_response, "upstream_timeout")
+
+    model = get_production_model()
+    verify_production_model(model)
+    api_result = call_new_person_recommendation_api(
+        person_id,
+        input_text,
+        model,
+        context_pack.RANKING_INSTRUCTIONS,
+        NewPersonRecommendationResponse,
+        timeout_seconds=PRIMARY_OPENAI_TIMEOUT_SECONDS,
+    )
+    api_results = [api_result]
     if not api_result.success:
-        return {
-            **base_response,
-            "error": api_result.error_message,
-            "suggested_programmes": [],
-        }, 502
+        return _controlled_failure(
+            base_response,
+            api_result.error_category or "provider_unavailable",
+        )
+
+    required_coverage = selection.get("required_selected_skill_coverage", [])
+    required_course_ids = {
+        item["required_course_id"] for item in required_coverage
+    }
+    if api_result.success:
+        returned_ids = {
+            programme.course_id for programme in api_result.parsed.suggested_programmes
+        }
+        missing_required_ids = sorted(required_course_ids - returned_ids)
+        if missing_required_ids:
+            if deadline_at - time.monotonic() >= REPAIR_MINIMUM_REMAINING_SECONDS:
+                LOGGER.warning(
+                    "Ranking output omitted mandatory exact selected-skill courses; requesting one repair: %s",
+                    ", ".join(missing_required_ids),
+                )
+                repair_instructions = (
+                    context_pack.RANKING_INSTRUCTIONS
+                    + "\n\nCORRECTION REQUIRED: The previous response omitted mandatory exact selected-skill "
+                    + "course IDs: " + ", ".join(missing_required_ids) + ". Return a fresh complete ranking "
+                    "that includes every required_course_id in required_selected_skill_coverage exactly once. "
+                    "Keep conflicting preferences as explicit cautions; do not omit these courses."
+                )
+                repaired = call_new_person_recommendation_api(
+                    person_id + "-coverage-repair",
+                    input_text,
+                    model,
+                    repair_instructions,
+                    NewPersonRecommendationResponse,
+                    timeout_seconds=REPAIR_OPENAI_TIMEOUT_SECONDS,
+                )
+                api_results.append(repaired)
+                if repaired.success:
+                    api_result = repaired
+                else:
+                    LOGGER.warning(
+                        "Coverage repair failed; preserving the primary response (category=%s).",
+                        repaired.error_category or "provider_unavailable",
+                    )
+            else:
+                LOGGER.warning(
+                    "Coverage repair skipped: insufficient execution budget; preserving primary response."
+                )
 
     parsed = api_result.parsed
     violations = []
