@@ -38,6 +38,11 @@ function ProgrammeCard({ programme, translation }: { programme: SuggestedProgram
         <div className="programme-card programme-card-front" aria-hidden={flipped}>
           <div className="programme-card-topline">
             <span className="programme-rank">{programme.rank}</span>
+            {programme.selection_basis === "catalogue_top_up" || programme.selection_basis === "variant_adjusted" ? (
+              <span className={`programme-basis-label is-${programme.selection_basis}`}>
+                {localizer.t(programme.selection_basis === "catalogue_top_up" ? "result.basisTopUp" : "result.basisVariant")}
+              </span>
+            ) : null}
           </div>
           <h3>{programme.course_name}</h3>
           <p className="programme-why" lang={textLang}>{translation?.why_it_may_suit_this_user ?? programme.why_it_may_suit_this_user}</p>

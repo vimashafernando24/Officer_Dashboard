@@ -83,6 +83,28 @@ _FACT_FILLER_WORDS = {
 }
 
 
+# Catalogue field labels the model sometimes copies in front of a value, e.g.
+# 'Instruction languages: ["English"]'. The record stores these as JSON keys
+# (instruction_languages), so the label words themselves never match; only the
+# value after the label is evidence and is checked as strictly as any fact.
+_COURSE_FACT_FIELDS = (
+    "course_name", "skill_area", "attendance_type", "attendance_days", "duration_months",
+    "instruction_languages", "nvq_level", "qualification_type",
+)
+_COURSE_FACT_LABEL = re.compile(
+    r"^\s*(?:" + "|".join(
+        re.escape(field).replace("_", "[ _]") + r"s?" for field in sorted(_COURSE_FACT_FIELDS, key=len, reverse=True)
+    ) + r"|instruction language|language|languages|duration|qualification|attendance|nvq)\s*[:=–-]\s*",
+    re.IGNORECASE,
+)
+
+
+def _strip_course_fact_label(fact: str) -> str:
+    """Remove one leading catalogue field label; keep the fact if nothing would remain."""
+    stripped = _COURSE_FACT_LABEL.sub("", str(fact), count=1)
+    return stripped if stripped.strip() else str(fact)
+
+
 def _fact_is_grounded(fact: str, allowed_text: str) -> bool:
     fact_tokens = {
         token for token in re.findall(r"[\w&+-]+", _normalise_text(fact))
@@ -352,7 +374,7 @@ def _course_citations_are_exact(programme, candidate: dict, course_document: str
             violations.append(
                 f"programme {programme.course_id}: course fact used a different source_reference."
             )
-        if not _fact_is_grounded(citation.fact, allowed_text):
+        if not _fact_is_grounded(_strip_course_fact_label(citation.fact), allowed_text):
             violations.append(
                 f"programme {programme.course_id}: course fact was not grounded in the governed course record."
             )
@@ -573,7 +595,120 @@ def _fallback_exact_skill_programme(coverage: dict, candidate: dict, raw_body: d
         "cluster_finding_summary": None,
         "questions_to_discuss": _fallback_questions(candidate, raw_body),
         "important_mismatches": _candidate_constraints(candidate, raw_body),
+        "selection_basis": "restored_exact_skill",
     }
+
+
+MIN_PROGRAMME_OPTIONS = 3
+
+
+def _preference_answers(raw_body: dict) -> dict:
+    return {
+        "q3_schedule": raw_body.get("q3"),
+        "q4_language": raw_body.get("q4"),
+        "q5_qualification": raw_body.get("q5"),
+    }
+
+
+def _catalogue_programme(candidate: dict, raw_body: dict, selection_basis: str) -> dict:
+    """Conservative card built only from governed catalogue facts (no LLM text)."""
+    return {
+        "rank": 0,
+        "course_id": candidate["course_id"],
+        "course_name": candidate["course_name"],
+        "why_it_may_suit_this_user": _deterministic_grounded_explanation(candidate),
+        "cluster_finding_summary": None,
+        "questions_to_discuss": _fallback_questions(candidate, raw_body),
+        "important_mismatches": _candidate_constraints(candidate, raw_body),
+        "selection_basis": selection_basis,
+    }
+
+
+def _prefer_better_variants(
+    programmes: list[dict], candidates_by_id: dict, raw_body: dict,
+    required_ids: set[str], violations: list[str],
+) -> list[dict]:
+    """Show each course once, as the variant that best fits the member.
+
+    Several courses exist as language/attendance variants. If the LLM chose a
+    variant that fits the member's schedule, language or qualification answers
+    worse than another retrieved variant (or not the required exact-skill
+    variant), the card is rebuilt from catalogue facts for the better variant,
+    because the LLM text described the other variant. Later duplicates of the
+    same course are dropped.
+    """
+    answers = _preference_answers(raw_body)
+    variants_by_name: dict[str, list[dict]] = {}
+    for candidate in candidates_by_id.values():
+        variants_by_name.setdefault(candidate_selection.course_name_key(candidate["course_name"]), []).append(candidate)
+
+    adjusted, shown_names = [], set()
+    for programme in programmes:
+        chosen = candidates_by_id[programme["course_id"]]
+        name = candidate_selection.course_name_key(chosen["course_name"])
+        if name in shown_names:
+            violations.append(f"programme {programme['course_id']}: removed a second variant of a course already shown.")
+            continue
+        shown_names.add(name)
+        siblings = variants_by_name.get(name, [chosen])
+        required_sibling = next((c for c in siblings if c["course_id"] in required_ids), None)
+        best = required_sibling or max(siblings, key=lambda c: candidate_selection.preference_fit(c, answers))
+        chosen_fit = candidate_selection.preference_fit(chosen, answers)[0]
+        best_fit = candidate_selection.preference_fit(best, answers)[0]
+        if best["course_id"] != chosen["course_id"] and (required_sibling is not None or best_fit > chosen_fit):
+            replacement = _catalogue_programme(best, raw_body, "variant_adjusted")
+            replacement["rank"] = programme["rank"]
+            adjusted.append(replacement)
+            violations.append(
+                f"programme {chosen['course_id']}: replaced by variant {best['course_id']} of the same course, "
+                "which better fits the member's schedule, language or qualification answers."
+            )
+        else:
+            adjusted.append(programme)
+    return adjusted
+
+
+def _top_up_to_minimum(
+    programmes: list[dict], candidates_by_id: dict, raw_body: dict, violations: list[str],
+) -> list[dict]:
+    """Guarantee at least MIN_PROGRAMME_OPTIONS options from the member's own catalogue slice.
+
+    Runs after the LLM ranking, the profile-informed pass and all evidence
+    checks. Added cards are rule-based (best variant per remaining course,
+    ordered by schedule/language/qualification fit), carry the usual mismatch
+    warnings, and are labelled as not AI-ranked.
+    """
+    if len(programmes) >= MIN_PROGRAMME_OPTIONS:
+        return programmes
+    answers = _preference_answers(raw_body)
+    shown_names = {
+        candidate_selection.course_name_key(candidates_by_id[p["course_id"]]["course_name"])
+        for p in programmes if p["course_id"] in candidates_by_id
+    }
+    best_by_name: dict[str, dict] = {}
+    for candidate in candidates_by_id.values():
+        name = candidate_selection.course_name_key(candidate["course_name"])
+        if name in shown_names:
+            continue
+        current = best_by_name.get(name)
+        if current is None or candidate_selection.preference_fit(candidate, answers) > candidate_selection.preference_fit(current, answers):
+            best_by_name[name] = candidate
+    ordered = sorted(
+        best_by_name.values(),
+        key=lambda c: (-candidate_selection.preference_fit(c, answers)[0], c["course_id"]),
+    )
+    topped_up = list(programmes)
+    for candidate in ordered:
+        if len(topped_up) >= MIN_PROGRAMME_OPTIONS:
+            break
+        card = _catalogue_programme(candidate, raw_body, "catalogue_top_up")
+        card["rank"] = len(topped_up) + 1
+        topped_up.append(card)
+        violations.append(
+            f"programme {candidate['course_id']}: added from the governed catalogue so the officer has at least "
+            f"{MIN_PROGRAMME_OPTIONS} options."
+        )
+    return topped_up
 
 
 def generate_officer_briefing(
@@ -687,10 +822,17 @@ def generate_officer_briefing(
         item["required_course_id"] for item in required_coverage
     }
     if api_result.success:
-        returned_ids = {
-            programme.course_id for programme in api_result.parsed.suggested_programmes
+        returned_names = {
+            candidate_selection.course_name_key(candidates_by_id[programme.course_id]["course_name"])
+            for programme in api_result.parsed.suggested_programmes
+            if programme.course_id in candidates_by_id
         }
-        missing_required_ids = sorted(required_course_ids - returned_ids)
+        # A returned variant of a required course is corrected afterwards by
+        # _prefer_better_variants, so it does not need a paid repair call.
+        missing_required_ids = sorted(
+            required_id for required_id in required_course_ids
+            if candidate_selection.course_name_key(candidates_by_id[required_id]["course_name"]) not in returned_names
+        )
         if missing_required_ids:
             if deadline_at - time.monotonic() >= REPAIR_MINIMUM_REMAINING_SECONDS:
                 LOGGER.warning(
@@ -852,7 +994,14 @@ def generate_officer_briefing(
             "cluster_finding_summary": cluster_summary,
             "questions_to_discuss": questions_to_discuss,
             "important_mismatches": _candidate_constraints(candidate, raw_body),
+            "selection_basis": "ai_ranked",
         })
+
+    programmes = _prefer_better_variants(
+        programmes, candidates_by_id, raw_body,
+        {coverage["required_course_id"] for coverage in selection.get("required_selected_skill_coverage", [])},
+        violations,
+    )
 
     # A selected skill with an exact governed course match is a hard coverage
     # requirement. If the LLM or a core citation check still omitted it after
@@ -885,6 +1034,12 @@ def generate_officer_briefing(
 
     if parsed.recommendation_status == "NO_DEFENSIBLE_RECOMMENDATION" and not required_coverage:
         programmes = []
+
+    # Officers always receive at least three options from the member's own
+    # sector slice; AI-ranked options stay first and unchanged.
+    programmes = _top_up_to_minimum(programmes, candidates_by_id, raw_body, violations)
+    for rank, programme in enumerate(programmes, start=1):
+        programme["rank"] = rank
 
     effective_status = parsed.recommendation_status
     no_recommendation_reason = parsed.no_recommendation_reason

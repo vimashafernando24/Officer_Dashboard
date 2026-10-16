@@ -53,6 +53,53 @@ def _as_distinct_strings(value) -> list[str]:
     return result
 
 
+# Course-level additions to the area-level SECTOR_BRIDGE (which is shared with
+# the research retrieval code and left unchanged). Each entry is a catalogue
+# course that clearly belongs to a sector even though its catalogue skill area
+# is mapped elsewhere. Names must match the course name (variant suffixes
+# removed); test_selectable_skill_course_coverage.py checks every entry.
+SECTOR_EXTRA_COURSES = {
+    "education and teaching": ("Preschool Teacher (Early Childhood Development)",),
+    "transport, storage, and logistics": ("Store Management",),
+}
+
+
+def extra_courses_for_sector(sector: str) -> tuple[str, ...]:
+    return SECTOR_EXTRA_COURSES.get(str(sector or "").strip().lower(), ())
+
+
+def course_name_key(course_name: str) -> str:
+    """Identity of a course across its language/attendance variants."""
+    return _strip_variant_suffix(course_name).casefold()
+
+
+def preference_fit(candidate: dict, answers: dict) -> tuple[int, str]:
+    """Fit of one catalogue variant to the member's schedule, language and qualification answers.
+
+    Used to choose between variants of the same course and to order governed
+    catalogue additions; it is not the LLM's recommendation ranking.
+    `answers` uses the q3_schedule / q4_language / q5_qualification keys.
+    """
+    attributes = candidate["structured_attributes"]
+    score = 0
+    schedule = str(answers.get("q3_schedule") or "").lower()
+    attendance = str(attributes.get("attendance_type") or "").lower()
+    days = str(attributes.get("attendance_days") or "").lower()
+    if schedule and "no strong preference" not in schedule and NOT_STATED.lower() not in attendance:
+        wants_part_time = "part-time" in schedule or "weekend" in schedule
+        is_part_time = "part time" in attendance or "weekend" in days
+        score += 2 if wants_part_time == is_part_time else -2
+    language = str(answers.get("q4_language") or "").strip().lower()
+    course_languages = str(attributes.get("instruction_languages") or "").lower()
+    if language and "no strong preference" not in language and course_languages != NOT_STATED.lower():
+        score += 2 if language in course_languages else -2
+    qualification = str(answers.get("q5_qualification") or "").strip().lower()
+    if qualification.startswith("yes"):
+        stated = attributes.get("qualification_type") not in (NOT_STATED, "", None)
+        score += 1 if stated else -1
+    return score, candidate["course_id"]
+
+
 def skill_areas_for_ideal_sector(ideal_sector_label: str) -> list[str]:
     if not ideal_sector_label:
         return []
@@ -119,12 +166,17 @@ def retrieve_sector_catalogue(answers: dict) -> dict:
     candidates = []
     for row in rows:
         skill_area = row["skill_area"]
-        if skill_area == NOT_STATED or skill_area not in skill_areas:
-            continue
+        name_key = course_name_key(row["rag_course_name"])
         matched_sectors = [
             sector for sector, areas in sector_skill_areas.items()
             if skill_area in areas
+            or name_key in {course_name_key(name) for name in extra_courses_for_sector(sector)}
         ]
+        if sector_preference_unsure:
+            if skill_area == NOT_STATED or skill_area not in skill_areas:
+                continue
+        elif not matched_sectors:
+            continue
         candidates.append({
             "course_id": row["rag_course_id"],
             "course_name": row["rag_course_name"],
@@ -150,32 +202,6 @@ def retrieve_sector_catalogue(answers: dict) -> dict:
 
     candidates.sort(key=lambda candidate: candidate["course_id"])
 
-    def preference_fit(candidate: dict) -> tuple[int, str]:
-        """Choose one governed catalogue variant per exact selected skill.
-
-        This is a coverage decision, not the final recommendation ranking. It
-        prevents an exact user-selected course from disappearing merely because
-        several catalogue variants share its name.
-        """
-        attributes = candidate["structured_attributes"]
-        score = 0
-        schedule = str(answers.get("q3_schedule") or "").lower()
-        attendance = str(attributes.get("attendance_type") or "").lower()
-        days = str(attributes.get("attendance_days") or "").lower()
-        if schedule and "no strong preference" not in schedule and NOT_STATED.lower() not in attendance:
-            wants_part_time = "part-time" in schedule or "weekend" in schedule
-            is_part_time = "part time" in attendance or "weekend" in days
-            score += 2 if wants_part_time == is_part_time else -2
-        language = str(answers.get("q4_language") or "").strip().lower()
-        course_languages = str(attributes.get("instruction_languages") or "").lower()
-        if language and "no strong preference" not in language and course_languages != NOT_STATED.lower():
-            score += 2 if language in course_languages else -2
-        qualification = str(answers.get("q5_qualification") or "").strip().lower()
-        if qualification.startswith("yes"):
-            stated = attributes.get("qualification_type") not in (NOT_STATED, "", None)
-            score += 1 if stated else -1
-        return score, candidate["course_id"]
-
     required_skill_coverage = []
     for sector in sectors:
         for skill in _as_distinct_strings(skills_by_sector.get(sector)):
@@ -188,7 +214,8 @@ def retrieve_sector_catalogue(answers: dict) -> dict:
             ]
             if not matching_candidates:
                 continue
-            selected = max(matching_candidates, key=preference_fit)
+            # One governed variant per exact selected skill (coverage, not ranking).
+            selected = max(matching_candidates, key=lambda candidate: preference_fit(candidate, answers))
             required_skill_coverage.append({
                 "sector": sector,
                 "selected_skill": skill,

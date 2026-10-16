@@ -385,6 +385,10 @@ def api_question_config():
         "ideal_sector_options": [{"code": k, "label": IDEAL_SECTOR_DISPLAY[k]} for k in IDEAL_SECTOR_OPTIONS],
         "q1_options_by_skill_area": Q1_OPTIONS_PATH.read_text(encoding="utf-8"),
         "sector_bridge": SECTOR_BRIDGE,
+        # Course-level sector additions; the frontend lists them as skills too.
+        "sector_extra_skills": {
+            sector: list(names) for sector, names in ncs.SECTOR_EXTRA_COURSES.items()
+        },
         "q2_options": ["Get a job", "Improve skills in my current job", "Start my own business",
                        "Continue on to further education", "Build general skills, not sure about the next step yet"],
         "q3_options": ["Full-time, weekdays", "Part-time, weekends", "No strong preference"],
@@ -451,7 +455,7 @@ def decode_new_person_intake(body: dict) -> tuple[str, dict, list[str], dict]:
             skill
             for area in SECTOR_BRIDGE.get(sector_code, [])
             for skill in options_by_area.get(area, [])
-        }
+        } | set(ncs.extra_courses_for_sector(sector_code))
         raw_skills = raw_skills_by_sector.get(sector_code, [])
         if not raw_skills and not multi_value_request and body.get("q1"):
             raw_skills = [body.get("q1")]

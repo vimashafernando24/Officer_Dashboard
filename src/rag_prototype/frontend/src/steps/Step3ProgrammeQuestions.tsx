@@ -46,6 +46,7 @@ export function Step3ProgrammeQuestions({
       const areas = config.sector_bridge[sector] ?? [];
       const names = new Set<string>();
       areas.forEach((area) => (byArea[area] ?? []).forEach((name) => names.add(name)));
+      (config.sector_extra_skills?.[sector] ?? []).forEach((name) => names.add(name));
       return { sector, label: labels.get(sector) ?? sector, areas, skills: Array.from(names) };
     });
   }, [config, idealSectors]);

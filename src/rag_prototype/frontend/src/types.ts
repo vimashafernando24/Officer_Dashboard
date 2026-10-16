@@ -22,6 +22,7 @@ export interface QuestionConfig {
   ideal_sector_options: Option[];
   q1_options_by_skill_area: string; // JSON-encoded string, parse client-side
   sector_bridge: Record<string, string[]>;
+  sector_extra_skills?: Record<string, string[]>;
   q2_options: string[];
   q3_options: string[];
   q4_options: string[];
@@ -304,6 +305,8 @@ export interface SuggestedProgramme {
   cluster_finding_summary: string | null;
   questions_to_discuss: string[];
   important_mismatches: string[];
+  // How the card was produced: by the AI ranking, or by a governed catalogue rule.
+  selection_basis?: "ai_ranked" | "restored_exact_skill" | "variant_adjusted" | "catalogue_top_up";
 }
 
 export interface RecommendResponse {

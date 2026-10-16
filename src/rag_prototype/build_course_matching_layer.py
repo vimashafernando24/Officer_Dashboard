@@ -30,6 +30,21 @@ TRACEABILITY_CSV = BASE / "outputs/rag_course_knowledge/course_source_traceabili
 
 NOT_STATED = "NOT_STATED"
 
+# Officer-facing course names. The validated corpus manifest keeps the source
+# catalogue's spelling, which differs from the selectable skill names for these
+# courses; without these corrections the exact selected-skill guarantee cannot
+# match them. Only the display/matching name changes; the course documents and
+# their provenance are untouched. Checked by test_selectable_skill_course_coverage.py.
+COURSE_NAME_CORRECTIONS = {
+    "Human Recources Management": "Human Resources Management",
+    "Business Managemant": "Business Management",
+    "Information And Communication Technolory Technician": "Information & Communication Technology Technician",
+    "Designing & Space Planing For Droughtmanship": "Designing & Space Planning For Draughtsmanship",
+    "Non-Liner Video Editing With Digital 3D Animation": "Non-Linear Video Editing With Digital 3D Animation",
+    "Certificate In English Communication Essentials.": "Certificate In English Communication Essentials",
+    "Secretary (Secretarial Practices)": "Secretary – Secretarial Practices",
+}
+
 STRUCTURED_FIELDS = [
     "skill_area", "attendance_type", "attendance_days", "duration_months",
     "instruction_languages", "nvq_level", "qualification_type",
@@ -88,7 +103,9 @@ def main():
         matching_id = trace["structured_crosscheck_course_id"].strip() if trace else ""
         row = {
             "rag_course_id": rag_id,
-            "rag_course_name": manifest_by_id[rag_id]["course_name"],
+            "rag_course_name": COURSE_NAME_CORRECTIONS.get(
+                manifest_by_id[rag_id]["course_name"], manifest_by_id[rag_id]["course_name"]
+            ),
             "structured_matching_course_id": matching_id or NOT_STATED,
             "provenance": (
                 f"crosswalked via course_source_traceability.csv "
