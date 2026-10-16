@@ -834,6 +834,11 @@ def frontend_asset(asset_path):
     return send_from_directory(FRONTEND_DIST_PATH / "assets", asset_path)
 
 
+@app.route("/favicon.svg")
+def frontend_favicon():
+    return send_from_directory(FRONTEND_DIST_PATH, "favicon.svg")
+
+
 @app.route("/new-person")
 def new_person_page():
     return jsonify({"error": "Not found"}), 404
