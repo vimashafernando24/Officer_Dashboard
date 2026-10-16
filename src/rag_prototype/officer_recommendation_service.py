@@ -105,12 +105,19 @@ def _strip_course_fact_label(fact: str) -> str:
     return stripped if stripped.strip() else str(fact)
 
 
+def _singular(token: str) -> str:
+    """Treat simple plurals as the same word ("stocks" == "stock")."""
+    if len(token) > 3 and token.endswith("s") and not token.endswith("ss") and not token.isdigit():
+        return token[:-1]
+    return token
+
+
 def _fact_is_grounded(fact: str, allowed_text: str) -> bool:
     fact_tokens = {
-        token for token in re.findall(r"[\w&+-]+", _normalise_text(fact))
+        _singular(token) for token in re.findall(r"[\w&+-]+", _normalise_text(fact))
         if token not in _FACT_FILLER_WORDS
     }
-    allowed_tokens = set(re.findall(r"[\w&+-]+", allowed_text))
+    allowed_tokens = {_singular(token) for token in re.findall(r"[\w&+-]+", allowed_text)}
     if not fact_tokens:
         return False
     numbers = re.findall(r"\d+(?:[.,]\d+)?", fact)
@@ -383,6 +390,46 @@ def _course_citations_are_exact(programme, candidate: dict, course_document: str
             f"programme {programme.course_id}: removed because it cited no governed course fact."
         )
     return violations
+
+
+def _assess_course_citations(programme, candidate: dict, course_document: str) -> tuple[list[str], int, int]:
+    """Classify a programme's course-fact citations.
+
+    Returns (removal_violations, verified_count, unverified_count). The card is
+    removed for a wrong source_reference, a cited number absent from the
+    governed record, no verified fact, or more unverified than verified
+    facts. Otherwise reworded facts are simply not used as evidence, so one
+    paraphrase no longer discards an otherwise well-supported AI option.
+    """
+    removal = []
+    allowed_text = _normalise_text(json.dumps(candidate, ensure_ascii=False) + " " + course_document)
+    if not programme.course_facts_used:
+        return [f"programme {programme.course_id}: removed because it cited no governed course fact."], 0, 0
+    verified = unverified = 0
+    for citation in programme.course_facts_used:
+        if citation.source_reference != programme.course_id:
+            removal.append(f"programme {programme.course_id}: course fact used a different source_reference.")
+            continue
+        fact = _strip_course_fact_label(citation.fact)
+        if any(number not in allowed_text for number in re.findall(r"\d+(?:[.,]\d+)?", fact)):
+            removal.append(
+                f"programme {programme.course_id}: course fact cited a number that is not in the governed course record."
+            )
+            continue
+        if _fact_is_grounded(fact, allowed_text):
+            verified += 1
+        else:
+            unverified += 1
+    if not removal and (verified == 0 or unverified > verified):
+        removal.append(
+            f"programme {programme.course_id}: course fact was not grounded in the governed course record."
+        )
+    return removal, verified, unverified
+
+
+def _explanation_has_unverified_number(explanation: str, candidate: dict, course_document: str) -> bool:
+    allowed_text = _normalise_text(json.dumps(candidate, ensure_ascii=False) + " " + course_document)
+    return any(number not in allowed_text for number in re.findall(r"\d+(?:[.,]\d+)?", explanation))
 
 
 def _has_clear_group_context_wording(value: str) -> bool:
@@ -905,11 +952,11 @@ def generate_officer_briefing(
             user_answers,
             f"programme {course_id}",
         )
-        programme_violations.extend(_course_citations_are_exact(
-            programme,
-            candidates_by_id[course_id],
-            context_pack_v2.load_course_doc(course_id, manifest_by_id),
-        ))
+        course_document = context_pack_v2.load_course_doc(course_id, manifest_by_id)
+        citation_removals, verified_facts, unverified_facts = _assess_course_citations(
+            programme, candidates_by_id[course_id], course_document,
+        )
+        programme_violations.extend(citation_removals)
         if not programme.user_facts_used:
             programme_violations.append(
                 f"programme {course_id}: removed because it cited no actual user answer."
@@ -917,6 +964,11 @@ def generate_officer_briefing(
         violations.extend(programme_violations)
         if programme_violations:
             continue
+        if unverified_facts:
+            violations.append(
+                f"programme {course_id}: kept with {verified_facts} verified course fact(s); "
+                f"{unverified_facts} reworded course fact(s) could not be verified and were not used."
+            )
         kept_findings, finding_violations = filter_authorized_findings(
             programme.profile_findings_used,
             allowed_evidence,
@@ -980,6 +1032,8 @@ def generate_officer_briefing(
             selected_sectors=ideal_sectors,
             selected_skills=selected_skills,
         )
+        if unverified_facts and _explanation_has_unverified_number(explanation, candidate, course_document):
+            explanation_violations.append("a number not found in the governed course record")
         if explanation_violations:
             explanation = _deterministic_grounded_explanation(candidate)
             violations.append(

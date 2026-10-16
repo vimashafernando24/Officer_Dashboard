@@ -174,6 +174,39 @@ transport = service.candidate_selection.retrieve_sector_catalogue(
 check("Store Management is a candidate for Transport, storage and logistics",
       any(c["course_name"] == "Store Management" for c in transport["candidates"]))
 
+# 7. One reworded course fact no longer removes an otherwise verified AI card.
+baker_id = next(cid for cid, c in sorted(hos_candidates.items()) if c["course_name"] == "Baker"
+                and "part" in c["structured_attributes"]["attendance_type"].lower())
+attrs = hos_candidates[baker_id]["structured_attributes"]
+
+
+def baker_programme(why):
+    return SuggestedProgramme(
+        rank=1, course_id=baker_id, course_name="Baker", why_it_may_suit_this_user=why,
+        user_facts_used=[UserFactCitation(question="Preferred sector", answer=HOS_LABEL)],
+        course_facts_used=[CourseFactCitation(fact=f, source_reference=baker_id) for f in (
+            f"attendance_type: {attrs['attendance_type']}", f"attendance_days: {attrs['attendance_days']}",
+            f"duration_months: {attrs['duration_months']}", "Course focus: artisan bread practical training")],
+        profile_findings_used=[], cluster_finding_summary=None,
+        questions_to_discuss=["What kind of baking work would you like this to lead to?",
+                              "Is there anything that could make it hard for you to start this course?"],
+    )
+
+
+why = "This course could be a practical option to discuss with the member."
+resp, _, _ = run(body(HOS, ["Baker"]), [baker_programme(why)])
+first = resp["suggested_programmes"][0]
+check("AI card with one reworded fact is kept as AI-ranked with its own explanation",
+      first["course_id"] == baker_id and first.get("selection_basis") == "ai_ranked" and first["why_it_may_suit_this_user"] == why,
+      (first.get("selection_basis"), first["why_it_may_suit_this_user"][:60]))
+check("the unused reworded fact is recorded in the safeguard notes",
+      any("reworded course fact" in v for v in resp["evidence_safeguard_violations"]))
+resp, _, _ = run(body(HOS, ["Baker"]), [baker_programme("This 18-month course could suit the member.")])
+first = resp["suggested_programmes"][0]
+check("kept card whose explanation states an unverified number gets the catalogue-only explanation",
+      first["course_id"] == baker_id and "18" not in first["why_it_may_suit_this_user"]
+      and first["why_it_may_suit_this_user"] != "This 18-month course could suit the member.", first["why_it_may_suit_this_user"][:80])
+
 failed = [r for r in results if not r[1]]
 for name, ok, detail in results:
     print(f"{'PASS' if ok else 'FAIL'}  {name}" + (f" — {detail}" if not ok else ""))
