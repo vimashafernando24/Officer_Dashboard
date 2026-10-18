@@ -1,0 +1,42 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-quantity-surveying-assistant",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Official-source comparator for NYSC COURSE-019 Quantity Surveying Assistant. The governed catalogue publishes no module headings, so the record is shown without a competency matrix.",
+  "status_note": "Source-inspected record awaiting independent human review; an occupational standard is not evidence of programme delivery.",
+  "country_group_gaps": {
+    "developing_emerging": "No additional specialist assistant-level quantity-surveying curriculum with inspectable official content was verified. Broader construction-estimating and civil-drafting programmes were excluded.",
+    "developed": "No specialist assistant-level quantity-surveying qualification with sufficiently comparable occupational scope was verified. Higher-education quantity-surveying degrees and broad building qualifications were excluded."
+  },
+  "records": [
+    {
+      "record_id": "LK-TVEC-NCS-QUANTITY-SURVEYING-ASSISTANT-2024",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "QUANTITY SURVEYING ASSISTANT",
+      "sector": "Construction / Quantity surveying",
+      "framework": "NVQ (Sri Lanka)",
+      "level_as_published": "NVQ Level 4",
+      "duration_as_published": null,
+      "entry_as_published": null,
+      "modules": [
+        {"published_ref":"PDF p.6 — F45S007U01","code":"F45S007U01","title_verbatim":"Assist to prepare Bill of Quantities (BOQ)","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"PDF p.6 — F45S007U02","code":"F45S007U02","title_verbatim":"Assist in estimating and tendering/bidding process","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"PDF p.6 — F45S007U03","code":"F45S007U03","title_verbatim":"Assist to quantity surveying activities during post contract stage","outcome_verbatim":null,"group":"List of Competency Units"}
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {"url":"https://nvq.gov.lk/Report_Inquires/NCS_Request_Pdf.php?nm=F45S007_2_NCS.pdf","document_type":"pdf","document_sha256":"6bdb6396dd59f47e93aa0013b92fa355fdd08492e5c20da6ad459613c29d7bb4","publication_or_revision":"Second Revision, February 2024; next revision February 2027","retrieved_date":"2026-10-18"},
+      "language": "English",
+      "verification": {"status":"source_inspected_pending_human_review","method":"Occupation definition, three occupation-specific unit codes/titles and NVQ Level 4 packaging checked against official PDF pages 5-6.","human_reviewed":false},
+      "licence_note": "Copyright © 2024 TVEC; source states all rights reserved.",
+      "notes": ["An occupational standard and CBT curriculum, not evidence that a named provider delivers the programme.","Competencies are limited by the source to simple single-storey buildings with shallow foundations.","Only occupation-specific units are stored; basic workplace units are omitted."],
+      "scope_verbatim": ["Quantity Surveying Assistant is a person who assist the Quantity Surveyor ... in respect of pre and post contract quantity surveying activities.","National Certificate at NVQ Level 4 in the occupation of Quantity Surveying Assistant will be awarded to those who are competent in units U01+ U02+ U03+ BU01+ BU02+ BU03+ BU04- F45S007Q1L4"]
+    }
+  ]
+}

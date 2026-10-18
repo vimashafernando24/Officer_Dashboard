@@ -37,7 +37,7 @@ test("COURSE-040 reuses the same five comparator records as COURSE-005", () => {
 
 
 test("automotive courses carry the duration/level caveat, qualified by unstated comparator facts", () => {
-  assert.equal(comparisonCaveat("COURSE-038"), null);
+  assert.match(comparisonCaveat("COURSE-038")!.text, /Only one source-inspected specialist curriculum/);
   assert.deepEqual(comparisonCaveat("COURSE-005"), comparisonCaveat("COURSE-040"));
   const caveat = comparisonCaveat("COURSE-040");
   assert.ok(caveat);
@@ -96,7 +96,7 @@ test("Electrician caveat covers duration, level and TESDA scope, and names unsta
 
 
 test("courses without verified links get no records, even in the same sector", () => {
-  for (const courseId of ["COURSE-038", "COURSE-002", "COURSE-999"]) {
+  for (const courseId of ["COURSE-003", "COURSE-999"]) {
     const comparators = comparatorsForCourse(courseId);
     assert.equal(comparators.sriLanka.length + comparators.developingEmerging.length + comparators.developed.length, 0);
   }

@@ -1,0 +1,59 @@
+{
+  "dataset_id":"nysc-programme-benchmarking-survey-field","schema":"benchmark_record_schema.json","schema_version":"1.1.0","created_date":"2026-10-18",
+  "purpose":"Official-source comparator records for NYSC COURSE-036 Survey Field Assistant. The governed catalogue publishes no module headings, so records are shown without a competency matrix.",
+  "status_note":"Source-inspected records awaiting independent human review.","country_group_gaps":{},
+  "records":[
+    {
+      "record_id":"LK-TVEC-NCS-SURVEY-FIELD-ASSISTANT-2023","country":"Sri Lanka","country_group":"sri_lanka","institution":"Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority","record_type":"occupational_standard","delivering_provider_verified":false,"title_verbatim":"SURVEY FIELD ASSISTNT","sector":"Construction / Surveying","framework":"NVQ (Sri Lanka)","level_as_published":"NVQ Levels 3 and 4","duration_as_published":null,"entry_as_published":null,
+      "modules":[
+        {"published_ref":"PDF p.7 — K74S006U01","code":"K74S006U01","title_verbatim":"Assist to identify survey site/s","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"PDF p.7 — K74S006U02","code":"K74S006U02","title_verbatim":"Prepare site/s for surveying","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"PDF p.7 — K74S006U03","code":"K74S006U03","title_verbatim":"Assist to make prospection diagram","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"PDF p.7 — K74S006U04","code":"K74S006U04","title_verbatim":"Assist to handle surveying/levelling instruments","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"PDF p.7 — K74S006U05","code":"K74S006U05","title_verbatim":"Assist to carry out surveying and levelling","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"PDF p.7 — K74S006U06","code":"K74S006U06","title_verbatim":"Maintain surveying and levelling instruments","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"PDF p.7 — K74S006U07","code":"K74S006U07","title_verbatim":"Maintain documents","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"PDF p.7 — K74S006U09","code":"K74S006U09","title_verbatim":"Prepare tools, instruments & equipment for surveying and leveling","outcome_verbatim":null,"group":"List of Competency Units"}
+      ],
+      "content_summary_paraphrased":null,"content_fidelity":"verbatim_whitespace_normalised","curriculum_detail":"partial",
+      "source":{"url":"https://nvq.gov.lk/Report_Inquires/NCS_Request_Pdf.php?nm=K74S006_2_NCS.pdf","document_type":"pdf","document_sha256":"97ef38b7c0c60e5634f083ab811afd78109b19124db7c5b7d0393c9561c45a52","publication_or_revision":"Second Revision, April 2023; next revision April 2025","retrieved_date":"2026-10-18"},
+      "language":"English","verification":{"status":"source_inspected_pending_human_review","method":"Occupation responsibilities, selected unit codes/titles and Level 3/4 packaging checked against official PDF pages 6-7 and 64.","human_reviewed":false},"licence_note":"Copyright © 2022 TVEC; source states all rights reserved.",
+      "notes":["An occupational standard and CBT curriculum, not evidence of delivery by a named provider.","The source's stated April 2025 revision date has passed; no newer official revision was verified.","Relationship-management and basic workplace units are omitted from the stored module selection."],
+      "scope_verbatim":["National Certificate at NVQ Level 3 in the occupation of Survey Field Assistant","National Certificate at NVQ Level 4 in the occupation of Survey Field Assistant"]
+    },
+    {
+      "record_id":"IN-DGT-CTS-SURVEYOR-V2","country":"India","country_group":"developing_emerging","institution":"Government of India, Directorate General of Training","record_type":"national_curriculum","delivering_provider_verified":false,"title_verbatim":"SURVEYOR","sector":"Construction / Surveying","framework":"Craftsmen Training Scheme (India)","level_as_published":"NSQF Level 4","duration_as_published":"Two Years (2400 hours + 300 hours OJT/Group Project)","entry_as_published":"Passed 10th class examination",
+      "modules":[
+        {"published_ref":"Learning outcome 6","code":"CON/N0904","title_verbatim":"Perform site survey using chain/ tape & prepare a site plan.","outcome_verbatim":null,"group":"First Year Learning Outcomes"},
+        {"published_ref":"Learning outcome 9","code":"IES/N9412","title_verbatim":"Perform the site survey using plane table.","outcome_verbatim":null,"group":"First Year Learning Outcomes"},
+        {"published_ref":"Learning outcome 10","code":"CON/N0906","title_verbatim":"Perform theodolite survey.","outcome_verbatim":null,"group":"First Year Learning Outcomes"},
+        {"published_ref":"Learning outcome 12","code":"CON/N0905","title_verbatim":"Determine of R.L & heights of different points by levelling instruments.","outcome_verbatim":null,"group":"First Year Learning Outcomes"},
+        {"published_ref":"Learning outcome 17","code":"CON/N0907","title_verbatim":"Make topography map using level instrument with contours.","outcome_verbatim":null,"group":"Second Year Learning Outcomes"},
+        {"published_ref":"Learning outcome 19","code":"CON/N0906","title_verbatim":"Perform survey work using modern survey instruments (Total station) for prepare a map.","outcome_verbatim":null,"group":"Second Year Learning Outcomes"},
+        {"published_ref":"Learning outcome 22","code":"IES/N9447","title_verbatim":"Perform AutoCAD drawing from field survey data.","outcome_verbatim":null,"group":"Second Year Learning Outcomes"},
+        {"published_ref":"Learning outcome 24","code":"IES/N9449","title_verbatim":"Plan and prepare setting of GIS & GPS, techniques in various fields.","outcome_verbatim":null,"group":"Second Year Learning Outcomes"}
+      ],
+      "content_summary_paraphrased":null,"content_fidelity":"verbatim_whitespace_normalised","curriculum_detail":"partial",
+      "source":{"url":"https://www.dgt.gov.in/sites/default/files/Surveyor_CTS2.0_NSQF-4.pdf","document_type":"pdf","document_sha256":"de9bb49de8fd81d146a9c652d7e9d3dafeff7189797fa76fd9c1012410bb8b66","publication_or_revision":"Version 2.0, revised July 2022","retrieved_date":"2026-10-18"},
+      "language":"English","verification":{"status":"source_inspected_pending_human_review","method":"Selected first- and second-year learning outcomes, NOS codes, duration and NSQF level checked against official PDF pages 11-12.","human_reviewed":false},"licence_note":"Official Government of India curriculum; reuse terms not assessed.",
+      "notes":["A national curriculum, not a verified named-provider delivery.","The two-year Surveyor trade is broader and more advanced than an assistant course.","Selected field-survey outcomes are stored rather than all twenty-four outcomes."],
+      "scope_verbatim":["Topographical Surveyor; surveys land to determine out line, contours and relative position of control points ... for preparing topographical and other maps and records."]
+    },
+    {
+      "record_id":"AU-TGA-CPP30226-SURVEYING-ASSISTANT","country":"Australia","country_group":"developed","institution":"Australian Government, training.gov.au (CPP Property Services Training Package)","record_type":"national_qualification","delivering_provider_verified":false,"title_verbatim":"Certificate III in Surveying and Spatial Information Services","sector":"Surveying and spatial information services","framework":"AQF (Australia)","level_as_published":"Certificate III (national code CPP30226)","duration_as_published":null,"entry_as_published":"This qualification has no entry requirements.",
+      "modules":[
+        {"published_ref":"Core Units — CPPSSI3011","code":"CPPSSI3011","title_verbatim":"Produce basic maps","outcome_verbatim":null,"group":"Core Units"},
+        {"published_ref":"Core Units — CPPSSI3015","code":"CPPSSI3015","title_verbatim":"Collect basic surveying data","outcome_verbatim":null,"group":"Core Units"},
+        {"published_ref":"Core Units — CPPSSI3019","code":"CPPSSI3019","title_verbatim":"Produce basic plans of surveys","outcome_verbatim":null,"group":"Core Units"},
+        {"published_ref":"Core Units — CPPSSI3020","code":"CPPSSI3020","title_verbatim":"Perform simple surveying and spatial computations","outcome_verbatim":null,"group":"Core Units"},
+        {"published_ref":"Elective Units — CPPSSI3016","code":"CPPSSI3016","title_verbatim":"Provide field support services for surveying and spatial projects","outcome_verbatim":null,"group":"Elective Units"},
+        {"published_ref":"Elective Units — CPPSSI4030","code":"CPPSSI4030","title_verbatim":"Operate surveying equipment","outcome_verbatim":null,"group":"Elective Units"}
+      ],
+      "content_summary_paraphrased":null,"content_fidelity":"verbatim","curriculum_detail":"partial",
+      "source":{"url":"https://training.gov.au/assets/CPP/CPP30226_R1.pdf","document_type":"pdf","document_sha256":"e9d401cc2c363eafafd81c4e2835c4c321ab3c4e2a32428173fad014eca3cdd8","publication_or_revision":"Release 1; generated 4 February 2026; Current","retrieved_date":"2026-10-18"},
+      "language":"English","verification":{"status":"source_inspected_pending_human_review","method":"Qualification description, packaging and all stored core/elective unit codes/titles checked against official training.gov.au PDF pages 2-3.","human_reviewed":false},"licence_note":"© Commonwealth of Australia, 2026; training-package licence terms not assessed.",
+      "notes":["A national qualification, not a delivered programme; no provider or duration is asserted.","The four surveying-specific core units are mandatory; field support and equipment operation are electives and are labelled as such.","Cadastral work must be supervised by a registered surveyor."],
+      "scope_verbatim":["This qualification reflects the role of surveying or spatial information services assistants who work under supervision to support a surveying or spatial information services team."]
+    }
+  ]
+}

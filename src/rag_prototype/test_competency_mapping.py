@@ -202,6 +202,11 @@ COMPETENCY_KEYWORDS = {
     "rtv_audio_amplifier_repair": ["audio", "amplifier", "receiver", "home theatre", "consumer electronic"],
     "rtv_power_supply_repair": ["power supply", "smps", "ups", "inverter"],
     "rtv_workplace_safety": ["safe", "safety"],
+    # Step 33: Desktop Publisher (COURSE-062).
+    "desktop_publishing_pagemaker": ["pagemaker"],
+    "desktop_publishing_photoshop": ["photoshop"],
+    "desktop_publishing_indesign": ["indesign"],
+    "desktop_publishing_illustrator": ["illustrator"],
 }
 
 # Hardware categories with several components: a FULL cell's cited text must name every one.
@@ -288,6 +293,7 @@ class CompetencyMappingTests(unittest.TestCase):
                 "competency_mapping_course-053.json",
                 "competency_mapping_course-055.json",
                 "competency_mapping_course-058.json",
+                "competency_mapping_course-062.json",
                 "competency_mapping_course-064.json",
                 "competency_mapping_course-081.json",
                 "competency_mapping_course-082.json",
@@ -311,7 +317,8 @@ class CompetencyMappingTests(unittest.TestCase):
     def test_every_competency_has_one_valid_cell_per_column(self):
         for name, mapping in self.mappings.items():
             competencies = mapping["competencies"]
-            self.assertTrue(8 <= len(competencies) <= 15)
+            # A matrix follows the usable governed headings; COURSE-062 has four.
+            self.assertTrue(4 <= len(competencies) <= 15)
             self.assertEqual(len({c["competency_id"] for c in competencies}), len(competencies))
             column_ids = [column["column_id"] for column in mapping["columns"]]
             for competency in competencies:

@@ -97,10 +97,10 @@ class Step30ElectricalElectronicsTests(unittest.TestCase):
     def test_updated_totals(self):
         totals = json.loads((BENCH / "coverage_register.json").read_text(encoding="utf-8"))["totals"]
         self.assertEqual(totals["current_presentation_mode"], {
-            "COMPARATORS_ONLY": 22, "FULL_COMPARISON": 23, "RESEARCH_PENDING": 39,
+            "COMPARATORS_ONLY": 37, "FULL_COMPARISON": 24, "RESEARCH_PENDING": 23,
         })
-        self.assertEqual(totals["courses_with_mapping"], 23)
-        self.assertEqual(len(self.records), 74)
+        self.assertEqual(totals["courses_with_mapping"], 24)
+        self.assertEqual(len(self.records), 100)
 
 
 if __name__ == "__main__":

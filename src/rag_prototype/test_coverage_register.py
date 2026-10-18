@@ -22,11 +22,13 @@ from src.rag_prototype.build_coverage_register import (
 )
 from src.rag_prototype.programme_design_evidence import load_governed_courses
 
-FULL_COURSES = {"COURSE-006", "COURSE-058", "COURSE-005", "COURSE-007", "COURSE-008", "COURSE-009", "COURSE-053", "COURSE-087", "COURSE-010", "COURSE-011", "COURSE-012", "COURSE-014", "COURSE-025", "COURSE-034", "COURSE-035", "COURSE-040", "COURSE-046", "COURSE-047", "COURSE-050", "COURSE-055", "COURSE-064", "COURSE-081", "COURSE-082"}
+FULL_COURSES = {"COURSE-006", "COURSE-058", "COURSE-005", "COURSE-007", "COURSE-008", "COURSE-009", "COURSE-053", "COURSE-087", "COURSE-010", "COURSE-011", "COURSE-012", "COURSE-014", "COURSE-025", "COURSE-034", "COURSE-035", "COURSE-040", "COURSE-046", "COURSE-047", "COURSE-050", "COURSE-055", "COURSE-062", "COURSE-064", "COURSE-081", "COURSE-082"}
 COMPARATORS_ONLY_COURSES = {"COURSE-001", "COURSE-048", "COURSE-051", "COURSE-054", "COURSE-056", "COURSE-057", "COURSE-069",
                             "COURSE-016", "COURSE-021", "COURSE-023", "COURSE-029", "COURSE-030", "COURSE-042", "COURSE-060",
                             "COURSE-068", "COURSE-077", "COURSE-078", "COURSE-022", "COURSE-052",
-                            "COURSE-013", "COURSE-079", "COURSE-080"}
+                            "COURSE-013", "COURSE-079", "COURSE-080", "COURSE-017", "COURSE-018", "COURSE-038",
+                            "COURSE-044", "COURSE-045", "COURSE-019", "COURSE-024", "COURSE-033", "COURSE-036",
+                            "COURSE-061", "COURSE-065", "COURSE-002", "COURSE-043", "COURSE-073", "COURSE-076"}
 COMPLETE_COURSES = FULL_COURSES | COMPARATORS_ONLY_COURSES
 RESEARCH = {"COMPLETE", "NOT_RESEARCHED", "IN_PROGRESS", "BLOCKED"}
 AVAILABILITY = {"HEADINGS_AVAILABLE", "NO_HEADINGS", "HEADINGS_UNUSABLE"}
@@ -152,10 +154,10 @@ class CoverageRegisterTests(unittest.TestCase):
                     # Never classified as permanently not comparable.
                     self.assertNotEqual(entry["proposed_presentation_mode"], "EVIDENCE_UNAVAILABLE")
                     self.assertTrue(entry["further_research_could_improve"])
-        self.assertEqual(self.register["totals"]["research_status"], {"COMPLETE": 45, "NOT_RESEARCHED": 39})
+        self.assertEqual(self.register["totals"]["research_status"], {"COMPLETE": 61, "NOT_RESEARCHED": 23})
         self.assertEqual(
             self.register["totals"]["current_presentation_mode"],
-            {"COMPARATORS_ONLY": 22, "FULL_COMPARISON": 23, "RESEARCH_PENDING": 39},
+            {"COMPARATORS_ONLY": 37, "FULL_COMPARISON": 24, "RESEARCH_PENDING": 23},
         )
 
     def test_current_mode_is_derived_from_verified_evidence_only(self):
@@ -213,9 +215,9 @@ class CoverageRegisterTests(unittest.TestCase):
         self.assertEqual(totals["courses_with_governed_headings"], 32)
         self.assertEqual(totals["evidence_availability"], {"HEADINGS_AVAILABLE": 29, "HEADINGS_UNUSABLE": 3, "NO_HEADINGS": 52})
         self.assertEqual(totals["proposed_presentation_mode"], {"COMPARATORS_ONLY": 55, "FULL_COMPARISON": 29})
-        self.assertEqual(totals["courses_with_comparators"], 45)
-        self.assertEqual(totals["courses_with_mapping"], 23)
-        self.assertEqual(totals["occupation_groups_complete"], 28)
+        self.assertEqual(totals["courses_with_comparators"], 61)
+        self.assertEqual(totals["courses_with_mapping"], 24)
+        self.assertEqual(totals["occupation_groups_complete"], 42)
         self.assertIn(f"uses {totals['occupation_groups']} groups", self.register["reconciliation"][0])
 
 

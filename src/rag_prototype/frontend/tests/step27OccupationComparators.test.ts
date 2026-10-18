@@ -42,8 +42,8 @@ test("the ten courses show verified comparators without a matrix", () => {
 });
 
 
-test("related occupation groups stay unlinked", () => {
-  for (const courseId of ["COURSE-038", "COURSE-062"]) {
+test("unresearched related occupation groups stay unlinked", () => {
+  for (const courseId of ["COURSE-037"]) {
     assert.equal(ids(courseId).length, 0, courseId);
     assert.equal(coverageForCourse(courseId)!.state, "RESEARCH_PENDING", courseId);
   }

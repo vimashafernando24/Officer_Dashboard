@@ -7,7 +7,6 @@ import {
   moduleDisclosure,
   modulePreview,
   qualificationDisplay,
-  verificationLabel,
 } from "../programmeBenchmarks";
 import type { BenchmarkModule, BenchmarkRecord } from "../programmeBenchmarks";
 
@@ -41,7 +40,6 @@ export function BenchmarkRecordCard({ record }: { record: BenchmarkRecord }) {
         <span className={`pcd-tag pcd-tag-${record.record_type}`}>
           {RECORD_TYPE_LABELS[record.record_type]}
         </span>
-        <span className="pcd-tag pcd-tag-status">{verificationLabel(record)}</span>
       </div>
       <h4>{record.title_verbatim}</h4>
       <p className="pcd-card-institution">{record.institution}</p>

@@ -135,7 +135,6 @@ COURSE_NOTES = {
     "COURSE-071": "Headings use unexplained abbreviations (e.g. 'JD, JA', 'PE System, T and D', 'LR System').",
     "COURSE-004": "The governed record states no sector, attendance type or duration.",
     "COURSE-052": "A vendor certification; an official occupational comparator may not exist (not yet researched).",
-    "COURSE-043": "A software-specific course; an official occupational comparator may not exist (not yet researched).",
     "COURSE-024": "The three draughting courses are grouped provisionally; civil and engineering draughting may need separate comparators.",
     "COURSE-065": "The three draughting courses are grouped provisionally; civil and engineering draughting may need separate comparators.",
     "COURSE-061": "The three draughting courses are grouped provisionally; civil and engineering draughting may need separate comparators.",
@@ -165,6 +164,11 @@ COMPLETE_GAPS = {
     "national_diploma_ict": "No developing/emerging-economy diploma-level ICT curriculum was verified (NIELIT's 'A' Level syllabus could not be retrieved); the Sri Lankan source is a competency standard without curriculum modules, ITE's programme covers application development only, and NYSC heading 7 is an uninterpretable fragment.",
     "computer_based_accounting": "No Sri Lankan computerised-accounting standard was verified; the NYSC headings name software packages rather than competencies, ITE's programme is a broader accounting diploma, and Australian evidence is limited to FNS30322 core units.",
     "radio_tv_repairer": "All three comparator sources are standards or national curricula rather than confirmed deliveries; no developed-economy comparator with sufficiently specific published radio/TV repair content was verified, and the NYSC LED-board heading retains an apparent governed-text typo.",
+    "python_programming": "Only two broader Indian national curricula were verified; no Sri Lankan or developed-economy exact Python course with inspectable official curriculum content was collected, and the NYSC course has no governed headings.",
+    "autocad": "The DGT source is a broader CAD/CAM apprenticeship curriculum and TESDA does not name AutoCAD; no Sri Lankan or developed-economy exact AutoCAD curriculum was verified, and the NYSC course has no governed headings.",
+    "desktop_publisher": "Only the Indian DGT curriculum explicitly names all four governed applications; the other linked records provide related graphic-design evidence, and no exact Sri Lankan or developed-economy desktop-publishing curriculum was verified.",
+    "java_programming": "Only one Java-specific national qualification was verified; no Sri Lankan, Indian or developed-economy exact comparator with inspectable official curriculum content was collected, and the NYSC course has no governed headings.",
+    "microcontroller_design": "Only one broader Indian embedded-systems apprenticeship curriculum was verified; no Sri Lankan or second international exact comparator was collected, and the NYSC course has no governed headings.",
 }
 
 

@@ -168,7 +168,7 @@ test("comparator counts reflect the linked records, and are zero for unlinked co
   });
   assert.deepEqual(comparatorCounts(comparatorsForCourse("COURSE-038")), {
     sriLanka: 0,
-    developingEmerging: 0,
+    developingEmerging: 1,
     developed: 0,
   });
 });

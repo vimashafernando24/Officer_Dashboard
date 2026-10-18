@@ -1,0 +1,41 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-desktop-publishing",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Official-source Desktop Publishing Operator curriculum for comparison with NYSC COURSE-062.",
+  "status_note": "Source-inspected national curriculum awaiting independent human review.",
+  "country_group_gaps": {
+    "sri_lanka": "The existing Sri Lankan Graphic Designer standard is reused as related print/publish evidence; no exact Desktop Publisher standard was verified.",
+    "developed": "The existing Singapore communication-design programme is reused as related design evidence; no exact developed-economy desktop-publishing curriculum was verified."
+  },
+  "records": [{
+    "record_id": "IN-DGT-CTS-DTPO-V2",
+    "country": "India",
+    "country_group": "developing_emerging",
+    "institution": "Government of India, Directorate General of Training",
+    "record_type": "national_curriculum",
+    "delivering_provider_verified": false,
+    "title_verbatim": "DESKTOP PUBLISHING OPERATOR",
+    "sector": "IT and ITES / Desktop publishing",
+    "framework": "Craftsmen Training Scheme (India)",
+    "level_as_published": "NSQF Level 3",
+    "duration_as_published": "1 Year (1200 Hours + 150 Hours OJT/Group Project)",
+    "entry_as_published": "Passed 10th class examination",
+    "modules": [
+      {"published_ref":"Course content p.19 — PageMaker","code":null,"title_verbatim":"Classify the features of Adobe PageMaker.","outcome_verbatim":null,"group":"Professional Knowledge"},
+      {"published_ref":"Learning outcome 6 — SSC/N2702","code":"SSC/N2702","title_verbatim":"Create, edit, format and develop page combining text and graphics using page makeup Adobe InDesign application software.","outcome_verbatim":null,"group":"Trade-specific learning outcomes"},
+      {"published_ref":"Learning outcome 7 — SSC/N9490","code":"SSC/N9490","title_verbatim":"Create Illustrations and Graphics using Adobe Illustrator.","outcome_verbatim":null,"group":"Trade-specific learning outcomes"},
+      {"published_ref":"Learning outcome 8 — SSC/N9491","code":"SSC/N9491","title_verbatim":"Create, format, edit and develop images using Adobe Photoshop software.","outcome_verbatim":null,"group":"Trade-specific learning outcomes"}
+    ],
+    "content_summary_paraphrased": null,
+    "content_fidelity": "verbatim_whitespace_normalised",
+    "curriculum_detail": "partial",
+    "source": {"url":"https://www.dgt.gov.in/sites/default/files/DTPO_CTS2.0_NSQF-3.pdf","document_type":"pdf","document_sha256":"4955d105816740d07dd7f46d6b60648bedea589bfa1d5def99c80641f069d983","publication_or_revision":"CTS Version 2.0; NSQF approval 2022","retrieved_date":"2026-10-18"},
+    "language": "English",
+    "verification": {"status":"source_inspected_pending_human_review","method":"Trade identity, level, duration and the PageMaker, InDesign, Illustrator and Photoshop text checked against official DGT PDF pages 9, 11, 13 and 19-20.","human_reviewed":false},
+    "licence_note": "Official Government of India curriculum; reuse terms not assessed.",
+    "notes": ["A national curriculum, not a verified named-provider delivery.","PageMaker appears in professional-knowledge content while InDesign, Illustrator and Photoshop are trade-specific learning outcomes.","The NYSC headings name older software versions; the comparison records only the named applications, not version equivalence."],
+    "scope_verbatim": ["DESKTOP PUBLISHING OPERATOR"]
+  }]
+}

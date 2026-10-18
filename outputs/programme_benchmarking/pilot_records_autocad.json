@@ -1,0 +1,40 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-autocad",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Official-source related comparator for NYSC COURSE-043 AutoCAD. The governed catalogue publishes no module headings.",
+  "status_note": "Source-inspected apprenticeship curriculum awaiting independent human review; CAD/CAM scope is broader than a software short course.",
+  "country_group_gaps": {
+    "sri_lanka": "No independent Sri Lankan AutoCAD short course with inspectable official curriculum content was verified.",
+    "developed": "No developed-economy AutoCAD short course with inspectable official curriculum content and comparable scope was verified."
+  },
+  "records": [{
+    "record_id": "IN-DGT-ATS-CADCAM-OPERATOR-PROGRAMMER",
+    "country": "India",
+    "country_group": "developing_emerging",
+    "institution": "Government of India, Directorate General of Training",
+    "record_type": "national_curriculum",
+    "delivering_provider_verified": false,
+    "title_verbatim": "CAD-CAM OPERATOR CUM PROGRAMMER",
+    "sector": "Capital goods and manufacturing / CAD-CAM",
+    "framework": "Apprenticeship Training Scheme (India)",
+    "level_as_published": null,
+    "duration_as_published": null,
+    "entry_as_published": null,
+    "modules": [
+      {"published_ref":"Professional skills p.13 — drawing commands","code":null,"title_verbatim":"Draw a rectangle, pentagon, hexagon, star using line command with polar coordinate system and relative coordinate system.","outcome_verbatim":null,"group":"Basic Training — Professional Skills"},
+      {"published_ref":"Professional knowledge p.13 — AutoCAD setup","code":null,"title_verbatim":"Install AutoCAD, configure AutoCAD, AutoCAD graphical user interface, point command, zoom command, limits, coordinate systems, Snap and Grids in AutoCAD.","outcome_verbatim":null,"group":"Basic Training — Professional Knowledge"},
+      {"published_ref":"Professional skills p.14 — dimensioning","code":null,"title_verbatim":"Dimension the drawings created using linear, Aligned, Angular, radius and Diameter dimensioning techniques.","outcome_verbatim":null,"group":"Basic Training — Professional Skills"}
+    ],
+    "content_summary_paraphrased": null,
+    "content_fidelity": "verbatim_whitespace_normalised",
+    "curriculum_detail": "partial",
+    "source": {"url":"https://dgt.gov.in/sites/default/files/2025-01/CAD_CAM_Operator_Cum_Programmer.pdf","document_type":"pdf","document_sha256":"49ba28ce518afd449ee45264977189aecca1de4e9f907706e5fb7df5c080728a","publication_or_revision":"Official ATS curriculum; revision date not stated in inspected PDF","retrieved_date":"2026-10-18"},
+    "language": "English",
+    "verification": {"status":"source_inspected_pending_human_review","method":"Trade identity, occupational rationale and selected AutoCAD setup, drawing and dimensioning content checked against official DGT PDF pages 1, 5 and 13-14.","human_reviewed":false},
+    "licence_note": "Official Government of India curriculum; reuse terms not assessed.",
+    "notes": ["A national apprenticeship curriculum, not a verified named-provider delivery.","The curriculum is broader manufacturing CAD/CAM training and is not evidence that every component matches NYSC's AutoCAD short course.","The existing TESDA Technical Drafting record is separately reused only for its explicit computer-aided-drawing competency."],
+    "scope_verbatim": ["CAD/CAM Operators assist the engineering department in the drafting and design of production and specialty parts"]
+  }]
+}

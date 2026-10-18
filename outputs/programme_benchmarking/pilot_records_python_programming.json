@@ -1,0 +1,41 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-python-programming",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Official-source comparator for NYSC COURSE-002 Python. The governed catalogue publishes no module headings, so records are shown without a competency matrix.",
+  "status_note": "Source-inspected record awaiting independent human review; a national curriculum is not evidence that its complete scope matches the shorter NYSC course.",
+  "country_group_gaps": {
+    "sri_lanka": "No independent Sri Lankan Python programme with an inspectable official curriculum was verified.",
+    "developed": "No developed-economy programme with inspectable official module content and sufficiently comparable short-course scope was verified."
+  },
+  "records": [{
+    "record_id": "IN-DGT-CTS-AIPA-V1",
+    "country": "India",
+    "country_group": "developing_emerging",
+    "institution": "Government of India, Directorate General of Training",
+    "record_type": "national_curriculum",
+    "delivering_provider_verified": false,
+    "title_verbatim": "ARTIFICIAL INTELLIGENCE PROGRAMMING ASSISTANT",
+    "sector": "IT and ITES / Python and artificial intelligence",
+    "framework": "Craftsmen Training Scheme (India)",
+    "level_as_published": "NSQF Level 3.5",
+    "duration_as_published": "One Year (1200 hours + 150 hours OJT/Group Project)",
+    "entry_as_published": "Passed 10th class examination",
+    "modules": [
+      {"published_ref":"Learning outcome 2 — SSC/N9512","code":"SSC/N9512","title_verbatim":"Write programs using Python language.","outcome_verbatim":null,"group":"Trade-specific learning outcomes"},
+      {"published_ref":"Assessment criteria p.12 — environment","code":null,"title_verbatim":"Install/set up the environment & run Python.","outcome_verbatim":null,"group":"Assessment criteria"},
+      {"published_ref":"Assessment criteria p.12 — IDE","code":null,"title_verbatim":"Use Command Line and IDE to create and execute a python program.","outcome_verbatim":null,"group":"Assessment criteria"},
+      {"published_ref":"Assessment criteria pp.12-13 — fundamentals","code":null,"title_verbatim":"Write and test a python program to demonstrate print statement/comments/ different types of variables.","outcome_verbatim":null,"group":"Assessment criteria"}
+    ],
+    "content_summary_paraphrased": null,
+    "content_fidelity": "verbatim_whitespace_normalised",
+    "curriculum_detail": "partial",
+    "source": {"url":"https://dgt.gov.in/sites/default/files/2024-05/AI%20Programming%20Asst._CTS1.0_NSQF-3.5%20%281%29.pdf_%20%281%29.pdf","document_type":"pdf","document_sha256":"0f59d39aec94d03b11bfe67b743b6dd29d6ef89dab8ce429c3c028b981ea9032","publication_or_revision":"Version 1.0, designed 2023","retrieved_date":"2026-10-18"},
+    "language": "English",
+    "verification": {"status":"source_inspected_pending_human_review","method":"Course identity, duration, level, Python learning outcome and selected assessment criteria checked against official DGT PDF pages 1, 3-5 and 11-13.","human_reviewed":false},
+    "licence_note": "Official Government of India curriculum; reuse terms not assessed.",
+    "notes": ["A national curriculum, not a verified named-provider delivery.","The programme is much broader and longer than NYSC COURSE-002; only its explicitly published Python content is relevant.","The existing DGT COPA record is separately reused because its stored curriculum also explicitly names Python."],
+    "scope_verbatim": ["Write programs using Python language."]
+  }]
+}

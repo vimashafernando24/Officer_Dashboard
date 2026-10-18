@@ -1,0 +1,39 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-java-programming",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Official-source comparator for NYSC COURSE-073 Java Programming With Software Applications Development. The governed catalogue publishes no module headings.",
+  "status_note": "Source-inspected record awaiting independent human review; the training regulation defines a national qualification and is not itself a provider delivery.",
+  "country_group_gaps": {
+    "sri_lanka": "No independent Sri Lankan Java programme with an inspectable official curriculum was verified.",
+    "developed": "No developed-economy vocational Java programme with inspectable official module content and comparable scope was verified."
+  },
+  "records": [{
+    "record_id": "PH-TESDA-PROGRAMMING-JAVA-NC3-2021",
+    "country": "Philippines",
+    "country_group": "developing_emerging",
+    "institution": "Technical Education and Skills Development Authority",
+    "record_type": "occupational_standard",
+    "delivering_provider_verified": false,
+    "title_verbatim": "PROGRAMMING (JAVA) NC III",
+    "sector": "Information and Communication Technology",
+    "framework": "Philippine TVET Qualification and Certification System",
+    "level_as_published": "NC III",
+    "duration_as_published": "240 hours nominal training duration",
+    "entry_as_published": null,
+    "modules": [
+      {"published_ref":"Section 1 p.3 — ICT313359","code":"ICT313359","title_verbatim":"Perform object-oriented analysis and design in Java technology","outcome_verbatim":null,"group":"Core Competencies"},
+      {"published_ref":"Section 1 p.3 — ICT313360","code":"ICT313360","title_verbatim":"Create and fine-tune Java technology applications using object-oriented programming concept","outcome_verbatim":null,"group":"Core Competencies"}
+    ],
+    "content_summary_paraphrased": null,
+    "content_fidelity": "verbatim_whitespace_normalised",
+    "curriculum_detail": "full",
+    "source": {"url":"https://tesda.gov.ph/Downloadables/TRs/TR%20-%20Programming%20%28JAVA%29%20NC%20III%20ver%202.pdf.pdf","document_type":"pdf","document_sha256":"672a225580065b7f452a4b8573d6c31db120ef391e4498425ee48e4ac575c5d8","publication_or_revision":"Promulgated June 8, 2021","retrieved_date":"2026-10-18"},
+    "language": "English",
+    "verification": {"status":"source_inspected_pending_human_review","method":"Qualification description, two core unit codes/titles, curriculum duration and assessment arrangements checked against official TESDA PDF pages 2-4 and 40-47.","human_reviewed":false},
+    "licence_note": "Official TESDA training regulation; reuse terms not assessed.",
+    "notes": ["A national training regulation, not evidence of delivery by a named provider.","TESDA lists registered providers separately; no provider-specific curriculum was inspected.","NYSC publishes no headings, so application-development equivalence cannot be assessed competency by competency."],
+    "scope_verbatim": ["The Programming (Java) NC III Qualification consists of competencies that a person must achieve to develop or write program codes using a personal computer or workstation as part of a systems development team."]
+  }]
+}

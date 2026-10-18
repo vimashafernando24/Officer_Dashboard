@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.1.0",
+  "dataset_id": "nysc-programme-benchmarking-agricultural-machinery",
+  "created_date": "2026-10-18",
+  "purpose": "Official-source comparators for NYSC COURSE-017 Agricultural Machinery Equipment Mechanic. The governed catalogue publishes no module headings, so these records are shown without a competency matrix.",
+  "schema": "benchmark_record_schema.json",
+  "status_note": "Source-inspected records awaiting independent human review; curricula, standards and qualifications are not evidence of programme delivery.",
+  "country_group_gaps": {"sri_lanka": "No Sri Lankan agricultural-machinery mechanic curriculum or occupational standard with inspectable specialist competencies was verified; the agricultural-production diploma contains only an incidental machinery-maintenance module and was excluded."},
+  "records": [
+    {
+      "record_id": "IN-DGT-CTS-AGMACH-V2", "country": "India", "country_group": "developing_emerging",
+      "institution": "Directorate General of Training (DGT), Ministry of Skill Development & Entrepreneurship",
+      "record_type": "national_curriculum", "delivering_provider_verified": false,
+      "title_verbatim": "Mechanic Agricultural Machinery", "sector": "Automotive / Agricultural machinery",
+      "framework": "NSQF (India)", "level_as_published": "NSQF Level – 4", "duration_as_published": "Two Year (2400 Hr)",
+      "entry_as_published": "Passed 10th class examination with Science and Mathematics or its equivalent.",
+      "modules": [
+        {"published_ref":"Y1-LO15","code":"AGR/N1130","title_verbatim":"Demonstrate Major Assemblies of Tractor.","outcome_verbatim":null,"group":"First Year learning outcomes"},
+        {"published_ref":"Y1-LO16","code":"AGR/N1128","title_verbatim":"Overhaul Diesel Engine of Tractor.","outcome_verbatim":null,"group":"First Year learning outcomes"},
+        {"published_ref":"Y1-LO17","code":"AGR/N1128","title_verbatim":"Perform servicing of Cooling and Lubrication system of Tractor in a workshop.","outcome_verbatim":null,"group":"First Year learning outcomes"},
+        {"published_ref":"Y1-LO18","code":"AGR/N1128","title_verbatim":"Service Intake and Exhaust System of Tractor in a workshop.","outcome_verbatim":null,"group":"First Year learning outcomes"},
+        {"published_ref":"Y1-LO19","code":"AGR/N1128","title_verbatim":"Service Fuel Feed System of Tractor in a workshop.","outcome_verbatim":null,"group":"First Year learning outcomes"},
+        {"published_ref":"Y1-LO20","code":"AGR/N1129","title_verbatim":"Overhaul Clutch and Gearbox of Tractor in a workshop.","outcome_verbatim":null,"group":"First Year learning outcomes"},
+        {"published_ref":"Y1-LO21","code":"AGR/N1129","title_verbatim":"Overhaul Differential and PTO Unit of Tractor in the workshop.","outcome_verbatim":null,"group":"First Year learning outcomes"}
+      ],
+      "content_summary_paraphrased": null, "content_fidelity": "verbatim_whitespace_normalised", "curriculum_detail": "partial",
+      "source": {"url":"https://www.dgt.gov.in/sites/default/files/2023-12/Mech.%20Agricultural%20Machinery_CTS2.0_NSQF-4.pdf","document_type":"pdf","document_sha256":"36bb1c06888dff7e8fc26c651ce51fc569583cc7c710d3777d92da540976b9ab","publication_or_revision":"Version 2.0; revised 2022","retrieved_date":"2026-10-18"},
+      "language":"English", "verification":{"status":"source_inspected_pending_human_review","method":"Trade identity, duration, entry criteria and the stored tractor and agricultural-implement outcomes were checked against the official DGT curriculum PDF.","human_reviewed":false},
+      "licence_note":"Government of India curriculum; reuse subject to the source terms.",
+      "notes":["A national curriculum, not evidence that a named provider delivers it.","Only specialist comparison-relevant outcomes are stored; basic workshop and core-skills outcomes are omitted.","The second-year syllabus covers a wider range of agricultural implements than the tractor-only TESDA record."],
+      "scope_verbatim":["Mechanic Agricultural Machinery","Two Year (2400 Hr)"]
+    },
+    {
+      "record_id":"PH-TESDA-AGMACH-4WT-NC3","country":"Philippines","country_group":"developing_emerging","institution":"Technical Education and Skills Development Authority (TESDA)",
+      "record_type":"occupational_standard","delivering_provider_verified":false,"title_verbatim":"AGRICULTURAL MACHINERY SERVICING (4-WHEEL TRACTOR) NC III","sector":"Agri-Fishery / Agricultural machinery servicing","framework":"Philippine TVET Qualification and Certification System","level_as_published":"NC III","duration_as_published":"847 hours total (671 hours training plus 176 hours supervised industry training)","entry_as_published":null,
+      "modules":[
+        {"published_ref":null,"code":"AFF723303","title_verbatim":"Diagnose and Repair Electrical Systems of 4-Wheel Tractor","outcome_verbatim":null,"group":"Core Competencies"},
+        {"published_ref":null,"code":"AFF723304","title_verbatim":"Diagnose and Repair Engine System of 4-Wheel Tractor","outcome_verbatim":null,"group":"Core Competencies"},
+        {"published_ref":null,"code":"AFF723305","title_verbatim":"Diagnose and Repair Axle System of 4-Wheel Tractor","outcome_verbatim":null,"group":"Core Competencies"},
+        {"published_ref":null,"code":"AFF723306","title_verbatim":"Diagnose and Repair Hydraulic System of 4-Wheel Tractor","outcome_verbatim":null,"group":"Core Competencies"},
+        {"published_ref":null,"code":"AFF723307","title_verbatim":"Diagnose and Repair Transmission System of 4-Wheel Tractor","outcome_verbatim":null,"group":"Core Competencies"}
+      ],
+      "content_summary_paraphrased":null,"content_fidelity":"verbatim_whitespace_normalised","curriculum_detail":"full",
+      "source":{"url":"https://www.tesda.gov.ph/Downloadables/TRs/Agricultural%20Machinery%20Servicing%20NC%20III.pdf","document_type":"pdf","document_sha256":"302aa3b1ddc5c855a2b3ebdda04bfad87163168337eee7009f0e5adce7c5688e","publication_or_revision":"Revision 00; promulgated 01/11/2019","retrieved_date":"2026-10-18"},
+      "language":"English","verification":{"status":"source_inspected_pending_human_review","method":"Qualification scope, all five core-unit codes/titles, curriculum duration and occupational outcomes were read from the official TESDA Training Regulations.","human_reviewed":false},
+      "licence_note":"TESDA official Training Regulations; reuse subject to source terms.",
+      "notes":["An occupational standard and training regulation, not evidence of delivery by a named provider.","Scope is explicitly limited to four-wheel tractors; it does not establish coverage of every agricultural machine named by NYSC."],
+      "scope_verbatim":["The AGRICULTURAL MACHINERY SERVICING (4-WHEEL TRACTOR) NC III Qualification consists of competencies that a person must achieve to diagnose and repair electrical systems, engine system, axle system, hydraulic system and transmission system of 4 – wheel drive tractor."]
+    },
+    {
+      "record_id":"AU-TGA-AUR30420","country":"Australia","country_group":"developed","institution":"Australian Government, training.gov.au (AUR Automotive Retail, Service and Repair Training Package)",
+      "record_type":"national_qualification","delivering_provider_verified":false,"title_verbatim":"Certificate III in Agricultural Mechanical Technology","sector":"Automotive / Agricultural machinery","framework":"AQF (Australia)","level_as_published":"Certificate III (national code AUR30420)","duration_as_published":null,"entry_as_published":"Nil.",
+      "modules":[
+        {"published_ref":null,"code":"AURETR112","title_verbatim":"Test and repair basic electrical circuits","outcome_verbatim":null,"group":"Core Units"},
+        {"published_ref":null,"code":"AURHTE102","title_verbatim":"Diagnose and repair heavy vehicle compression ignition engines","outcome_verbatim":null,"group":"Core Units"},
+        {"published_ref":null,"code":"AURKTA111","title_verbatim":"Diagnose and repair mobile plant hydraulic systems","outcome_verbatim":null,"group":"Core Units"},
+        {"published_ref":null,"code":"AURKTB101","title_verbatim":"Diagnose and repair mobile plant braking systems","outcome_verbatim":null,"group":"Core Units"},
+        {"published_ref":null,"code":"AURKTD102","title_verbatim":"Diagnose and repair mobile plant steering systems","outcome_verbatim":null,"group":"Core Units"},
+        {"published_ref":null,"code":"AURKTQ101","title_verbatim":"Diagnose and repair mobile plant final drive assemblies","outcome_verbatim":null,"group":"Core Units"},
+        {"published_ref":null,"code":"AURKTX101","title_verbatim":"Diagnose and repair powershift transmissions","outcome_verbatim":null,"group":"Core Units"},
+        {"published_ref":null,"code":"AURTTA118","title_verbatim":"Develop and carry out diagnostic test strategies","outcome_verbatim":null,"group":"Core Units"},
+        {"published_ref":null,"code":"AURKTA004","title_verbatim":"Inspect, service and repair spraying and spreading equipment","outcome_verbatim":null,"group":"Elective Units"},
+        {"published_ref":null,"code":"AURKTA010","title_verbatim":"Inspect, service and repair hay cutting, raking and baling equipment","outcome_verbatim":null,"group":"Elective Units"}
+      ],
+      "content_summary_paraphrased":null,"content_fidelity":"verbatim_whitespace_normalised","curriculum_detail":"partial",
+      "source":{"url":"https://training.gov.au/assets/AUR/AUR30420_R4.pdf","document_type":"pdf","document_sha256":"ed8fbd1167ec72d695aa2bf2286264b8f03abe74f5b095eda6e6efdf1e6f7441","publication_or_revision":"Release 4; generated 17 March 2026","retrieved_date":"2026-10-18"},
+      "language":"English","verification":{"status":"source_inspected_pending_human_review","method":"Qualification description, packaging and selected specialist core/elective unit codes and titles were read from the official training.gov.au PDF.","human_reviewed":false},
+      "licence_note":"© Commonwealth of Australia; material sourced from training.gov.au.",
+      "notes":["A national qualification, not evidence that a named provider delivers it.","The inspected PDF is Release 4; training.gov.au lists Release 5 as current from 9 July 2026, with only additional/updated electives. Core evidence stored here is unchanged, but the release should be refreshed at human review.","Elective units are options, not evidence every learner completes them."],
+      "scope_verbatim":["This qualification reflects the role of individuals who perform a broad range of tasks on a variety of agricultural machinery in the automotive retail, service and repair industry."]
+    }
+  ]
+}

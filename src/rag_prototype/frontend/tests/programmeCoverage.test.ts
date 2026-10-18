@@ -22,9 +22,12 @@ import { loadAllComparisonData } from "../src/comparisonData.ts";
 // Comparator data is loaded on demand in the dashboard; tests load all of it first.
 await loadAllComparisonData();
 
-const COMPLETE = ["COURSE-005", "COURSE-006", "COURSE-007", "COURSE-008", "COURSE-009", "COURSE-053", "COURSE-058", "COURSE-087", "COURSE-010", "COURSE-011", "COURSE-012", "COURSE-014", "COURSE-025", "COURSE-034", "COURSE-035", "COURSE-040", "COURSE-046", "COURSE-047", "COURSE-050", "COURSE-055", "COURSE-064", "COURSE-081", "COURSE-082"];
+const COMPLETE = ["COURSE-005", "COURSE-006", "COURSE-007", "COURSE-008", "COURSE-009", "COURSE-053", "COURSE-058", "COURSE-087", "COURSE-010", "COURSE-011", "COURSE-012", "COURSE-014", "COURSE-025", "COURSE-034", "COURSE-035", "COURSE-040", "COURSE-046", "COURSE-047", "COURSE-050", "COURSE-055", "COURSE-062", "COURSE-064", "COURSE-081", "COURSE-082"];
 const COMPARATORS_ONLY = ["COURSE-001", "COURSE-048", "COURSE-051", "COURSE-054", "COURSE-056", "COURSE-057", "COURSE-069",
   "COURSE-016", "COURSE-021", "COURSE-022", "COURSE-023", "COURSE-029", "COURSE-030", "COURSE-042", "COURSE-052", "COURSE-060", "COURSE-068", "COURSE-077", "COURSE-078", "COURSE-013", "COURSE-079", "COURSE-080"];
+COMPARATORS_ONLY.push("COURSE-017", "COURSE-018", "COURSE-038", "COURSE-044", "COURSE-045");
+COMPARATORS_ONLY.push("COURSE-019", "COURSE-024", "COURSE-033", "COURSE-036", "COURSE-061", "COURSE-065");
+COMPARATORS_ONLY.push("COURSE-002", "COURSE-043", "COURSE-073", "COURSE-076");
 const ALL_IDS = NYSC_COURSES.map((course) => course.course_id);
 const registerById = new Map(coverageRegister.courses.map((entry) => [entry.course_id, entry]));
 const shownRecords = (courseId: string) => {
@@ -45,20 +48,24 @@ test("every one of the 84 governed courses has a coverage state that matches the
 });
 
 
-test("the 23 mapped courses keep their full comparison", () => {
+test("the 24 mapped courses keep their full comparison", () => {
   for (const courseId of COMPLETE) {
     const coverage = coverageForCourse(courseId)!;
     assert.equal(coverage.state, "FULL_COMPARISON", courseId);
     assert.deepEqual(coveragePresentation(coverage.state), { showComparators: true, showMatrix: true, showAreas: true });
     assert.ok(mappingForCourse(courseId), courseId);
-    assert.ok(investigationAreas(mappingForCourse(courseId)!).length > 0, courseId);
+    if (courseId === "COURSE-062") {
+      assert.equal(investigationAreas(mappingForCourse(courseId)!).length, 0, courseId);
+    } else {
+      assert.ok(investigationAreas(mappingForCourse(courseId)!).length > 0, courseId);
+    }
   }
 });
 
 
-test("all 39 unresearched courses show RESEARCH_PENDING and no comparison", () => {
+test("all 23 unresearched courses show RESEARCH_PENDING and no comparison", () => {
   const pending = ALL_IDS.filter((id) => !COMPLETE.includes(id) && !COMPARATORS_ONLY.includes(id));
-  assert.equal(pending.length, 39);
+  assert.equal(pending.length, 23);
   for (const courseId of pending) {
     const coverage = coverageForCourse(courseId)!;
     assert.equal(registerById.get(courseId)!.research_status, "NOT_RESEARCHED", courseId);

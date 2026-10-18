@@ -1,0 +1,62 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-draughting",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Comparator records for NYSC COURSE-024, COURSE-061 and COURSE-065. These related course titles have no governed module headings; records are shown without competency matrices and do not establish equivalence.",
+  "status_note": "Source-inspected records awaiting independent human review.",
+  "country_group_gaps": {"developed":"No developed-economy specialist draughting qualification with a stable, inspectable official curriculum was verified for this package."},
+  "records": [
+    {
+      "record_id":"LK-TVEC-NCS-DRAUGHTSPERSON-2023","country":"Sri Lanka","country_group":"sri_lanka","institution":"Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority","record_type":"occupational_standard","delivering_provider_verified":false,"title_verbatim":"DRAUGHTSPERSON","sector":"Construction / Technical draughting","framework":"NVQ (Sri Lanka)","level_as_published":"NVQ Levels 3 and 4","duration_as_published":null,"entry_as_published":null,
+      "modules":[
+        {"published_ref":"PDF p.7 — F45S009U01","code":"F45S009U01","title_verbatim":"Coordinate technical activities","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"PDF p.7 — F45S009U02","code":"F45S009U02","title_verbatim":"Perform drawing office activities","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"PDF p.7 — F45S009U03","code":"F45S009U03","title_verbatim":"Draw construction working drawings","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"PDF p.7 — F45S009U04","code":"F45S009U04","title_verbatim":"Prepare drawings for building service activities","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"PDF p.7 — F45S009U05","code":"F45S009U05","title_verbatim":"Prepare drawings for specialized fields","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"PDF p.7 — F45S009U06","code":"F45S009U06","title_verbatim":"Prepare drawings for surveying and leveling","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"PDF p.7 — F45S009U07","code":"F45S009U07","title_verbatim":"Prepare Bill of Quantities","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"PDF p.7 — F45S009U08","code":"F45S009U08","title_verbatim":"Prepare mechanical drawings","outcome_verbatim":null,"group":"List of Competency Units"}
+      ],
+      "content_summary_paraphrased":null,"content_fidelity":"verbatim_whitespace_normalised","curriculum_detail":"full",
+      "source":{"url":"https://nvq.gov.lk/report_inquires/NCS_Request_Pdf.php?nm=F45S009_3_NCS.pdf","document_type":"pdf","document_sha256":"e28a889037fc2c705a3e07a1a8f087874a9ee8987a78e67a75fc28ec37d801eb","publication_or_revision":"Third Revision, February 2023; next revision February 2026","retrieved_date":"2026-10-18"},
+      "language":"English","verification":{"status":"source_inspected_pending_human_review","method":"Eight occupation-specific unit codes/titles and the civil, surveying and mechanical NVQ packaging read from official PDF pages 7-8.","human_reviewed":false},"licence_note":"Copyright © 2023 TVEC; source states all rights reserved.",
+      "notes":["An occupational standard and CBT curriculum, not a confirmed delivered programme.","The source's stated February 2026 revision date has passed; no later official revision was verified.","The standard has separate civil, surveying and mechanical Level 4 packages; linking it to space planning does not establish an interior-design equivalence."],
+      "scope_verbatim":["National certificate at NVQ level 3 in the occupation of Assistant Draughtsperson","National certificate at NVQ level 4 in the occupation of Draughtsperson (Civil)","National certificate at NVQ level 4 in the occupation of Draughtsperson (Surveying)","National certificate at NVQ level 4 in the occupation of Draughtsperson (Mechanical)"]
+    },
+    {
+      "record_id":"IN-DGT-CTS-DRAUGHTSMAN-CIVIL-V2","country":"India","country_group":"developing_emerging","institution":"Government of India, Directorate General of Training","record_type":"national_curriculum","delivering_provider_verified":false,"title_verbatim":"DRAUGHTSMAN CIVIL","sector":"Construction / Civil draughting","framework":"Craftsmen Training Scheme (India)","level_as_published":"NSQF Level 4","duration_as_published":"Two Years (2400 hours + 300 hours OJT/Group Project)","entry_as_published":"Passed 10th Class examination",
+      "modules":[
+        {"published_ref":"Learning outcome 2","code":"IES/N9402","title_verbatim":"Draw plane figures applying drawing instruments with proper layout and the method of folding drawing sheets.","outcome_verbatim":null,"group":"First Year Learning Outcomes"},
+        {"published_ref":"Learning outcome 4","code":"IES/N9404","title_verbatim":"Draw orthographic projections of different objects with proper lines, lettering and dimensioning.","outcome_verbatim":null,"group":"First Year Learning Outcomes"},
+        {"published_ref":"Learning outcome 6","code":"IES/N9406","title_verbatim":"Draw component parts of a single storied residential building with suitable symbols and scales.","outcome_verbatim":null,"group":"First Year Learning Outcomes"},
+        {"published_ref":"Learning outcome 12","code":"IES/N9412","title_verbatim":"Perform site survey with plane table and prepare a map.","outcome_verbatim":null,"group":"First Year Learning Outcomes"},
+        {"published_ref":"Learning outcome 14","code":"IES/N9414","title_verbatim":"Perform site survey with Theodolite and prepare site plan.","outcome_verbatim":null,"group":"First Year Learning Outcomes"},
+        {"published_ref":"Learning outcome 19","code":"IES/N9419","title_verbatim":"Prepare the detailed drawing of electrical wiring system.","outcome_verbatim":null,"group":"First Year Learning Outcomes"},
+        {"published_ref":"Learning outcome 24","code":"CON/N1302","title_verbatim":"Draw single storied building site plan layout.","outcome_verbatim":null,"group":"Second Year Learning Outcomes"}
+      ],
+      "content_summary_paraphrased":null,"content_fidelity":"verbatim_whitespace_normalised","curriculum_detail":"partial",
+      "source":{"url":"https://dgt.gov.in/sites/default/files/2023-12/Draughtsman%20Civil_CTS2.0_NSQF-4.pdf","document_type":"pdf","document_sha256":"672d0fdbacfbee1fe0de72a19c038e0023ec047758739a2faa874f9a32377000","publication_or_revision":"Version 2.0, revised July 2022","retrieved_date":"2026-10-18"},
+      "language":"English","verification":{"status":"source_inspected_pending_human_review","method":"Selected trade-specific learning outcomes, NOS codes, duration, entry requirement and NSQF level checked against official PDF pages 12-13 and general information page 9.","human_reviewed":false},"licence_note":"Official Government of India curriculum; reuse terms not assessed.",
+      "notes":["A national curriculum delivered through the ITI network, not a verified named-provider delivery.","Selected outcomes are stored rather than all forty trade-specific outcomes.","Civil draughting scope is narrower than generic or mechanical engineering draughtsmanship and is not an exact space-planning qualification."],
+      "scope_verbatim":["Draughtsman Civil trade under CTS is one of the most popular courses delivered nationwide through network of ITIs."]
+    },
+    {
+      "record_id":"PH-TESDA-TECHNICAL-DRAFTING-NC2","country":"Philippines","country_group":"developing_emerging","institution":"Technical Education and Skills Development Authority","record_type":"occupational_standard","delivering_provider_verified":false,"title_verbatim":"TECHNICAL DRAFTING NC II","sector":"Construction / Technical draughting","framework":"Philippine TVET Qualification and Certification System","level_as_published":"NC II","duration_as_published":null,"entry_as_published":null,
+      "modules":[
+        {"published_ref":"Section 1 p.2 — CON311301","code":"CON311301","title_verbatim":"Draft architectural layout and details","outcome_verbatim":null,"group":"Core Competencies"},
+        {"published_ref":"Section 1 p.2 — CON311302","code":"CON311302","title_verbatim":"Prepare computer-aided drawings","outcome_verbatim":null,"group":"Core Competencies"},
+        {"published_ref":"Section 1 p.2 — CON311303","code":"CON311303","title_verbatim":"Draft structural layout and details","outcome_verbatim":null,"group":"Core Competencies"},
+        {"published_ref":"Section 1 p.2 — CON311304","code":"CON311304","title_verbatim":"Draft electrical and electronic layout and details","outcome_verbatim":null,"group":"Core Competencies"},
+        {"published_ref":"Section 1 p.2 — CON311305","code":"CON311305","title_verbatim":"Draft sanitary and plumbing layout and details","outcome_verbatim":null,"group":"Core Competencies"},
+        {"published_ref":"Section 1 p.2 — CON311306","code":"CON311306","title_verbatim":"Draft mechanical layout and details","outcome_verbatim":null,"group":"Core Competencies"}
+      ],
+      "content_summary_paraphrased":null,"content_fidelity":"verbatim","curriculum_detail":"full",
+      "source":{"url":"https://tesda.gov.ph/Downloadables/TR%20-%20Technical%20drafting%20NC%20II.pdf","document_type":"pdf","document_sha256":"bd1be247c18edc9227c7e45af46a64b53032fcac91686ccd5fe6db9a7486f111","publication_or_revision":"Promulgated May 2008; amended April 2010","retrieved_date":"2026-10-18"},
+      "language":"English","verification":{"status":"source_inspected_pending_human_review","method":"All six core unit codes/titles and occupational outcomes read from Section 1, official PDF pages 2-3; unit descriptors checked in the competency-standard sections.","human_reviewed":false},"licence_note":"Official TESDA training regulation; reuse terms not assessed.",
+      "notes":["A national training regulation, not evidence of delivery by a named provider.","The regulation is old; current status should be reconfirmed during human review.","The qualification spans architectural, structural, services and mechanical drafting; it does not establish equivalence to interior space planning."],
+      "scope_verbatim":["A person who has achieved this Qualification is competent to be a: Draftsman; CAD operator"]
+    }
+  ]
+}

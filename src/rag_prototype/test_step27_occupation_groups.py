@@ -57,7 +57,7 @@ class Step27OccupationGroupTests(unittest.TestCase):
 
     def test_related_groups_are_not_linked(self):
         # Three Wheeler Mechanic and Desktop Publisher are separate occupation groups with too little specific evidence.
-        for course_id in ("COURSE-038", "COURSE-062"):
+        for course_id in ("COURSE-062",):
             self.assertNotIn(course_id, self.links)
             self.assertEqual(self.register[course_id]["current_presentation_mode"], "RESEARCH_PENDING")
 
