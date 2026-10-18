@@ -1,0 +1,248 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "nysc-programme-benchmarking/benchmark-record/1.1.0",
+  "title": "Programme benchmarking record",
+  "description": "One verified external training programme, national curriculum, or occupational standard used to benchmark NYSC courses. Module text is stored exactly as published; nothing is inferred from programme descriptions. A record describes documented content only: an unlisted competency is not evidence that it is not taught.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "country",
+    "country_group",
+    "institution",
+    "record_type",
+    "delivering_provider_verified",
+    "title_verbatim",
+    "sector",
+    "framework",
+    "level_as_published",
+    "duration_as_published",
+    "entry_as_published",
+    "modules",
+    "content_fidelity",
+    "curriculum_detail",
+    "source",
+    "language",
+    "verification",
+    "licence_note",
+    "notes"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}-[A-Z0-9-]+$"
+    },
+    "country": {
+      "type": "string"
+    },
+    "country_group": {
+      "enum": [
+        "sri_lanka",
+        "developing_emerging",
+        "developed"
+      ]
+    },
+    "institution": {
+      "type": "string",
+      "description": "Official name of the delivering institution or the issuing authority."
+    },
+    "record_type": {
+      "enum": [
+        "programme",
+        "national_curriculum",
+        "occupational_standard",
+        "national_qualification"
+      ],
+      "description": "programme: delivered by a named, verified provider. national_curriculum: prescribed nationally for delivery by many providers. occupational_standard: a competency standard issued by an authority. Standards must never be presented as institution-delivered programmes. national_qualification: a nationally endorsed qualification (e.g. an AQF qualification on training.gov.au) packaged from units of competency; no delivering provider is implied."
+    },
+    "delivering_provider_verified": {
+      "type": "boolean"
+    },
+    "title_verbatim": {
+      "type": "string"
+    },
+    "sector": {
+      "type": "string"
+    },
+    "framework": {
+      "type": "string",
+      "description": "Qualification framework named by the source, e.g. NVQ (Sri Lanka), NSQF, AQF. Levels are recorded as published and are never treated as equivalent across frameworks."
+    },
+    "level_as_published": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "duration_as_published": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "entry_as_published": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "modules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "published_ref",
+          "code",
+          "title_verbatim",
+          "outcome_verbatim",
+          "group"
+        ],
+        "properties": {
+          "published_ref": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Numbering as published, e.g. 'Y1-LO11'."
+          },
+          "code": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Official unit or standard code; null when the source gives none or it could not be read reliably."
+          },
+          "title_verbatim": {
+            "type": "string"
+          },
+          "outcome_verbatim": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "group": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Published grouping, e.g. 'Core', 'Specialisation Modules', 'Second Year'."
+          }
+        }
+      }
+    },
+    "content_summary_paraphrased": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Only for sources whose exact wording has not yet been captured. Never used for matching; the record stays needs_manual_verbatim until modules are copied exactly."
+    },
+    "content_fidelity": {
+      "enum": [
+        "verbatim",
+        "verbatim_whitespace_normalised",
+        "verbatim_via_page_tool_pending_check",
+        "paraphrased_needs_manual_copy"
+      ],
+      "description": "verbatim_whitespace_normalised: wording unchanged; only PDF text-extraction spacing artefacts (split words) were repaired."
+    },
+    "curriculum_detail": {
+      "enum": [
+        "full",
+        "partial",
+        "titles_only",
+        "unavailable"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "url",
+        "document_type",
+        "document_sha256",
+        "publication_or_revision",
+        "retrieved_date"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "pattern": "^https://"
+        },
+        "document_type": {
+          "enum": [
+            "pdf",
+            "html"
+          ]
+        },
+        "document_sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9a-f]{64}$",
+          "description": "Hash of the downloaded document, so later changes are detectable. Null for HTML pages, which change between fetches."
+        },
+        "publication_or_revision": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "retrieved_date": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "language": {
+      "type": "string"
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "method",
+        "human_reviewed"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "source_inspected_pending_human_review",
+            "human_verified",
+            "needs_manual_verbatim",
+            "search_only"
+          ]
+        },
+        "method": {
+          "type": "string"
+        },
+        "human_reviewed": {
+          "type": "boolean"
+        }
+      }
+    },
+    "licence_note": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "scope_verbatim": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "string"
+      },
+      "description": "Optional exact passages of the published qualification scope or occupations, citable as evidence (field 'scope_verbatim', module_index = passage index). Stored only when verified against the official source."
+    }
+  }
+}

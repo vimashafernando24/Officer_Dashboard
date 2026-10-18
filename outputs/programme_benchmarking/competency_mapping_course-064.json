@@ -1,0 +1,1093 @@
+{
+  "description": "Hand-curated competency mapping for NYSC COURSE-064 Electrician against its six linked Electrician records. A DOCUMENTED cell cites the exact stored text that names the competency. NOT_EXPLICIT means the available description does not name it, not that it is absent from teaching. INSUFFICIENT_DATA means the stored text is unavailable, outside the record's scope, or too ambiguous to assess.",
+  "schema_version": "1.0.0",
+  "nysc_course_id": "COURSE-064",
+  "created_date": "2026-10-17",
+  "method": "The NYSC column was assessed by hand against this course's own governed module headings; a broad heading does not establish a more specific competency. NYSC citations keep the exact governed text; where the snapshot holds a verified display correction for that heading, display_text carries the corrected wording. Comparator cells are shared with the other Electrician course because the six records and their cited text are identical. Coverage (FULL/PARTIAL) and the status definitions are recorded in 'methodology'; category components are in 'category_components'. Corrections from the 2026-10-17 evidence audit were applied.",
+  "human_reviewed": false,
+  "statuses": [
+    "DOCUMENTED",
+    "NOT_EXPLICIT",
+    "INSUFFICIENT_DATA"
+  ],
+  "columns": [
+    {
+      "column_id": "NYSC-COURSE-064",
+      "kind": "nysc",
+      "nysc_course_id": "COURSE-064",
+      "short_label": "NYSC COURSE-064"
+    },
+    {
+      "column_id": "LK-CGTTI-POWER-ELEC",
+      "kind": "benchmark",
+      "record_id": "LK-CGTTI-POWER-ELEC",
+      "short_label": "CGTTI · Sri Lanka"
+    },
+    {
+      "column_id": "IN-DGT-CTS-ELEC-V3",
+      "kind": "benchmark",
+      "record_id": "IN-DGT-CTS-ELEC-V3",
+      "short_label": "DGT · India"
+    },
+    {
+      "column_id": "PH-TESDA-EIM-NC2",
+      "kind": "benchmark",
+      "record_id": "PH-TESDA-EIM-NC2",
+      "short_label": "TESDA NC II · Philippines"
+    },
+    {
+      "column_id": "PH-TESDA-EIM-NC3",
+      "kind": "benchmark",
+      "record_id": "PH-TESDA-EIM-NC3",
+      "short_label": "TESDA NC III · Philippines"
+    },
+    {
+      "column_id": "SG-ITE-HNITEC-ELEC-2Y",
+      "kind": "benchmark",
+      "record_id": "SG-ITE-HNITEC-ELEC-2Y",
+      "short_label": "ITE · Singapore"
+    },
+    {
+      "column_id": "AU-TAFENSW-UEE30820",
+      "kind": "benchmark",
+      "record_id": "AU-TAFENSW-UEE30820",
+      "short_label": "TAFE NSW · Australia"
+    }
+  ],
+  "competencies": [
+    {
+      "competency_id": "principles_circuits",
+      "label": "Electrical principles and circuits",
+      "cells": {
+        "NYSC-COURSE-064": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's five published module headings."
+        },
+        "LK-CGTTI-POWER-ELEC": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Industrial training in basic principle of electricity and their simple application."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-ELEC-V3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": "PSS/N9492",
+              "text": "Verify characteristics of electrical and magnetic circuits."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-EIM-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "NC II covers residential wiring up to 600 volts; it does not name this competency. 'Terminate and Connect Electrical Wiring and Electronic Circuits' is a wiring task, not circuit principles."
+        },
+        "PH-TESDA-EIM-NC3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "NC III covers three-phase distribution, data measurement and control, and motor control systems; it does not name this competency."
+        },
+        "SG-ITE-HNITEC-ELEC-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Electrical Principles"
+            },
+            {
+              "module_index": 2,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to troubleshoot DC and AC circuits."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TAFENSW-UEE30820": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 16,
+              "field": "title_verbatim",
+              "code": "UEECD0046",
+              "text": "Solve problems in single path circuits"
+            },
+            {
+              "module_index": 15,
+              "field": "title_verbatim",
+              "code": "UEECD0044",
+              "text": "Solve problems in multiple path circuits"
+            },
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": "UEEEL0020",
+              "text": "Solve problems in low voltage a.c. circuits"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "domestic_wiring",
+      "label": "Domestic/residential wiring installation",
+      "cells": {
+        "NYSC-COURSE-064": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Domestic Electrical Installation"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-CGTTI-POWER-ELEC": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Domestic & Industrial wiring exercise covering all kinds of connections using various kinds of Switches, Relays, Contactors, Cables and fittings"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-ELEC-V3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "LO5 covers installing and testing a wiring system and LO24 an overhead domestic service line, but no outcome names domestic or residential wiring installation."
+        },
+        "PH-TESDA-EIM-NC2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "scope_verbatim",
+              "code": null,
+              "text": "The Electrical Installation and Maintenance NC II Qualification consists of competencies that a person must achieve to enable him/her to install and maintain electrical wiring, lighting and related equipment and systems where the voltage does not exceed 600 volts in residential houses/buildings."
+            },
+            {
+              "module_index": 9,
+              "field": "title_verbatim",
+              "code": "ELC741301",
+              "text": "Perform roughing-in activities, wiring and cabling works for single-phase distribution, power, lighting and auxiliary systems"
+            },
+            {
+              "module_index": 11,
+              "field": "title_verbatim",
+              "code": "ELC741303",
+              "text": "Install wiring devices of floor and wall mounted outlets, lighting fixtures/switches, and auxiliary outlets"
+            }
+          ],
+          "note": "The qualification scope names installation and maintenance of wiring in residential houses/buildings up to 600 volts; the core units name single-phase wiring, outlets and lighting fixtures.",
+          "coverage": "FULL"
+        },
+        "PH-TESDA-EIM-NC3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "NC III covers three-phase installation; residential wiring is the NC II prerequisite and is not restated."
+        },
+        "SG-ITE-HNITEC-ELEC-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Residential Electrical Installation"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TAFENSW-UEE30820": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Core units cover low voltage wiring, socket-outlet and lighting circuits without naming domestic or residential premises."
+        }
+      }
+    },
+    {
+      "competency_id": "industrial_installation",
+      "label": "Industrial/commercial electrical installation",
+      "cells": {
+        "NYSC-COURSE-064": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Industrial Electrical Installation (Motor weekends. Controlling System)",
+              "display_text": "Industrial Electrical Installation (Motor Controlling System)"
+            }
+          ],
+          "note": "Establishes industrial installation only; detailed testing or safety competencies are not inferred from it.",
+          "coverage": "FULL"
+        },
+        "LK-CGTTI-POWER-ELEC": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Domestic & Industrial wiring exercise covering all kinds of connections using various kinds of Switches, Relays, Contactors, Cables and fittings"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-ELEC-V3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No outcome names industrial or commercial installation; LO20 covers wiring of control cabinets."
+        },
+        "PH-TESDA-EIM-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "NC II covers residential wiring up to 600 volts; it does not name this competency."
+        },
+        "PH-TESDA-EIM-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "scope_verbatim",
+              "code": null,
+              "text": "A candidate who has achieved all these competencies is qualified to be: a. Industrial Electrician b. Electrical Leadman, or c. Electrical Foreman"
+            },
+            {
+              "module_index": 12,
+              "field": "title_verbatim",
+              "code": "ELC741304",
+              "text": "Perform roughing-in and wiring activities for three-phase distribution system for power, lighting and motor control panel."
+            }
+          ],
+          "note": "The qualification names 'Industrial Electrician' as its occupation; the core unit names three-phase distribution for power, lighting and motor control panels.",
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ELEC-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Commercial Electrical Installation"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TAFENSW-UEE30820": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Core units cover 'general electrical installations' without naming industrial or commercial installation."
+        }
+      }
+    },
+    {
+      "competency_id": "protection_earthing",
+      "label": "Protection, earthing and switchboards",
+      "cells": {
+        "NYSC-COURSE-064": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's five published module headings."
+        },
+        "LK-CGTTI-POWER-ELEC": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "The wiring exercise names switches, relays and contactors, but no stored line names protection, earthing or switchboards."
+        },
+        "IN-DGT-CTS-ELEC-V3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": "PSS/N9495",
+              "text": "Plan and prepare Earthing installation."
+            },
+            {
+              "module_index": 24,
+              "field": "title_verbatim",
+              "code": "PSS/N9502",
+              "text": "Examine the faults and carry out repairing of circuit breakers."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Earthing installation and circuit-breaker repair; switchboards are not named"
+        },
+        "PH-TESDA-EIM-NC2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "title_verbatim",
+              "code": "ELC741302",
+              "text": "Install electrical protective devices for distribution, power, lighting, auxiliary, lightning protection and grounding systems"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Protective devices and grounding systems; switchboards are not named"
+        },
+        "PH-TESDA-EIM-NC3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "'Motor control panel' installation is named, but not protection, earthing or switchboards."
+        },
+        "SG-ITE-HNITEC-ELEC-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Electrical Switchboard"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Switchboard circuits and equipment; protection and earthing are not named"
+        },
+        "AU-TAFENSW-UEE30820": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": "UEEEL0003",
+              "text": "Arrange circuits, control and protection for electrical installations"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Circuit arrangement, control and protection; earthing and switchboards are not named"
+        }
+      }
+    },
+    {
+      "competency_id": "motors_control",
+      "label": "Motors and motor control/starters",
+      "cells": {
+        "NYSC-COURSE-064": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Industrial Electrical Installation (Motor weekends. Controlling System)",
+              "display_text": "Industrial Electrical Installation (Motor Controlling System)"
+            }
+          ],
+          "note": "The heading names a motor controlling system within industrial installation.",
+          "coverage": "PARTIAL",
+          "supported_component": "Motor controlling system only (named within the industrial installation heading); motors themselves are not named"
+        },
+        "LK-CGTTI-POWER-ELEC": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 8,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Motor control and motor starters"
+            },
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Maintenance of electrical installation, motors, generators, transformers"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-ELEC-V3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 14,
+              "field": "title_verbatim",
+              "code": "PSS/N9499",
+              "text": "Execute testing, and maintenance of DC machines and motor starters."
+            },
+            {
+              "module_index": 16,
+              "field": "title_verbatim",
+              "code": "PSS/N9500",
+              "text": "Plan, execute commissioning and evaluate performance of AC motors. Execute testing, and maintenance of AC motors and starters."
+            },
+            {
+              "module_index": 20,
+              "field": "title_verbatim",
+              "code": "PSS/N9408",
+              "text": "Perform speed control of AC and DC motors by using solid state devices."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-EIM-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "NC II covers residential wiring up to 600 volts; it does not name this competency."
+        },
+        "PH-TESDA-EIM-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 14,
+              "field": "title_verbatim",
+              "code": "ELC741306",
+              "text": "Install, assemble, test and maintain motor control system."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Motor control systems only; motors themselves are not named"
+        },
+        "SG-ITE-HNITEC-ELEC-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Electrical Motor & Control"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TAFENSW-UEE30820": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 19,
+              "field": "title_verbatim",
+              "code": "UEEEL0024",
+              "text": "Test and connect alternating current (a.c.) rotating machines"
+            },
+            {
+              "module_index": 8,
+              "field": "title_verbatim",
+              "code": "UEEEL0019",
+              "text": "Solve problems in direct current (d.c.) machines"
+            }
+          ],
+          "note": "Unit titles name a.c. rotating machines and d.c. machines rather than motors.",
+          "coverage": "PARTIAL",
+          "supported_component": "a.c. rotating machines and d.c. machines (motors); motor control or starters are not named"
+        }
+      }
+    },
+    {
+      "competency_id": "generators_transformers",
+      "label": "Generators, alternators and transformers",
+      "cells": {
+        "NYSC-COURSE-064": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Repair and Service Motor Generator"
+            }
+          ],
+          "note": "Names a motor generator; transformers and alternators are not named.",
+          "coverage": "PARTIAL",
+          "supported_component": "Motor generator only; transformers are not named"
+        },
+        "LK-CGTTI-POWER-ELEC": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Maintenance of electrical installation, motors, generators, transformers"
+            },
+            {
+              "module_index": 13,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Maintenance of motors and generators"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-ELEC-V3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "title_verbatim",
+              "code": "PSS/N9498",
+              "text": "Execute testing, evaluate performance and maintenance of transformer."
+            },
+            {
+              "module_index": 17,
+              "field": "title_verbatim",
+              "code": "PSS/N9405",
+              "text": "Plan, execute testing, evaluate performance and carry out maintenance of Alternator / MG set."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-EIM-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "NC II covers residential wiring up to 600 volts; it does not name this competency."
+        },
+        "PH-TESDA-EIM-NC3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named; the qualification explicitly excludes electrical motors/generators repair technicians."
+        },
+        "SG-ITE-HNITEC-ELEC-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to maintain transformer installation, electrical motor and drive system installation as well as select electrical motor for application."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Transformer installation only; generators/alternators are not named"
+        },
+        "AU-TAFENSW-UEE30820": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "title_verbatim",
+              "code": "UEEEL0025",
+              "text": "Test and connect transformers"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Transformers only; generators/alternators are not named"
+        }
+      }
+    },
+    {
+      "competency_id": "rewinding",
+      "label": "Motor and transformer rewinding",
+      "cells": {
+        "NYSC-COURSE-064": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "'Repair and Service Motor Generator' does not name motor or transformer rewinding."
+        },
+        "LK-CGTTI-POWER-ELEC": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Rewinding motors, transformers"
+            },
+            {
+              "module_index": 14,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Rewinding of motors, transformers"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-ELEC-V3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 15,
+              "field": "title_verbatim",
+              "code": "PSS/N9507",
+              "text": "Distinguish, organise and perform motor winding."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Motor winding only; transformer rewinding is not named"
+        },
+        "PH-TESDA-EIM-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "NC II covers residential wiring up to 600 volts; it does not name this competency."
+        },
+        "PH-TESDA-EIM-NC3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named; the qualification explicitly excludes electrical motors/generators repair technicians."
+        },
+        "SG-ITE-HNITEC-ELEC-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "None of the stored core, specialisation or internship modules names this; life-skills and elective modules are not stored."
+        },
+        "AU-TAFENSW-UEE30820": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "None of the 27 stored core units names this; the 74 specialty units are not stored."
+        }
+      }
+    },
+    {
+      "competency_id": "plc",
+      "label": "PLC and programmable control",
+      "cells": {
+        "NYSC-COURSE-064": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "P.L.C."
+            }
+          ],
+          "note": "Supports general PLC coverage only; no specific programming capability is inferred.",
+          "coverage": "FULL"
+        },
+        "LK-CGTTI-POWER-ELEC": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 9,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Electronic and Programmable Logic Control (PLC)"
+            },
+            {
+              "module_index": 15,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Installation, repairs and maintenance, Programmable Logic Control (PLC), pneumatic, hydraulic control production machineries"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-ELEC-V3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No outcome names PLC; relay logic-control circuits appear only in the trade syllabus, which is not stored."
+        },
+        "PH-TESDA-EIM-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "NC II covers residential wiring up to 600 volts; it does not name this competency."
+        },
+        "PH-TESDA-EIM-NC3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "'Data measurement and control system' is named, but not PLC or programmable control."
+        },
+        "SG-ITE-HNITEC-ELEC-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 11,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to program PLC and smart relays as well as install intelligent building control system and smart home control system."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TAFENSW-UEE30820": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "None of the 27 stored core units names this; the 74 specialty units are not stored."
+        }
+      }
+    },
+    {
+      "competency_id": "testing_fault_finding",
+      "label": "Testing, inspection and fault finding",
+      "cells": {
+        "NYSC-COURSE-064": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No heading names testing, inspection or fault finding; none is inferred from 'Industrial Electrical Installation' or 'Repair and Service'."
+        },
+        "LK-CGTTI-POWER-ELEC": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "'Handling of electrical measuring instruments' is named; testing, inspection or fault finding is not."
+        },
+        "IN-DGT-CTS-ELEC-V3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 21,
+              "field": "title_verbatim",
+              "code": "PSS/N9501",
+              "text": "Detect the faults and troubleshoot inverter, stabilizer, battery charger, emergency light and UPS etc."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Fault detection and troubleshooting of inverters, stabilizers, battery chargers, emergency lights and UPS; installation testing or inspection is not named"
+        },
+        "PH-TESDA-EIM-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No unit names testing, inspection or fault finding."
+        },
+        "PH-TESDA-EIM-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 14,
+              "field": "title_verbatim",
+              "code": "ELC741306",
+              "text": "Install, assemble, test and maintain motor control system."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Testing of motor control systems only; fault finding is not named"
+        },
+        "SG-ITE-HNITEC-ELEC-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to install, maintain, inspect and test electrical installation in residential and office premises."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Inspection and testing of electrical installations; fault finding is not named"
+        },
+        "AU-TAFENSW-UEE30820": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 20,
+              "field": "title_verbatim",
+              "code": "UEEEL0014",
+              "text": "Isolate, test and troubleshoot low voltage electrical circuits"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "solar_batteries_ev",
+      "label": "Solar PV, batteries and EV charging",
+      "cells": {
+        "NYSC-COURSE-064": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's five published module headings."
+        },
+        "LK-CGTTI-POWER-ELEC": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored line names solar PV, batteries or EV charging."
+        },
+        "IN-DGT-CTS-ELEC-V3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": "PSS/N9493",
+              "text": "Install, test and maintenance of batteries and solar cell."
+            },
+            {
+              "module_index": 22,
+              "field": "title_verbatim",
+              "code": "PSS/N9409",
+              "text": "Plan, assemble and install solar panel."
+            },
+            {
+              "module_index": 25,
+              "field": "title_verbatim",
+              "code": "PSS/N9410",
+              "text": "Install and troubleshoot Electric Vehicle charging stations."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-EIM-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "NC II covers residential wiring up to 600 volts; it does not name this competency."
+        },
+        "PH-TESDA-EIM-NC3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "NC III covers three-phase distribution, data measurement and control, and motor control systems; it does not name this competency."
+        },
+        "SG-ITE-HNITEC-ELEC-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 8,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Solar Photovoltaic System"
+            },
+            {
+              "module_index": 10,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to manage electric vehicle supply equipment and maintain energy storage system."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TAFENSW-UEE30820": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "'Identify, shut down and restart systems with alternate supplies' does not name solar PV, batteries or EV charging. None of the 27 stored core units names this; the 74 specialty units are not stored."
+        }
+      }
+    },
+    {
+      "competency_id": "security_building",
+      "label": "Security, alarm and building systems",
+      "cells": {
+        "NYSC-COURSE-064": {
+          "status": "INSUFFICIENT_DATA",
+          "evidence": [],
+          "note": "The heading 'Security Solutions' is too ambiguous to establish particular security, alarm or building systems, so this cell is not assessed."
+        },
+        "LK-CGTTI-POWER-ELEC": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored line names security, alarm or building systems."
+        },
+        "IN-DGT-CTS-ELEC-V3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "LO22 names emergency lights among troubleshooting tasks, but no outcome names security, alarm or building systems."
+        },
+        "PH-TESDA-EIM-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "NC II covers residential wiring up to 600 volts; it does not name this competency."
+        },
+        "PH-TESDA-EIM-NC3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "NC III covers three-phase distribution, data measurement and control, and motor control systems; it does not name this competency."
+        },
+        "SG-ITE-HNITEC-ELEC-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to manage, inspect and test commercial electrical installation, maintain temporary electrical supply system as well as manage smart monitored emergency lighting and fire alarm system."
+            },
+            {
+              "module_index": 11,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to program PLC and smart relays as well as install intelligent building control system and smart home control system."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Fire alarm and intelligent building control systems; security systems are not named"
+        },
+        "AU-TAFENSW-UEE30820": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "None of the 27 stored core units names this; the 74 specialty units are not stored."
+        }
+      }
+    },
+    {
+      "competency_id": "electrical_safety",
+      "label": "Electrical safety and workplace health",
+      "cells": {
+        "NYSC-COURSE-064": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No heading names electrical safety or workplace health; none is inferred from the installation headings."
+        },
+        "LK-CGTTI-POWER-ELEC": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Electrical safety."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Electrical safety only; workplace health is not named"
+        },
+        "IN-DGT-CTS-ELEC-V3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": "PSS/N9490",
+              "text": "Undertake basic safety practices, firefighting, elementary first aid, disposal of waste material, handling and maintenance of trade tools."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "General workshop safety practices, firefighting and first aid; electrical safety is not named"
+        },
+        "PH-TESDA-EIM-NC2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": "500311108",
+              "text": "Practice occupational health and safety procedures"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Occupational health and safety procedures; electrical safety is not named"
+        },
+        "PH-TESDA-EIM-NC3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "None of the NC III basic, common or core units names safety or workplace health."
+        },
+        "SG-ITE-HNITEC-ELEC-2Y": {
+          "status": "INSUFFICIENT_DATA",
+          "evidence": [],
+          "note": "No stored module names safety, but the course's life-skills, cross-disciplinary and elective modules are not stored, so safety coverage cannot be assessed reliably."
+        },
+        "AU-TAFENSW-UEE30820": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 12,
+              "field": "title_verbatim",
+              "code": "UEECD0016",
+              "text": "Document and apply measures to control WHS risks associated with electrotechnology work"
+            },
+            {
+              "module_index": 17,
+              "field": "title_verbatim",
+              "code": "UEECD0007",
+              "text": "Apply work health and safety regulations, codes and practices in the workplace"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    }
+  ],
+  "category_components": {
+    "principles_circuits": [
+      "electrical principles / circuit theory (treated as one component)"
+    ],
+    "domestic_wiring": [
+      "domestic or residential wiring installation"
+    ],
+    "industrial_installation": [
+      "industrial or commercial installation"
+    ],
+    "protection_earthing": [
+      "protection",
+      "earthing",
+      "switchboards"
+    ],
+    "motors_control": [
+      "motors",
+      "motor control or starters"
+    ],
+    "generators_transformers": [
+      "generators or alternators",
+      "transformers"
+    ],
+    "rewinding": [
+      "motor rewinding",
+      "transformer rewinding"
+    ],
+    "plc": [
+      "PLC / programmable control"
+    ],
+    "testing_fault_finding": [
+      "testing or inspection",
+      "fault finding"
+    ],
+    "solar_batteries_ev": [
+      "solar PV",
+      "batteries or energy storage",
+      "EV charging"
+    ],
+    "security_building": [
+      "security systems",
+      "alarm systems",
+      "building systems"
+    ],
+    "electrical_safety": [
+      "electrical safety",
+      "workplace health and safety"
+    ]
+  },
+  "methodology": {
+    "DOCUMENTED": "The cited stored text explicitly names the competency. Coverage records whether it names every component of the category (FULL) or only some (PARTIAL).",
+    "FULL": "The cited evidence supports the competency as labelled: every listed component of the category is explicitly named.",
+    "PARTIAL": "Only a component of the category, or a lower level of activity (for example awareness or identification), is explicitly documented; supported_component records what is supported.",
+    "NOT_EXPLICIT": "The competency is not documented within the available, assessed scope of the source.",
+    "INSUFFICIENT_DATA": "Missing or incomplete material (uncaptured wording, unstored modules, or uncollected sibling standards) prevents a reliable assessment.",
+    "caution": "None of these statuses proves that a competency is or is not actually taught.",
+    "areas_rule": "Areas to Investigate list competencies that the NYSC description does not name (NOT_EXPLICIT) and that at least two distinct comparator records, from at least two different countries, document with FULL coverage. PARTIAL evidence is shown but not counted."
+  }
+}

@@ -1,0 +1,705 @@
+{
+  "description": "Hand-curated competency mapping for NYSC COURSE-082 Secretary against four official comparator records. A DOCUMENTED cell cites exact stored text; absence from published text is not proof that content is not taught.",
+  "schema_version": "1.0.0",
+  "created_date": "2026-10-18",
+  "nysc_course_id": "COURSE-082",
+  "method": "The NYSC column was assessed independently against COURSE-082's own governed headings. Broad headings do not establish more specific competencies, and coverage is not inferred from programme titles.",
+  "methodology": {
+    "DOCUMENTED": "The cited stored text explicitly names the competency. Coverage records whether it names every component of the category (FULL) or only some (PARTIAL).",
+    "FULL": "The cited evidence supports the competency as labelled: every listed component of the category is explicitly named.",
+    "PARTIAL": "Only a component of the category, or a lower level of activity, is explicitly documented; supported_component records what is supported.",
+    "NOT_EXPLICIT": "The competency is not documented within the available, assessed scope of the source.",
+    "INSUFFICIENT_DATA": "Missing or incomplete material prevents a reliable assessment.",
+    "caution": "None of these statuses proves that a competency is or is not actually taught.",
+    "areas_rule": "Areas to Investigate list competencies that the NYSC description does not name (NOT_EXPLICIT) and that at least two distinct comparator records, from at least two different countries, document with FULL coverage. PARTIAL evidence is shown but not counted.",
+    "decisions": [
+      "National occupational standards and qualifications are not presented as delivered programmes.",
+      "Elective evidence is identified in cell notes and is not assumed to be completed by every learner."
+    ]
+  },
+  "statuses": [
+    "DOCUMENTED",
+    "NOT_EXPLICIT",
+    "INSUFFICIENT_DATA"
+  ],
+  "category_components": {
+    "office_management": [
+      "Office management and administration"
+    ],
+    "meeting_coordination": [
+      "Meeting coordination"
+    ],
+    "filing_records": [
+      "Filing and records management"
+    ],
+    "mail_handling": [
+      "Mail handling"
+    ],
+    "business_correspondence": [
+      "Business correspondence"
+    ],
+    "office_software": [
+      "Office software and document production"
+    ],
+    "internet_email": [
+      "Internet and e-mail"
+    ],
+    "travel_arrangements": [
+      "Travel arrangements"
+    ],
+    "workplace_communication": [
+      "Workplace communication and client relations"
+    ],
+    "diary_appointments": [
+      "Diary, schedules and appointments"
+    ]
+  },
+  "columns": [
+    {
+      "column_id": "NYSC-COURSE-082",
+      "kind": "nysc",
+      "nysc_course_id": "COURSE-082",
+      "short_label": "NYSC COURSE-082"
+    },
+    {
+      "column_id": "LK-TVEC-NCS-SECRETARY-2023",
+      "kind": "benchmark",
+      "record_id": "LK-TVEC-NCS-SECRETARY-2023",
+      "short_label": "TVEC/NAITA · Sri Lanka"
+    },
+    {
+      "column_id": "IN-DGT-CTS-SECRETARIAL-EN-V2",
+      "kind": "benchmark",
+      "record_id": "IN-DGT-CTS-SECRETARIAL-EN-V2",
+      "short_label": "DGT · India"
+    },
+    {
+      "column_id": "SG-ITE-HNITEC-BUSADMIN-2Y",
+      "kind": "benchmark",
+      "record_id": "SG-ITE-HNITEC-BUSADMIN-2Y",
+      "short_label": "ITE · Singapore"
+    },
+    {
+      "column_id": "AU-TGA-BSB30120",
+      "kind": "benchmark",
+      "record_id": "AU-TGA-BSB30120",
+      "short_label": "training.gov.au · Australia"
+    }
+  ],
+  "human_reviewed": false,
+  "competencies": [
+    {
+      "competency_id": "office_management",
+      "label": "Office management and administration",
+      "cells": {
+        "NYSC-COURSE-082": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Basic - The role of a Secretary"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "the secretary's role; office management tasks are not named"
+        },
+        "LK-TVEC-NCS-SECRETARY-2023": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": "K74S001U08",
+              "text": "Manage the office"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-SECRETARIAL-EN-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 13,
+              "field": "title_verbatim",
+              "code": "MEP/N9431",
+              "text": "Label the office layout."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "office layout; management is not named"
+        },
+        "SG-ITE-HNITEC-BUSADMIN-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to perform business administrative tasks related to records management handling office procurement and coordinating appointments and meetings."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-BSB30120": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 11,
+              "field": "title_verbatim",
+              "code": "BSBOPS301",
+              "text": "Maintain business resources"
+            }
+          ],
+          "note": "This is a Group E elective; availability is not guaranteed.",
+          "coverage": "PARTIAL",
+          "supported_component": "business resources; overall office management is not named"
+        }
+      }
+    },
+    {
+      "competency_id": "meeting_coordination",
+      "label": "Meeting coordination",
+      "cells": {
+        "NYSC-COURSE-082": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Secretarial Duties for Meeting, Mailing, Communicating, Handling corrspondence, Traveling etc course which will be held on weekends.",
+              "display_text": "Secretarial Duties for Meeting, Mailing, Communicating, Handling corrspondence, Traveling etc"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "meeting duties; coordination is not named"
+        },
+        "LK-TVEC-NCS-SECRETARY-2023": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": "K74S001U04",
+              "text": "Coordinate meetings"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-SECRETARIAL-EN-V2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored learning-outcome title or outcome explicitly names meeting coordination."
+        },
+        "SG-ITE-HNITEC-BUSADMIN-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to perform business administrative tasks related to records management handling office procurement and coordinating appointments and meetings."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-BSB30120": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored core or mapping-relevant elective unit explicitly names meetings."
+        }
+      }
+    },
+    {
+      "competency_id": "filing_records",
+      "label": "Filing and records management",
+      "cells": {
+        "NYSC-COURSE-082": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No governed NYSC heading names filing or records management."
+        },
+        "LK-TVEC-NCS-SECRETARY-2023": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": "K74S001U06",
+              "text": "Develop and maintain a filing system"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-SECRETARIAL-EN-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 14,
+              "field": "title_verbatim",
+              "code": "MEP/N0216",
+              "text": "Identify all types of file requirements & implement the same on MS-Power point."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "file requirements; records management is not named"
+        },
+        "SG-ITE-HNITEC-BUSADMIN-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to perform business administrative tasks related to records management handling office procurement and coordinating appointments and meetings."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-BSB30120": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 16,
+              "field": "title_verbatim",
+              "code": "BSBINS309",
+              "text": "Maintain business records"
+            }
+          ],
+          "note": "This is a Group G elective; availability is not guaranteed.",
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "mail_handling",
+      "label": "Mail handling",
+      "cells": {
+        "NYSC-COURSE-082": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Secretarial Duties for Meeting, Mailing, Communicating, Handling corrspondence, Traveling etc course which will be held on weekends.",
+              "display_text": "Secretarial Duties for Meeting, Mailing, Communicating, Handling corrspondence, Traveling etc"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-SECRETARY-2023": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": "K74S001U01",
+              "text": "Handle mail"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-SECRETARIAL-EN-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 19,
+              "field": "title_verbatim",
+              "code": "MEP/N9433",
+              "text": "Observe all types of postal services."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "postal services; broader incoming and outgoing mail handling is not named"
+        },
+        "SG-ITE-HNITEC-BUSADMIN-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored module title or objective explicitly names mail handling."
+        },
+        "AU-TGA-BSB30120": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "title_verbatim",
+              "code": "BSBINS202",
+              "text": "Handle receipt and dispatch of information"
+            }
+          ],
+          "note": "This is a Group E elective; availability is not guaranteed.",
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "business_correspondence",
+      "label": "Business correspondence",
+      "cells": {
+        "NYSC-COURSE-082": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Secretarial Duties for Meeting, Mailing, Communicating, Handling corrspondence, Traveling etc course which will be held on weekends.",
+              "display_text": "Secretarial Duties for Meeting, Mailing, Communicating, Handling corrspondence, Traveling etc"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-SECRETARY-2023": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": "K74S001U02",
+              "text": "Handle correspondence"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-SECRETARIAL-EN-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 20,
+              "field": "title_verbatim",
+              "code": "MEP/N0241, MEP/N0243, MEP/N1201, MEP/N0216",
+              "text": "Prepare all types of letters and correspondence."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-BUSADMIN-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored module title or objective explicitly names business correspondence."
+        },
+        "AU-TGA-BSB30120": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 8,
+              "field": "title_verbatim",
+              "code": "BSBTEC301",
+              "text": "Design and produce business documents"
+            }
+          ],
+          "note": "This is a Group A elective; availability is not guaranteed.",
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "office_software",
+      "label": "Office software and document production",
+      "cells": {
+        "NYSC-COURSE-082": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No governed NYSC heading names office software or document production."
+        },
+        "LK-TVEC-NCS-SECRETARY-2023": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No competency-unit title explicitly names office software; software appears only in detailed supporting text outside the stored unit-title scope."
+        },
+        "IN-DGT-CTS-SECRETARIAL-EN-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": "MEP/N0201,MEP/N0202",
+              "text": "Identify small circle for S & Z, Large circle for SW/large loop & small loop /understand MS-Word by using all tools."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-BUSADMIN-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to perform simple automation on their internal business administrative tasks to bring about an improvement in productivity."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "simple business-process automation; document-production software is not named"
+        },
+        "AU-TGA-BSB30120": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": "BSBTEC201",
+              "text": "Use business software applications"
+            }
+          ],
+          "note": "This is a Group A elective; availability is not guaranteed.",
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "internet_email",
+      "label": "Internet and e-mail",
+      "cells": {
+        "NYSC-COURSE-082": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No governed NYSC heading names internet or e-mail."
+        },
+        "LK-TVEC-NCS-SECRETARY-2023": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No competency-unit title explicitly names internet or e-mail; electronic mail appears only in detailed supporting text outside the stored unit-title scope."
+        },
+        "IN-DGT-CTS-SECRETARIAL-EN-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 17,
+              "field": "outcome_verbatim",
+              "code": "MEP/N0216",
+              "text": "Ensure internet service provider and set internet connectivity. Find information online through search engine. Create an e-mail account though web browser. Correspond documents through e-mail."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-BUSADMIN-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored module title or objective explicitly names internet or e-mail."
+        },
+        "AU-TGA-BSB30120": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": "BSBTEC202",
+              "text": "Use digital technologies to communicate in a work environment"
+            }
+          ],
+          "note": "This is a Group A elective; availability is not guaranteed.",
+          "coverage": "PARTIAL",
+          "supported_component": "digital communication; internet and e-mail are not explicitly named"
+        }
+      }
+    },
+    {
+      "competency_id": "travel_arrangements",
+      "label": "Travel arrangements",
+      "cells": {
+        "NYSC-COURSE-082": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Secretarial Duties for Meeting, Mailing, Communicating, Handling corrspondence, Traveling etc course which will be held on weekends.",
+              "display_text": "Secretarial Duties for Meeting, Mailing, Communicating, Handling corrspondence, Traveling etc"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-SECRETARY-2023": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": "K74S001U05",
+              "text": "Make travel arrangements"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-SECRETARIAL-EN-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 20,
+              "field": "outcome_verbatim",
+              "code": "MEP/N0241, MEP/N0243, MEP/N1201, MEP/N0216",
+              "text": "Follow dictation in shorthand from books, newspapers, magazines and transcription of the same on Computer. Fill up of various online forms by using internet. Perform online tasks - rail, bus, air tickets and booking of hotels etc."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-BUSADMIN-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored module title or objective explicitly names travel arrangements."
+        },
+        "AU-TGA-BSB30120": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored core or mapping-relevant elective unit explicitly names travel arrangements."
+        }
+      }
+    },
+    {
+      "competency_id": "workplace_communication",
+      "label": "Workplace communication and client relations",
+      "cells": {
+        "NYSC-COURSE-082": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Secretarial Duties for Meeting, Mailing, Communicating, Handling corrspondence, Traveling etc course which will be held on weekends.",
+              "display_text": "Secretarial Duties for Meeting, Mailing, Communicating, Handling corrspondence, Traveling etc"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-SECRETARY-2023": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 8,
+              "field": "title_verbatim",
+              "code": "K74S001BU1",
+              "text": "Practice workplace communication and interpersonal relations"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-SECRETARIAL-EN-V2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored learning-outcome title explicitly names general workplace communication or client relations."
+        },
+        "SG-ITE-HNITEC-BUSADMIN-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students will be able to apply sales techniques to sell to client needs and develop strong sales relationships."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "client sales relationships; general workplace communication is not named"
+        },
+        "AU-TGA-BSB30120": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": "BSBXCM301",
+              "text": "Engage in workplace communication"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "diary_appointments",
+      "label": "Diary, schedules and appointments",
+      "cells": {
+        "NYSC-COURSE-082": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No governed NYSC heading names diary, schedules or appointments."
+        },
+        "LK-TVEC-NCS-SECRETARY-2023": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": "K74S001U07",
+              "text": "Maintain diary and appointments"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-SECRETARIAL-EN-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 13,
+              "field": "outcome_verbatim",
+              "code": "MEP/N9431",
+              "text": "Design various layouts of office with space management. Carry out edit menu, range, formulas and functions in MS-Excel. Identify dispatch and diary register with the entry procedure- and practical use. Insert charts from given data in MS-Excel. Manage and manipulate data creating formulas. Follow dictation in shorthand from the books and transcription of the same on Computer"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "diary-register procedure; appointments and schedules are not named"
+        },
+        "SG-ITE-HNITEC-BUSADMIN-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to perform business administrative tasks related to records management handling office procurement and coordinating appointments and meetings."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-BSB30120": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 12,
+              "field": "title_verbatim",
+              "code": "BSBOPS303",
+              "text": "Organise schedules"
+            }
+          ],
+          "note": "This is a Group E elective; availability is not guaranteed.",
+          "coverage": "FULL"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,624 @@
+{
+  "description": "Hand-curated competency mapping for NYSC COURSE-011 Baker against three official comparator records. A DOCUMENTED cell cites exact stored text; absence from published text is not proof that content is not taught.",
+  "schema_version": "1.0.0",
+  "nysc_course_id": "COURSE-011",
+  "created_date": "2026-10-18",
+  "method": "The NYSC column was assessed against COURSE-011's own governed headings. Comparator cells are shared between the full-time and part-time Baker courses. Broad headings do not establish more specific competencies, and coverage is not inferred from programme titles.",
+  "human_reviewed": false,
+  "statuses": [
+    "DOCUMENTED",
+    "NOT_EXPLICIT",
+    "INSUFFICIENT_DATA"
+  ],
+  "columns": [
+    {
+      "column_id": "NYSC-COURSE-011",
+      "kind": "nysc",
+      "nysc_course_id": "COURSE-011",
+      "short_label": "NYSC COURSE-011"
+    },
+    {
+      "column_id": "IN-DGT-CTS-BAKER-V2",
+      "kind": "benchmark",
+      "record_id": "IN-DGT-CTS-BAKER-V2",
+      "short_label": "DGT · India"
+    },
+    {
+      "column_id": "SG-ITE-HNITEC-PASTRY-2Y",
+      "kind": "benchmark",
+      "record_id": "SG-ITE-HNITEC-PASTRY-2Y",
+      "short_label": "ITE · Singapore"
+    },
+    {
+      "column_id": "AU-TGA-FBP30521",
+      "kind": "benchmark",
+      "record_id": "AU-TGA-FBP30521",
+      "short_label": "training.gov.au · Australia"
+    }
+  ],
+  "category_components": {
+    "bread_products": [
+      "producing bread products"
+    ],
+    "cake_products": [
+      "producing cake products"
+    ],
+    "pastry_products": [
+      "producing pastry products"
+    ],
+    "bakery_management": [
+      "managing or scheduling bakery production"
+    ],
+    "food_safety_hygiene": [
+      "food-safety or hygiene procedures"
+    ],
+    "workplace_safety": [
+      "general workplace or occupational safety"
+    ],
+    "artisan_bread": [
+      "producing artisan bread"
+    ],
+    "biscuits_cookies": [
+      "producing biscuits or cookies"
+    ],
+    "chocolate_confectionery": [
+      "producing chocolate, candies or confectionery"
+    ],
+    "desserts_puddings": [
+      "producing desserts or puddings"
+    ]
+  },
+  "methodology": {
+    "DOCUMENTED": "The cited stored text explicitly names the competency. Coverage records whether it names every component of the category (FULL) or only some (PARTIAL).",
+    "FULL": "The cited evidence supports the competency as labelled: every listed component of the category is explicitly named.",
+    "PARTIAL": "Only a component of the category, or a lower level of activity, is explicitly documented; supported_component records what is supported.",
+    "NOT_EXPLICIT": "The competency is not documented within the available, assessed scope of the source.",
+    "INSUFFICIENT_DATA": "Missing or incomplete material prevents a reliable assessment.",
+    "caution": "None of these statuses proves that a competency is or is not actually taught.",
+    "areas_rule": "Areas to Investigate list competencies that the NYSC description does not name (NOT_EXPLICIT) and that at least two distinct comparator records, from at least two different countries, document with FULL coverage. PARTIAL evidence is shown but not counted.",
+    "decisions": [
+      "No independent Sri Lankan comparator with published modules was verified; the matrix has no Sri Lankan column.",
+      "The ITE PDF's inconsistent course-specific elective titles and objectives are excluded from mapping decisions.",
+      "Australian elective evidence is identified in its cell note; an elective is not assumed to be completed by every learner."
+    ]
+  },
+  "competencies": [
+    {
+      "competency_id": "bread_products",
+      "label": "Bread products",
+      "cells": {
+        "NYSC-COURSE-011": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Produce Bread"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-BAKER-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": "FIC/N5007",
+              "text": "Prepare different types of khari, puff, bakery bread and Rusk making bakery bread making."
+            },
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": "FIC/N5007",
+              "text": "Prepare hotel- ready baked different bread products."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-PASTRY-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to prepare different types of bread products."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-FBP30521": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": "FBPRBK3005",
+              "text": "Produce basic bread products"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "cake_products",
+      "label": "Cake products",
+      "cells": {
+        "NYSC-COURSE-011": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Produce Cake"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-BAKER-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": "FIC/N5007",
+              "text": "Plan &prepare different types of cakes."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-PASTRY-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to prepare, decorate and display a specified range of baked and creamed cakes."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-FBP30521": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 8,
+              "field": "title_verbatim",
+              "code": "FBPRBK3008",
+              "text": "Produce sponge cake products"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "pastry_products",
+      "label": "Pastry products",
+      "cells": {
+        "NYSC-COURSE-011": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Produce Pastry"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-BAKER-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 8,
+              "field": "title_verbatim",
+              "code": "FIC/N5007",
+              "text": "Prepare different types of pastries."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-PASTRY-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to prepare specified range of different types of pastry products as well as prepare, evaluate and store pastry fillings."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-FBP30521": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": "FBPRBK3001",
+              "text": "Produce laminated pastry products"
+            },
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": "FBPRBK3002",
+              "text": "Produce non laminated pastry products"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "bakery_management",
+      "label": "Bakery production management",
+      "cells": {
+        "NYSC-COURSE-011": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Baker Management"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-BAKER-V2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "The stored learning outcomes do not explicitly name bakery management or production scheduling."
+        },
+        "SG-ITE-HNITEC-PASTRY-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 7,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to create a menu for pastry and dessert products and plan promotional strategies to market the products."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Menu creation and product promotion; bakery production management is not named"
+        },
+        "AU-TGA-FBP30521": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 12,
+              "field": "title_verbatim",
+              "code": "FBPRBK3015",
+              "text": "Schedule and produce bakery production"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "food_safety_hygiene",
+      "label": "Food safety and hygiene",
+      "cells": {
+        "NYSC-COURSE-011": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No governed NYSC heading names food safety or hygiene."
+        },
+        "IN-DGT-CTS-BAKER-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": "FIC/N9001",
+              "text": "Maintain hygiene and cleanliness of bakery, bakery equipment &utensils following safety precaution."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-PASTRY-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to apply knowledge and skills to follow workplace safety and food safety procedures and standards according to regulations, practice good personal hygiene, handle and store food safely and maintain cleanliness of utensils, equipment, service and storage areas and attend to accidents and emergencies."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-FBP30521": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": "FBPFSY2002",
+              "text": "Apply food safety procedures"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "workplace_safety",
+      "label": "Workplace safety",
+      "cells": {
+        "NYSC-COURSE-011": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No governed NYSC heading names workplace or occupational safety."
+        },
+        "IN-DGT-CTS-BAKER-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": "FIC/N9001",
+              "text": "Maintain hygiene and cleanliness of bakery, bakery equipment &utensils following safety precaution."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-PASTRY-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to apply knowledge and skills to follow workplace safety and food safety procedures and standards according to regulations, practice good personal hygiene, handle and store food safely and maintain cleanliness of utensils, equipment, service and storage areas and attend to accidents and emergencies."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-FBP30521": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 14,
+              "field": "title_verbatim",
+              "code": "FBPWHS2001",
+              "text": "Participate in work health and safety processes"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "artisan_bread",
+      "label": "Artisan bread production",
+      "cells": {
+        "NYSC-COURSE-011": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Produce Bread"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Bread production; artisan methods are not named"
+        },
+        "IN-DGT-CTS-BAKER-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": "FIC/N5007",
+              "text": "Prepare hotel- ready baked different bread products."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Bread products; artisan methods are not named"
+        },
+        "SG-ITE-HNITEC-PASTRY-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 13,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to prepare a specified range of artisanal bread using advanced techniques."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-FBP30521": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 19,
+              "field": "title_verbatim",
+              "code": "FBPRBK4001",
+              "text": "Produce artisan bread products"
+            }
+          ],
+          "note": "This is a published Group A elective, not a compulsory core unit.",
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "biscuits_cookies",
+      "label": "Biscuits and cookies",
+      "cells": {
+        "NYSC-COURSE-011": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No governed NYSC heading names biscuits or cookies."
+        },
+        "IN-DGT-CTS-BAKER-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 9,
+              "field": "title_verbatim",
+              "code": "FIC/N5019",
+              "text": "Prepare different types of biscuits."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-PASTRY-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Cookies appear only in an elective objective whose title conflicts with the course-structure table; that inconsistent elective evidence is excluded."
+        },
+        "AU-TGA-FBP30521": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 9,
+              "field": "title_verbatim",
+              "code": "FBPRBK3009",
+              "text": "Produce biscuit and cookie products"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "chocolate_confectionery",
+      "label": "Chocolate and confectionery",
+      "cells": {
+        "NYSC-COURSE-011": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No governed NYSC heading names chocolate, candies or confectionery."
+        },
+        "IN-DGT-CTS-BAKER-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "title_verbatim",
+              "code": "FIC/N7101, FIC/N7102",
+              "text": "Prepare different types of confectioneries."
+            },
+            {
+              "module_index": 11,
+              "field": "title_verbatim",
+              "code": "FIC/N7101, FIC/N7102",
+              "text": "Prepare different types of candies, chocolate s and toffees."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-PASTRY-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 11,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to produce chocolate and sugar showpieces, confectionery products and contemporary-plated desserts."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-FBP30521": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No core or elective unit title explicitly names chocolate, candies or confectionery."
+        }
+      }
+    },
+    {
+      "competency_id": "desserts_puddings",
+      "label": "Desserts and puddings",
+      "cells": {
+        "NYSC-COURSE-011": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No governed NYSC heading names desserts or puddings."
+        },
+        "IN-DGT-CTS-BAKER-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 12,
+              "field": "title_verbatim",
+              "code": "FIC/N8516",
+              "text": "Prepare puddings & Indian sweets."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-PASTRY-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to prepare a specified range of desserts and ice-creams."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-FBP30521": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "title_verbatim",
+              "code": "FBPRBK3010",
+              "text": "Produce cake and pudding products"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    }
+  ]
+}

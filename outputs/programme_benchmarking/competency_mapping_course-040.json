@@ -1,0 +1,1045 @@
+{
+  "description": "Hand-curated competency mapping for NYSC COURSE-040 Automobile Mechanic (part-time) against its linked benchmarking records. A DOCUMENTED cell cites the exact stored module, outcome, or unit text that names the competency. NOT_EXPLICIT means the available description does not name it, not that it is absent from teaching. INSUFFICIENT_DATA means the stored curriculum is unavailable or outside the record's documented scope.",
+  "schema_version": "1.0.0",
+  "nysc_course_id": "COURSE-040",
+  "created_date": "2026-10-17",
+  "method": "The NYSC column was assessed by hand against COURSE-040's own five published module headings only; a broad heading does not establish a more specific competency. Comparator cells are reused unchanged from competency_mapping_course-005.json because the comparator records and their cited text are identical. Coverage (FULL/PARTIAL) and the status definitions are recorded in 'methodology'; category components are in 'category_components'. Corrections from the 2026-10-17 evidence audit were applied. The CGTTI column was reassessed on 2026-10-17 after its published curriculum was captured.",
+  "human_reviewed": false,
+  "statuses": [
+    "DOCUMENTED",
+    "NOT_EXPLICIT",
+    "INSUFFICIENT_DATA"
+  ],
+  "columns": [
+    {
+      "column_id": "NYSC-COURSE-040",
+      "kind": "nysc",
+      "nysc_course_id": "COURSE-040",
+      "short_label": "NYSC COURSE-040"
+    },
+    {
+      "column_id": "LK-CGTTI-AUTO-TECH",
+      "kind": "benchmark",
+      "record_id": "LK-CGTTI-AUTO-TECH",
+      "short_label": "CGTTI · Sri Lanka"
+    },
+    {
+      "column_id": "IN-DGT-CTS-MMV-V2",
+      "kind": "benchmark",
+      "record_id": "IN-DGT-CTS-MMV-V2",
+      "short_label": "DGT · India"
+    },
+    {
+      "column_id": "PH-TESDA-ASER-NC2",
+      "kind": "benchmark",
+      "record_id": "PH-TESDA-ASER-NC2",
+      "short_label": "TESDA · Philippines"
+    },
+    {
+      "column_id": "SG-ITE-HNITEC-AUTO-2Y",
+      "kind": "benchmark",
+      "record_id": "SG-ITE-HNITEC-AUTO-2Y",
+      "short_label": "ITE · Singapore"
+    },
+    {
+      "column_id": "AU-TAFENSW-AUR30620",
+      "kind": "benchmark",
+      "record_id": "AU-TAFENSW-AUR30620",
+      "short_label": "TAFE NSW · Australia"
+    }
+  ],
+  "competencies": [
+    {
+      "competency_id": "engine_systems",
+      "label": "Engine systems (petrol and diesel)",
+      "cells": {
+        "NYSC-COURSE-040": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Overhead Engine (Petrol and Diesel)"
+            }
+          ],
+          "note": "Published as 'Overhead Engine (Petrol and Diesel)'. The heading names petrol and diesel engines; 'Overhead' is not explained, so no specific engine competency (such as overhead-valve or overhaul work) is inferred from it.",
+          "coverage": "FULL"
+        },
+        "LK-CGTTI-AUTO-TECH": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Engine: History of Automobile, Tools and Equipments, Workshop Safety, Type of Engines and related parts, Fuel Supply System (petrol, diesel gas), Starting System."
+            },
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Production training in Engine Section. (dismantling, inspection, overhauling and assembling of Diesel Engines and Fuel Injection Pumps, timing, mounting and testing)"
+            },
+            {
+              "module_index": 8,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Parts of the Engine, Engine Assembling, Cooling and Lubrication Systems, Repairing sub units (cylinder head, water pump, oil pump, oil filter and oil cooler) – (04 Months)"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-MMV-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": "ASC/N1405",
+              "text": "Dismantle & assemble of Engine from vehicle (LMV/HMV) along with other accessories."
+            },
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": "ASC/N1405",
+              "text": "Overhaul Engine and check functionality."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-ASER-NC2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 18,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Diagnose and overhaul engine mechanical system"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-AUTO-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Engine Technology"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TAFENSW-AUR30620": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": "AURTTE104",
+              "text": "Inspect and service engines"
+            },
+            {
+              "module_index": 9,
+              "field": "title_verbatim",
+              "code": "AURLTE102",
+              "text": "Diagnose and repair light vehicle engines"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "transmission_drivetrain",
+      "label": "Transmission and drivetrain",
+      "cells": {
+        "NYSC-COURSE-040": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Transmission System (Manual and Auto)"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-CGTTI-AUTO-TECH": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Chassis: Clutch, Manual Gearbox, Front & Rear Axles, Assembling of Brake system (pneumatic & hydraulic), Steering System, Suspension System."
+            },
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Production training in heavy vehicles at Chassis section. (Overhauling and assembling of Clutch, Automatic and Manual gearboxes, Differential, Front axle, Rear axle, Manual and Power assisted steering, Wheel & Tyres, Suspension)"
+            },
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Chassis, Clutch, Conventional Gearbox, Propeller Shaft and Joints, Brake, Steering. – (04 Months)"
+            },
+            {
+              "module_index": 9,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Production training in light vehicles at Vehicle Repair Section (running repairs, servicing, Emission testing. overhauling of engine, transmission, brake and suspension)"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-MMV-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 15,
+              "field": "title_verbatim",
+              "code": "ASC/N1404, ASC/N1405",
+              "text": "Plan & perform maintenance, diagnosis and servicing of transmission system."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-ASER-NC2": {
+          "status": "INSUFFICIENT_DATA",
+          "evidence": [],
+          "note": "This record is the Engine Repair NC II regulation only; TESDA's Chassis Repair and Electrical Repair regulations have not been collected."
+        },
+        "SG-ITE-HNITEC-AUTO-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Chassis & Drivetrain Technology"
+            },
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Chassis & Drivetrain Systems"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TAFENSW-AUR30620": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No transmission or drivetrain unit is among the stored core units. Only the 20 core units are stored; the 16 specialty units are not, so this may be covered there."
+        }
+      }
+    },
+    {
+      "competency_id": "steering",
+      "label": "Steering systems",
+      "cells": {
+        "NYSC-COURSE-040": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Steering System (Power and Manual)"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-CGTTI-AUTO-TECH": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Chassis: Clutch, Manual Gearbox, Front & Rear Axles, Assembling of Brake system (pneumatic & hydraulic), Steering System, Suspension System."
+            },
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Production training in heavy vehicles at Chassis section. (Overhauling and assembling of Clutch, Automatic and Manual gearboxes, Differential, Front axle, Rear axle, Manual and Power assisted steering, Wheel & Tyres, Suspension)"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-MMV-V2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Y2-LO2 names the 'Vehicle Control System' but does not name steering."
+        },
+        "PH-TESDA-ASER-NC2": {
+          "status": "INSUFFICIENT_DATA",
+          "evidence": [],
+          "note": "This record is the Engine Repair NC II regulation only; TESDA's Chassis Repair and Electrical Repair regulations have not been collected."
+        },
+        "SG-ITE-HNITEC-AUTO-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to interpret diagnostic results and rectify faults on vehicle steering include SRS Airbag braking and transmission systems on petrol- or diesel-powered vehicle as well as service alternative powered vehicle’s powertrain."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TAFENSW-AUR30620": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": "AURLTD104",
+              "text": "Diagnose and repair light vehicle steering systems"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "brakes",
+      "label": "Braking systems",
+      "cells": {
+        "NYSC-COURSE-040": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Breaking System"
+            }
+          ],
+          "note": "Published as 'Breaking System'.",
+          "coverage": "FULL"
+        },
+        "LK-CGTTI-AUTO-TECH": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Chassis: Clutch, Manual Gearbox, Front & Rear Axles, Assembling of Brake system (pneumatic & hydraulic), Steering System, Suspension System."
+            },
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Chassis, Clutch, Conventional Gearbox, Propeller Shaft and Joints, Brake, Steering. – (04 Months)"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-MMV-V2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored learning outcome names brakes; Y2-LO2 'Vehicle Control System' does not name them."
+        },
+        "PH-TESDA-ASER-NC2": {
+          "status": "INSUFFICIENT_DATA",
+          "evidence": [],
+          "note": "This record is the Engine Repair NC II regulation only; TESDA's Chassis Repair and Electrical Repair regulations have not been collected."
+        },
+        "SG-ITE-HNITEC-AUTO-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to service and replace automotive drivetrain and chassis components, including the manual transmission clutch and brakes, on a vehicle."
+            },
+            {
+              "module_index": 10,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to interpret diagnostic results and rectify faults on vehicle steering include SRS Airbag braking and transmission systems on petrol- or diesel-powered vehicle as well as service alternative powered vehicle’s powertrain."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TAFENSW-AUR30620": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": "AURTTB101",
+              "text": "Inspect and service braking systems"
+            },
+            {
+              "module_index": 19,
+              "field": "title_verbatim",
+              "code": "AURLTB103",
+              "text": "Diagnose and repair light vehicle hydraulic braking systems"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "suspension",
+      "label": "Suspension systems",
+      "cells": {
+        "NYSC-COURSE-040": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Suspension System"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-CGTTI-AUTO-TECH": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Chassis: Clutch, Manual Gearbox, Front & Rear Axles, Assembling of Brake system (pneumatic & hydraulic), Steering System, Suspension System."
+            },
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Production training in heavy vehicles at Chassis section. (Overhauling and assembling of Clutch, Automatic and Manual gearboxes, Differential, Front axle, Rear axle, Manual and Power assisted steering, Wheel & Tyres, Suspension)"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-MMV-V2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored learning outcome names suspension."
+        },
+        "PH-TESDA-ASER-NC2": {
+          "status": "INSUFFICIENT_DATA",
+          "evidence": [],
+          "note": "This record is the Engine Repair NC II regulation only; TESDA's Chassis Repair and Electrical Repair regulations have not been collected."
+        },
+        "SG-ITE-HNITEC-AUTO-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored module title or objective names suspension."
+        },
+        "AU-TAFENSW-AUR30620": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 8,
+              "field": "title_verbatim",
+              "code": "AURLTD105",
+              "text": "Diagnose and repair light vehicle suspension systems"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "vehicle_electrical",
+      "label": "Vehicle electrical systems (general)",
+      "cells": {
+        "NYSC-COURSE-040": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No published heading names electrical systems; unlike COURSE-005, this course does not list an 'Electrical System' module."
+        },
+        "LK-CGTTI-AUTO-TECH": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Auto Electrical: Starting System, Electric System, Charging System, Battery maintenance."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-MMV-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 22,
+              "field": "title_verbatim",
+              "code": "ASC/N1438",
+              "text": "Troubleshoot electrical components of vehicle and ascertain repair."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-ASER-NC2": {
+          "status": "INSUFFICIENT_DATA",
+          "evidence": [],
+          "note": "This record is the Engine Repair NC II regulation only; TESDA's Chassis Repair and Electrical Repair regulations have not been collected."
+        },
+        "SG-ITE-HNITEC-AUTO-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Automotive Electrical & Electronic Systems"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TAFENSW-AUR30620": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 11,
+              "field": "title_verbatim",
+              "code": "AURETR112",
+              "text": "Test and repair basic electrical circuits"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Basic electrical circuits only (test and repair)"
+        }
+      }
+    },
+    {
+      "competency_id": "starting_charging",
+      "label": "Starting and charging systems",
+      "cells": {
+        "NYSC-COURSE-040": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's five published module headings."
+        },
+        "LK-CGTTI-AUTO-TECH": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Auto Electrical: Starting System, Electric System, Charging System, Battery maintenance."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-MMV-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 11,
+              "field": "title_verbatim",
+              "code": "ASC/N9436",
+              "text": "Carryout overhauling of Alternator and Starter Motor."
+            },
+            {
+              "module_index": 20,
+              "field": "title_verbatim",
+              "code": "ASC/N1438",
+              "text": "Carryout overhauling of charging system."
+            },
+            {
+              "module_index": 21,
+              "field": "title_verbatim",
+              "code": "ASC/N1438",
+              "text": "Carryout overhauling of starting system."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-ASER-NC2": {
+          "status": "INSUFFICIENT_DATA",
+          "evidence": [],
+          "note": "This record is the Engine Repair NC II regulation only; TESDA's Chassis Repair and Electrical Repair regulations have not been collected."
+        },
+        "SG-ITE-HNITEC-AUTO-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to interpret, measure, and identify faults in vehicle auxiliary systems, including the starter, charging, and lighting systems."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TAFENSW-AUR30620": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 14,
+              "field": "title_verbatim",
+              "code": "AURETR129",
+              "text": "Diagnose and repair charging systems"
+            },
+            {
+              "module_index": 15,
+              "field": "title_verbatim",
+              "code": "AURETR130",
+              "text": "Diagnose and repair starting systems"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "engine_management",
+      "label": "Engine management and electronic control",
+      "cells": {
+        "NYSC-COURSE-040": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "'Overhead Engine (Petrol and Diesel)' does not name engine management or electronic control."
+        },
+        "LK-CGTTI-AUTO-TECH": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 11,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Training in Automobile Electronics Training Section via simulators, EFI, ABS, SRS, Vehicle Stable Control System and fault diagnosing by using Auto Scanners."
+            },
+            {
+              "module_index": 12,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Electronic Ignition System, Fuel Injection System, Emission Control, Common Rail Electronic Diesel Supply System. – ( 02 Months )"
+            }
+          ],
+          "note": "Fuel injection and electronic ignition systems do not by themselves establish engine management or ECU work.",
+          "coverage": "PARTIAL",
+          "supported_component": "Electronic fuel injection (EFI), electronic ignition and common-rail electronic diesel supply systems; engine management is not named"
+        },
+        "IN-DGT-CTS-MMV-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 18,
+              "field": "title_verbatim",
+              "code": "ASC/N1438",
+              "text": "Plan & service Electronic Control Unit and check functionality."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Electronic control unit servicing only; engine management is not named"
+        },
+        "PH-TESDA-ASER-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "The three core units cover cooling and lubrication, intake and exhaust, and engine mechanical systems; none names engine management."
+        },
+        "SG-ITE-HNITEC-AUTO-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "The module titled 'Engine & Powertrain Management' has the objective: \"On completion of the module, students should be able to use systematic fault-finding techniques to identify faults in engine systems, as well as service engine mechanical components and the emission control system.\" It names fault-finding, engine mechanical servicing and emission control, not engine management or electronic control."
+        },
+        "AU-TAFENSW-AUR30620": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 12,
+              "field": "title_verbatim",
+              "code": "AURETR123",
+              "text": "Diagnose and repair spark ignition engine management systems"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Spark-ignition engine management systems; electronic control is not named separately"
+        }
+      }
+    },
+    {
+      "competency_id": "emission_control",
+      "label": "Emission control",
+      "cells": {
+        "NYSC-COURSE-040": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's five published module headings."
+        },
+        "LK-CGTTI-AUTO-TECH": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 12,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Electronic Ignition System, Fuel Injection System, Emission Control, Common Rail Electronic Diesel Supply System. – ( 02 Months )"
+            },
+            {
+              "module_index": 9,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Production training in light vehicles at Vehicle Repair Section (running repairs, servicing, Emission testing. overhauling of engine, transmission, brake and suspension)"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-MMV-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "title_verbatim",
+              "code": "ASC/N9435",
+              "text": "Monitor emission of vehicle and execute different operation to obtain optimum pollution as per emission norms."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-ASER-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "'Diagnose and repair intake and exhaust system' does not name emission control."
+        },
+        "SG-ITE-HNITEC-AUTO-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 7,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to use systematic fault-finding techniques to identify faults in engine systems, as well as service engine mechanical components and the emission control system."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TAFENSW-AUR30620": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "title_verbatim",
+              "code": "AURLTZ101",
+              "text": "Diagnose and repair light vehicle emission control systems"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "fault_diagnosis",
+      "label": "Fault diagnosis",
+      "cells": {
+        "NYSC-COURSE-040": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's five published module headings."
+        },
+        "LK-CGTTI-AUTO-TECH": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 11,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Training in Automobile Electronics Training Section via simulators, EFI, ABS, SRS, Vehicle Stable Control System and fault diagnosing by using Auto Scanners."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Scanner-based fault diagnosing within the automobile-electronics section (EFI, ABS, SRS, vehicle stability control); diagnosis across other vehicle systems is not named"
+        },
+        "IN-DGT-CTS-MMV-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 12,
+              "field": "title_verbatim",
+              "code": "ASC/N1404, ASC/N1405, ASC/N1438",
+              "text": "Diagnose & rectify the defects in LMV/HMV to ensure functionality of vehicle."
+            },
+            {
+              "module_index": 19,
+              "field": "title_verbatim",
+              "code": "ASC/N1438",
+              "text": "Diagnose & rectify the defects in vehicle to ensure functionality of vehicle."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-ASER-NC2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 16,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Diagnose and repair engine cooling and lubrication system"
+            },
+            {
+              "module_index": 17,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Diagnose and repair intake and exhaust system"
+            },
+            {
+              "module_index": 18,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Diagnose and overhaul engine mechanical system"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Diagnosis of engine cooling/lubrication, intake/exhaust and engine mechanical systems only"
+        },
+        "SG-ITE-HNITEC-AUTO-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 12,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to use systematic fault-finding techniques to diagnose and identify issues in the engine drivetrain and electrical systems. They will be equipped with skills in using On-Board Diagnostic equipment to rectify faults in the vehicle’s powertrain systems."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TAFENSW-AUR30620": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": "AURTTA118",
+              "text": "Develop and carry out diagnostic test strategies"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "high_voltage_ev",
+      "label": "High-voltage and electric vehicle systems",
+      "cells": {
+        "NYSC-COURSE-040": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's five published module headings."
+        },
+        "LK-CGTTI-AUTO-TECH": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No published line names hybrid, electric-vehicle or high-voltage systems; 'Electric System' under Auto Electrical does not establish high-voltage EV servicing."
+        },
+        "IN-DGT-CTS-MMV-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 25,
+              "field": "title_verbatim",
+              "code": "ASC/N9439",
+              "text": "Identify and study of Electric Vehicle components and Performance comparison of EV and IC engine vehicles. (Components of Electric Vehicle such as Motor, Motor Controller, Battery Pack, Battery Management System, Charging System etc.)"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Awareness/identification of electric vehicle components and EV-versus-IC comparison; not high-voltage servicing"
+        },
+        "PH-TESDA-ASER-NC2": {
+          "status": "INSUFFICIENT_DATA",
+          "evidence": [],
+          "note": "This record is the Engine Repair NC II regulation only; TESDA's Chassis Repair and Electrical Repair regulations have not been collected."
+        },
+        "SG-ITE-HNITEC-AUTO-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 8,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "High Voltage Vehicle System & Safety"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TAFENSW-AUR30620": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Hybrid and electric vehicle units are listed as specialty units on the TAFE NSW page. Only the 20 core units are stored; the 16 specialty units are not, so this may be covered there."
+        }
+      }
+    },
+    {
+      "competency_id": "workplace_safety",
+      "label": "Workplace safety and health",
+      "cells": {
+        "NYSC-COURSE-040": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's five published module headings."
+        },
+        "LK-CGTTI-AUTO-TECH": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Engine: History of Automobile, Tools and Equipments, Workshop Safety, Type of Engines and related parts, Fuel Supply System (petrol, diesel gas), Starting System."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-MMV-V2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Y1-LO1 mentions 'following safety precautions' within a measuring task; no stored outcome is a safety competency."
+        },
+        "PH-TESDA-ASER-NC2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": "400311216",
+              "text": "Practice occupational safety and health policies and procedures"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-AUTO-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Workplace Safety, Health & Environment"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TAFENSW-AUR30620": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": "AURASA102",
+              "text": "Follow safe working practices in an automotive workplace"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    }
+  ],
+  "comparator_cells_reused_from": "competency_mapping_course-005.json",
+  "category_components": {
+    "engine_systems": [
+      "engine systems (the 'petrol and diesel' qualifier describes the NYSC course and is not a separate component)"
+    ],
+    "transmission_drivetrain": [
+      "transmission/drivetrain (treated as one component: the transmission is part of the drivetrain)"
+    ],
+    "steering": [
+      "steering systems"
+    ],
+    "brakes": [
+      "braking systems"
+    ],
+    "suspension": [
+      "suspension systems"
+    ],
+    "vehicle_electrical": [
+      "vehicle electrical systems"
+    ],
+    "starting_charging": [
+      "starting systems",
+      "charging systems"
+    ],
+    "engine_management": [
+      "engine management",
+      "electronic control"
+    ],
+    "emission_control": [
+      "emission control"
+    ],
+    "fault_diagnosis": [
+      "vehicle fault diagnosis across systems"
+    ],
+    "high_voltage_ev": [
+      "high-voltage systems work",
+      "electric vehicle systems"
+    ],
+    "workplace_safety": [
+      "workplace safety and health"
+    ]
+  },
+  "methodology": {
+    "DOCUMENTED": "The cited stored text explicitly names the competency. Coverage records whether it names every component of the category (FULL) or only some (PARTIAL).",
+    "FULL": "The cited evidence supports the competency as labelled: every listed component of the category is explicitly named.",
+    "PARTIAL": "Only a component of the category, or a lower level of activity (for example awareness or identification), is explicitly documented; supported_component records what is supported.",
+    "NOT_EXPLICIT": "The competency is not documented within the available, assessed scope of the source.",
+    "INSUFFICIENT_DATA": "Missing or incomplete material (uncaptured wording, unstored modules, or uncollected sibling standards) prevents a reliable assessment.",
+    "caution": "None of these statuses proves that a competency is or is not actually taught.",
+    "areas_rule": "Areas to Investigate list competencies that the NYSC description does not name (NOT_EXPLICIT) and that at least two distinct comparator records, from at least two different countries, document with FULL coverage. PARTIAL evidence is shown but not counted."
+  }
+}

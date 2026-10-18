@@ -1,0 +1,113 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-beauty",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Comparator records for NYSC Beautician and Bridal Dresser courses. Records describe documented curriculum only and do not establish equivalence, quality or labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its official source by a researcher before publication.",
+  "country_group_gaps": {},
+  "records": [
+    {
+      "record_id": "LK-TVEC-NCS-BEAUTICIAN-2020", "country": "Sri Lanka", "country_group": "sri_lanka",
+      "institution": "Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority", "record_type": "occupational_standard", "delivering_provider_verified": false,
+      "title_verbatim": "BEAUTICIAN", "sector": "Beauty and personal care", "framework": "NVQ (Sri Lanka)", "level_as_published": "NVQ Levels 3 and 4 packaging", "duration_as_published": null, "entry_as_published": null,
+      "modules": [
+        {"published_ref":"1","code":"O93S001U01","title_verbatim":"Maintain salon environment","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"2","code":"O93S001 U02","title_verbatim":"Perform Reception Duties","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"3","code":"O93S001 U03","title_verbatim":"Perform client consultation","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"4","code":"O93S001 U04","title_verbatim":"Perform removal of superfluous hair","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"5","code":"O93S001 U05","title_verbatim":"Perform Make-up activities","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"6","code":"O93S001 U06","title_verbatim":"Perform Nail Care Services","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"7","code":"O93S001 U07","title_verbatim":"Perform skin care treatments","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"8","code":"O93S001 U08","title_verbatim":"Manage a beauty salon","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"9","code":"O93S001 U09","title_verbatim":"Practice occupational health and safety measures at salon environment","outcome_verbatim":null,"group":"List of Competency Units"}
+      ],
+      "content_summary_paraphrased": null, "content_fidelity": "verbatim_whitespace_normalised", "curriculum_detail": "full",
+      "source": {"url":"https://nvq.gov.lk/report_inquires/NCS_Request_Pdf.php?nm=O93S001_3_NCS.pdf","document_type":"pdf","document_sha256":"f6eadf3b899f04f49993ab92e8d84067d0086f4a4e2a6b4b75729d89a43edf62","publication_or_revision":"Second Revision, 2020; next revision stated as 2023","retrieved_date":"2026-10-18"},
+      "language":"English", "verification":{"status":"source_inspected_pending_human_review","method":"All nine competency-unit titles and codes were extracted in published order from the List of Competency Units (PDF page 6; printed page 1); qualification packaging was checked on the same page.","human_reviewed":false},
+      "licence_note":"Copyright © 2020 TVEC; source states all rights reserved.",
+      "notes":["This is a national occupational standard and curriculum, not evidence that a named provider delivers the programme.","The source's stated next-revision date has passed; no newer Beautician standard was verified on 2026-10-18."]
+    },
+    {
+      "record_id":"IN-DGT-CTS-COSMETOLOGY-V2","country":"India","country_group":"developing_emerging","institution":"Directorate General of Training (DGT), Ministry of Skill Development & Entrepreneurship","record_type":"national_curriculum","delivering_provider_verified":false,
+      "title_verbatim":"COSMETOLOGY","sector":"Beauty & Wellness","framework":"NSQF (India)","level_as_published":"Level-3.5","duration_as_published":"One Year (1200 Hours + 150 hours OJT/Group Project)","entry_as_published":"Passed 10th class examination",
+      "modules":[
+        {"published_ref":"LO1","code":"BWS/N9002, BWS/N9003","title_verbatim":"Develop good appearance and behaviour, practice tasks as per industry standard and express good communication skill following safety precautions.","outcome_verbatim":null,"group":"Learning outcomes"},
+        {"published_ref":"LO2","code":"BWS/N9001","title_verbatim":"Prepare and maintain work area and maintain health and safety at the workplace.","outcome_verbatim":null,"group":"Learning outcomes"},
+        {"published_ref":"LO3","code":"BWS/N0105","title_verbatim":"Carry out epilation and depilation services. Illustrate and explain hair structure & hair growth cycle.","outcome_verbatim":null,"group":"Learning outcomes"},
+        {"published_ref":"LO4","code":"BWS/N0401","title_verbatim":"Carry out manicure and pedicure services. Explain anatomy of nail. Differentiate and identify nail disease nail disorders.","outcome_verbatim":null,"group":"Learning outcomes"},
+        {"published_ref":"LO5","code":"BWS/N0104, BWS/N0128","title_verbatim":"Carry out facial treatments for common skin problems. Illustrate and explain skin structure.","outcome_verbatim":null,"group":"Learning outcomes"},
+        {"published_ref":"LO6","code":"BWS/N2207, BWS/N0206","title_verbatim":"Carry out hair treatment for common hair problems. Illustrate and explain structure of hair.","outcome_verbatim":null,"group":"Learning outcomes"},
+        {"published_ref":"LO7","code":"BWS/N0207, BWS/N0205","title_verbatim":"Create basic haircuts using special cutting techniques.","outcome_verbatim":null,"group":"Learning outcomes"},
+        {"published_ref":"LO8","code":"BWS/N2201","title_verbatim":"Demonstrate basic yogic exercises for stamina building and correcting body posture.","outcome_verbatim":null,"group":"Learning outcomes"},
+        {"published_ref":"LO9","code":"BWS/N0106, BWS/N0301","title_verbatim":"Demonstrate day, evening, party & bridal makeup and explain effects of light on makeup.","outcome_verbatim":null,"group":"Learning outcomes"},
+        {"published_ref":"LO10","code":"BWS/N0208, BWS/N0205","title_verbatim":"Create traditional hair styles & hair designing with artificial aids and thermal gadgets.","outcome_verbatim":null,"group":"Learning outcomes"},
+        {"published_ref":"LO11","code":"BWS/N0209, BWS/N0210, BWS/N0211","title_verbatim":"Demonstrate hair colouring, perming, straightening, re-bonding & smoothening. Explain the knowledge of bonds.","outcome_verbatim":null,"group":"Learning outcomes"},
+        {"published_ref":"LO12","code":"BWS/N0127","title_verbatim":"Create bindi, heena & temporary tattoo designing, drape saree in different styles.","outcome_verbatim":null,"group":"Learning outcomes"}
+      ],
+      "content_summary_paraphrased":null,"content_fidelity":"verbatim_whitespace_normalised","curriculum_detail":"full",
+      "source":{"url":"https://dgt.gov.in/sites/default/files/2024-12/Cosmetology_CTS2.0_NSQF-3.5.pdf","document_type":"pdf","document_sha256":"c503272ce0c57b33a357026cd88f9bb7e09aa10c4a92efd12982324af9f958c8","publication_or_revision":"CTS 2.0; revised 2022; NSQF approval 2023","retrieved_date":"2026-10-18"},
+      "language":"English","verification":{"status":"source_inspected_pending_human_review","method":"All 12 learning outcomes were extracted in published order from section 5.1 (PDF page 13, printed page 10); level, duration and entry were checked in the General Information table.","human_reviewed":false},
+      "licence_note":"Government of India publication; reuse terms not checked.","notes":["This is a national curriculum, not a verified delivery by a named institution.","Only learning outcomes are stored; assessment criteria and detailed trade syllabus remain in the cited source."]
+    },
+    {
+      "record_id":"SG-ITE-HNITEC-BEAUTY-2Y","country":"Singapore","country_group":"developed","institution":"Institute of Technical Education (ITE)","record_type":"programme","delivering_provider_verified":true,
+      "title_verbatim":"HIGHER NITEC IN BEAUTY & WELLNESS MANAGEMENT (2 YEARS)","sector":"Beauty & Hair Services / Lifestyle & Wellness","framework":"ITE Higher Nitec (Singapore)","level_as_published":"Higher Nitec","duration_as_published":"24 months; Total: 68 credits","entry_as_published":"GCE 'O' level grades 1-7 in English Language and two other subjects; applicants must have sat for Mathematics; or eligible Nitec GPA pathway. A prescribed medical examination is required.",
+      "modules":[
+        {"published_ref":null,"code":null,"title_verbatim":"Makeup 1","outcome_verbatim":"On completion of this module, students should be able to provide day, evening, and camouflage makeup.","group":"Sector Foundation Modules"},
+        {"published_ref":null,"code":null,"title_verbatim":"Basic Nailcare","outcome_verbatim":"On completion of this module, students should be able to perform manicure and pedicure service, and provide hand and foot massage.","group":"Sector Foundation Modules"},
+        {"published_ref":null,"code":null,"title_verbatim":"Basic Facial Treatment 1","outcome_verbatim":"On completion of this module, students should be able to provide basic facial treatment and shape eyebrows.","group":"Sector Foundation Modules"},
+        {"published_ref":null,"code":null,"title_verbatim":"Social Media Marketing","outcome_verbatim":"On completion of this module, students should be able to prepare and execute e-marketing plans on social media platforms.","group":"Cluster Core Modules"},
+        {"published_ref":null,"code":null,"title_verbatim":"Customer Service & Selling","outcome_verbatim":"On completion of this module, students should be able to manage customer’s needs, wants, expectations and feedback, promote products and services, and provide service recovery to customers.","group":"Cluster Core Modules"},
+        {"published_ref":null,"code":null,"title_verbatim":"Makeup 2","outcome_verbatim":"On completion of this module, students should be able to provide bridal, stage and photography makeup.","group":"Cluster Core Modules"},
+        {"published_ref":null,"code":null,"title_verbatim":"Nutrition & Lifestyle for Wellness","outcome_verbatim":"On completion of this module, students should be able to conduct client consultation and recommend healthy diet and lifestyle plan.","group":"Specialisation Modules"},
+        {"published_ref":null,"code":null,"title_verbatim":"Essential Oil Studies","outcome_verbatim":"On completion of this module, students should be able to blend essential oils and provide aromatherapy facial treatment.","group":"Specialisation Modules"},
+        {"published_ref":null,"code":null,"title_verbatim":"Basic Facial Treatment 2","outcome_verbatim":"On completion of this module, students should be able to extract skin blockages and provide electrical facial treatments.","group":"Specialisation Modules"},
+        {"published_ref":null,"code":null,"title_verbatim":"Aesthetic Electrotherapy 1","outcome_verbatim":"On completion of this module, students should be able to provide electrotherapy for facial deep cleaning, skin tightening and lifting treatments and provide microdermabrasion for the face and neck area.","group":"Specialisation Modules"},
+        {"published_ref":null,"code":null,"title_verbatim":"Nail Art & Extensions","outcome_verbatim":"On completion of this module, students should be able to provide nail services, nail art, nail extensions and infills.","group":"Specialisation Modules"},
+        {"published_ref":null,"code":null,"title_verbatim":"Aesthetic Electrotherapy 2","outcome_verbatim":"On completion of this module, students should be able to provide electrotherapy treatments. For body toning/firming and slimming.","group":"Specialisation Modules"},
+        {"published_ref":null,"code":null,"title_verbatim":"Introduction to Cosmetic Science","outcome_verbatim":"On completion of this module, students should be able to prepare formulations for cosmetic products.","group":"Specialisation Modules"},
+        {"published_ref":null,"code":null,"title_verbatim":"Internship Programme","outcome_verbatim":"On completion of this module, students should be able to apply the skills and knowledge acquired to take on a range of job scope at the company.","group":"Internship Programme Module"},
+        {"published_ref":null,"code":null,"title_verbatim":"Waxing Treatment","outcome_verbatim":"On completion of this module, students should be able to perform hair removal waxing treatments.","group":"Electives (Course Specific)"},
+        {"published_ref":null,"code":null,"title_verbatim":"Basic Hairstyling","outcome_verbatim":"On completion of this module, students should be able to perform upstyles.","group":"Electives (Course Specific)"}
+      ],
+      "content_summary_paraphrased":null,"content_fidelity":"verbatim_whitespace_normalised","curriculum_detail":"partial",
+      "source":{"url":"https://isomer-user-content.by.gov.sg/145/ef4aeea7-4cd8-47a9-885f-2eb8ae55c19c/higher-nitec-in-beauty-wellness-management-(2-years).pdf","document_type":"pdf","document_sha256":"f583acb2ca6b7fdb70884b54cd0ac2658deb9cc261b53944ac1620e6dfc16580","publication_or_revision":"Last updated on 3 Dec 2024; current course page checked 2026-10-18","retrieved_date":"2026-10-18"},
+      "language":"English","verification":{"status":"source_inspected_pending_human_review","method":"Compulsory module titles and objectives, plus the two mapping-relevant course electives, were checked against the PDF linked by ITE's current official course page; duration and delivery campus were checked on that page.","human_reviewed":false},
+      "licence_note":"Singapore Government agency publication; reuse terms not checked.","notes":["ITE College East and full-time delivery are verified on the current official course page.","Only mapping-relevant course electives are stored; elective availability is subject to the college training schedule and is not assumed for every learner."]
+    },
+    {
+      "record_id":"AU-TGA-SHB40121","country":"Australia","country_group":"developed","institution":"Australian Government training.gov.au","record_type":"national_qualification","delivering_provider_verified":false,
+      "title_verbatim":"SHB40121 Certificate IV in Beauty Therapy","sector":"Hairdressing and Beauty Services","framework":"Australian Qualifications Framework (AQF)","level_as_published":"Certificate IV","duration_as_published":null,"entry_as_published":"There are no entry requirements for this qualification.",
+      "modules":[
+        {"published_ref":null,"code":"SHBBBOS007","title_verbatim":"Apply cosmetic tanning products","outcome_verbatim":null,"group":"Core units"},
+        {"published_ref":null,"code":"SHBBBOS008","title_verbatim":"Provide body massages","outcome_verbatim":null,"group":"Core units"},
+        {"published_ref":null,"code":"SHBBFAS004","title_verbatim":"Provide lash and brow services","outcome_verbatim":null,"group":"Core units"},
+        {"published_ref":null,"code":"SHBBFAS005","title_verbatim":"Provide facial treatments and skin care recommendations","outcome_verbatim":null,"group":"Core units"},
+        {"published_ref":null,"code":"SHBBHRS010","title_verbatim":"Provide waxing services","outcome_verbatim":null,"group":"Core units"},
+        {"published_ref":null,"code":"SHBBMUP009","title_verbatim":"Design and apply make-up","outcome_verbatim":null,"group":"Core units"},
+        {"published_ref":null,"code":"SHBBNLS007","title_verbatim":"Provide manicure and pedicare services","outcome_verbatim":null,"group":"Core units"},
+        {"published_ref":null,"code":"SHBBNLS011","title_verbatim":"Use electric file equipment for nail services","outcome_verbatim":null,"group":"Core units"},
+        {"published_ref":null,"code":"SHBBRES003","title_verbatim":"Research and apply beauty industry information","outcome_verbatim":null,"group":"Core units"},
+        {"published_ref":null,"code":"SHBBSSC001","title_verbatim":"Incorporate knowledge of skin structure and functions into beauty therapy","outcome_verbatim":null,"group":"Core units"},
+        {"published_ref":null,"code":"SHBBSSC002","title_verbatim":"Incorporate knowledge of body structures and functions into beauty therapy","outcome_verbatim":null,"group":"Core units"},
+        {"published_ref":null,"code":"SHBXCCS006","title_verbatim":"Promote healthy nutritional options in a beauty therapy context","outcome_verbatim":null,"group":"Core units"},
+        {"published_ref":null,"code":"SHBXCCS007","title_verbatim":"Conduct salon financial transactions","outcome_verbatim":null,"group":"Core units"},
+        {"published_ref":null,"code":"SHBXCCS008","title_verbatim":"Provide salon services to clients","outcome_verbatim":null,"group":"Core units"},
+        {"published_ref":null,"code":"SHBXIND003","title_verbatim":"Comply with organisational requirements within a personal services environment","outcome_verbatim":null,"group":"Core units"},
+        {"published_ref":null,"code":"SHBXWHS003","title_verbatim":"Apply safe hygiene, health and work practices","outcome_verbatim":null,"group":"Core units"},
+        {"published_ref":null,"code":"SIRXOSM002","title_verbatim":"Maintain ethical and professional standards when using social media and online platforms","outcome_verbatim":null,"group":"Core units"},
+        {"published_ref":null,"code":"SIRXSLS001","title_verbatim":"Sell to the retail customer","outcome_verbatim":null,"group":"Core units"},
+        {"published_ref":null,"code":"HLTINF005","title_verbatim":"Maintain infection prevention for skin penetration treatments","outcome_verbatim":null,"group":"Elective units - Group A"},
+        {"published_ref":null,"code":"SHBBINF002","title_verbatim":"Maintain infection control standards","outcome_verbatim":null,"group":"Elective units - Group A"},
+        {"published_ref":null,"code":"SHBBFAS006","title_verbatim":"Provide specialised facial treatments","outcome_verbatim":null,"group":"Elective units - Group B"},
+        {"published_ref":null,"code":"SHBBMUP010","title_verbatim":"Design and apply make-up for photography","outcome_verbatim":null,"group":"Elective units - Group B"},
+        {"published_ref":null,"code":"SHBBNLS010","title_verbatim":"Apply nail art","outcome_verbatim":null,"group":"Elective units - Group B"}
+      ],
+      "content_summary_paraphrased":null,"content_fidelity":"verbatim_whitespace_normalised","curriculum_detail":"partial",
+      "source":{"url":"https://training.gov.au/assets/SHB/SHB40121_R1.pdf","document_type":"pdf","document_sha256":"e4ff4197ab330acfb43bb309f7ddcd22ccb9e015aedc38f0a2e5e5907ac5a27d","publication_or_revision":"Release 1; generated 16 December 2021; current on training.gov.au when retrieved","retrieved_date":"2026-10-18"},
+      "language":"English","verification":{"status":"source_inspected_pending_human_review","method":"Qualification description, packaging rules, all 18 core units and mapping-relevant elective units were checked against the official four-page qualification PDF.","human_reviewed":false},
+      "licence_note":"Commonwealth of Australia publication; reuse terms not checked.","notes":["This is a national qualification, not a verified delivered programme; provider delivery and duration vary.","Elective units are choices, not evidence that every learner completes them; mappings identify elective evidence.","Only mapping-relevant electives are stored, so curriculum_detail is partial."]
+    }
+  ]
+}

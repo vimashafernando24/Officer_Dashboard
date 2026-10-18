@@ -1,0 +1,1244 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-pilot-rac",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Comparator records for NYSC COURSE-034 and COURSE-012 Refrigeration & Air Conditioning Technician. Records describe documented content only and do not establish labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its source by a researcher before it is used in analysis.",
+  "records": [
+    {
+      "record_id": "LK-CGTTI-RAC-MECH",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Ceylon German Technical Training Institute (CGTTI), Moratuwa",
+      "record_type": "programme",
+      "delivering_provider_verified": true,
+      "title_verbatim": "Refrigeration & Air Conditioning Mechanic",
+      "sector": "Refrigeration and Air Conditioning",
+      "framework": "NVQ (Sri Lanka)",
+      "level_as_published": null,
+      "duration_as_published": "Full Time, 42 Months",
+      "entry_as_published": "Age: Between 16 & 22 years. Education: Passed in 06 subjects at the G.C.E. (O/L) Examination including Sinhala/Tamil language (Medium of Instruction) and Mathematics in one sitting.",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Basic Training at CGTTI: Building Foundations for Excellence",
+          "outcome_verbatim": null,
+          "group": "First Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Thermodynamics principles",
+          "outcome_verbatim": null,
+          "group": "Second Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Fundamentals of Refrigeration and Air Condition",
+          "outcome_verbatim": null,
+          "group": "Second Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Refrigeration Cycle of Vapor Compression System & Enthalpy Charts",
+          "outcome_verbatim": null,
+          "group": "Second Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Safety and Safety precaution.",
+          "outcome_verbatim": null,
+          "group": "Second Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Tubing and Brazing",
+          "outcome_verbatim": null,
+          "group": "Second Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Measuring practical (Pressure, Temperature, Humidity)",
+          "outcome_verbatim": null,
+          "group": "Second Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Main components and accessories of Refrigeration Cycle",
+          "outcome_verbatim": null,
+          "group": "Third Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Basic Cycle Controls and measuring Current, Voltage, Resistance",
+          "outcome_verbatim": null,
+          "group": "Third Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Refrigerant Recovery, Recycling, and Environmental issues",
+          "outcome_verbatim": null,
+          "group": "Third Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Installation, Trouble Shootings, Maintenance, Servicing and Repairs of all type of Domestic, Commercial, Industrial Refrigerators and Air Conditioners",
+          "outcome_verbatim": null,
+          "group": "Third Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Prepare estimate for Repair & Maintenance work",
+          "outcome_verbatim": null,
+          "group": "Third Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Properties of Air/Psychometric Charts",
+          "outcome_verbatim": null,
+          "group": "Final Year (In-plant Training)"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Refrigerants and Refrigerants Oil",
+          "outcome_verbatim": null,
+          "group": "Final Year (In-plant Training)"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Types of Other Refrigeration system",
+          "outcome_verbatim": null,
+          "group": "Final Year (In-plant Training)"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Application of New Technology (Inverter, VRV, VRF)",
+          "outcome_verbatim": null,
+          "group": "Final Year (In-plant Training)"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Calculation, Heat Load for Air Conditioners",
+          "outcome_verbatim": null,
+          "group": "Final Year (In-plant Training)"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Calculation Cooling Load for Cold Rooms",
+          "outcome_verbatim": null,
+          "group": "Final Year (In-plant Training)"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://germantec.lk/index.php/refrigeration-air-conditioning-mechanic-2/",
+        "document_type": "html",
+        "document_sha256": null,
+        "publication_or_revision": "Page shows 'Updated: 02/01/2024'",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Text captured from the raw HTML of the official course page; every stored line was matched exactly against a line of that page, in published order.",
+        "human_reviewed": false
+      },
+      "licence_note": "Institutional web content; reuse terms not checked.",
+      "notes": [
+        "NVQ level is not stated on this course page and is left null. CGTTI's separate part-time 'Air Conditioning & Refrigeration stream' is not used and its NVQ certificate is not assumed to apply to this full-time course.",
+        "The First Year is published as general basic training; only its heading is stored, not the promotional description and highlights beneath it.",
+        "The Final Year is published as 'Final Year' with the sub-heading '(In-plant Training)'; both are kept in the group name.",
+        "Year durations are not stated; the page states 42 months in total.",
+        "Spelling is kept as published (e.g. 'Psychometric Charts', 'Refrigerants Oil', 'Air Condition').",
+        "The page's Objective and Overview statements are not stored as modules."
+      ]
+    },
+    {
+      "record_id": "IN-DGT-CTS-RAC-V2",
+      "country": "India",
+      "country_group": "developing_emerging",
+      "institution": "Directorate General of Training (DGT), Ministry of Skill Development & Entrepreneurship",
+      "record_type": "national_curriculum",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Refrigeration and Air Conditioning Technician",
+      "sector": "Refrigeration and Air Conditioning",
+      "framework": "NSQF (India)",
+      "level_as_published": "NSQF LEVEL - 4",
+      "duration_as_published": "Two Years (2400 hours + 300 hours OJT/Group Project)",
+      "entry_as_published": "Passed 10th class examination with Science and Mathematics or with vocational subject in same sector or its equivalent. Minimum Age 14 years as on first day of academic session.",
+      "modules": [
+        {
+          "published_ref": "LO1",
+          "code": "ELE/N1002",
+          "title_verbatim": "Identify trade related hazards and safety procedures following safety precautions.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO2",
+          "code": "ELE/N3114",
+          "title_verbatim": "Produce fitting jobs as per drawing (Range of operations: marking, sawing, filing, drilling, reaming, taping and dieing etc.).",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO3",
+          "code": "ELE/N3114",
+          "title_verbatim": "Produce Sheet metal components (range of operation – marking, metal cutting, bending, riveting and soldering etc.).",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO4",
+          "code": "ELE/N1002",
+          "title_verbatim": "Identify electrical safety. Join different wire, measure power, currents, volts and earth resistance etc. Connect single phase, 3 phase motors i.e. star and delta connections.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO5",
+          "code": "ELE/N3112",
+          "title_verbatim": "Identify the electronic components and their colour code i.e. transistor, capacitor, diode, amplifier, I.C and able to work soldering.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO6",
+          "code": "ELE/N3112",
+          "title_verbatim": "Perform gas welding, brazing, soldering observing related safety.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO7",
+          "code": "ELE/N3108",
+          "title_verbatim": "Identify RAC tools and equipment and recognise different parts of RAC system. Perform copper tube cutting, flaring, swaging, brazing.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO8",
+          "code": "ELE/N3112",
+          "title_verbatim": "Test mechanical & electrical components. Perform leak test, vacuuming, gas charging, wiring & installation of refrigerator.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO9",
+          "code": "ELE/N3112",
+          "title_verbatim": "Identify electrical and mechanical components of a refrigerator.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO10",
+          "code": "ELE/N3112",
+          "title_verbatim": "Test compressor motor terminal, start compressor Direct with relay & without relay, technique of flushing, leak testing, replacing capillary & filter drier, evacuation & gas charging.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO11",
+          "code": "ELE/N3112",
+          "title_verbatim": "Check components of frost-free refrigerator (electrical / mechanical), wiring of frost-free freeze & air distribution in refrigerator sector. Leak detection, evacuators & gas charging.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO12",
+          "code": "ELE/N3112",
+          "title_verbatim": "Dismantle, repair and assemble hermetic, fixed and variable speed compressor, and test performance.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO13",
+          "code": "ELE/N3112",
+          "title_verbatim": "Identify the terminals of sealed compressor and their wiring and measure current, volts, watts and use of DOL starter with different types of motors.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO14",
+          "code": "ELE/N3112",
+          "title_verbatim": "Perform selection of Hermetic compressor for different appliances, starting methods, testing controls & safety cut out used in sealed compressor.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO15",
+          "code": "ELE/N3114",
+          "title_verbatim": "Identify the components of control system of Inverter A.C and wiring of control system",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO16",
+          "code": "ELE/N3114",
+          "title_verbatim": "Perform servicing & de-scaling of condenser (internals &externals) used in different appliances",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO17",
+          "code": "CSC/N9413",
+          "title_verbatim": "Perform fitting & adjustment of drier, filter & refrigerant controls used in different refrigeration system.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO18",
+          "code": "CSC/N9414",
+          "title_verbatim": "Perform servicing of different evaporator used in different appliances.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO19",
+          "code": "ELE/N3114",
+          "title_verbatim": "Carry out Recovery and Recycling of Refrigerant used, alternative of CFC, HFC re-cover, transfer & handling of gas cylinders.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO20",
+          "code": "ELE/N3114",
+          "title_verbatim": "Retrofit CFC/HFC machine with ozone friendly refrigerant with understanding of the compatibility.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO21",
+          "code": "ELE/N3114",
+          "title_verbatim": "Pack thermal insulation and prevent cooling leakage.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO22",
+          "code": "ELE/N3114",
+          "title_verbatim": "Install window AC, test Electrical & electronics components & Fault diagnosis & remedial measures.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO23",
+          "code": "ELE/N3114",
+          "title_verbatim": "Perform servicing of electrical & electronic control test, installation, wiring, fault finding & remedial measures of different split AC.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO24",
+          "code": "ELE/N3114",
+          "title_verbatim": "Perform servicing of car AC. Fault diagnosis & remedial measures",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO25",
+          "code": "CSC/N9401",
+          "title_verbatim": "Read and apply engineering drawing for different application in the field of work.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO26",
+          "code": "CSC/N9402",
+          "title_verbatim": "Demonstrate basic mathematical concept and principles to perform practical operations. Understand and explain basic science in the field of study.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO27",
+          "code": "ELE/N3140",
+          "title_verbatim": "Carry out servicing, dismantling, checking different parts of different types of commercial compressor, re-placing worn out parts, Check lubrication system. Assemble & check performance.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO28",
+          "code": "ELE/N3140",
+          "title_verbatim": "Perform servicing of different types of water-cooled condenser.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO29",
+          "code": "ELE/N3141",
+          "title_verbatim": "Perform servicing and performance test of Cooling tower",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO30",
+          "code": "CSC/N9415",
+          "title_verbatim": "Conduct Servicing, backwash & re-generate Water treatment plant of circulating water.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO31",
+          "code": "ELE/N3140",
+          "title_verbatim": "Perform Fitting of expansion valve, adjustment of refrigerant flow according to heat load.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO32",
+          "code": "ELE/N3140",
+          "title_verbatim": "Perform servicing of evaporator & chillers.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO33",
+          "code": "CSC/N9416",
+          "title_verbatim": "Carry out servicing and retrofit of Water cooler and dispenser.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO34",
+          "code": "CSC/N9417",
+          "title_verbatim": "Service, retrofit of visible cooler and bottle cooler and test performance.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO35",
+          "code": "CSC/N9418",
+          "title_verbatim": "Conduct servicing of deep freezer and test performance.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO36",
+          "code": "CSC/N9419",
+          "title_verbatim": "Install, service, repair, gas charging and testing performance of Ice Cube machine.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO37",
+          "code": "CSC/N9420",
+          "title_verbatim": "Repair, servicing & retrofit of ice candy plant.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO38",
+          "code": "CSC/N9421",
+          "title_verbatim": "Perform servicing of Ice plant and evaporative condenser.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO39",
+          "code": "CSC/N9422",
+          "title_verbatim": "Perform Servicing and preventive maintenance of walk in cooler & cold storage.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO40",
+          "code": "ELE/N3140",
+          "title_verbatim": "Study psychrometric chart and measure psychrometric properties using psychrometric, anemometer i.e. DBT, WBT, RH, air flow etc.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO41",
+          "code": "ELE/N3141",
+          "title_verbatim": "Perform servicing of motor and blowers used in different air conditioning system.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO42",
+          "code": "ELE/N3141",
+          "title_verbatim": "Construct, install, pack thermal and acoustic insulation of different air ducts.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO43",
+          "code": "ELE/N3141",
+          "title_verbatim": "Perform servicing and maintenance of different types of air filters.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO44",
+          "code": "CSC/N9423",
+          "title_verbatim": "Perform servicing, installation, fault diagnosis and remedial measures on Package AC with Air cooled condenser.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO45",
+          "code": "ELE/N3140",
+          "title_verbatim": "Carry out Servicing, installation, fault diagnosis and remedial measures in Package A.C. with water cooled condenser.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO46",
+          "code": "ELE/N3141",
+          "title_verbatim": "Identify the various components of central AC test electrical components and make wiring. Servicing of A.H.U, damper, check air flow, De-scaling of condenser and CT servicing.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO47",
+          "code": "ELE/N3140",
+          "title_verbatim": "Pump down the system, top up oil and gas and check temperature and pressure.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO48",
+          "code": "ELE/N3140",
+          "title_verbatim": "Identify components of DX system. Test components, make wiring of DX system. Test leak and evacuate, gas charge the system and check the performance. Maintenance, trouble shoot and operate the plant.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO49",
+          "code": "ELE/N3141",
+          "title_verbatim": "Identify the different parts of VRF/VRV system, check and service VRF/VRV system.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO50",
+          "code": "ELE/N3141",
+          "title_verbatim": "Identify different parts of indirect or chillers system. Check components and make wiring, leak test, evacuate and gas charge/ top up. Servicing the plant and trouble shoot.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO51",
+          "code": "ELE/N3141",
+          "title_verbatim": "Identify chilled water pipe line. Servicing of dampers, FCU and water control valves.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO52",
+          "code": "ELE/N3141",
+          "title_verbatim": "Troubles shoot both Central A.C. plant DX and indirect system. Check different control system, installation of other major components, servicing of all parts including cooling tower and water treatment plant.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO53",
+          "code": "ELE/N3141",
+          "title_verbatim": "Perform Servicing, fault diagnosis, repair and maintenance of mobile A.C. leak test, evacuation, gas charging, check magnetic clutch and make wiring. Test performance after start.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO54",
+          "code": "ELE/N3141",
+          "title_verbatim": "Perform preventive maintenance of different plants. Maintain log book based on daily operation.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO55",
+          "code": "CSC/N9401",
+          "title_verbatim": "Read and apply engineering drawing for different application in the field of work.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO56",
+          "code": "CSC/N9402",
+          "title_verbatim": "Demonstrate basic mathematical concept and principles to perform practical operations. Understand and explain basic science in the field of study.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://www.dgt.gov.in/sites/default/files/2024-01/Ref.%20_%20Air%20Conditioning%20Tech._CTS2.0_NSQF-4.pdf",
+        "document_type": "pdf",
+        "document_sha256": "b462381f252c906edd15cf1abef333f00c48303ee7e50376a630af69462fab21",
+        "publication_or_revision": "Version 2.0, revised July 2022",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "All 56 outcomes transcribed from the rendered 5.1 Learning Outcomes pages (PDF pages 14-17, printed pages 11-14) and proven to match the pdf.js text layer in order with whitespace ignored.",
+        "human_reviewed": false
+      },
+      "licence_note": "Government of India publication; reuse terms not checked.",
+      "notes": [
+        "Spacing repair only: the PDF text layer splits some words and codes (e.g. 'CSC/N941 4', 'ELE/N31 40'); every stored outcome equals the source text when whitespace is ignored. No word was added, removed or reordered.",
+        "Outcome text is stored without its trailing NOS reference, whose label varies in the source ('NOS:', 'NOS', 'NOS-'); the NOS code is stored in the code field without internal spaces.",
+        "The rendered PDF itself prints 'ELE/N 1002' (LO1, LO4) and 'ELE/N 3108' (LO7) with a space; they are stored as ELE/N1002 and ELE/N3108.",
+        "LO55 and LO56 repeat LO25 and LO26 word for word; both years publish them.",
+        "No later version (e.g. CTS 3.0) of this trade was found on dgt.gov.in or cstaricalcutta.gov.in on 2026-10-18; an earlier version 1.2 (NSQF Level 5, 2019) exists.",
+        "Delivered through Industrial Training Institutes (ITIs); no individual ITI has been verified.",
+        "The trade syllabus and assessment criteria are not stored."
+      ]
+    },
+    {
+      "record_id": "PH-TESDA-DOMRAC-NC2",
+      "country": "Philippines",
+      "country_group": "developing_emerging",
+      "institution": "Technical Education and Skills Development Authority (TESDA)",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "RAC Servicing (DomRAC) NC II",
+      "sector": "Refrigeration and Air Conditioning",
+      "framework": "Philippine TVET Qualification (NC)",
+      "level_as_published": "NC II",
+      "duration_as_published": "Nominal Training Duration: 37 Hours (Basic), 35 Hours (Common), 216 Hours (Core); 288 - Total; 240 – Supervised Industry Learning (SIL); 528 Hour - Total training duration",
+      "entry_as_published": "Completed at least 10 yrs. basic education or an alternative learning systems (ALS) certificate of completion with grade 10 equivalent holder; Can communicate both oral and written; Can perform basic mathematical computation",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "400311210",
+          "title_verbatim": "Participate in workplace communication",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311211",
+          "title_verbatim": "Work in a team environment",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311212",
+          "title_verbatim": "Solve/address general workplace problems",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311213",
+          "title_verbatim": "Develop career and life decisions",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311214",
+          "title_verbatim": "Contribute to workplace innovation",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311215",
+          "title_verbatim": "Present relevant information",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311216",
+          "title_verbatim": "Practice occupational safety and health policies and procedures",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311217",
+          "title_verbatim": "Exercise efficient and effective sustainable practices in the workplace",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311218",
+          "title_verbatim": "Practice entrepreneurial skills in the workplace",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC713201",
+          "title_verbatim": "Prepare materials and tools",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC311202",
+          "title_verbatim": "Interpret technical drawing and plans",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC311201",
+          "title_verbatim": "Observe procedures, specifications and manuals of instructions",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC311203",
+          "title_verbatim": "Perform mensurations and calculations",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC713202",
+          "title_verbatim": "Perform basic benchworks",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC724201",
+          "title_verbatim": "Perform basic electrical works",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC311204",
+          "title_verbatim": "Maintain tools, instruments and equipment",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC315201",
+          "title_verbatim": "Perform housekeeping and safety practices",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC311205",
+          "title_verbatim": "Document work accomplished",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC723337",
+          "title_verbatim": "Install domestic refrigeration and air-conditioning units",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC723338",
+          "title_verbatim": "Service and maintain domestic refrigeration and air-conditioning units",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC723339",
+          "title_verbatim": "Troubleshoot and repair domestic refrigeration and air-conditioning systems",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://www.tesda.gov.ph/Downloadables/TRs/TR_RACServicing(DomRAC)NCII%20-%20ver3.pdf",
+        "document_type": "pdf",
+        "document_sha256": "7b406c8d341940a1aff4564e58b1e687fc0c6b9ea328221ebbd25e491bd73fbc",
+        "publication_or_revision": "HVCDRA221; Promulgated: June 8, 2021",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Units, scope, hours and entry requirements read from the rendered PDF pages (Section 1, printed p. 1; Section 3, printed pp. 71 and 95) and matched against the pdf.js text layer of the same pages.",
+        "human_reviewed": false
+      },
+      "licence_note": "Philippine government publication; reuse terms not checked.",
+      "notes": [
+        "Scope: window-type air-conditioning and domestic refrigerators only; split-type air-conditioning is not within this qualification.",
+        "Full published title: 'REFRIGERATION AND AIR-CONDITIONING (RAC) [Domestic Refrigeration and Air-Conditioning] SERVICING NC II'; the stored title is the form used in the document's section headings and footer.",
+        "Current regulation: TESDA's list of promulgated training regulations records HVCDRA221 (2021) as replacing RAC Servicing (DomRAC) NC II (Amended) HVCWAC211 (2011).",
+        "A separate qualification from Commercial Air-Conditioning Installation and Servicing NC III (record PH-TESDA-CAC-NC3); the two are not combined.",
+        "Duration is the published breakdown: 288 nominal training hours plus 240 hours of supervised industry learning (SIL), 528 hours in total.",
+        "A training regulation (standard), delivered by TESDA-registered institutions; no provider has been verified.",
+        "Unit titles that wrap across lines in the PDF were joined; group headings are published in capitals ('BASIC COMPETENCIES' etc.).",
+        "scope_verbatim holds the exact Section 1 wording and the listed occupation as a separate passage, verified against the rendered PDF page and its text layer; it may be cited as evidence alongside the unit titles."
+      ],
+      "scope_verbatim": [
+        "The RAC SERVICING (DomRAC) NC II Qualification consists of competencies that a person must achieve to enable him/her to install, service, maintain, troubleshoot and repair domestic air-conditioning and refrigeration units. This qualification covers window-type air-conditioning and domestic refrigerators only.",
+        "A person who has achieved this Qualification is competent to be:",
+        "Domestic Refrigeration and Air-conditioning Technician"
+      ]
+    },
+    {
+      "record_id": "PH-TESDA-CAC-NC3",
+      "country": "Philippines",
+      "country_group": "developing_emerging",
+      "institution": "Technical Education and Skills Development Authority (TESDA)",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Commercial Air-Conditioning Installation and Servicing NC III",
+      "sector": "Refrigeration and Air Conditioning",
+      "framework": "Philippine TVET Qualification (NC)",
+      "level_as_published": "NC III",
+      "duration_as_published": "Nominal Training Duration: 40 Hours (Basic), 40 Hours (Common), 240 Hours (Core); 320 Hours - Total; 400 Hours – Supervised Industry Learning (SIL); 720 Hours - Total training duration",
+      "entry_as_published": "Must a holder RAC Servicing (DomRAC) NC II or must have at least two-years work experience in RAC servicing; Can communicate both oral and written; Can perform basic mathematical computation",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "400311319",
+          "title_verbatim": "Lead workplace communication",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311320",
+          "title_verbatim": "Lead small teams",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311321",
+          "title_verbatim": "Apply critical thinking and problem solving techniques in the workplace",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311322",
+          "title_verbatim": "Work in a diverse environment",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311323",
+          "title_verbatim": "Propose methods of applying learning and innovation in the organization",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311324",
+          "title_verbatim": "Use information systematically",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311325",
+          "title_verbatim": "Evaluate occupational safety and health work practices",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311326",
+          "title_verbatim": "Evaluate environmental work practices",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311327",
+          "title_verbatim": "Facilitate entrepreneurial skills for micro-small-medium enterprises (MSMEs)",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC713201",
+          "title_verbatim": "Prepare materials and tools",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC311202",
+          "title_verbatim": "Interpret technical drawing and plans",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC311201",
+          "title_verbatim": "Observe procedures, specifications and manuals of instructions",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC311203",
+          "title_verbatim": "Perform mensuration and calculation",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC713202",
+          "title_verbatim": "Perform basic benchwork",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC724201",
+          "title_verbatim": "Perform basic electrical works",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC311204",
+          "title_verbatim": "Maintain tools, instruments and equipment",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC315201",
+          "title_verbatim": "Perform housekeeping and safety practices",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC311205",
+          "title_verbatim": "Document work accomplished",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC723340",
+          "title_verbatim": "Install commercial air-conditioning unit",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC723342",
+          "title_verbatim": "Service and maintain commercial air-conditioning unit",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC723344",
+          "title_verbatim": "Troubleshoot and repair commercial air-conditioning unit",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "HVC723346",
+          "title_verbatim": "Perform start-up, testing and commissioning for commercial air-conditioning unit",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://tesda.gov.ph/Downloadables/TRs/TR_CommercialACInstallation&ServicingNCIII.pdf",
+        "document_type": "pdf",
+        "document_sha256": "19b93da68e0ebe0aaaf24cd826d2e0b8524dfb5c6f2c36a0f2b2ff00581f0a2a",
+        "publication_or_revision": "HVCCAC321; Promulgated: June 8, 2021",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Units, scope, hours and entry requirements read from the rendered PDF pages (Section 1, printed p. 1; Section 3, printed pp. 84 and 115) and matched against the pdf.js text layer of the same pages.",
+        "human_reviewed": false
+      },
+      "licence_note": "Philippine government publication; reuse terms not checked.",
+      "notes": [
+        "Scope: commercial air-conditioning units only; refrigeration is covered by a separate 2021 qualification (Commercial Refrigeration Installation and Servicing NC III, HVCCRE321), whose training regulation could not be obtained and is not used.",
+        "Replaces, with HVCCRE321, the superseded RAC Servicing (PACU-CRE) NC III (Amended) HVCPCR312 (2012), per TESDA's list of promulgated training regulations; the superseded regulation is not used.",
+        "Builds on NC II: entry requires RAC Servicing (DomRAC) NC II (record PH-TESDA-DOMRAC-NC2) or two years of RAC servicing experience. The two qualifications are separate records and are not combined.",
+        "The entry requirement 'Must a holder ...' is stored as published.",
+        "Duration is the published breakdown: 320 nominal training hours plus 400 hours of supervised industry learning (SIL), 720 hours in total.",
+        "The rendered unit table shows a strike mark over the final digit of HVC311202; the code is stored as printed and as in the text layer.",
+        "A training regulation (standard), delivered by TESDA-registered institutions; no provider has been verified.",
+        "Unit titles that wrap across lines in the PDF were joined; group headings are published in capitals ('BASIC COMPETENCIES' etc.).",
+        "scope_verbatim holds the exact Section 1 wording and each listed occupation as a separate passage, verified against the rendered PDF page and its text layer."
+      ],
+      "scope_verbatim": [
+        "The COMMERCIAL AIR-CONDITIONING INSTALLATION AND SERVICING NC III Qualification consists of competencies that a person must achieve to enable him/her to install, service, maintain, troubleshoot and repair including to perform start-up, testing and commissioning of commercial air-conditioning units.",
+        "A person who has achieved these competencies is Qualified to be a:",
+        "Commercial Air-Conditioning Unit Installer",
+        "Commercial Air-Conditioning Unit Maintenance Technician",
+        "Commercial Air-Conditioning Service Technician (HVAC/R Technician)"
+      ]
+    },
+    {
+      "record_id": "AU-TGA-UEE32225",
+      "country": "Australia",
+      "country_group": "developed",
+      "institution": "Australian Government, training.gov.au (UEE Electrotechnology Training Package; developer: Powering Skills Organisation)",
+      "record_type": "national_qualification",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Certificate III in Air Conditioning and Refrigeration",
+      "sector": "Refrigeration and Air Conditioning",
+      "framework": "AQF (Australia)",
+      "level_as_published": "Certificate III (national code UEE32225)",
+      "duration_as_published": null,
+      "entry_as_published": "There are no entry requirements for this qualification.",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "UEECD0007",
+          "title_verbatim": "Apply work health and safety regulations, codes and practices in the workplace",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEECD0016",
+          "title_verbatim": "Document and apply measures to control WHS risks associated with electrotechnology work",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEECD0019",
+          "title_verbatim": "Fabricate, assemble and dismantle utilities industry components",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEECD0020",
+          "title_verbatim": "Fix and secure electrotechnology equipment",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEECD0042",
+          "title_verbatim": "Solve problems in ELV single path circuits",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEECD0051",
+          "title_verbatim": "Use drawings, diagrams, schedules, standards, codes and specifications",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEECO0010",
+          "title_verbatim": "Participate in refrigeration and air conditioning work and competency development activities",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEERA0031",
+          "title_verbatim": "Diagnose and rectify faults in air conditioning and refrigeration control systems",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEERA0035",
+          "title_verbatim": "Establish the basic operating conditions of air conditioning systems",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEERA0036",
+          "title_verbatim": "Establish the basic operating conditions of vapour compression systems",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEERA0044",
+          "title_verbatim": "Find and rectify faults in single phase motors and associated controls",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEERA0045",
+          "title_verbatim": "Find and rectify faults in three phase motors and associated controls",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEERA0050",
+          "title_verbatim": "Install refrigerant pipe work, flow controls and accessories",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEERA0099",
+          "title_verbatim": "Install, commission, service and maintain air conditioning systems",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEERA0052",
+          "title_verbatim": "Install, commission, service and maintain low temperature systems",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEERA0053",
+          "title_verbatim": "Install, commission, service and maintain medium temperature systems",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEERA0059",
+          "title_verbatim": "Prepare and connect refrigerant tubing and fittings",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEERA0062",
+          "title_verbatim": "Recover and charge refrigerants",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEERA0079",
+          "title_verbatim": "Safely handle refrigerants and lubricants",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEERA0081",
+          "title_verbatim": "Select refrigerant piping, accessories and associated controls",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEERA0092",
+          "title_verbatim": "Solve problems in low voltage refrigeration and air conditioning circuits",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEERA0094",
+          "title_verbatim": "Verify functionality and compliance of refrigeration and air conditioning installations",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEERE0001",
+          "title_verbatim": "Apply environmentally and sustainable procedures in the energy sector",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEERL0001",
+          "title_verbatim": "Attach cords and plugs to electrical equipment for connection to a single phase 230 Volt supply",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEERL0002",
+          "title_verbatim": "Attach cords, cables and plugs to electrical equipment for connection to 1000 V a.c. or 1500 V d.c.",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEERL0004",
+          "title_verbatim": "Disconnect - reconnect electrical equipment connected to low voltage (LV) installation wiring",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "UEERL0005",
+          "title_verbatim": "Locate and rectify faults in low voltage (LV) electrical equipment using set procedures",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://training.gov.au/assets/UEE/UEE32225_R1.pdf",
+        "document_type": "pdf",
+        "document_sha256": "ea28c2075c52c81623187fca20acddfb9828ccc9705ab72b94775c7daa4f10a3",
+        "publication_or_revision": "UEE32225 Release 1 (current from 2025-03-24, training.gov.au)",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Core units read from the rendered official qualification PDF (pages 3-4) in published order and matched against its pdf.js text layer; each code and title equals the training.gov.au Release 1 unit grid (https://training.gov.au/api/training/UEE32225/releases/1/unitgrid) exactly.",
+        "human_reviewed": false
+      },
+      "licence_note": "© Commonwealth of Australia, 2025; training package content is published under its own licence terms (not checked).",
+      "notes": [
+        "A national qualification, not a delivered programme: no delivering provider has been verified, and the qualification states no nominal duration.",
+        "Supersedes UEE32220 (mapped as equivalent on training.gov.au, 2025-03-23). The only core-unit change is UEERA0051 (now superseded) replaced by UEERA0099, with the same title; the published core list places UEERA0099 where UEERA0051 stood.",
+        "Requires 1210 weighting points (1070 core, 140 elective). Only the 27 core units are stored; 37 elective units are not.",
+        "The PDF marks units with pre-requisites with '*'; the marker is not stored in the titles.",
+        "Charles Darwin University's 2026 course information sheet still delivers the superseded UEE32220 and misprints two core unit titles (UEECD0042, UEERA0044); it is not used.",
+        "scope_verbatim holds the first two sentences of the published Qualification Description; licensing paragraphs are not stored."
+      ],
+      "scope_verbatim": [
+        "This qualification covers competencies to select components, install, set up, test, fault find, repair and maintain refrigeration systems and equipment that apply to food storage and preservation, and air conditioning and air distribution equipment in buildings and premises. It includes regulatory requirements for purchasing and handling refrigerants."
+      ]
+    }
+  ]
+}

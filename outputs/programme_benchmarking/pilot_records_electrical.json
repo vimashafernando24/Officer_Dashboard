@@ -1,0 +1,1052 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-pilot-electrical",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.0.0",
+  "created_date": "2026-10-17",
+  "purpose": "Comparator records for NYSC COURSE-025 and COURSE-064 Electrician. Records describe documented content only and do not establish labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its source by a researcher before it is used in analysis.",
+  "records": [
+    {
+      "record_id": "LK-CGTTI-POWER-ELEC",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Ceylon German Technical Training Institute (CGTTI), Moratuwa",
+      "record_type": "programme",
+      "delivering_provider_verified": true,
+      "title_verbatim": "Power Electrician (Maintenance)",
+      "sector": "Electrical",
+      "framework": "NVQ (Sri Lanka)",
+      "level_as_published": null,
+      "duration_as_published": "Full Time, 42 Months",
+      "entry_as_published": "Age: Between 16 & 22 years. Education: Passed in 06 subjects at the G.C.E. (O/L) Examination including Sinhala/Tamil language (Medium of Instruction) and Mathematics in one sitting.",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Basic Training at CGTTI: Building Foundations for Excellence",
+          "outcome_verbatim": null,
+          "group": "First Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Industrial training in basic principle of electricity and their simple application.",
+          "outcome_verbatim": null,
+          "group": "Second Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Electrical safety.",
+          "outcome_verbatim": null,
+          "group": "Second Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Domestic & Industrial wiring exercise covering all kinds of connections using various kinds of Switches, Relays, Contactors, Cables and fittings",
+          "outcome_verbatim": null,
+          "group": "Second Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Construction of various simple electrical machinery",
+          "outcome_verbatim": null,
+          "group": "Second Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Handling of electrical measuring instruments",
+          "outcome_verbatim": null,
+          "group": "Second Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Maintenance of electrical installation, motors, generators, transformers",
+          "outcome_verbatim": null,
+          "group": "Third Year (05 Months)"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Rewinding motors, transformers",
+          "outcome_verbatim": null,
+          "group": "Third Year (05 Months)"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Motor control and motor starters",
+          "outcome_verbatim": null,
+          "group": "Third Year (05 Months)"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Electronic and Programmable Logic Control (PLC)",
+          "outcome_verbatim": null,
+          "group": "Third Year (05 Months)"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Electrical appliances",
+          "outcome_verbatim": null,
+          "group": "Third Year (05 Months)"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "In-plant training in different outside workshops",
+          "outcome_verbatim": null,
+          "group": "Third Year (07 Months)"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Installation and repair of various electrical equipment",
+          "outcome_verbatim": null,
+          "group": "Third Year (07 Months)"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Maintenance of motors and generators",
+          "outcome_verbatim": null,
+          "group": "Third Year (07 Months)"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Rewinding of motors, transformers",
+          "outcome_verbatim": null,
+          "group": "Third Year (07 Months)"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Installation, repairs and maintenance, Programmable Logic Control (PLC), pneumatic, hydraulic control production machineries",
+          "outcome_verbatim": null,
+          "group": "Third Year (07 Months)"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Refrigeration & air conditioning electrical repairs and maintenance work.",
+          "outcome_verbatim": null,
+          "group": "Third Year (07 Months)"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "The trainee undergoes In-plant training in different outside workshops for a further five months",
+          "outcome_verbatim": null,
+          "group": "Final Year (05 Months)"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://germantec.lk/index.php/power-electrician-maintenance-2/",
+        "document_type": "html",
+        "document_sha256": null,
+        "publication_or_revision": "Page shows 'Updated: 02/01/2024'",
+        "retrieved_date": "2026-10-17"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Text captured from the raw HTML of the official course page; every stored line was matched against that text.",
+        "human_reviewed": false
+      },
+      "licence_note": "Institutional web content; reuse terms not checked.",
+      "notes": [
+        "NVQ level is not stated on this course page and is left null. CGTTI's separate part-time 'Power Electrical Stream' page lists an 'Electrician' NVQ level 3 certificate; that is not assumed to apply to this full-time course.",
+        "Year groupings and month blocks are as published; '05 Months' and '07 Months' are the page's own sub-headings under 'Third Year'.",
+        "The First Year is published as general basic training; only its heading is stored, not the promotional description beneath it.",
+        "Year 1 and Year 2 durations are not stated; the page states 42 months in total."
+      ]
+    },
+    {
+      "record_id": "IN-DGT-CTS-ELEC-V3",
+      "country": "India",
+      "country_group": "developing_emerging",
+      "institution": "Directorate General of Training (DGT), Ministry of Skill Development & Entrepreneurship",
+      "record_type": "national_curriculum",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Electrician",
+      "sector": "Electrical",
+      "framework": "NSQF (India)",
+      "level_as_published": "NSQF Level 4",
+      "duration_as_published": "Two Years",
+      "entry_as_published": "Passed 10th class examination with Science and Mathematics or with vocational subject in same sector or its equivalent. Minimum Age 14 years as on first day of academic session.",
+      "modules": [
+        {
+          "published_ref": "LO1",
+          "code": "PSS/N9490",
+          "title_verbatim": "Undertake basic safety practices, firefighting, elementary first aid, disposal of waste material, handling and maintenance of trade tools.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO2",
+          "code": "PSS/N9491",
+          "title_verbatim": "Prepare electrical wire joints; carry out soldering, crimping and measure insulation resistance of underground cable.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO3",
+          "code": "PSS/N9492",
+          "title_verbatim": "Verify characteristics of electrical and magnetic circuits.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO4",
+          "code": "PSS/N9493",
+          "title_verbatim": "Install, test and maintenance of batteries and solar cell.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO5",
+          "code": "PSS/N9494",
+          "title_verbatim": "Estimate, Assemble, install and test wiring system.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO6",
+          "code": "PSS/N9495",
+          "title_verbatim": "Plan and prepare Earthing installation.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO7",
+          "code": "PSS/N9403",
+          "title_verbatim": "Plan and execute electrical illumination system and test.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO8",
+          "code": "PSS/N9496",
+          "title_verbatim": "Select and perform measurements using analog / digital instruments and install/ diagnose smart meters.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO9",
+          "code": "PSS/N9404",
+          "title_verbatim": "Perform testing, verify errors and calibrate instruments.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO10",
+          "code": "PSS/N9497",
+          "title_verbatim": "Plan and carry out installation, fault detection and repairing of domestic appliances.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO11",
+          "code": "PSS/N9498",
+          "title_verbatim": "Execute testing, evaluate performance and maintenance of transformer.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO12",
+          "code": "PSS/N9401",
+          "title_verbatim": "Read and apply engineering drawing for different application in the field of work.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO13",
+          "code": "PSS/N9402",
+          "title_verbatim": "Demonstrate basic mathematical concept and principles to perform practical operations. Understand and explain basic science in the field of study.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "LO14",
+          "code": "PSS/N9499",
+          "title_verbatim": "Plan, execute commissioning and evaluate performance of DC machines.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO15",
+          "code": "PSS/N9499",
+          "title_verbatim": "Execute testing, and maintenance of DC machines and motor starters.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO16",
+          "code": "PSS/N9507",
+          "title_verbatim": "Distinguish, organise and perform motor winding.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO17",
+          "code": "PSS/N9500",
+          "title_verbatim": "Plan, execute commissioning and evaluate performance of AC motors. Execute testing, and maintenance of AC motors and starters.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO18",
+          "code": "PSS/N9405",
+          "title_verbatim": "Plan, execute testing, evaluate performance and carry out maintenance of Alternator / MG set.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO19",
+          "code": "PSS/N9406",
+          "title_verbatim": "Assemble simple electronic circuits and test for functioning.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO20",
+          "code": "PSS/N9407",
+          "title_verbatim": "Assemble accessories and carry out wiring of control cabinets and equipment.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO21",
+          "code": "PSS/N9408",
+          "title_verbatim": "Perform speed control of AC and DC motors by using solid state devices.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO22",
+          "code": "PSS/N9501",
+          "title_verbatim": "Detect the faults and troubleshoot inverter, stabilizer, battery charger, emergency light and UPS etc.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO23",
+          "code": "PSS/N9409",
+          "title_verbatim": "Plan, assemble and install solar panel.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO24",
+          "code": "PSS/N9508",
+          "title_verbatim": "Erect overhead domestic service line, outline various power plant layout and explain smart distribution grid and its components.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO25",
+          "code": "PSS/N9502",
+          "title_verbatim": "Examine the faults and carry out repairing of circuit breakers.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO26",
+          "code": "PSS/N9410",
+          "title_verbatim": "Install and troubleshoot Electric Vehicle charging stations.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO27",
+          "code": "PSS/N9401",
+          "title_verbatim": "Read and apply engineering drawing for different application in the field of work.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "LO28",
+          "code": "PSS/N9402",
+          "title_verbatim": "Demonstrate basic mathematical concept and principles to perform practical operations. Understand and explain basic science in the field of study.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://www.cstaricalcutta.gov.in/sites/default/files/2026-06/Electrician_CTS3.0_NSQF-4.pdf",
+        "document_type": "pdf",
+        "document_sha256": "27c6f23ca74cb159d87a23a64f68fc1344ba3dc9e53d59815acf4d211e7f2e00",
+        "publication_or_revision": "Version 3.0, revised August 2025",
+        "retrieved_date": "2026-10-17"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Outcomes transcribed from the 5.1 Learning Outcomes table, proven identical to the PDF text layer with whitespace ignored, and checked visually against the rendered table pages (PDF pages 13-14).",
+        "human_reviewed": false
+      },
+      "licence_note": "Government of India publication; reuse terms not checked.",
+      "notes": [
+        "Spacing repair only: the PDF text layer splits words (e.g. 'Execu te t esting'); every stored outcome equals the source text when whitespace is ignored. No word was added, removed or reordered.",
+        "The notional training-hours table gives 1200 hours per year (Professional Skill, Professional Knowledge and Employability Skills) plus 150 hours of mandatory OJT/Group Project per year.",
+        "Supersedes in practice Version 2.0 (July 2022, hosted on dgt.gov.in): same trade and NSQF level, later revision. The document itself does not state that it supersedes v2.0.",
+        "Hosted by CSTARI Kolkata, the DGT institute that developed the curriculum.",
+        "Delivered through Industrial Training Institutes (ITIs); no individual ITI has been verified.",
+        "No outcome names PLC; relay logic-control circuits appear only in the trade syllabus, which is not stored."
+      ]
+    },
+    {
+      "record_id": "PH-TESDA-EIM-NC2",
+      "country": "Philippines",
+      "country_group": "developing_emerging",
+      "institution": "Technical Education and Skills Development Authority (TESDA)",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Electrical Installation and Maintenance NC II",
+      "sector": "Electrical",
+      "framework": "Philippine TVET Qualification (NC)",
+      "level_as_published": "NC II",
+      "duration_as_published": "Nominal Training Hours: 18 Hours (Basic competencies), 24 Hours (Common competencies), 154 Hours (Core competencies); Total: 196 Hours",
+      "entry_as_published": "Must have completed at least 10 yrs. basic education or an ALS certificate of achievement with grade 10 equivalent holder; must be able to communicate both orally and in writing; must be able to perform basic mathematical computation.",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "500311105",
+          "title_verbatim": "Participate in workplace communication",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311106",
+          "title_verbatim": "Work in a team environment",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311107",
+          "title_verbatim": "Practice career professionalism",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311108",
+          "title_verbatim": "Practice occupational health and safety procedures",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC311205",
+          "title_verbatim": "Use Hand Tools",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC311201",
+          "title_verbatim": "Perform Mensuration and Calculation",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC311202",
+          "title_verbatim": "Prepare and Interpret Technical Drawing",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC311204",
+          "title_verbatim": "Apply Quality Standards",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC311206",
+          "title_verbatim": "Terminate and Connect Electrical Wiring and Electronic Circuits",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC741301",
+          "title_verbatim": "Perform roughing-in activities, wiring and cabling works for single-phase distribution, power, lighting and auxiliary systems",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC741302",
+          "title_verbatim": "Install electrical protective devices for distribution, power, lighting, auxiliary, lightning protection and grounding systems",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC741303",
+          "title_verbatim": "Install wiring devices of floor and wall mounted outlets, lighting fixtures/switches, and auxiliary outlets",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://tesda.gov.ph/Downloadables/TR-Electrical%20Installation%20and%20Maintenance%20NC%20II.pdf",
+        "document_type": "pdf",
+        "document_sha256": "934257799b7a0bb59ad3d5b0beb7cb2c91c795c8b4ac045bad51705c7d08d411",
+        "publication_or_revision": "Amended; Promulgated Dec. 16, 2015",
+        "retrieved_date": "2026-10-17"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Units, hours and entry requirements read from the rendered PDF pages (Section 1, p. 1; Section 3, pp. 45 and 65) and matched against the decoded text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Philippine government publication; reuse terms not checked.",
+      "notes": [
+        "Scope: installing and maintaining electrical wiring, lighting and related equipment where the voltage does not exceed 600 volts in residential houses/buildings.",
+        "A separate qualification from Electrical Installation and Maintenance NC III (record PH-TESDA-EIM-NC3); the two are not combined.",
+        "A training regulation (standard), delivered by TESDA-registered institutions; no provider has been verified.",
+        "scope_verbatim holds the exact Section 1 qualification wording, verified against the rendered PDF page and its text layer; it may be cited as evidence alongside the unit titles."
+      ],
+      "scope_verbatim": [
+        "The Electrical Installation and Maintenance NC II Qualification consists of competencies that a person must achieve to enable him/her to install and maintain electrical wiring, lighting and related equipment and systems where the voltage does not exceed 600 volts in residential houses/buildings."
+      ]
+    },
+    {
+      "record_id": "PH-TESDA-EIM-NC3",
+      "country": "Philippines",
+      "country_group": "developing_emerging",
+      "institution": "Technical Education and Skills Development Authority (TESDA)",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Electrical Installation and Maintenance NC III",
+      "sector": "Electrical",
+      "framework": "Philippine TVET Qualification (NC)",
+      "level_as_published": "NC III",
+      "duration_as_published": "Nominal Training Hours: Basic Competencies 32 Hours, Common Competencies 32 Hours, Core Competencies 96 Hours; Total Course Hours 160 Hours",
+      "entry_as_published": "Must be a holder and/or have undergone training in Electrical Installation and Maintenance NC II or Mechatronics Servicing NC II.",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "500311109",
+          "title_verbatim": "Lead workplace communication",
+          "outcome_verbatim": null,
+          "group": "Basic Units of Competency"
+        },
+        {
+          "published_ref": null,
+          "code": "500311110",
+          "title_verbatim": "Lead small teams",
+          "outcome_verbatim": null,
+          "group": "Basic Units of Competency"
+        },
+        {
+          "published_ref": null,
+          "code": "500311111",
+          "title_verbatim": "Develop and practice negotiating skills",
+          "outcome_verbatim": null,
+          "group": "Basic Units of Competency"
+        },
+        {
+          "published_ref": null,
+          "code": "500311112",
+          "title_verbatim": "Sove problems related to work activities",
+          "outcome_verbatim": null,
+          "group": "Basic Units of Competency"
+        },
+        {
+          "published_ref": null,
+          "code": "500311113",
+          "title_verbatim": "Use mathematical concepts and techniques",
+          "outcome_verbatim": null,
+          "group": "Basic Units of Competency"
+        },
+        {
+          "published_ref": null,
+          "code": "500311114",
+          "title_verbatim": "Use relevant technologies",
+          "outcome_verbatim": null,
+          "group": "Basic Units of Competency"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC311205",
+          "title_verbatim": "Use Hand Tools",
+          "outcome_verbatim": null,
+          "group": "Common Units of Competency"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC311201",
+          "title_verbatim": "Perform Mensuration and Calculation",
+          "outcome_verbatim": null,
+          "group": "Common Units of Competency"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC311202",
+          "title_verbatim": "Prepare and Interpret Technical Drawing",
+          "outcome_verbatim": null,
+          "group": "Common Units of Competency"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC311204",
+          "title_verbatim": "Apply Quality Standards",
+          "outcome_verbatim": null,
+          "group": "Common Units of Competency"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC311206",
+          "title_verbatim": "Terminate and Connect Electrical Wiring and Electronic Circuits",
+          "outcome_verbatim": null,
+          "group": "Common Units of Competency"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC311212",
+          "title_verbatim": "Maintain tools and equipment",
+          "outcome_verbatim": null,
+          "group": "Common Units of Competency"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC741304",
+          "title_verbatim": "Perform roughing-in and wiring activities for three-phase distribution system for power, lighting and motor control panel.",
+          "outcome_verbatim": null,
+          "group": "Core Units of Competency"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC741305",
+          "title_verbatim": "Perform installation of data measurement and control system on electrical and auxiliary equipment",
+          "outcome_verbatim": null,
+          "group": "Core Units of Competency"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC741306",
+          "title_verbatim": "Install, assemble, test and maintain motor control system.",
+          "outcome_verbatim": null,
+          "group": "Core Units of Competency"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://tesda.gov.ph/Downloadables/TR-Electrical%20Installation%20and%20Maintenance%20NC%20III.pdf",
+        "document_type": "pdf",
+        "document_sha256": "99813d270fc91722c846a77aa37f42be5e5788aa3ab0393731269553e87a7a8b",
+        "publication_or_revision": "Amended; Promulgated December 16, 2015",
+        "retrieved_date": "2026-10-17"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Units, hours and entry requirements read from the rendered PDF pages (Section 1, p. 1; Section 3, pp. 56 and 77) and matched against the decoded text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Philippine government publication; reuse terms not checked.",
+      "notes": [
+        "Builds on NC II: entry requires Electrical Installation and Maintenance NC II or Mechatronics Servicing NC II.",
+        "Scope: three-phase distribution, data measurement and control, and motor control systems. The qualification explicitly excludes core competencies of related specialised workers such as linemen, substation technicians and electrical motors/generators repair technicians.",
+        "'Sove problems related to work activities' (500311112) is stored as published.",
+        "Double spaces inside two core unit titles in the PDF were reduced to single spaces.",
+        "A training regulation (standard), delivered by TESDA-registered institutions; no provider has been verified.",
+        "scope_verbatim holds the exact Section 1 qualification wording, verified against the rendered PDF page and its text layer; it may be cited as evidence alongside the unit titles."
+      ],
+      "scope_verbatim": [
+        "The Electrical Installation & Maintenance NC III qualification consists of a set of competencies that a candidate for this qualification must achieve in order to obtain a national certificate for this qualification as specified by TESDA requirements. This particular set of competencies excludes core technical competencies required for related highly specialized vocational skilled workers such as linemen, substation technicians, electrical motors/generators repair technicians, etc..",
+        "A candidate who has achieved all these competencies is qualified to be: a. Industrial Electrician b. Electrical Leadman, or c. Electrical Foreman"
+      ]
+    },
+    {
+      "record_id": "SG-ITE-HNITEC-ELEC-2Y",
+      "country": "Singapore",
+      "country_group": "developed",
+      "institution": "Institute of Technical Education (ITE)",
+      "record_type": "programme",
+      "delivering_provider_verified": true,
+      "title_verbatim": "Higher Nitec in Electrical Engineering (2 years)",
+      "sector": "Electrical",
+      "framework": "ITE Nitec / Higher Nitec (Singapore)",
+      "level_as_published": "Higher Nitec",
+      "duration_as_published": "2 years; Total: 68 credits",
+      "entry_as_published": null,
+      "modules": [
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Residential Electrical Installation",
+          "outcome_verbatim": "On completion of the module, students should be able to install, maintain, inspect and test electrical installation in residential and office premises.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Electrical Design & Drafting",
+          "outcome_verbatim": "On completion of the module, students should be able to design electrical installation and prepare electrical drawing of electrical installation.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Electrical Principles",
+          "outcome_verbatim": "On completion of the module, students should be able to troubleshoot DC and AC circuits.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Electrical Motor & Control",
+          "outcome_verbatim": "On completion of the module, students should be able to maintain DC and AC motors as well as maintain motor control circuit and equipment.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Electrical Switchboard",
+          "outcome_verbatim": "On completion of the module, students should be able to maintain electrical switchboard circuit and equipment, manage electrical power monitoring system and perform predictive and condition-based maintenance for electrical system.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Commercial Electrical Installation",
+          "outcome_verbatim": "On completion of this module, students should be able to manage, inspect and test commercial electrical installation, maintain temporary electrical supply system as well as manage smart monitored emergency lighting and fire alarm system.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Electrical Machine & Drive",
+          "outcome_verbatim": "On completion of the module, students should be able to maintain transformer installation, electrical motor and drive system installation as well as select electrical motor for application.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Power Distribution System",
+          "outcome_verbatim": "On completion of the module, students should be able to manage electrical standby supply system, electrical power factor improvement system and maintain electricity distribution system.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Solar Photovoltaic System",
+          "outcome_verbatim": "On completion of the module, students should be able to install and maintain solar photovoltaic system.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Solar Photovoltaic Design",
+          "outcome_verbatim": "On completion of this module, students should be able to design and troubleshoot solar photovoltaic system.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Sustainable Energy System",
+          "outcome_verbatim": "On completion of the module, students should be able to manage electric vehicle supply equipment and maintain energy storage system.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Intelligent Building System",
+          "outcome_verbatim": "On completion of the module, students should be able to program PLC and smart relays as well as install intelligent building control system and smart home control system.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Instrumentation & Control System",
+          "outcome_verbatim": "On completion of the module, students should be able to maintain instrumentation and control system as well as smart instruments.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Internship Programme",
+          "outcome_verbatim": null,
+          "group": "Internship Programme Module"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://isomer-user-content.by.gov.sg/145/f4916c4f-de78-41e5-ae0c-55f329e36010/Higher%20Nitec%20in%20Electrical%20Engineering%20(2%20years).pdf",
+        "document_type": "pdf",
+        "document_sha256": "693c4327f3b0efdeeaa18867372e63a360e398514fd2cb633114975001f52c24",
+        "publication_or_revision": "Last updated on 28 Nov 2025",
+        "retrieved_date": "2026-10-17"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Modules and objectives extracted from the PDF linked on ITE's official 2-year course page and matched against its text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Singapore Government agency publication; reuse terms not checked.",
+      "notes": [
+        "Offered at ITE College East and ITE College West (official course page).",
+        "Life Skills, Cross-Disciplinary Core and elective modules are published separately and are not stored.",
+        "A 3-year version of this course also exists with a different structure; it is not used here.",
+        "The course page asks applicants to have normal colour vision; formal entry requirements are not in this PDF."
+      ]
+    },
+    {
+      "record_id": "AU-TAFENSW-UEE30820",
+      "country": "Australia",
+      "country_group": "developed",
+      "institution": "TAFE NSW",
+      "record_type": "programme",
+      "delivering_provider_verified": true,
+      "title_verbatim": "Certificate III in Electrotechnology Electrician",
+      "sector": "Electrical",
+      "framework": "AQF (Australia)",
+      "level_as_published": "Certificate III (national code UEE30820)",
+      "duration_as_published": null,
+      "entry_as_published": "Apprenticeship: You must be employed as an apprentice in the industry. Non-apprenticeship: at least 21, at least 2 years of work experience in the occupation or trade, and currently employed in the relevant industry.",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "UEEEL0005",
+          "title_verbatim": "Develop and connect electrical control circuits",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UEEEL0003",
+          "title_verbatim": "Arrange circuits, control and protection for electrical installations",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UEERE0001",
+          "title_verbatim": "Apply environmentally and sustainable procedures in the energy sector",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UEEEL0012",
+          "title_verbatim": "Install low voltage wiring, appliances, switchgear and associated accessories",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UEEEL0010",
+          "title_verbatim": "Evaluate and modify low voltage socket outlets circuits",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UEEEL0020",
+          "title_verbatim": "Solve problems in low voltage a.c. circuits",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UEEEL0009",
+          "title_verbatim": "Evaluate and modify low voltage lighting circuits, equipment and controls",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UEEEL0018",
+          "title_verbatim": "Select wiring systems and select cables for low voltage electrical installations",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UEEEL0019",
+          "title_verbatim": "Solve problems in direct current (d.c.) machines",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UEEEL0023",
+          "title_verbatim": "Terminate cables, cords and accessories for low voltage circuits",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UEEEL0025",
+          "title_verbatim": "Test and connect transformers",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UEEEL0039",
+          "title_verbatim": "Design, install and verify compliance and functionality of general electrical installations",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UEECD0016",
+          "title_verbatim": "Document and apply measures to control WHS risks associated with electrotechnology work",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UEECD0019",
+          "title_verbatim": "Fabricate, assemble and dismantle utilities industry components",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UEECD0020",
+          "title_verbatim": "Fix and secure electrotechnology equipment",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UEECD0044",
+          "title_verbatim": "Solve problems in multiple path circuits",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UEECD0046",
+          "title_verbatim": "Solve problems in single path circuits",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UEECD0007",
+          "title_verbatim": "Apply work health and safety regulations, codes and practices in the workplace",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "HLTAID009",
+          "title_verbatim": "Provide cardiopulmonary resuscitation",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UEEEL0024",
+          "title_verbatim": "Test and connect alternating current (a.c.) rotating machines",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UEEEL0014",
+          "title_verbatim": "Isolate, test and troubleshoot low voltage electrical circuits",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UETDRRF004",
+          "title_verbatim": "Perform rescue from a live LV panel",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UEECD0051",
+          "title_verbatim": "Use drawings, diagrams, schedules, standards, codes and specifications",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UEEEL0008",
+          "title_verbatim": "Evaluate and modify low voltage heating equipment and controls",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UEEEL0047",
+          "title_verbatim": "Identify, shut down and restart systems with alternate supplies",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UEEEL0021",
+          "title_verbatim": "Solve problems in magnetic and electromagnetic devices",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "UEECO0023",
+          "title_verbatim": "Participate in electrical work and competency development activities",
+          "outcome_verbatim": null,
+          "group": "Core"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://www.tafensw.edu.au/course-areas/electrotechnology/courses/certificate-iii-in-electrotechnology-electrician--UEE30820-01",
+        "document_type": "html",
+        "document_sha256": null,
+        "publication_or_revision": "UEE30820 Release 6 (current from 2023-02-08, training.gov.au)",
+        "retrieved_date": "2026-10-17"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Core unit codes and titles confirmed character for character against the training.gov.au Release 6 unit grid (https://training.gov.au/api/training/UEE30820/releases/6/unitgrid); order as listed on the TAFE NSW page.",
+        "human_reviewed": false
+      },
+      "licence_note": "UEE training package content is published by the Australian Government under its own licence terms (not checked).",
+      "notes": [
+        "Requires 1110 weighting points (990 core, 120 specialty). Only the 27 core units are stored; 74 elective units on training.gov.au are not.",
+        "UETDRRF004 is a packaged core unit whose usage recommendation on training.gov.au is 'Superseded'.",
+        "Nominal duration is not stated on the TAFE NSW page."
+      ]
+    }
+  ]
+}

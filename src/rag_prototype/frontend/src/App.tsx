@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { lazy, Suspense, useRef, useState } from "react";
 import "./App.css";
 import { StepProgress } from "./components/StepProgress";
 import { Step0Branch } from "./steps/Step0Branch";
@@ -11,6 +11,8 @@ import { LanguageSwitch } from "./i18n/LanguageControls";
 import { useLocalizer } from "./i18n/languageContext";
 import type { IntakeState, QuestionConfig, RecommendResponse } from "./types";
 import officerMascot from "../../../mascots/small/rabbit4.png";
+
+const ProgrammeComparisonDashboard = lazy(() => import("./components/ProgrammeComparisonDashboard"));
 
 const INITIAL_STATE: IntakeState = {
   step: 0,
@@ -26,6 +28,7 @@ const INITIAL_STATE: IntakeState = {
 
 function App() {
   const localizer = useLocalizer();
+  const [workspace, setWorkspace] = useState<"officer" | "programme-design">("officer");
   const [state, setState] = useState<IntakeState>(INITIAL_STATE);
   const [highestReachedStep, setHighestReachedStep] = useState(0);
   const [config, setConfig] = useState<QuestionConfig | null>(null);
@@ -141,6 +144,14 @@ function App() {
     }
   }
 
+  if (workspace === "programme-design") {
+    return (
+      <Suspense fallback={<div className="management-workspace-loading" role="status">Opening management workspace…</div>}>
+        <ProgrammeComparisonDashboard onReturnToOfficerDashboard={() => setWorkspace("officer")} />
+      </Suspense>
+    );
+  }
+
   if (state.step === 4 && config) {
     return (
       <Step4Review
@@ -163,6 +174,13 @@ function App() {
             <div className="product-mark">Youth Circles</div>
             <div className="eyebrow">{localizer.t("app.eyebrow")}</div>
             <h1>{localizer.t("app.title")}</h1>
+            <button
+              className="management-workspace-link"
+              type="button"
+              onClick={() => setWorkspace("programme-design")}
+            >
+              Open Programme Comparison Dashboard
+            </button>
           </div>
         </div>
         <LanguageSwitch />

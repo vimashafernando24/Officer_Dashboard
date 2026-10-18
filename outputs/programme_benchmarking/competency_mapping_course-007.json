@@ -1,0 +1,837 @@
+{
+  "description": "Hand-curated competency mapping for NYSC COURSE-007 Professional Cookery against four official comparator records. A DOCUMENTED cell cites exact stored text; absence from published text is not proof that content is not taught.",
+  "schema_version": "1.0.0",
+  "nysc_course_id": "COURSE-007",
+  "created_date": "2026-10-18",
+  "method": "The NYSC column was assessed against COURSE-007's six governed headings. Broad headings do not establish more specific competencies. National qualifications and longer programmes are compared for documented curriculum content only, not equivalence.",
+  "human_reviewed": false,
+  "statuses": [
+    "DOCUMENTED",
+    "NOT_EXPLICIT",
+    "INSUFFICIENT_DATA"
+  ],
+  "columns": [
+    {
+      "column_id": "NYSC-COURSE-007",
+      "kind": "nysc",
+      "nysc_course_id": "COURSE-007",
+      "short_label": "NYSC COURSE-007"
+    },
+    {
+      "column_id": "IN-DGT-CTS-FOOD-PROD-V2",
+      "kind": "benchmark",
+      "record_id": "IN-DGT-CTS-FOOD-PROD-V2",
+      "short_label": "DGT · India"
+    },
+    {
+      "column_id": "PH-TESDA-PRO-COOKERY-NC3",
+      "kind": "benchmark",
+      "record_id": "PH-TESDA-PRO-COOKERY-NC3",
+      "short_label": "TESDA NC III · Philippines"
+    },
+    {
+      "column_id": "SG-ITE-HNITEC-CULINARY-2Y",
+      "kind": "benchmark",
+      "record_id": "SG-ITE-HNITEC-CULINARY-2Y",
+      "short_label": "ITE · Singapore"
+    },
+    {
+      "column_id": "AU-TGA-SIT30821",
+      "kind": "benchmark",
+      "record_id": "AU-TGA-SIT30821",
+      "short_label": "training.gov.au · Australia"
+    }
+  ],
+  "category_components": {
+    "menu_planning": [
+      "menu content",
+      "menu planning or design"
+    ],
+    "regional_cuisines": [
+      "Asian or Eastern cuisine",
+      "Western or Continental cuisine"
+    ],
+    "vegetable_egg_farinaceous": [
+      "vegetable dishes",
+      "egg dishes",
+      "farinaceous or starch dishes"
+    ],
+    "fish_meat_poultry": [
+      "fish or seafood dishes",
+      "meat dishes",
+      "poultry dishes"
+    ],
+    "beverages": [
+      "beverage preparation or product knowledge"
+    ],
+    "stocks_sauces_soups_salads": [
+      "stocks",
+      "sauces",
+      "soups",
+      "salads"
+    ],
+    "desserts_sweets": [
+      "desserts or sweets"
+    ],
+    "food_safety_hygiene": [
+      "food-safety and hygiene procedures"
+    ],
+    "workplace_safety": [
+      "general workplace or occupational safety"
+    ],
+    "kitchen_management": [
+      "recipe or menu costing",
+      "stock or inventory control"
+    ]
+  },
+  "methodology": {
+    "DOCUMENTED": "The cited stored text explicitly names the competency. Coverage records whether it names every component of the category (FULL) or only some (PARTIAL).",
+    "FULL": "The cited evidence supports the competency as labelled: every listed component of the category is explicitly named.",
+    "PARTIAL": "Only a component of the category, or a lower level of activity, is explicitly documented; supported_component records what is supported.",
+    "NOT_EXPLICIT": "The competency is not documented within the available, assessed scope of the source.",
+    "INSUFFICIENT_DATA": "Missing or incomplete material prevents a reliable assessment.",
+    "caution": "None of these statuses proves that a competency is or is not actually taught.",
+    "areas_rule": "Areas to Investigate list competencies that the NYSC description does not name (NOT_EXPLICIT) and that at least two distinct comparator records, from at least two different countries, document with FULL coverage. PARTIAL evidence is shown but not counted.",
+    "decisions": [
+      "No independent Sri Lankan comparator with published modules was verified; the matrix has no Sri Lankan column.",
+      "The TESDA NC III standard is broader and more supervisory than the six-month NYSC programme; similarity is curriculum content only, not equivalence.",
+      "Australian elective units are not treated as compulsory evidence."
+    ]
+  },
+  "competencies": [
+    {
+      "competency_id": "menu_planning",
+      "label": "Menu content and planning",
+      "cells": {
+        "NYSC-COURSE-007": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Western and Eastern Menu"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Eastern and Western menu content; planning or design is not named"
+        },
+        "IN-DGT-CTS-FOOD-PROD-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": "FIC/N9417",
+              "text": "Work with head cook in menu planning and menu engineering."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-PRO-COOKERY-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 25,
+              "field": "title_verbatim",
+              "code": "TRS512310",
+              "text": "Plan and cost menus"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-CULINARY-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 12,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to write recipes, calculate recipe costs and prepare budget."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-SIT30821": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 13,
+              "field": "title_verbatim",
+              "code": "SITHKOP010",
+              "text": "Plan and cost recipes"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "regional_cuisines",
+      "label": "Eastern/Asian and Western/Continental cuisines",
+      "cells": {
+        "NYSC-COURSE-007": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Western and Eastern Menu"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-FOOD-PROD-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": "FIC/N9420",
+              "text": "Plan and prepare basic Indian food recipes."
+            },
+            {
+              "module_index": 10,
+              "field": "title_verbatim",
+              "code": "FIC/N9426",
+              "text": "Prepare foods in continental/ Chinese kitchen of various food preparing organization s."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-PRO-COOKERY-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 19,
+              "field": "title_verbatim",
+              "code": "TRS512304",
+              "text": "Plan, prepare and present specialty cuisines"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Specialty cuisines; Eastern/Asian and Western/Continental coverage is not specified"
+        },
+        "SG-ITE-HNITEC-CULINARY-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to prepare and cook a specified range of Asian and Western main dishes consisting of cured meat, meat and poultry."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-SIT30821": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 30,
+              "field": "title_verbatim",
+              "code": "SITHASC020",
+              "text": "Prepare dishes using basic methods of Asian cookery"
+            }
+          ],
+          "note": "This is a published Group B elective, not a compulsory core unit.",
+          "coverage": "PARTIAL",
+          "supported_component": "Asian cookery; Western/Continental cuisine is not explicitly named"
+        }
+      }
+    },
+    {
+      "competency_id": "vegetable_egg_farinaceous",
+      "label": "Vegetable, egg and farinaceous dishes",
+      "cells": {
+        "NYSC-COURSE-007": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Fairnaceous Dishes"
+            }
+          ],
+          "note": "Published as 'Fairnaceous Dishes'.",
+          "coverage": "PARTIAL",
+          "supported_component": "Farinaceous dishes; vegetable and egg dishes are not named"
+        },
+        "IN-DGT-CTS-FOOD-PROD-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": "FIC/N9418",
+              "text": "Undertake various vegetable cuts which will help in cooking to a specific perfection as desired by the industry."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Vegetable preparation; egg and farinaceous dishes are not named"
+        },
+        "PH-TESDA-PRO-COOKERY-NC3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored unit title explicitly names vegetable, egg or farinaceous dishes."
+        },
+        "SG-ITE-HNITEC-CULINARY-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to cook a specified range of starch, tofu and vegetable dishes."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Starch and vegetable dishes; egg dishes are not named"
+        },
+        "AU-TGA-SIT30821": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": "SITHCCC030",
+              "text": "Prepare vegetable, fruit, eggs and farinaceous dishes"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "fish_meat_poultry",
+      "label": "Fish/seafood, meat and poultry dishes",
+      "cells": {
+        "NYSC-COURSE-007": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Fish and Meat Items"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Fish and meat items; poultry is not named"
+        },
+        "IN-DGT-CTS-FOOD-PROD-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": "FIC/N9419",
+              "text": "Work with head cook in preparation of mise-en-place and foods, prepare, season and cook soup, meat, vegetable and another foodstuff."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Meat; fish/seafood and poultry are not named"
+        },
+        "PH-TESDA-PRO-COOKERY-NC3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored unit title explicitly names fish/seafood, meat or poultry dishes."
+        },
+        "SG-ITE-HNITEC-CULINARY-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to prepare and cook a specified range of main dishes consisting of fish and seafood."
+            },
+            {
+              "module_index": 10,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to prepare and cook a specified range of Asian and Western main dishes consisting of cured meat, meat and poultry."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-SIT30821": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": "SITHCCC035",
+              "text": "Prepare poultry dishes"
+            },
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": "SITHCCC036",
+              "text": "Prepare meat dishes"
+            },
+            {
+              "module_index": 8,
+              "field": "title_verbatim",
+              "code": "SITHCCC037",
+              "text": "Prepare seafood dishes"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "beverages",
+      "label": "Beverages",
+      "cells": {
+        "NYSC-COURSE-007": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Beverages"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-FOOD-PROD-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": "FIC/N9422",
+              "text": "Work in the Garde manger of various food preparing organizations and prepare salads, sandwiches, fruit juices and other cold foods."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Fruit juices; broader beverage preparation or knowledge is not named"
+        },
+        "PH-TESDA-PRO-COOKERY-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 21,
+              "field": "title_verbatim",
+              "code": "TRS512306",
+              "text": "Develop and maintain beverage and wine product knowledge"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-CULINARY-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored module or objective explicitly names beverage preparation or product knowledge."
+        },
+        "AU-TGA-SIT30821": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No published core or elective unit title explicitly names beverages."
+        }
+      }
+    },
+    {
+      "competency_id": "stocks_sauces_soups_salads",
+      "label": "Stocks, sauces, soups and salads",
+      "cells": {
+        "NYSC-COURSE-007": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Stock, Sause, Soup and Salad"
+            }
+          ],
+          "note": "The governed heading publishes 'Sause'; it is retained verbatim.",
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-FOOD-PROD-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": "FIC/N9419",
+              "text": "Work with head cook in preparation of mise-en-place and foods, prepare, season and cook soup, meat, vegetable and another foodstuff."
+            },
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": "FIC/N9422",
+              "text": "Work in the Garde manger of various food preparing organizations and prepare salads, sandwiches, fruit juices and other cold foods."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Soups and salads; stocks and sauces are not named"
+        },
+        "PH-TESDA-PRO-COOKERY-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 20,
+              "field": "title_verbatim",
+              "code": "TRS512305",
+              "text": "Plan and prepare Garde Manger products"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Garde Manger products; stocks, sauces and soups are not named"
+        },
+        "SG-ITE-HNITEC-CULINARY-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to prepare a specified range of stocks, sauces and soups."
+            },
+            {
+              "module_index": 7,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to prepare a range of appetizers, salads and snacks."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-SIT30821": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": "SITHCCC028",
+              "text": "Prepare appetisers and salads"
+            },
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": "SITHCCC029",
+              "text": "Prepare stocks, sauces and soups"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "desserts_sweets",
+      "label": "Desserts and sweets",
+      "cells": {
+        "NYSC-COURSE-007": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Sweets and Desserts"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-FOOD-PROD-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 9,
+              "field": "title_verbatim",
+              "code": "FIC/N9425",
+              "text": "Work in the bakery of various food preparing organization s and p repare various desserts and sweet dishes."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-PRO-COOKERY-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 22,
+              "field": "title_verbatim",
+              "code": "TRS512307",
+              "text": "Prepare bakery products for patisserie"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Bakery products for patisserie; desserts or sweets are not explicitly named"
+        },
+        "SG-ITE-HNITEC-CULINARY-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 8,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to prepare a specified range of Asian and Western cold and hot desserts."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-SIT30821": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 14,
+              "field": "title_verbatim",
+              "code": "SITHPAT016",
+              "text": "Produce desserts"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "food_safety_hygiene",
+      "label": "Food safety and hygiene",
+      "cells": {
+        "NYSC-COURSE-007": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No governed NYSC heading names food safety or hygiene."
+        },
+        "IN-DGT-CTS-FOOD-PROD-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": "FIC/N9416",
+              "text": "Maintain hygiene and cleanliness of kitchen, kitchen equipment’s and cooking utensils following safety precautions."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-PRO-COOKERY-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 16,
+              "field": "title_verbatim",
+              "code": "TRS512301",
+              "text": "Monitor daily cleaning routines"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Cleaning routines; food safety and hygiene procedures are not explicitly named"
+        },
+        "SG-ITE-HNITEC-CULINARY-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to apply knowledge and skills to follow workplace safety and food safety procedures and standards according to regulations, practice good personal hygiene, handle and store food safely and maintain cleanliness of utensils, equipment, service and storage areas and attend to accidents and emergencies."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-SIT30821": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 15,
+              "field": "title_verbatim",
+              "code": "SITXFSA005",
+              "text": "Use hygienic practices for food safety"
+            },
+            {
+              "module_index": 16,
+              "field": "title_verbatim",
+              "code": "SITXFSA006",
+              "text": "Participate in safe food handling practices"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "workplace_safety",
+      "label": "Workplace safety",
+      "cells": {
+        "NYSC-COURSE-007": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No governed NYSC heading names workplace or occupational safety."
+        },
+        "IN-DGT-CTS-FOOD-PROD-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": "FIC/N9416",
+              "text": "Maintain hygiene and cleanliness of kitchen, kitchen equipment’s and cooking utensils following safety precautions."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-PRO-COOKERY-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": "400311325",
+              "text": "Evaluate occupational safety and health work practices"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-CULINARY-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to apply knowledge and skills to follow workplace safety and food safety procedures and standards according to regulations, practice good personal hygiene, handle and store food safely and maintain cleanliness of utensils, equipment, service and storage areas and attend to accidents and emergencies."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-SIT30821": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 19,
+              "field": "title_verbatim",
+              "code": "SITXWHS005",
+              "text": "Participate in safe work practices"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "kitchen_management",
+      "label": "Recipe costing and stock control",
+      "cells": {
+        "NYSC-COURSE-007": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No governed NYSC heading names recipe or menu costing, stock control or inventory management."
+        },
+        "IN-DGT-CTS-FOOD-PROD-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": "FIC/N9417",
+              "text": "Work with head cook in menu planning and menu engineering."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Menu planning; costing and stock/inventory control are not named"
+        },
+        "PH-TESDA-PRO-COOKERY-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 13,
+              "field": "title_verbatim",
+              "code": "TRS141205",
+              "text": "Control and Order stock"
+            },
+            {
+              "module_index": 25,
+              "field": "title_verbatim",
+              "code": "TRS512310",
+              "text": "Plan and cost menus"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-CULINARY-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able prepare for operations, prepare ingredients, according to food hygiene and safety requirements, maintain inventory and demonstrate proficiency in basic culinary and pastry techniques."
+            },
+            {
+              "module_index": 12,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to write recipes, calculate recipe costs and prepare budget."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-SIT30821": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 13,
+              "field": "title_verbatim",
+              "code": "SITHKOP010",
+              "text": "Plan and cost recipes"
+            },
+            {
+              "module_index": 18,
+              "field": "title_verbatim",
+              "code": "SITXINV006",
+              "text": "Receive, store and maintain stock"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    }
+  ]
+}

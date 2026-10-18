@@ -1,0 +1,718 @@
+{
+  "description": "Hand-curated competency mapping for NYSC COURSE-055 Computer Hardware Technician against its three linked records. A DOCUMENTED cell cites the exact stored text that names the competency. NOT_EXPLICIT means the available description does not name it, not that it is absent from teaching. INSUFFICIENT_DATA means the stored text is unavailable, outside the record's scope, or too ambiguous to assess.",
+  "schema_version": "1.0.0",
+  "nysc_course_id": "COURSE-055",
+  "created_date": "2026-10-18",
+  "method": "The NYSC column was assessed by hand against this course's own governed module headings; a broad heading does not establish a more specific competency. COURSE-055 is the 6-month part-time weekend course; its headings 3 and 5 are cited by their governed text with the verified display corrections. NYSC citations keep the exact governed text; where the snapshot holds a verified display correction for that heading, display_text carries the corrected wording. Comparator cells are shared with the other Computer Hardware course. Coverage is never inferred from programme titles, qualification levels or unstored text.",
+  "human_reviewed": false,
+  "statuses": [
+    "DOCUMENTED",
+    "NOT_EXPLICIT",
+    "INSUFFICIENT_DATA"
+  ],
+  "columns": [
+    {
+      "column_id": "NYSC-COURSE-055",
+      "kind": "nysc",
+      "nysc_course_id": "COURSE-055",
+      "short_label": "NYSC COURSE-055"
+    },
+    {
+      "column_id": "IN-DGT-CTS-CHNM-V2",
+      "kind": "benchmark",
+      "record_id": "IN-DGT-CTS-CHNM-V2",
+      "short_label": "DGT · India"
+    },
+    {
+      "column_id": "PH-TESDA-CSS-NC2",
+      "kind": "benchmark",
+      "record_id": "PH-TESDA-CSS-NC2",
+      "short_label": "TESDA NC II · Philippines"
+    },
+    {
+      "column_id": "SG-ITE-HNITEC-ISN-2Y",
+      "kind": "benchmark",
+      "record_id": "SG-ITE-HNITEC-ISN-2Y",
+      "short_label": "ITE · Singapore"
+    }
+  ],
+  "category_components": {
+    "pc_assembly": [
+      "assembling or disassembling a computer from its hardware components"
+    ],
+    "device_installation": [
+      "installing or configuring internal or external devices or peripherals"
+    ],
+    "software_installation": [
+      "installing operating systems or application software"
+    ],
+    "troubleshooting_repair": [
+      "troubleshooting or fault diagnosis of computers",
+      "repairing computers"
+    ],
+    "computer_maintenance": [
+      "maintaining computers (preventive or routine maintenance)"
+    ],
+    "laptop_servicing": [
+      "assembling, servicing or repairing laptops"
+    ],
+    "networking": [
+      "setting up or configuring computer networks"
+    ],
+    "server_setup": [
+      "installing or configuring servers"
+    ],
+    "internet_email": [
+      "using or configuring internet access or email"
+    ],
+    "power_electronics": [
+      "testing or troubleshooting power supplies",
+      "testing electronic components or circuits"
+    ],
+    "network_security": [
+      "securing networks against attacks or unauthorised access"
+    ],
+    "cost_estimating": [
+      "preparing estimates or costings"
+    ],
+    "workplace_safety": [
+      "general workplace or occupational safety and health practice"
+    ]
+  },
+  "methodology": {
+    "DOCUMENTED": "The cited stored text explicitly names the competency. Coverage records whether it names every component of the category (FULL) or only some (PARTIAL).",
+    "FULL": "The cited evidence supports the competency as labelled: every listed component of the category is explicitly named.",
+    "PARTIAL": "Only a component of the category, or a lower level of activity, is explicitly documented; supported_component records what is supported.",
+    "NOT_EXPLICIT": "The competency is not documented within the available, assessed scope of the source (for TESDA, unit titles).",
+    "INSUFFICIENT_DATA": "Missing or incomplete material prevents a reliable assessment.",
+    "caution": "None of these statuses proves that a competency is or is not actually taught.",
+    "areas_rule": "Areas to Investigate list competencies that the NYSC description does not name (NOT_EXPLICIT) and that at least two distinct comparator records, from at least two different countries, document with FULL coverage. PARTIAL evidence is shown but not counted.",
+    "decisions": [
+      "No independent Sri Lankan comparator with published modules was verified; the matrix has no Sri Lankan column.",
+      "TESDA 'Install and configure computer systems' is not read as naming devices, peripherals, operating systems or software.",
+      "ITE's general HSE elective modules are not part of this course's stored modules, so its workplace-safety cell is INSUFFICIENT_DATA, as for the ITE Electrician record."
+    ]
+  },
+  "competencies": [
+    {
+      "competency_id": "pc_assembly",
+      "label": "PC assembly and disassembly",
+      "cells": {
+        "NYSC-COURSE-055": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "PC assembling"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-CHNM-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": "SSC/N0101, SSC/N0202",
+              "text": "Assemble and repair Desktop Computer with all its hardware components."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-CSS-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No unit names assembling a computer; 'Computer Assembler' appears only as an occupation in the qualification scope. Only unit titles are stored; the regulation's element-level text is not."
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Computer Maintenance names installing hardware components but not assembling a computer."
+        }
+      }
+    },
+    {
+      "competency_id": "device_installation",
+      "label": "Installing and configuring devices and peripherals",
+      "cells": {
+        "NYSC-COURSE-055": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Install and Configure Internal, External Devices be held on weekends.",
+              "display_text": "Install and Configure Internal, External Devices"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-CHNM-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 9,
+              "field": "title_verbatim",
+              "code": "SSC/N0101, SSC/N0202",
+              "text": "Install Printer, Scanner and troubleshoot their faults."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-CSS-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "'Install and configure computer systems' names whole systems, not devices or peripherals. Only unit titles are stored; the regulation's element-level text is not."
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to perform installation and configuration of hardware components and peripherals of end user computing devices. In addition, they should also be able to perform end user computing devices maintenance and troubleshooting of hardware problems."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "software_installation",
+      "label": "Operating system and software installation",
+      "cells": {
+        "NYSC-COURSE-055": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Software Installation"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-CHNM-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": "SSC/N0305, SSC/N0901, SSC/N0922",
+              "text": "Install different Operating System and all other application software."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-CSS-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "'Install and configure computer systems' does not name operating systems or software. Only unit titles are stored; the regulation's element-level text is not."
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to install and configure operating system (OS) and application software on end user computing devices. In addition, they should also be able to perform OS maintenance and troubleshooting."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "troubleshooting_repair",
+      "label": "Hardware troubleshooting and repair",
+      "cells": {
+        "NYSC-COURSE-055": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Maintence Repair PCs"
+            }
+          ],
+          "note": "Published as 'Maintence Repair PCs'.",
+          "coverage": "PARTIAL",
+          "supported_component": "Repair of PCs; troubleshooting is not named"
+        },
+        "IN-DGT-CTS-CHNM-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": "SSC/N0101, SSC/N0202",
+              "text": "Preventive Maintenance and Troubleshooting of PC."
+            },
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": "SSC/N0101, SSC/N0202",
+              "text": "Assemble and repair Desktop Computer with all its hardware components."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-CSS-NC2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 14,
+              "field": "title_verbatim",
+              "code": "ELC724334",
+              "text": "Maintain and Repair Computer Systems and Networks"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Maintaining and repairing computer systems and networks; troubleshooting is not named"
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to perform installation and configuration of hardware components and peripherals of end user computing devices. In addition, they should also be able to perform end user computing devices maintenance and troubleshooting of hardware problems."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Troubleshooting of hardware problems; repair is not named"
+        }
+      }
+    },
+    {
+      "competency_id": "computer_maintenance",
+      "label": "Computer maintenance",
+      "cells": {
+        "NYSC-COURSE-055": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Maintence Repair PCs"
+            }
+          ],
+          "note": "Published as 'Maintence Repair PCs'; maintenance type is not specified.",
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-CHNM-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": "SSC/N0101, SSC/N0202",
+              "text": "Preventive Maintenance and Troubleshooting of PC."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-CSS-NC2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 14,
+              "field": "title_verbatim",
+              "code": "ELC724334",
+              "text": "Maintain and Repair Computer Systems and Networks"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to perform installation and configuration of hardware components and peripherals of end user computing devices. In addition, they should also be able to perform end user computing devices maintenance and troubleshooting of hardware problems."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "laptop_servicing",
+      "label": "Laptop servicing",
+      "cells": {
+        "NYSC-COURSE-055": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's published module headings."
+        },
+        "IN-DGT-CTS-CHNM-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": "SSC/N0101, SSC/N0202",
+              "text": "Assemble and repair Laptop and its hardware components."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-CSS-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No unit names laptops. Only unit titles are stored; the regulation's element-level text is not."
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "'End user computing devices' does not name laptops."
+        }
+      }
+    },
+    {
+      "competency_id": "networking",
+      "label": "Computer network setup",
+      "cells": {
+        "NYSC-COURSE-055": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Network and Internet gentle attitudes within a disciplined environment.",
+              "display_text": "Network and Internet"
+            }
+          ],
+          "note": "The heading names networks as a topic; set-up tasks are not specified.",
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-CHNM-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "title_verbatim",
+              "code": "SSC/N0101, SSC/N0202",
+              "text": "Set up and configure Networking System using various network devices."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-CSS-NC2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 12,
+              "field": "title_verbatim",
+              "code": "ELC724332",
+              "text": "Set-up Computer Networks"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to set up, configure, set up and troubleshoot wired and wireless network system for small office environment. They should be able to provide network support and configure network devices."
+            },
+            {
+              "module_index": 3,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to apply the fundamentals of computer networking in relation to the OSI model. They should also be able to configure and set up wired and wireless local area network (LAN) including network segmentation. Students will also be able to perform network documentation and monitor network performance."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "server_setup",
+      "label": "Server setup",
+      "cells": {
+        "NYSC-COURSE-055": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's published module headings."
+        },
+        "IN-DGT-CTS-CHNM-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 14,
+              "field": "title_verbatim",
+              "code": "SSC/N0305, SSC/N0901, SSC/N0922",
+              "text": "Install and configure Windows and Linux server."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-CSS-NC2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 13,
+              "field": "title_verbatim",
+              "code": "ELC724333",
+              "text": "Set-up Computer Servers"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to set up server operating systems and perform system administration tasks such as user management, resource management and performance monitoring. Students should also be able to configure file server services and implement basic system security."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "internet_email",
+      "label": "Internet and email",
+      "cells": {
+        "NYSC-COURSE-055": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Network and Internet gentle attitudes within a disciplined environment.",
+              "display_text": "Network and Internet"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-CHNM-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 15,
+              "field": "title_verbatim",
+              "code": "SSC/N0305, SSC/N0901, SSC/N0922",
+              "text": "Browse internet and communicate through email."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-CSS-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No unit names internet access or email; 'Perform computer operations' is general. Only unit titles are stored; the regulation's element-level text is not."
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored module objective names internet access or email."
+        }
+      }
+    },
+    {
+      "competency_id": "power_electronics",
+      "label": "Power supplies and electronic components",
+      "cells": {
+        "NYSC-COURSE-055": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's published module headings."
+        },
+        "IN-DGT-CTS-CHNM-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": "SSC/N0101, SSC/N0202",
+              "text": "Demonstrate testing and troubleshooting for power supplies in I/O devices and trace circuit of PC SMPS."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Testing and troubleshooting PC power supplies (SMPS); electronic components are not named in the outcome"
+        },
+        "PH-TESDA-CSS-NC2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "title_verbatim",
+              "code": "ELC724205",
+              "text": "Test electronic components"
+            },
+            {
+              "module_index": 9,
+              "field": "title_verbatim",
+              "code": "ELC724202",
+              "text": "Terminate and connect electrical wiring and electronic circuits"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Testing electronic components and connecting electronic circuits; power supplies are not named"
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored module objective names power supplies or electronic components."
+        }
+      }
+    },
+    {
+      "competency_id": "network_security",
+      "label": "Network security",
+      "cells": {
+        "NYSC-COURSE-055": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's published module headings."
+        },
+        "IN-DGT-CTS-CHNM-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 13,
+              "field": "title_verbatim",
+              "code": "SSC/N0305, SSC/N0901, SSC/N0922",
+              "text": "Implement Network Security to protect from various attacks on networking."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-CSS-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No unit names network security. Only unit titles are stored; the regulation's element-level text is not."
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 12,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to install hardware firewalls, set up intrusion detection and prevention systems, and maintain firewall policies for network connectivity to external networks. They will also be proficient in setting up Virtual Private Networks, configure endpoint protection, and implement cryptography in the enterprise environment."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "cost_estimating",
+      "label": "Cost estimating",
+      "cells": {
+        "NYSC-COURSE-055": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's published module headings."
+        },
+        "IN-DGT-CTS-CHNM-V2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No outcome names estimating or costing."
+        },
+        "PH-TESDA-CSS-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "ELC311201 'Perform mensuration and calculation' is measurement and calculation, not cost estimating."
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored module names estimating or costing."
+        }
+      }
+    },
+    {
+      "competency_id": "workplace_safety",
+      "label": "Workplace safety",
+      "cells": {
+        "NYSC-COURSE-055": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's published module headings."
+        },
+        "IN-DGT-CTS-CHNM-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": "SSC/N0101, SSC/N0202",
+              "text": "Demonstrate implementation of safe working practices, environment regulation, and housekeeping."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-CSS-NC2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": "500311108",
+              "text": "Practice occupational health and safety procedures"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "INSUFFICIENT_DATA",
+          "evidence": [],
+          "note": "No stored module names workplace safety, but the course's life-skills, cross-disciplinary and elective modules are not stored, so safety coverage cannot be assessed reliably."
+        }
+      }
+    }
+  ]
+}

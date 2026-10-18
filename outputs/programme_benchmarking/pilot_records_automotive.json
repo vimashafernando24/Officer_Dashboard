@@ -1,0 +1,893 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-pilot-automotive",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.0.0",
+  "created_date": "2026-10-17",
+  "purpose": "Pilot comparator records for benchmarking NYSC COURSE-005 Automobile Mechanic (NVQ Level 4). Records describe documented content only and do not establish labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its source by a researcher before it is used in analysis.",
+  "records": [
+    {
+      "record_id": "IN-DGT-CTS-MMV-V2",
+      "country": "India",
+      "country_group": "developing_emerging",
+      "institution": "Directorate General of Training (DGT), Ministry of Skill Development & Entrepreneurship",
+      "record_type": "national_curriculum",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Mechanic Motor Vehicle",
+      "sector": "Automotive",
+      "framework": "NSQF (India)",
+      "level_as_published": "NSQF LEVEL - 4",
+      "duration_as_published": "Two Years (2400 hours + 300 hours OJT/Group Project)",
+      "entry_as_published": "Passed 10th class examination with Science and Mathematics or with vocational subject in same sector or its equivalent. Minimum Age 14 years as on first day of academic session.",
+      "modules": [
+        {
+          "published_ref": "Y1-LO1",
+          "code": "ASC/N1404",
+          "title_verbatim": "Check & perform Measuring & marking by using various Measuring & Marking tools (Vernier Calliper, Micrometer, Telescope gauges, Dial bore gauges, Dial indicators, straightedge, feeler gauge, thread pitch gauge, vacuum gauge, tire pressure guage) following safety precautions.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "Y1-LO2",
+          "code": "ASC/N1405",
+          "title_verbatim": "Plan & perform basic fastening & fitting operation by using correct hand tools, Machine tools &equipments.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "Y1-LO3",
+          "code": "ASC/N1438",
+          "title_verbatim": "Test various electrical/ electronic components using proper measuring instruments and compare the data using standard parameters.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "Y1-LO4",
+          "code": "ASC/N1404",
+          "title_verbatim": "Check & Interpret Vehicle Specification data and VIN and Select & operate various Service Station Equipments.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "Y1-LO5",
+          "code": "ASC/N1405",
+          "title_verbatim": "Dismantle & assemble of Engine from vehicle (LMV/HMV) along with other accessories.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "Y1-LO6",
+          "code": "ASC/N1405",
+          "title_verbatim": "Overhaul Engine and check functionality.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "Y1-LO7",
+          "code": "ASC/N1404",
+          "title_verbatim": "Trace, Test & Repair Cooling and Lubrication System of engine.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "Y1-LO8",
+          "code": "ASC/N1405",
+          "title_verbatim": "Trace & Test Intake and Exhaust system of engine.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "Y1-LO9",
+          "code": "ASC/N1405",
+          "title_verbatim": "Service Fuel System and check proper functionality.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "Y1-LO10",
+          "code": "ASC/N1405",
+          "title_verbatim": "Test Engine Performance and set idling speed.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "Y1-LO11",
+          "code": "ASC/N9435",
+          "title_verbatim": "Monitor emission of vehicle and execute different operation to obtain optimum pollution as per emission norms.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "Y1-LO12",
+          "code": "ASC/N9436",
+          "title_verbatim": "Carryout overhauling of Alternator and Starter Motor.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "Y1-LO13",
+          "code": "ASC/N1404, ASC/N1405, ASC/N1438",
+          "title_verbatim": "Diagnose & rectify the defects in LMV/HMV to ensure functionality of vehicle.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "Y1-LO14",
+          "code": "ASC/N9420",
+          "title_verbatim": "Read and apply engineering drawing for different application in the field of work.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "Y1-LO15",
+          "code": "ASC/N9421",
+          "title_verbatim": "Demonstrate basic mathematical concept and principles to perform practical operations. Understand and explain basic science in the field of study.",
+          "outcome_verbatim": null,
+          "group": "First Year learning outcomes"
+        },
+        {
+          "published_ref": "Y2-LO1",
+          "code": "ASC/N1404, ASC/N1405",
+          "title_verbatim": "Plan & perform maintenance, diagnosis and servicing of transmission system.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "Y2-LO2",
+          "code": "ASC/N9437",
+          "title_verbatim": "Plan & perform maintenance, diagnosis and servicing of Vehicle Control System.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "Y2-LO3",
+          "code": "ASC/N9438",
+          "title_verbatim": "Troubleshoot vehicle Engine components and ascertain repair.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "Y2-LO4",
+          "code": "ASC/N1438",
+          "title_verbatim": "Plan & service Electronic Control Unit and check functionality.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "Y2-LO5",
+          "code": "ASC/N1438",
+          "title_verbatim": "Diagnose & rectify the defects in vehicle to ensure functionality of vehicle.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "Y2-LO6",
+          "code": "ASC/N1438",
+          "title_verbatim": "Carryout overhauling of charging system.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "Y2-LO7",
+          "code": "ASC/N1438",
+          "title_verbatim": "Carryout overhauling of starting system.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "Y2-LO8",
+          "code": "ASC/N1438",
+          "title_verbatim": "Troubleshoot electrical components of vehicle and ascertain repair.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "Y2-LO9",
+          "code": "ASC/N1438",
+          "title_verbatim": "Overhaul, service and testing Vehicle Air Conditioning system, its parts and check functionality.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "Y2-LO10",
+          "code": null,
+          "title_verbatim": "Drive vehicle following Traffic Regulations and maintenance of good road conduct.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": "Y2-LO11",
+          "code": "ASC/N9439",
+          "title_verbatim": "Identify and study of Electric Vehicle components and Performance comparison of EV and IC engine vehicles. (Components of Electric Vehicle such as Motor, Motor Controller, Battery Pack, Battery Management System, Charging System etc.)",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": null,
+          "code": "ASC/N9420",
+          "title_verbatim": "Read and apply engineering drawing for different application in the field of work.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        },
+        {
+          "published_ref": null,
+          "code": "ASC/N9421",
+          "title_verbatim": "Demonstrate basic mathematical concept and principles to perform practical operations. Understand and explain basic science in the field of study.",
+          "outcome_verbatim": null,
+          "group": "Second Year learning outcomes"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://www.dgt.gov.in/sites/default/files/2023-12/Mechanic%20Motor%20Vehicle_CTS2.0_NSQF-4_0.pdf",
+        "document_type": "pdf",
+        "document_sha256": "2f4e30bc965d3542bb36467c92e196082dc804f9b43b0b8330e9b22ef0e1fb27",
+        "publication_or_revision": "Version 2.0, revised July 2022",
+        "retrieved_date": "2026-10-17"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Text extracted locally from the official PDF; split words from PDF kerning were rejoined and NOS codes written without the internal space.",
+        "human_reviewed": false
+      },
+      "licence_note": "Government of India publication; reuse terms not checked. Store extracts and citation, not the full document.",
+      "notes": [
+        "Delivered through Industrial Training Institutes (ITIs); no individual ITI has been verified.",
+        "Y2-LO10's NOS code could not be read reliably from the PDF and is left null.",
+        "The last two Second Year outcomes have unclear numbering in the extracted text, so published_ref is null.",
+        "Version 3.0 (August 2025) exists on cstaricalcutta.gov.in but has not been inspected; check whether it supersedes this record."
+      ]
+    },
+    {
+      "record_id": "PH-TESDA-ASER-NC2",
+      "country": "Philippines",
+      "country_group": "developing_emerging",
+      "institution": "Technical Education and Skills Development Authority (TESDA)",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Automotive Servicing (Engine Repair) NC II",
+      "sector": "Automotive",
+      "framework": "Philippine TVET Qualification (NC)",
+      "level_as_published": "NC II",
+      "duration_as_published": "Nominal Training Duration: 37 Hours (Basic Competencies), 162 Hours (Common Competencies), 90 Hours (Core Competencies), 289 hours, 176 SIL, 465 TOTAL HOURS",
+      "entry_as_published": "Must be holder of Automotive Servicing NC I; Basic communication skills; Basic mathematical skills",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "400311210",
+          "title_verbatim": "Participate in workplace communication",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311211",
+          "title_verbatim": "Work in team environment",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311212",
+          "title_verbatim": "Solve/address general workplace problems",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311213",
+          "title_verbatim": "Develop career and life decisions",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311214",
+          "title_verbatim": "Contribute to workplace innovation",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311215",
+          "title_verbatim": "Present relevant information",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311216",
+          "title_verbatim": "Practice occupational safety and health policies and procedures",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311217",
+          "title_verbatim": "Exercise efficient and effective sustainable practices in the workplace",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311218",
+          "title_verbatim": "Practice entrepreneurial skills in the workplace",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723211",
+          "title_verbatim": "Validate vehicle specification",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723212",
+          "title_verbatim": "Move and position vehicle",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723213",
+          "title_verbatim": "Utilize automotive tools",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723214",
+          "title_verbatim": "Perform mensuration and calculation",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723215",
+          "title_verbatim": "Utilize workshop facilities and equipment",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723216",
+          "title_verbatim": "Prepare servicing parts and consumables",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723217",
+          "title_verbatim": "Prepare vehicle for servicing and releasing",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Diagnose and repair engine cooling and lubrication system",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Diagnose and repair intake and exhaust system",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Diagnose and overhaul engine mechanical system",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://tesda.gov.ph/Downloadables/TR%20-%20Automotive%20Servicing%20(Engine%20Repair)%20NC%20II.pdf",
+        "document_type": "pdf",
+        "document_sha256": "28b2625fe168df60762ef7b485a65ed915e068ed8082ce71010f24ed6a1a4f00",
+        "publication_or_revision": "Revision 01, promulgated 08/11/2020",
+        "retrieved_date": "2026-10-17"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Text extracted locally from the official PDF; split words were rejoined.",
+        "human_reviewed": false
+      },
+      "licence_note": "Philippine government publication; reuse terms not checked.",
+      "notes": [
+        "A training regulation (standard), delivered by TESDA-registered institutions; no provider has been verified.",
+        "Core competency codes are garbled in the PDF text layer (e.g. 'ALT 23399') and are left null until read from the rendered PDF.",
+        "Covers engine repair only. Separate TESDA regulations exist for Chassis Repair NC II and Electrical Repair NC II; a full NYSC comparison needs those too.",
+        "The listed 'Common Competencies' code ALT723212 appeared as 'ALT72321 2' in the text layer and was rejoined."
+      ]
+    },
+    {
+      "record_id": "SG-ITE-HNITEC-AUTO-2Y",
+      "country": "Singapore",
+      "country_group": "developed",
+      "institution": "Institute of Technical Education (ITE)",
+      "record_type": "programme",
+      "delivering_provider_verified": true,
+      "title_verbatim": "Higher Nitec in Automotive Engineering (2 YEARS)",
+      "sector": "Automotive",
+      "framework": "ITE Nitec / Higher Nitec (Singapore)",
+      "level_as_published": "Higher Nitec",
+      "duration_as_published": "2 years; Total: 68 credits",
+      "entry_as_published": null,
+      "modules": [
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Workplace Safety, Health & Environment",
+          "outcome_verbatim": "On completion of the module, students should be able to apply Workplace Safety and Health (WSH) policies, Environmental Management System procedures and practices in the planning, preparation and execution of work activities to ensure a safe and reliable workplace environment.",
+          "group": "Sector Foundation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Data & Digital Essentials",
+          "outcome_verbatim": "On completion of the module, students should be able to prepare data for analysis, use online tools for collaborative work and maintain information security when online.",
+          "group": "Sector Foundation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Engine Technology",
+          "outcome_verbatim": "On completion of the module, students should be able to service fuel, lubrication, cooling and air intake system components in petrol and diesel engines.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Chassis & Drivetrain Technology",
+          "outcome_verbatim": "On completion of the module, students should be able to service and replace automotive drivetrain and chassis components, including the manual transmission clutch and brakes, on a vehicle.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Chassis & Drivetrain Systems",
+          "outcome_verbatim": "On completion of the module, students should be able to repair and rectify faults within automotive chassis and drivetrain systems",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Automotive Electrical & Electronic Technology",
+          "outcome_verbatim": "On completion of the module, students should be able to interpret, measure, and identify faults in vehicle auxiliary systems, including the starter, charging, and lighting systems.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Automotive Electrical & Electronic Systems",
+          "outcome_verbatim": "On completion of the module, students Should be able to perform functional checks on engine electrical and auxiliary electrical systems by conducting diagnosis, troubleshooting and rectifying faults using manufacturer service manuals and accurately interpret electrical wiring diagrams.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Engine & Powertrain Management",
+          "outcome_verbatim": "On completion of the module, students should be able to use systematic fault-finding techniques to identify faults in engine systems, as well as service engine mechanical components and the emission control system.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "High Voltage Vehicle System & Safety",
+          "outcome_verbatim": "On completion of the module, students should be equipped with the knowledge and skills necessary to understand, work with, and ensure the safety of high voltage electrical systems in automotive engineering.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Vehicle Telemetry Systems",
+          "outcome_verbatim": "On completion of the module, students should be able to diagnose communication faults within the vehicle communication system using diagnostics tool and perform remote vehicle monitoring.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Automotive Body & Chassis Diagnosis",
+          "outcome_verbatim": "On completion of the module, students should be able to interpret diagnostic results and rectify faults on vehicle steering include SRS Airbag braking and transmission systems on petrol- or diesel-powered vehicle as well as service alternative powered vehicle’s powertrain.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Control & Driver Assistance Systems",
+          "outcome_verbatim": "On completion of this module, students should be able to perform fundamental assessment on the status and performance of the vehicle stabilisation control systems and advanced driver assistance systems. They will be equipped with the skills and knowledge to perform diagnosis and calibration of the systems using appropriate diagnostic tools and equipment.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Automotive Powertrain Diagnosis",
+          "outcome_verbatim": "On completion of the module, students should be able to use systematic fault-finding techniques to diagnose and identify issues in the engine drivetrain and electrical systems. They will be equipped with skills in using On-Board Diagnostic equipment to rectify faults in the vehicle’s powertrain systems.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Internship Programme",
+          "outcome_verbatim": null,
+          "group": "Internship Programme"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://isomer-user-content.by.gov.sg/145/462e8e64-ecd8-495c-b99d-c426ecfcfd0c/Higher%20Nitec%20in%20Automotive%20Engineering%20(2%20YEARS).pdf",
+        "document_type": "pdf",
+        "document_sha256": "335525b6586067ec01828a35d72ff8094cf8b84e7d45104474c3974001bfdb3e",
+        "publication_or_revision": "Last updated on 28 Nov 2025",
+        "retrieved_date": "2026-10-17"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Text extracted locally from the official PDF; split words and hyphenation spacing were rejoined; the original capital 'Should' and grammar are kept as published.",
+        "human_reviewed": false
+      },
+      "licence_note": "Singapore Government agency publication; reuse terms not checked.",
+      "notes": [
+        "Electives and Life Skills modules are published separately ('For details, click here') and are not included.",
+        "Entry requirements are not in this PDF; a search snippet of the MOE course page mentions freedom from colour appreciation deficiency, which has not been verified.",
+        "A 3-year version (96 credits) also exists; the legacy ITE course-page and PDF URLs returned HTTP 404 on 2026-10-17."
+      ]
+    },
+    {
+      "record_id": "AU-TAFENSW-AUR30620",
+      "country": "Australia",
+      "country_group": "developed",
+      "institution": "TAFE NSW",
+      "record_type": "programme",
+      "delivering_provider_verified": true,
+      "title_verbatim": "Certificate III in Light Vehicle Mechanical Technology",
+      "sector": "Automotive",
+      "framework": "AQF (Australia)",
+      "level_as_published": "Certificate III (national code AUR30620)",
+      "duration_as_published": null,
+      "entry_as_published": "Apprenticeship: You must be employed as an apprentice in the industry. Non-apprenticeship: at least 21, photo identification, and currently working in the industry or at least 2 years' experience.",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "AURTTA118",
+          "title_verbatim": "Develop and carry out diagnostic test strategies",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "AURTTB101",
+          "title_verbatim": "Inspect and service braking systems",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "AURTTC103",
+          "title_verbatim": "Diagnose and repair cooling systems",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "AURTTE104",
+          "title_verbatim": "Inspect and service engines",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "AURTTF101",
+          "title_verbatim": "Inspect and service petrol fuel systems",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "AURTTK102",
+          "title_verbatim": "Use and maintain tools and equipment in an automotive workplace",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "AURASA102",
+          "title_verbatim": "Follow safe working practices in an automotive workplace",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "AURLTD104",
+          "title_verbatim": "Diagnose and repair light vehicle steering systems",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "AURLTD105",
+          "title_verbatim": "Diagnose and repair light vehicle suspension systems",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "AURLTE102",
+          "title_verbatim": "Diagnose and repair light vehicle engines",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "AURLTZ101",
+          "title_verbatim": "Diagnose and repair light vehicle emission control systems",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR112",
+          "title_verbatim": "Test and repair basic electrical circuits",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR123",
+          "title_verbatim": "Diagnose and repair spark ignition engine management systems",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR125",
+          "title_verbatim": "Test, charge and replace batteries and jump-start vehicles",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR129",
+          "title_verbatim": "Diagnose and repair charging systems",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR130",
+          "title_verbatim": "Diagnose and repair starting systems",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR131",
+          "title_verbatim": "Diagnose and repair ignition systems",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "AURTTA104",
+          "title_verbatim": "Carry out servicing operations",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "AURAEA002",
+          "title_verbatim": "Follow environmental and sustainability best practice in an automotive workplace",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": null,
+          "code": "AURLTB103",
+          "title_verbatim": "Diagnose and repair light vehicle hydraulic braking systems",
+          "outcome_verbatim": null,
+          "group": "Core"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_via_page_tool_pending_check",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://www.tafensw.edu.au/course-areas/automotive/courses/certificate-iii-in-light-vehicle-mechanical-technology--AUR30620-01",
+        "document_type": "html",
+        "document_sha256": null,
+        "publication_or_revision": null,
+        "retrieved_date": "2026-10-17"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Unit codes and titles read through a web page-reading tool; confirm each title against training.gov.au or the live page.",
+        "human_reviewed": false
+      },
+      "licence_note": "AUR training package content is published by the Australian Government under its own licence terms (not checked); TAFE NSW page content is TAFE NSW's.",
+      "notes": [
+        "Requires 36 units: 20 core plus 16 specialty. Only the core units are recorded.",
+        "Hybrid/EV units (e.g. AURETH011, AURETH012, AURETH101, AURETH102) and air-conditioning units (e.g. AURETU103, AURETU104) are specialty units, not core; availability varies by TAFE NSW location.",
+        "training.gov.au pages are JavaScript-rendered; its web service (ws.training.gov.au) needs credentials and has not been used.",
+        "Nominal duration is not stated on the TAFE NSW page."
+      ]
+    },
+    {
+      "record_id": "LK-CGTTI-AUTO-TECH",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Ceylon German Technical Training Institute (CGTTI), Moratuwa",
+      "record_type": "programme",
+      "delivering_provider_verified": true,
+      "title_verbatim": "Automobile Technician",
+      "sector": "Automotive",
+      "framework": "NVQ (Sri Lanka)",
+      "level_as_published": null,
+      "duration_as_published": "Full Time, 4 Years",
+      "entry_as_published": "Age: Between 16 & 22 years. Education: Passed 06 subjects at the G.C.E. (O/L) Examination including Sinhala/Tamil language (Medium of Instruction) and Mathematics in one sitting.",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Basic Training at CGTTI: Building Foundations for Excellence",
+          "outcome_verbatim": null,
+          "group": "First Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Training in Automobile section via cutaway models and computer based simulators, dismantling and assembling of units and subunits of motor vehicles",
+          "outcome_verbatim": null,
+          "group": "Second Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Engine: History of Automobile, Tools and Equipments, Workshop Safety, Type of Engines and related parts, Fuel Supply System (petrol, diesel gas), Starting System.",
+          "outcome_verbatim": null,
+          "group": "Second Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Chassis: Clutch, Manual Gearbox, Front & Rear Axles, Assembling of Brake system (pneumatic & hydraulic), Steering System, Suspension System.",
+          "outcome_verbatim": null,
+          "group": "Second Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Auto Electrical: Starting System, Electric System, Charging System, Battery maintenance.",
+          "outcome_verbatim": null,
+          "group": "Second Year"
+        },
+        {
+          "published_ref": "1",
+          "code": null,
+          "title_verbatim": "Production training in heavy vehicles at Chassis section. (Overhauling and assembling of Clutch, Automatic and Manual gearboxes, Differential, Front axle, Rear axle, Manual and Power assisted steering, Wheel & Tyres, Suspension)",
+          "outcome_verbatim": null,
+          "group": "Third Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Chassis, Clutch, Conventional Gearbox, Propeller Shaft and Joints, Brake, Steering. – (04 Months)",
+          "outcome_verbatim": null,
+          "group": "Third Year"
+        },
+        {
+          "published_ref": "2",
+          "code": null,
+          "title_verbatim": "Production training in Engine Section. (dismantling, inspection, overhauling and assembling of Diesel Engines and Fuel Injection Pumps, timing, mounting and testing)",
+          "outcome_verbatim": null,
+          "group": "Third Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Parts of the Engine, Engine Assembling, Cooling and Lubrication Systems, Repairing sub units (cylinder head, water pump, oil pump, oil filter and oil cooler) – (04 Months)",
+          "outcome_verbatim": null,
+          "group": "Third Year"
+        },
+        {
+          "published_ref": "3",
+          "code": null,
+          "title_verbatim": "Production training in light vehicles at Vehicle Repair Section (running repairs, servicing, Emission testing. overhauling of engine, transmission, brake and suspension)",
+          "outcome_verbatim": null,
+          "group": "Third Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Intake Air System, Exhaust System, Carburettor, Wheel Alignment – (02 Months)",
+          "outcome_verbatim": null,
+          "group": "Third Year"
+        },
+        {
+          "published_ref": "4",
+          "code": null,
+          "title_verbatim": "Training in Automobile Electronics Training Section via simulators, EFI, ABS, SRS, Vehicle Stable Control System and fault diagnosing by using Auto Scanners.",
+          "outcome_verbatim": null,
+          "group": "Third Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Electronic Ignition System, Fuel Injection System, Emission Control, Common Rail Electronic Diesel Supply System. – ( 02 Months )",
+          "outcome_verbatim": null,
+          "group": "Third Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Training in running repairs on buses belongs to Sri Lanka Central Transport Board (SLCTB) Omnibus Depots – 06 Months",
+          "outcome_verbatim": null,
+          "group": "Final Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Training in running repairs on light and heavy vehicles at state organizations and private companies – 06 Months",
+          "outcome_verbatim": null,
+          "group": "Final Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Revision and Final Evaluation",
+          "outcome_verbatim": null,
+          "group": "Final Year"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Theory: Theoretical lessons on workshop science, workshop calculation & technical drawing are conducted one day per week during the course. In addition English language classes are conducted for trainees.",
+          "outcome_verbatim": null,
+          "group": "Theory"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://germantec.lk/index.php/automobile-mechanic-3/",
+        "document_type": "html",
+        "document_sha256": null,
+        "publication_or_revision": "Page shows 'Updated: 02/01/2024'",
+        "retrieved_date": "2026-10-17"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Text captured from the raw HTML of the official course page; every stored line was matched exactly against a line of that page, in published order.",
+        "human_reviewed": false
+      },
+      "licence_note": "Institutional web content; reuse terms not checked.",
+      "notes": [
+        "The page heading reads 'Automobile Technician'; the page title and gallery use 'Automobile Mechanic'.",
+        "NVQ level is not stated on the page (a search snippet elsewhere describes CGTTI full-time courses as NVQ Level 4; not verified).",
+        "CGTTI is an institute under NAITA.",
+        "The First Year is published as general basic training; only its heading is stored, not the promotional description and course highlights beneath it.",
+        "Third Year items are numbered 1-4 on the page: item 1 by the page's ordered list, items 2-4 as typed numbers. The number is kept in published_ref and removed from the stored text; the wording is otherwise exact.",
+        "Year durations: the Third Year blocks state 04, 04, 02 and 02 months and the Final Year blocks 06 and 06 months; the First and Second Years have no stated duration. The page states 4 Years in total.",
+        "The page's Objective and Overview statements are not stored as modules."
+      ]
+    }
+  ]
+}

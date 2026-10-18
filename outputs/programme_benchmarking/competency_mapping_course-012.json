@@ -1,0 +1,1349 @@
+{
+  "description": "Hand-curated competency mapping for NYSC COURSE-012 Refrigeration & Air Conditioning Technician against its five linked RAC records. A DOCUMENTED cell cites the exact stored text that names the competency. NOT_EXPLICIT means the available description does not name it, not that it is absent from teaching. INSUFFICIENT_DATA means the stored text is unavailable, outside the record's scope, or too ambiguous to assess.",
+  "schema_version": "1.0.0",
+  "nysc_course_id": "COURSE-012",
+  "created_date": "2026-10-18",
+  "method": "The NYSC column was assessed by hand against this course's own governed module headings; a broad heading does not establish a more specific competency. COURSE-012 is the 6-month part-time weekend course; its headings 2 and 4 are cited by their governed text with the verified display corrections. NYSC citations keep the exact governed text; where the snapshot holds a verified display correction for that heading, display_text carries the corrected wording. Comparator cells are shared with the other RAC course because the five records and their cited text are identical. Classifications follow the Step 14D audit (2026-10-18). Coverage is never inferred from programme titles, qualification levels or unstored text. Step 16 (2026-10-18): cells whose verified note states a narrower TESDA equipment scope are flagged scope_limited; UEE32225's refrigerant-regulation scope passage was added to its environmental-practice citations.",
+  "human_reviewed": false,
+  "statuses": [
+    "DOCUMENTED",
+    "NOT_EXPLICIT",
+    "INSUFFICIENT_DATA"
+  ],
+  "columns": [
+    {
+      "column_id": "NYSC-COURSE-012",
+      "kind": "nysc",
+      "nysc_course_id": "COURSE-012",
+      "short_label": "NYSC COURSE-012"
+    },
+    {
+      "column_id": "LK-CGTTI-RAC-MECH",
+      "kind": "benchmark",
+      "record_id": "LK-CGTTI-RAC-MECH",
+      "short_label": "CGTTI · Sri Lanka"
+    },
+    {
+      "column_id": "IN-DGT-CTS-RAC-V2",
+      "kind": "benchmark",
+      "record_id": "IN-DGT-CTS-RAC-V2",
+      "short_label": "DGT · India"
+    },
+    {
+      "column_id": "PH-TESDA-DOMRAC-NC2",
+      "kind": "benchmark",
+      "record_id": "PH-TESDA-DOMRAC-NC2",
+      "short_label": "TESDA DomRAC NC II · Philippines"
+    },
+    {
+      "column_id": "PH-TESDA-CAC-NC3",
+      "kind": "benchmark",
+      "record_id": "PH-TESDA-CAC-NC3",
+      "short_label": "TESDA Commercial AC NC III · Philippines"
+    },
+    {
+      "column_id": "AU-TGA-UEE32225",
+      "kind": "benchmark",
+      "record_id": "AU-TGA-UEE32225",
+      "short_label": "UEE32225 · Australia"
+    }
+  ],
+  "category_components": {
+    "refrigeration_cycle_components": [
+      "refrigeration principles or the vapour-compression cycle",
+      "named cycle components (compressor, condenser, evaporator, expansion or flow control, drier or filter)"
+    ],
+    "psychrometrics_load": [
+      "psychrometrics or air properties",
+      "heat-load or cooling-load calculation"
+    ],
+    "refrigerants_environment": [
+      "refrigerant recovery or recycling",
+      "refrigerant environmental or regulatory practice, or explicit environmental procedures"
+    ],
+    "pipework_brazing": [
+      "refrigerant tube preparation or connection",
+      "brazing or soldering of joints"
+    ],
+    "leak_evacuation_charging": [
+      "leak testing",
+      "evacuation or vacuuming",
+      "refrigerant charging"
+    ],
+    "domestic_refrigeration": [
+      "servicing, maintenance or repair of domestic refrigeration appliances"
+    ],
+    "commercial_refrigeration": [
+      "installation or servicing of commercial or industrial refrigeration systems (cold rooms, walk-in coolers or cold storage, ice plants, commercial compressors, low- or medium-temperature systems)"
+    ],
+    "ac_installation": [
+      "installing air-conditioning units or systems"
+    ],
+    "ac_servicing_repair": [
+      "servicing, maintenance or repair of air-conditioning units"
+    ],
+    "central_ducted_ac": [
+      "a central or ducted air-conditioning system (central plant, DX or chilled-water, chillers) with operation, installation or servicing"
+    ],
+    "electrical_motors_controls": [
+      "electrical circuits or wiring",
+      "motors",
+      "controls, starters or relays"
+    ],
+    "fault_diagnosis_testing": [
+      "fault diagnosis, troubleshooting or fault finding"
+    ],
+    "cost_estimating": [
+      "preparing estimates, quotations or costings"
+    ],
+    "workplace_safety": [
+      "general workplace or occupational safety and health practice, or hazard identification"
+    ]
+  },
+  "methodology": {
+    "DOCUMENTED": "The cited stored text explicitly names the competency. Coverage records whether it names every component of the category (FULL) or only some (PARTIAL).",
+    "FULL": "The cited evidence supports the competency as labelled: every listed component of the category is explicitly named.",
+    "PARTIAL": "Only a component of the category, or a lower level of activity, is explicitly documented; supported_component records what is supported.",
+    "NOT_EXPLICIT": "The competency is not documented within the available, assessed scope of the source (for TESDA, unit titles; for UEE32225, core unit titles).",
+    "INSUFFICIENT_DATA": "Missing or incomplete material prevents a reliable assessment.",
+    "caution": "None of these statuses proves that a competency is or is not actually taught.",
+    "areas_rule": "Areas to Investigate list competencies that the NYSC description does not name (NOT_EXPLICIT) and that at least two distinct comparator records, from at least two different countries, document with FULL coverage. PARTIAL evidence is shown but not counted.",
+    "decisions": [
+      "NYSC heading 1 names display units and bottle coolers for repair: commercial refrigeration is PARTIAL, not FULL.",
+      "UEERE0001 (environmentally and sustainable procedures in the energy sector) is accepted as the environmental component of refrigerants practice; TESDA's general environmental basic competency is assessed the same way.",
+      "UEERA0052/UEERA0053 low- and medium-temperature systems are accepted as commercial refrigeration evidence.",
+      "TESDA DomRAC covers window-type AC and domestic refrigerators only; its AC cells carry that scope note. Commercial AC NC III covers commercial AC units only.",
+      "Refrigerant-handling safety (e.g. UEERA0079) is assessed under refrigerants practice, not workplace safety.",
+      "DGT LO55 and LO56 repeat LO25 and LO26 and are not cited."
+    ]
+  },
+  "competencies": [
+    {
+      "competency_id": "refrigeration_cycle_components",
+      "label": "Refrigeration cycle and system components",
+      "cells": {
+        "NYSC-COURSE-012": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's four published module headings."
+        },
+        "LK-CGTTI-RAC-MECH": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Refrigeration Cycle of Vapor Compression System & Enthalpy Charts"
+            },
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Main components and accessories of Refrigeration Cycle"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-RAC-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 11,
+              "field": "title_verbatim",
+              "code": "ELE/N3112",
+              "text": "Dismantle, repair and assemble hermetic, fixed and variable speed compressor, and test performance."
+            },
+            {
+              "module_index": 15,
+              "field": "title_verbatim",
+              "code": "ELE/N3114",
+              "text": "Perform servicing & de-scaling of condenser (internals &externals) used in different appliances"
+            },
+            {
+              "module_index": 16,
+              "field": "title_verbatim",
+              "code": "CSC/N9413",
+              "text": "Perform fitting & adjustment of drier, filter & refrigerant controls used in different refrigeration system."
+            },
+            {
+              "module_index": 17,
+              "field": "title_verbatim",
+              "code": "CSC/N9414",
+              "text": "Perform servicing of different evaporator used in different appliances."
+            },
+            {
+              "module_index": 30,
+              "field": "title_verbatim",
+              "code": "ELE/N3140",
+              "text": "Perform Fitting of expansion valve, adjustment of refrigerant flow according to heat load."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Named cycle components (compressor, condenser, drier/filter and refrigerant controls, evaporator, expansion valve); the refrigeration principles or vapour-compression cycle are not named"
+        },
+        "PH-TESDA-DOMRAC-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No unit title names refrigeration principles, the cycle or its components. Only unit titles are stored; the training regulation's element-level text is not, so this reflects title-level evidence."
+        },
+        "PH-TESDA-CAC-NC3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No unit title names refrigeration principles, the cycle or its components. Only unit titles are stored; the training regulation's element-level text is not, so this reflects title-level evidence."
+        },
+        "AU-TGA-UEE32225": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 9,
+              "field": "title_verbatim",
+              "code": "UEERA0036",
+              "text": "Establish the basic operating conditions of vapour compression systems"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Basic operating conditions of vapour compression systems; individual cycle components are not named in the core unit titles"
+        }
+      }
+    },
+    {
+      "competency_id": "psychrometrics_load",
+      "label": "Psychrometrics and load calculation",
+      "cells": {
+        "NYSC-COURSE-012": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's four published module headings."
+        },
+        "LK-CGTTI-RAC-MECH": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 12,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Properties of Air/Psychometric Charts"
+            },
+            {
+              "module_index": 16,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Calculation, Heat Load for Air Conditioners"
+            },
+            {
+              "module_index": 17,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Calculation Cooling Load for Cold Rooms"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-RAC-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 39,
+              "field": "title_verbatim",
+              "code": "ELE/N3140",
+              "text": "Study psychrometric chart and measure psychrometric properties using psychrometric, anemometer i.e. DBT, WBT, RH, air flow etc."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Psychrometric chart and properties; heat- or cooling-load calculation is not named (LO31 adjusts refrigerant flow 'according to heat load', which is not a calculation)"
+        },
+        "PH-TESDA-DOMRAC-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Psychrometrics and load calculation are not named. Only unit titles are stored; the training regulation's element-level text is not, so this reflects title-level evidence."
+        },
+        "PH-TESDA-CAC-NC3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Psychrometrics and load calculation are not named. Only unit titles are stored; the training regulation's element-level text is not, so this reflects title-level evidence."
+        },
+        "AU-TGA-UEE32225": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "UEERA0035 establishes the basic operating conditions of air conditioning systems but names neither psychrometrics nor load calculation. Only the 27 core unit titles are stored; the 37 elective units are not assessed."
+        }
+      }
+    },
+    {
+      "competency_id": "refrigerants_environment",
+      "label": "Refrigerants, recovery and environmental practice",
+      "cells": {
+        "NYSC-COURSE-012": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's four published module headings."
+        },
+        "LK-CGTTI-RAC-MECH": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 9,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Refrigerant Recovery, Recycling, and Environmental issues"
+            },
+            {
+              "module_index": 13,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Refrigerants and Refrigerants Oil"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-RAC-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 18,
+              "field": "title_verbatim",
+              "code": "ELE/N3114",
+              "text": "Carry out Recovery and Recycling of Refrigerant used, alternative of CFC, HFC re-cover, transfer & handling of gas cylinders."
+            },
+            {
+              "module_index": 19,
+              "field": "title_verbatim",
+              "code": "ELE/N3114",
+              "text": "Retrofit CFC/HFC machine with ozone friendly refrigerant with understanding of the compatibility."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-DOMRAC-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No unit names refrigerant recovery or environmental practice; 400311217 (sustainable practices in the workplace) does not name refrigerants or the environment. Only unit titles are stored; the training regulation's element-level text is not, so this reflects title-level evidence."
+        },
+        "PH-TESDA-CAC-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": "400311326",
+              "text": "Evaluate environmental work practices"
+            }
+          ],
+          "note": "Assessed with the same definition that accepts UEERE0001 as the environmental component for UEE32225; without recovery this is partial only.",
+          "coverage": "PARTIAL",
+          "supported_component": "General environmental work practices (basic competency); refrigerant recovery or recycling is not named"
+        },
+        "AU-TGA-UEE32225": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 17,
+              "field": "title_verbatim",
+              "code": "UEERA0062",
+              "text": "Recover and charge refrigerants"
+            },
+            {
+              "module_index": 18,
+              "field": "title_verbatim",
+              "code": "UEERA0079",
+              "text": "Safely handle refrigerants and lubricants"
+            },
+            {
+              "module_index": 22,
+              "field": "title_verbatim",
+              "code": "UEERE0001",
+              "text": "Apply environmentally and sustainable procedures in the energy sector"
+            },
+            {
+              "module_index": 0,
+              "field": "scope_verbatim",
+              "code": null,
+              "text": "This qualification covers competencies to select components, install, set up, test, fault find, repair and maintain refrigeration systems and equipment that apply to food storage and preservation, and air conditioning and air distribution equipment in buildings and premises. It includes regulatory requirements for purchasing and handling refrigerants."
+            }
+          ],
+          "note": "UEERE0001 is a general energy-sector environmental procedures unit, accepted as the environmental component under the category definition (Step 14D decision); recovery is named in UEERA0062. The qualification scope also names regulatory requirements for purchasing and handling refrigerants.",
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "pipework_brazing",
+      "label": "Pipework, tubing and brazing",
+      "cells": {
+        "NYSC-COURSE-012": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's four published module headings."
+        },
+        "LK-CGTTI-RAC-MECH": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Tubing and Brazing"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-RAC-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": "ELE/N3108",
+              "text": "Identify RAC tools and equipment and recognise different parts of RAC system. Perform copper tube cutting, flaring, swaging, brazing."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-DOMRAC-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "HVC713202 'Perform basic benchworks' does not name refrigerant tubing or brazing. Only unit titles are stored; the training regulation's element-level text is not, so this reflects title-level evidence."
+        },
+        "PH-TESDA-CAC-NC3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "HVC713202 'Perform basic benchwork' does not name refrigerant tubing or brazing. Only unit titles are stored; the training regulation's element-level text is not, so this reflects title-level evidence."
+        },
+        "AU-TGA-UEE32225": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 12,
+              "field": "title_verbatim",
+              "code": "UEERA0050",
+              "text": "Install refrigerant pipe work, flow controls and accessories"
+            },
+            {
+              "module_index": 16,
+              "field": "title_verbatim",
+              "code": "UEERA0059",
+              "text": "Prepare and connect refrigerant tubing and fittings"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Installing refrigerant pipe work and preparing and connecting tubing and fittings; brazing is not named in the core unit titles"
+        }
+      }
+    },
+    {
+      "competency_id": "leak_evacuation_charging",
+      "label": "Leak testing, evacuation and charging",
+      "cells": {
+        "NYSC-COURSE-012": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's four published module headings."
+        },
+        "LK-CGTTI-RAC-MECH": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No published line names leak testing, evacuation or charging; the recovery and general servicing lines do not name them."
+        },
+        "IN-DGT-CTS-RAC-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": "ELE/N3112",
+              "text": "Test mechanical & electrical components. Perform leak test, vacuuming, gas charging, wiring & installation of refrigerator."
+            },
+            {
+              "module_index": 9,
+              "field": "title_verbatim",
+              "code": "ELE/N3112",
+              "text": "Test compressor motor terminal, start compressor Direct with relay & without relay, technique of flushing, leak testing, replacing capillary & filter drier, evacuation & gas charging."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-DOMRAC-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Leak testing, evacuation and charging are not named. Only unit titles are stored; the training regulation's element-level text is not, so this reflects title-level evidence."
+        },
+        "PH-TESDA-CAC-NC3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Leak testing, evacuation and charging are not named. Only unit titles are stored; the training regulation's element-level text is not, so this reflects title-level evidence."
+        },
+        "AU-TGA-UEE32225": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 17,
+              "field": "title_verbatim",
+              "code": "UEERA0062",
+              "text": "Recover and charge refrigerants"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Refrigerant charging; leak testing and evacuation are not named in the core unit titles"
+        }
+      }
+    },
+    {
+      "competency_id": "domestic_refrigeration",
+      "label": "Domestic refrigeration servicing",
+      "cells": {
+        "NYSC-COURSE-012": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Repair Refigerators, Deep freezers, Display units, Bettle Coolers, Water Coolers"
+            }
+          ],
+          "note": "Spelling as published ('Refigerators', 'Bettle Coolers').",
+          "coverage": "FULL"
+        },
+        "LK-CGTTI-RAC-MECH": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Installation, Trouble Shootings, Maintenance, Servicing and Repairs of all type of Domestic, Commercial, Industrial Refrigerators and Air Conditioners"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-RAC-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 32,
+              "field": "title_verbatim",
+              "code": "CSC/N9416",
+              "text": "Carry out servicing and retrofit of Water cooler and dispenser."
+            },
+            {
+              "module_index": 33,
+              "field": "title_verbatim",
+              "code": "CSC/N9417",
+              "text": "Service, retrofit of visible cooler and bottle cooler and test performance."
+            },
+            {
+              "module_index": 34,
+              "field": "title_verbatim",
+              "code": "CSC/N9418",
+              "text": "Conduct servicing of deep freezer and test performance."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-DOMRAC-NC2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 19,
+              "field": "title_verbatim",
+              "code": "HVC723338",
+              "text": "Service and maintain domestic refrigeration and air-conditioning units"
+            },
+            {
+              "module_index": 20,
+              "field": "title_verbatim",
+              "code": "HVC723339",
+              "text": "Troubleshoot and repair domestic refrigeration and air-conditioning systems"
+            }
+          ],
+          "note": "DomRAC scope: domestic refrigerators (and window-type AC) only.",
+          "coverage": "FULL",
+          "scope_limited": true
+        },
+        "PH-TESDA-CAC-NC3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Commercial Air-Conditioning NC III scope: commercial air-conditioning units only. No domestic refrigeration unit."
+        },
+        "AU-TGA-UEE32225": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Core units name low- and medium-temperature refrigeration systems, not domestic appliances. Only the 27 core unit titles are stored; the 37 elective units are not assessed."
+        }
+      }
+    },
+    {
+      "competency_id": "commercial_refrigeration",
+      "label": "Commercial and industrial refrigeration",
+      "cells": {
+        "NYSC-COURSE-012": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Repair Refigerators, Deep freezers, Display units, Bettle Coolers, Water Coolers"
+            }
+          ],
+          "note": "Spelling as published ('Refigerators', 'Bettle Coolers').",
+          "coverage": "PARTIAL",
+          "supported_component": "Self-contained commercial cabinets (display units, bottle coolers) named for repair; commercial or industrial refrigeration systems (cold rooms, walk-in coolers, ice plants, low- or medium-temperature systems) are not named"
+        },
+        "LK-CGTTI-RAC-MECH": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Installation, Trouble Shootings, Maintenance, Servicing and Repairs of all type of Domestic, Commercial, Industrial Refrigerators and Air Conditioners"
+            },
+            {
+              "module_index": 17,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Calculation Cooling Load for Cold Rooms"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-RAC-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 26,
+              "field": "title_verbatim",
+              "code": "ELE/N3140",
+              "text": "Carry out servicing, dismantling, checking different parts of different types of commercial compressor, re-placing worn out parts, Check lubrication system. Assemble & check performance."
+            },
+            {
+              "module_index": 35,
+              "field": "title_verbatim",
+              "code": "CSC/N9419",
+              "text": "Install, service, repair, gas charging and testing performance of Ice Cube machine."
+            },
+            {
+              "module_index": 36,
+              "field": "title_verbatim",
+              "code": "CSC/N9420",
+              "text": "Repair, servicing & retrofit of ice candy plant."
+            },
+            {
+              "module_index": 37,
+              "field": "title_verbatim",
+              "code": "CSC/N9421",
+              "text": "Perform servicing of Ice plant and evaporative condenser."
+            },
+            {
+              "module_index": 38,
+              "field": "title_verbatim",
+              "code": "CSC/N9422",
+              "text": "Perform Servicing and preventive maintenance of walk in cooler & cold storage."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-DOMRAC-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "DomRAC scope: window-type air-conditioning and domestic refrigerators only; split-type AC is outside this qualification. Commercial and industrial refrigeration are outside its scope."
+        },
+        "PH-TESDA-CAC-NC3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Commercial Air-Conditioning NC III scope: commercial air-conditioning units only. Commercial refrigeration is a separate 2021 qualification (HVCCRE321) whose regulation was not obtained."
+        },
+        "AU-TGA-UEE32225": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 14,
+              "field": "title_verbatim",
+              "code": "UEERA0052",
+              "text": "Install, commission, service and maintain low temperature systems"
+            },
+            {
+              "module_index": 15,
+              "field": "title_verbatim",
+              "code": "UEERA0053",
+              "text": "Install, commission, service and maintain medium temperature systems"
+            }
+          ],
+          "note": "Low- and medium-temperature systems are accepted as commercial refrigeration evidence under the category definition (Step 14D decision); the qualification scope names refrigeration for food storage and preservation.",
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "ac_installation",
+      "label": "AC installation",
+      "cells": {
+        "NYSC-COURSE-012": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Heading 3 names repair and heading 4 operation and maintenance; installation is not named in the four published headings."
+        },
+        "LK-CGTTI-RAC-MECH": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Installation, Trouble Shootings, Maintenance, Servicing and Repairs of all type of Domestic, Commercial, Industrial Refrigerators and Air Conditioners"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-RAC-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 21,
+              "field": "title_verbatim",
+              "code": "ELE/N3114",
+              "text": "Install window AC, test Electrical & electronics components & Fault diagnosis & remedial measures."
+            },
+            {
+              "module_index": 22,
+              "field": "title_verbatim",
+              "code": "ELE/N3114",
+              "text": "Perform servicing of electrical & electronic control test, installation, wiring, fault finding & remedial measures of different split AC."
+            },
+            {
+              "module_index": 43,
+              "field": "title_verbatim",
+              "code": "CSC/N9423",
+              "text": "Perform servicing, installation, fault diagnosis and remedial measures on Package AC with Air cooled condenser."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-DOMRAC-NC2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 18,
+              "field": "title_verbatim",
+              "code": "HVC723337",
+              "text": "Install domestic refrigeration and air-conditioning units"
+            }
+          ],
+          "note": "DomRAC scope: window-type air-conditioning and domestic refrigerators only; split-type AC is outside this qualification.",
+          "coverage": "FULL",
+          "scope_limited": true
+        },
+        "PH-TESDA-CAC-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 18,
+              "field": "title_verbatim",
+              "code": "HVC723340",
+              "text": "Install commercial air-conditioning unit"
+            }
+          ],
+          "note": "Commercial Air-Conditioning NC III scope: commercial air-conditioning units only.",
+          "coverage": "FULL",
+          "scope_limited": true
+        },
+        "AU-TGA-UEE32225": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 13,
+              "field": "title_verbatim",
+              "code": "UEERA0099",
+              "text": "Install, commission, service and maintain air conditioning systems"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "ac_servicing_repair",
+      "label": "AC servicing and repair",
+      "cells": {
+        "NYSC-COURSE-012": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Repair Window and Split type A/C"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-CGTTI-RAC-MECH": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Installation, Trouble Shootings, Maintenance, Servicing and Repairs of all type of Domestic, Commercial, Industrial Refrigerators and Air Conditioners"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-RAC-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 22,
+              "field": "title_verbatim",
+              "code": "ELE/N3114",
+              "text": "Perform servicing of electrical & electronic control test, installation, wiring, fault finding & remedial measures of different split AC."
+            },
+            {
+              "module_index": 23,
+              "field": "title_verbatim",
+              "code": "ELE/N3114",
+              "text": "Perform servicing of car AC. Fault diagnosis & remedial measures"
+            },
+            {
+              "module_index": 52,
+              "field": "title_verbatim",
+              "code": "ELE/N3141",
+              "text": "Perform Servicing, fault diagnosis, repair and maintenance of mobile A.C. leak test, evacuation, gas charging, check magnetic clutch and make wiring. Test performance after start."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-DOMRAC-NC2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 19,
+              "field": "title_verbatim",
+              "code": "HVC723338",
+              "text": "Service and maintain domestic refrigeration and air-conditioning units"
+            },
+            {
+              "module_index": 20,
+              "field": "title_verbatim",
+              "code": "HVC723339",
+              "text": "Troubleshoot and repair domestic refrigeration and air-conditioning systems"
+            }
+          ],
+          "note": "DomRAC scope: window-type air-conditioning and domestic refrigerators only; split-type AC is outside this qualification.",
+          "coverage": "FULL",
+          "scope_limited": true
+        },
+        "PH-TESDA-CAC-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 19,
+              "field": "title_verbatim",
+              "code": "HVC723342",
+              "text": "Service and maintain commercial air-conditioning unit"
+            },
+            {
+              "module_index": 20,
+              "field": "title_verbatim",
+              "code": "HVC723344",
+              "text": "Troubleshoot and repair commercial air-conditioning unit"
+            }
+          ],
+          "note": "Commercial Air-Conditioning NC III scope: commercial air-conditioning units only.",
+          "coverage": "FULL",
+          "scope_limited": true
+        },
+        "AU-TGA-UEE32225": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 13,
+              "field": "title_verbatim",
+              "code": "UEERA0099",
+              "text": "Install, commission, service and maintain air conditioning systems"
+            },
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": "UEERA0031",
+              "text": "Diagnose and rectify faults in air conditioning and refrigeration control systems"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "central_ducted_ac",
+      "label": "Central and ducted AC systems",
+      "cells": {
+        "NYSC-COURSE-012": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Operate and Maintain Central A/C system gentle attitudes within a dis Screenshot unment.",
+              "display_text": "Operate and Maintain Central A/C System"
+            }
+          ],
+          "note": "Names operation and maintenance of a central A/C system; plant type and air distribution are not specified.",
+          "coverage": "FULL"
+        },
+        "LK-CGTTI-RAC-MECH": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 15,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Application of New Technology (Inverter, VRV, VRF)"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "VRV/VRF systems named as new technology; no central or ducted air-conditioning system is named"
+        },
+        "IN-DGT-CTS-RAC-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 45,
+              "field": "title_verbatim",
+              "code": "ELE/N3141",
+              "text": "Identify the various components of central AC test electrical components and make wiring. Servicing of A.H.U, damper, check air flow, De-scaling of condenser and CT servicing."
+            },
+            {
+              "module_index": 47,
+              "field": "title_verbatim",
+              "code": "ELE/N3140",
+              "text": "Identify components of DX system. Test components, make wiring of DX system. Test leak and evacuate, gas charge the system and check the performance. Maintenance, trouble shoot and operate the plant."
+            },
+            {
+              "module_index": 49,
+              "field": "title_verbatim",
+              "code": "ELE/N3141",
+              "text": "Identify different parts of indirect or chillers system. Check components and make wiring, leak test, evacuate and gas charge/ top up. Servicing the plant and trouble shoot."
+            },
+            {
+              "module_index": 50,
+              "field": "title_verbatim",
+              "code": "ELE/N3141",
+              "text": "Identify chilled water pipe line. Servicing of dampers, FCU and water control valves."
+            },
+            {
+              "module_index": 51,
+              "field": "title_verbatim",
+              "code": "ELE/N3141",
+              "text": "Troubles shoot both Central A.C. plant DX and indirect system. Check different control system, installation of other major components, servicing of all parts including cooling tower and water treatment plant."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-DOMRAC-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "DomRAC scope: window-type air-conditioning and domestic refrigerators only; split-type AC is outside this qualification."
+        },
+        "PH-TESDA-CAC-NC3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Commercial Air-Conditioning NC III scope: commercial air-conditioning units only. Central or ducted systems are not named; 'commercial unit' does not establish them."
+        },
+        "AU-TGA-UEE32225": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "scope_verbatim",
+              "code": null,
+              "text": "This qualification covers competencies to select components, install, set up, test, fault find, repair and maintain refrigeration systems and equipment that apply to food storage and preservation, and air conditioning and air distribution equipment in buildings and premises. It includes regulatory requirements for purchasing and handling refrigerants."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Air distribution equipment in buildings, named in the qualification scope; no core unit names central or ducted systems"
+        }
+      }
+    },
+    {
+      "competency_id": "electrical_motors_controls",
+      "label": "Electrical circuits, motors and controls",
+      "cells": {
+        "NYSC-COURSE-012": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's four published module headings."
+        },
+        "LK-CGTTI-RAC-MECH": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 8,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Basic Cycle Controls and measuring Current, Voltage, Resistance"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Cycle controls and electrical measurement (current, voltage, resistance); motors are not named"
+        },
+        "IN-DGT-CTS-RAC-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": "ELE/N1002",
+              "text": "Identify electrical safety. Join different wire, measure power, currents, volts and earth resistance etc. Connect single phase, 3 phase motors i.e. star and delta connections."
+            },
+            {
+              "module_index": 12,
+              "field": "title_verbatim",
+              "code": "ELE/N3112",
+              "text": "Identify the terminals of sealed compressor and their wiring and measure current, volts, watts and use of DOL starter with different types of motors."
+            },
+            {
+              "module_index": 14,
+              "field": "title_verbatim",
+              "code": "ELE/N3114",
+              "text": "Identify the components of control system of Inverter A.C and wiring of control system"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-DOMRAC-NC2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 14,
+              "field": "title_verbatim",
+              "code": "HVC724201",
+              "text": "Perform basic electrical works"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Basic electrical works; motors and controls are not named"
+        },
+        "PH-TESDA-CAC-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 14,
+              "field": "title_verbatim",
+              "code": "HVC724201",
+              "text": "Perform basic electrical works"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Basic electrical works; motors and controls are not named"
+        },
+        "AU-TGA-UEE32225": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": "UEERA0031",
+              "text": "Diagnose and rectify faults in air conditioning and refrigeration control systems"
+            },
+            {
+              "module_index": 10,
+              "field": "title_verbatim",
+              "code": "UEERA0044",
+              "text": "Find and rectify faults in single phase motors and associated controls"
+            },
+            {
+              "module_index": 11,
+              "field": "title_verbatim",
+              "code": "UEERA0045",
+              "text": "Find and rectify faults in three phase motors and associated controls"
+            },
+            {
+              "module_index": 20,
+              "field": "title_verbatim",
+              "code": "UEERA0092",
+              "text": "Solve problems in low voltage refrigeration and air conditioning circuits"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "fault_diagnosis_testing",
+      "label": "Fault diagnosis and testing",
+      "cells": {
+        "NYSC-COURSE-012": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "'Repair' (headings 1 and 3) and 'Operate and Maintain' (heading 4) do not name fault diagnosis or troubleshooting."
+        },
+        "LK-CGTTI-RAC-MECH": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Installation, Trouble Shootings, Maintenance, Servicing and Repairs of all type of Domestic, Commercial, Industrial Refrigerators and Air Conditioners"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-RAC-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 21,
+              "field": "title_verbatim",
+              "code": "ELE/N3114",
+              "text": "Install window AC, test Electrical & electronics components & Fault diagnosis & remedial measures."
+            },
+            {
+              "module_index": 22,
+              "field": "title_verbatim",
+              "code": "ELE/N3114",
+              "text": "Perform servicing of electrical & electronic control test, installation, wiring, fault finding & remedial measures of different split AC."
+            },
+            {
+              "module_index": 43,
+              "field": "title_verbatim",
+              "code": "CSC/N9423",
+              "text": "Perform servicing, installation, fault diagnosis and remedial measures on Package AC with Air cooled condenser."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-DOMRAC-NC2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 20,
+              "field": "title_verbatim",
+              "code": "HVC723339",
+              "text": "Troubleshoot and repair domestic refrigeration and air-conditioning systems"
+            }
+          ],
+          "note": "DomRAC scope: window-type air-conditioning and domestic refrigerators only; split-type AC is outside this qualification.",
+          "coverage": "FULL",
+          "scope_limited": true
+        },
+        "PH-TESDA-CAC-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 20,
+              "field": "title_verbatim",
+              "code": "HVC723344",
+              "text": "Troubleshoot and repair commercial air-conditioning unit"
+            }
+          ],
+          "note": "Commercial Air-Conditioning NC III scope: commercial air-conditioning units only.",
+          "coverage": "FULL",
+          "scope_limited": true
+        },
+        "AU-TGA-UEE32225": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": "UEERA0031",
+              "text": "Diagnose and rectify faults in air conditioning and refrigeration control systems"
+            },
+            {
+              "module_index": 26,
+              "field": "title_verbatim",
+              "code": "UEERL0005",
+              "text": "Locate and rectify faults in low voltage (LV) electrical equipment using set procedures"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "cost_estimating",
+      "label": "Cost estimating",
+      "cells": {
+        "NYSC-COURSE-012": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Prepare Estimates course which will be held on weekends.",
+              "display_text": "Prepare Estimates"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-CGTTI-RAC-MECH": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 11,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Prepare estimate for Repair & Maintenance work"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-RAC-V2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No outcome names estimating or costing; LO26 (basic mathematical concepts) is general."
+        },
+        "PH-TESDA-DOMRAC-NC2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "HVC311203 'Perform mensurations and calculations' is measurement and calculation, not cost estimating."
+        },
+        "PH-TESDA-CAC-NC3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "HVC311203 'Perform mensuration and calculation' is measurement and calculation, not cost estimating."
+        },
+        "AU-TGA-UEE32225": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in the core units. Only the 27 core unit titles are stored; the 37 elective units are not assessed."
+        }
+      }
+    },
+    {
+      "competency_id": "workplace_safety",
+      "label": "Workplace safety",
+      "cells": {
+        "NYSC-COURSE-012": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's four published module headings."
+        },
+        "LK-CGTTI-RAC-MECH": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Safety and Safety precaution."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-RAC-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": "ELE/N1002",
+              "text": "Identify trade related hazards and safety procedures following safety precautions."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-DOMRAC-NC2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": "400311216",
+              "text": "Practice occupational safety and health policies and procedures"
+            },
+            {
+              "module_index": 16,
+              "field": "title_verbatim",
+              "code": "HVC315201",
+              "text": "Perform housekeeping and safety practices"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-CAC-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": "400311325",
+              "text": "Evaluate occupational safety and health work practices"
+            },
+            {
+              "module_index": 16,
+              "field": "title_verbatim",
+              "code": "HVC315201",
+              "text": "Perform housekeeping and safety practices"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-UEE32225": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": "UEECD0007",
+              "text": "Apply work health and safety regulations, codes and practices in the workplace"
+            },
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": "UEECD0016",
+              "text": "Document and apply measures to control WHS risks associated with electrotechnology work"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    }
+  ]
+}

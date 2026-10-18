@@ -1,0 +1,559 @@
+{
+  "description": "Hand-curated competency mapping for NYSC COURSE-014 Hair Dresser against three official comparator records. A DOCUMENTED cell cites exact stored text; absence from published text is not proof that content is not taught.",
+  "schema_version": "1.0.0",
+  "created_date": "2026-10-18",
+  "nysc_course_id": "COURSE-014",
+  "method": "The NYSC column was assessed independently against COURSE-014's own governed headings. Broad headings do not establish more specific competencies, and coverage is not inferred from programme titles.",
+  "methodology": {
+    "DOCUMENTED": "The cited stored text explicitly names the competency. Coverage records whether it names every component of the category (FULL) or only some (PARTIAL).",
+    "FULL": "The cited evidence supports the competency as labelled: every listed component of the category is explicitly named.",
+    "PARTIAL": "Only a component of the category, or a lower level of activity, is explicitly documented; supported_component records what is supported.",
+    "NOT_EXPLICIT": "The competency is not documented within the available, assessed scope of the source.",
+    "INSUFFICIENT_DATA": "Missing or incomplete material prevents a reliable assessment.",
+    "caution": "None of these statuses proves that a competency is or is not actually taught.",
+    "areas_rule": "Areas to Investigate list competencies that the NYSC description does not name (NOT_EXPLICIT) and that at least two distinct comparator records, from at least two different countries, document with FULL coverage. PARTIAL evidence is shown but not counted.",
+    "decisions": [
+      "National occupational standards and qualifications are not presented as delivered programmes.",
+      "Elective evidence is identified in cell notes and is not assumed to be completed by every learner."
+    ]
+  },
+  "statuses": [
+    "DOCUMENTED",
+    "NOT_EXPLICIT",
+    "INSUFFICIENT_DATA"
+  ],
+  "category_components": {
+    "hair_straightening": [
+      "Hair straightening and relaxing"
+    ],
+    "hair_colouring": [
+      "Hair colouring"
+    ],
+    "hair_styling_setting": [
+      "Hair styling and setting"
+    ],
+    "hair_scalp_treatment": [
+      "Hair and scalp treatment"
+    ],
+    "hair_perming": [
+      "Hair perming"
+    ],
+    "hair_cutting": [
+      "Hair cutting"
+    ],
+    "hair_client_consultation": [
+      "Client consultation"
+    ],
+    "hair_salon_safety": [
+      "Salon hygiene and occupational safety"
+    ],
+    "hair_salon_management": [
+      "Salon management and operations"
+    ]
+  },
+  "columns": [
+    {
+      "column_id": "NYSC-COURSE-014",
+      "kind": "nysc",
+      "nysc_course_id": "COURSE-014",
+      "short_label": "NYSC COURSE-014"
+    },
+    {
+      "column_id": "LK-TVEC-NCS-HAIRDRESSER-2022",
+      "kind": "benchmark",
+      "record_id": "LK-TVEC-NCS-HAIRDRESSER-2022",
+      "short_label": "TVEC/NAITA · Sri Lanka"
+    },
+    {
+      "column_id": "SG-ITE-HNITEC-HAIR-2Y",
+      "kind": "benchmark",
+      "record_id": "SG-ITE-HNITEC-HAIR-2Y",
+      "short_label": "ITE · Singapore"
+    },
+    {
+      "column_id": "AU-TGA-SHB30416",
+      "kind": "benchmark",
+      "record_id": "AU-TGA-SHB30416",
+      "short_label": "training.gov.au · Australia"
+    }
+  ],
+  "human_reviewed": false,
+  "competencies": [
+    {
+      "competency_id": "hair_straightening",
+      "label": "Hair straightening and relaxing",
+      "cells": {
+        "NYSC-COURSE-014": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Straightening"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-HAIRDRESSER-2022": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": "O93S002U08",
+              "text": "Provide hair relaxing / straightening services"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-HAIR-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 17,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to chemically straighten natural curly or wavy hair."
+            }
+          ],
+          "note": "This is a course-specific elective; availability is not guaranteed.",
+          "coverage": "FULL"
+        },
+        "AU-TGA-SHB30416": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 14,
+              "field": "title_verbatim",
+              "code": "SHBHREF002",
+              "text": "Straighten and relax hair with chemical treatments"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "hair_colouring",
+      "label": "Hair colouring",
+      "cells": {
+        "NYSC-COURSE-014": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Hair Coloring"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-HAIRDRESSER-2022": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 8,
+              "field": "title_verbatim",
+              "code": "O93S002U09",
+              "text": "Colour hair"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-HAIR-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to colour virgin hair."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-SHB30416": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": "SHBHCLS002",
+              "text": "Colour and lighten hair"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "hair_styling_setting",
+      "label": "Hair styling and setting",
+      "cells": {
+        "NYSC-COURSE-014": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Hiar Stylist and Hair Setting"
+            }
+          ],
+          "note": "Published with the spelling 'Hiar Stylist'.",
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-HAIRDRESSER-2022": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": "O93S002U06",
+              "text": "Dress hair"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-HAIR-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Blow-dry & Styling"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-SHB30416": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 11,
+              "field": "title_verbatim",
+              "code": "SHBHDES003",
+              "text": "Create finished hair designs"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "hair_scalp_treatment",
+      "label": "Hair and scalp treatment",
+      "cells": {
+        "NYSC-COURSE-014": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Hair treatment"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-HAIRDRESSER-2022": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": "O93S002U03",
+              "text": "Treat hair and scalp"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-HAIR-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 12,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to analyse and treat hair and scalp problems, and recommend follow-up actions."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-SHB30416": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 15,
+              "field": "title_verbatim",
+              "code": "SHBHTRI001",
+              "text": "Identify and treat hair and scalp conditions"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "hair_perming",
+      "label": "Hair perming",
+      "cells": {
+        "NYSC-COURSE-014": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Perming"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-HAIRDRESSER-2022": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": "O93S002U07",
+              "text": "Perform permanent wave (perm)"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-HAIR-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 7,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to perform hair perming and digital perm."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-SHB30416": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 22,
+              "field": "title_verbatim",
+              "code": "SHBHREF001",
+              "text": "Curl and volumise hair with chemical treatments"
+            }
+          ],
+          "note": "This is a Group C elective; availability is not guaranteed.",
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "hair_cutting",
+      "label": "Hair cutting",
+      "cells": {
+        "NYSC-COURSE-014": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Hair Cutting"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-HAIRDRESSER-2022": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": "O93S002U04",
+              "text": "Cut and set ladies’ hair"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-HAIR-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 8,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of this module, students should be able to perform blunt haircuts."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-SHB30416": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": "SHBHCUT001",
+              "text": "Design haircut structures"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "hair_client_consultation",
+      "label": "Client consultation",
+      "cells": {
+        "NYSC-COURSE-014": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No governed NYSC heading names client consultation."
+        },
+        "LK-TVEC-NCS-HAIRDRESSER-2022": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": "O93S002U02",
+              "text": "Provide client's consultation service"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-HAIR-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored module title or objective explicitly names client consultation."
+        },
+        "AU-TGA-SHB30416": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored unit title explicitly names client consultation."
+        }
+      }
+    },
+    {
+      "competency_id": "hair_salon_safety",
+      "label": "Salon hygiene and occupational safety",
+      "cells": {
+        "NYSC-COURSE-014": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No governed NYSC heading names salon hygiene or occupational safety."
+        },
+        "LK-TVEC-NCS-HAIRDRESSER-2022": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 11,
+              "field": "title_verbatim",
+              "code": "O93S002BU01",
+              "text": "Practice occupational health and safety measures"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-HAIR-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored module title or objective explicitly names salon hygiene or occupational safety."
+        },
+        "AU-TGA-SHB30416": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 20,
+              "field": "title_verbatim",
+              "code": "SHBXWHS001",
+              "text": "Apply safe hygiene, health and work practices"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "hair_salon_management",
+      "label": "Salon management and operations",
+      "cells": {
+        "NYSC-COURSE-014": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No governed NYSC heading names salon management."
+        },
+        "LK-TVEC-NCS-HAIRDRESSER-2022": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "title_verbatim",
+              "code": "O93S002U11",
+              "text": "Manage hairdressing salon"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-HAIR-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Customer Service & Selling"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "customer service and selling; salon management is not named"
+        },
+        "AU-TGA-SHB30416": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 17,
+              "field": "title_verbatim",
+              "code": "SHBXCCS002",
+              "text": "Provide salon services to clients"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "salon services; management is not named"
+        }
+      }
+    }
+  ]
+}

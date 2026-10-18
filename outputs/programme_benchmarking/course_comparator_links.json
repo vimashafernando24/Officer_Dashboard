@@ -1,0 +1,182 @@
+{
+  "description": "Which benchmarking records are shown as comparators for which governed NYSC course. A course with no entry has no verified comparators yet. Links are a researcher's selection, not an automated similarity match. An optional comparison_caveat is shown wherever the course's comparators are displayed.",
+  "links": [
+    {
+      "nysc_course_id": "COURSE-005",
+      "record_ids": [
+        "LK-CGTTI-AUTO-TECH",
+        "IN-DGT-CTS-MMV-V2",
+        "PH-TESDA-ASER-NC2",
+        "SG-ITE-HNITEC-AUTO-2Y",
+        "AU-TAFENSW-AUR30620"
+      ],
+      "basis": "Pilot comparators chosen for the automotive demonstration in the 2026-10-17 feasibility study (section G): one Sri Lankan, two developing/emerging, and two developed-economy records for an NVQ Level 4 automobile mechanic course.",
+      "comparison_caveat": "Different programme duration and qualification levels; curriculum content comparison only."
+    },
+    {
+      "nysc_course_id": "COURSE-040",
+      "record_ids": [
+        "LK-CGTTI-AUTO-TECH",
+        "IN-DGT-CTS-MMV-V2",
+        "PH-TESDA-ASER-NC2",
+        "SG-ITE-HNITEC-AUTO-2Y",
+        "AU-TAFENSW-AUR30620"
+      ],
+      "basis": "Same occupation as COURSE-005 (Automobile Mechanic), offered as a 6-month part-time weekend course with no stated NVQ level. The COURSE-005 comparators are reused as same-occupation references, not as equivalent qualifications.",
+      "comparison_caveat": "Different programme duration and qualification levels; curriculum content comparison only."
+    },
+    {
+      "nysc_course_id": "COURSE-025",
+      "record_ids": [
+        "LK-CGTTI-POWER-ELEC",
+        "IN-DGT-CTS-ELEC-V3",
+        "PH-TESDA-EIM-NC2",
+        "PH-TESDA-EIM-NC3",
+        "SG-ITE-HNITEC-ELEC-2Y",
+        "AU-TAFENSW-UEE30820"
+      ],
+      "basis": "Comparators verified on 2026-10-17 for the Electrician occupation (NVQ Level 3/4, 12-month full-time NYSC course): one Sri Lankan delivered programme, three developing/emerging records (India national curriculum; Philippines NC II and NC III standards), and two developed-economy delivered programmes.",
+      "comparison_caveat": "Different programme duration and qualification levels; curriculum content comparison only. TESDA NC II (residential wiring up to 600 volts) and NC III (three-phase, data measurement and motor control systems) are separate qualifications with different scopes."
+    },
+    {
+      "nysc_course_id": "COURSE-064",
+      "record_ids": [
+        "LK-CGTTI-POWER-ELEC",
+        "IN-DGT-CTS-ELEC-V3",
+        "PH-TESDA-EIM-NC2",
+        "PH-TESDA-EIM-NC3",
+        "SG-ITE-HNITEC-ELEC-2Y",
+        "AU-TAFENSW-UEE30820"
+      ],
+      "basis": "Same occupation as COURSE-025, offered as a 6-month part-time weekend course with no stated NVQ level. The COURSE-025 comparators are reused as same-occupation references, not as equivalent qualifications.",
+      "comparison_caveat": "Different programme duration and qualification levels; curriculum content comparison only. TESDA NC II (residential wiring up to 600 volts) and NC III (three-phase, data measurement and motor control systems) are separate qualifications with different scopes."
+    },
+    {
+      "nysc_course_id": "COURSE-034",
+      "record_ids": [
+        "LK-CGTTI-RAC-MECH",
+        "IN-DGT-CTS-RAC-V2",
+        "PH-TESDA-DOMRAC-NC2",
+        "PH-TESDA-CAC-NC3",
+        "AU-TGA-UEE32225"
+      ],
+      "basis": "Comparators verified on 2026-10-18 (Step 14B) for the Refrigeration & Air Conditioning Technician occupation (NVQ Level 4, 12-month full-time NYSC course): one Sri Lankan delivered programme, three developing/emerging records (India national curriculum; Philippines NC II and NC III standards), and one developed-economy national qualification (Australia). No current Singapore programme with substantial RAC content could be verified.",
+      "comparison_caveat": "Different programme duration and qualification levels; curriculum content comparison only. TESDA RAC Servicing (DomRAC) NC II covers window-type air-conditioning and domestic refrigerators only, and Commercial Air-Conditioning Installation and Servicing NC III covers commercial air-conditioning units only; they are separate qualifications. UEE32225 is a national qualification, not a delivered programme."
+    },
+    {
+      "nysc_course_id": "COURSE-012",
+      "record_ids": [
+        "LK-CGTTI-RAC-MECH",
+        "IN-DGT-CTS-RAC-V2",
+        "PH-TESDA-DOMRAC-NC2",
+        "PH-TESDA-CAC-NC3",
+        "AU-TGA-UEE32225"
+      ],
+      "basis": "Same occupation as COURSE-034, offered as a 6-month part-time weekend course with no stated NVQ level. The COURSE-034 comparators are reused as same-occupation references, not as equivalent qualifications.",
+      "comparison_caveat": "Different programme duration and qualification levels; curriculum content comparison only. TESDA RAC Servicing (DomRAC) NC II covers window-type air-conditioning and domestic refrigerators only, and Commercial Air-Conditioning Installation and Servicing NC III covers commercial air-conditioning units only; they are separate qualifications. UEE32225 is a national qualification, not a delivered programme."
+    },
+    {
+      "nysc_course_id": "COURSE-008",
+      "record_ids": [
+        "IN-DGT-CTS-CHNM-V2",
+        "PH-TESDA-CSS-NC2",
+        "SG-ITE-HNITEC-ISN-2Y"
+      ],
+      "basis": "Comparators verified on 2026-10-18 (Step 19A) for the Computer Hardware Technician occupation (NVQ Level 4, 6-month full-time NYSC course): two developing/emerging records (India national curriculum; Philippines NC II standard) and one developed-economy delivered programme (Singapore). No independent Sri Lankan programme with published modules was verified.",
+      "comparison_caveat": "Different programme duration and qualification levels; curriculum content comparison only. No independent Sri Lankan programme with published modules was verified. TESDA Computer Systems Servicing NC II is an occupational standard and DGT's Computer Hardware & Network Maintenance a national curriculum; ITE's Higher Nitec in IT Systems & Networks is a broader, network-focused programme with one computer maintenance module."
+    },
+    {
+      "nysc_course_id": "COURSE-055",
+      "record_ids": [
+        "IN-DGT-CTS-CHNM-V2",
+        "PH-TESDA-CSS-NC2",
+        "SG-ITE-HNITEC-ISN-2Y"
+      ],
+      "basis": "Same occupation as COURSE-008, offered as a 6-month part-time weekend course with no stated NVQ level. The COURSE-008 comparators are reused as same-occupation references, not as equivalent qualifications.",
+      "comparison_caveat": "Different programme duration and qualification levels; curriculum content comparison only. No independent Sri Lankan programme with published modules was verified. TESDA Computer Systems Servicing NC II is an occupational standard and DGT's Computer Hardware & Network Maintenance a national curriculum; ITE's Higher Nitec in IT Systems & Networks is a broader, network-focused programme with one computer maintenance module."
+    },
+    {
+      "nysc_course_id": "COURSE-056",
+      "record_ids": [
+        "IN-DGT-CTS-CHNM-V2",
+        "PH-TESDA-CSS-NC2",
+        "SG-ITE-HNITEC-ISN-2Y"
+      ],
+      "basis": "Related occupation (Computer Hardware and Network Technician, 6-month part-time weekend course) covered by the same hardware-and-networking comparators. The governed catalogue publishes no module headings for this course, so comparators are shown without a competency matrix.",
+      "comparison_caveat": "Different programme duration and qualification levels; curriculum content comparison only. No independent Sri Lankan programme with published modules was verified. TESDA Computer Systems Servicing NC II is an occupational standard and DGT's Computer Hardware & Network Maintenance a national curriculum; ITE's Higher Nitec in IT Systems & Networks is a broader, network-focused programme with one computer maintenance module."
+    },
+    {
+      "nysc_course_id": "COURSE-011",
+      "record_ids": [
+        "IN-DGT-CTS-BAKER-V2",
+        "SG-ITE-HNITEC-PASTRY-2Y",
+        "AU-TGA-FBP30521"
+      ],
+      "basis": "Comparators verified on 2026-10-18 (Step 19B) for the Baker occupation (NVQ Level 4, 6-month full-time NYSC course): one developing/emerging national curriculum (India), one developed-economy delivered programme (Singapore), and one developed-economy national qualification (Australia). No independent Sri Lankan programme with sufficiently detailed published curriculum was verified.",
+      "comparison_caveat": "Different programme duration and qualification levels; curriculum content comparison only. Australia's FBP30521 is a national qualification with elective choices, not a verified delivered programme. ITE is a two-year Higher Nitec programme; its internally inconsistent course-specific elective text is excluded from mapping decisions."
+    },
+    {
+      "nysc_course_id": "COURSE-047",
+      "record_ids": [
+        "IN-DGT-CTS-BAKER-V2",
+        "SG-ITE-HNITEC-PASTRY-2Y",
+        "AU-TGA-FBP30521"
+      ],
+      "basis": "Same occupation as COURSE-011, offered as a 6-month part-time weekend course with no stated NVQ level. The COURSE-011 comparators are reused as same-occupation references, not as equivalent qualifications.",
+      "comparison_caveat": "Different programme duration and qualification levels; curriculum content comparison only. Australia's FBP30521 is a national qualification with elective choices, not a verified delivered programme. ITE is a two-year Higher Nitec programme; its internally inconsistent course-specific elective text is excluded from mapping decisions."
+    },
+    {
+      "nysc_course_id": "COURSE-007",
+      "record_ids": [
+        "IN-DGT-CTS-FOOD-PROD-V2",
+        "PH-TESDA-PRO-COOKERY-NC3",
+        "SG-ITE-HNITEC-CULINARY-2Y",
+        "AU-TGA-SIT30821"
+      ],
+      "basis": "Comparators verified on 2026-10-18 (Step 19B) for Professional Cookery (6-month full-time NYSC course): two developing/emerging national curricula or standards (India and Philippines), one developed-economy delivered programme (Singapore), and one developed-economy national qualification (Australia). No independent Sri Lankan programme with sufficiently detailed published curriculum was verified.",
+      "comparison_caveat": "Different programme duration, level and scope; curriculum content comparison only. TESDA NC III includes supervisory competencies and Australia SIT30821 is a national qualification with elective choices, not a verified delivered programme."
+    },
+    {
+      "nysc_course_id": "COURSE-010",
+      "record_ids": ["LK-TVEC-NCS-BEAUTICIAN-2020", "IN-DGT-CTS-COSMETOLOGY-V2", "SG-ITE-HNITEC-BEAUTY-2Y", "AU-TGA-SHB40121"],
+      "basis": "Comparators verified on 2026-10-18 (Step 19C) for COURSE-010 Beautician: one Sri Lankan occupational standard, one developing/emerging national curriculum, one developed-economy delivered programme, and one developed-economy national qualification.",
+      "comparison_caveat": "Different programme duration, level and scope; curriculum content comparison only. The Sri Lankan record is an occupational standard, DGT a national curriculum and SHB40121 a national qualification; none is presented as a confirmed delivery. ITE electives are identified and not assumed for every learner."
+    },
+    {
+      "nysc_course_id": "COURSE-046",
+      "record_ids": ["LK-TVEC-NCS-BEAUTICIAN-2020", "IN-DGT-CTS-COSMETOLOGY-V2", "SG-ITE-HNITEC-BEAUTY-2Y", "AU-TGA-SHB40121"],
+      "basis": "Same occupation as COURSE-010, offered as a 6-month part-time course with no stated NVQ level. The COURSE-010 comparators are reused as same-occupation references, not as equivalent qualifications.",
+      "comparison_caveat": "Different programme duration, level and scope; curriculum content comparison only. Standards, curricula and qualifications are not confirmed deliveries; ITE electives are not guaranteed."
+    },
+    {
+      "nysc_course_id": "COURSE-048",
+      "record_ids": ["LK-TVEC-NCS-BEAUTICIAN-2020", "IN-DGT-CTS-COSMETOLOGY-V2", "SG-ITE-HNITEC-BEAUTY-2Y", "AU-TGA-SHB40121"],
+      "basis": "Related Bridal Dresser course. The governed catalogue publishes no module headings, so the verified beauty/cosmetology comparators are shown without a competency matrix.",
+      "comparison_caveat": "COMPARATORS_ONLY: different programme scope, duration and level; the comparators are broader beauty/cosmetology records and are not equivalent Bridal Dresser qualifications."
+    },
+    {
+      "nysc_course_id": "COURSE-014",
+      "record_ids": ["LK-TVEC-NCS-HAIRDRESSER-2022", "SG-ITE-HNITEC-HAIR-2Y", "AU-TGA-SHB30416"],
+      "basis": "Comparators verified on 2026-10-18 (Step 19C) for COURSE-014 Hair Dresser: one Sri Lankan occupational standard, one developed-economy delivered programme, and one developed-economy national qualification.",
+      "comparison_caveat": "Different programme duration, level and scope; curriculum content comparison only. The Sri Lankan record is an occupational standard and SHB30416 a national qualification, not confirmed deliveries. Electives are identified and not assumed for every learner."
+    },
+    {
+      "nysc_course_id": "COURSE-069",
+      "record_ids": ["LK-TVEC-NCS-HAIRDRESSER-2022", "SG-ITE-HNITEC-HAIR-2Y", "AU-TGA-SHB30416"],
+      "basis": "Same occupation as COURSE-014, offered as a 6-month part-time course with no published module headings. Verified comparators are shown without a competency matrix.",
+      "comparison_caveat": "COMPARATORS_ONLY: different programme duration, level and scope; standards and qualifications are not confirmed deliveries and elective availability is not guaranteed."
+    },
+    {
+      "nysc_course_id": "COURSE-035",
+      "record_ids": ["LK-TVEC-NCS-SECRETARY-2023", "IN-DGT-CTS-SECRETARIAL-EN-V2", "SG-ITE-HNITEC-BUSADMIN-2Y", "AU-TGA-BSB30120"],
+      "basis": "Comparators verified on 2026-10-18 (Step 19C) for COURSE-035 Secretary: one Sri Lankan occupational standard, one developing/emerging national curriculum, one developed-economy delivered business-administration programme, and one developed-economy national qualification.",
+      "comparison_caveat": "Different programme duration, level and scope; curriculum content comparison only. ITE's programme is broader business administration, while the Australian qualification uses elective specialisations. Standards, curricula and qualifications are not confirmed deliveries."
+    },
+    {
+      "nysc_course_id": "COURSE-082",
+      "record_ids": ["LK-TVEC-NCS-SECRETARY-2023", "IN-DGT-CTS-SECRETARIAL-EN-V2", "SG-ITE-HNITEC-BUSADMIN-2Y", "AU-TGA-BSB30120"],
+      "basis": "Same occupation as COURSE-035, offered as a 6-month part-time course. The COURSE-035 comparators are reused as same-occupation references, not as equivalent qualifications.",
+      "comparison_caveat": "Different programme duration, level and scope; curriculum content comparison only. ITE's programme is broader business administration and Australian elective units are not guaranteed."
+    }
+  ]
+}

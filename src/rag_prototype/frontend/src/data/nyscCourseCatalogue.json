@@ -1,0 +1,1411 @@
+{
+  "description": "Read-only snapshot of the governed NYSC course catalogue for the dashboard's course selectors and summary. 'modules' is the governed text unchanged; 'module_display_corrections' are display-only repairs of extraction contamination (see the generator's docstring), and 'module_review_flags' mark headings that still need manual review. Regenerate with src/rag_prototype/build_nysc_course_snapshot.py; do not edit by hand.",
+  "source": {
+    "manifest": "outputs/rag_course_knowledge/final_rag_corpus_v2_manifest.csv",
+    "manifest_sha256": "2bd7acbb3a598d9f02697d6e823a692a33f7a84560c5eb19527bbb054cf66024",
+    "course_matching_layer": "outputs/rag_new_person_intake_v1/course_matching_layer.csv",
+    "course_matching_layer_sha256": "b7a182ddd73923889ffce8fa85465e43f2b985f11842292be9d5a08f4f54ba3e"
+  },
+  "governed_course_count": 84,
+  "courses": [
+    {
+      "course_id": "COURSE-001",
+      "course_name": "Freelancer Of Web Design & Development",
+      "skill_area": "ICT & Computing",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "3",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-002",
+      "course_name": "PYTHON",
+      "skill_area": "ICT & Computing",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "3",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-003",
+      "course_name": "Certificate In English Communication Essentials.",
+      "skill_area": "Languages & Communication",
+      "attendance_type": "Full Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "Certificate",
+      "duration_months": "3",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-004",
+      "course_name": "Professional English",
+      "skill_area": "NOT_STATED",
+      "attendance_type": "NOT_STATED",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "NOT_STATED",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-005",
+      "course_name": "Automobile Mechanic",
+      "skill_area": "Automotive & Mechanical Engineering",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "12",
+      "modules": [
+        "Engine (Petrol and Diesel)",
+        "Transmission System (Manual and Auto)",
+        "Steering System (Power and Manual)",
+        "Breaking System",
+        "Electrical System"
+      ],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-006",
+      "course_name": "National Diploma In Information & Communication Technology",
+      "skill_area": "ICT & Computing",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 5",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "12",
+      "modules": [
+        "System Analysis & Design - Semester 1",
+        "Software Programming - Semester 1",
+        "Database System - Semester 1",
+        "Computer Graphics Design - Semester 1",
+        "Manage Workplace Information -",
+        "Manage Workplace Communication -",
+        "Documents & Resource Level 5 -",
+        "Database Systems II - Semester 2",
+        "Software Testing - Semester 2",
+        "Web Programming - Semester 2",
+        "Local Area Network - Semester 2",
+        "Planing & Scheduling Work at Workplace - Semester 2"
+      ],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-007",
+      "course_name": "Professional Cookery",
+      "skill_area": "Hospitality & Culinary Arts",
+      "attendance_type": "Full Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [
+        "Western and Eastern Menu",
+        "Fairnaceous Dishes",
+        "Fish and Meat Items",
+        "Beverages",
+        "Stock, Sause, Soup and Salad",
+        "Sweets and Desserts"
+      ],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-008",
+      "course_name": "Computer Hardware Technician",
+      "skill_area": "ICT & Computing",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "6",
+      "modules": [
+        "Introduction",
+        "Assembling",
+        "Disassembling",
+        "Trouble shooting",
+        "Preventive Maintenance",
+        "Estimating"
+      ],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-009",
+      "course_name": "Information And Communication Technolory Technician",
+      "skill_area": "ICT & Computing",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "6",
+      "modules": [
+        "Maintain Files and Folders",
+        "Perform word processing",
+        "Prepare spreadsheet",
+        "Prepare presentations",
+        "Maintain databases",
+        "Perform internet and electronic mail operation",
+        "Install and configure operating system",
+        "Conduct installation and troubleshooting of network",
+        "Develop graphics for online / print media",
+        "Design and develop static web pages 1l. Develop basic software solution"
+      ],
+      "module_display_corrections": [],
+      "module_review_flags": [
+        {
+          "module_index": 9,
+          "text": "Design and develop static web pages 1l. Develop basic software solution",
+          "reason": "Appears to contain a second numbered module heading."
+        }
+      ]
+    },
+    {
+      "course_id": "COURSE-010",
+      "course_name": "Beautician",
+      "skill_area": "Beauty, Fashion & Personal Care",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "6",
+      "modules": [
+        "Facial",
+        "Pedicure Menicure",
+        "Bridal Dressing",
+        "Make up",
+        "Flowers Bouguets"
+      ],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-011",
+      "course_name": "Baker",
+      "skill_area": "Hospitality & Culinary Arts",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "6",
+      "modules": [
+        "Produce Bread",
+        "Produce Cake",
+        "Produce Pastry",
+        "Baker Management"
+      ],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-012",
+      "course_name": "Refrigeration & Air Conditioning Technician",
+      "skill_area": "Electrical & Electronics",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [
+        "Repair Refigerators, Deep freezers, Display units, Bettle Coolers, Water Coolers",
+        "Prepare Estimates course which will be held on weekends.",
+        "Repair Window and Split type A/C",
+        "Operate and Maintain Central A/C system gentle attitudes within a dis Screenshot unment."
+      ],
+      "module_display_corrections": [
+        {
+          "module_index": 1,
+          "original": "Prepare Estimates course which will be held on weekends.",
+          "displayed": "Prepare Estimates",
+          "removed_fragments": [
+            "course which will be held on weekends."
+          ],
+          "rule": "Removed a fragment that stands alone as a line in the governed course document and is an exact ending of a standard NYSC overview sentence."
+        },
+        {
+          "module_index": 3,
+          "original": "Operate and Maintain Central A/C system gentle attitudes within a dis Screenshot unment.",
+          "displayed": "Operate and Maintain Central A/C System",
+          "removed_fragments": [
+            "gentle attitudes within a dis Screenshot unment."
+          ],
+          "rule": "Replaced with the heading exactly as shown in the course's own source screenshot: the removed fragment is overview text (partly covered by a screenshot tooltip) from the adjacent column.",
+          "source_screenshot": "CoursesSS/Screenshot 2026-04-12 at 22.26.56.png",
+          "source_screenshot_sha256": "9c30b41d9c0ab1396b460d21a9558c3ef02a90bdb3d0ec682d4f5588386a635b"
+        }
+      ],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-013",
+      "course_name": "Electronic Appliances Technician",
+      "skill_area": "Electrical & Electronics",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "12",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-014",
+      "course_name": "Hair Dresser",
+      "skill_area": "Beauty, Fashion & Personal Care",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "6",
+      "modules": [
+        "Straightening",
+        "Hair Coloring",
+        "Hiar Stylist and Hair Setting",
+        "Hair treatment",
+        "Perming",
+        "Hair Cutting"
+      ],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-016",
+      "course_name": "Graphics Designer",
+      "skill_area": "Creative Arts, Design & Media",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-017",
+      "course_name": "Agricultural Machinery Equipment Mechanic",
+      "skill_area": "Automotive & Mechanical Engineering",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "24",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-018",
+      "course_name": "Aluminium Fabricator",
+      "skill_area": "Automotive & Mechanical Engineering",
+      "attendance_type": "Full Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-019",
+      "course_name": "Quantity Surveying Assistant",
+      "skill_area": "Construction & Surveying",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 5",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-020",
+      "course_name": "Landscape Development Assistant",
+      "skill_area": "Agriculture & Environment",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-021",
+      "course_name": "Automobile Electrician",
+      "skill_area": "Automotive & Mechanical Engineering",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-022",
+      "course_name": "Computer Network Technician",
+      "skill_area": "ICT & Computing",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "12",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-023",
+      "course_name": "Construction Site Supervisor",
+      "skill_area": "Construction & Surveying",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "12",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-024",
+      "course_name": "Draughtperson",
+      "skill_area": "Construction & Surveying",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-025",
+      "course_name": "Electrician",
+      "skill_area": "Electrical & Electronics",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 3/4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "12",
+      "modules": [
+        "Repair and Service Motor Generator",
+        "Industrial Electrical Installation (Motor necessary for employment and higher education. Controlling System)",
+        "P.L.C.",
+        "Security Solutions",
+        "Domestic Electrical Installation gentle attitudes within a disciplined environment."
+      ],
+      "module_display_corrections": [
+        {
+          "module_index": 1,
+          "original": "Industrial Electrical Installation (Motor necessary for employment and higher education. Controlling System)",
+          "displayed": "Industrial Electrical Installation (Motor Controlling System)",
+          "removed_fragments": [
+            "necessary for employment and higher education."
+          ],
+          "rule": "Removed a fragment that stands alone as a line in the governed course document and is an exact ending of a standard NYSC overview sentence."
+        },
+        {
+          "module_index": 4,
+          "original": "Domestic Electrical Installation gentle attitudes within a disciplined environment.",
+          "displayed": "Domestic Electrical Installation",
+          "removed_fragments": [
+            "gentle attitudes within a disciplined environment."
+          ],
+          "rule": "Removed a fragment that stands alone as a line in the governed course document and is an exact ending of a standard NYSC overview sentence."
+        }
+      ],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-026",
+      "course_name": "Field Assistant (agricultural)",
+      "skill_area": "Agriculture & Environment",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-028",
+      "course_name": "Lapiderist (Gem Cutting)",
+      "skill_area": "Automotive & Mechanical Engineering",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 3",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-029",
+      "course_name": "Mobile Phone Repair Technician",
+      "skill_area": "Electrical & Electronics",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "8",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-030",
+      "course_name": "Motorcycle Mechanic",
+      "skill_area": "Automotive & Mechanical Engineering",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 3/4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "12",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-031",
+      "course_name": "National Diploma In Television Program Production",
+      "skill_area": "Creative Arts, Design & Media",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 5",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "12",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-032",
+      "course_name": "Plant Nursery Development Assistant",
+      "skill_area": "Agriculture & Environment",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-033",
+      "course_name": "Plumber",
+      "skill_area": "Construction & Surveying",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "8",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-034",
+      "course_name": "Refrigeration & Air Conditioning Technician",
+      "skill_area": "Electrical & Electronics",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "12",
+      "modules": [
+        "Repair Refigerators, Deep freezers, Display units, Bettle Coolers, Water Coolers",
+        "Prepare Estimates",
+        "Repair Window and Split type A/C",
+        "Operate and Maintain Central A/C System"
+      ],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-035",
+      "course_name": "Secretary (Secretarial Practices)",
+      "skill_area": "Business, Management & Administration",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "6",
+      "modules": [
+        "Communication Skills",
+        "Managing Office",
+        "Meetings, Filling, Handle Mail",
+        "Computer, Word, Internet and Email",
+        "Travel Arrangements",
+        "Handle correspondence (workshop, Seminaces, Fieldvisit)"
+      ],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-036",
+      "course_name": "Survey Field Assistant",
+      "skill_area": "Construction & Surveying",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-037",
+      "course_name": "Tailor",
+      "skill_area": "Beauty, Fashion & Personal Care",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "6",
+      "modules": [
+        "Women and children clothing"
+      ],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-038",
+      "course_name": "Three Wheeler Mechanic",
+      "skill_area": "Automotive & Mechanical Engineering",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 3",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-040",
+      "course_name": "Automobile Mechanic",
+      "skill_area": "Automotive & Mechanical Engineering",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [
+        "Overhead Engine (Petrol and Diesel)",
+        "Transmission System (Manual and Auto)",
+        "Steering System (Power and Manual)",
+        "Breaking System",
+        "Suspension System"
+      ],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-041",
+      "course_name": "Preschool Teacher (Early Childhood Development)",
+      "skill_area": "Creative Arts, Design & Media",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "12",
+      "modules": [
+        "Handling skills and design",
+        "Includes environmental exploration and learning methods time course which will be held on weekdays.",
+        "Early Childhood Development Skills",
+        "Child Psychology"
+      ],
+      "module_display_corrections": [
+        {
+          "module_index": 1,
+          "original": "Includes environmental exploration and learning methods time course which will be held on weekdays.",
+          "displayed": "Includes environmental exploration and learning methods",
+          "removed_fragments": [
+            "time course which will be held on weekdays."
+          ],
+          "rule": "Removed a fragment that stands alone as a line in the governed course document and is an exact ending of a standard NYSC overview sentence."
+        }
+      ],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-042",
+      "course_name": "Automobile Electrician",
+      "skill_area": "Automotive & Mechanical Engineering",
+      "attendance_type": "Full Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-043",
+      "course_name": "AutoCAD",
+      "skill_area": "ICT & Computing",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-044",
+      "course_name": "Machinist",
+      "skill_area": "Automotive & Mechanical Engineering",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 3",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "12",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-045",
+      "course_name": "Welder",
+      "skill_area": "Automotive & Mechanical Engineering",
+      "attendance_type": "Full Time",
+      "nvq_level": "Level 4",
+      "qualification_type": "National Vocational Qualification (NVQ)",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-046",
+      "course_name": "Beautician",
+      "skill_area": "Beauty, Fashion & Personal Care",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [
+        "Facial",
+        "Menicure",
+        "Pedicure",
+        "Makeup",
+        "Flower Bouques & Bridal Dressing"
+      ],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-047",
+      "course_name": "Baker",
+      "skill_area": "Hospitality & Culinary Arts",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [
+        "Produce Bread",
+        "Produce Cake",
+        "Produce Pastry weekends.",
+        "Baker Management"
+      ],
+      "module_display_corrections": [
+        {
+          "module_index": 2,
+          "original": "Produce Pastry weekends.",
+          "displayed": "Produce Pastry",
+          "removed_fragments": [
+            "weekends."
+          ],
+          "rule": "Removed a fragment that stands alone as a line in the governed course document and is an exact ending of a standard NYSC overview sentence."
+        }
+      ],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-048",
+      "course_name": "Bridal Dresser",
+      "skill_area": "Beauty, Fashion & Personal Care",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-049",
+      "course_name": "Business Managemant",
+      "skill_area": "Business, Management & Administration",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-050",
+      "course_name": "Cake & Cake Structure",
+      "skill_area": "Hospitality & Culinary Arts",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [
+        "Oicing Methods",
+        "Cake Decorations",
+        "Icing Structures",
+        "Birthday Cake, Wedding cake, Engagement cake, Eggless cake, Homecoming cake and Gateau gentle attitudes within a disciplined environment."
+      ],
+      "module_display_corrections": [
+        {
+          "module_index": 3,
+          "original": "Birthday Cake, Wedding cake, Engagement cake, Eggless cake, Homecoming cake and Gateau gentle attitudes within a disciplined environment.",
+          "displayed": "Birthday Cake, Wedding cake, Engagement cake, Eggless cake, Homecoming cake and Gateau",
+          "removed_fragments": [
+            "gentle attitudes within a disciplined environment."
+          ],
+          "rule": "Removed a fragment that stands alone as a line in the governed course document and is an exact ending of a standard NYSC overview sentence."
+        }
+      ],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-051",
+      "course_name": "Cake Decorator",
+      "skill_area": "Hospitality & Culinary Arts",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-052",
+      "course_name": "Cisco Certified Network Associate",
+      "skill_area": "ICT & Computing",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-053",
+      "course_name": "Computer Applications Assistant",
+      "skill_area": "ICT & Computing",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [
+        "ICT introduction",
+        "MS- Office",
+        "Using Internet & E-mail be held on weekends."
+      ],
+      "module_display_corrections": [
+        {
+          "module_index": 2,
+          "original": "Using Internet & E-mail be held on weekends.",
+          "displayed": "Using Internet & E-mail",
+          "removed_fragments": [
+            "be held on weekends."
+          ],
+          "rule": "Removed a fragment that stands alone as a line in the governed course document and is an exact ending of a standard NYSC overview sentence."
+        }
+      ],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-054",
+      "course_name": "Computer Certificate",
+      "skill_area": "ICT & Computing",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "Certificate",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-055",
+      "course_name": "Computer Hardware Technician",
+      "skill_area": "ICT & Computing",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [
+        "PC assembling",
+        "Maintence Repair PCs",
+        "Install and Configure Internal, External Devices be held on weekends.",
+        "Software Installation",
+        "Network and Internet gentle attitudes within a disciplined environment."
+      ],
+      "module_display_corrections": [
+        {
+          "module_index": 2,
+          "original": "Install and Configure Internal, External Devices be held on weekends.",
+          "displayed": "Install and Configure Internal, External Devices",
+          "removed_fragments": [
+            "be held on weekends."
+          ],
+          "rule": "Removed a fragment that stands alone as a line in the governed course document and is an exact ending of a standard NYSC overview sentence."
+        },
+        {
+          "module_index": 4,
+          "original": "Network and Internet gentle attitudes within a disciplined environment.",
+          "displayed": "Network and Internet",
+          "removed_fragments": [
+            "gentle attitudes within a disciplined environment."
+          ],
+          "rule": "Removed a fragment that stands alone as a line in the governed course document and is an exact ending of a standard NYSC overview sentence."
+        }
+      ],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-056",
+      "course_name": "Computer Hardware And Network Technician",
+      "skill_area": "ICT & Computing",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-057",
+      "course_name": "Multimedia & Web Design",
+      "skill_area": "ICT & Computing",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-058",
+      "course_name": "Computer Based Accounting",
+      "skill_area": "ICT & Computing",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [
+        "Peachtree Accounting Package",
+        "Sage, MYOB, ACC Package",
+        "Quick Books Accounting Package on weekends.",
+        "Final Project with a Presentation"
+      ],
+      "module_display_corrections": [
+        {
+          "module_index": 2,
+          "original": "Quick Books Accounting Package on weekends.",
+          "displayed": "Quick Books Accounting Package",
+          "removed_fragments": [
+            "on weekends."
+          ],
+          "rule": "Removed a fragment that stands alone as a line in the governed course document and is an exact ending of a standard NYSC overview sentence."
+        }
+      ],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-059",
+      "course_name": "Non-Liner Video Editing With Digital 3D Animation",
+      "skill_area": "ICT & Computing",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-060",
+      "course_name": "Construction Site Supervisor",
+      "skill_area": "Construction & Surveying",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "12",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-061",
+      "course_name": "Designing & Space Planing For Droughtmanship",
+      "skill_area": "Construction & Surveying",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "12",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-062",
+      "course_name": "Desktop Publisher",
+      "skill_area": "Creative Arts, Design & Media",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "12",
+      "modules": [
+        "Adobe pagemaker 7.0",
+        "Adode photoshop Cs6 which will be held on weekends.",
+        "Adobe Indesign Cs6",
+        "Adobe Illustrator Cs6"
+      ],
+      "module_display_corrections": [
+        {
+          "module_index": 1,
+          "original": "Adode photoshop Cs6 which will be held on weekends.",
+          "displayed": "Adode photoshop Cs6",
+          "removed_fragments": [
+            "which will be held on weekends."
+          ],
+          "rule": "Removed a fragment that stands alone as a line in the governed course document and is an exact ending of a standard NYSC overview sentence."
+        }
+      ],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-063",
+      "course_name": "Dress Making Without Blocks",
+      "skill_area": "Beauty, Fashion & Personal Care",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [
+        "Women and children clothing which will be held on weekends."
+      ],
+      "module_display_corrections": [
+        {
+          "module_index": 0,
+          "original": "Women and children clothing which will be held on weekends.",
+          "displayed": "Women and children clothing",
+          "removed_fragments": [
+            "which will be held on weekends."
+          ],
+          "rule": "Removed a fragment that stands alone as a line in the governed course document and is an exact ending of a standard NYSC overview sentence."
+        }
+      ],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-064",
+      "course_name": "Electrician",
+      "skill_area": "Electrical & Electronics",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [
+        "Domestic Electrical Installation",
+        "Repair and Service Motor Generator",
+        "Industrial Electrical Installation (Motor weekends. Controlling System)",
+        "P.L.C.",
+        "Security Solutions gentle attitudes within a disciplined environment."
+      ],
+      "module_display_corrections": [
+        {
+          "module_index": 2,
+          "original": "Industrial Electrical Installation (Motor weekends. Controlling System)",
+          "displayed": "Industrial Electrical Installation (Motor Controlling System)",
+          "removed_fragments": [
+            "weekends."
+          ],
+          "rule": "Removed a fragment that stands alone as a line in the governed course document and is an exact ending of a standard NYSC overview sentence."
+        },
+        {
+          "module_index": 4,
+          "original": "Security Solutions gentle attitudes within a disciplined environment.",
+          "displayed": "Security Solutions",
+          "removed_fragments": [
+            "gentle attitudes within a disciplined environment."
+          ],
+          "rule": "Removed a fragment that stands alone as a line in the governed course document and is an exact ending of a standard NYSC overview sentence."
+        }
+      ],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-065",
+      "course_name": "Engineering Draughtsmanship",
+      "skill_area": "Construction & Surveying",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-066",
+      "course_name": "Professional English",
+      "skill_area": "Languages & Communication",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-067",
+      "course_name": "French Language",
+      "skill_area": "Languages & Communication",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-068",
+      "course_name": "Graphics Designer",
+      "skill_area": "Creative Arts, Design & Media",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-069",
+      "course_name": "Hair Dresser",
+      "skill_area": "Beauty, Fashion & Personal Care",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-070",
+      "course_name": "Handycraft",
+      "skill_area": "Beauty, Fashion & Personal Care",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-071",
+      "course_name": "Human Recources Management",
+      "skill_area": "Business, Management & Administration",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [
+        "JD, JA Recruitment, Selection, Hiring, Induction be held on weekends.",
+        "Discripline Management, PE System, T and D",
+        "LR System, Employee welfare, Labour law gentle attitudes within a disciplined environment."
+      ],
+      "module_display_corrections": [
+        {
+          "module_index": 0,
+          "original": "JD, JA Recruitment, Selection, Hiring, Induction be held on weekends.",
+          "displayed": "JD, JA Recruitment, Selection, Hiring, Induction",
+          "removed_fragments": [
+            "be held on weekends."
+          ],
+          "rule": "Removed a fragment that stands alone as a line in the governed course document and is an exact ending of a standard NYSC overview sentence."
+        },
+        {
+          "module_index": 2,
+          "original": "LR System, Employee welfare, Labour law gentle attitudes within a disciplined environment.",
+          "displayed": "LR System, Employee welfare, Labour law",
+          "removed_fragments": [
+            "gentle attitudes within a disciplined environment."
+          ],
+          "rule": "Removed a fragment that stands alone as a line in the governed course document and is an exact ending of a standard NYSC overview sentence."
+        }
+      ],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-072",
+      "course_name": "Japanese Language",
+      "skill_area": "Languages & Communication",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [
+        "JLPT - N5 & NAT - N5 Course Syllabues (Rs. 1500.00 Fees for Course Meterials)"
+      ],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-073",
+      "course_name": "Java Programming With Software Applications Development",
+      "skill_area": "ICT & Computing",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-074",
+      "course_name": "Korean Language",
+      "skill_area": "Languages & Communication",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [
+        "Cover all skills of Korean Language required to use the language efficiently"
+      ],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-075",
+      "course_name": "Mass Communication",
+      "skill_area": "Languages & Communication",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [
+        "Language Practice, Print Communication, Criticism and Taste, Poetry / Song / Drama, Radio weekends."
+      ],
+      "module_display_corrections": [
+        {
+          "module_index": 0,
+          "original": "Language Practice, Print Communication, Criticism and Taste, Poetry / Song / Drama, Radio weekends.",
+          "displayed": "Language Practice, Print Communication, Criticism and Taste, Poetry / Song / Drama, Radio",
+          "removed_fragments": [
+            "weekends."
+          ],
+          "rule": "Removed a fragment that stands alone as a line in the governed course document and is an exact ending of a standard NYSC overview sentence."
+        }
+      ],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-076",
+      "course_name": "Micro Controller Circuit Designing",
+      "skill_area": "ICT & Computing",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "8",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-077",
+      "course_name": "Mobile Phone Repair Technician",
+      "skill_area": "Electrical & Electronics",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "8",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-078",
+      "course_name": "Motorcycle Mechanic",
+      "skill_area": "Automotive & Mechanical Engineering",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-079",
+      "course_name": "Motor Controlling Technology",
+      "skill_area": "Automotive & Mechanical Engineering",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-080",
+      "course_name": "Motor Winding",
+      "skill_area": "Automotive & Mechanical Engineering",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-081",
+      "course_name": "Radio, TV & Allied Equipment Repairer",
+      "skill_area": "Electrical & Electronics",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [
+        "CRT TV, Monitor, LCD / LED TV, DVD Players Repair",
+        "Basic Electricity and Electronics which will be held on weekends.",
+        "Microcontroller Programming, LED Display Boaet Programming"
+      ],
+      "module_display_corrections": [
+        {
+          "module_index": 1,
+          "original": "Basic Electricity and Electronics which will be held on weekends.",
+          "displayed": "Basic Electricity and Electronics",
+          "removed_fragments": [
+            "which will be held on weekends."
+          ],
+          "rule": "Removed a fragment that stands alone as a line in the governed course document and is an exact ending of a standard NYSC overview sentence."
+        }
+      ],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-082",
+      "course_name": "Secretary (Secretarial Practices)",
+      "skill_area": "Business, Management & Administration",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [
+        "Basic - The role of a Secretary",
+        "Secretarial Duties for Meeting, Mailing, Communicating, Handling corrspondence, Traveling etc course which will be held on weekends.",
+        "Workshops ,Seminars."
+      ],
+      "module_display_corrections": [
+        {
+          "module_index": 1,
+          "original": "Secretarial Duties for Meeting, Mailing, Communicating, Handling corrspondence, Traveling etc course which will be held on weekends.",
+          "displayed": "Secretarial Duties for Meeting, Mailing, Communicating, Handling corrspondence, Traveling etc",
+          "removed_fragments": [
+            "course which will be held on weekends."
+          ],
+          "rule": "Removed a fragment that stands alone as a line in the governed course document and is an exact ending of a standard NYSC overview sentence."
+        }
+      ],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-083",
+      "course_name": "Sinhala Language",
+      "skill_area": "Languages & Communication",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-084",
+      "course_name": "Store Management",
+      "skill_area": "Business, Management & Administration",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-085",
+      "course_name": "Tailor",
+      "skill_area": "Beauty, Fashion & Personal Care",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-086",
+      "course_name": "Tamil Language",
+      "skill_area": "Languages & Communication",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [
+        "Cover all skills of Tamil Language required to use the language efficiently"
+      ],
+      "module_display_corrections": [],
+      "module_review_flags": []
+    },
+    {
+      "course_id": "COURSE-087",
+      "course_name": "Web Designing",
+      "skill_area": "ICT & Computing",
+      "attendance_type": "Part Time",
+      "nvq_level": "NOT_STATED",
+      "qualification_type": "NOT_STATED",
+      "duration_months": "6",
+      "modules": [
+        "HTML 5",
+        "CSS (cascading style sheet)",
+        "Java Script weekends.",
+        "Contact form and Emails",
+        "Mobile Layout (Responsive template)",
+        "Host and Maintenance Website gentle attitudes within a disciplined environment."
+      ],
+      "module_display_corrections": [
+        {
+          "module_index": 2,
+          "original": "Java Script weekends.",
+          "displayed": "Java Script",
+          "removed_fragments": [
+            "weekends."
+          ],
+          "rule": "Removed a fragment that stands alone as a line in the governed course document and is an exact ending of a standard NYSC overview sentence."
+        },
+        {
+          "module_index": 5,
+          "original": "Host and Maintenance Website gentle attitudes within a disciplined environment.",
+          "displayed": "Host and Maintenance Website",
+          "removed_fragments": [
+            "gentle attitudes within a disciplined environment."
+          ],
+          "rule": "Removed a fragment that stands alone as a line in the governed course document and is an exact ending of a standard NYSC overview sentence."
+        }
+      ],
+      "module_review_flags": []
+    }
+  ]
+}

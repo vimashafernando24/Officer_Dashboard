@@ -1,0 +1,461 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-pilot-hardware",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Comparator records for NYSC COURSE-008 and COURSE-055 Computer Hardware Technician and COURSE-056 Computer Hardware and Network Technician. Records describe documented content only and do not establish labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its source by a researcher before it is used in analysis.",
+  "country_group_gaps": {
+    "sri_lanka": "No independent Sri Lankan programme with published modules was verified on 2026-10-18. DTET lists Computer Hardware Technician (K72S001) without modules; LAVTC's published NVQ Level 4 module list belongs to an NYSC centre, so it is not an independent comparator; SLGTI publishes modules for its ICT Technician course only."
+  },
+  "records": [
+    {
+      "record_id": "IN-DGT-CTS-CHNM-V2",
+      "country": "India",
+      "country_group": "developing_emerging",
+      "institution": "Directorate General of Training (DGT), Ministry of Skill Development & Entrepreneurship",
+      "record_type": "national_curriculum",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Computer Hardware & Network Maintenance",
+      "sector": "ICT / Computer hardware",
+      "framework": "NSQF (India)",
+      "level_as_published": "NSQF Level 3.5",
+      "duration_as_published": "One Year (1200 Hours+150 hours OJT/Group Project)",
+      "entry_as_published": "Passed 10th class examination with Science and Mathematics or with vocational subject in same sector or its equivalent. Minimum Age 14 years as on first day of academic session.",
+      "modules": [
+        {
+          "published_ref": "LO1",
+          "code": "SSC/N0101, SSC/N0202",
+          "title_verbatim": "Demonstrate implementation of safe working practices, environment regulation, and housekeeping.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO2",
+          "code": "SSC/N0101, SSC/N0202",
+          "title_verbatim": "Demonstrate testing and troubleshooting for power supplies in I/O devices and trace circuit of PC SMPS.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO3",
+          "code": "SSC/N0101, SSC/N0202",
+          "title_verbatim": "Advance Computer Hardware.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO4",
+          "code": "SSC/N0101, SSC/N0202",
+          "title_verbatim": "Preventive Maintenance and Troubleshooting of PC.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO5",
+          "code": "SSC/N0101, SSC/N0202",
+          "title_verbatim": "Assemble and repair Desktop Computer with all its hardware components.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO6",
+          "code": "SSC/N0305, SSC/N0901, SSC/N0922",
+          "title_verbatim": "Install different Operating System and all other application software.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO7",
+          "code": "SSC/N0101, SSC/N0202",
+          "title_verbatim": "Customize Operating System and maintenance of system application software.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO8",
+          "code": "SSC/N0101, SSC/N0202",
+          "title_verbatim": "Assemble and repair Laptop and its hardware components.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO9",
+          "code": "SSC/N0305, SSC/N0901, SSC/N0922",
+          "title_verbatim": "Perform the operations of office package (word, excel, power point).",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO10",
+          "code": "SSC/N0101, SSC/N0202",
+          "title_verbatim": "Install Printer, Scanner and troubleshoot their faults.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO11",
+          "code": "SSC/N0101, SSC/N0202",
+          "title_verbatim": "Set up and configure Networking System using various network devices.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO12",
+          "code": "SSC/N0305, SSC/N0901, SSC/N0922",
+          "title_verbatim": "Share and control resource and Internet connection through network.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO13",
+          "code": "SSC/N0305, SSC/N0901, SSC/N0922",
+          "title_verbatim": "Collaboration, surveillance and maintenance through network.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO14",
+          "code": "SSC/N0305, SSC/N0901, SSC/N0922",
+          "title_verbatim": "Implement Network Security to protect from various attacks on networking.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO15",
+          "code": "SSC/N0305, SSC/N0901, SSC/N0922",
+          "title_verbatim": "Install and configure Windows and Linux server.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO16",
+          "code": "SSC/N0305, SSC/N0901, SSC/N0922",
+          "title_verbatim": "Browse internet and communicate through email.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO17",
+          "code": "SSC/N0305, SSC/N0901, SSC/N0922",
+          "title_verbatim": "Explain Virtualization, Cloud concepts & services.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://www.dgt.gov.in/sites/default/files/2024-12/CHNM_CTS2.0_NSQF-3.5.pdf",
+        "document_type": "pdf",
+        "document_sha256": "2585b7f9e890cb210679c0ae16a6f95f2472fcfc46ee63c5fab4b370f9814c3e",
+        "publication_or_revision": "Version 2.0, revised March 2023",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "All 17 learning outcomes read from the rendered 5.1 Learning Outcomes page (PDF page 12, printed page 10) and matched against its pdf.js text layer in order with whitespace ignored; course facts from the General Information table (PDF page 10).",
+        "human_reviewed": false
+      },
+      "licence_note": "Government of India publication; reuse terms not checked.",
+      "notes": [
+        "Outcome text is stored without its trailing '(NOS: ...)' reference; the NOS codes are stored in the code field, comma-separated (LO5 is published as 'SSC/N0101 and SSC/N0202').",
+        "The cover reads 'NSQF LEVEL – 3.5' and the General Information table 'Level-3.5'. An older 2018 edition at NSQF Level 4 exists; no later version than 2.0 was found on 2026-10-18.",
+        "Covers hardware and networking; delivered through Industrial Training Institutes (ITIs); no individual ITI has been verified.",
+        "Assessment criteria and the trade syllabus are not stored."
+      ]
+    },
+    {
+      "record_id": "PH-TESDA-CSS-NC2",
+      "country": "Philippines",
+      "country_group": "developing_emerging",
+      "institution": "Technical Education and Skills Development Authority (TESDA)",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Computer Systems Servicing NC II",
+      "sector": "ICT / Computer hardware",
+      "framework": "Philippine TVET Qualification (NC)",
+      "level_as_published": "NC II",
+      "duration_as_published": "Training Hours: 40 Hours (Basic), 80 Hours (Common), 160 Hours (CORE); 280 Hours – TOTAL",
+      "entry_as_published": "Can communicate either oral and written; Must pass the trainability/aptitude test.",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "500311105",
+          "title_verbatim": "Participate in workplace communication",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311106",
+          "title_verbatim": "Work in a team environment",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311107",
+          "title_verbatim": "Practice career professionalism",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311108",
+          "title_verbatim": "Practice occupational health and safety procedures",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC315202",
+          "title_verbatim": "Apply quality standards",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC311203",
+          "title_verbatim": "Perform computer operations",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC311201",
+          "title_verbatim": "Perform mensuration and calculation",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC311202",
+          "title_verbatim": "Prepare and interpret technical drawing",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC724201",
+          "title_verbatim": "Use hand tools",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC724202",
+          "title_verbatim": "Terminate and connect electrical wiring and electronic circuits",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC724205",
+          "title_verbatim": "Test electronic components",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC724331",
+          "title_verbatim": "Install and configure computer systems",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC724332",
+          "title_verbatim": "Set-up Computer Networks",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC724333",
+          "title_verbatim": "Set-up Computer Servers",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC724334",
+          "title_verbatim": "Maintain and Repair Computer Systems and Networks",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://www.tesda.gov.ph/Downloadables/TR%20Computer%20Systems%20Servicing%20NC%20II%20.pdf",
+        "document_type": "pdf",
+        "document_sha256": "42d85dad87d0566b8b965ac0868e0f92e6cbb4c578028eff648db21be421d147",
+        "publication_or_revision": "ELCCSS213; Amended - December 2013",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Units, scope, hours and entry requirements read from the rendered PDF pages (Section 1, printed p. 1; Section 3, printed pp. 54 and 59) and matched against the pdf.js text layer of the same pages.",
+        "human_reviewed": false
+      },
+      "licence_note": "Philippine government publication; reuse terms not checked.",
+      "notes": [
+        "Current regulation per TESDA's list of promulgated training regulations (as of May 2022): Computer Systems Servicing NC II, ELCCSS213, 280 hours, promulgated 12/17/13.",
+        "A training regulation (standard), delivered by TESDA-registered institutions; no provider has been verified.",
+        "Only unit titles are stored; the regulation's element-level text and learning outcomes tables are not.",
+        "Scope covers computer systems, networks and servers; 'Computer Assembler' appears only as an occupation, not as a unit.",
+        "scope_verbatim holds the exact Section 1 wording and each listed occupation as a separate passage, verified against the rendered PDF page and its text layer."
+      ],
+      "scope_verbatim": [
+        "The COMPUTER SYSTEMS SERVICING NC II Qualification consists of competencies that must possess to enable to install and configure computers systems, set-up computer networks and servers and to maintain and repair computer systems and networks.",
+        "A person who has achieved this Qualification is competent to be:",
+        "Computer Assembler",
+        "Computer Service Technician",
+        "Network Technician",
+        "Computer Maintenance Technician"
+      ]
+    },
+    {
+      "record_id": "SG-ITE-HNITEC-ISN-2Y",
+      "country": "Singapore",
+      "country_group": "developed",
+      "institution": "Institute of Technical Education (ITE)",
+      "record_type": "programme",
+      "delivering_provider_verified": true,
+      "title_verbatim": "Higher Nitec in IT Systems & Networks (2 years)",
+      "sector": "ICT / Computer hardware",
+      "framework": "ITE Nitec / Higher Nitec (Singapore)",
+      "level_as_published": "Higher Nitec",
+      "duration_as_published": "2 years; Total: 68 credits",
+      "entry_as_published": null,
+      "modules": [
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Networking Fundamentals",
+          "outcome_verbatim": "On completion of the module, students should be able to set up, configure, set up and troubleshoot wired and wireless network system for small office environment. They should be able to provide network support and configure network devices.",
+          "group": "Sector Foundation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "System Software Essentials",
+          "outcome_verbatim": "On completion of the module, students should be able to install and configure operating system (OS) and application software on end user computing devices. In addition, they should also be able to perform OS maintenance and troubleshooting.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Computer Maintenance",
+          "outcome_verbatim": "On completion of the module, students should be able to perform installation and configuration of hardware components and peripherals of end user computing devices. In addition, they should also be able to perform end user computing devices maintenance and troubleshooting of hardware problems.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Networking Technology",
+          "outcome_verbatim": "On completion of the module, students should be able to apply the fundamentals of computer networking in relation to the OSI model. They should also be able to configure and set up wired and wireless local area network (LAN) including network segmentation. Students will also be able to perform network documentation and monitor network performance.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Enterprise Networking",
+          "outcome_verbatim": "On completion of the module, students should be able to configure and set up a switched and routed network with Virtual LANs (VLANs) as well as set up a wide area network (WAN), implement access control lists and troubleshoot common network issues and problems.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "System Administration",
+          "outcome_verbatim": "On completion of the module, students should be able to set up server operating systems and perform system administration tasks such as user management, resource management and performance monitoring. Students should also be able to configure file server services and implement basic system security.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "System Hardening & Infrastructure Services",
+          "outcome_verbatim": "On completion of the module, students should be able to perform server security hardening and manage infrastructure services. Students should also be able to automate server administration and implement high-availability systems.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Virtualisation Management",
+          "outcome_verbatim": "On completion of the module, students should be able to set up a virtualisation server and environment, perform backup and recovery of VMs for fault tolerance, and carry out basic troubleshooting with hypervisors and VMs. They will also be able to monitor resource utilisation on the hypervisor, perform VM migration, troubleshoot performance and connectivity issues, secure the virtualised infrastructure.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Hybrid Cloud Technologies",
+          "outcome_verbatim": "On completion of the module, students should be able to configure connection to cloud services in on-premises environment, perform essential cloud operation and cloud services utilisation, as well as troubleshoot virtualisation services.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Scripting Essentials",
+          "outcome_verbatim": "On completion of the module, students should be able to apply basic structured thinking skill to develop script to perform basic system related tasks and activities.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Administrative Scripting",
+          "outcome_verbatim": "On completion of the module, students should be able to provide programming support to IT system automation and other related project.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Wireless Networking",
+          "outcome_verbatim": "On completion of the module, students should be able to install, configure and secure Wireless Local Area Networks (WLANs). They should also be able to perform monitoring of WLAN.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Network Security",
+          "outcome_verbatim": "On completion of the module, students should be able to install hardware firewalls, set up intrusion detection and prevention systems, and maintain firewall policies for network connectivity to external networks. They will also be proficient in setting up Virtual Private Networks, configure endpoint protection, and implement cryptography in the enterprise environment.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Internship Programme",
+          "outcome_verbatim": "On completion of the modules, students should be able to integrate and apply a cluster of key technical, social and methodological competencies related to their field of study.",
+          "group": "Specialisation Modules"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://isomer-user-content.by.gov.sg/145/741ded1a-55e4-4471-8a85-0e685c6b7f9a/Higher%20Nitec%20in%20IT%20Systems%20%26%20Networks%20(2%20years).pdf",
+        "document_type": "pdf",
+        "document_sha256": "41eac99330f5514d5a347e5a47f219796fea097370b3779b686923e379459660",
+        "publication_or_revision": "Last updated on 28 Nov 2025",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Modules and objectives extracted from the PDF linked on ITE's official course page (Higher Nitec in IT Systems & Networks) and matched against its text layer; objectives joined across line breaks.",
+        "human_reviewed": false
+      },
+      "licence_note": "Singapore Government agency publication; reuse terms not checked.",
+      "notes": [
+        "Offered at ITE College Central, ITE College East and ITE College West; course duration 24 months (official course page).",
+        "A broader IT systems and networks programme with one hardware-focused cluster core module (Computer Maintenance); not a dedicated hardware course.",
+        "Life Skills, Cross-Disciplinary Core and elective modules are published separately and are not stored; the general electives list includes HSE modules for building and mechanical courses only.",
+        "Internship Programme carries 8 credits; every other listed module carries 3."
+      ]
+    }
+  ]
+}
