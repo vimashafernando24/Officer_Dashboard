@@ -1,0 +1,141 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-ict-diploma",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Comparator records for NYSC COURSE-006 National Diploma In Information & Communication Technology. Records describe documented curriculum only and do not establish equivalence, quality or labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its official source by a researcher before publication.",
+  "country_group_gaps": {
+    "developing_emerging": "No developing/emerging-economy diploma-level ICT curriculum was verified on 2026-10-18: no comparable diploma was identified in the DGT and TESDA sources searched; NIELIT's 'A' Level syllabus could not be retrieved (the NIELIT site served only an application shell) and the NQR copy is an outdated approval sheet.",
+    "developed": "The existing Singapore ITE Higher Nitec in IT Applications Development delivered programme (web dataset) is linked as the developed-economy comparator. Australia's ICT50220 Diploma of Information Technology was inspected but not used: its core units are generic and its technical content depends on a single chosen specialisation."
+  },
+  "records": [
+    {
+      "record_id": "LK-TVEC-NCS-ICT-L5-2025",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "INFORMATION AND COMMUNICATION TECHNOLOGY (NATIONAL DIPLOMA LEVEL 5)",
+      "sector": "ICT / Diploma",
+      "framework": "NVQ (Sri Lanka)",
+      "level_as_published": "NVQ LEVEL 5 (National Diploma Level 5, K72T001Q1L5)",
+      "duration_as_published": null,
+      "entry_as_published": "Relevant NVQ level 4 qualification in relevant field or pass in CGE A/L examination",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "K72T001U01",
+          "title_verbatim": "Identify user requirements for software solution",
+          "outcome_verbatim": "This unit covers the competencies needed to carryout requirement identification process of a software development project by identifying process boundaries and key stakeholders then document the business requirements",
+          "group": "Schedule of Units (NVQ Level 5)"
+        },
+        {
+          "published_ref": null,
+          "code": "K72T001U02",
+          "title_verbatim": "Analyze requirements and design functionality of software solution",
+          "outcome_verbatim": "This unit covers the competencies required to check the system design specifications against outcomes and quality standards by analyzing therequirement and then design of software application followed by reviews",
+          "group": "Schedule of Units (NVQ Level 5)"
+        },
+        {
+          "published_ref": null,
+          "code": "K72T001U03",
+          "title_verbatim": "Implement database management system",
+          "outcome_verbatim": "This unit covers the competencies required to design, implement and maintain the database",
+          "group": "Schedule of Units (NVQ Level 5)"
+        },
+        {
+          "published_ref": null,
+          "code": "K72T001U04",
+          "title_verbatim": "Develop and Test Software",
+          "outcome_verbatim": "This unit covers the competencies needed to develop the designed application according to the standard of the selected programming language/s and carry out unit, integration, system tests.",
+          "group": "Schedule of Units (NVQ Level 5)"
+        },
+        {
+          "published_ref": null,
+          "code": "K72T001U05",
+          "title_verbatim": "Create design for print media",
+          "outcome_verbatim": "This unit covers the competencies required to identify the print media & digital media concepts for the given project, create quotation for the project, design and develop required print media & digital media concept and store/transmit softcopy of the print media & digital media design adhering to environmental safety, health and legal requirement.",
+          "group": "Schedule of Units (NVQ Level 5)"
+        },
+        {
+          "published_ref": null,
+          "code": "K72T001U06",
+          "title_verbatim": "Design & Develop multimedia content",
+          "outcome_verbatim": "This unit covers the competencies required to identify the multimedia & digital media concepts for the given project, create quotation for the project, design and develop required multimedia & digital media concept and store/transmit softcopy of the multimedia & digital media design adhering to environmental safety, health and legal requirement.",
+          "group": "Schedule of Units (NVQ Level 5)"
+        },
+        {
+          "published_ref": null,
+          "code": "K72T001U07",
+          "title_verbatim": "Design, Develop and host web sites",
+          "outcome_verbatim": "This unit covers the competencies required to design, develop and host a website with frontend, backend validation and database operations",
+          "group": "Schedule of Units (NVQ Level 5)"
+        },
+        {
+          "published_ref": null,
+          "code": "K72T001U08",
+          "title_verbatim": "Manage computer networks with security measures and cloud environments",
+          "outcome_verbatim": "This unit covers the competencies required to prepare network layouts, setting up server environment, access cloud environment and manage the security feature",
+          "group": "Schedule of Units (NVQ Level 5)"
+        },
+        {
+          "published_ref": null,
+          "code": "K72T001U09",
+          "title_verbatim": "Design and develop mobile app",
+          "outcome_verbatim": "This unit covers the competencies required to design, develop, debug, test and deploy mobile App that fulfill the customer requirements.",
+          "group": "Schedule of Units (NVQ Level 5)"
+        },
+        {
+          "published_ref": null,
+          "code": "EMPU01",
+          "title_verbatim": "Manage Workplace Information",
+          "outcome_verbatim": "This unit covers the competencies required to collect, organise and analyse information from a variety of sources, use organisational management information system for decision making and innovation, maintain a database for controlling progress of activities at the work place and maintain a standard documentation system.",
+          "group": "Schedule of Units (NVQ Level 5)"
+        },
+        {
+          "published_ref": null,
+          "code": "EMPU02",
+          "title_verbatim": "Manage Workplace Communication",
+          "outcome_verbatim": "This unit covers the competencies required to communicate with target group and stakeholders, present information in verbal, non-verbal and written forms, accompanied by visuals if required, and in structured form appropriate to the work force and the purpose",
+          "group": "Schedule of Units (NVQ Level 5)"
+        },
+        {
+          "published_ref": null,
+          "code": "EMPU03",
+          "title_verbatim": "Plan Work to be Performed at the Workplace",
+          "outcome_verbatim": "This unit covers the competencies required in planning and scheduling work to be performed, assessing competencies / work capacities of individual workers / working teams predict problems / changes and take appropriate action to achieve business plans of the organisation",
+          "group": "Schedule of Units (NVQ Level 5)"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://nvq.gov.lk/report_inquires/NCS_Request_Pdf.php?nm=K72T001_2_NCS.pdf",
+        "document_type": "pdf",
+        "document_sha256": "257001b073da25032edcf63b6c62b9ce1e9f4cef91ebd4a01293e6aa2a325690",
+        "publication_or_revision": "Second Revision 2025; NVQ Level 5 endorsed 08.07.2025, review 08.07.2028",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Unit titles and codes read from the rendered NVQ Level 5 schedule of units (PDF page 9); each unit descriptor from its unit page (PDF pages 18-60); facts from PDF pages 2, 7, 9 and 10; all matched against the pdf.js text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Copyright TVEC; source states all rights reserved.",
+      "notes": [
+        "A national competency standard for the National Diploma in ICT, not evidence that a named provider delivers the programme. The document contains competency standards only; no curriculum modules or hours are published in it.",
+        "Stores the 12 NVQ Level 5 units (9 technical units and 3 employability units) with their descriptors; the three NVQ Level 6 packages are not stored.",
+        "Unit titles follow the Level 5 schedule; some unit pages capitalise them differently (e.g. 'Develop and test software', 'Plan Work to be Performed at Work place').",
+        "The NVQ Level 6 page states 'Date of Review: 08.07.2025', the same as its endorsement date; the Level 5 page states 08.07.2028.",
+        "Revision 2 is the latest on the NVQ portal; revision 1 there is the 2009 first publication (2026-10-18)."
+      ],
+      "scope_verbatim": [
+        "Level 5: Covers essential skills in software development, system analysis, digital electronics, web design, databases, networking, cybersecurity, and multimedia."
+      ]
+    }
+  ]
+}

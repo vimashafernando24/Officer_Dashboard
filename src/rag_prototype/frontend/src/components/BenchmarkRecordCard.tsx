@@ -7,7 +7,6 @@ import {
   moduleDisclosure,
   modulePreview,
   qualificationDisplay,
-  verificationLabel,
 } from "../programmeBenchmarks";
 import type { BenchmarkModule, BenchmarkRecord } from "../programmeBenchmarks";
 
@@ -41,7 +40,6 @@ export function BenchmarkRecordCard({ record }: { record: BenchmarkRecord }) {
         <span className={`pcd-tag pcd-tag-${record.record_type}`}>
           {RECORD_TYPE_LABELS[record.record_type]}
         </span>
-        <span className="pcd-tag pcd-tag-status">{verificationLabel(record)}</span>
       </div>
       <h4>{record.title_verbatim}</h4>
       <p className="pcd-card-institution">{record.institution}</p>
@@ -73,6 +71,18 @@ export function BenchmarkRecordCard({ record }: { record: BenchmarkRecord }) {
       <a className="pcd-card-source" href={record.source.url} target="_blank" rel="noreferrer">
         Official source
       </a>
+
+      <details className="pcd-source-details">
+        <summary>Source version and notes</summary>
+        <p>
+          Version / revision: {record.source.publication_or_revision ?? "Not stated"} · Retrieved {record.source.retrieved_date}
+        </p>
+        {record.notes && record.notes.length > 0 && (
+          <ul>
+            {record.notes.map((note, index) => <li key={index}>{note}</li>)}
+          </ul>
+        )}
+      </details>
 
       <details className="pcd-modules">
         <summary>

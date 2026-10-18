@@ -1,0 +1,485 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-tv-production",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Comparator records for NYSC COURSE-031 National Diploma In Television Program Production. The governed catalogue publishes no module headings for this course, so the records are shown without a competency matrix. Records describe documented curriculum only and do not establish equivalence, quality or labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its official source by a researcher before publication.",
+  "country_group_gaps": {},
+  "records": [
+    {
+      "record_id": "LK-TVEC-NCS-TV-DIGITAL-MEDIA-PRODUCTION-2025",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "TELEVISION AND DIGITAL MEDIA PRODUCTION TECHNOLOGY (NATIONAL DIPLOMA NVQ LEVEL 5 AND 6)",
+      "sector": "Media / Television production",
+      "framework": "NVQ (Sri Lanka)",
+      "level_as_published": "NVQ Level 5 and 6 (National Diploma)",
+      "duration_as_published": null,
+      "entry_as_published": "Relevant NVQ level 4 qualification or pass in CGE A/L examination",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "D32T003U01",
+          "title_verbatim": "Develop content and script for television and digital media production",
+          "outcome_verbatim": null,
+          "group": "NVQ Level 5 units"
+        },
+        {
+          "published_ref": null,
+          "code": "D32T003U02",
+          "title_verbatim": "Plan audio-visual production",
+          "outcome_verbatim": null,
+          "group": "NVQ Level 5 units"
+        },
+        {
+          "published_ref": null,
+          "code": "D32T003U03",
+          "title_verbatim": "Organize production management activities",
+          "outcome_verbatim": null,
+          "group": "NVQ Level 5 units"
+        },
+        {
+          "published_ref": null,
+          "code": "D32T003U04",
+          "title_verbatim": "Manage capturing audio and visual footages",
+          "outcome_verbatim": null,
+          "group": "NVQ Level 5 units"
+        },
+        {
+          "published_ref": null,
+          "code": "D32T003U05",
+          "title_verbatim": "Supervise lighting arrangements",
+          "outcome_verbatim": null,
+          "group": "NVQ Level 5 units"
+        },
+        {
+          "published_ref": null,
+          "code": "EMPU01",
+          "title_verbatim": "Manage workplace information",
+          "outcome_verbatim": null,
+          "group": "NVQ Level 5 units"
+        },
+        {
+          "published_ref": null,
+          "code": "EMPU02",
+          "title_verbatim": "Manage workplace communication",
+          "outcome_verbatim": null,
+          "group": "NVQ Level 5 units"
+        },
+        {
+          "published_ref": null,
+          "code": "EMPU03",
+          "title_verbatim": "Plan work to be performed in the workplace",
+          "outcome_verbatim": null,
+          "group": "NVQ Level 5 units"
+        },
+        {
+          "published_ref": null,
+          "code": "D32T003U06",
+          "title_verbatim": "Manage Post-Production activities",
+          "outcome_verbatim": null,
+          "group": "NVQ Level 6 units"
+        },
+        {
+          "published_ref": null,
+          "code": "D32T003U07",
+          "title_verbatim": "Manage audio-visual product designing",
+          "outcome_verbatim": null,
+          "group": "NVQ Level 6 units"
+        },
+        {
+          "published_ref": null,
+          "code": "D32T003U08",
+          "title_verbatim": "Manage audio-visual content for interactive media platforms",
+          "outcome_verbatim": null,
+          "group": "NVQ Level 6 units"
+        },
+        {
+          "published_ref": null,
+          "code": "D32T003U09",
+          "title_verbatim": "Manage production designing aspects",
+          "outcome_verbatim": null,
+          "group": "NVQ Level 6 units"
+        },
+        {
+          "published_ref": null,
+          "code": "D32T003U10",
+          "title_verbatim": "Design sound for television and digital media productions",
+          "outcome_verbatim": null,
+          "group": "NVQ Level 6 units"
+        },
+        {
+          "published_ref": null,
+          "code": "D32T003U11",
+          "title_verbatim": "Evaluate television and digital media productions",
+          "outcome_verbatim": null,
+          "group": "NVQ Level 6 units"
+        },
+        {
+          "published_ref": null,
+          "code": "D32T003U12",
+          "title_verbatim": "Direct television and digital media products",
+          "outcome_verbatim": null,
+          "group": "NVQ Level 6 units"
+        },
+        {
+          "published_ref": null,
+          "code": "EMPU04",
+          "title_verbatim": "Solve problems and make decisions",
+          "outcome_verbatim": null,
+          "group": "NVQ Level 6 units"
+        },
+        {
+          "published_ref": null,
+          "code": "EMPU05",
+          "title_verbatim": "Provide leadership and facilitate work teams",
+          "outcome_verbatim": null,
+          "group": "NVQ Level 6 units"
+        },
+        {
+          "published_ref": null,
+          "code": "EMPU06",
+          "title_verbatim": "Facilitate establishment and maintenance of learning culture at workplace",
+          "outcome_verbatim": null,
+          "group": "NVQ Level 6 units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://nvq.gov.lk/report_inquires/NCS_Request_Pdf.php?nm=D32T003_1_NCS.pdf",
+        "document_type": "pdf",
+        "document_sha256": "0d06ae56045ad5c24be21cfac0edfb048f0b7ed9a0d967fcd31a5b02f7ecf0c6",
+        "publication_or_revision": "First Revision December 2025; next revision December 2028 (endorsement and review dates are blank on the qualification pages)",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "NVQ Level 5 units read from PDF page 7 and NVQ Level 6 units from PDF page 8, both matched in order against the pdf.js text layer; revision facts from PDF page 2.",
+        "human_reviewed": false
+      },
+      "licence_note": "Copyright TVEC; source states all rights reserved.",
+      "notes": [
+        "A national occupational standard, not evidence that a named provider delivers the programme.",
+        "Stores the 8 NVQ Level 5 units and the 10 NVQ Level 6 units (the Level 6 page repeats EMPU01-EMPU03, which are stored once); curriculum modules and hours are not stored.",
+        "The endorsement-date and date-of-review fields on both qualification pages are blank in the published PDF."
+      ]
+    },
+    {
+      "record_id": "PH-TESDA-FILM-VIDEO-POSTPRODUCTION-NC3",
+      "country": "Philippines",
+      "country_group": "developing_emerging",
+      "institution": "Technical Education and Skills Development Authority (TESDA)",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Film and Video Postproduction NC III",
+      "sector": "Media / Film and video post-production",
+      "framework": "Philippine TVET Qualification (NC)",
+      "level_as_published": "NC III",
+      "duration_as_published": "Nominal Training Duration: 40 Hours (Basic), 88 Hours (Common), 170 Hours (Core), 298 Hours; 120 Hours - Supervised Industry Learning (SIL)",
+      "entry_as_published": null,
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "400311319",
+          "title_verbatim": "Lead workplace communication",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311320",
+          "title_verbatim": "Lead small teams",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311321",
+          "title_verbatim": "Apply critical thinking and problem-solving techniques in the",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311322",
+          "title_verbatim": "Work in a diverse environment",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311323",
+          "title_verbatim": "Propose methods of applying learning and innovation in the",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311324",
+          "title_verbatim": "Use information systematically",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311325",
+          "title_verbatim": "Evaluate occupational safety and health work practices",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311326",
+          "title_verbatim": "Evaluate environmental work practices",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311327",
+          "title_verbatim": "Facilitate entrepreneurial skills for micro-small-medium enterprises (MSMEs)",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "CRE265201",
+          "title_verbatim": "Develop and update industry knowledge",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "CRE265202",
+          "title_verbatim": "Develop creative thinking, artistic skills and cultural awareness",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "CRE265203",
+          "title_verbatim": "Observe procedures, specifications and manuals of instructions",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "CRE265204",
+          "title_verbatim": "Operate equipment",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "CRE265205",
+          "title_verbatim": "Manage own performance",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "CRE265206",
+          "title_verbatim": "Maintain safe, clean and efficient work environment",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "CRE265207",
+          "title_verbatim": "Provide and maintain effective client relations",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "CRE343305",
+          "title_verbatim": "Prepare postproduction materials and facilities",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "CRE343306",
+          "title_verbatim": "Build edits and materials for postproduction",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "CRE343307",
+          "title_verbatim": "Create enhanced edits and materials for postproduction",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "CRE343308",
+          "title_verbatim": "Wrap up postproduction",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://www.tesda.gov.ph/Downloadables/TRs/TR%20-%20Film%20and%20Video%20Postprodunction%20NC%20III.pdf",
+        "document_type": "pdf",
+        "document_sha256": "38ba31cfb1de8898c9c5d5639760e0c58fa709277a4445701d94d733698ee429",
+        "publication_or_revision": "CREFVP321, Promulgated (11/05/2021)",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Units and codes read from the Section 1 pages (PDF pages 5-6) and matched in order against the pdf.js text layer (two basic units are printed with stacked codes and titles); nominal duration from the Section 3.1 course design.",
+        "human_reviewed": false
+      },
+      "licence_note": "Philippine government publication; reuse terms not checked.",
+      "notes": [
+        "A training regulation (standard), delivered by TESDA-registered institutions; no provider has been verified.",
+        "Listed on TESDA's training regulations page; the TESDA promulgated-TR list (as of May 2022) records Film and Video Postproduction NC III, CREFVP321, 418 hours, promulgated 05/11/21. The file name on TESDA's server misspells 'Postprodunction'.",
+        "Covers post-production (editing, audio, visual effects, colour grading), not camera production or directing."
+      ],
+      "scope_verbatim": [
+        "The skills, knowledge, and attitudes stated in this Training Regulations focus on the video editing process of postproduction but includes related tasks and disciplines such as client relations, audio production, visual effects, and color grading."
+      ]
+    },
+    {
+      "record_id": "SG-ITE-HNITEC-FILM-VIDEO-2Y",
+      "country": "Singapore",
+      "country_group": "developed",
+      "institution": "Institute of Technical Education (ITE)",
+      "record_type": "programme",
+      "delivering_provider_verified": true,
+      "title_verbatim": "Higher Nitec in Film & Video Production (2 years)",
+      "sector": "Media / Film and video production",
+      "framework": "ITE Nitec / Higher Nitec (Singapore)",
+      "level_as_published": "Higher Nitec",
+      "duration_as_published": "2 years; Total: 68 credits",
+      "entry_as_published": null,
+      "modules": [
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Video Production Techniques",
+          "outcome_verbatim": "On completion of the module, students should be able to perform videography. They should also be able to handle basic video equipment, camera accessories and perform lighting techniques for video production.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Post-production Techniques",
+          "outcome_verbatim": "On completion of the module, students should be able to carry out post-production workflow from import to export. Students should also be able to perform basic video and audio editing techniques.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Production Planning",
+          "outcome_verbatim": "On completion of the module, students should be able to carry out script breakdown, plan production budgets, schedules and logistical requirements for principal photography.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Camera Technology",
+          "outcome_verbatim": "On completion of the module, students should be able to set up interchangeable lens camera system with essential peripherals for media recording. This module covers the key aspects of camera assisting for digital film production.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Camera Movement Techniques",
+          "outcome_verbatim": "On completion of the module, students should be able to set up camera movement systems. This module covers the key aspects of camera movement techniques in film production.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Lighting Techniques",
+          "outcome_verbatim": "On completion of the module, students should be able to set up lighting equipment. This module covers the key aspects of lighting techniques in film production.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Broadcast & Multi-cam Production",
+          "outcome_verbatim": "On completion of the module, students should be able to plan, set up and operate within a multi-camera production and studio environment to produce content for broadcast and streaming. Students should be able to execute these tasks as part of a team in a portable and mobile setup.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Content Creation Project",
+          "outcome_verbatim": "On completion of the module, students should be able to identify, create and produce visually compelling short form videos that resonates with targeted audience in multiple formats to meet various digital platform requirements.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Production Management",
+          "outcome_verbatim": "On completion of the module, students should be able to apply pre-production requirements and manage the production workflow that includes breakdowns, schedules, budgets, coordination and other logistic support.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Cinematography Techniques I",
+          "outcome_verbatim": "On completion of the module, students should be able to apply cinematography techniques in camera systems, camera operations and camera movement. They should be able to support the cinematographer in camera operations to meet the requirements of the dramatic content.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Cinematography Techniques II",
+          "outcome_verbatim": "On completion of the module, students should be able to apply cinematography techniques in lighting and scene coverage. They should be able to support the cinematographer in lighting setups to meet the requirements of the dramatic content.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Post-production II",
+          "outcome_verbatim": "On completion of the module, students should be able to manage post-production requirements for high quality delivery. Students will also be able to perform colour balancing, colour grading and perform the final mix-down.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Final Year Project",
+          "outcome_verbatim": "On completion of the module, students should be able to plan, produce, shoot and edit their final year project to create a portfolio that will demonstrate their creative and technical competences.",
+          "group": "Specialisation Modules"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://isomer-user-content.by.gov.sg/145/047899b0-0c63-4f80-bea6-aa43f18de987/Higher%20Nitec%20in%20FILM%20%26%20VIDEO%20PRODUCTION%20(2%20YEARS).pdf",
+        "document_type": "pdf",
+        "document_sha256": "66c040221578bca66b24b2debf410326c999594bd3886dd3ff231326b3341fb2",
+        "publication_or_revision": "Last updated on 28 Nov 2025",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Modules and objectives extracted from the PDF linked on ITE's official course page (Higher Nitec in Film & Video Production) and matched against its pdf.js text layer; objectives joined across line breaks.",
+        "human_reviewed": false
+      },
+      "licence_note": "Singapore Government agency publication; reuse terms not checked.",
+      "notes": [
+        "Offered at ITE College Central; course duration 24 months (official course page, 2026-10-18).",
+        "Stores the 2 cluster core and 11 specialisation modules with their objectives; internship, cross-disciplinary core, life skills and elective modules are not stored.",
+        "A film and video production programme; television studio production appears through 'Broadcast & Multi-cam Production'."
+      ]
+    }
+  ]
+}

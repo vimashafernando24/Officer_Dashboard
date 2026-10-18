@@ -32,6 +32,8 @@ export interface BenchmarkRecord {
   content_fidelity: string;
   source: { url: string; publication_or_revision: string | null; retrieved_date: string };
   verification: { status: string; method: string; human_reviewed: boolean };
+  /** Stored research notes, including source currency (e.g. a passed review date). */
+  notes?: string[];
 }
 
 export interface CourseComparators {

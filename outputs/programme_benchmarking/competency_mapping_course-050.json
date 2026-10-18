@@ -1,0 +1,123 @@
+{
+  "description": "Hand-curated competency mapping for NYSC COURSE-050 Cake & Cake Structure against three official comparator records. A DOCUMENTED cell cites exact stored text; absence from published text is not proof that content is not taught.",
+  "schema_version": "1.0.0",
+  "created_date": "2026-10-18",
+  "nysc_course_id": "COURSE-050",
+  "method": "The NYSC column was assessed independently against COURSE-050's four governed headings. The fourth heading is cited in its original governed form and displayed with the approved catalogue correction. Broad headings do not establish more specific competencies, and coverage is not inferred from programme titles.",
+  "methodology": {
+    "DOCUMENTED": "The cited stored text explicitly names the competency. Coverage records whether it names every component of the category (FULL) or only some (PARTIAL).",
+    "FULL": "The cited evidence supports the competency as labelled: every listed component of the category is explicitly named.",
+    "PARTIAL": "Only a component of the category, or a broader/lower level of activity, is explicitly documented; supported_component records what is supported.",
+    "NOT_EXPLICIT": "The competency is not documented within the available, assessed scope of the source.",
+    "INSUFFICIENT_DATA": "Missing or incomplete material prevents a reliable assessment.",
+    "caution": "None of these statuses proves that a competency is or is not actually taught.",
+    "areas_rule": "Areas to Investigate list competencies that the NYSC description does not name (NOT_EXPLICIT) and that at least two distinct comparator records, from at least two different countries, document with FULL coverage. PARTIAL evidence is shown but not counted.",
+    "decisions": [
+      "The Sri Lankan occupational standard and India national curriculum are not presented as delivered programmes.",
+      "The Australia FBP30521 Baking qualification is not linked: its cake and gateaux units do not document a substantial cake-decoration pathway.",
+      "No competency is inferred from the COURSE-050 title or from an external programme title."
+    ]
+  },
+  "statuses": ["DOCUMENTED", "NOT_EXPLICIT", "INSUFFICIENT_DATA"],
+  "category_components": {
+    "icing_methods": ["Icing preparation methods"],
+    "cake_decoration": ["Cake decoration"],
+    "icing_structures": ["Icing structures"],
+    "occasion_specialty_cakes": ["Occasion cakes", "Eggless cake", "Gateau"],
+    "basic_advanced_cake_production": ["Basic cake production", "Advanced cake production"],
+    "cake_outer_covering": ["Covering the cake outer layer"],
+    "cake_food_safety_hygiene": ["Food safety and hygiene for cake production"],
+    "customer_led_cake_design": ["Cake design to customer specifications"],
+    "cake_business_operations": ["Routine operational functions"]
+  },
+  "columns": [
+    {"column_id":"NYSC-COURSE-050","kind":"nysc","nysc_course_id":"COURSE-050","short_label":"NYSC COURSE-050"},
+    {"column_id":"LK-TVEC-NCS-CAKE-DECORATOR-2022","kind":"benchmark","record_id":"LK-TVEC-NCS-CAKE-DECORATOR-2022","short_label":"TVEC/NAITA · Sri Lanka"},
+    {"column_id":"IN-DGT-CTS-BAKER-V2","kind":"benchmark","record_id":"IN-DGT-CTS-BAKER-V2","short_label":"DGT · India"},
+    {"column_id":"SG-ITE-HNITEC-PASTRY-2Y","kind":"benchmark","record_id":"SG-ITE-HNITEC-PASTRY-2Y","short_label":"ITE · Singapore"}
+  ],
+  "human_reviewed": false,
+  "competencies": [
+    {
+      "competency_id": "icing_methods", "label": "Icing preparation methods",
+      "cells": {
+        "NYSC-COURSE-050": {"status":"DOCUMENTED","evidence":[{"module_index":0,"field":"title_verbatim","code":null,"text":"Oicing Methods"}],"note":"Published with the spelling 'Oicing Methods'.","coverage":"FULL"},
+        "LK-TVEC-NCS-CAKE-DECORATOR-2022": {"status":"DOCUMENTED","evidence":[{"module_index":3,"field":"title_verbatim","code":"D15S010U04","text":"Prepare basic icing mixtures and toppings"},{"module_index":4,"field":"title_verbatim","code":"D15S010U05","text":"Prepare advanced icing mixtures, toppings and syrups"}],"note":null,"coverage":"FULL"},
+        "IN-DGT-CTS-BAKER-V2": {"status":"DOCUMENTED","evidence":[{"module_index":6,"field":"title_verbatim","code":"FIC/N5007","text":"Prepare various icing."}],"note":null,"coverage":"FULL"},
+        "SG-ITE-HNITEC-PASTRY-2Y": {"status":"NOT_EXPLICIT","evidence":[],"note":"The stored objectives describe decorating cakes but do not explicitly name icing preparation methods."}
+      }
+    },
+    {
+      "competency_id": "cake_decoration", "label": "Cake decoration",
+      "cells": {
+        "NYSC-COURSE-050": {"status":"DOCUMENTED","evidence":[{"module_index":1,"field":"title_verbatim","code":null,"text":"Cake Decorations"}],"note":null,"coverage":"FULL"},
+        "LK-TVEC-NCS-CAKE-DECORATOR-2022": {"status":"DOCUMENTED","evidence":[{"module_index":6,"field":"title_verbatim","code":"D15S010U07","text":"Decorate cakes"}],"note":null,"coverage":"FULL"},
+        "IN-DGT-CTS-BAKER-V2": {"status":"DOCUMENTED","evidence":[{"module_index":6,"field":"title_verbatim","code":"FIC/N5007","text":"Prepare various icing."}],"note":"Icing preparation supports only one component of cake decoration; broader decorative work is not explicit in the stored outcomes.","coverage":"PARTIAL","supported_component":"Icing preparation"},
+        "SG-ITE-HNITEC-PASTRY-2Y": {"status":"DOCUMENTED","evidence":[{"module_index":10,"field":"outcome_verbatim","code":null,"text":"On completion of this module, students should be able to carry out cake design and perform decorative work using principles of good cake design."}],"note":null,"coverage":"FULL"}
+      }
+    },
+    {
+      "competency_id": "icing_structures", "label": "Icing structures",
+      "cells": {
+        "NYSC-COURSE-050": {"status":"DOCUMENTED","evidence":[{"module_index":2,"field":"title_verbatim","code":null,"text":"Icing Structures"}],"note":null,"coverage":"FULL"},
+        "LK-TVEC-NCS-CAKE-DECORATOR-2022": {"status":"NOT_EXPLICIT","evidence":[],"note":"Icing preparation, cake covering and decoration are published, but an icing-structure competency is not explicitly named in the stored unit titles."},
+        "IN-DGT-CTS-BAKER-V2": {"status":"NOT_EXPLICIT","evidence":[],"note":"The stored outcome names icing preparation but not icing structures."},
+        "SG-ITE-HNITEC-PASTRY-2Y": {"status":"NOT_EXPLICIT","evidence":[],"note":"The stored objective names cake design and decorative work but not icing structures."}
+      }
+    },
+    {
+      "competency_id": "occasion_specialty_cakes", "label": "Occasion cakes, eggless cake and gateau",
+      "cells": {
+        "NYSC-COURSE-050": {"status":"DOCUMENTED","evidence":[{"module_index":3,"field":"title_verbatim","code":null,"text":"Birthday Cake, Wedding cake, Engagement cake, Eggless cake, Homecoming cake and Gateau gentle attitudes within a disciplined environment.","display_text":"Birthday Cake, Wedding cake, Engagement cake, Eggless cake, Homecoming cake and Gateau"}],"note":"The exact governed heading is retained; only the catalogue-approved trailing-fragment correction is displayed.","coverage":"FULL"},
+        "LK-TVEC-NCS-CAKE-DECORATOR-2022": {"status":"DOCUMENTED","evidence":[{"module_index":2,"field":"title_verbatim","code":"D15S010U03","text":"Produce advanced cakes"}],"note":"The stored unit title documents advanced cakes but does not explicitly name occasion cakes, eggless cake or gateau.","coverage":"PARTIAL","supported_component":"Advanced cakes"},
+        "IN-DGT-CTS-BAKER-V2": {"status":"DOCUMENTED","evidence":[{"module_index":7,"field":"title_verbatim","code":"FIC/N5007","text":"Prepare special types of cakes."}],"note":"Special cakes are documented, but the stored outcome does not explicitly name occasion cakes, eggless cake or gateau.","coverage":"PARTIAL","supported_component":"Special cakes"},
+        "SG-ITE-HNITEC-PASTRY-2Y": {"status":"DOCUMENTED","evidence":[{"module_index":8,"field":"outcome_verbatim","code":null,"text":"On completion of this module, students should be able to prepare, decorate and display specified range of mousse cakes."}],"note":"Mousse cakes are documented, but occasion cakes, eggless cake and gateau are not explicitly named.","coverage":"PARTIAL","supported_component":"Mousse cakes"}
+      }
+    },
+    {
+      "competency_id": "basic_advanced_cake_production", "label": "Basic and advanced cake production",
+      "cells": {
+        "NYSC-COURSE-050": {"status":"DOCUMENTED","evidence":[{"module_index":3,"field":"title_verbatim","code":null,"text":"Birthday Cake, Wedding cake, Engagement cake, Eggless cake, Homecoming cake and Gateau gentle attitudes within a disciplined environment.","display_text":"Birthday Cake, Wedding cake, Engagement cake, Eggless cake, Homecoming cake and Gateau"}],"note":"The heading lists cake varieties but does not distinguish basic and advanced production.","coverage":"PARTIAL","supported_component":"Named cake varieties"},
+        "LK-TVEC-NCS-CAKE-DECORATOR-2022": {"status":"DOCUMENTED","evidence":[{"module_index":1,"field":"title_verbatim","code":"D15S010U02","text":"Produce basic cakes"},{"module_index":2,"field":"title_verbatim","code":"D15S010U03","text":"Produce advanced cakes"}],"note":null,"coverage":"FULL"},
+        "IN-DGT-CTS-BAKER-V2": {"status":"DOCUMENTED","evidence":[{"module_index":5,"field":"title_verbatim","code":"FIC/N5007","text":"Plan &prepare different types of cakes."},{"module_index":7,"field":"title_verbatim","code":"FIC/N5007","text":"Prepare special types of cakes."}],"note":"Different and special cake types are documented, but basic and advanced levels are not explicitly distinguished.","coverage":"PARTIAL","supported_component":"Different and special cake types"},
+        "SG-ITE-HNITEC-PASTRY-2Y": {"status":"DOCUMENTED","evidence":[{"module_index":4,"field":"title_verbatim","code":null,"text":"Basic Cake Making"},{"module_index":8,"field":"title_verbatim","code":null,"text":"Advanced Cake Making"}],"note":null,"coverage":"FULL"}
+      }
+    },
+    {
+      "competency_id": "cake_outer_covering", "label": "Covering the cake outer layer",
+      "cells": {
+        "NYSC-COURSE-050": {"status":"NOT_EXPLICIT","evidence":[],"note":"Icing methods and structures are named, but covering the cake outer layer is not explicitly stated."},
+        "LK-TVEC-NCS-CAKE-DECORATOR-2022": {"status":"DOCUMENTED","evidence":[{"module_index":5,"field":"title_verbatim","code":"D15S010U06","text":"Cover cake outer layer"}],"note":null,"coverage":"FULL"},
+        "IN-DGT-CTS-BAKER-V2": {"status":"DOCUMENTED","evidence":[{"module_index":6,"field":"title_verbatim","code":"FIC/N5007","text":"Prepare various icing."}],"note":"Icing preparation is documented, but applying it as an outer covering is not explicit.","coverage":"PARTIAL","supported_component":"Icing preparation"},
+        "SG-ITE-HNITEC-PASTRY-2Y": {"status":"DOCUMENTED","evidence":[{"module_index":10,"field":"outcome_verbatim","code":null,"text":"On completion of this module, students should be able to carry out cake design and perform decorative work using principles of good cake design."}],"note":"Decorative work is documented, but covering the outer layer is not explicit.","coverage":"PARTIAL","supported_component":"Decorative work"}
+      }
+    },
+    {
+      "competency_id": "cake_food_safety_hygiene", "label": "Food safety and hygiene for cake production",
+      "cells": {
+        "NYSC-COURSE-050": {"status":"NOT_EXPLICIT","evidence":[],"note":"No food-safety or hygiene heading is published for COURSE-050."},
+        "LK-TVEC-NCS-CAKE-DECORATOR-2022": {"status":"DOCUMENTED","evidence":[{"module_index":0,"field":"title_verbatim","code":"D15S010U01","text":"Maintain pleasant food handling area"},{"module_index":0,"field":"outcome_verbatim","code":"D15S010U01","text":"This unit covers the competencies required to maintain pleasant and safe food handling area adhering to the standard operating procedures and company norms."}],"note":null,"coverage":"FULL"},
+        "IN-DGT-CTS-BAKER-V2": {"status":"DOCUMENTED","evidence":[{"module_index":0,"field":"title_verbatim","code":"FIC/N9001","text":"Maintain hygiene and cleanliness of bakery, bakery equipment &utensils following safety precaution."}],"note":null,"coverage":"FULL"},
+        "SG-ITE-HNITEC-PASTRY-2Y": {"status":"DOCUMENTED","evidence":[{"module_index":0,"field":"outcome_verbatim","code":null,"text":"On completion of this module, students should be able to apply knowledge and skills to follow workplace safety and food safety procedures and standards according to regulations, practice good personal hygiene, handle and store food safely and maintain cleanliness of utensils, equipment, service and storage areas and attend to accidents and emergencies."}],"note":null,"coverage":"FULL"}
+      }
+    },
+    {
+      "competency_id": "customer_led_cake_design", "label": "Cake design to customer specifications",
+      "cells": {
+        "NYSC-COURSE-050": {"status":"NOT_EXPLICIT","evidence":[],"note":"Cake decorations are named, but customer specifications or consultation are not explicit."},
+        "LK-TVEC-NCS-CAKE-DECORATOR-2022": {"status":"DOCUMENTED","evidence":[{"module_index":0,"field":"scope_verbatim","code":null,"text":"Cake Decorator is the person who design and decorate cakes according to customers’ specifications while recommending customers the best solutions to achieve customer expectation."}],"note":null,"coverage":"FULL"},
+        "IN-DGT-CTS-BAKER-V2": {"status":"NOT_EXPLICIT","evidence":[],"note":"Customer-led cake design is not named in the stored learning outcomes."},
+        "SG-ITE-HNITEC-PASTRY-2Y": {"status":"DOCUMENTED","evidence":[{"module_index":10,"field":"outcome_verbatim","code":null,"text":"On completion of this module, students should be able to carry out cake design and perform decorative work using principles of good cake design."}],"note":"Cake design is explicit, but designing to customer specifications is not.","coverage":"PARTIAL","supported_component":"Cake design"}
+      }
+    },
+    {
+      "competency_id": "cake_business_operations", "label": "Routine operational functions",
+      "cells": {
+        "NYSC-COURSE-050": {"status":"NOT_EXPLICIT","evidence":[],"note":"No business-operations heading is published for COURSE-050."},
+        "LK-TVEC-NCS-CAKE-DECORATOR-2022": {"status":"DOCUMENTED","evidence":[{"module_index":7,"field":"title_verbatim","code":"D15S010U08","text":"Manage routine functions"}],"note":null,"coverage":"FULL"},
+        "IN-DGT-CTS-BAKER-V2": {"status":"NOT_EXPLICIT","evidence":[],"note":"Routine business operations are not named in the stored learning outcomes."},
+        "SG-ITE-HNITEC-PASTRY-2Y": {"status":"DOCUMENTED","evidence":[{"module_index":7,"field":"outcome_verbatim","code":null,"text":"On completion of this module, students should be able to create a menu for pastry and dessert products and plan promotional strategies to market the products."}],"note":"Menu creation and promotion are documented, but broader routine business operations are not.","coverage":"PARTIAL","supported_component":"Menu creation and promotional planning"}
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "nysc_course_id": "COURSE-062",
+  "created_date": "2026-10-18",
+  "description": "Hand-curated competency mapping for NYSC COURSE-062 Desktop Publisher against four official-source comparators. DOCUMENTED cites exact stored source text; NOT_EXPLICIT does not mean absent from teaching.",
+  "method": "The NYSC column was assessed only from its four governed headings. Comparator cells use only the stored modules and outcomes in the linked records. Related graphic-design evidence is not treated as proof of named application coverage.",
+  "methodology": {
+    "DOCUMENTED": "The cited stored text explicitly names the competency. Coverage is FULL only where every component in category_components is named; otherwise it is PARTIAL.",
+    "FULL": "Every listed component of the competency category is explicitly named in the cited evidence.",
+    "PARTIAL": "Only part of the category, or a broader/lower-level activity, is explicitly documented.",
+    "NOT_EXPLICIT": "The competency is not documented within the available assessed source scope.",
+    "INSUFFICIENT_DATA": "Missing or incomplete material prevents reliable assessment.",
+    "caution": "This published-text comparison does not prove what is or is not taught.",
+    "areas_rule": "Areas to Investigate list NYSC NOT_EXPLICIT competencies documented with FULL coverage by at least two comparator records from at least two countries. PARTIAL evidence does not count.",
+    "decisions": [
+      "The four NYSC competencies are the exact governed application headings; no additional desktop-publishing competencies were inferred.",
+      "Only the DGT Desktop Publishing Operator curriculum explicitly names PageMaker, InDesign, Illustrator and Photoshop.",
+      "The related Sri Lankan, Philippine and Singapore design records remain NOT_EXPLICIT for these exact application competencies."
+    ]
+  },
+  "category_components": {
+    "desktop_publishing_pagemaker": ["Adobe PageMaker"],
+    "desktop_publishing_photoshop": ["Adobe Photoshop"],
+    "desktop_publishing_indesign": ["Adobe InDesign"],
+    "desktop_publishing_illustrator": ["Adobe Illustrator"]
+  },
+  "human_reviewed": false,
+  "statuses": ["DOCUMENTED", "NOT_EXPLICIT", "INSUFFICIENT_DATA"],
+  "columns": [
+    {"column_id": "NYSC-COURSE-062", "kind": "nysc", "nysc_course_id": "COURSE-062", "short_label": "NYSC COURSE-062"},
+    {"column_id": "LK-TVEC-NCS-GRAPHIC-DESIGNER-2025", "kind": "benchmark", "record_id": "LK-TVEC-NCS-GRAPHIC-DESIGNER-2025", "short_label": "TVEC · Sri Lanka"},
+    {"column_id": "PH-TESDA-VGD-NC3", "kind": "benchmark", "record_id": "PH-TESDA-VGD-NC3", "short_label": "TESDA · Philippines"},
+    {"column_id": "SG-ITE-HNITEC-COMMDESIGN-2Y", "kind": "benchmark", "record_id": "SG-ITE-HNITEC-COMMDESIGN-2Y", "short_label": "ITE · Singapore"},
+    {"column_id": "IN-DGT-CTS-DTPO-V2", "kind": "benchmark", "record_id": "IN-DGT-CTS-DTPO-V2", "short_label": "DGT · India"}
+  ],
+  "competencies": [
+    {
+      "competency_id": "desktop_publishing_pagemaker",
+      "label": "Adobe PageMaker",
+      "cells": {
+        "NYSC-COURSE-062": {"status": "DOCUMENTED", "evidence": [{"module_index": 0, "field": "title_verbatim", "code": null, "text": "Adobe pagemaker 7.0"}], "note": null, "coverage": "FULL"},
+        "LK-TVEC-NCS-GRAPHIC-DESIGNER-2025": {"status": "NOT_EXPLICIT", "evidence": [], "note": "The stored occupational-unit text does not name Adobe PageMaker."},
+        "PH-TESDA-VGD-NC3": {"status": "NOT_EXPLICIT", "evidence": [], "note": "The stored core-unit text does not name Adobe PageMaker."},
+        "SG-ITE-HNITEC-COMMDESIGN-2Y": {"status": "NOT_EXPLICIT", "evidence": [], "note": "The stored published modules do not name Adobe PageMaker."},
+        "IN-DGT-CTS-DTPO-V2": {"status": "DOCUMENTED", "evidence": [{"module_index": 0, "field": "title_verbatim", "code": null, "text": "Classify the features of Adobe PageMaker."}], "note": "The curriculum names PageMaker without claiming version equivalence to NYSC PageMaker 7.0.", "coverage": "FULL"}
+      }
+    },
+    {
+      "competency_id": "desktop_publishing_photoshop",
+      "label": "Adobe Photoshop",
+      "cells": {
+        "NYSC-COURSE-062": {"status": "DOCUMENTED", "evidence": [{"module_index": 1, "field": "title_verbatim", "code": null, "text": "Adode photoshop Cs6 which will be held on weekends.", "display_text": "Adode photoshop Cs6"}], "note": "The governed spelling and schedule clause are preserved; the approved display text removes only the schedule clause.", "coverage": "FULL"},
+        "LK-TVEC-NCS-GRAPHIC-DESIGNER-2025": {"status": "NOT_EXPLICIT", "evidence": [], "note": "The stored occupational-unit text does not name Adobe Photoshop."},
+        "PH-TESDA-VGD-NC3": {"status": "NOT_EXPLICIT", "evidence": [], "note": "The stored core-unit text does not name Adobe Photoshop."},
+        "SG-ITE-HNITEC-COMMDESIGN-2Y": {"status": "NOT_EXPLICIT", "evidence": [], "note": "The stored published modules do not name Adobe Photoshop."},
+        "IN-DGT-CTS-DTPO-V2": {"status": "DOCUMENTED", "evidence": [{"module_index": 3, "field": "title_verbatim", "code": "SSC/N9491", "text": "Create, format, edit and develop images using Adobe Photoshop software."}], "note": "The curriculum names Photoshop without claiming version equivalence to NYSC CS6.", "coverage": "FULL"}
+      }
+    },
+    {
+      "competency_id": "desktop_publishing_indesign",
+      "label": "Adobe InDesign",
+      "cells": {
+        "NYSC-COURSE-062": {"status": "DOCUMENTED", "evidence": [{"module_index": 2, "field": "title_verbatim", "code": null, "text": "Adobe Indesign Cs6"}], "note": null, "coverage": "FULL"},
+        "LK-TVEC-NCS-GRAPHIC-DESIGNER-2025": {"status": "NOT_EXPLICIT", "evidence": [], "note": "The stored occupational-unit text does not name Adobe InDesign."},
+        "PH-TESDA-VGD-NC3": {"status": "NOT_EXPLICIT", "evidence": [], "note": "The stored core-unit text does not name Adobe InDesign."},
+        "SG-ITE-HNITEC-COMMDESIGN-2Y": {"status": "NOT_EXPLICIT", "evidence": [], "note": "The stored published modules do not name Adobe InDesign."},
+        "IN-DGT-CTS-DTPO-V2": {"status": "DOCUMENTED", "evidence": [{"module_index": 1, "field": "title_verbatim", "code": "SSC/N2702", "text": "Create, edit, format and develop page combining text and graphics using page makeup Adobe InDesign application software."}], "note": "The curriculum names InDesign without claiming version equivalence to NYSC CS6.", "coverage": "FULL"}
+      }
+    },
+    {
+      "competency_id": "desktop_publishing_illustrator",
+      "label": "Adobe Illustrator",
+      "cells": {
+        "NYSC-COURSE-062": {"status": "DOCUMENTED", "evidence": [{"module_index": 3, "field": "title_verbatim", "code": null, "text": "Adobe Illustrator Cs6"}], "note": null, "coverage": "FULL"},
+        "LK-TVEC-NCS-GRAPHIC-DESIGNER-2025": {"status": "NOT_EXPLICIT", "evidence": [], "note": "The stored occupational-unit text does not name Adobe Illustrator."},
+        "PH-TESDA-VGD-NC3": {"status": "NOT_EXPLICIT", "evidence": [], "note": "The stored core-unit text does not name Adobe Illustrator."},
+        "SG-ITE-HNITEC-COMMDESIGN-2Y": {"status": "NOT_EXPLICIT", "evidence": [], "note": "The stored published modules do not name Adobe Illustrator."},
+        "IN-DGT-CTS-DTPO-V2": {"status": "DOCUMENTED", "evidence": [{"module_index": 2, "field": "title_verbatim", "code": "SSC/N9490", "text": "Create Illustrations and Graphics using Adobe Illustrator."}], "note": "The curriculum names Illustrator without claiming version equivalence to NYSC CS6.", "coverage": "FULL"}
+      }
+    }
+  ]
+}

@@ -1,0 +1,1118 @@
+{
+  "description": "Hand-curated competency mapping for NYSC COURSE-087 Web Designing against its five linked web-focused records. A DOCUMENTED cell cites the exact stored text that names the competency. NOT_EXPLICIT means the available description does not name it, not that it is absent from teaching. INSUFFICIENT_DATA means the stored text is unavailable, outside the record's scope, or too ambiguous to assess.",
+  "schema_version": "1.0.0",
+  "nysc_course_id": "COURSE-087",
+  "created_date": "2026-10-18",
+  "method": "The NYSC column was assessed by hand against this course's six governed module headings; a broad heading does not establish a more specific competency. Headings 3 and 6 are cited by their governed text with the verified display corrections. Coverage is never inferred from programme titles, qualification levels or unstored text.",
+  "human_reviewed": false,
+  "statuses": [
+    "DOCUMENTED",
+    "NOT_EXPLICIT",
+    "INSUFFICIENT_DATA"
+  ],
+  "columns": [
+    {
+      "column_id": "NYSC-COURSE-087",
+      "kind": "nysc",
+      "nysc_course_id": "COURSE-087",
+      "short_label": "NYSC COURSE-087"
+    },
+    {
+      "column_id": "LK-TVEC-NCS-WEB-DEVELOPER-2025",
+      "kind": "benchmark",
+      "record_id": "LK-TVEC-NCS-WEB-DEVELOPER-2025",
+      "short_label": "NCS Web Developer · Sri Lanka"
+    },
+    {
+      "column_id": "IN-NQR-HARTRON-WEB-MULTIMEDIA-V2",
+      "kind": "benchmark",
+      "record_id": "IN-NQR-HARTRON-WEB-MULTIMEDIA-V2",
+      "short_label": "NQR Web Designing · India"
+    },
+    {
+      "column_id": "PH-TESDA-WEBDEV-NC3",
+      "kind": "benchmark",
+      "record_id": "PH-TESDA-WEBDEV-NC3",
+      "short_label": "TESDA NC III · Philippines"
+    },
+    {
+      "column_id": "SG-ITE-HNITEC-ITAD-2Y",
+      "kind": "benchmark",
+      "record_id": "SG-ITE-HNITEC-ITAD-2Y",
+      "short_label": "ITE · Singapore"
+    },
+    {
+      "column_id": "AU-TGA-ICT40120-WEBDEV",
+      "kind": "benchmark",
+      "record_id": "AU-TGA-ICT40120-WEBDEV",
+      "short_label": "ICT40120 Web · Australia"
+    }
+  ],
+  "category_components": {
+    "web_html": [
+      "writing HTML or markup-language documents"
+    ],
+    "web_css": [
+      "styling web pages with CSS"
+    ],
+    "web_javascript": [
+      "programming client-side interactivity with JavaScript"
+    ],
+    "web_forms_email": [
+      "building web forms (such as contact forms)",
+      "handling email from a website"
+    ],
+    "web_responsive": [
+      "designing responsive or mobile-friendly layouts"
+    ],
+    "web_hosting_maintenance": [
+      "hosting, deploying or publishing websites",
+      "maintaining websites"
+    ],
+    "web_design_ux": [
+      "designing website layouts or user interfaces"
+    ],
+    "web_backend": [
+      "server-side programming or back-end systems"
+    ],
+    "web_databases": [
+      "designing or using databases for web applications"
+    ],
+    "web_cms": [
+      "using or deploying a website content management system"
+    ],
+    "web_seo": [
+      "optimising websites for search engines"
+    ],
+    "web_testing": [
+      "testing websites or web applications"
+    ],
+    "web_security": [
+      "securing websites or web applications (including security testing or configuration)"
+    ],
+    "web_requirements_methodology": [
+      "gathering requirements or applying a software development methodology"
+    ],
+    "web_workplace_safety": [
+      "occupational health and safety practice"
+    ]
+  },
+  "methodology": {
+    "DOCUMENTED": "The cited stored text explicitly names the competency. Coverage records whether it names every component of the category (FULL) or only some (PARTIAL).",
+    "FULL": "The cited evidence supports the competency as labelled: every listed component of the category is explicitly named.",
+    "PARTIAL": "Only a component of the category, or a lower level of activity, is explicitly documented; supported_component records what is supported.",
+    "NOT_EXPLICIT": "The competency is not documented within the available, assessed scope of the source (units, modules, learning outcomes or verified scope passages as stored).",
+    "INSUFFICIENT_DATA": "Missing or incomplete material prevents a reliable assessment.",
+    "caution": "None of these statuses proves that a competency is or is not actually taught.",
+    "areas_rule": "Areas to Investigate list competencies that the NYSC description does not name (NOT_EXPLICIT) and that at least two distinct comparator records, from at least two different countries, document with FULL coverage. PARTIAL evidence is shown but not counted.",
+    "decisions": [
+      "Only web-focused records are linked; DGT COPA, the Sri Lankan ICT Technician standard and ITE IT Systems & Networks were not reused because their web content is incidental to general ICT or networking programmes.",
+      "India's record cites the qualification's verified description and level descriptors because its module titles are broad.",
+      "Australia's record is limited to the core and the Group G units the Web Development specialisation requires.",
+      "ITE's Web Content Management module is cited by its title for content management systems and by its objective for publishing and testing."
+    ]
+  },
+  "competencies": [
+    {
+      "competency_id": "web_html",
+      "label": "HTML markup",
+      "cells": {
+        "NYSC-COURSE-087": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "HTML 5"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-WEB-DEVELOPER-2025": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "outcome_verbatim",
+              "code": "K72S005M03",
+              "text": "Explain the role of front-end development in web applications.; List out the key components of front-end technologies.; Explain the principles of front-end design, including user experience (UX) and user interface (UI) design.; Create responsive and interactive web pages using HTML, CSS, and JavaScript; Create web pages/web sites using front-end frameworks and libraries"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-NQR-HARTRON-WEB-MULTIMEDIA-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "scope_verbatim",
+              "code": null,
+              "text": "Candidate will acquire knowledge of HTML, CSS, JavaScript, Photoshop and CMS and is able to design web sites as per client needs."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-WEBDEV-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 22,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Develop HTML/CSS website"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored module objective names this."
+        },
+        "AU-TGA-ICT40120-WEBDEV": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": "ICTWEB431",
+              "text": "Create and style simple markup language documents"
+            },
+            {
+              "module_index": 13,
+              "field": "title_verbatim",
+              "code": "ICTWEB452",
+              "text": "Create a markup language document"
+            }
+          ],
+          "note": "Unit titles name markup-language documents rather than HTML specifically.",
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "web_css",
+      "label": "CSS styling",
+      "cells": {
+        "NYSC-COURSE-087": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "CSS (cascading style sheet)"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-WEB-DEVELOPER-2025": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "outcome_verbatim",
+              "code": "K72S005M03",
+              "text": "Explain the role of front-end development in web applications.; List out the key components of front-end technologies.; Explain the principles of front-end design, including user experience (UX) and user interface (UI) design.; Create responsive and interactive web pages using HTML, CSS, and JavaScript; Create web pages/web sites using front-end frameworks and libraries"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-NQR-HARTRON-WEB-MULTIMEDIA-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "scope_verbatim",
+              "code": null,
+              "text": "Candidate will acquire knowledge of HTML, CSS, JavaScript, Photoshop and CMS and is able to design web sites as per client needs."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-WEBDEV-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 22,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Develop HTML/CSS website"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored module objective names this."
+        },
+        "AU-TGA-ICT40120-WEBDEV": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": "ICTWEB431",
+              "text": "Create and style simple markup language documents"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Styling simple markup-language documents; CSS is not named"
+        }
+      }
+    },
+    {
+      "competency_id": "web_javascript",
+      "label": "JavaScript and client-side interactivity",
+      "cells": {
+        "NYSC-COURSE-087": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Java Script weekends.",
+              "display_text": "Java Script"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-WEB-DEVELOPER-2025": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "outcome_verbatim",
+              "code": "K72S005M03",
+              "text": "Explain the role of front-end development in web applications.; List out the key components of front-end technologies.; Explain the principles of front-end design, including user experience (UX) and user interface (UI) design.; Create responsive and interactive web pages using HTML, CSS, and JavaScript; Create web pages/web sites using front-end frameworks and libraries"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-NQR-HARTRON-WEB-MULTIMEDIA-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "scope_verbatim",
+              "code": null,
+              "text": "Candidate will acquire knowledge of HTML, CSS, JavaScript, Photoshop and CMS and is able to design web sites as per client needs."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-WEBDEV-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 27,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Apply JavaScript to HTML/CSS"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored module objective names this."
+        },
+        "AU-TGA-ICT40120-WEBDEV": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored unit names JavaScript; 'Apply introductory programming techniques' does not name it. Only the core and Group G Web Development units are stored; other electives are not assessed."
+        }
+      }
+    },
+    {
+      "competency_id": "web_forms_email",
+      "label": "Web forms and email",
+      "cells": {
+        "NYSC-COURSE-087": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Contact form and Emails"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-WEB-DEVELOPER-2025": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No unit, module title or learning outcome names web forms or email; forms appear only in learning content, which is not stored."
+        },
+        "IN-NQR-HARTRON-WEB-MULTIMEDIA-V2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Module titles are broad; only the qualification description and level descriptors name web technologies."
+        },
+        "PH-TESDA-WEBDEV-NC3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No unit or core learning outcome names web forms or email."
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored module objective names this."
+        },
+        "AU-TGA-ICT40120-WEBDEV": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Only the core and Group G Web Development units are stored; other electives are not assessed."
+        }
+      }
+    },
+    {
+      "competency_id": "web_responsive",
+      "label": "Responsive and mobile layout",
+      "cells": {
+        "NYSC-COURSE-087": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Mobile Layout (Responsive template)"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-WEB-DEVELOPER-2025": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "outcome_verbatim",
+              "code": "K72S005M03",
+              "text": "Explain the role of front-end development in web applications.; List out the key components of front-end technologies.; Explain the principles of front-end design, including user experience (UX) and user interface (UI) design.; Create responsive and interactive web pages using HTML, CSS, and JavaScript; Create web pages/web sites using front-end frameworks and libraries"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-NQR-HARTRON-WEB-MULTIMEDIA-V2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Module titles are broad; only the qualification description and level descriptors name web technologies."
+        },
+        "PH-TESDA-WEBDEV-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 12,
+              "field": "title_verbatim",
+              "code": "ICT251302",
+              "text": "Develop Responsive Web Design"
+            },
+            {
+              "module_index": 21,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Design and develop user-friendly responsive Web interface"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored module objective names this. Mobile app modules are not responsive web design."
+        },
+        "AU-TGA-ICT40120-WEBDEV": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "ICTWEB453 'Optimise websites for mobile devices' is a general elective outside Group G. Only the core and Group G Web Development units are stored; other electives are not assessed."
+        }
+      }
+    },
+    {
+      "competency_id": "web_hosting_maintenance",
+      "label": "Website hosting and maintenance",
+      "cells": {
+        "NYSC-COURSE-087": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Host and Maintenance Website gentle attitudes within a disciplined environment.",
+              "display_text": "Host and Maintenance Website"
+            }
+          ],
+          "note": "Published as 'Host and Maintenance Website'.",
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-WEB-DEVELOPER-2025": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": "K72S005U04",
+              "text": "Perform deployment and maintenance of the web application"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-NQR-HARTRON-WEB-MULTIMEDIA-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "scope_verbatim",
+              "code": null,
+              "text": "Candidate is expected to design and maintain multipage web sites using various multimedia tools."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Designing and maintaining multipage web sites; hosting is not named"
+        },
+        "PH-TESDA-WEBDEV-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 30,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Configure a web or cloud server"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Configuring a web or cloud server; website maintenance is not named"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 7,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to configure and publish websites, with online payment support and social media integration. They should also be able to perform website testing."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Configuring and publishing websites; website maintenance is not named"
+        },
+        "AU-TGA-ICT40120-WEBDEV": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 12,
+              "field": "title_verbatim",
+              "code": "ICTWEB450",
+              "text": "Evaluate and select a web hosting service"
+            },
+            {
+              "module_index": 10,
+              "field": "title_verbatim",
+              "code": "ICTWEB434",
+              "text": "Transfer content to websites"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Selecting a web hosting service and transferring content to websites; website maintenance is not named"
+        }
+      }
+    },
+    {
+      "competency_id": "web_design_ux",
+      "label": "Website and interface design (UI/UX)",
+      "cells": {
+        "NYSC-COURSE-087": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's six published module headings."
+        },
+        "LK-TVEC-NCS-WEB-DEVELOPER-2025": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": "K72S005U02",
+              "text": "Prepare web application design"
+            },
+            {
+              "module_index": 10,
+              "field": "outcome_verbatim",
+              "code": "K72S005M03",
+              "text": "Explain the role of front-end development in web applications.; List out the key components of front-end technologies.; Explain the principles of front-end design, including user experience (UX) and user interface (UI) design.; Create responsive and interactive web pages using HTML, CSS, and JavaScript; Create web pages/web sites using front-end frameworks and libraries"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-NQR-HARTRON-WEB-MULTIMEDIA-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "scope_verbatim",
+              "code": null,
+              "text": "Candidate will acquire knowledge of HTML, CSS, JavaScript, Photoshop and CMS and is able to design web sites as per client needs."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-WEBDEV-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 21,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Design and develop user-friendly responsive Web interface"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to apply the UX design process to create effective and user-friendly interfaces. They should also be able to use digital tools to design, prototype, and refine their work based on user feedback."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-ICT40120-WEBDEV": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 8,
+              "field": "title_verbatim",
+              "code": "ICTWEB432",
+              "text": "Design website layouts"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "web_backend",
+      "label": "Back-end and server-side development",
+      "cells": {
+        "NYSC-COURSE-087": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's six published module headings."
+        },
+        "LK-TVEC-NCS-WEB-DEVELOPER-2025": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 12,
+              "field": "outcome_verbatim",
+              "code": "K72S005M05",
+              "text": "Explain the role of back-end development in web systems; List the key components of back-end technologies; Explain server-side programming concepts and languages; Store, retrieve and manage data in databases; Build and integrate RESTful APIs with front-end systems; Deploy and manage back-end applications on web servers"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-NQR-HARTRON-WEB-MULTIMEDIA-V2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Module titles are broad; only the qualification description and level descriptors name web technologies."
+        },
+        "PH-TESDA-WEBDEV-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 14,
+              "field": "title_verbatim",
+              "code": "ICT251304",
+              "text": "Develop Website Backend Systems"
+            },
+            {
+              "module_index": 32,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Develop server side scripts"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Server-side Development"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-ICT40120-WEBDEV": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored unit names server-side or back-end development. Only the core and Group G Web Development units are stored; other electives are not assessed."
+        }
+      }
+    },
+    {
+      "competency_id": "web_databases",
+      "label": "Databases for web applications",
+      "cells": {
+        "NYSC-COURSE-087": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's six published module headings."
+        },
+        "LK-TVEC-NCS-WEB-DEVELOPER-2025": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 11,
+              "field": "outcome_verbatim",
+              "code": "K72S005M04",
+              "text": "Explain the steps used to draw an ER diagram; Draw an ER Diagram; Explain the steps used to normalize a database; Create a normalized database structure; Explain the uses of SQL statements"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-NQR-HARTRON-WEB-MULTIMEDIA-V2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Module titles are broad; only the qualification description and level descriptors name web technologies."
+        },
+        "PH-TESDA-WEBDEV-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 31,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Design databases"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to develop interactive application with database integrations on cloud/repository."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-ICT40120-WEBDEV": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored unit names databases. Only the core and Group G Web Development units are stored; other electives are not assessed."
+        }
+      }
+    },
+    {
+      "competency_id": "web_cms",
+      "label": "Content management systems",
+      "cells": {
+        "NYSC-COURSE-087": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's six published module headings."
+        },
+        "LK-TVEC-NCS-WEB-DEVELOPER-2025": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No unit, module title or learning outcome names content management systems."
+        },
+        "IN-NQR-HARTRON-WEB-MULTIMEDIA-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "scope_verbatim",
+              "code": null,
+              "text": "Candidate will acquire knowledge of HTML, CSS, JavaScript, Photoshop and CMS and is able to design web sites as per client needs."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "PH-TESDA-WEBDEV-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 23,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Use/Deploy website content management system (CMS)"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Web Content Management"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-ICT40120-WEBDEV": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Only the core and Group G Web Development units are stored; other electives are not assessed."
+        }
+      }
+    },
+    {
+      "competency_id": "web_seo",
+      "label": "Search engine optimisation",
+      "cells": {
+        "NYSC-COURSE-087": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's six published module headings."
+        },
+        "LK-TVEC-NCS-WEB-DEVELOPER-2025": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in the stored units, module titles or learning outcomes."
+        },
+        "IN-NQR-HARTRON-WEB-MULTIMEDIA-V2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Module titles are broad; only the qualification description and level descriptors name web technologies."
+        },
+        "PH-TESDA-WEBDEV-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 24,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Perform search engine optimization (SEO)"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored module objective names this."
+        },
+        "AU-TGA-ICT40120-WEBDEV": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 11,
+              "field": "title_verbatim",
+              "code": "ICTWEB443",
+              "text": "Implement search engine optimisations"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "web_testing",
+      "label": "Website testing",
+      "cells": {
+        "NYSC-COURSE-087": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's six published module headings."
+        },
+        "LK-TVEC-NCS-WEB-DEVELOPER-2025": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 13,
+              "field": "outcome_verbatim",
+              "code": "K72S005M06",
+              "text": "Explain different types of testing and their importance in web development.; Create and execute test cases for web applications.; Write and execute automated test scripts.; Describe deployment tools, techniques, and platforms.; Maintain and update web applications.; Explain debugging, performance monitoring, and version control best practices.; Conduct security testing on web applications."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-NQR-HARTRON-WEB-MULTIMEDIA-V2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Module titles are broad; only the qualification description and level descriptors name web technologies."
+        },
+        "PH-TESDA-WEBDEV-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 18,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Conduct testing"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 7,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to configure and publish websites, with online payment support and social media integration. They should also be able to perform website testing."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-ICT40120-WEBDEV": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 9,
+              "field": "title_verbatim",
+              "code": "ICTWEB433",
+              "text": "Confirm accessibility of websites"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Confirming website accessibility; general website testing is not named"
+        }
+      }
+    },
+    {
+      "competency_id": "web_security",
+      "label": "Website security",
+      "cells": {
+        "NYSC-COURSE-087": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's six published module headings."
+        },
+        "LK-TVEC-NCS-WEB-DEVELOPER-2025": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 13,
+              "field": "outcome_verbatim",
+              "code": "K72S005M06",
+              "text": "Explain different types of testing and their importance in web development.; Create and execute test cases for web applications.; Write and execute automated test scripts.; Describe deployment tools, techniques, and platforms.; Maintain and update web applications.; Explain debugging, performance monitoring, and version control best practices.; Conduct security testing on web applications."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-NQR-HARTRON-WEB-MULTIMEDIA-V2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Module titles are broad; only the qualification description and level descriptors name web technologies."
+        },
+        "PH-TESDA-WEBDEV-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "scope_verbatim",
+              "code": null,
+              "text": "The Web Development NC III Qualification consists of competencies that a person must achieve to develop websites for hosting via intranet or Internet. It includes competencies for web design, content development, client-side/server-side scripting and website security configuration, among other tasks."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 11,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to develop, test and deploy secure web services."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-ICT40120-WEBDEV": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": "BSBXCS404",
+              "text": "Contribute to cyber security risk management"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Cyber security risk management generally; website security is not named"
+        }
+      }
+    },
+    {
+      "competency_id": "web_requirements_methodology",
+      "label": "Requirements and development methodology",
+      "cells": {
+        "NYSC-COURSE-087": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's six published module headings."
+        },
+        "LK-TVEC-NCS-WEB-DEVELOPER-2025": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": "K72S005U01",
+              "text": "Prepare System Requirements Specification (SRS)"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-NQR-HARTRON-WEB-MULTIMEDIA-V2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Module titles are broad; only the qualification description and level descriptors name web technologies."
+        },
+        "PH-TESDA-WEBDEV-NC3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 11,
+              "field": "title_verbatim",
+              "code": "ICT251301",
+              "text": "Utilize Software Methodologies"
+            },
+            {
+              "module_index": 15,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Identify project requirements and software methodology"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to apply their knowledge and skills in software development methods on recommended solutions."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-ICT40120-WEBDEV": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored unit names requirements gathering or development methodology. Only the core and Group G Web Development units are stored; other electives are not assessed."
+        }
+      }
+    },
+    {
+      "competency_id": "web_workplace_safety",
+      "label": "Workplace safety",
+      "cells": {
+        "NYSC-COURSE-087": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's six published module headings."
+        },
+        "LK-TVEC-NCS-WEB-DEVELOPER-2025": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": "K72S005BU04",
+              "text": "Practice occupational health and safety measures"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-NQR-HARTRON-WEB-MULTIMEDIA-V2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored module names workplace safety."
+        },
+        "PH-TESDA-WEBDEV-NC3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "The basic competencies include no occupational health and safety unit."
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "INSUFFICIENT_DATA",
+          "evidence": [],
+          "note": "No stored module names workplace safety, but the course's life-skills, cross-disciplinary and elective modules are not stored, so safety coverage cannot be assessed reliably."
+        },
+        "AU-TGA-ICT40120-WEBDEV": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No core or Group G unit names workplace health and safety. Only the core and Group G Web Development units are stored; other electives are not assessed."
+        }
+      }
+    }
+  ]
+}

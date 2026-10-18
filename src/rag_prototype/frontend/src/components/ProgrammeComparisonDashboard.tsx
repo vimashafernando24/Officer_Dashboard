@@ -15,7 +15,7 @@ import { BenchmarkRecordCard } from "./BenchmarkRecordCard";
 import { ComparisonOverview } from "./ComparisonOverview";
 import { ComparisonCaveatNote } from "./ComparisonCaveatNote";
 import { CoverageStatusNote } from "./CoverageStatusNote";
-import { coverageForCourse, coveragePresentation } from "../programmeCoverage";
+import { coverageForCourse, coveragePresentation, EVIDENCE_REVIEW_NOTICE } from "../programmeCoverage";
 import { courseNeedsData, loadCourseComparison } from "../comparisonData";
 import "./ProgrammeComparisonDashboard.css";
 
@@ -117,6 +117,7 @@ export function ProgrammeComparisonDashboard({
             Compare a governed NYSC course with published Sri Lankan and international training
             programmes.
           </p>
+          <p className="pcd-review-notice" role="note">{EVIDENCE_REVIEW_NOTICE}</p>
         </div>
       </header>
 

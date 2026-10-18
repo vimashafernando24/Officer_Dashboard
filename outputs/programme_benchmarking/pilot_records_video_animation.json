@@ -1,0 +1,348 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-video-animation",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Comparator records for NYSC COURSE-059 Non-Liner Video Editing With Digital 3D Animation. The governed catalogue publishes no module headings for this course, so the records are shown without a competency matrix. Records describe documented curriculum only and do not establish equivalence, quality or labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its official source by a researcher before publication.",
+  "country_group_gaps": {
+    "developed": "No developed-economy video-editing or 3D animation comparator with sufficiently specific core content was verified on 2026-10-18; Australia's CUA51020 Diploma of Screen and Media was inspected but not used because its four core units are generic creative-practice units."
+  },
+  "records": [
+    {
+      "record_id": "LK-TVEC-NCS-MULTIMEDIA-DESIGNING-ASSOCIATE-2019",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "MULTIMEDIA DESIGNING ASSOCIATE",
+      "sector": "Media / Multimedia and animation",
+      "framework": "NVQ (Sri Lanka)",
+      "level_as_published": "NVQ Level 04",
+      "duration_as_published": null,
+      "entry_as_published": "The candidate should have been found competent in “Basic Competencies to work” to be eligible for the award of this qualification. The candidate may concurrently apply for” Basic Competencies to Work “and this qualification.",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "K72S012U01",
+          "title_verbatim": "Develop Graphics for Print Media",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K72S012U02",
+          "title_verbatim": "Develop Graphics for Visual Media",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K72S012U03",
+          "title_verbatim": "Produce Audio/Video content",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K72S012U04",
+          "title_verbatim": "Develop 2D/3D Digital Content",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K72S012U05",
+          "title_verbatim": "Develop Game",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K72S012U06",
+          "title_verbatim": "Carryout workplace communication",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K72S012U07",
+          "title_verbatim": "Apply occupational literacy and numeracy",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K72S012U08",
+          "title_verbatim": "Work in teams",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K72S012U09",
+          "title_verbatim": "Practice occupational health and safety measures",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://nvq.gov.lk/report_inquires/NCS_Request_Pdf.php?nm=K72S012_0_NCS.pdf",
+        "document_type": "pdf",
+        "document_sha256": "fc5401b38a3712dfb54b7da8833d68a8197cc6d0f52b137258881c28dc4f1d17",
+        "publication_or_revision": "First publication July 2019; next revision July 2022",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Unit titles and codes read from the contents list (PDF page 4) and matched in order against the pdf.js text layer; packaging and prerequisite from the detail page (PDF page 47).",
+        "human_reviewed": false
+      },
+      "licence_note": "Copyright TVEC; source states all rights reserved.",
+      "notes": [
+        "A national occupational standard, not evidence that a named provider delivers the programme.",
+        "Stores the 9 competency units only; the curriculum modules (which include 'Performing Edits to Video Production' and 'Digital Animation') are not stored.",
+        "The endorsement and review dates on the detail page are blank, and the stated next revision (July 2022) has passed; the NVQ portal serves no later revision (2026-10-18).",
+        "The page header on PDF page 2 reads 'Occupation/Occupational Area: Software Developer', an apparent template error in the published document.",
+        "The Sri Lankan Video Editor / Assistant Editor standard (O92S004) was inspected but not stored: the portal copy is marked 'Final document for validation' and its packaging is only 'suggested by the Development Group'."
+      ]
+    },
+    {
+      "record_id": "IN-DGT-CTS-MASE-V2",
+      "country": "India",
+      "country_group": "developing_emerging",
+      "institution": "Directorate General of Training (DGT), Ministry of Skill Development & Entrepreneurship",
+      "record_type": "national_curriculum",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Multimedia, Animation & Special Effects",
+      "sector": "Media / Multimedia and animation",
+      "framework": "NSQF (India)",
+      "level_as_published": "NSQF LEVEL – 3.5",
+      "duration_as_published": "One Years (1200 Hours + 150 Hours OJT/Group Project)",
+      "entry_as_published": null,
+      "modules": [
+        {
+          "published_ref": "LO1",
+          "code": "MES/N0703",
+          "title_verbatim": "Apply Computer basics and perform installation, customization of Operating System, related software in a computer for Multimedia purpose following safety precaution.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO2",
+          "code": "MES/N3501",
+          "title_verbatim": "Perform safe handling of Multimedia devices Video Camera, Digital Camera, Microphone, Webcam and Basics of Digital Photography, Video Recording and data transfer.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO3",
+          "code": "MES/N3503",
+          "title_verbatim": "Perform Photo editing and apply special effects by using Adobe Photoshop and Adobe Illustrator.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO4",
+          "code": "MES/N0702",
+          "title_verbatim": "Carry out Web browsing, Video streaming, uploading and downloading of video, audio, image on internet and secure information from cyber attacks.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO5",
+          "code": "MES/N3503",
+          "title_verbatim": "Implement Video editing and apply special effects by using Adobe Premier and Adobe After Effect.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO6",
+          "code": "MES/N0703, MES/N0704, MES/N0705, MES/N0706, MES/N0603, MES/N0604",
+          "title_verbatim": "Create Graphics Animation and sound effect by using Flash and Maya, 3Ds Max.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://www.dgt.gov.in/sites/default/files/2025-01/MASE_CTS2.0%20NSQF-3.5.pdf",
+        "document_type": "pdf",
+        "document_sha256": "120b86a255cf7df4f5f0189c51f5b10a6801651e05b068b51b6d32ed7283d118",
+        "publication_or_revision": "Version 2.0, revised March 2023",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "All 6 learning outcomes and NOS codes read from the 5.1 Learning Outcomes page and matched against the pdf.js text layer; duration from the general information table (stored as published, including 'One Years').",
+        "human_reviewed": false
+      },
+      "licence_note": "Government of India publication; reuse terms not checked.",
+      "notes": [
+        "A national curriculum delivered through Industrial Training Institutes (ITIs); no individual ITI has been verified.",
+        "Learning outcomes name specific software (e.g. Adobe Premier, After Effect, Maya, 3Ds Max) as published; Employability Skills are not stored."
+      ]
+    },
+    {
+      "record_id": "PH-TESDA-3D-ANIMATION-NC3",
+      "country": "Philippines",
+      "country_group": "developing_emerging",
+      "institution": "Technical Education and Skills Development Authority (TESDA)",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "3D Animation NC III",
+      "sector": "Media / 3D animation",
+      "framework": "Philippine TVET Qualification (NC)",
+      "level_as_published": "NC III",
+      "duration_as_published": "Nominal Training Duration: 68 hrs – Basic Competencies, 28 hrs – Common Competencies, 1,004 hrs – Core Competencies; Total 1,100 hrs",
+      "entry_as_published": null,
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "500311109",
+          "title_verbatim": "Lead workplace communication",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311110",
+          "title_verbatim": "Lead small teams",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311111",
+          "title_verbatim": "Develop and practice negotiation skills",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311112",
+          "title_verbatim": "Solve problems related to work activities",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311113",
+          "title_verbatim": "Use mathematical concepts and techniques",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311114",
+          "title_verbatim": "Use relevant technologies",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311142",
+          "title_verbatim": "Apply critical thinking and problem solving techniques in the",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311144",
+          "title_verbatim": "Use information creatively and critically",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311145",
+          "title_verbatim": "Work in a diverse environment",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ICT315202",
+          "title_verbatim": "Apply quality standards",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ICT311203",
+          "title_verbatim": "Perform Computer Operations",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ICT216308",
+          "title_verbatim": "Create 3D Models for Animation",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ICT216309",
+          "title_verbatim": "Apply Shader and Texture on 3D Models",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ICT216310",
+          "title_verbatim": "Set Character Rigging",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ICT216311",
+          "title_verbatim": "Animate Character",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ICT216312",
+          "title_verbatim": "Light and Render Animation Scene",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://www.tesda.gov.ph/Downloadables/TR%20-%203D%20Animation%20NC%20III.pdf",
+        "document_type": "pdf",
+        "document_sha256": "70d9cae3b5712635a0849f0d55e2e06472fd152fa9053653ac3d1bb04f4e21d7",
+        "publication_or_revision": "Version 02, amended February 27, 2018",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Units and codes read from the Section 1 page (PDF page 5) and matched in order against the pdf.js text layer; nominal duration from the Section 3.1 course design.",
+        "human_reviewed": false
+      },
+      "licence_note": "Philippine government publication; reuse terms not checked.",
+      "notes": [
+        "A training regulation (standard), delivered by TESDA-registered institutions; no provider has been verified.",
+        "Listed in TESDA's list of promulgated training regulations (as of May 2022) as 3D Animation NC III, ICT3DA318, 1,100 hours.",
+        "The running page header reads 'TR – 3D ANIMATION NC II (Version 02)' although the document is the NC III regulation; the NC III title is used."
+      ],
+      "scope_verbatim": [
+        "The 3D ANIMATION NC III Qualification consists of competencies that a person must achieve to produce 3D animation."
+      ]
+    }
+  ]
+}

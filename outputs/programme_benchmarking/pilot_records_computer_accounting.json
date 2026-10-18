@@ -1,0 +1,435 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-computer-accounting",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Comparator records for NYSC COURSE-058 Computer Based Accounting. Records describe documented curriculum only and do not establish equivalence, quality or labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its official source by a researcher before publication.",
+  "country_group_gaps": {
+    "sri_lanka": "No Sri Lankan computerised-accounting standard or programme was verified on 2026-10-18. The NVQ portal's Accounting standard (G52T002, National Diploma NVQ 5/6, endorsed 18.12.2020, review date 18.12.2023) has no computerised-accounting unit and was not used; TESDA's Bookkeeping NC III (2007) was also excluded because it covers manual bookkeeping only."
+  },
+  "records": [
+    {
+      "record_id": "IN-NQR-HARTRON-COMPUTER-ACCOUNTING-V2",
+      "country": "India",
+      "country_group": "developing_emerging",
+      "institution": "Haryana State Electronics Development Corporation Ltd. (HARTRON), awarding body; approved by the National Skills Qualification Committee (NSQC) on India's National Qualification Register",
+      "record_type": "national_qualification",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Certificate Course in Computer Basics and Accounting",
+      "sector": "ICT / Computerised accounting",
+      "framework": "NSQF (India)",
+      "level_as_published": "NCrF/NSQF Level: 3",
+      "duration_as_published": "300 hours (Theory 75, Practical 165, Employability Skills 30, OJT Mandatory 30)",
+      "entry_as_published": "Grade 10 Pass OR Pursuing 10th OR Grade 8 Pass with 2 year NTC/NAC OR Previous relevant qualification of NSQF level 2.5 with 1.5 years of relevant experience",
+      "modules": [
+        {
+          "published_ref": "1",
+          "code": "HART/AWD/ITFDT/01, V1",
+          "title_verbatim": "IT Foundation and Digital Tools",
+          "outcome_verbatim": null,
+          "group": "Module Summary"
+        },
+        {
+          "published_ref": "2",
+          "code": "HART/AWD/AST/01, V1",
+          "title_verbatim": "Introduction to Accounting with Tally",
+          "outcome_verbatim": null,
+          "group": "Module Summary"
+        },
+        {
+          "published_ref": "3",
+          "code": "HART/AWD/IBS/01, V1",
+          "title_verbatim": "Indian Banking System",
+          "outcome_verbatim": null,
+          "group": "Module Summary"
+        },
+        {
+          "published_ref": "4",
+          "code": "DGT/VSQ/N0101",
+          "title_verbatim": "Employability Skills DGT",
+          "outcome_verbatim": null,
+          "group": "Module Summary"
+        },
+        {
+          "published_ref": "5",
+          "code": null,
+          "title_verbatim": "OJT/ Project & Viva",
+          "outcome_verbatim": null,
+          "group": "Module Summary"
+        },
+        {
+          "published_ref": "PC1",
+          "code": null,
+          "title_verbatim": "Explain the meaning and scope of Accounting.",
+          "outcome_verbatim": null,
+          "group": "Introduction to Accounting with Tally: performance criteria"
+        },
+        {
+          "published_ref": "PC2",
+          "code": null,
+          "title_verbatim": "Explain various accounting terms.",
+          "outcome_verbatim": null,
+          "group": "Introduction to Accounting with Tally: performance criteria"
+        },
+        {
+          "published_ref": "PC3",
+          "code": null,
+          "title_verbatim": "Explain Single entry system and double entry system and Differentiate between them.",
+          "outcome_verbatim": null,
+          "group": "Introduction to Accounting with Tally: performance criteria"
+        },
+        {
+          "published_ref": "PC4",
+          "code": null,
+          "title_verbatim": "Explain types of Accounts and golden rules of Accounting.",
+          "outcome_verbatim": null,
+          "group": "Introduction to Accounting with Tally: performance criteria"
+        },
+        {
+          "published_ref": "PC5",
+          "code": null,
+          "title_verbatim": "Prepare Journal and ledger",
+          "outcome_verbatim": null,
+          "group": "Introduction to Accounting with Tally: performance criteria"
+        },
+        {
+          "published_ref": "PC6",
+          "code": null,
+          "title_verbatim": "Prepare trial balance and rectification of errors.",
+          "outcome_verbatim": null,
+          "group": "Introduction to Accounting with Tally: performance criteria"
+        },
+        {
+          "published_ref": "PC7",
+          "code": null,
+          "title_verbatim": "Prepare Trading Account, Profit & Loss Account and Balance sheet.",
+          "outcome_verbatim": null,
+          "group": "Introduction to Accounting with Tally: performance criteria"
+        },
+        {
+          "published_ref": "PC8",
+          "code": null,
+          "title_verbatim": "Differentiate between Trial balance and balance sheet.",
+          "outcome_verbatim": null,
+          "group": "Introduction to Accounting with Tally: performance criteria"
+        },
+        {
+          "published_ref": "PC9",
+          "code": null,
+          "title_verbatim": "Prepare bank reconciliation statement.",
+          "outcome_verbatim": null,
+          "group": "Introduction to Accounting with Tally: performance criteria"
+        },
+        {
+          "published_ref": "PC10",
+          "code": null,
+          "title_verbatim": "Explain the features and components of tally.",
+          "outcome_verbatim": null,
+          "group": "Introduction to Accounting with Tally: performance criteria"
+        },
+        {
+          "published_ref": "PC11",
+          "code": null,
+          "title_verbatim": "Explain and demonstrate to Create, Alter, Delete Company.",
+          "outcome_verbatim": null,
+          "group": "Introduction to Accounting with Tally: performance criteria"
+        },
+        {
+          "published_ref": "PC12",
+          "code": null,
+          "title_verbatim": "Explain and demonstrate to create ledgers/account masters and stock groups in tally.",
+          "outcome_verbatim": null,
+          "group": "Introduction to Accounting with Tally: performance criteria"
+        },
+        {
+          "published_ref": "PC13",
+          "code": null,
+          "title_verbatim": "Explain and demonstrate to Prepare and alter Group.",
+          "outcome_verbatim": null,
+          "group": "Introduction to Accounting with Tally: performance criteria"
+        },
+        {
+          "published_ref": "PC14",
+          "code": null,
+          "title_verbatim": "Demonstrate to make an entry to Payment, Receipt, Journal, Contra, Purchase, Sales, Purchase Return & Sales Return Voucher.",
+          "outcome_verbatim": null,
+          "group": "Introduction to Accounting with Tally: performance criteria"
+        },
+        {
+          "published_ref": "PC15",
+          "code": null,
+          "title_verbatim": "Explain TDS, TCS and their implementation in Tally.",
+          "outcome_verbatim": null,
+          "group": "Introduction to Accounting with Tally: performance criteria"
+        },
+        {
+          "published_ref": "PC16",
+          "code": null,
+          "title_verbatim": "Explain and demonstrate Payroll system.",
+          "outcome_verbatim": null,
+          "group": "Introduction to Accounting with Tally: performance criteria"
+        },
+        {
+          "published_ref": "PC17",
+          "code": null,
+          "title_verbatim": "Explain the meaning and types of GST implementation in tally.",
+          "outcome_verbatim": null,
+          "group": "Introduction to Accounting with Tally: performance criteria"
+        },
+        {
+          "published_ref": "PC18",
+          "code": null,
+          "title_verbatim": "Describe Generating and Printing financial and other Reports.",
+          "outcome_verbatim": null,
+          "group": "Introduction to Accounting with Tally: performance criteria"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://www.nqr.gov.in/qualification/file/STT%20%20CCBA.pdf",
+        "document_type": "pdf",
+        "document_sha256": "8dca859fc887bb8266d5cac96fed555370eb5dde75eae68791c5223367fef885",
+        "publication_or_revision": "QG-03-IT-03520-2025-V2-HARTRON, Version 2; NSQC approval 18.02.2025; next review 18.02.2028",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Module summary read from the rendered Section 2 table (PDF page 5); the 18 performance criteria of the Tally module from the rendered assessment-criteria annexure (PDF page 16); description, level, entry, duration and approval facts from PDF pages 3, 4 and 8; all matched against the pdf.js text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Indian government qualification register publication; reuse terms not checked.",
+      "notes": [
+        "An NSQF-aligned short-term qualification approved by NSQC and listed on India's National Qualification Register; HARTRON is the awarding body. No delivering centre has been verified.",
+        "Stores the 5 modules and the 18 performance criteria of 'Introduction to Accounting with Tally' (the computerised-accounting module); performance criteria of the other modules are not stored.",
+        "Tally is the accounting package named; the NYSC course names Peachtree, Sage, MYOB and QuickBooks. Comparison is at the level of computerised-accounting competencies, not specific products."
+      ],
+      "scope_verbatim": [
+        "The course helps to develop skills in basics of computers and accounting to automate and integrate all business operations.",
+        "Candidate is expected to maintain financial records both manually and using Tally and is also expected to perform other office task using office automation tools."
+      ]
+    },
+    {
+      "record_id": "AU-TGA-FNS30322",
+      "country": "Australia",
+      "country_group": "developed",
+      "institution": "Australian Government, training.gov.au (FNS Financial Services Training Package)",
+      "record_type": "national_qualification",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Certificate III in Accounts Administration",
+      "sector": "Business / Accounts administration",
+      "framework": "AQF (Australia)",
+      "level_as_published": "Certificate III (national code FNS30322)",
+      "duration_as_published": null,
+      "entry_as_published": "Nil",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "BSBTEC302",
+          "title_verbatim": "Design and produce spreadsheets",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "BSBXCM301",
+          "title_verbatim": "Engage in workplace communication",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "FNSACC314",
+          "title_verbatim": "Conduct business activities using a computerised accounting system",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "FNSACC321",
+          "title_verbatim": "Process financial transactions and extract interim reports",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "FNSACC322",
+          "title_verbatim": "Administer subsidiary accounts and ledgers",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "FNSACC323",
+          "title_verbatim": "Perform financial calculations",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "FNSINC311",
+          "title_verbatim": "Work together in the financial services industry",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://training.gov.au/assets/FNS/FNS30322_R1.pdf",
+        "document_type": "pdf",
+        "document_sha256": "c32062e8b478e6bf973e52b62ae81e1834f4cc1756e5fba8ca0fddaf8a4f65ca",
+        "publication_or_revision": "FNS30322 Release 1 (released 2022-06-15; status Current on training.gov.au, 2026-10-18)",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Core units read from the rendered official qualification PDF (page 3) and matched in order against its pdf.js text layer; each code, title and core status equals the training.gov.au Release 1 unit grid.",
+        "human_reviewed": false
+      },
+      "licence_note": "© Commonwealth of Australia, 2022; training package content is published under its own licence terms (not checked).",
+      "notes": [
+        "A national qualification, not a delivered programme; no delivering provider has been verified and no nominal duration is stated.",
+        "Stores the 7 core units (11 units in total: 7 core plus 4 electives). Payroll (BSBHRM416), bank-account and financial-report units are electives and not stored.",
+        "The Certificate IV in Accounting and Bookkeeping (FNS40222) was inspected but not used: it is a higher-level bookkeeping qualification, whereas the NYSC course is a 6-month part-time software course."
+      ],
+      "scope_verbatim": [
+        "This qualification reflects the role of individuals with functions that could include financial data entry, processing accounts and payrolls, providing customer service in financial transactions, and producing financial reports."
+      ]
+    },
+    {
+      "record_id": "SG-ITE-HNITEC-ACCOUNTING-2Y",
+      "country": "Singapore",
+      "country_group": "developed",
+      "institution": "Institute of Technical Education (ITE)",
+      "record_type": "programme",
+      "delivering_provider_verified": true,
+      "title_verbatim": "Higher Nitec in Accounting (2 years)",
+      "sector": "Business / Accounting",
+      "framework": "ITE Nitec / Higher Nitec (Singapore)",
+      "level_as_published": "Higher Nitec",
+      "duration_as_published": "2 years; Total: 68 credits",
+      "entry_as_published": null,
+      "modules": [
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Fundamentals of Business Operations",
+          "outcome_verbatim": "On completion of this module, students should be able to support essential business operations by differentiating the various functions in an enterprise, compute employee payroll, prepare documents to support international trade, handle monetary transactions, compute accounting equation and record business transactions in source documents.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Sales Techniques & Engagement",
+          "outcome_verbatim": "On completion of module, students should be able to apply sales techniques to sell to client needs and develop strong sales relationships.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Principles of Financial Accounting I",
+          "outcome_verbatim": "On completion of the module, students should be able to apply the knowledge of accounting theories and relate to business scenarios, and record business transactions.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Principles of Financial Accounting II",
+          "outcome_verbatim": "On completion of the module, students should be able to determine the value of stock, prepare Trial Balance, Bank Reconciliation, Statement of Comprehensive Income and Statement of Financial Position.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Business Ethics",
+          "outcome_verbatim": "On completion of the module, students should be able to adopt the fundamental ethics and standards of behaviour expected of an accounting professional.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Business Finance",
+          "outcome_verbatim": "On completion of the module, students should be able to prepare cash budget, cash flow statements, analyse financial statements and propose business finance options in a business.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Personal Taxation",
+          "outcome_verbatim": "On completion of the module, students should be able to gain an overview of the Singapore income tax system and its tax administration and be able to prepare computations of tax liability for resident individuals. This module covers employment income and other sources of income, types of deductions and personal reliefs.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Costing Basics",
+          "outcome_verbatim": "On completion of the module, students should be able to apply basic costing concepts to ascertain costs associated with the production of goods.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Intermediate Financial Accounting I",
+          "outcome_verbatim": "On completion of the module, students should be able to maintain the fixed asset register, adjust entries to account receivables and prepare control accounts.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Intermediate Financial Accounting II",
+          "outcome_verbatim": "On completion of the module, students should be able to correct errors, prepare balance day adjustments and adjusted final accounts.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Company Taxation & Goods & Services Tax",
+          "outcome_verbatim": "On completion of the module, students should be able to prepare tax computations of tax liability for resident companies in Singapore and Goods and Services Tax (GST) returns for businesses. This module covers taxability of income, types of deductions and tax allowances available to reduce the chargeable income of a company.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Advanced Financial Accounting",
+          "outcome_verbatim": "On completion of the module, students should be able to prepare financial statements for partnership, cash budget and financial statements for limited companies.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Accounting Software Application",
+          "outcome_verbatim": "On completion of the module, students should be able to gain an overview of traditional and cloud accounting software. Students should be able to navigate accounting functions within the software by integrating their accounting knowledge with the use of the accounting software.",
+          "group": "Specialisation Modules"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://isomer-user-content.by.gov.sg/145/417033f9-c09a-41bb-ba73-000343451b41/Higher%20Nitec%20in%20Accounting%20(2%20years).pdf",
+        "document_type": "pdf",
+        "document_sha256": "c0f1b11889e045c501b2dde655fb943e3f7d5717355a6308f0b7204f92fbb064",
+        "publication_or_revision": "Last updated on 28 Nov 2025",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Modules and objectives extracted from the PDF linked on ITE's official course page (Higher Nitec in Accounting) and matched against its pdf.js text layer; objectives joined across line breaks.",
+        "human_reviewed": false
+      },
+      "licence_note": "Singapore Government agency publication; reuse terms not checked.",
+      "notes": [
+        "Offered at ITE College Central, ITE College East and ITE College West; course duration 24 months (official course page, 2026-10-18).",
+        "A broader two-year accounting programme; its software content is one module ('Accounting Software Application') plus an optional 'Financial Accounting ERP Application' elective (not stored).",
+        "Stores the 2 cluster core and 11 specialisation modules with their objectives; internship, cross-disciplinary core, life skills and elective modules are not stored."
+      ]
+    }
+  ]
+}

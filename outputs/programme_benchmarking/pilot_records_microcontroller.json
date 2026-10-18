@@ -1,0 +1,41 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-microcontroller-design",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Official-source related comparator for NYSC COURSE-076 Micro Controller Circuit Designing. The governed catalogue publishes no module headings.",
+  "status_note": "Source-inspected apprenticeship curriculum awaiting independent human review; its broader embedded-systems scope must not be treated as exact NYSC equivalence.",
+  "country_group_gaps": {
+    "sri_lanka": "No independent Sri Lankan microcontroller-design course with inspectable official curriculum content was verified.",
+    "developed": "Current Australian microcontroller units were found only as elective units inside broader qualifications; they were excluded rather than presented as guaranteed programme content."
+  },
+  "records": [{
+    "record_id": "IN-DGT-ATS-MECHANIC-EMBEDDED-PLC",
+    "country": "India",
+    "country_group": "developing_emerging",
+    "institution": "Government of India, Directorate General of Training",
+    "record_type": "national_curriculum",
+    "delivering_provider_verified": false,
+    "title_verbatim": "MECHANIC (EMBEDDED SYSTEMS AND PLC)",
+    "sector": "Electronics and hardware / Embedded systems",
+    "framework": "Apprenticeship Training Scheme (India)",
+    "level_as_published": null,
+    "duration_as_published": null,
+    "entry_as_published": null,
+    "modules": [
+      {"published_ref":"Professional skills item 3 — 8051 applications","code":null,"title_verbatim":"To able to operate Microcontroller 8051 based application in system programming & applications","outcome_verbatim":null,"group":"Professional Skills"},
+      {"published_ref":"Professional skills item 3 — application circuits","code":null,"title_verbatim":"To connect above systems, Implement the applications & view the waveform of above applications / signals on CRO.","outcome_verbatim":null,"group":"Professional Skills"},
+      {"published_ref":"Professional skills item 3 — fault finding","code":null,"title_verbatim":"Fault finding in applications circuit with respect to the industries","outcome_verbatim":null,"group":"Professional Skills"},
+      {"published_ref":"Professional skills item 3 — programmer","code":null,"title_verbatim":"PIC & Microcontroller programmer.","outcome_verbatim":null,"group":"Professional Skills"}
+    ],
+    "content_summary_paraphrased": null,
+    "content_fidelity": "verbatim_whitespace_normalised",
+    "curriculum_detail": "partial",
+    "source": {"url":"https://dgt.gov.in/sites/default/files/2025-01/MECHANIC_EMBEDDED.pdf","document_type":"pdf","document_sha256":"0bca5ba278f545fe11e8360de663c3cf60e79817a3bb1ab3420cc70b71e520a0","publication_or_revision":"Official ATS curriculum; revision date not stated in inspected PDF","retrieved_date":"2026-10-18"},
+    "language": "English",
+    "verification": {"status":"source_inspected_pending_human_review","method":"Trade title and selected microcontroller application, circuit implementation, fault-finding and programmer content checked against the official DGT curriculum.","human_reviewed":false},
+    "licence_note": "Official Government of India curriculum; reuse terms not assessed.",
+    "notes": ["A national apprenticeship curriculum, not a verified named-provider delivery.","The source covers embedded systems and PLC work more broadly than the NYSC title.","No NYSC headings are available to establish its circuit-design depth or platform coverage."],
+    "scope_verbatim": ["CURRICULUM FOR THE TRADE OF MECHANIC (EMBEDDED SYSTEMS AND PLC) UNDER APPRENTICESHIP TRAINING SCHEME"]
+  }]
+}

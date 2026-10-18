@@ -7,6 +7,7 @@
       "COMPLETE": "Verified comparator records are linked, and a competency mapping exists or cannot be defended because NYSC headings are missing or unusable.",
       "IN_PROGRESS": "Comparator research has started but records or a defensible mapping are incomplete.",
       "NOT_RESEARCHED": "No official comparator research has been carried out for this course.",
+      "NO_DEFENSIBLE_COMPARATOR": "Comparator research was carried out, but no defensible official comparator with inspectable curriculum content was found; the reason is recorded in notes. Shown as RESEARCH_PENDING.",
       "BLOCKED": "Research was attempted and a documented obstacle prevents progress (blocking_evidence is required)."
     },
     "evidence_availability": {
@@ -35,13 +36,13 @@
   "totals": {
     "courses": 84,
     "occupation_groups": 62,
-    "occupation_groups_complete": 11,
+    "occupation_groups_complete": 54,
     "courses_with_governed_headings": 32,
-    "courses_with_comparators": 19,
-    "courses_with_mapping": 16,
+    "courses_with_comparators": 75,
+    "courses_with_mapping": 28,
     "research_status": {
-      "COMPLETE": 19,
-      "NOT_RESEARCHED": 65
+      "COMPLETE": 75,
+      "NO_DEFENSIBLE_COMPARATOR": 9
     },
     "evidence_availability": {
       "HEADINGS_AVAILABLE": 29,
@@ -49,9 +50,9 @@
       "NO_HEADINGS": 52
     },
     "current_presentation_mode": {
-      "COMPARATORS_ONLY": 3,
-      "FULL_COMPARISON": 16,
-      "RESEARCH_PENDING": 65
+      "COMPARATORS_ONLY": 47,
+      "FULL_COMPARISON": 28,
+      "RESEARCH_PENDING": 9
     },
     "proposed_presentation_mode": {
       "COMPARATORS_ONLY": 55,
@@ -76,16 +77,22 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-WEB-DEVELOPER-2025",
+        "IN-NQR-HARTRON-WEB-MULTIMEDIA-V2",
+        "PH-TESDA-WEBDEV-NC3",
+        "SG-ITE-HNITEC-ITAD-2Y",
+        "AU-TGA-ICT40120-WEBDEV"
+      ],
+      "comparator_record_count": 5,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "5 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -105,16 +112,19 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "IN-DGT-CTS-COPA-V3",
+        "IN-DGT-CTS-AIPA-V1"
+      ],
+      "comparator_record_count": 2,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "2 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -137,14 +147,16 @@
       "comparator_record_ids": [],
       "comparator_record_count": 0,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "NO_DEFENSIBLE_COMPARATOR",
       "evidence_availability": "NO_HEADINGS",
       "current_presentation_mode": "RESEARCH_PENDING",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "Comparator research was carried out, but no defensible official comparator with inspectable curriculum content was found (see notes); no comparison is shown. Missing NYSC headings do not imply that external comparators are missing, and a missing comparison does not mean that suitable programmes do not exist.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
-      "notes": []
+      "research_improvement": "NYSC syllabi stating the course content or level, or newly published official curricula with inspectable content, could make a comparison defensible.",
+      "notes": [
+        "Researched (Step 38): no level or scope anchor in the governed record; Australia's EAL Access certificates could not be matched to a level without guessing. The Open University of Sri Lanka English programme pages read show descriptions but no module lists; TESDA's training-regulations listing has no English-language qualification; DGT curricula and India's NQR were not searched."
+      ]
     },
     {
       "course_id": "COURSE-004",
@@ -163,16 +175,19 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "AU-VIC-22643VIC-EAL-EMPLOYMENT",
+        "AU-VIC-22644VIC-EAL-PROFESSIONAL"
+      ],
+      "comparator_record_count": 2,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "2 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": [
         "The governed record states no sector, attendance type or duration."
       ]
@@ -228,16 +243,20 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 12,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
-      "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-ICT-L5-2025",
+        "SG-ITE-HNITEC-ITAD-2Y",
+        "SG-ITE-HNITEC-ISN-2Y"
+      ],
+      "comparator_record_count": 3,
+      "competency_mapping_status": "COMPLETE",
+      "research_status": "COMPLETE",
       "evidence_availability": "HEADINGS_AVAILABLE",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "FULL_COMPARISON",
       "proposed_presentation_mode": "FULL_COMPARISON",
-      "proposed_mode_reason": "12 verified headings available. Comparator research has not started: a full comparison needs verified official comparator records and a mapping first; no comparator is assumed.",
+      "proposed_mode_reason": "12 verified headings, 3 linked verified comparator records and a completed competency mapping; the full comparison is already shown.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records (and NYSC syllabi) could enable a full comparison.",
+      "research_improvement": "No developing/emerging-economy diploma-level ICT curriculum was verified (NIELIT's 'A' Level syllabus could not be retrieved); the Sri Lankan source is a competency standard without curriculum modules, ITE's programme covers application development only, and NYSC heading 7 is an uninterpretable fragment.",
       "notes": []
     },
     {
@@ -323,16 +342,22 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 1,
       "verified_heading_count": 9,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
-      "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-ICT-TECH-L4-2023",
+        "IN-DGT-CTS-COPA-V3",
+        "PH-TESDA-CSS-NC2",
+        "SG-ITE-HNITEC-ISN-2Y",
+        "AU-TGA-ICT20120"
+      ],
+      "comparator_record_count": 5,
+      "competency_mapping_status": "COMPLETE",
+      "research_status": "COMPLETE",
       "evidence_availability": "HEADINGS_AVAILABLE",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "FULL_COMPARISON",
       "proposed_presentation_mode": "FULL_COMPARISON",
-      "proposed_mode_reason": "9 verified headings available. Comparator research has not started: a full comparison needs verified official comparator records and a mapping first; no comparator is assumed.",
+      "proposed_mode_reason": "9 verified headings, 5 linked verified comparator records and a completed competency mapping; the full comparison is already shown.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records (and NYSC syllabi) could enable a full comparison.",
+      "research_improvement": "The Sri Lankan source is an occupational standard rather than a confirmed delivery; TESDA and ITE cover only the technical-support part of the role; Australian evidence is limited to ICT20120 core units; NYSC heading 10 is a merged heading that NYSC syllabi could clarify.",
       "notes": [
         "Heading 10 is flagged in the snapshot as two merged headings and is not counted as verified."
       ]
@@ -458,16 +483,20 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-ELECTRONIC-APPLIANCES-2017",
+        "IN-DGT-CTS-MCEA-V2",
+        "PH-TESDA-EPAS-NC2"
+      ],
+      "comparator_record_count": 3,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "3 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -520,16 +549,20 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-GRAPHIC-DESIGNER-2025",
+        "PH-TESDA-VGD-NC3",
+        "SG-ITE-HNITEC-COMMDESIGN-2Y"
+      ],
+      "comparator_record_count": 3,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "3 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -547,16 +580,20 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "IN-DGT-CTS-AGMACH-V2",
+        "PH-TESDA-AGMACH-4WT-NC3",
+        "AU-TGA-AUR30420"
+      ],
+      "comparator_record_count": 3,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "3 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -574,16 +611,18 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-ALUMINIUM-FABRICATOR-2022"
+      ],
+      "comparator_record_count": 1,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "1 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -601,16 +640,18 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-QUANTITY-SURVEYING-ASSISTANT-2024"
+      ],
+      "comparator_record_count": 1,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "1 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -628,16 +669,21 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-FLORICULTURE-LANDSCAPE-2022",
+        "IN-DGT-CTS-FLORICULTURE-LANDSCAPING-V2",
+        "PH-TESDA-LANDSCAPE-NC2",
+        "AU-TGA-AHC30921"
+      ],
+      "comparator_record_count": 4,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "4 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -656,16 +702,21 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-AUTO-ELECTRICIAN-2026",
+        "IN-DGT-CTS-MAEE-V2",
+        "PH-TESDA-ASER-ELEC-NC2",
+        "AU-TGA-AUR30320"
+      ],
+      "comparator_record_count": 4,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "4 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -686,16 +737,22 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-COMPUTER-SYSTEMS-NETWORK-2026",
+        "IN-DGT-CTS-CHNM-V2",
+        "PH-TESDA-CSS-NC2",
+        "SG-ITE-HNITEC-ISN-2Y",
+        "AU-TGA-ICT40120-NETWORKING"
+      ],
+      "comparator_record_count": 5,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "5 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -714,16 +771,19 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-CONSTRUCTION-SITE-SUPERVISOR-2025",
+        "AU-TGA-CPC40120-SITE-MANAGEMENT"
+      ],
+      "comparator_record_count": 2,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "2 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -745,16 +805,20 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-DRAUGHTSPERSON-2023",
+        "IN-DGT-CTS-DRAUGHTSMAN-CIVIL-V2",
+        "PH-TESDA-TECHNICAL-DRAFTING-NC2"
+      ],
+      "comparator_record_count": 3,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "3 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": [
         "The three draughting courses are grouped provisionally; civil and engineering draughting may need separate comparators."
       ]
@@ -812,16 +876,20 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-FIELD-ASSISTANT-AGRICULTURE-2021",
+        "IN-DGT-CTS-HORTICULTURE-V2",
+        "PH-TESDA-AGRI-CROPS-NC3"
+      ],
+      "comparator_record_count": 3,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "3 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -839,16 +907,18 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-LAPIDARIST-2022"
+      ],
+      "comparator_record_count": 1,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "1 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -867,16 +937,20 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-MOBILE-PHONE-REPAIR-2024",
+        "PH-TESDA-MOBILE-NC3",
+        "IN-NQR-TSSC-HANDHELD-V2"
+      ],
+      "comparator_record_count": 3,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "3 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -897,16 +971,21 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-MOTORCYCLE-TECHNICIAN-2025",
+        "IN-DGT-CTS-2W3W-V2",
+        "PH-TESDA-MOTORCYCLE-NC2",
+        "AU-TGA-AUR30820"
+      ],
+      "comparator_record_count": 4,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "4 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -926,16 +1005,20 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-TV-DIGITAL-MEDIA-PRODUCTION-2025",
+        "PH-TESDA-FILM-VIDEO-POSTPRODUCTION-NC3",
+        "SG-ITE-HNITEC-FILM-VIDEO-2Y"
+      ],
+      "comparator_record_count": 3,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "3 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -953,16 +1036,21 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-PLANT-NURSERY-2022",
+        "IN-DGT-CTS-NURSERY-ORCHARD-V1",
+        "PH-TESDA-HORTICULTURE-NC3",
+        "AU-TGA-AHC31124"
+      ],
+      "comparator_record_count": 4,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "4 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -980,16 +1068,21 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-PLUMBER-R5",
+        "IN-DGT-CTS-PLUMBER-V3",
+        "PH-TESDA-PLUMBING-NC2-2014",
+        "AU-TGA-CPC32420-PLUMBING-R8"
+      ],
+      "comparator_record_count": 4,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "4 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -1074,16 +1167,20 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-SURVEY-FIELD-ASSISTANT-2023",
+        "IN-DGT-CTS-SURVEYOR-V2",
+        "AU-TGA-CPP30226-SURVEYING-ASSISTANT"
+      ],
+      "comparator_record_count": 3,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "3 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -1104,16 +1201,20 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 1,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
-      "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-TAILOR-R2-2017",
+        "IN-DGT-CTS-SEWING-TECHNOLOGY-V2",
+        "PH-TESDA-DRESSMAKING-NC2-2005"
+      ],
+      "comparator_record_count": 3,
+      "competency_mapping_status": "COMPLETE",
+      "research_status": "COMPLETE",
       "evidence_availability": "HEADINGS_AVAILABLE",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "FULL_COMPARISON",
       "proposed_presentation_mode": "FULL_COMPARISON",
-      "proposed_mode_reason": "1 verified heading available. Comparator research has not started: a full comparison needs verified official comparator records and a mapping first; no comparator is assumed.",
+      "proposed_mode_reason": "1 verified heading, 3 linked verified comparator records and a completed competency mapping; the full comparison is already shown.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records (and NYSC syllabi) could enable a full comparison.",
+      "research_improvement": "The Sri Lankan standard, Indian curriculum and Philippine qualification use patterns or blocks; COURSE-085 has no governed headings, no developed-economy comparator was verified, and current supersession of the older Sri Lankan and Philippine sources remains unconfirmed.",
       "notes": [
         "A single broad heading ('Women and children clothing')."
       ]
@@ -1136,16 +1237,18 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "IN-DGT-CTS-2W3W-V2"
+      ],
+      "comparator_record_count": 1,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "1 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -1197,16 +1300,20 @@
       "display_corrected_heading_count": 1,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 4,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
-      "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-ECCD-TEACHER-2026",
+        "IN-DGT-CTS-EARLY-CHILDHOOD-EDUCATOR-V2",
+        "AU-TGA-CHC30125"
+      ],
+      "comparator_record_count": 3,
+      "competency_mapping_status": "COMPLETE",
+      "research_status": "COMPLETE",
       "evidence_availability": "HEADINGS_AVAILABLE",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "FULL_COMPARISON",
       "proposed_presentation_mode": "FULL_COMPARISON",
-      "proposed_mode_reason": "4 verified headings available. Comparator research has not started: a full comparison needs verified official comparator records and a mapping first; no comparator is assumed.",
+      "proposed_mode_reason": "4 verified headings, 3 linked verified comparator records and a completed competency mapping; the full comparison is already shown.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records (and NYSC syllabi) could enable a full comparison.",
+      "research_improvement": "All three sources are standards or national curricula rather than confirmed deliveries; NYSC heading 1 ('Handling skills and design') is too unspecific to map, and Australian evidence is limited to CHC30125 core units.",
       "notes": []
     },
     {
@@ -1225,16 +1332,21 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-AUTO-ELECTRICIAN-2026",
+        "IN-DGT-CTS-MAEE-V2",
+        "PH-TESDA-ASER-ELEC-NC2",
+        "AU-TGA-AUR30320"
+      ],
+      "comparator_record_count": 4,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "4 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -1256,19 +1368,20 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "IN-DGT-ATS-CADCAM-OPERATOR-PROGRAMMER",
+        "PH-TESDA-TECHNICAL-DRAFTING-NC2"
+      ],
+      "comparator_record_count": 2,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "2 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
-      "notes": [
-        "A software-specific course; an official occupational comparator may not exist (not yet researched)."
-      ]
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
+      "notes": []
     },
     {
       "course_id": "COURSE-044",
@@ -1285,16 +1398,20 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-MACHINIST-R2",
+        "PH-TESDA-MACHINING-NC2",
+        "AU-TGA-MEM30219-MACHINING"
+      ],
+      "comparator_record_count": 3,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "3 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -1312,16 +1429,20 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-WELDER-R3",
+        "IN-DGT-CTS-WELDER-V2",
+        "AU-TGA-MEM31925-WELDING"
+      ],
+      "comparator_record_count": 3,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "3 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -1447,14 +1568,16 @@
       "comparator_record_ids": [],
       "comparator_record_count": 0,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "NO_DEFENSIBLE_COMPARATOR",
       "evidence_availability": "NO_HEADINGS",
       "current_presentation_mode": "RESEARCH_PENDING",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "Comparator research was carried out, but no defensible official comparator with inspectable curriculum content was found (see notes); no comparison is shown. Missing NYSC headings do not imply that external comparators are missing, and a missing comparison does not mean that suitable programmes do not exist.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
-      "notes": []
+      "research_improvement": "NYSC syllabi stating the course content or level, or newly published official curricula with inspectable content, could make a comparison defensible.",
+      "notes": [
+        "Researched (Step 35): generic title and no governed headings; Sri Lankan business standards (Business Associate J65S001, 2014; Management Services K74S010/K74S011) and Australian business qualifications cannot be matched to an unstated scope without NYSC syllabi."
+      ]
     },
     {
       "course_id": "COURSE-050",
@@ -1475,16 +1598,20 @@
       "display_corrected_heading_count": 1,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 4,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
-      "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-CAKE-DECORATOR-2022",
+        "IN-DGT-CTS-BAKER-V2",
+        "SG-ITE-HNITEC-PASTRY-2Y"
+      ],
+      "comparator_record_count": 3,
+      "competency_mapping_status": "COMPLETE",
+      "research_status": "COMPLETE",
       "evidence_availability": "HEADINGS_AVAILABLE",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "FULL_COMPARISON",
       "proposed_presentation_mode": "FULL_COMPARISON",
-      "proposed_mode_reason": "4 verified headings available. Comparator research has not started: a full comparison needs verified official comparator records and a mapping first; no comparator is assumed.",
+      "proposed_mode_reason": "4 verified headings, 3 linked verified comparator records and a completed competency mapping; the full comparison is already shown.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records (and NYSC syllabi) could enable a full comparison.",
+      "research_improvement": "The Sri Lankan source is an occupational standard rather than a confirmed delivery; COURSE-051 has no governed module headings, and the broader Australian Baking qualification was excluded because its cake-decoration evidence is incidental.",
       "notes": []
     },
     {
@@ -1506,16 +1633,20 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-CAKE-DECORATOR-2022",
+        "IN-DGT-CTS-BAKER-V2",
+        "SG-ITE-HNITEC-PASTRY-2Y"
+      ],
+      "comparator_record_count": 3,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "3 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -1535,18 +1666,22 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-COMPUTER-SYSTEMS-NETWORK-2026",
+        "SG-ITE-HNITEC-ISN-2Y",
+        "AU-TGA-ICT40120-NETWORKING"
+      ],
+      "comparator_record_count": 3,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "3 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": [
-        "A vendor certification; an official occupational comparator may not exist (not yet researched)."
+        "A vendor certification; national networking comparators are shown, and Cisco's own exam blueprint is not stored as a comparator record."
       ]
     },
     {
@@ -1567,16 +1702,20 @@
       "display_corrected_heading_count": 1,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 3,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
-      "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-COMPUTER-APP-ASSIST-L3-2023",
+        "IN-DGT-CTS-COPA-V3",
+        "AU-TGA-ICT20120"
+      ],
+      "comparator_record_count": 3,
+      "competency_mapping_status": "COMPLETE",
+      "research_status": "COMPLETE",
       "evidence_availability": "HEADINGS_AVAILABLE",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "FULL_COMPARISON",
       "proposed_presentation_mode": "FULL_COMPARISON",
-      "proposed_mode_reason": "3 verified headings available. Comparator research has not started: a full comparison needs verified official comparator records and a mapping first; no comparator is assumed.",
+      "proposed_mode_reason": "3 verified headings, 3 linked verified comparator records and a completed competency mapping; the full comparison is already shown.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records (and NYSC syllabi) could enable a full comparison.",
+      "research_improvement": "The Sri Lankan source is an occupational standard rather than a confirmed delivery; COPA is broader than computer applications; Australian evidence is limited to ICT20120 core units; COURSE-054 has no governed module headings.",
       "notes": []
     },
     {
@@ -1595,16 +1734,20 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-COMPUTER-APP-ASSIST-L3-2023",
+        "IN-DGT-CTS-COPA-V3",
+        "AU-TGA-ICT20120"
+      ],
+      "comparator_record_count": 3,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "3 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -1693,16 +1836,22 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-WEB-DEVELOPER-2025",
+        "IN-NQR-HARTRON-WEB-MULTIMEDIA-V2",
+        "PH-TESDA-WEBDEV-NC3",
+        "SG-ITE-HNITEC-ITAD-2Y",
+        "AU-TGA-ICT40120-WEBDEV"
+      ],
+      "comparator_record_count": 5,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "5 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -1722,16 +1871,20 @@
       "display_corrected_heading_count": 1,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 4,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
-      "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "comparator_record_ids": [
+        "IN-NQR-HARTRON-COMPUTER-ACCOUNTING-V2",
+        "SG-ITE-HNITEC-ACCOUNTING-2Y",
+        "AU-TGA-FNS30322"
+      ],
+      "comparator_record_count": 3,
+      "competency_mapping_status": "COMPLETE",
+      "research_status": "COMPLETE",
       "evidence_availability": "HEADINGS_AVAILABLE",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "FULL_COMPARISON",
       "proposed_presentation_mode": "FULL_COMPARISON",
-      "proposed_mode_reason": "4 verified headings available. Comparator research has not started: a full comparison needs verified official comparator records and a mapping first; no comparator is assumed.",
+      "proposed_mode_reason": "4 verified headings, 3 linked verified comparator records and a completed competency mapping; the full comparison is already shown.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records (and NYSC syllabi) could enable a full comparison.",
+      "research_improvement": "No Sri Lankan computerised-accounting standard was verified; the NYSC headings name software packages rather than competencies, ITE's programme is a broader accounting diploma, and Australian evidence is limited to FNS30322 core units.",
       "notes": [
         "Headings name accounting software packages rather than accounting competencies."
       ]
@@ -1753,16 +1906,21 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-MULTIMEDIA-DESIGNING-ASSOCIATE-2019",
+        "IN-DGT-CTS-MASE-V2",
+        "PH-TESDA-3D-ANIMATION-NC3",
+        "PH-TESDA-FILM-VIDEO-POSTPRODUCTION-NC3"
+      ],
+      "comparator_record_count": 4,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "4 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -1781,16 +1939,19 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-CONSTRUCTION-SITE-SUPERVISOR-2025",
+        "AU-TGA-CPC40120-SITE-MANAGEMENT"
+      ],
+      "comparator_record_count": 2,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "2 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -1812,16 +1973,20 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-DRAUGHTSPERSON-2023",
+        "IN-DGT-CTS-DRAUGHTSMAN-CIVIL-V2",
+        "PH-TESDA-TECHNICAL-DRAFTING-NC2"
+      ],
+      "comparator_record_count": 3,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "3 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": [
         "The three draughting courses are grouped provisionally; civil and engineering draughting may need separate comparators."
       ]
@@ -1844,16 +2009,21 @@
       "display_corrected_heading_count": 1,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 4,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
-      "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-GRAPHIC-DESIGNER-2025",
+        "PH-TESDA-VGD-NC3",
+        "SG-ITE-HNITEC-COMMDESIGN-2Y",
+        "IN-DGT-CTS-DTPO-V2"
+      ],
+      "comparator_record_count": 4,
+      "competency_mapping_status": "COMPLETE",
+      "research_status": "COMPLETE",
       "evidence_availability": "HEADINGS_AVAILABLE",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "FULL_COMPARISON",
       "proposed_presentation_mode": "FULL_COMPARISON",
-      "proposed_mode_reason": "4 verified headings available. Comparator research has not started: a full comparison needs verified official comparator records and a mapping first; no comparator is assumed.",
+      "proposed_mode_reason": "4 verified headings, 4 linked verified comparator records and a completed competency mapping; the full comparison is already shown.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records (and NYSC syllabi) could enable a full comparison.",
+      "research_improvement": "Only the Indian DGT curriculum explicitly names all four governed applications; the other linked records provide related graphic-design evidence, and no exact Sri Lankan or developed-economy desktop-publishing curriculum was verified.",
       "notes": []
     },
     {
@@ -1874,16 +2044,20 @@
       "display_corrected_heading_count": 1,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 1,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
-      "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-TAILOR-R2-2017",
+        "IN-DGT-CTS-SEWING-TECHNOLOGY-V2",
+        "PH-TESDA-DRESSMAKING-NC2-2005"
+      ],
+      "comparator_record_count": 3,
+      "competency_mapping_status": "COMPLETE",
+      "research_status": "COMPLETE",
       "evidence_availability": "HEADINGS_AVAILABLE",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "FULL_COMPARISON",
       "proposed_presentation_mode": "FULL_COMPARISON",
-      "proposed_mode_reason": "1 verified heading available. Comparator research has not started: a full comparison needs verified official comparator records and a mapping first; no comparator is assumed.",
+      "proposed_mode_reason": "1 verified heading, 3 linked verified comparator records and a completed competency mapping; the full comparison is already shown.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records (and NYSC syllabi) could enable a full comparison.",
+      "research_improvement": "The governed title's block-free method is not described by published NYSC content. All linked sources use patterns, with the Sri Lankan and Philippine documents explicitly using blocks or block patterns; no method-matched or developed-economy comparator was verified.",
       "notes": [
         "A single broad heading ('Women and children clothing', display-corrected)."
       ]
@@ -1945,16 +2119,20 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-DRAUGHTSPERSON-2023",
+        "IN-DGT-CTS-DRAUGHTSMAN-CIVIL-V2",
+        "PH-TESDA-TECHNICAL-DRAFTING-NC2"
+      ],
+      "comparator_record_count": 3,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "3 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": [
         "The three draughting courses are grouped provisionally; civil and engineering draughting may need separate comparators."
       ]
@@ -1976,16 +2154,19 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "AU-VIC-22643VIC-EAL-EMPLOYMENT",
+        "AU-VIC-22644VIC-EAL-PROFESSIONAL"
+      ],
+      "comparator_record_count": 2,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "2 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -2006,14 +2187,16 @@
       "comparator_record_ids": [],
       "comparator_record_count": 0,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "NO_DEFENSIBLE_COMPARATOR",
       "evidence_availability": "NO_HEADINGS",
       "current_presentation_mode": "RESEARCH_PENDING",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "Comparator research was carried out, but no defensible official comparator with inspectable curriculum content was found (see notes); no comparison is shown. Missing NYSC headings do not imply that external comparators are missing, and a missing comparison does not mean that suitable programmes do not exist.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
-      "notes": []
+      "research_improvement": "NYSC syllabi stating the course content or level, or newly published official curricula with inspectable content, could make a comparison defensible.",
+      "notes": [
+        "Researched (Step 38): no French-language qualification was found in the sources searched (training.gov.au search, TESDA's training-regulations listing and the Sri Lankan NVQ occupation list); Indian and Singaporean sources were not searched."
+      ]
     },
     {
       "course_id": "COURSE-068",
@@ -2033,16 +2216,20 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-GRAPHIC-DESIGNER-2025",
+        "PH-TESDA-VGD-NC3",
+        "SG-ITE-HNITEC-COMMDESIGN-2Y"
+      ],
+      "comparator_record_count": 3,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "3 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -2095,14 +2282,16 @@
       "comparator_record_ids": [],
       "comparator_record_count": 0,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "NO_DEFENSIBLE_COMPARATOR",
       "evidence_availability": "NO_HEADINGS",
       "current_presentation_mode": "RESEARCH_PENDING",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "Comparator research was carried out, but no defensible official comparator with inspectable curriculum content was found (see notes); no comparison is shown. Missing NYSC headings do not imply that external comparators are missing, and a missing comparison does not mean that suitable programmes do not exist.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
-      "notes": []
+      "research_improvement": "NYSC syllabi stating the course content or level, or newly published official curricula with inspectable content, could make a comparison defensible.",
+      "notes": [
+        "Researched (Step 37): the craft is unspecified; Sri Lankan craft standards (e.g. Batik Artist D17S004, Handloom Craftsman D17S003) cover specific crafts and cannot be matched without NYSC syllabi."
+      ]
     },
     {
       "course_id": "COURSE-071",
@@ -2119,16 +2308,20 @@
       "display_corrected_heading_count": 2,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 3,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
-      "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-HR-ASSOCIATE-2024",
+        "LK-TVEC-NCS-HRM-DIPLOMA-2022",
+        "AU-TGA-BSB40420"
+      ],
+      "comparator_record_count": 3,
+      "competency_mapping_status": "COMPLETE",
+      "research_status": "COMPLETE",
       "evidence_availability": "HEADINGS_AVAILABLE",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "FULL_COMPARISON",
       "proposed_presentation_mode": "FULL_COMPARISON",
-      "proposed_mode_reason": "3 verified headings available. Comparator research has not started: a full comparison needs verified official comparator records and a mapping first; no comparator is assumed.",
+      "proposed_mode_reason": "3 verified headings, 3 linked verified comparator records and a completed competency mapping; the full comparison is already shown.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records (and NYSC syllabi) could enable a full comparison.",
+      "research_improvement": "No developing-economy HR comparator with inspectable content was verified; both Sri Lankan standards are past their stated review dates, and the NYSC headings' abbreviations ('T and D', 'PE System', 'LR System') cannot be assessed without NYSC syllabi.",
       "notes": [
         "Headings use unexplained abbreviations (e.g. 'JD, JA', 'PE System, T and D', 'LR System')."
       ]
@@ -2151,14 +2344,16 @@
       "comparator_record_ids": [],
       "comparator_record_count": 0,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "NO_DEFENSIBLE_COMPARATOR",
       "evidence_availability": "HEADINGS_UNUSABLE",
       "current_presentation_mode": "RESEARCH_PENDING",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The only heading cites an exam syllabus level and course-material fees ('JLPT - N5 & NAT - N5 Course Syllabues (Rs. 1500.00 Fees for Course Meterials)'); it names no module content. A competency matrix cannot be assessed from it, but verified comparator records could still be shown. Comparator research has not started.",
+      "proposed_mode_reason": "Comparator research was carried out, but no defensible official comparator with inspectable curriculum content was found (see notes); no comparison is shown. Missing NYSC headings do not imply that external comparators are missing, and a missing comparison does not mean that suitable programmes do not exist.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
-      "notes": []
+      "research_improvement": "NYSC syllabi stating the course content or level, or newly published official curricula with inspectable content, could make a comparison defensible.",
+      "notes": [
+        "Researched (Step 38): JLPT N5 is a proficiency test level, not a curriculum; no Japanese-language qualification was found in the sources searched (training.gov.au search, TESDA's training-regulations listing and the Sri Lankan NVQ occupation list)."
+      ]
     },
     {
       "course_id": "COURSE-073",
@@ -2177,16 +2372,18 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "PH-TESDA-PROGRAMMING-JAVA-NC3-2021"
+      ],
+      "comparator_record_count": 1,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "1 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -2207,14 +2404,16 @@
       "comparator_record_ids": [],
       "comparator_record_count": 0,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "NO_DEFENSIBLE_COMPARATOR",
       "evidence_availability": "HEADINGS_UNUSABLE",
       "current_presentation_mode": "RESEARCH_PENDING",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The only heading is a generic statement ('Cover all skills of Korean Language required to use the language efficiently'); it names no module content. A competency matrix cannot be assessed from it, but verified comparator records could still be shown. Comparator research has not started.",
+      "proposed_mode_reason": "Comparator research was carried out, but no defensible official comparator with inspectable curriculum content was found (see notes); no comparison is shown. Missing NYSC headings do not imply that external comparators are missing, and a missing comparison does not mean that suitable programmes do not exist.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
-      "notes": []
+      "research_improvement": "NYSC syllabi stating the course content or level, or newly published official curricula with inspectable content, could make a comparison defensible.",
+      "notes": [
+        "Researched (Step 38): no Korean-language qualification was found in the sources searched (training.gov.au search, TESDA's training-regulations listing and the Sri Lankan NVQ occupation list); the Open University of Sri Lanka Korean (TOPIK) short-course pages could not be read (the fetched pages contained only site navigation)."
+      ]
     },
     {
       "course_id": "COURSE-075",
@@ -2234,14 +2433,16 @@
       "comparator_record_ids": [],
       "comparator_record_count": 0,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "NO_DEFENSIBLE_COMPARATOR",
       "evidence_availability": "HEADINGS_AVAILABLE",
       "current_presentation_mode": "RESEARCH_PENDING",
       "proposed_presentation_mode": "FULL_COMPARISON",
-      "proposed_mode_reason": "1 verified heading available. Comparator research has not started: a full comparison needs verified official comparator records and a mapping first; no comparator is assumed.",
+      "proposed_mode_reason": "Comparator research was carried out, but no defensible official comparator with inspectable curriculum content was found (see notes); no comparison is shown. Missing NYSC headings do not imply that external comparators are missing, and a missing comparison does not mean that suitable programmes do not exist.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records (and NYSC syllabi) could enable a full comparison.",
-      "notes": []
+      "research_improvement": "NYSC syllabi stating the course content or level, or newly published official curricula with inspectable content, could make a comparison defensible.",
+      "notes": [
+        "Researched (Step 37): the single heading combines literary and arts components (criticism and taste; poetry, song and drama) with print and radio; Sri Lankan journalism standards (D22S014, D22T007) match only a fragment, so no comparison is defensible."
+      ]
     },
     {
       "course_id": "COURSE-076",
@@ -2258,16 +2459,18 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "IN-DGT-ATS-MECHANIC-EMBEDDED-PLC"
+      ],
+      "comparator_record_count": 1,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "1 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -2286,16 +2489,20 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-MOBILE-PHONE-REPAIR-2024",
+        "PH-TESDA-MOBILE-NC3",
+        "IN-NQR-TSSC-HANDHELD-V2"
+      ],
+      "comparator_record_count": 3,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "3 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -2316,16 +2523,21 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-MOTORCYCLE-TECHNICIAN-2025",
+        "IN-DGT-CTS-2W3W-V2",
+        "PH-TESDA-MOTORCYCLE-NC2",
+        "AU-TGA-AUR30820"
+      ],
+      "comparator_record_count": 4,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "4 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -2347,16 +2559,21 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-CGTTI-POWER-ELEC",
+        "IN-DGT-CTS-ELEC-V3",
+        "PH-TESDA-EIM-NC3",
+        "AU-TAFENSW-UEE30820"
+      ],
+      "comparator_record_count": 4,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "4 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -2378,16 +2595,21 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-ELECTRIC-MOTOR-WINDER",
+        "LK-CGTTI-POWER-ELEC",
+        "IN-DGT-CTS-ELEC-V3",
+        "AU-TGA-UEE30625"
+      ],
+      "comparator_record_count": 4,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "4 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -2407,16 +2629,20 @@
       "display_corrected_heading_count": 1,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 3,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
-      "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-ELECTRONIC-APPLIANCES-2017",
+        "IN-DGT-CTS-MCEA-V2",
+        "PH-TESDA-EPAS-NC2"
+      ],
+      "comparator_record_count": 3,
+      "competency_mapping_status": "COMPLETE",
+      "research_status": "COMPLETE",
       "evidence_availability": "HEADINGS_AVAILABLE",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "FULL_COMPARISON",
       "proposed_presentation_mode": "FULL_COMPARISON",
-      "proposed_mode_reason": "3 verified headings available. Comparator research has not started: a full comparison needs verified official comparator records and a mapping first; no comparator is assumed.",
+      "proposed_mode_reason": "3 verified headings, 3 linked verified comparator records and a completed competency mapping; the full comparison is already shown.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records (and NYSC syllabi) could enable a full comparison.",
+      "research_improvement": "All three comparator sources are standards or national curricula rather than confirmed deliveries; no developed-economy comparator with sufficiently specific published radio/TV repair content was verified, and the NYSC LED-board heading retains an apparent governed-text typo.",
       "notes": []
     },
     {
@@ -2470,14 +2696,16 @@
       "comparator_record_ids": [],
       "comparator_record_count": 0,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "NO_DEFENSIBLE_COMPARATOR",
       "evidence_availability": "NO_HEADINGS",
       "current_presentation_mode": "RESEARCH_PENDING",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "Comparator research was carried out, but no defensible official comparator with inspectable curriculum content was found (see notes); no comparison is shown. Missing NYSC headings do not imply that external comparators are missing, and a missing comparison does not mean that suitable programmes do not exist.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
-      "notes": []
+      "research_improvement": "NYSC syllabi stating the course content or level, or newly published official curricula with inspectable content, could make a comparison defensible.",
+      "notes": [
+        "Researched (Step 38): whether the course teaches Sinhala as a first or second language is not stated; the Open University of Sri Lanka Sinhala-as-a-second-language pages read show descriptions and eligibility but no module lists (the certificate page could not be read), and no Sinhala qualification appears in the Sri Lankan NVQ occupation list."
+      ]
     },
     {
       "course_id": "COURSE-084",
@@ -2494,16 +2722,20 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-STORE-KEEPER-2019",
+        "IN-DGT-ATS-STORAGE-INVENTORY-EXECUTIVE",
+        "AU-TGA-TLI30325-WAREHOUSING"
+      ],
+      "comparator_record_count": 3,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "3 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -2524,16 +2756,20 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-TAILOR-R2-2017",
+        "IN-DGT-CTS-SEWING-TECHNOLOGY-V2",
+        "PH-TESDA-DRESSMAKING-NC2-2005"
+      ],
+      "comparator_record_count": 3,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "3 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -2554,14 +2790,16 @@
       "comparator_record_ids": [],
       "comparator_record_count": 0,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "NO_DEFENSIBLE_COMPARATOR",
       "evidence_availability": "HEADINGS_UNUSABLE",
       "current_presentation_mode": "RESEARCH_PENDING",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The only heading is a generic statement ('Cover all skills of Tamil Language required to use the language efficiently'); it names no module content. A competency matrix cannot be assessed from it, but verified comparator records could still be shown. Comparator research has not started.",
+      "proposed_mode_reason": "Comparator research was carried out, but no defensible official comparator with inspectable curriculum content was found (see notes); no comparison is shown. Missing NYSC headings do not imply that external comparators are missing, and a missing comparison does not mean that suitable programmes do not exist.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
-      "notes": []
+      "research_improvement": "NYSC syllabi stating the course content or level, or newly published official curricula with inspectable content, could make a comparison defensible.",
+      "notes": [
+        "Researched (Step 38): the Open University of Sri Lanka Tamil-as-a-second-language pages read show descriptions and eligibility but no module lists (the certificate page could not be read), and no Tamil qualification appears in the Sri Lankan NVQ occupation list."
+      ]
     },
     {
       "course_id": "COURSE-087",
@@ -2580,16 +2818,22 @@
       "display_corrected_heading_count": 2,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 6,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
-      "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-WEB-DEVELOPER-2025",
+        "IN-NQR-HARTRON-WEB-MULTIMEDIA-V2",
+        "PH-TESDA-WEBDEV-NC3",
+        "SG-ITE-HNITEC-ITAD-2Y",
+        "AU-TGA-ICT40120-WEBDEV"
+      ],
+      "comparator_record_count": 5,
+      "competency_mapping_status": "COMPLETE",
+      "research_status": "COMPLETE",
       "evidence_availability": "HEADINGS_AVAILABLE",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "FULL_COMPARISON",
       "proposed_presentation_mode": "FULL_COMPARISON",
-      "proposed_mode_reason": "6 verified headings available. Comparator research has not started: a full comparison needs verified official comparator records and a mapping first; no comparator is assumed.",
+      "proposed_mode_reason": "6 verified headings, 5 linked verified comparator records and a completed competency mapping; the full comparison is already shown.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records (and NYSC syllabi) could enable a full comparison.",
+      "research_improvement": "No Sri Lankan, Indian or Australian delivering provider was verified; India's qualification has broad module titles; ITE's programme is broader application development; COURSE-057 and COURSE-001 have no governed module headings.",
       "notes": []
     }
   ]

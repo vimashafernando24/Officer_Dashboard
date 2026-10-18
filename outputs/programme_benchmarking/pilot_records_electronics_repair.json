@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.1.0",
+  "dataset_id": "nysc-programme-benchmarking-electronics-repair",
+  "created_date": "2026-10-18",
+  "purpose": "Official-source comparators for electronic-appliance and radio/television repair courses.",
+  "schema": "benchmark_record_schema.json",
+  "status_note": "Source-inspected records awaiting independent human review; standards and curricula are not evidence of programme delivery.",
+  "country_group_gaps": {
+    "developed": "No developed-economy delivered programme or national qualification with sufficiently specific published appliance and television-repair content was verified on 2026-10-18."
+  },
+  "records": [
+    {
+      "record_id": "LK-TVEC-NCS-ELECTRONIC-APPLIANCES-2017",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "ELECTRONIC APPLIANCES TECHNICIAN",
+      "sector": "Electronics / Electronic appliance servicing",
+      "framework": "NVQ (Sri Lanka)",
+      "level_as_published": "NVQ Level 4",
+      "duration_as_published": null,
+      "entry_as_published": null,
+      "modules": [
+        {"published_ref": null, "code": "D32S003U01", "title_verbatim": "Interact with customer", "outcome_verbatim": null, "group": "List of Competency Units"},
+        {"published_ref": null, "code": "D32S003U02", "title_verbatim": "Find faults and prepare estimates for service / repair / configuration", "outcome_verbatim": null, "group": "List of Competency Units"},
+        {"published_ref": null, "code": "D32S003U03", "title_verbatim": "Service electronic appliances", "outcome_verbatim": null, "group": "List of Competency Units"},
+        {"published_ref": null, "code": "D32S003U04", "title_verbatim": "Repair power supply unit of electronic appliances", "outcome_verbatim": null, "group": "List of Competency Units"},
+        {"published_ref": null, "code": "D32S003U05", "title_verbatim": "Repair amplifiers", "outcome_verbatim": null, "group": "List of Competency Units"},
+        {"published_ref": null, "code": "D32S003U06", "title_verbatim": "Repair main system board", "outcome_verbatim": null, "group": "List of Competency Units"},
+        {"published_ref": null, "code": "D32S003U07", "title_verbatim": "Repair drive / servo control mechanisms", "outcome_verbatim": null, "group": "List of Competency Units"},
+        {"published_ref": null, "code": "D32S003U08", "title_verbatim": "Repair / replace input or output devices", "outcome_verbatim": null, "group": "List of Competency Units"},
+        {"published_ref": null, "code": "D32S003U09", "title_verbatim": "Install / repair and configure audio, video and data systems", "outcome_verbatim": null, "group": "List of Competency Units"},
+        {"published_ref": null, "code": "D32S003U10", "title_verbatim": "Install / Configure Television Satellite Receiver (TVRO)", "outcome_verbatim": null, "group": "List of Competency Units"}
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://nvq.gov.lk/Report_Inquires/NCS_Request_Pdf.php?nm=D32S003_0_NCS.pdf",
+        "document_type": "pdf",
+        "document_sha256": "b9babb76d18b73b812283880f8199afccfbd790a83e9809396f365a6aa86b817",
+        "publication_or_revision": "Copyright 2017; NCS code D32S003",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "The complete ten-unit competency table and the equipment range used in this comparison were read from the official 72-page NCS and CBT curriculum PDF; codes and wording were checked against the rendered source.",
+        "human_reviewed": false
+      },
+      "licence_note": "Copyright © 2017 TVEC; source states all rights reserved.",
+      "notes": [
+        "A national occupational standard and competency-based curriculum, not evidence that a named provider delivers the programme.",
+        "The record stores all ten occupational units; detailed CBT curriculum modules are not stored, so cells that would depend on them are not reported as documented.",
+        "The source covers a broad electronic-appliance occupation; it is not limited to televisions or DVD players."
+      ],
+      "scope_verbatim": [
+        "Audio and Video Recorders and Players",
+        "Analog and Digital TV Decoder / Set Top Box",
+        "Multimedia Projector",
+        "Television Receivers",
+        "Monitors"
+      ]
+    },
+    {
+      "record_id": "IN-DGT-CTS-MCEA-V2",
+      "country": "India",
+      "country_group": "developing_emerging",
+      "institution": "Government of India, Directorate General of Training",
+      "record_type": "national_curriculum",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Mechanic Consumer Electronic Appliances",
+      "sector": "Electronics & Hardware",
+      "framework": "Craftsmen Training Scheme (CTS), NSQF",
+      "level_as_published": "NSQF Level 4",
+      "duration_as_published": "Two Years (2400 Hours plus 300/450 Hours OJT/Group Project)",
+      "entry_as_published": "Passed 10th class examination with Science and Mathematics or with vocational subject in the same sector or its equivalent",
+      "modules": [
+        {"published_ref": "LO1", "code": "ELE/N1002", "title_verbatim": "Perform basic workshop operations using suitable tools for fitting, riveting, drilling etc. observing suitable care & safety following safety precautions.", "outcome_verbatim": null, "group": "First Year"},
+        {"published_ref": "LO18", "code": "ELE/N7812", "title_verbatim": "Perform SMD Soldering and De-soldering of discrete SMD components with due care and following safety norms using proper tools/setup.", "outcome_verbatim": null, "group": "First Year"},
+        {"published_ref": "LO19", "code": "ELE/N7813", "title_verbatim": "Carry out rework on PCB after identifying defects from SMD soldering and de-soldering.", "outcome_verbatim": null, "group": "First Year"},
+        {"published_ref": "LO22", "code": "ELE/N9442", "title_verbatim": "Assemble and test a commercial AM/FM receiver and evaluate performance.", "outcome_verbatim": null, "group": "Second Year"},
+        {"published_ref": "LO23", "code": "ELE/N9443", "title_verbatim": "Construct and test simple, electrical control circuits and various electrical control circuits for programmable systems.", "outcome_verbatim": null, "group": "Second Year"},
+        {"published_ref": "LO27", "code": "ELE/N3101", "title_verbatim": "Install, maintain and repair SMPS, UPS and inverter.", "outcome_verbatim": null, "group": "Second Year"},
+        {"published_ref": "LO28", "code": "ELE/N3102", "title_verbatim": "Identify, operate various controls, troubleshoot and replace modules of the LCD/LED TV and its remote.", "outcome_verbatim": null, "group": "Second Year"},
+        {"published_ref": "LO31", "code": "ELE/N3118", "title_verbatim": "Dismantle; identify the parts, control circuits, sensors of a various domestic appliance. Estimate and troubleshoot.", "outcome_verbatim": null, "group": "Second Year"},
+        {"published_ref": "LO33", "code": "ELE/N3122", "title_verbatim": "Identify different blocks of home theatre, troubleshoot and repair faulty boards.", "outcome_verbatim": null, "group": "Second Year"}
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://dgt.gov.in/sites/default/files/Mech%20Consumer%20Electronic%20Appliances_CTS2.0_NSQF-4.pdf",
+        "document_type": "pdf",
+        "document_sha256": "cfedf50ceac85cca8234a5f8c77a40a96b705eb0f64273f151e0d849b1ab7228",
+        "publication_or_revision": "Version 2.0, revised July 2022",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Selected assessment outcomes were transcribed from the official DGT curriculum's learning-outcomes table; numbering, codes and wording were checked against the rendered PDF.",
+        "human_reviewed": false
+      },
+      "licence_note": "No licence statement was recorded from the inspected official PDF.",
+      "notes": [
+        "A national curriculum, not evidence that a named institute currently delivers the trade.",
+        "Only outcomes material to this comparison are stored; this is not the curriculum's complete 35-outcome list.",
+        "The programme is broader than radio/TV repair and includes domestic appliances, projectors, printers and home theatre systems."
+      ],
+      "scope_verbatim": []
+    },
+    {
+      "record_id": "PH-TESDA-EPAS-NC2",
+      "country": "Philippines",
+      "country_group": "developing_emerging",
+      "institution": "Technical Education and Skills Development Authority (TESDA)",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Electronic Products Assembly and Servicing NC II",
+      "sector": "Electronics",
+      "framework": "Philippine TVET Qualification (NC)",
+      "level_as_published": "NC II",
+      "duration_as_published": null,
+      "entry_as_published": null,
+      "modules": [
+        {"published_ref": null, "code": null, "title_verbatim": "Assemble electronic products", "outcome_verbatim": null, "group": "Core Competencies"},
+        {"published_ref": null, "code": "ELC724336", "title_verbatim": "Service consumer electronic products and systems", "outcome_verbatim": "Install, diagnose faults, maintain and repair consumer electronic products and systems", "group": "Core Competencies"},
+        {"published_ref": null, "code": null, "title_verbatim": "Service industrial electronic modules, products and systems", "outcome_verbatim": null, "group": "Core Competencies"}
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://www.tesda.gov.ph/Downloadables/TR-Electronic%20Products%20Assembly%20and%20Servicing%20NC%20II.pdf",
+        "document_type": "pdf",
+        "document_sha256": "03c8d7942ec487aca457ab36747894a5f90e69b4bf85e8012e940bdfbaaf289b",
+        "publication_or_revision": "Training Regulations for Electronic Products Assembly and Servicing NC II",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Selected basic, common and core units and the consumer-products range were read from the official TESDA Training Regulations; stored wording was checked against the rendered PDF.",
+        "human_reviewed": false
+      },
+      "licence_note": "No licence statement was recorded from the inspected official PDF.",
+      "notes": [
+        "A national training regulation, not evidence that a named provider delivers the qualification.",
+        "Only units material to the comparison are stored.",
+        "The consumer-electronics unit covers a range of products; the standard is broader than a dedicated radio/TV repair course."
+      ],
+      "scope_verbatim": [
+        "Audio products and systems (e.g. radio receivers, audio recorders)",
+        "Video products and systems (e.g. television, DVD/VCD players, PC monitors)",
+        "Domestic electronic appliances"
+      ]
+    }
+  ]
+}

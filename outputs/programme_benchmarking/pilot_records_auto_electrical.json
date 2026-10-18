@@ -1,0 +1,743 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-auto-electrical",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Comparator records for NYSC COURSE-021 and COURSE-042 Automobile Electrician. The governed catalogue publishes no module headings for these courses, so the records are shown without a competency matrix. Records describe documented curriculum only and do not establish equivalence, quality or labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its official source by a researcher before publication.",
+  "country_group_gaps": {},
+  "records": [
+    {
+      "record_id": "LK-TVEC-NCS-AUTO-ELECTRICIAN-2026",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "AUTOMOBILE ELECTRICIAN/AUTOMOBILE ELECTRICAL TECHNICIAN",
+      "sector": "Automotive / Electrical",
+      "framework": "NVQ (Sri Lanka)",
+      "level_as_published": "NVQ Level 03 and 04",
+      "duration_as_published": null,
+      "entry_as_published": "For NVQ Level 03 Qualification- Sat for GCE Ordinary Level Examination; For NVQ Level 04 Qualification NVQ level 3 or Pass GCE Ordinary Level Examination",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "G50S002U01",
+          "title_verbatim": "Maintain and replace primary/auxiliary storage batteries",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S002U02",
+          "title_verbatim": "Maintain and repair starting and primary battery charging systems",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S002U03",
+          "title_verbatim": "Maintain and repair conventional ignition system",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S002U04",
+          "title_verbatim": "Maintain and repair electronically controlled ignition system",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S002U05",
+          "title_verbatim": "Maintain and repair components of electronically controlled gasoline fuel injection and diesel fuel injection systems",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S002U06",
+          "title_verbatim": "Maintain and repair chassis electronic control units and components",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S002U07",
+          "title_verbatim": "Maintain and repair electrical and electronically controlled accessories",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S002U08",
+          "title_verbatim": "Maintain and repair passenger safety, driver information and security systems",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S002U09",
+          "title_verbatim": "Maintain and repair lighting, wiper and horn system",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S002U10",
+          "title_verbatim": "Maintain and repair climatic control system",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S002U11",
+          "title_verbatim": "Install and maintain in-car entertainment devices and navigation system",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S002U12",
+          "title_verbatim": "Repair and maintain hybrid system and components",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S002U13",
+          "title_verbatim": "Repair and maintain electric Vehicle system and components",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S002BU01",
+          "title_verbatim": "Practice workplace communication and interpersonal relations",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S002BU02",
+          "title_verbatim": "Apply occupational literacy and numeracy",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S002BU03",
+          "title_verbatim": "Work in teams",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S002BU04",
+          "title_verbatim": "Practice occupational health and safety procedures in a workplace",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://nvq.gov.lk/report_inquires/NCS_Request_Pdf.php?nm=G50S002_4_NCS.pdf",
+        "document_type": "pdf",
+        "document_sha256": "914ed58e0b0aabd460765eeab5badc93cc6547e2207d6c709ab0252416edf32c",
+        "publication_or_revision": "Forth Revision February 2026 (endorsed 10.02.2026); next revision February 2029",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Unit titles and codes read from the rendered List of Competency Units (PDF page 8); NVQ packaging from PDF page 9; endorsement and prerequisites from the detail page (PDF page 188); all matched against the pdf.js text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Copyright © 2026 TVEC; source states all rights reserved.",
+      "notes": [
+        "A national occupational standard and competency-based curriculum, not evidence that a named provider delivers the programme.",
+        "Stores the 17 competency units only; the curriculum modules and learning hours are not stored and no overall course duration is stated.",
+        "The NVQ Level 04 Automobile Electrician package excludes the hybrid (U12) and electric vehicle (U13) units; only the Automobile Electrical Technician package includes them. Both packaging passages are stored.",
+        "The revision page spells 'Forth Revision February 2026'; the wording is kept as published."
+      ],
+      "scope_verbatim": [
+        "National Certificate at NVQ Level 04 in the occupation of Automobile Electrician will be awarded to those who are competent in units U01 + U02 + U03 + U04 + U05 + U06 + U07 + U08 + U09 + U10 + U11 + BU01 + BU02 + BU03 +BU04 - G50S002Q2L4",
+        "National Certificate at NVQ Level 04 in the occupation of Automobile Electrical Technician will be awarded to those who are competent in units U01 + U02 + U03 + U04 + U05 + U06 + U07 + U08 + U09 + U10 + U11 + U12 + U13 + BU01 + BU02 + BU03 +BU04 - G50S002Q3L4"
+      ]
+    },
+    {
+      "record_id": "IN-DGT-CTS-MAEE-V2",
+      "country": "India",
+      "country_group": "developing_emerging",
+      "institution": "Directorate General of Training (DGT), Ministry of Skill Development & Entrepreneurship",
+      "record_type": "national_curriculum",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Mechanic Auto Electrical & Electronics",
+      "sector": "Automotive / Electrical",
+      "framework": "NSQF (India)",
+      "level_as_published": "NSQF LEVEL – 3.5",
+      "duration_as_published": "One year (1200 hours + 150 hours OJT/Group Project)",
+      "entry_as_published": "Passed 10th class examination. Minimum Age 14 years as on first day of academic session.",
+      "modules": [
+        {
+          "published_ref": "LO1",
+          "code": "ASC/N1406",
+          "title_verbatim": "Use different types of tools and work shop equipment in the Auto work shopfollowing safety precautions.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO2",
+          "code": "ASC/N1406",
+          "title_verbatim": "Perform precision measurements on the components and compare parameters with specifications used in automotive work shop practices.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO3",
+          "code": "ASC/N1405",
+          "title_verbatim": "Use of different type of fastening and locking devices in a vehicle.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO4",
+          "code": "ASC/N1438",
+          "title_verbatim": "Perform basic fitting operations used in the work shop practices and inspection of dimensions.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO5",
+          "code": "ASC/N1406",
+          "title_verbatim": "Construct electrical circuits and test its parameters by using electrical measuring instruments.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO6",
+          "code": "ASC/N1406",
+          "title_verbatim": "Perform basic electrical testing in a vehicle.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO7",
+          "code": "ASC/N1406",
+          "title_verbatim": "Perform battery testing and charging operations.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO8",
+          "code": "ASC/N1435",
+          "title_verbatim": "Construct basic electronic circuits and testing.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO9",
+          "code": "ASC/N1406",
+          "title_verbatim": "Check & Interpret Vehicle Specification data and VIN, Select & operate various Service Station Equipment.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO10",
+          "code": "ASC/N1406",
+          "title_verbatim": "Identify the major components of LMV/HMV and dashboard gauges.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO11",
+          "code": "ASC/N1406",
+          "title_verbatim": "Identify and Check wiring circuits and the electrical components in the vehicle.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO12",
+          "code": "ASC/N1406",
+          "title_verbatim": "Trace /troubleshoot different wiring circuits in vehicle and prepare different electrical joints.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO13",
+          "code": "ASC/N1406",
+          "title_verbatim": "Check and overhaul the ignition system.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO14",
+          "code": "ASC/N1406",
+          "title_verbatim": "Apply appropriate rule and tools for starting and charging system and diagnose & rectify faults.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO15",
+          "code": "ASC/N9419",
+          "title_verbatim": "Identification and testing of electrical/ electronic controls in MPFI/CRDI systems",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO16",
+          "code": "ASC/N1406",
+          "title_verbatim": "Inspect power steering control module and troubleshoot in power steering.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO17",
+          "code": "ASC/N1406",
+          "title_verbatim": "Diagnosis for all comfort system.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO18",
+          "code": "ASC/N1406",
+          "title_verbatim": "Demonstrate the skill of automotive lighting system and their troubleshooting.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO19",
+          "code": "ASC/N1406",
+          "title_verbatim": "Troubleshoots in all electrical circuits.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO20",
+          "code": "PSS/N9401",
+          "title_verbatim": "Read and apply engineering drawing for different application in the field of work.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://bharatskills.gov.in/pdf/Curriculum/CTS/English/Mechanic%20Auto%20Electrical%20and%20Electronics.pdf",
+        "document_type": "pdf",
+        "document_sha256": "7bb979bd771c4c3eebaffd115d6abba09c3f82f2380bf6aa0c67bddb87205be0",
+        "publication_or_revision": "Version 2.0, revised March 2023",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "All 20 learning outcomes and NOS codes read from the rendered 5.1 Learning Outcomes page (PDF page 13, printed page 10) and matched against its pdf.js text layer; course facts from the general information table.",
+        "human_reviewed": false
+      },
+      "licence_note": "Government of India publication; reuse terms not checked.",
+      "notes": [
+        "A national curriculum delivered through Industrial Training Institutes (ITIs); no individual ITI has been verified.",
+        "DGT's NSQF level realignment letter of 04.12.2024 lists this trade at NSQF level 3.5, one year, 10th pass; no CTS 3.0 edition of this trade was found on 2026-10-18.",
+        "Retrieved from BharatSkills, DGT's official curriculum portal; the dgt.gov.in and CSTARI copies of this NSQF 3.5 edition returned 404 on 2026-10-18. The superseded NSQF 3 edition (July 2022) remains on dgt.gov.in and was not used.",
+        "LO1 is stored as published, including 'work shopfollowing'.",
+        "Employability Skills are listed separately and not stored."
+      ]
+    },
+    {
+      "record_id": "PH-TESDA-ASER-ELEC-NC2",
+      "country": "Philippines",
+      "country_group": "developing_emerging",
+      "institution": "Technical Education and Skills Development Authority (TESDA)",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Automotive Servicing (Electrical Repair) NC II",
+      "sector": "Automotive / Electrical",
+      "framework": "Philippine TVET Qualification (NC)",
+      "level_as_published": "NC II",
+      "duration_as_published": "Nominal Training Duration: 37 Hours (Basic Competencies), 162 Hours (Common Competencies), 213 Hours (Core Competencies), 412, 176 SIL, 588 TOTAL HOURS",
+      "entry_as_published": "A holder of National Certificate in Automotive Servicing NC I; Basic communication skills; Basic mathematical skills; Basic computer skills",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "400311210",
+          "title_verbatim": "Participate in workplace communication",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311211",
+          "title_verbatim": "Work in team environment",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311212",
+          "title_verbatim": "Solve/address general workplace problems",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311213",
+          "title_verbatim": "Develop career and life decisions",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311214",
+          "title_verbatim": "Contribute to workplace innovation",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311215",
+          "title_verbatim": "Present relevant information",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311216",
+          "title_verbatim": "Practice occupational safety and health policies and procedures",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311217",
+          "title_verbatim": "Exercise efficient and effective sustainable practices in the workplace",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311218",
+          "title_verbatim": "Practice entrepreneurial skills in the workplace",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723211",
+          "title_verbatim": "Validate vehicle specification",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723212",
+          "title_verbatim": "Move and position vehicle",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723214",
+          "title_verbatim": "Utilize automotive tools",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723215",
+          "title_verbatim": "Perform mensuration and calculation",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723216",
+          "title_verbatim": "Utilize workshop facilities and equipment",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723217",
+          "title_verbatim": "Prepare servicing parts and consumables",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723218",
+          "title_verbatim": "Prepare vehicle for servicing and releasing",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723392",
+          "title_verbatim": "Service manual air-conditioner system",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723393",
+          "title_verbatim": "Diagnose and repair manual air-conditioner system",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723394",
+          "title_verbatim": "Repair manual air-conditioner compressor magnetic clutch",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723395",
+          "title_verbatim": "Diagnose and repair ignition system",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723396",
+          "title_verbatim": "Diagnose and repair starting system",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723397",
+          "title_verbatim": "Diagnose and repair charging system",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723398",
+          "title_verbatim": "Diagnose and repair body electrical system",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://tesda.gov.ph/Downloadables/TR%20-%20Automotive%20Servicing%20(Electrical%20Repair)%20NC%20II.pdf",
+        "document_type": "pdf",
+        "document_sha256": "c1d1730360db233fcbde0cdea5c7774c703174affe09fb2b0b8d57abffbfa705",
+        "publication_or_revision": "Revision 01, promulgated 08/11/2020",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Units and codes read from the rendered Section 1 page (PDF page 5); hours from the Section 3.1 course design (PDF page 122); entry requirements from Section 3.3 (PDF page 161); all matched against the pdf.js text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Philippine government publication; reuse terms not checked.",
+      "notes": [
+        "A training regulation (standard), delivered by TESDA-registered institutions; no provider has been verified.",
+        "Listed as current in TESDA's list of promulgated training regulations (as of May 2022): Automotive Servicing (Electrical Repair) NC II, ALTASL220, 588 hours.",
+        "The core units cover air conditioning, ignition, starting, charging and body electrical systems; engine management and electronic fuel injection are not named in the unit titles.",
+        "Stores the 23 units of competency; learning outcomes and activities are not stored."
+      ],
+      "scope_verbatim": [
+        "The AUTOMOTIVE SERVICING (ELECTRICAL REPAIR) NC II Qualification consists of competencies that a person must achieve to service manual air- conditioner system, diagnose and repair manual air- conditioner system, repair manual air-conditioner compressor magnetic clutch, diagnose and repair ignition system, diagnose and repair starting system, diagnose and repair charging system and diagnose and repair body electrical system."
+      ]
+    },
+    {
+      "record_id": "AU-TGA-AUR30320",
+      "country": "Australia",
+      "country_group": "developed",
+      "institution": "Australian Government, training.gov.au (AUR Automotive Retail, Service and Repair Training Package)",
+      "record_type": "national_qualification",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Certificate III in Automotive Electrical Technology",
+      "sector": "Automotive / Electrical",
+      "framework": "AQF (Australia)",
+      "level_as_published": "Certificate III (national code AUR30320)",
+      "duration_as_published": null,
+      "entry_as_published": "Nil",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "AURAEA002",
+          "title_verbatim": "Follow environmental and sustainability best practice in an automotive workplace",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURASA102",
+          "title_verbatim": "Follow safe working practices in an automotive workplace",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETK002",
+          "title_verbatim": "Use and maintain electrical test equipment in an automotive workplace",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR006",
+          "title_verbatim": "Solder electrical wiring and circuits",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR007",
+          "title_verbatim": "Apply knowledge of automotive electrical circuits and wiring systems",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR009",
+          "title_verbatim": "Install vehicle lighting and wiring systems",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR010",
+          "title_verbatim": "Repair wiring harnesses and looms",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR027",
+          "title_verbatim": "Install ancillary electronic systems and components",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR112",
+          "title_verbatim": "Test and repair basic electrical circuits",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR123",
+          "title_verbatim": "Diagnose and repair spark ignition engine management systems",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR124",
+          "title_verbatim": "Diagnose and repair compression ignition engine management systems",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR125",
+          "title_verbatim": "Test, charge and replace batteries and jump-start vehicles",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR128",
+          "title_verbatim": "Diagnose and repair instruments and warning systems",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR129",
+          "title_verbatim": "Diagnose and repair charging systems",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR130",
+          "title_verbatim": "Diagnose and repair starting systems",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR131",
+          "title_verbatim": "Diagnose and repair ignition systems",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR132",
+          "title_verbatim": "Diagnose and repair automotive electrical systems",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR135",
+          "title_verbatim": "Apply knowledge of petrol and diesel engine operation",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR143",
+          "title_verbatim": "Diagnose and repair electronic body management systems",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURTTA118",
+          "title_verbatim": "Develop and carry out diagnostic test strategies",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURTTE104",
+          "title_verbatim": "Inspect and service engines",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://training.gov.au/assets/AUR/AUR30320_R5.pdf",
+        "document_type": "pdf",
+        "document_sha256": "7fc24027db3953f0928474eecc52e6c6c5cda215e3a3f4860a859a46aad954c1",
+        "publication_or_revision": "AUR30320 Release 5 (released 2026-07-09; status Current on training.gov.au)",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Core units read from the official qualification PDF (pages 3-4) and matched in order against its pdf.js text layer; every code, title and core status equals the training.gov.au Release 5 unit grid.",
+        "human_reviewed": false
+      },
+      "licence_note": "© Commonwealth of Australia, 2026; training package content is published under its own licence terms (not checked).",
+      "notes": [
+        "A national qualification, not a delivered programme; no delivering provider has been verified and no nominal duration is stated.",
+        "Stores the 21 core units (32 units in total: 21 core plus 11 electives). Hybrid, battery electric vehicle, air-conditioning and ADAS units are electives and not stored."
+      ],
+      "scope_verbatim": [
+        "This qualification reflects the role of individuals who service, diagnose and repair electrical systems and components in vehicles in the automotive electrical service and repair industry."
+      ]
+    }
+  ]
+}

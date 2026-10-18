@@ -6,7 +6,8 @@
 import coverageIndex from "./data/coverageIndex.json" with { type: "json" };
 
 export type CoverageState = "FULL_COMPARISON" | "COMPARATORS_ONLY" | "RESEARCH_PENDING" | "EVIDENCE_UNAVAILABLE";
-export type ResearchStatus = "COMPLETE" | "NOT_RESEARCHED" | "IN_PROGRESS" | "BLOCKED";
+// NO_DEFENSIBLE_COMPARATOR: researched, but no defensible official comparator with inspectable content was found.
+export type ResearchStatus = "COMPLETE" | "NOT_RESEARCHED" | "IN_PROGRESS" | "BLOCKED" | "NO_DEFENSIBLE_COMPARATOR";
 export type EvidenceAvailability = "HEADINGS_AVAILABLE" | "NO_HEADINGS" | "HEADINGS_UNUSABLE";
 
 export interface CoverageIndexEntry {
@@ -18,6 +19,7 @@ export interface CoverageIndexEntry {
   datasets: string[];
   mapping: boolean;
   blocking_evidence?: string;
+  research_note?: string;
 }
 
 export interface CourseCoverage {
@@ -29,6 +31,8 @@ export interface CourseCoverage {
   comparatorCount: number;
   hasMapping: boolean;
   blockingEvidence: string | null;
+  /** Documented reason why research found no defensible comparator (NO_DEFENSIBLE_COMPARATOR only). */
+  researchNote: string | null;
 }
 
 const INDEX = coverageIndex.courses as Record<string, CoverageIndexEntry>;
@@ -71,6 +75,7 @@ export function coverageForCourse(courseId: string): CourseCoverage | null {
     comparatorCount,
     hasMapping,
     blockingEvidence: entry.blocking_evidence ?? null,
+    researchNote: entry.research_note ?? null,
   };
 }
 
@@ -89,6 +94,10 @@ export function coveragePresentation(state: CoverageState): {
 
 export const MISSING_COMPARISON_CAUTION =
   "A missing comparison does not mean that suitable programmes do not exist.";
+
+/** Dashboard-level notice: comparator evidence is drawn from official sources but has not been independently reviewed. */
+export const EVIDENCE_REVIEW_NOTICE =
+  "Comparator records are taken from official published sources and have not yet been independently reviewed by a human reviewer. Treat comparisons as provisional.";
 
 /** What NYSC publishes for the course: about its own headings only, never about external evidence. */
 export function headingsMessage(coverage: CourseCoverage): string {
@@ -116,6 +125,9 @@ export function researchMessage(coverage: CourseCoverage): string {
     case "EVIDENCE_UNAVAILABLE":
       return `Comparator programmes: research was attempted, but the documented evidence is insufficient${coverage.blockingEvidence ? `: ${coverage.blockingEvidence}` : "."}`;
     default:
+      if (coverage.researchStatus === "NO_DEFENSIBLE_COMPARATOR") {
+        return "Comparator programmes: research was carried out, but no official comparator with inspectable curriculum content could be defensibly matched to this course.";
+      }
       return coverage.researchStatus === "IN_PROGRESS"
         ? "Comparator programmes: research is in progress; no comparator records have been verified yet."
         : "Comparator programmes: comparison research has not yet been completed, so no comparator records have been verified for this course.";
@@ -135,12 +147,20 @@ export function coverageNote(coverage: CourseCoverage): { title: string; lines: 
   if (coverage.state === "RESEARCH_PENDING" || coverage.state === "EVIDENCE_UNAVAILABLE") {
     lines.push(MISSING_COMPARISON_CAUTION);
   }
-  return { title: TITLES[coverage.state], lines };
+  if (coverage.researchNote) lines.push(`Research note: ${coverage.researchNote}`);
+  const title = coverage.state === "RESEARCH_PENDING" && coverage.researchStatus === "NO_DEFENSIBLE_COMPARATOR"
+    ? "No defensible comparison found"
+    : TITLES[coverage.state];
+  return { title, lines };
 }
 
 /** Areas to Investigate need a completed competency comparison. */
 export function areasUnavailableMessage(coverage: CourseCoverage): string {
-  return coverage.state === "COMPARATORS_ONLY"
-    ? "Areas to Investigate need a completed competency comparison against NYSC module headings, which is not available for this course."
-    : "Areas to Investigate will be identified once comparison research is completed and a competency comparison is available.";
+  if (coverage.state === "COMPARATORS_ONLY") {
+    return "Areas to Investigate need a completed competency comparison against NYSC module headings, which is not available for this course.";
+  }
+  if (coverage.researchStatus === "NO_DEFENSIBLE_COMPARATOR") {
+    return "Areas to Investigate are not available because research found no defensible comparator for this course.";
+  }
+  return "Areas to Investigate will be identified once comparison research is completed and a competency comparison is available.";
 }

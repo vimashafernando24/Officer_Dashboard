@@ -1,0 +1,262 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-construction-supervisor",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Comparator records for NYSC COURSE-023 and COURSE-060 Construction Site Supervisor. The governed catalogue publishes no module headings for these courses, so the records are shown without a competency matrix. Records describe documented curriculum only and do not establish equivalence, quality or labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its official source by a researcher before publication.",
+  "country_group_gaps": {
+    "developing_emerging": "No developing/emerging-economy construction site supervisor standard or curriculum was verified on 2026-10-18. TESDA's list of promulgated training regulations includes no site-supervision qualification; India's CSDCI 'Supervisor Structure (Technical)' (NSQF 5.5 upskilling) was seen only in search results and was not inspected."
+  },
+  "records": [
+    {
+      "record_id": "LK-TVEC-NCS-CONSTRUCTION-SITE-SUPERVISOR-2025",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "CONSTRUCTION SITE SUPERVISOR",
+      "sector": "Construction / Site supervision",
+      "framework": "NVQ (Sri Lanka)",
+      "level_as_published": "NVQ Level 4",
+      "duration_as_published": null,
+      "entry_as_published": "Passed GCE (O/L) examination",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "F45S006U01",
+          "title_verbatim": "Implement occupational health and safety procedures in a workplace",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "F45S006U02",
+          "title_verbatim": "Communicate with stakeholders",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "F45S006U03",
+          "title_verbatim": "Supervise construction site works",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "F45S006U04",
+          "title_verbatim": "Handle resources in the construction site",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "F45S006U05",
+          "title_verbatim": "Assure the quality of construction work",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "F45S006U06",
+          "title_verbatim": "Ensure welfare of employees",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "F45S006BU01",
+          "title_verbatim": "Apply workplace literacy and numeracy",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "F45S006BU02",
+          "title_verbatim": "Work in teams",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://nvq.gov.lk/report_inquires/NCS_Request_Pdf.php?nm=F45S006_4_NCS.pdf",
+        "document_type": "pdf",
+        "document_sha256": "cb7b264fd93536d32e412dccebe216d17d2a73cbbad25edcd3f0c51a482b126d",
+        "publication_or_revision": "Fourth Revision - April 2025 (endorsed 2025.04.08); next revision April 2028",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Unit titles and codes read from the rendered List of Competency Units and NVQ packaging (PDF page 8); endorsement and prerequisite from the detail page (PDF page 66); all matched against the pdf.js text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Copyright © 2025 TVEC; source states all rights reserved.",
+      "notes": [
+        "A national occupational standard and competency-based curriculum, not evidence that a named provider delivers the programme.",
+        "Stores the 8 competency units only; the curriculum modules and learning hours are not stored and no overall course duration is stated.",
+        "Revision 4 is the latest on the NVQ portal (revisions 2-4 are published; revision 5 was not found on 2026-10-18)."
+      ],
+      "scope_verbatim": [
+        "National Certificate at NVQ Level 4 in the occupation of Construction Site Supervisor will be awarded to those who are competent in U01+ U02+ U03+ U04+ U05+ U06+ BU01+ BU02 - F45S006Q1L4"
+      ]
+    },
+    {
+      "record_id": "AU-TGA-CPC40120-SITE-MANAGEMENT",
+      "country": "Australia",
+      "country_group": "developed",
+      "institution": "Australian Government, training.gov.au (CPC Construction, Plumbing and Services Training Package)",
+      "record_type": "national_qualification",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Certificate IV in Building and Construction (Site Management)",
+      "sector": "Construction / Site supervision",
+      "framework": "AQF (Australia)",
+      "level_as_published": "Certificate IV (national code CPC40120)",
+      "duration_as_published": null,
+      "entry_as_published": "There are no entry requirements for this qualification.",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "CPCCBC4001",
+          "title_verbatim": "Apply building codes and standards to the construction process for Class 1 and 10 Buildings",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "CPCCBC4002",
+          "title_verbatim": "Manage work health and safety in the building and construction workplace",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "CPCCBC4007",
+          "title_verbatim": "Plan building and construction work",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "CPCCBC4008",
+          "title_verbatim": "Supervise site communication and administration processes for building and construction projects",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "CPCCBC4009",
+          "title_verbatim": "Apply legal requirements to building and construction projects",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "CPCCBC4010",
+          "title_verbatim": "Apply structural principles to residential and commercial constructions",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "CPCCBC4012",
+          "title_verbatim": "Read and interpret plans and specifications",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "CPCCBC4014",
+          "title_verbatim": "Prepare simple building sketches and drawings",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "CPCCBC4018",
+          "title_verbatim": "Apply site surveys and set-out procedures to building and construction projects",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "CPCCBC4021",
+          "title_verbatim": "Minimise waste on the building and construction site",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "CPCCBC4053",
+          "title_verbatim": "Apply building codes and standards to the construction process for Class 2 to 9 Type C Buildings",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "CPCCBC4013",
+          "title_verbatim": "Prepare and evaluate tender documentation",
+          "outcome_verbatim": null,
+          "group": "Group B – Site Manager"
+        },
+        {
+          "published_ref": null,
+          "code": "CPCCBC4017",
+          "title_verbatim": "Arrange resources and prepare for the building and construction project",
+          "outcome_verbatim": null,
+          "group": "Group B – Site Manager"
+        },
+        {
+          "published_ref": null,
+          "code": "CPCCBC4052",
+          "title_verbatim": "Lead and manage teams in the building and construction industry",
+          "outcome_verbatim": null,
+          "group": "Group B – Site Manager"
+        },
+        {
+          "published_ref": null,
+          "code": "CPCCCO4001",
+          "title_verbatim": "Supervise concreting work",
+          "outcome_verbatim": null,
+          "group": "Group B – Site Manager"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://training.gov.au/assets/CPC/CPC40120_R8.pdf",
+        "document_type": "pdf",
+        "document_sha256": "1afc7493dc2110e88f68b80d7ce949d51ea41645b4085aea809e460a920e43f0",
+        "publication_or_revision": "CPC40120 Release 8 (released 2024-12-24; latest release and status Current on training.gov.au, 2026-10-18)",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Core and Group B units read from the official qualification PDF (pages 4-5) and matched in order against its pdf.js text layer; every code, title and core/elective status equals the training.gov.au Release 8 unit grid, except that the grid writes 'buildings' in lower case for CPCCBC4001 and CPCCBC4053 (the PDF core-list wording is stored); the Site Manager packaging rule and occupational titles from pages 3-4.",
+        "human_reviewed": false
+      },
+      "licence_note": "© Commonwealth of Australia, 2024; training package content is published under its own licence terms (not checked).",
+      "notes": [
+        "A national qualification, not a delivered programme; no delivering provider has been verified and no nominal duration is stated.",
+        "Stores the 11 core units and the 4 Group B units that the Site Manager outcome requires ('All Group B electives'); Group A and general electives are optional and not stored.",
+        "A broader Certificate IV covering builders and site managers of Class 1-10 buildings; Australian licensing requirements vary by state and are not part of the record.",
+        "Training.gov.au lists Release 8 as the latest release; a third-party search summary mentioning a Release 9 could not be confirmed on training.gov.au."
+      ],
+      "scope_verbatim": [
+        "Occupational titles depending on packaging options selected may include:",
+        "Construction Supervisor",
+        "Site Manager",
+        "Site Supervisor",
+        "To achieve the occupation outcome of Site Manager electives must include:",
+        "All Group B electives"
+      ]
+    }
+  ]
+}

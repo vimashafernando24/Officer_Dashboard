@@ -1,0 +1,399 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-graphic-design",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Comparator records for NYSC COURSE-016 and COURSE-068 Graphics Designer. The governed catalogue publishes no module headings for these courses, so the records are shown without a competency matrix. Records describe documented curriculum only and do not establish equivalence, quality or labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its official source by a researcher before publication.",
+  "country_group_gaps": {},
+  "records": [
+    {
+      "record_id": "LK-TVEC-NCS-GRAPHIC-DESIGNER-2025",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "GRAPHIC DESIGNER",
+      "sector": "Creative / Graphic design",
+      "framework": "NVQ (Sri Lanka)",
+      "level_as_published": "NVQ Level 4",
+      "duration_as_published": null,
+      "entry_as_published": "None",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "D22S002U01",
+          "title_verbatim": "Develop concepts and sketches",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "D22S002U02",
+          "title_verbatim": "Design and create graphics for print/publish products",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "D22S002U03",
+          "title_verbatim": "Design and create graphics for web and other types of multimedia",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "D22S002U04",
+          "title_verbatim": "Handle customer care service",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "D22S002BU01",
+          "title_verbatim": "Practice workplace communication and interpersonal relations",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "D22S002BU02",
+          "title_verbatim": "Apply occupational literacy and numeracy",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "D22S002BU03",
+          "title_verbatim": "Work in teams",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "D22S002BU04",
+          "title_verbatim": "Practice occupational health and safety measures",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://nvq.gov.lk/report_inquires/NCS_Request_Pdf.php?nm=D22S002_5_NCS.pdf",
+        "document_type": "pdf",
+        "document_sha256": "61c672f2efb2b8832d7252cb6df6e2d992d126ebc81f1fb639819f9a2a091d06",
+        "publication_or_revision": "Fifth Revision April 2025 (endorsed 08.04.2025); next revision April 2028",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Unit titles and codes read from the rendered List of Competency Units and NVQ packaging (PDF page 8); endorsement and prerequisite from the detail page (PDF page 54); all matched against the pdf.js text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Copyright © 2025 TVEC; source states all rights reserved.",
+      "notes": [
+        "A national occupational standard and competency-based curriculum, not evidence that a named provider delivers the programme.",
+        "Stores the 8 competency units only; the curriculum modules and learning hours are not stored and no overall course duration is stated.",
+        "Revision 5 is the latest on the NVQ portal (revisions 2-5 are published; revision 6 was not found on 2026-10-18)."
+      ],
+      "scope_verbatim": [
+        "National Certificate at NVQ Level 4 in the occupation of Graphic Designer will be awarded to those who are competent in U01 + U02 + U03 + U04 + BU01 + BU02 + BU03 + BU04 - D22S002Q1L4"
+      ]
+    },
+    {
+      "record_id": "PH-TESDA-VGD-NC3",
+      "country": "Philippines",
+      "country_group": "developing_emerging",
+      "institution": "Technical Education and Skills Development Authority (TESDA)",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Visual Graphic Design NC III",
+      "sector": "Creative / Graphic design",
+      "framework": "Philippine TVET Qualification (NC)",
+      "level_as_published": "NC III",
+      "duration_as_published": "Nominal Training Duration: 68 hrs Basic Competencies, 28 hrs Common Competencies, 405 hrs Core Competencies, Total 501 hrs",
+      "entry_as_published": "Must have completed at least 10 yrs. basic education or an alternative learning systems (ALS) certificate of completion with grade 10 equivalent holder; Must have drawing and drafting skills; can communicate either oral and written; Must have computer operation skills and at least 1 graphic software knowledge and skills; must pass the aptitude and artistic/talent determination test given by the institution",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "500311109",
+          "title_verbatim": "Lead workplace communication",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311110",
+          "title_verbatim": "Lead small teams",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311111",
+          "title_verbatim": "Develop and practice negotiation skills",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311112",
+          "title_verbatim": "Solve problems related to work activities",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311113",
+          "title_verbatim": "Use mathematical concepts and techniques",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311114",
+          "title_verbatim": "Use relevant technologies",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311142",
+          "title_verbatim": "Apply critical thinking and problem solving techniques in the workplace",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311144",
+          "title_verbatim": "Use information creatively and critically",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311145",
+          "title_verbatim": "Work in a diverse environment",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ICT315202",
+          "title_verbatim": "Apply quality standards",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ICT311203",
+          "title_verbatim": "Perform computer operations",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ICT216313",
+          "title_verbatim": "Develop designs for a logo",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ICT216314",
+          "title_verbatim": "Develop designs for print media",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ICT216315",
+          "title_verbatim": "Develop designs for user experience",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ICT216316",
+          "title_verbatim": "Develop designs for user interface",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ICT216317",
+          "title_verbatim": "Develop designs for product packaging",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ICT216318",
+          "title_verbatim": "Design booth and product/window display",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://www.tesda.gov.ph/Downloadables/TR%20-%20Visual%20Graphic%20Design%20NC%20III.pdf",
+        "document_type": "pdf",
+        "document_sha256": "8203027b927b7f570fa52fce28966f47379741cd9ec8d125d693a8175296813e",
+        "publication_or_revision": "Version 01 (ICTVGD318), amended February 27, 2018",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Units, codes and scope read from the rendered Section 1 page (PDF page 5); hours, entry requirements and qualification code from Section 3 and the revision history; all matched against the pdf.js text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Philippine government publication; reuse terms not checked.",
+      "notes": [
+        "A training regulation (standard), delivered by TESDA-registered institutions; no provider has been verified.",
+        "Listed as current in TESDA's list of promulgated training regulations (as of May 2022): Visual Graphic Design NC III, ICTVGD318, 501 hours, promulgated 02/27/18; the 2007 version is listed as amended.",
+        "The basic competencies include no occupational health and safety unit.",
+        "Stores the 17 units of competency; learning outcomes and activities are not stored."
+      ],
+      "scope_verbatim": [
+        "The VISUAL GRAPHIC DESIGN NC III Qualification consists of competencies that a person must achieve to design and develop visual graphic designs for (i) logo; (ii) print media; (iii) user experience; (iv) user interface; (v) product packaging; and (iv) booth and product/window display."
+      ]
+    },
+    {
+      "record_id": "SG-ITE-HNITEC-COMMDESIGN-2Y",
+      "country": "Singapore",
+      "country_group": "developed",
+      "institution": "Institute of Technical Education (ITE)",
+      "record_type": "programme",
+      "delivering_provider_verified": true,
+      "title_verbatim": "Higher Nitec in Communication Design (2 years)",
+      "sector": "Creative / Graphic design",
+      "framework": "ITE Nitec / Higher Nitec (Singapore)",
+      "level_as_published": "Higher Nitec",
+      "duration_as_published": "2 years; Total: 68 credits",
+      "entry_as_published": null,
+      "modules": [
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Image Making",
+          "outcome_verbatim": "On completion of this module, students should be able to apply various techniques used in digital imaging and develop the visual concept.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Visual Design Principles",
+          "outcome_verbatim": "On completion of the module, students should be able to create compelling graphic design demonstrating solid understanding of visual design principles.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Motion Design Principles",
+          "outcome_verbatim": "On completion of this module, students should be able to apply motion design principles to create compelling sequences using various mixed design elements.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Professional Practices",
+          "outcome_verbatim": "On completion of the module, students should be able to create a digital portfolio that will represent their works with self-branding which leverages on various relevant media platforms.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Typography & Infographics",
+          "outcome_verbatim": "On completion of this module, students should be able to customise typography and create infographic from given data.",
+          "group": "Specialisation Modules (Graphic Design)"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Advanced Digital Photography",
+          "outcome_verbatim": "On completion of this module, students should be able to apply the proper techniques in photography and understand the use of various photographic equipment.",
+          "group": "Specialisation Modules (Graphic Design)"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Advanced Digital Imaging",
+          "outcome_verbatim": "On completion of this module, students should be able to apply digital imaging techniques using image-editing software to create graphics and illustration.",
+          "group": "Specialisation Modules (Graphic Design)"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Identity & Layout Design",
+          "outcome_verbatim": "On completion of this module, students should be able to create pictograms and apply effective typography onto design layouts and compositions using software applications.",
+          "group": "Specialisation Modules (Graphic Design)"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "User Experience Design & Prototyping",
+          "outcome_verbatim": "On completion of this module, students should be able to create interfaces with a focus on enhancing user satisfaction by improving usability and accessibility.",
+          "group": "Specialisation Modules (Graphic Design)"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Web Technologies Essentials",
+          "outcome_verbatim": "On completion of this module, students should be able to create a desktop website using HTML5, CSS3.",
+          "group": "Specialisation Modules (Graphic Design)"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Content Management System",
+          "outcome_verbatim": "On completion of the module, students should be able to create, manage, and publish dynamic web content using Content Management System (CMS).",
+          "group": "Specialisation Modules (Graphic Design)"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Brand Experience Design",
+          "outcome_verbatim": "On completion of the module, students should be able to collect research and effectively create a brand identity and its touchpoints.",
+          "group": "Specialisation Modules (Graphic Design)"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Brand Application",
+          "outcome_verbatim": "On completion of the module, students should be able to design and develop innovative applications using various forms and materials while demonstrating knowledge of effective print packaging and prepress concepts and techniques.",
+          "group": "Specialisation Modules (Graphic Design)"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://isomer-user-content.by.gov.sg/145/1b17e459-98a2-40e4-8169-ad90ac98b97e/Higher%20Nitec%20in%20COMMUNICATION%20Design%20(2%20YEARS).pdf",
+        "document_type": "pdf",
+        "document_sha256": "49ec410eb862f392a9cb1b24e76fc7cc022cf196edfca34f18f4ec3570c0666c",
+        "publication_or_revision": "Last updated on 28 Nov 2025",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Modules and objectives extracted from the PDF linked on ITE's official course page (Higher Nitec in Communication Design) and matched against its pdf.js text layer; objectives joined across line breaks.",
+        "human_reviewed": false
+      },
+      "licence_note": "Singapore Government agency publication; reuse terms not checked.",
+      "notes": [
+        "Offered at ITE College Central; course duration 24 months; graduates of the Graphic Design specialisation serve the industry as Graphic Designer, Illustrator and Photographer (official course page, 2026-10-18).",
+        "Stores the 4 cluster core modules and the 9 Graphic Design specialisation modules with their objectives; the Animation & Motion Graphics specialisation, internship, life skills, cross-disciplinary core and elective modules are not stored.",
+        "The course structure lists 'Brand Application'; the module objectives section heads the same module 'Brand Applications'. The structure title is stored.",
+        "Australia's CUA40720 Certificate IV in Design (Release 1) was inspected but not used: it is a general design qualification whose graphic design units are optional electives."
+      ]
+    }
+  ]
+}

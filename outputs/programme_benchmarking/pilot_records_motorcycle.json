@@ -1,0 +1,725 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-motorcycle",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Comparator records for NYSC COURSE-030 and COURSE-078 Motorcycle Mechanic. The governed catalogue publishes no module headings for these courses, so the records are shown without a competency matrix. Records describe documented curriculum only and do not establish equivalence, quality or labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its official source by a researcher before publication.",
+  "country_group_gaps": {},
+  "records": [
+    {
+      "record_id": "LK-TVEC-NCS-MOTORCYCLE-TECHNICIAN-2025",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "MOTORCYCLE TECHNICIAN",
+      "sector": "Automotive / Motorcycle",
+      "framework": "NVQ (Sri Lanka)",
+      "level_as_published": "NVQ Level 03 (Motorcycle Mechanic); NVQ Level 04 (Motorcycle Technician)",
+      "duration_as_published": null,
+      "entry_as_published": "For NVQ Level 02 & 03 Qualification - None; For NVQ Level 04 Qualification – Level 03",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "G50S006U01",
+          "title_verbatim": "Perform cleaning of motorcycle",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S006U02",
+          "title_verbatim": "Perform periodical maintenance of motorcycle",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S006U03",
+          "title_verbatim": "Repair electrical components of motorcycle",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S006U04",
+          "title_verbatim": "Diagnose and rectify faults in steering and suspension systems",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S006U05",
+          "title_verbatim": "Diagnose and rectify faults in braking system",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S006U06",
+          "title_verbatim": "Diagnose and rectify faults in power train fitted with internal combustion engine",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S006U07",
+          "title_verbatim": "Diagnose and rectify faults in fuel system fitted with carburetor",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S006U08",
+          "title_verbatim": "Diagnose and rectify electrical & electronically controlled systems and components",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S006U09",
+          "title_verbatim": "Perform collision repair and restoration work",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S006U10",
+          "title_verbatim": "Plan and operate motorcycle repair workshop",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S006BU01",
+          "title_verbatim": "Practice workplace communication and interpersonal relations",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S006BU02",
+          "title_verbatim": "Apply occupational literacy and numeracy",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S006BU03",
+          "title_verbatim": "Work in teams",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G50S006BU04",
+          "title_verbatim": "Practice occupational health and safety procedures in a workplace",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://nvq.gov.lk/report_inquires/NCS_Request_Pdf.php?nm=G50S006_4_NCS.pdf",
+        "document_type": "pdf",
+        "document_sha256": "a363336d93624176de48b1282d0a53f705790198f318b4df39f834a98ae2da50",
+        "publication_or_revision": "Fourth revision - September 2025 (endorsed 09.09.2025); next revision September 2028",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Unit titles and codes read from the rendered List of Competency Units and NVQ packaging (PDF page 8); endorsement and prerequisites from the detail page (PDF page 85); all matched against the pdf.js text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Copyright © 2025 TVEC; source states all rights reserved.",
+      "notes": [
+        "A national occupational standard and competency-based curriculum, not evidence that a named provider delivers the programme.",
+        "Stores the 14 competency units only; the curriculum modules and learning hours are not stored and no overall course duration is stated.",
+        "The NYSC course title is Motorcycle Mechanic; in this standard 'Motorcycle Mechanic' is the NVQ Level 03 package and 'Motorcycle Technician' the NVQ Level 04 package. Both packaging passages are stored.",
+        "The source is internally inconsistent: the packaging on page 8 awards NVQ Level 04 without U10 (U10 earns a record of achievement), while the endorsement page lists U10 in G50S006Q4L4. Both statements are shown as published; neither is resolved here.",
+        "The unit list numbers the basic units 14-17 after unit 10, as published.",
+        "Covers motorcycles only; it does not name three-wheelers."
+      ],
+      "scope_verbatim": [
+        "National Certificate at NVQ Level 03 in the occupation of Motorcycle Mechanic will be awarded to those who are competent in U01+ U02+ U03+ U04+ U05+ U07+ BU01+ BU02+ BU03+ BU04 G50S006Q3L3",
+        "National Certificate at NVQ Level 04 in the occupation of Motorcycle Technician will be awarded to those who are competent in U01+ U02+ U03+ U04+ U05+ U06+ U07+ U08+ U09 + BU01+ BU02+ BU03+ BU04– G50S006Q4L4",
+        "Record of achievement (ROA) will be awarded to those who are competent in G50S006U10 unit"
+      ]
+    },
+    {
+      "record_id": "IN-DGT-CTS-2W3W-V2",
+      "country": "India",
+      "country_group": "developing_emerging",
+      "institution": "Directorate General of Training (DGT), Ministry of Skill Development & Entrepreneurship",
+      "record_type": "national_curriculum",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Mechanic Two & Three Wheeler",
+      "sector": "Automotive / Two- and three-wheelers",
+      "framework": "NSQF (India)",
+      "level_as_published": "NSQF LEVEL – 3.5",
+      "duration_as_published": "One year (1200 hours + 150 hours OJT/Group Project)",
+      "entry_as_published": "Passed 10th class examination with Science and Mathematics or its equivalent. Minimum Age 14 years as on first day of academic session.",
+      "modules": [
+        {
+          "published_ref": "LO1",
+          "code": "ASC/N9801",
+          "title_verbatim": "Comply with environment regulations and housekeeping in the work shop following safety precautions.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO2",
+          "code": "ASC/N1420",
+          "title_verbatim": "Check &Perform precision measurements and marking by using various measures and marking tools used in automotive work shop practices.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO3",
+          "code": "ASC/N1420",
+          "title_verbatim": "Plan and Perform basic fastening and fittings operation by using correct hand tools, machine tools and equipments.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO4",
+          "code": "ASC/N1420",
+          "title_verbatim": "Construct electrical circuits and test its parameters by using electrical measuring instruments.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO5",
+          "code": "ASC/N1420",
+          "title_verbatim": "Perform basic electrical testing in two and three wheelers.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO6",
+          "code": "ASC/N1420",
+          "title_verbatim": "Perform battery testing and charging operations.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO7",
+          "code": "ASC/N1435",
+          "title_verbatim": "Construct basic electronic circuits and testing.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO8",
+          "code": "CSC/N0304",
+          "title_verbatim": "Join Components by using Arc & Gas welding.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO9",
+          "code": "ASC/N1420",
+          "title_verbatim": "Check and interpret vehicle specification data and VIN, select & operate various service station equipment.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO10",
+          "code": "ASC/N1420",
+          "title_verbatim": "Carry out the general servicing of two and three wheelers.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO11",
+          "code": "ASC/N9426",
+          "title_verbatim": "Carry out Engine overhaul of two/three wheelers.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO12",
+          "code": "ASC/N9427",
+          "title_verbatim": "Overhauling of cylinder head assembly.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO13",
+          "code": "ASC/N1420",
+          "title_verbatim": "Diagnosis and trouble shoot for excessive smoke, engine overheating and abnormal noise.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO14",
+          "code": "ASC/N1420",
+          "title_verbatim": "Carry out Servicing of fuel tank.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO15",
+          "code": "ASC/N1420",
+          "title_verbatim": "Carry out overhauling of steering and suspension system.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO16",
+          "code": "ASC/N1420",
+          "title_verbatim": "Overhauling front and rear wheels, brake.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO17",
+          "code": "ASC/N9428",
+          "title_verbatim": "Overhaul automatic/manual transmission of two and three wheeler.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO18",
+          "code": "ASC/N9429",
+          "title_verbatim": "Overhaul AC generator.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO19",
+          "code": "ASC/N1420",
+          "title_verbatim": "Check ignition circuit for proper functioning.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO20",
+          "code": "ASC/N9430",
+          "title_verbatim": "Overhaul the LPG/ CNG fuel supply system and check exhaust smoke.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO21",
+          "code": "ASC/N9431",
+          "title_verbatim": "Carry out servicing and maintenance of Electric two and three wheeler.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO22",
+          "code": "ASC/N9432",
+          "title_verbatim": "Carryout survey of fuel injection system components.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO23",
+          "code": "CSC/N9401",
+          "title_verbatim": "Read and apply engineering drawing for different application in the field of work.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO24",
+          "code": "CSC/N9402",
+          "title_verbatim": "Demonstrate basic mathematical concept and principles to perform practical operations. Understand and explain basic science in the field of study.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://www.dgt.gov.in/sites/default/files/2025-01/Mech%20Two%20%26%20Three%20Wheeler_CTS2.0_NSQF-3.5.pdf",
+        "document_type": "pdf",
+        "document_sha256": "75203945c8e0a89dcb57a0248cbe7629f73d53c2d78390136dbbee1e224eb3cb",
+        "publication_or_revision": "Version 2.0, revised March 2023",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "All 24 learning outcomes and NOS codes read from the rendered 5.1 Learning Outcomes page (PDF page 13, printed page 5) and matched against its pdf.js text layer; course facts from the general information table.",
+        "human_reviewed": false
+      },
+      "licence_note": "Government of India publication; reuse terms not checked.",
+      "notes": [
+        "A national curriculum delivered through Industrial Training Institutes (ITIs); no individual ITI has been verified.",
+        "DGT's NSQF level realignment letter of 04.12.2024 lists this trade at NSQF level 3.5, one year, 10th pass; no CTS 3.0 edition of this trade was found on 2026-10-18.",
+        "Covers both two-wheelers and three-wheelers, including LPG/CNG fuel systems and electric two and three wheelers.",
+        "Employability Skills are listed separately and not stored."
+      ]
+    },
+    {
+      "record_id": "PH-TESDA-MOTORCYCLE-NC2",
+      "country": "Philippines",
+      "country_group": "developing_emerging",
+      "institution": "Technical Education and Skills Development Authority (TESDA)",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Motorcycle/Small Engine Servicing NC II",
+      "sector": "Automotive / Motorcycle",
+      "framework": "Philippine TVET Qualification (NC)",
+      "level_as_published": "NC II",
+      "duration_as_published": "Nominal Training Duration: 18 Hours (Basic), 88 Hours (Common), 544 Hours (Core), 650 Hours",
+      "entry_as_published": "Can communicate both orally and in writing; Can perform basic mathematical computation; At least Senior High School (Grade 11) level; At least holder of Student Permit or LTO license (Restriction Code 1)",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "500311105",
+          "title_verbatim": "Participate in Workplace Communication",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311106",
+          "title_verbatim": "Work in a Team Environment",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311107",
+          "title_verbatim": "Practice Career Professionalism",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311108",
+          "title_verbatim": "Practice Occupational Health and Safety Procedures",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723201",
+          "title_verbatim": "Apply Appropriate Sealant/Adhesive",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723202",
+          "title_verbatim": "Move and Position Vehicle",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT311202",
+          "title_verbatim": "Perform Mensuration and Calculation",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723203",
+          "title_verbatim": "Read, Interpret and Apply Specifications and Manuals",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723204",
+          "title_verbatim": "Use and Apply Lubricants/Coolants",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723205",
+          "title_verbatim": "Perform Shop Maintenance",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT311211",
+          "title_verbatim": "Prepare Job Estimate/Costing",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT311212",
+          "title_verbatim": "Observe Quality Systems",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723213",
+          "title_verbatim": "Perform Periodic Maintenance",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723372",
+          "title_verbatim": "Service motorcycle/small engine system",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723373",
+          "title_verbatim": "Service Electrical System",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723374",
+          "title_verbatim": "Service Chassis",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ALT723375",
+          "title_verbatim": "Overhaul Motorcycle/Small Engine",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://tesda.gov.ph/Downloadables/TR%20-%20Motorcycle%20%20Small%20Engine%20Servicing%20NC%20%20II.pdf",
+        "document_type": "pdf",
+        "document_sha256": "8f0aba5f5258364208594eacef9b90eba9bd8cad8a6218fb5247a3071ba6a0c5",
+        "publication_or_revision": "TR- Motorcycle/Small Engine Servicing NC II (Amended) Promulgated December 2015",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Units, codes and scope read from the rendered Section 1 page (PDF page 5); hours from the Section 3.1 course design (PDF page 104); entry requirements from Section 3.3 (PDF page 149); all matched against the pdf.js text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Philippine government publication; reuse terms not checked.",
+      "notes": [
+        "A training regulation (standard), delivered by TESDA-registered institutions; no provider has been verified.",
+        "Listed as current in TESDA's list of promulgated training regulations (as of May 2022): Motorcycle/Small Engine Servicing NC II, ALTMSE215, 650 hours, promulgated 12/16/15.",
+        "Covers motorcycles and small engines; it does not name three-wheelers.",
+        "Stores the 17 units of competency; learning outcomes and activities are not stored."
+      ],
+      "scope_verbatim": [
+        "The MOTORCYCLE/SMALL ENGINE SERVICING NC II Qualification consists of competencies that a person must achieve to install and service parts of motorcycle/small engine and to perform periodic maintenance. Servicing includes inspecting, diagnosing, cleaning and overhauling of mechanical and electrical parts, components, assemblies and sub-assemblies of the unit."
+      ]
+    },
+    {
+      "record_id": "AU-TGA-AUR30820",
+      "country": "Australia",
+      "country_group": "developed",
+      "institution": "Australian Government, training.gov.au (AUR Automotive Retail, Service and Repair Training Package)",
+      "record_type": "national_qualification",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Certificate III in Motorcycle Mechanical Technology",
+      "sector": "Automotive / Motorcycle",
+      "framework": "AQF (Australia)",
+      "level_as_published": "Certificate III (national code AUR30820)",
+      "duration_as_published": null,
+      "entry_as_published": "Nil",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "AURAEA002",
+          "title_verbatim": "Follow environmental and sustainability best practice in an automotive workplace",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURASA102",
+          "title_verbatim": "Follow safe working practices in an automotive workplace",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR112",
+          "title_verbatim": "Test and repair basic electrical circuits",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR125",
+          "title_verbatim": "Test, charge and replace batteries and jump-start vehicles",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURETR131",
+          "title_verbatim": "Diagnose and repair ignition systems",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURJTB101",
+          "title_verbatim": "Diagnose and repair motorcycle braking systems",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURJTD103",
+          "title_verbatim": "Diagnose and repair motorcycle suspension systems",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURJTD104",
+          "title_verbatim": "Diagnose and repair motorcycle steering systems",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURJTE101",
+          "title_verbatim": "Diagnose and repair motorcycle engines",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURJTE103",
+          "title_verbatim": "Inspect and service motorcycle engines",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURJTE104",
+          "title_verbatim": "Diagnose and repair motorcycle engine management systems",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURJTQ102",
+          "title_verbatim": "Diagnose and repair motorcycle driveline systems",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURJTR102",
+          "title_verbatim": "Diagnose and repair motorcycle charging systems",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURJTR103",
+          "title_verbatim": "Diagnose and repair motorcycle starting systems",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURJTR104",
+          "title_verbatim": "Diagnose and repair motorcycle dynamic control systems",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURJTX101",
+          "title_verbatim": "Diagnose and repair motorcycle clutch systems",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURJTX102",
+          "title_verbatim": "Diagnose and repair motorcycle manual transmissions",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURTTA118",
+          "title_verbatim": "Develop and carry out diagnostic test strategies",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURTTB101",
+          "title_verbatim": "Inspect and service braking systems",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURTTC103",
+          "title_verbatim": "Diagnose and repair cooling systems",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURTTF101",
+          "title_verbatim": "Inspect and service petrol fuel systems",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURTTF106",
+          "title_verbatim": "Diagnose and repair petrol carburettor systems",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        },
+        {
+          "published_ref": null,
+          "code": "AURTTK102",
+          "title_verbatim": "Use and maintain tools and equipment in an automotive workplace",
+          "outcome_verbatim": null,
+          "group": "Core Units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://training.gov.au/assets/AUR/AUR30820_R2.pdf",
+        "document_type": "pdf",
+        "document_sha256": "a0d0c1491137f424a7f4978d63118414581e6e087d7f05e184476d6858fa0422",
+        "publication_or_revision": "AUR30820 Release 2 (released 2026-07-09; status Current on training.gov.au)",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Core units read from the official qualification PDF (pages 2-3) and matched in order against its pdf.js text layer; every code, title and core status equals the training.gov.au Release 2 unit grid.",
+        "human_reviewed": false
+      },
+      "licence_note": "© Commonwealth of Australia, 2026; training package content is published under its own licence terms (not checked).",
+      "notes": [
+        "A national qualification, not a delivered programme; no delivering provider has been verified and no nominal duration is stated.",
+        "Stores the 23 core units (36 units in total: 23 core plus 13 electives). Electives such as AURETR053 'Apply awareness of Advanced Rider Assistance Systems (ARAS)' are optional and not stored.",
+        "Covers motorcycles only; it does not name three-wheelers."
+      ],
+      "scope_verbatim": [
+        "This qualification reflects the role of individuals who perform a broad range of tasks on a variety of motorcycles in the automotive service and repair industry."
+      ]
+    }
+  ]
+}

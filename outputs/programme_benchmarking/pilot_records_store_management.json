@@ -1,0 +1,328 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-store-management",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Comparator records for NYSC COURSE-084 Store Management. The governed catalogue publishes no module headings for this course, so the records are shown without a competency matrix. Records describe documented curriculum only and do not establish equivalence, quality or labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its official source by a researcher before publication.",
+  "country_group_gaps": {},
+  "records": [
+    {
+      "record_id": "LK-TVEC-NCS-STORE-KEEPER-2019",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "LOGISTICS OPERATIONS (STORE KEEPER)",
+      "sector": "Logistics / Stores",
+      "framework": "NVQ (Sri Lanka)",
+      "level_as_published": "NVQ Level 03 and 04",
+      "duration_as_published": null,
+      "entry_as_published": "The candidate should have been found competent in “Basic Competencies to work” to be eligible for the award of this qualification. The candidate may concurrently apply for” Basic Competencies to Work “and this qualification.",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "I63S001U01",
+          "title_verbatim": "Order Goods and Material for Stock",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "I63S001U02",
+          "title_verbatim": "Inbound Logistics",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "I63S001U03",
+          "title_verbatim": "Maintain Stocks",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "I63S001U04",
+          "title_verbatim": "Outbound Logistics",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "I63S001U05",
+          "title_verbatim": "Perform Stock Verification",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "I63S001U06",
+          "title_verbatim": "Perform Store Management Activities",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Carryout Workplace Communication",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Apply Occupational Literacy and Numeracy",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Work in Teams",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Practice Occupational Health and Safety Procedures in Workplace",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://nvq.gov.lk/report_inquires/NCS_Request_Pdf.php?nm=I63S001_2_NCS.pdf",
+        "document_type": "pdf",
+        "document_sha256": "99dbe47ce6c347b9f3b60e69c68b73af7fc66eda7f9d5adc6fb638bde91368cf",
+        "publication_or_revision": "Second Revision 2019 October (endorsed 31.12.2019; date for review 31.12.2022)",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Unit titles and codes read from the contents list (PDF page 4); NVQ packaging, endorsement and prerequisite from the detail page (PDF page 58); all matched against the pdf.js text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Copyright TVEC; source states all rights reserved.",
+      "notes": [
+        "A national occupational standard, not evidence that a named provider delivers the programme.",
+        "Stores the 10 competency units only; the curriculum modules are not stored and no overall course duration is stated.",
+        "The four basic units carry only the standard code 'I63S001' in the source, without a unit number; their codes are left null.",
+        "The stated date for review (31.12.2022) has passed and the NVQ portal serves no later revision (2026-10-18)."
+      ],
+      "scope_verbatim": [
+        "National Certificate at NVQ Level 4 in the occupation of Logistic Operations (Store Keeper) will be awarded to those who are competent in units 1+2+3+4+5+6+7+8+9+10 - I63S001Q2L4"
+      ]
+    },
+    {
+      "record_id": "IN-DGT-ATS-STORAGE-INVENTORY-EXECUTIVE",
+      "country": "India",
+      "country_group": "developing_emerging",
+      "institution": "Directorate General of Training (DGT), Ministry of Skill Development & Entrepreneurship",
+      "record_type": "national_curriculum",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Storage and Inventory Executive (Warehouse / Manufacturing Plant)",
+      "sector": "Logistics / Stores",
+      "framework": "Apprenticeship Training Scheme (India)",
+      "level_as_published": null,
+      "duration_as_published": "15 Months (Basic Training 3 months / 500 Hrs; Practical Training / On-the-job Training 12 Months)",
+      "entry_as_published": "Passed 10th Class",
+      "modules": [
+        {
+          "published_ref": "SO1",
+          "code": null,
+          "title_verbatim": "Collect the items after unloading from truck.",
+          "outcome_verbatim": null,
+          "group": "Specific outcome"
+        },
+        {
+          "published_ref": "SO2",
+          "code": null,
+          "title_verbatim": "Allocate the items to storage at proper location using standard storing procedure.",
+          "outcome_verbatim": null,
+          "group": "Specific outcome"
+        },
+        {
+          "published_ref": "SO3",
+          "code": null,
+          "title_verbatim": "Perform physical counting of goods after the receipt of list of stored items.",
+          "outcome_verbatim": null,
+          "group": "Specific outcome"
+        },
+        {
+          "published_ref": "SO4",
+          "code": null,
+          "title_verbatim": "Carryout Cross verification of the physical count with the system numbers.",
+          "outcome_verbatim": null,
+          "group": "Specific outcome"
+        },
+        {
+          "published_ref": "SO5",
+          "code": null,
+          "title_verbatim": "Locate the missing items for reconciliation.",
+          "outcome_verbatim": null,
+          "group": "Specific outcome"
+        },
+        {
+          "published_ref": "SO6",
+          "code": null,
+          "title_verbatim": "Prepare a detailed reports for the management.",
+          "outcome_verbatim": null,
+          "group": "Specific outcome"
+        },
+        {
+          "published_ref": "SO7",
+          "code": null,
+          "title_verbatim": "A detailed understanding of the different items stored in the warehouse",
+          "outcome_verbatim": null,
+          "group": "Specific outcome"
+        },
+        {
+          "published_ref": "SO8",
+          "code": null,
+          "title_verbatim": "Identify missing items and locate floating inventory in the warehouse.",
+          "outcome_verbatim": null,
+          "group": "Specific outcome"
+        },
+        {
+          "published_ref": "SO9",
+          "code": null,
+          "title_verbatim": "Count accurately the physical goods.",
+          "outcome_verbatim": null,
+          "group": "Specific outcome"
+        },
+        {
+          "published_ref": "SO10",
+          "code": null,
+          "title_verbatim": "Plan and organize assigned work",
+          "outcome_verbatim": null,
+          "group": "Specific outcome"
+        },
+        {
+          "published_ref": "SO11",
+          "code": null,
+          "title_verbatim": "Detect & resolve issues during execution demonstrate possible solutions and agree tasks within the team.",
+          "outcome_verbatim": null,
+          "group": "Specific outcome"
+        },
+        {
+          "published_ref": "SO12",
+          "code": null,
+          "title_verbatim": "Communicate with required clarity and understand technical English.",
+          "outcome_verbatim": null,
+          "group": "Specific outcome"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://dgt.gov.in/sites/default/files/2025-01/Storage_amp.pdf",
+        "document_type": "pdf",
+        "document_sha256": "6aacaf70569a90a856b81347769a1afa9872a36f25200f136aad82a3adc282cf",
+        "publication_or_revision": "Official ATS curriculum; revision date not stated in inspected PDF",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "The 12 specific learning outcomes read from the Learning Outcomes page (PDF page 10) and matched against its pdf.js text layer; duration and entry from PDF page 2.",
+        "human_reviewed": false
+      },
+      "licence_note": "Government of India publication; reuse terms not checked.",
+      "notes": [
+        "An apprenticeship-scheme curriculum delivered through establishments engaging apprentices; no delivering establishment has been verified.",
+        "Developed with the Logistics Sector Skill Council; no NSQF level or revision date is stated in the inspected PDF.",
+        "Stores the 12 specific outcomes; the generic outcomes and syllabus are not stored."
+      ]
+    },
+    {
+      "record_id": "AU-TGA-TLI30325-WAREHOUSING",
+      "country": "Australia",
+      "country_group": "developed",
+      "institution": "Australian Government, training.gov.au (TLI Transport and Logistics Training Package)",
+      "record_type": "national_qualification",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Certificate III in Supply Chain Operations (Warehousing operations)",
+      "sector": "Logistics / Warehousing",
+      "framework": "AQF (Australia)",
+      "level_as_published": "Certificate III (national code TLI30325)",
+      "duration_as_published": null,
+      "entry_as_published": "Nil",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "TLID0020",
+          "title_verbatim": "Shift materials safely using manual handling methods",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "TLIF0009",
+          "title_verbatim": "Ensure the safety of transport activities (Chain of Responsibility)",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "TLIA0004",
+          "title_verbatim": "Complete receival and despatch documentation",
+          "outcome_verbatim": null,
+          "group": "Group B: Warehousing operations"
+        },
+        {
+          "published_ref": null,
+          "code": "TLIA0010",
+          "title_verbatim": "Identify goods and store to specifications",
+          "outcome_verbatim": null,
+          "group": "Group B: Warehousing operations"
+        },
+        {
+          "published_ref": null,
+          "code": "TLIA0015",
+          "title_verbatim": "Organise receival and despatch operations",
+          "outcome_verbatim": null,
+          "group": "Group B: Warehousing operations"
+        },
+        {
+          "published_ref": null,
+          "code": "TLIX0013X",
+          "title_verbatim": "Maintain stock control and receivals",
+          "outcome_verbatim": null,
+          "group": "Group B: Warehousing operations"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://training.gov.au/assets/TLI/TLI30325_R2.pdf",
+        "document_type": "pdf",
+        "document_sha256": "3752b73be2bc952034485e668452310af8d27db4b1cf9cc492ff3e118f052e33",
+        "publication_or_revision": "TLI30325 Release 2 (released 2026-10-16; status Current on training.gov.au, 2026-10-18)",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Core and Group B units read from the official qualification PDF and matched against its pdf.js text layer; each code, title and core/elective status equals the training.gov.au Release 2 unit grid.",
+        "human_reviewed": false
+      },
+      "licence_note": "© Commonwealth of Australia, 2026; training package content is published under its own licence terms (not checked).",
+      "notes": [
+        "A national qualification, not a delivered programme; no delivering provider has been verified and no nominal duration is stated.",
+        "Stores the 2 core units and the 4 Group B Warehousing operations units, which together form the warehousing specialisation (Group B lists exactly 4 units).",
+        "Successor to TLI30321 Certificate III in Supply Chain Operations; Australia no longer has a current stand-alone warehousing qualification."
+      ],
+      "scope_verbatim": [
+        "4 units from one of the specialist elective group, Group A or Group B or Group C listed below, plus"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,536 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-field-agriculture",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Comparator records for NYSC COURSE-026 Field Assistant (agricultural). The governed catalogue publishes no module headings for this course, so the records are shown without a competency matrix. Records describe documented curriculum only and do not establish equivalence, quality or labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its official source by a researcher before publication.",
+  "country_group_gaps": {
+    "developed": "No developed-economy field-crops comparator with sufficiently specific core content was verified on 2026-10-18: Australia's AHC30122 Certificate III in Agriculture was inspected but not used because its only core units are generic (workplace health and safety; sustainable work practices), with all technical content elective."
+  },
+  "records": [
+    {
+      "record_id": "LK-TVEC-NCS-FIELD-ASSISTANT-AGRICULTURE-2021",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "FIELD ASSISTANT (AGRICULTURE)",
+      "sector": "Agriculture / Field crops",
+      "framework": "NVQ (Sri Lanka)",
+      "level_as_published": "NVQ LEVEL 04",
+      "duration_as_published": null,
+      "entry_as_published": "NVQ Level 03: sit for G.C.E.(O/L) examination; NVQ Level 4: sit for G.C.E.(O/L) examination and obtain simple pass for language with any other three subjects or Completed NVQ Level 03 in any Agriculture related certificate course",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "A01S003U01",
+          "title_verbatim": "Organize Field activities",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S003U02",
+          "title_verbatim": "Perform land preparation and soil conservation activities",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S003U03",
+          "title_verbatim": "Establish and maintain plant nurseries",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S003U04",
+          "title_verbatim": "Establish and maintain crops in the field",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S003U05",
+          "title_verbatim": "Ensure proper harvesting / processing of the yield",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S003U06",
+          "title_verbatim": "Maintain farm machinery and equipment",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S003U07",
+          "title_verbatim": "Perform extension activities",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S003BU01",
+          "title_verbatim": "Carryout work place communication",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S003BU02",
+          "title_verbatim": "Apply occupational literacy and numeracy",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S003BU03",
+          "title_verbatim": "Work in teams",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S003BU04",
+          "title_verbatim": "Practice occupational health and safety procedures in workplace",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://nvq.gov.lk/report_inquires/NCS_Request_Pdf.php?nm=A01S003_3_NCS.pdf",
+        "document_type": "pdf",
+        "document_sha256": "a2390ed9158154d3139412953264cd81b59cd5863241d9604d845c35ff5dbe02",
+        "publication_or_revision": "Third publication July, 2021 (endorsed 07.07.2021); next revision July, 2024",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Unit titles, codes and NVQ packaging read from the List of Competency Units (PDF page 7); endorsement and prerequisites from the detail page (PDF page 79); all matched against the pdf.js text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Copyright TVEC; source states all rights reserved.",
+      "notes": [
+        "A national occupational standard, not evidence that a named provider delivers the programme.",
+        "Stores the 11 competency units only; curriculum modules and hours are not stored and no overall course duration is stated.",
+        "The NVQ Level 4 Field Assistant (Agriculture) packaging passage begins 'units + U02' (U01 appears to be omitted); it is stored as published.",
+        "The stated date of review (07.07.2024) has passed and the NVQ portal serves no later revision (2026-10-18)."
+      ],
+      "scope_verbatim": [
+        "National certificate at NVQ level- 4 in the occupation of Field Assistant(Agriculture) will be awarded to those who are competent in units + U02+ U03+ U04 + U05+ U06+ BU01+ BU02+ BU03+ BU04 - A01S003Q2L4",
+        "National certificate at NVQ Level- 4 in the occupation of Field Assistant (Agricultural Extension) will be awarded to those who are competent in units U01+ U02+ U03+ U04 + U05+ U06+ U07+ BU01+ BU02+ BU03+ BU04 - A01S003Q3L4"
+      ]
+    },
+    {
+      "record_id": "IN-DGT-CTS-HORTICULTURE-V2",
+      "country": "India",
+      "country_group": "developing_emerging",
+      "institution": "Directorate General of Training (DGT), Ministry of Skill Development & Entrepreneurship",
+      "record_type": "national_curriculum",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Horticulture",
+      "sector": "Agriculture / Horticulture",
+      "framework": "NSQF (India)",
+      "level_as_published": "NSQF LEVEL – 3.5",
+      "duration_as_published": "One Year (1200 Hours + 150 Hours OJT/Group Project)",
+      "entry_as_published": "Passed class 10thexamination",
+      "modules": [
+        {
+          "published_ref": "LO1",
+          "code": "AGR/N0414, AGR/N0347",
+          "title_verbatim": "Identify metrological instruments and the diversity within the profession of horticulture following safety precautions.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO2",
+          "code": "AGR/N0414, AGR/N0347",
+          "title_verbatim": "Plan and prepare life cycles of plants, scope of horticulture and introduction to fruits, flowers & vegetables.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO3",
+          "code": "AGR/N0414, AGR/N0347",
+          "title_verbatim": "Classify fruits and vegetables based on season and edible parts.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO4",
+          "code": "AGR/N9417",
+          "title_verbatim": "Install agro-meteorology instruments, analyze metrological data and record the data.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO5",
+          "code": "AGR/N0415",
+          "title_verbatim": "Identify, select and maintain different farm power machinery.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO6",
+          "code": "AGR/N0401",
+          "title_verbatim": "Measure physical and chemical properties of soil, soil pH, different methods and ingredient use for correction of Acid soil.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO7",
+          "code": "AGR/N0404, AGR/N0309",
+          "title_verbatim": "Plan, install and use different irrigation systems, Water lifting systems and water quality assessment systems.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO8",
+          "code": "AGR/N0401",
+          "title_verbatim": "Identify different types of soil, methods of soil sampling and collection, study on soil physical characters, Interpret soil test reports and different soil correction methods.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO9",
+          "code": "AGR/N9418",
+          "title_verbatim": "Analyse Soil water holding capacity, Different methods and ingredients used for correction of Saline soil. Field visit for identification of soil problems.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO10",
+          "code": "AGR/N0401",
+          "title_verbatim": "Plan and execute different soil correction method through drainage and agronomic practices.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO11",
+          "code": "AGR/N0401",
+          "title_verbatim": "Measure soil fertility and apply soil fertility management for improvement of fertility of soil.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO12",
+          "code": "AGR/N0401",
+          "title_verbatim": "Apply Integrated Nutrient Management System (INMS) in the field.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO13",
+          "code": "AGR/N0401",
+          "title_verbatim": "Identify, prepare and apply Bio-fertilizers.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO14",
+          "code": "AGR/N0401",
+          "title_verbatim": "Identify the role of major and minor plant nutrients and its deficiency symptoms.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO15",
+          "code": "AGR/N9419",
+          "title_verbatim": "Produce different types of fruits, vegetables and flowers as per the requirements.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO16",
+          "code": "AGR/N0349",
+          "title_verbatim": "Apply various cultivation techniques & methods to fruit crops & vegetable farms.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO17",
+          "code": "AGR/N0803, AGR/N0843",
+          "title_verbatim": "Plan and execute different garden layouts and designs.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO18",
+          "code": "AGR/N0801",
+          "title_verbatim": "Identify and select different Vegetative propagation method & use of plant hormones.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO19",
+          "code": "AGR/N0801",
+          "title_verbatim": "Apply propagation techniques viz cutting, grafting, budding and layering.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO20",
+          "code": "FIC/N0111, FIC/N0118, FIC/N0204",
+          "title_verbatim": "Process and preserve vegetables and fruits using different techniques to prepare jam, jelly, squash, sauce, pickle, ketchup etc. its preservation and storage.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO21",
+          "code": "AGR/N0417, AGR/N0418, AGR/N0419",
+          "title_verbatim": "Develop the Cultivation techniques of different vegetables and spice crops.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO22",
+          "code": "AGR/N0718, AGR/N0702",
+          "title_verbatim": "Perform Floriculture and cultivation techniques for different Flowers, Climbers, Foliages and Medicinal plants to decorate",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO23",
+          "code": "AGR/N7814, AGR/N07815",
+          "title_verbatim": "Perform Cultivation of Betel Vine and Mushroom farming.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO24",
+          "code": "AGR/N0403",
+          "title_verbatim": "Apply Pest Management and control the Pest and Diseases of Horticultural Crops.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO25",
+          "code": "AGR/N7103, AGR/N7104",
+          "title_verbatim": "Use techniques of Seed Production, Processing and Packaging.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO26",
+          "code": "AGR/N9908",
+          "title_verbatim": "Maintain the records viz. Inventory Control, Maintenance of Records and Store management.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO27",
+          "code": "AGR/N9908",
+          "title_verbatim": "Conduct Market Survey and follow the legal requirement for trading as part of entrepreneurship development.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://www.dgt.gov.in/sites/default/files/2024-12/Horticulture_CTS2.0_NSQF-3.5.pdf",
+        "document_type": "pdf",
+        "document_sha256": "0176c9fd647bdf0d8f72e02b147f5bbdf78806413b48b2bf9f9bab862ce54ed6",
+        "publication_or_revision": "Version 2.0, revised March 2023",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "All 27 learning outcomes and NOS codes read from the 5.1 Learning Outcomes pages and matched against the pdf.js text layer (running page headers and footers removed); course facts from the general information table.",
+        "human_reviewed": false
+      },
+      "licence_note": "Government of India publication; reuse terms not checked.",
+      "notes": [
+        "A national curriculum delivered through Industrial Training Institutes (ITIs); no individual ITI has been verified.",
+        "Employability Skills are listed separately and not stored.",
+        "A horticulture curriculum (fruits, flowers and vegetables, soils, irrigation, farm machinery and nurseries); DGT publishes no field-crops 'field assistant' trade.",
+        "LO23 prints its NOS codes without the 'NOS:' label; codes are stored as published."
+      ]
+    },
+    {
+      "record_id": "PH-TESDA-AGRI-CROPS-NC3",
+      "country": "Philippines",
+      "country_group": "developing_emerging",
+      "institution": "Technical Education and Skills Development Authority (TESDA)",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Agricultural Crops Production NC III",
+      "sector": "Agriculture / Field crops",
+      "framework": "Philippine TVET Qualification (NC)",
+      "level_as_published": "NC III",
+      "duration_as_published": "Nominal Training Duration: 445 Hours",
+      "entry_as_published": null,
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "500311109",
+          "title_verbatim": "Lead workplace communication",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311110",
+          "title_verbatim": "Lead small teams",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311111",
+          "title_verbatim": "Develop and practice negotiation skills",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311112",
+          "title_verbatim": "Solve problems related to work activities",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311113",
+          "title_verbatim": "Use mathematical concepts and techniques",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311114",
+          "title_verbatim": "Use relevant technologies",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR321201",
+          "title_verbatim": "Apply safety measures in farm operations",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR321202",
+          "title_verbatim": "Use farm tools and equipment",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR321203",
+          "title_verbatim": "Perform estimation and calculations",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611310",
+          "title_verbatim": "Prepare land for agricultural crop production",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611311",
+          "title_verbatim": "Implement post-harvest program",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611312",
+          "title_verbatim": "Implement plant nutrition program",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611313",
+          "title_verbatim": "Control weeds",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611314",
+          "title_verbatim": "Prepare and apply chemicals",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611320",
+          "title_verbatim": "Establish agronomic crops",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611321",
+          "title_verbatim": "Undertake agronomic crop maintenance activities",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611322",
+          "title_verbatim": "Undertake agronomic crop harvesting activities",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611323",
+          "title_verbatim": "Save, prepare and store agricultural seed",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611324",
+          "title_verbatim": "Implement vertebrate pest control program",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://www.tesda.gov.ph/Downloadables/TR%20-%20Agricultural%20Crops%20Production%20NC%20III.pdf",
+        "document_type": "pdf",
+        "document_sha256": "5484a9d798d46621c8cf9816af02e97cba11f8855acf804df89888f0a50302f1",
+        "publication_or_revision": "TR - Agricultural Crops Production NC III, Promulgated April 2006",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Units and codes read from the Section 1 page (PDF page 5) and matched in order against the pdf.js text layer; nominal duration from the Section 3.1 course design.",
+        "human_reviewed": false
+      },
+      "licence_note": "Philippine government publication; reuse terms not checked.",
+      "notes": [
+        "A training regulation (standard), delivered by TESDA-registered institutions; no provider has been verified.",
+        "Listed in TESDA's list of promulgated training regulations (as of May 2022) as Agricultural Crops Production NC III, AFFACP306, 445 hours.",
+        "Stores the basic, common and core units; the nine elective units are not stored.",
+        "Focused on agronomic crops (coarse grains, grain legumes, coffee, coconuts, cotton, soya beans, peanuts and sugar cane) at a small-farm management level."
+      ],
+      "scope_verbatim": [
+        "The Agricultural Crops Production NC III consists of competencies that a person must achieve in managing small farm."
+      ]
+    }
+  ]
+}

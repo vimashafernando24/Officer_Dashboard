@@ -1,0 +1,76 @@
+{
+  "dataset_id":"nysc-programme-benchmarking-plumbing","schema":"benchmark_record_schema.json","schema_version":"1.1.0","created_date":"2026-10-18",
+  "purpose":"Official-source comparator records for NYSC COURSE-033 Plumber. The governed catalogue publishes no module headings, so records are shown without a competency matrix.",
+  "status_note":"Source-inspected records awaiting independent human review; standards, curricula and qualifications are not evidence of a named delivery.",
+  "country_group_gaps":{},
+  "records":[
+    {
+      "record_id":"LK-TVEC-NCS-PLUMBER-R5","country":"Sri Lanka","country_group":"sri_lanka","institution":"Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority","record_type":"occupational_standard","delivering_provider_verified":false,"title_verbatim":"PLUMBER","sector":"Plumbing","framework":"NVQ (Sri Lanka)","level_as_published":"NVQ Levels 2, 3 and 4","duration_as_published":null,"entry_as_published":null,
+      "modules":[
+        {"published_ref":"Curriculum module 4","code":"E41S001M04","title_verbatim":"Basic masonry work (plumbing related)","outcome_verbatim":null,"group":"NVQ Level 4 Curriculum Modules"},
+        {"published_ref":"Curriculum module 5","code":"E41S001M05","title_verbatim":"Preparation of plumbing estimates","outcome_verbatim":null,"group":"NVQ Level 4 Curriculum Modules"},
+        {"published_ref":"Curriculum module 6","code":"E41S001M06","title_verbatim":"Preparation & laying of pipelines and fittings for cold water system","outcome_verbatim":null,"group":"NVQ Level 4 Curriculum Modules"},
+        {"published_ref":"Curriculum module 7","code":"E41S001M07","title_verbatim":"Installation of valves and water storage tanks","outcome_verbatim":null,"group":"NVQ Level 4 Curriculum Modules"},
+        {"published_ref":"Curriculum module 8","code":"E41S001M08","title_verbatim":"Preparation and laying of pipelines and fittings for hot water supply systems","outcome_verbatim":null,"group":"NVQ Level 4 Curriculum Modules"},
+        {"published_ref":"Curriculum module 9","code":"E41S001M09","title_verbatim":"Installation of uPVC pipe and fittings for rain and storm water disposal system","outcome_verbatim":null,"group":"NVQ Level 4 Curriculum Modules"},
+        {"published_ref":"Curriculum module 10","code":"E41S001M10","title_verbatim":"Installation of Sewerage, Wastewater and Vent disposal systems","outcome_verbatim":null,"group":"NVQ Level 4 Curriculum Modules"},
+        {"published_ref":"Curriculum module 11","code":"E41S001M11","title_verbatim":"Installation of common sanitary fixtures and accessories","outcome_verbatim":null,"group":"NVQ Level 4 Curriculum Modules"},
+        {"published_ref":"Curriculum module 12","code":"E41S001M12","title_verbatim":"Installation of advanced sanitary fixtures","outcome_verbatim":null,"group":"NVQ Level 4 Curriculum Modules"}
+      ],
+      "content_summary_paraphrased":null,"content_fidelity":"verbatim_whitespace_normalised","curriculum_detail":"partial",
+      "source":{"url":"https://nvq.gov.lk/Report_Inquires/NCS_Request_Pdf.php?nm=E41S001_5_NCS.pdf","document_type":"pdf","document_sha256":"9df62b46caf3fdeb52bbd96eb6bda96f46e1e20c30af338539b7471a47b4e32c","publication_or_revision":"Fifth Revision, April 2025; next revision April 2028","retrieved_date":"2026-10-18"},
+      "language":"English","verification":{"status":"source_inspected_pending_human_review","method":"Occupation title, current fifth-revision statement, NVQ packaging and selected Level 4 curriculum module codes/titles checked against the official TVEC PDF.","human_reviewed":false},"licence_note":"Copyright © 2025 TVEC; source states all rights reserved.",
+      "notes":["An occupational standard and CBT curriculum, not evidence of programme delivery.","Only the occupation-specific Level 4 curriculum modules most relevant to installation, drainage and sanitary systems are stored."],
+      "scope_verbatim":["Plumbers are responsible for the installation, modification, maintenance, and repair of plumbing systems & fixtures for drainage and water systems."]
+    },
+    {
+      "record_id":"IN-DGT-CTS-PLUMBER-V3","country":"India","country_group":"developing_emerging","institution":"Government of India, Directorate General of Training","record_type":"national_curriculum","delivering_provider_verified":false,"title_verbatim":"PLUMBER","sector":"Plumbing","framework":"Craftsmen Training Scheme (India)","level_as_published":"NSQF Level 2.5","duration_as_published":"One Year (1200 hours + 150 hours OJT/Group Project)","entry_as_published":"Passed 8th class Examination",
+      "modules":[
+        {"published_ref":"Learning outcome 6","code":"PSC/N9449","title_verbatim":"Read the plumbing drawings.","outcome_verbatim":null,"group":"Trade-specific Learning Outcomes"},
+        {"published_ref":"Learning outcome 11","code":"PSC/N9454","title_verbatim":"Carry out joining, fitting and laying of different types of PVC Pipes.","outcome_verbatim":null,"group":"Trade-specific Learning Outcomes"},
+        {"published_ref":"Learning outcome 12","code":"PSC/N9455","title_verbatim":"Install, fix and maintain different taps, valves, etc.","outcome_verbatim":null,"group":"Trade-specific Learning Outcomes"},
+        {"published_ref":"Learning outcome 14","code":"PSC/N9457","title_verbatim":"Carry out testing of water pressure in plumbing system.","outcome_verbatim":null,"group":"Trade-specific Learning Outcomes"},
+        {"published_ref":"Learning outcome 15","code":"PSC/N9458","title_verbatim":"Install, fix and maintain sanitary ware systems and their components.","outcome_verbatim":null,"group":"Trade-specific Learning Outcomes"},
+        {"published_ref":"Learning outcome 17","code":"PSC/N9460","title_verbatim":"Perform rainwater, gray water harvesting and conservation.","outcome_verbatim":null,"group":"Trade-specific Learning Outcomes"},
+        {"published_ref":"Learning outcome 18","code":"PSC/N9461","title_verbatim":"Carry out repairing and maintenance of plumbing system.","outcome_verbatim":null,"group":"Trade-specific Learning Outcomes"}
+      ],
+      "content_summary_paraphrased":null,"content_fidelity":"verbatim","curriculum_detail":"partial",
+      "source":{"url":"https://dgt.gov.in/sites/default/files/2025-01/Plumber_CTS3.0_NSQF-2.5.pdf","document_type":"pdf","document_sha256":"2b912987fbf8e377919fec505aab0560015f94ce5a5697845c6ea5c2be9f6793","publication_or_revision":"CTS Version 3.0, NSQF approval 2024","retrieved_date":"2026-10-18"},
+      "language":"English","verification":{"status":"source_inspected_pending_human_review","method":"Selected trade-specific learning outcomes and NOS codes checked against official PDF page 14; duration, level and entry requirement checked against the cover and DGT trade listing.","human_reviewed":false},"licence_note":"Official Government of India curriculum; reuse terms not assessed.",
+      "notes":["A national curriculum, not a verified named-provider delivery.","Selected outcomes are stored rather than all twenty-two outcomes.","The curriculum includes an electronics learning outcome that was excluded because it is not needed to establish plumbing scope."],
+      "scope_verbatim":["Plumber, General; lays out, assembles, installs and maintains sanitary fittings and fixtures, sewage and drainage systems, heating and sanitary systems, gas and water pipe lines etc."]
+    },
+    {
+      "record_id":"PH-TESDA-PLUMBING-NC2-2014","country":"Philippines","country_group":"developing_emerging","institution":"Technical Education and Skills Development Authority","record_type":"occupational_standard","delivering_provider_verified":false,"title_verbatim":"PLUMBING NC II","sector":"Construction / Plumbing","framework":"Philippine TVET Qualification and Certification System","level_as_published":"NC II","duration_as_published":"202 Hours (18 basic, 24 common, 160 core)","entry_as_published":null,
+      "modules":[
+        {"published_ref":"Section 1 p.2 — CON712348","code":"CON712348","title_verbatim":"Prepare estimation of materials for multiple plumbing units","outcome_verbatim":null,"group":"Core Competencies"},
+        {"published_ref":"Section 1 p.2 — CON712349","code":"CON712349","title_verbatim":"Perform multiple plumbing units installation and assemblies","outcome_verbatim":null,"group":"Core Competencies"},
+        {"published_ref":"Section 1 p.2 — CON712350","code":"CON712350","title_verbatim":"Conduct pipe leak testing","outcome_verbatim":null,"group":"Core Competencies"},
+        {"published_ref":"Section 1 p.2 — CON712351","code":"CON712351","title_verbatim":"Perform plumbing repair and maintenance work","outcome_verbatim":null,"group":"Core Competencies"}
+      ],
+      "content_summary_paraphrased":null,"content_fidelity":"verbatim","curriculum_detail":"full",
+      "source":{"url":"https://tesda.gov.ph/Downloadables/TRs/TR%20Plumbing%20NC%20II.pdf","document_type":"pdf","document_sha256":"8d13c8bbe5af365b2f4ba83f8ae63233c6231a0e1de42861597ac284a29e2dd3","publication_or_revision":"Amended; promulgated October 2014","retrieved_date":"2026-10-18"},
+      "language":"English","verification":{"status":"source_inspected_pending_human_review","method":"All four core unit codes/titles checked against official PDF page 2; curriculum duration and course description checked on page 58.","human_reviewed":false},"licence_note":"Official TESDA training regulation; reuse terms not assessed.",
+      "notes":["A national training regulation, not evidence of delivery by a named provider.","The qualification focuses on multiple plumbing units and assumes basic/common competencies; its 2014 currency requires human confirmation."],
+      "scope_verbatim":["This course is designed to equip individual with operational skills in Plumbing, such as prepare plumbing layout, make piping joints and connections, perform minor construction works and install and assemble single plumbing unit."]
+    },
+    {
+      "record_id":"AU-TGA-CPC32420-PLUMBING-R8","country":"Australia","country_group":"developed","institution":"Australian Government, training.gov.au (CPC Construction, Plumbing and Services Training Package)","record_type":"national_qualification","delivering_provider_verified":false,"title_verbatim":"Certificate III in Plumbing","sector":"Construction / Plumbing","framework":"AQF (Australia)","level_as_published":"Certificate III (national code CPC32420)","duration_as_published":null,"entry_as_published":"There are no entry requirements for this qualification.",
+      "modules":[
+        {"published_ref":"Core Units — CPCPCM2040","code":"CPCPCM2040","title_verbatim":"Read plans, calculate quantities and mark out materials","outcome_verbatim":null,"group":"Core Units"},
+        {"published_ref":"Core Units — CPCPCM2046","code":"CPCPCM2046","title_verbatim":"Use plumbing hand and power tools","outcome_verbatim":null,"group":"Core Units"},
+        {"published_ref":"Core Units — CPCPDR2021","code":"CPCPDR2021","title_verbatim":"Locate and clear blockages","outcome_verbatim":null,"group":"Core Units"},
+        {"published_ref":"Core Units — CPCPDR2025","code":"CPCPDR2025","title_verbatim":"Install stormwater and sub-soil drainage systems and drain work site","outcome_verbatim":null,"group":"Core Units"},
+        {"published_ref":"Core Units — CPCPDR3021","code":"CPCPDR3021","title_verbatim":"Plan layout and install below ground sanitary drainage systems","outcome_verbatim":null,"group":"Core Units"},
+        {"published_ref":"Core Units — CPCPSN3011","code":"CPCPSN3011","title_verbatim":"Plan the layout of a residential sanitary plumbing system and fabricate and install sanitary stacks","outcome_verbatim":null,"group":"Core Units"},
+        {"published_ref":"Core Units — CPCPWT3021","code":"CPCPWT3021","title_verbatim":"Set out and install water services","outcome_verbatim":null,"group":"Core Units"},
+        {"published_ref":"Core Units — CPCPWT3022","code":"CPCPWT3022","title_verbatim":"Install and commission water heating systems and adjust controls and devices","outcome_verbatim":null,"group":"Core Units"}
+      ],
+      "content_summary_paraphrased":null,"content_fidelity":"verbatim","curriculum_detail":"partial",
+      "source":{"url":"https://training.gov.au/assets/CPC/CPC32420_R8.pdf","document_type":"pdf","document_sha256":"df20b4c434c7cdb01c1a3e3d26ecf4acc9707bfc16194be6216e7472b2ffba6d","publication_or_revision":"Release 8, released 23 September 2026; Current","retrieved_date":"2026-10-18"},
+      "language":"English","verification":{"status":"source_inspected_pending_human_review","method":"Qualification description, current Release 8 status and selected core unit codes/titles checked against the official training.gov.au PDF; units unchanged from inspected Release 7 grid where applicable.","human_reviewed":false},"licence_note":"© Commonwealth of Australia, 2026; training-package licence terms not assessed.",
+      "notes":["A national qualification, not a delivered programme; no provider or nominal duration is asserted.","The qualification has four occupational packaging options and licensing varies by jurisdiction.","Selected core units are stored rather than the full 43-core-unit grid and elective groups."],
+      "scope_verbatim":["This is a trade qualification for plumbers in residential, industrial and commercial workplaces who are responsible for assembling, installing and maintaining water services, sanitary plumbing and sanitary drainage, gas, roofing and mechanical services in both existing and new constructions."]
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-english-language",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Comparator records for NYSC COURSE-066 and COURSE-004 Professional English. The governed catalogue publishes no module headings for these courses, so the records are shown without a competency matrix. Records describe documented curriculum only and do not establish equivalence, quality or labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its official source by a researcher before publication.",
+  "country_group_gaps": {
+    "sri_lanka": "No Sri Lankan English-language standard or programme with inspectable curriculum content was verified on 2026-10-18: the NVQ portal lists a diploma-level standard titled 'Teaching English as a Second Language' (M80T003; listing only, not inspected), and the two Open University of Sri Lanka English programme pages that were read show programme descriptions but no module lists.",
+    "developing_emerging": "No developing/emerging-economy English-language qualification with inspectable curriculum content was verified on 2026-10-18: TESDA's training-regulations listing contains no English-language qualification; DGT curricula and India's NQR were not searched for English-language qualifications."
+  },
+  "records": [
+    {
+      "record_id": "AU-VIC-22643VIC-EAL-EMPLOYMENT",
+      "country": "Australia",
+      "country_group": "developed",
+      "institution": "State of Victoria (Department of Jobs, Skills, Industries and Regions); accredited course listed on training.gov.au",
+      "record_type": "national_qualification",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Certificate III in EAL (Employment)",
+      "sector": "Languages / English",
+      "framework": "AQF (Australia)",
+      "level_as_published": "Certificate III (accredited course code 22643VIC)",
+      "duration_as_published": "Nominal duration 340 - 440",
+      "entry_as_published": null,
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "VU22384",
+          "title_verbatim": "Develop and document a learning plan and portfolio",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "VU23538",
+          "title_verbatim": "Participate in straightforward interactions for employment",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "VU23539",
+          "title_verbatim": "Read and write straightforward texts for employment",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://www.vic.gov.au/sites/default/files/2026-03/22636VIC-22646VIC_EAL-Framework.pdf",
+        "document_type": "pdf",
+        "document_sha256": "f904437c69758593791db7b8b38710b9b6b53160eadaf18faadf41c943de61f4",
+        "publication_or_revision": "EAL Framework Version 1.0 (22636VIC-22646VIC), accredited 1 January 2024 to 31 December 2028",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Course structure and core units read from the EAL Framework course-structure page (PDF page 52) and matched in order against the pdf.js text layer; nominal duration from PDF page 53; accreditation period from the cover page.",
+        "human_reviewed": false
+      },
+      "licence_note": "© State of Victoria (DJSIR) 2023; Creative Commons Attribution-No Derivatives 4.0 International licence (source statement).",
+      "notes": [
+        "A state-accredited course (accredited under Part 4.4 of Victoria's Education and Training Reform Act 2006 for 1 January 2024 to 31 December 2028), not a delivered programme; no delivering provider has been verified.",
+        "Designed for adult learners of English as an additional language in Australia; Australia-specific content is kept as published.",
+        "training.gov.au lists the course (status Current) but publishes no curriculum content; units are taken from the Victorian government's published EAL Framework curriculum document.",
+        "Stores the 3 core units (8 units in total: 3 core plus 5 electives); electives are not stored."
+      ],
+      "scope_verbatim": [
+        "To be eligible for the 22643VIC Certificate III in EAL (Employment), learners must successfully complete a total of 8 units comprising: 3 core units and 5 electives"
+      ]
+    },
+    {
+      "record_id": "AU-VIC-22644VIC-EAL-PROFESSIONAL",
+      "country": "Australia",
+      "country_group": "developed",
+      "institution": "State of Victoria (Department of Jobs, Skills, Industries and Regions); accredited course listed on training.gov.au",
+      "record_type": "national_qualification",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Certificate IV in EAL (Employment / Professional) (Professional Specialisation)",
+      "sector": "Languages / English",
+      "framework": "AQF (Australia)",
+      "level_as_published": "Certificate IV (accredited course code 22644VIC)",
+      "duration_as_published": "Nominal duration 360 - 555",
+      "entry_as_published": null,
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "VU23529",
+          "title_verbatim": "Analyse and participate in complex conversations",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "VU23540",
+          "title_verbatim": "Present and listen to complex oral presentations in an employment or professional context",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "VU23543",
+          "title_verbatim": "Critically read and write formal correspondence and complex prose texts for professional purposes",
+          "outcome_verbatim": null,
+          "group": "Professional Specialisation"
+        },
+        {
+          "published_ref": null,
+          "code": "VU23544",
+          "title_verbatim": "Critically read and write complex descriptive texts in a professional context",
+          "outcome_verbatim": null,
+          "group": "Professional Specialisation"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://www.vic.gov.au/sites/default/files/2026-03/22636VIC-22646VIC_EAL-Framework.pdf",
+        "document_type": "pdf",
+        "document_sha256": "f904437c69758593791db7b8b38710b9b6b53160eadaf18faadf41c943de61f4",
+        "publication_or_revision": "EAL Framework Version 1.0 (22636VIC-22646VIC), accredited 1 January 2024 to 31 December 2028",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Course structure, core and Professional Specialisation units read from the EAL Framework course-structure pages (PDF pages 54-55) and matched in order against the pdf.js text layer; accreditation period from the cover page.",
+        "human_reviewed": false
+      },
+      "licence_note": "© State of Victoria (DJSIR) 2023; Creative Commons Attribution-No Derivatives 4.0 International licence (source statement).",
+      "notes": [
+        "A state-accredited course (accredited under Part 4.4 of Victoria's Education and Training Reform Act 2006 for 1 January 2024 to 31 December 2028), not a delivered programme; no delivering provider has been verified.",
+        "Designed for adult learners of English as an additional language in Australia; Australia-specific content is kept as published.",
+        "training.gov.au lists the course (status Current) but publishes no curriculum content; units are taken from the Victorian government's published EAL Framework curriculum document.",
+        "Stores the 2 core units and the 2 Professional Specialisation units (the specialisation lists exactly two units); the Employment Specialisation and general electives are not stored."
+      ],
+      "scope_verbatim": [
+        "2 Specialisation units from either the Employment or the Professional Specialisation"
+      ]
+    }
+  ]
+}

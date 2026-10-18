@@ -1,0 +1,365 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-human-resources",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Comparator records for NYSC COURSE-071 Human Recources Management. Records describe documented curriculum only and do not establish equivalence, quality or labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its official source by a researcher before publication.",
+  "country_group_gaps": {
+    "developing_emerging": "No developing/emerging-economy human resources curriculum or qualification with inspectable content was verified on 2026-10-18: TESDA's training-regulations listing contains no human resources qualification, and web searches did not locate an NSQF human resources qualification file on India's National Qualification Register. DGT trade curricula were not searched for this occupation."
+  },
+  "records": [
+    {
+      "record_id": "LK-TVEC-NCS-HR-ASSOCIATE-2024",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "HUMAN RESOURCES ASSOCIATE",
+      "sector": "Business / Human resources",
+      "framework": "NVQ (Sri Lanka)",
+      "level_as_published": "NVQ Level 4",
+      "duration_as_published": null,
+      "entry_as_published": "Physically able to carry out the intended activity and required literacy and numeracy level for the occupation.",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "K74S016U01",
+          "title_verbatim": "Coordinate recruitment and selection process",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K74S016U02",
+          "title_verbatim": "Organize induction and orientation (onboarding) process",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K74S016U03",
+          "title_verbatim": "Maintain staff attendance and leave records/information",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K74S016U04",
+          "title_verbatim": "Support payroll administration functions",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K74S016U05",
+          "title_verbatim": "Coordinate learning/training and development",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K74S016U06",
+          "title_verbatim": "Coordinate Human Resource Information System (HRIS) operations",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K74S016U07",
+          "title_verbatim": "Support performance management process",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K74S016U08",
+          "title_verbatim": "Coordinate health, safety, and welfare aspects",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K74S016BU01",
+          "title_verbatim": "Practice workplace communication and interpersonal relations",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K74S016BU02",
+          "title_verbatim": "Apply occupational literacy and numeracy",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K74S016BU03",
+          "title_verbatim": "Work in teams",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://nvq.gov.lk/report_inquires/NCS_Request_Pdf.php?nm=K74S016_0_NCS.pdf",
+        "document_type": "pdf",
+        "document_sha256": "46236e96a543cff0b064cf6a8c541c88c3a14a9b2fc1162fa472f4b1d6ef9f57",
+        "publication_or_revision": "First publication - February 2024 (endorsed 27.02.2024; date of review 27.02.2026)",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Unit titles, codes and NVQ packaging read from the List of Competency Units (PDF page 8); endorsement and prerequisite from the detail page (PDF page 63); all matched against the pdf.js text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Copyright TVEC; source states all rights reserved.",
+      "notes": [
+        "A national occupational standard, not evidence that a named provider delivers the programme.",
+        "Stores the 11 competency units only; curriculum modules and hours are not stored and no overall course duration is stated.",
+        "The packaging passage lists 'U03' where the third basic unit (BU03) would be expected; it is stored as published.",
+        "The stated date of review (27.02.2026) has passed and the NVQ portal serves no later revision (2026-10-18)."
+      ],
+      "scope_verbatim": [
+        "National certificate at NVQ Level 4 in the occupation of Human Resources Associate will be awarded to those who are competent in units U01 + U02 + U03 + U04 + U05 + U06+ U07+ U08+ BU01 + BU02 + U03 – K74S016Q1L4"
+      ]
+    },
+    {
+      "record_id": "LK-TVEC-NCS-HRM-DIPLOMA-2022",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "HUMAN RESOURCE MANAGEMENT (NATIONAL DIPLOMA NVQ LEVEL 5 AND 6)",
+      "sector": "Business / Human resources",
+      "framework": "NVQ (Sri Lanka)",
+      "level_as_published": "NVQ Level 5 and 6 (National Diploma)",
+      "duration_as_published": null,
+      "entry_as_published": "For NVQ Level 05 Qualification - None; For NVQ Level 06 Qualification - NVQ level 5 in Human Resource Management",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "K74T002U01",
+          "title_verbatim": "Plan Human Resource (HR) requirements",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K74T002U02",
+          "title_verbatim": "Manage employee resourcing",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K74T002U03",
+          "title_verbatim": "Manage staff deployment",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K74T002U04",
+          "title_verbatim": "Manage learning and development",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K74T002U05",
+          "title_verbatim": "Design and implement performance management system",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K74T002U06",
+          "title_verbatim": "Manage rewards and recognition",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K74T002U07",
+          "title_verbatim": "Manage employee relations",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K74T002U08",
+          "title_verbatim": "Manage industrial relations",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K74T002U09",
+          "title_verbatim": "Administer HR operations and digitalization",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "K74T002U10",
+          "title_verbatim": "Manage organizational change & development",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "EMPU01",
+          "title_verbatim": "Manage workplace information",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "EMPU02",
+          "title_verbatim": "Manage workplace communication",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "EMPU03",
+          "title_verbatim": "Plan work to be performed in the workplace",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "EMP U04",
+          "title_verbatim": "Solve problems / make decisions",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "EMP U05",
+          "title_verbatim": "Provide leadership& facilitate work teams",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "EMP U06",
+          "title_verbatim": "Facilitate the establishment and maintenance of a learning culture in the workplace",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://nvq.gov.lk/report_inquires/NCS_Request_Pdf.php?nm=K74T002_0_NCS.pdf",
+        "document_type": "pdf",
+        "document_sha256": "0b6ef2ebb87c175bce50ee49e133a3d863295cb35fdf46259660c920d4eb071c",
+        "publication_or_revision": "First Publication August 2022 (endorsed 30.08.2022; date of review 30.08.2025)",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Unit titles and codes read from the List of Units (PDF page 11); endorsement, qualification codes and prerequisites from PDF page 9; all matched against the pdf.js text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Copyright TVEC; source states all rights reserved.",
+      "notes": [
+        "A national occupational standard, not evidence that a named provider delivers the programme.",
+        "Stores the 16 units (10 core HR units and 6 employability units) across NVQ Levels 5 and 6; curriculum modules and hours are not stored.",
+        "A diploma-level standard whose title matches the NYSC course; linked alongside the NVQ Level 4 Human Resources Associate standard because the NYSC course level is not stated.",
+        "The stated date of review (30.08.2025) has passed and the NVQ portal serves no later revision (2026-10-18)."
+      ]
+    },
+    {
+      "record_id": "AU-TGA-BSB40420",
+      "country": "Australia",
+      "country_group": "developed",
+      "institution": "Australian Government, training.gov.au (BSB Business Services Training Package)",
+      "record_type": "national_qualification",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Certificate IV in Human Resource Management",
+      "sector": "Business / Human resources",
+      "framework": "AQF (Australia)",
+      "level_as_published": "Certificate IV (national code BSB40420)",
+      "duration_as_published": null,
+      "entry_as_published": "Nil",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "BSBHRM411",
+          "title_verbatim": "Administer performance development processes",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "BSBHRM412",
+          "title_verbatim": "Support employee and industrial relations",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "BSBHRM413",
+          "title_verbatim": "Support the learning and development of teams and individuals",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "BSBHRM415",
+          "title_verbatim": "Coordinate recruitment and onboarding",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "BSBHRM417",
+          "title_verbatim": "Support human resource functions and processes",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "BSBWHS411",
+          "title_verbatim": "Implement and monitor WHS policies, procedures and programs",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://training.gov.au/assets/BSB/BSB40420_R1.pdf",
+        "document_type": "pdf",
+        "document_sha256": "d657c30302c46a1704ee2103b478ca35867594f0e4e4b062b586c764fdcfe443",
+        "publication_or_revision": "BSB40420 Release 1 (released 2020-10-19; status Current on training.gov.au, 2026-10-18)",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Core units read from the official qualification PDF and matched against its pdf.js text layer; each code, title and core status equals the training.gov.au Release 1 unit grid, except that the grid titles BSBHRM417 'Support human resources functions and processes' (the PDF core-list wording is stored).",
+        "human_reviewed": false
+      },
+      "licence_note": "© Commonwealth of Australia, 2020; training package content is published under its own licence terms (not checked).",
+      "notes": [
+        "A national qualification, not a delivered programme; no delivering provider has been verified and no nominal duration is stated.",
+        "Stores the 6 core units (12 units in total: 6 core plus 6 electives from Group A and Group B). Payroll (BSBHRM416) and HR information systems (BSBHRM414) are Group A electives and are not stored."
+      ],
+      "scope_verbatim": [
+        "This qualification reflects the role of individuals who work in a range of human resources roles. The job roles that relate to this qualification may include Human Resources Officer, Human Resources Coordinator and Payroll Officer."
+      ]
+    }
+  ]
+}

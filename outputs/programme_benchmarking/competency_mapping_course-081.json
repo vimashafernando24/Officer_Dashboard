@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0.0",
+  "nysc_course_id": "COURSE-081",
+  "created_date": "2026-10-18",
+  "description": "Hand-curated competency mapping for NYSC COURSE-081 Radio, TV & Allied Equipment Repairer against three official-source electronics-repair comparators. DOCUMENTED cites exact stored source text; NOT_EXPLICIT does not mean absent from teaching.",
+  "method": "The NYSC column was assessed only from its three governed headings. Exact governed text is retained in citations; verified display_text corrects catalogue contamination or an obvious heading typo for display. Comparator cells use only the stored modules and outcomes in the linked records.",
+  "methodology": {
+    "DOCUMENTED": "The cited stored text explicitly names the competency. Coverage is FULL only where every component in category_components is named; otherwise it is PARTIAL.",
+    "FULL": "Every listed component of the competency category is explicitly named in the cited evidence.",
+    "PARTIAL": "Only part of the category, or a broader/lower-level activity, is explicitly documented.",
+    "NOT_EXPLICIT": "The competency is not documented within the available assessed source scope.",
+    "INSUFFICIENT_DATA": "Missing or incomplete material prevents reliable assessment.",
+    "caution": "This published-text comparison does not prove what is or is not taught.",
+    "areas_rule": "Areas to Investigate list NYSC NOT_EXPLICIT competencies documented with FULL coverage by at least two comparator records from at least two countries. PARTIAL evidence does not count.",
+    "decisions": [
+      "The three sources were linked because they explicitly cover consumer audio/video, television or display servicing; general electrical-installation records were excluded.",
+      "The NYSC repair heading does not by itself establish fault diagnosis, component-level repair, amplifier work or power-supply work.",
+      "Microcontroller and LED-display-board programming are assessed conservatively: related processor, programming and LED/display evidence is PARTIAL unless both components are explicit."
+    ]
+  },
+  "category_components": {
+    "rtv_display_optical_repair": ["television or monitor/display repair", "DVD or optical-player repair"],
+    "rtv_basic_electronics": ["basic electricity", "basic electronics"],
+    "rtv_microcontroller_led_programming": ["microcontroller programming", "LED display-board programming"],
+    "rtv_fault_diagnosis": ["fault diagnosis or troubleshooting of electronic appliances"],
+    "rtv_component_board_repair": ["main/system-board repair", "input/output-device repair or replacement"],
+    "rtv_audio_amplifier_repair": ["radio/audio or amplifier repair"],
+    "rtv_power_supply_repair": ["electronic-appliance power-supply repair"],
+    "rtv_workplace_safety": ["workplace safety practice"]
+  },
+  "human_reviewed": false,
+  "statuses": ["DOCUMENTED", "NOT_EXPLICIT", "INSUFFICIENT_DATA"],
+  "columns": [
+    {"column_id": "NYSC-COURSE-081", "kind": "nysc", "nysc_course_id": "COURSE-081", "short_label": "NYSC COURSE-081"},
+    {"column_id": "LK-TVEC-NCS-ELECTRONIC-APPLIANCES-2017", "kind": "benchmark", "record_id": "LK-TVEC-NCS-ELECTRONIC-APPLIANCES-2017", "short_label": "TVEC/NAITA · Sri Lanka"},
+    {"column_id": "IN-DGT-CTS-MCEA-V2", "kind": "benchmark", "record_id": "IN-DGT-CTS-MCEA-V2", "short_label": "DGT · India"},
+    {"column_id": "PH-TESDA-EPAS-NC2", "kind": "benchmark", "record_id": "PH-TESDA-EPAS-NC2", "short_label": "TESDA · Philippines"}
+  ],
+  "competencies": [
+    {
+      "competency_id": "rtv_display_optical_repair",
+      "label": "Television/display and DVD/optical-player repair",
+      "cells": {
+        "NYSC-COURSE-081": {"status": "DOCUMENTED", "evidence": [{"module_index": 0, "field": "title_verbatim", "code": null, "text": "CRT TV, Monitor, LCD / LED TV, DVD Players Repair"}], "note": null, "coverage": "FULL"},
+        "LK-TVEC-NCS-ELECTRONIC-APPLIANCES-2017": {"status": "DOCUMENTED", "evidence": [{"module_index": 8, "field": "title_verbatim", "code": "D32S003U09", "text": "Install / repair and configure audio, video and data systems"}, {"module_index": 0, "field": "scope_verbatim", "code": null, "text": "Audio and Video Recorders and Players"}, {"module_index": 3, "field": "scope_verbatim", "code": null, "text": "Television Receivers"}, {"module_index": 4, "field": "scope_verbatim", "code": null, "text": "Monitors"}], "note": "The repair unit and equipment range jointly establish repair of video players, televisions and monitors.", "coverage": "FULL"},
+        "IN-DGT-CTS-MCEA-V2": {"status": "DOCUMENTED", "evidence": [{"module_index": 6, "field": "title_verbatim", "code": "ELE/N3102", "text": "Identify, operate various controls, troubleshoot and replace modules of the LCD/LED TV and its remote."}], "note": "Explicit television repair, but the stored outcome does not name DVD/optical-player repair.", "coverage": "PARTIAL", "supported_component": "television/display troubleshooting and module replacement"},
+        "PH-TESDA-EPAS-NC2": {"status": "DOCUMENTED", "evidence": [{"module_index": 1, "field": "scope_verbatim", "code": null, "text": "Video products and systems (e.g. television, DVD/VCD players, PC monitors)"}, {"module_index": 1, "field": "outcome_verbatim", "code": "ELC724336", "text": "Install, diagnose faults, maintain and repair consumer electronic products and systems"}], "note": "The qualification scope names both target product types and the core unit names repair.", "coverage": "FULL"}
+      }
+    },
+    {
+      "competency_id": "rtv_basic_electronics",
+      "label": "Basic electricity and electronics",
+      "cells": {
+        "NYSC-COURSE-081": {"status": "DOCUMENTED", "evidence": [{"module_index": 1, "field": "title_verbatim", "code": null, "text": "Basic Electricity and Electronics which will be held on weekends.", "display_text": "Basic Electricity and Electronics"}], "note": "The display correction removes the schedule clause from the module heading; the governed text remains preserved.", "coverage": "FULL"},
+        "LK-TVEC-NCS-ELECTRONIC-APPLIANCES-2017": {"status": "INSUFFICIENT_DATA", "evidence": [], "note": "The stored occupational units do not expose the foundation curriculum in enough detail to assess both basic electricity and basic electronics."},
+        "IN-DGT-CTS-MCEA-V2": {"status": "INSUFFICIENT_DATA", "evidence": [], "note": "Only comparison-relevant outcomes are stored; the omitted early curriculum may cover fundamentals, so absence cannot be assessed."},
+        "PH-TESDA-EPAS-NC2": {"status": "INSUFFICIENT_DATA", "evidence": [], "note": "The stored selected core units do not expose the common foundation curriculum in enough detail to assess both components."}
+      }
+    },
+    {
+      "competency_id": "rtv_microcontroller_led_programming",
+      "label": "Microcontroller and LED display-board programming",
+      "cells": {
+        "NYSC-COURSE-081": {"status": "DOCUMENTED", "evidence": [{"module_index": 2, "field": "title_verbatim", "code": null, "text": "Microcontroller Programming, LED Display Boaet Programming"}], "note": "The apparent 'Boaet' typo is preserved because no governed display correction exists for this heading.", "coverage": "FULL"},
+        "LK-TVEC-NCS-ELECTRONIC-APPLIANCES-2017": {"status": "NOT_EXPLICIT", "evidence": [], "note": "The stored occupational-unit text does not name microcontroller or LED display-board programming."},
+        "IN-DGT-CTS-MCEA-V2": {"status": "DOCUMENTED", "evidence": [{"module_index": 4, "field": "title_verbatim", "code": "ELE/N9443", "text": "Construct and test simple, electrical control circuits and various electrical control circuits for programmable systems."}, {"module_index": 6, "field": "title_verbatim", "code": "ELE/N3102", "text": "Identify, operate various controls, troubleshoot and replace modules of the LCD/LED TV and its remote."}], "note": "Programmable systems and LED televisions are related but do not explicitly name microcontroller or LED-board programming.", "coverage": "PARTIAL", "supported_component": "programmable control systems and LED-TV modules"},
+        "PH-TESDA-EPAS-NC2": {"status": "NOT_EXPLICIT", "evidence": [], "note": "The stored assessed core-unit text does not name programming or LED display boards."}
+      }
+    },
+    {
+      "competency_id": "rtv_fault_diagnosis",
+      "label": "Electronic-appliance fault diagnosis",
+      "cells": {
+        "NYSC-COURSE-081": {"status": "NOT_EXPLICIT", "evidence": [], "note": "The headings name repair and programming but do not explicitly name diagnosis or troubleshooting."},
+        "LK-TVEC-NCS-ELECTRONIC-APPLIANCES-2017": {"status": "DOCUMENTED", "evidence": [{"module_index": 1, "field": "title_verbatim", "code": "D32S003U02", "text": "Find faults and prepare estimates for service / repair / configuration"}], "note": null, "coverage": "FULL"},
+        "IN-DGT-CTS-MCEA-V2": {"status": "DOCUMENTED", "evidence": [{"module_index": 6, "field": "title_verbatim", "code": "ELE/N3102", "text": "Identify, operate various controls, troubleshoot and replace modules of the LCD/LED TV and its remote."}, {"module_index": 7, "field": "title_verbatim", "code": "ELE/N3118", "text": "Dismantle; identify the parts, control circuits, sensors of a various domestic appliance. Estimate and troubleshoot."}], "note": null, "coverage": "FULL"},
+        "PH-TESDA-EPAS-NC2": {"status": "DOCUMENTED", "evidence": [{"module_index": 1, "field": "outcome_verbatim", "code": "ELC724336", "text": "Install, diagnose faults, maintain and repair consumer electronic products and systems"}], "note": null, "coverage": "FULL"}
+      }
+    },
+    {
+      "competency_id": "rtv_component_board_repair",
+      "label": "Electronic-component testing/replacement and board repair",
+      "cells": {
+        "NYSC-COURSE-081": {"status": "NOT_EXPLICIT", "evidence": [], "note": "No heading explicitly names electronic-component testing/replacement or board repair."},
+        "LK-TVEC-NCS-ELECTRONIC-APPLIANCES-2017": {"status": "DOCUMENTED", "evidence": [{"module_index": 5, "field": "title_verbatim", "code": "D32S003U06", "text": "Repair main system board"}, {"module_index": 7, "field": "title_verbatim", "code": "D32S003U08", "text": "Repair / replace input or output devices"}], "note": null, "coverage": "FULL"},
+        "IN-DGT-CTS-MCEA-V2": {"status": "DOCUMENTED", "evidence": [{"module_index": 2, "field": "title_verbatim", "code": "ELE/N7813", "text": "Carry out rework on PCB after identifying defects from SMD soldering and de-soldering."}], "note": "PCB rework is explicit, but input/output-device repair is not named.", "coverage": "PARTIAL", "supported_component": "printed-circuit-board rework"},
+        "PH-TESDA-EPAS-NC2": {"status": "NOT_EXPLICIT", "evidence": [], "note": "The stored selected units name assembly and broad servicing, but do not explicitly establish both component testing/replacement and existing-board repair."}
+      }
+    },
+    {
+      "competency_id": "rtv_audio_amplifier_repair",
+      "label": "Radio/audio and amplifier repair",
+      "cells": {
+        "NYSC-COURSE-081": {"status": "NOT_EXPLICIT", "evidence": [], "note": "The headings do not name radio, audio or amplifier repair."},
+        "LK-TVEC-NCS-ELECTRONIC-APPLIANCES-2017": {"status": "DOCUMENTED", "evidence": [{"module_index": 4, "field": "title_verbatim", "code": "D32S003U05", "text": "Repair amplifiers"}, {"module_index": 8, "field": "title_verbatim", "code": "D32S003U09", "text": "Install / repair and configure audio, video and data systems"}], "note": null, "coverage": "FULL"},
+        "IN-DGT-CTS-MCEA-V2": {"status": "DOCUMENTED", "evidence": [{"module_index": 3, "field": "title_verbatim", "code": "ELE/N9442", "text": "Assemble and test a commercial AM/FM receiver and evaluate performance."}, {"module_index": 8, "field": "title_verbatim", "code": "ELE/N3122", "text": "Identify different blocks of home theatre, troubleshoot and repair faulty boards."}], "note": "The receiver outcome covers assembly/testing and the home-theatre outcome covers repair; together they substantiate the category.", "coverage": "FULL"},
+        "PH-TESDA-EPAS-NC2": {"status": "DOCUMENTED", "evidence": [{"module_index": 1, "field": "title_verbatim", "code": "ELC724336", "text": "Service consumer electronic products and systems"}], "note": "The stored source scope names radio receivers and audio recorders, but the module itself remains broad.", "coverage": "PARTIAL", "supported_component": "consumer-electronics servicing"}
+      }
+    },
+    {
+      "competency_id": "rtv_power_supply_repair",
+      "label": "Electronic-appliance power-supply repair",
+      "cells": {
+        "NYSC-COURSE-081": {"status": "NOT_EXPLICIT", "evidence": [], "note": "No heading names power-supply repair."},
+        "LK-TVEC-NCS-ELECTRONIC-APPLIANCES-2017": {"status": "DOCUMENTED", "evidence": [{"module_index": 3, "field": "title_verbatim", "code": "D32S003U04", "text": "Repair power supply unit of electronic appliances"}], "note": null, "coverage": "FULL"},
+        "IN-DGT-CTS-MCEA-V2": {"status": "DOCUMENTED", "evidence": [{"module_index": 5, "field": "title_verbatim", "code": "ELE/N3101", "text": "Install, maintain and repair SMPS, UPS and inverter."}], "note": null, "coverage": "FULL"},
+        "PH-TESDA-EPAS-NC2": {"status": "NOT_EXPLICIT", "evidence": [], "note": "The stored assessed core-unit text does not name power-supply repair."}
+      }
+    },
+    {
+      "competency_id": "rtv_workplace_safety",
+      "label": "Workplace safety",
+      "cells": {
+        "NYSC-COURSE-081": {"status": "NOT_EXPLICIT", "evidence": [], "note": "No governed heading names workplace safety."},
+        "LK-TVEC-NCS-ELECTRONIC-APPLIANCES-2017": {"status": "INSUFFICIENT_DATA", "evidence": [], "note": "The stored selected modules do not include the curriculum's foundation modules, so workplace-safety coverage cannot be assessed."},
+        "IN-DGT-CTS-MCEA-V2": {"status": "DOCUMENTED", "evidence": [{"module_index": 0, "field": "title_verbatim", "code": "ELE/N1002", "text": "Perform basic workshop operations using suitable tools for fitting, riveting, drilling etc. observing suitable care & safety following safety precautions."}], "note": null, "coverage": "FULL"},
+        "PH-TESDA-EPAS-NC2": {"status": "INSUFFICIENT_DATA", "evidence": [], "note": "The stored selected units omit the basic-competency section, so workplace-safety coverage cannot be assessed."}
+      }
+    }
+  ]
+}

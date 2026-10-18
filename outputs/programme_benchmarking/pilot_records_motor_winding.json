@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.1.0",
+  "dataset_id": "nysc-programme-benchmarking-motor-winding",
+  "created_date": "2026-10-18",
+  "purpose": "Official-source comparators for electric motor winding and rewinding.",
+  "schema": "benchmark_record_schema.json",
+  "status_note": "Source-inspected records awaiting independent human review; standards and qualifications are not evidence of programme delivery.",
+  "country_group_gaps": {
+    "developing_emerging": "No additional developing/emerging-economy motor-winding record was added: India's already stored Electrician CTS curriculum is reused through the course link rather than duplicated in this dataset."
+  },
+  "records": [
+    {
+      "record_id": "LK-TVEC-NCS-ELECTRIC-MOTOR-WINDER",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "ELECTRIC MOTOR WINDER",
+      "sector": "Electrical / Electrical machine winding",
+      "framework": "NVQ (Sri Lanka)",
+      "level_as_published": "NVQ Levels 3 and 4",
+      "duration_as_published": null,
+      "entry_as_published": null,
+      "modules": [
+        {"published_ref": null, "code": "E40S003U01", "title_verbatim": "Carry out preliminary inspections on electrical machines for re-winding/repair/service", "outcome_verbatim": null, "group": "List of Competency Units"},
+        {"published_ref": null, "code": "E40S003U02", "title_verbatim": "Prepare estimates for re-winding,repair and service of electrical machines", "outcome_verbatim": null, "group": "List of Competency Units"},
+        {"published_ref": null, "code": "E40S003U03", "title_verbatim": "Test and diagnose faults in electrical machines", "outcome_verbatim": null, "group": "List of Competency Units"},
+        {"published_ref": null, "code": "E40S003U04", "title_verbatim": "Wind / re-wind electric motors & alternators", "outcome_verbatim": null, "group": "List of Competency Units"},
+        {"published_ref": null, "code": "E40S003U05", "title_verbatim": "Wind / re-wind Transformers & coils", "outcome_verbatim": null, "group": "List of Competency Units"},
+        {"published_ref": null, "code": "E40S003U06", "title_verbatim": "Inspect, test and verify / ensure performance of the wound electrical machines", "outcome_verbatim": null, "group": "List of Competency Units"}
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://nvq.gov.lk/Report_Inquires/NCS_Request_Pdf.php?nm=E40S003_1_NCS.pdf",
+        "document_type": "pdf",
+        "document_sha256": "01bd764dfda5b815af94a6f77129b25625020440d15d1b93e6aa3d8a901c8343",
+        "publication_or_revision": "Revision 1; NCS code E40S003 (revision and endorsement dates not populated in the source)",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "All six competency-unit codes and titles and the NVQ packaging were read from the official NCS/CBT curriculum PDF and checked against the rendered source.",
+        "human_reviewed": false
+      },
+      "licence_note": "Copyright © TVEC; source states all rights reserved.",
+      "notes": [
+        "A national occupational standard and competency-based curriculum, not evidence that a named provider delivers the programme.",
+        "The source leaves revision and endorsement date fields blank; no date is inferred.",
+        "NVQ Level 4 requires U01, U03, U04, U05 and U06; U02 is not in that package."
+      ],
+      "scope_verbatim": [
+        "National Certificate at NVQ Level 04 in the occupation of Electric Motor Winder will be awarded to those who are competent in units U01+U03+U04+U05+U06"
+      ]
+    },
+    {
+      "record_id": "AU-TGA-UEE30625",
+      "country": "Australia",
+      "country_group": "developed",
+      "institution": "Australian Government, training.gov.au (UEE Electrotechnology Training Package)",
+      "record_type": "national_qualification",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Certificate III in Electrical Machine Repair",
+      "sector": "Electrotechnology / Electrical machine repair",
+      "framework": "AQF (Australia)",
+      "level_as_published": "Certificate III (national code UEE30625)",
+      "duration_as_published": null,
+      "entry_as_published": "There are no entry requirements for this qualification.",
+      "modules": [
+        {"published_ref": null, "code": "UEECD0007", "title_verbatim": "Apply work health and safety regulations, codes and practices in the workplace", "outcome_verbatim": null, "group": "Core units"},
+        {"published_ref": null, "code": "UEECD0016", "title_verbatim": "Document and apply measures to control WHS risks associated with electrotechnology work", "outcome_verbatim": null, "group": "Core units"},
+        {"published_ref": null, "code": "UEECD0043", "title_verbatim": "Solve problems in direct current circuits", "outcome_verbatim": null, "group": "Core units"},
+        {"published_ref": null, "code": "UEEEL0004", "title_verbatim": "Develop design briefs for electrotechnology work", "outcome_verbatim": null, "group": "Core units"},
+        {"published_ref": null, "code": "UEEEL0017", "title_verbatim": "Repair mechanical components of electrical machines", "outcome_verbatim": null, "group": "Core units"},
+        {"published_ref": null, "code": "UEEEL0019", "title_verbatim": "Solve problems in direct current machines", "outcome_verbatim": null, "group": "Core units"},
+        {"published_ref": null, "code": "UEEEL0020", "title_verbatim": "Solve problems in low voltage a.c. circuits", "outcome_verbatim": null, "group": "Core units"},
+        {"published_ref": null, "code": "UEEEL0021", "title_verbatim": "Solve problems in magnetic and electromagnetic devices", "outcome_verbatim": null, "group": "Core units"},
+        {"published_ref": null, "code": "UEEEL0024", "title_verbatim": "Test and connect alternating current rotating machines", "outcome_verbatim": null, "group": "Core units"},
+        {"published_ref": null, "code": "UEEEL0025", "title_verbatim": "Test and connect transformers", "outcome_verbatim": null, "group": "Core units"},
+        {"published_ref": null, "code": "UEEEL0033", "title_verbatim": "Conduct electrical tests on low voltage electrical machines", "outcome_verbatim": null, "group": "Core units"},
+        {"published_ref": null, "code": "UEEEL0056", "title_verbatim": "Place and connect electrical machine windings", "outcome_verbatim": null, "group": "Core units"},
+        {"published_ref": null, "code": "UEEEL0068", "title_verbatim": "Rewind three phase low voltage induction machines", "outcome_verbatim": null, "group": "Core units"},
+        {"published_ref": null, "code": "UEEEL0074", "title_verbatim": "Wind electrical coils", "outcome_verbatim": null, "group": "Core units"},
+        {"published_ref": null, "code": "UEERL0004", "title_verbatim": "Disconnect - reconnect electrical equipment connected to low voltage installation wiring", "outcome_verbatim": null, "group": "Core units"}
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://training.gov.au/assets/UEE/UEE30625_R1.pdf",
+        "document_type": "pdf",
+        "document_sha256": "787b0a7689ee8f0ba68d85f27a88cf0f04bd94be92ba83935f933de636d23640",
+        "publication_or_revision": "Release 1; generated 30 July 2025",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Qualification description, entry requirement and selected core-unit codes and titles were read from the official training.gov.au qualification PDF and checked against the rendered source.",
+        "human_reviewed": false
+      },
+      "licence_note": "© Commonwealth of Australia; material sourced from training.gov.au.",
+      "notes": [
+        "A national qualification, not evidence that a named provider delivers it.",
+        "Only comparison-relevant core units are stored; electives are excluded because they are not completed by every learner.",
+        "The qualification explicitly covers repair and overhaul of motors, transformers and control gear, including rewinding."
+      ],
+      "scope_verbatim": [
+        "This qualification provides competencies to repair and overhaul electrical machinery and equipment, such as motors, transformers, generators and control gear, including rewinding."
+      ]
+    }
+  ]
+}

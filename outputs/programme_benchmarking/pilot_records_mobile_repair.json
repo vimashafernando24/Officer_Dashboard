@@ -1,0 +1,391 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-mobile-repair",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Comparator records for NYSC COURSE-029 and COURSE-077 Mobile Phone Repair Technician. The governed catalogue publishes no module headings for these courses, so the records are shown without a competency matrix. Records describe documented curriculum only and do not establish equivalence, quality or labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its official source by a researcher before publication.",
+  "country_group_gaps": {
+    "developed": "No developed-economy mobile phone repair qualification or programme with published units was verified on 2026-10-18."
+  },
+  "records": [
+    {
+      "record_id": "LK-TVEC-NCS-MOBILE-PHONE-REPAIR-2024",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "MOBILE PHONE REPAIR TECHNICIAN",
+      "sector": "Electronics / Mobile phone repair",
+      "framework": "NVQ (Sri Lanka)",
+      "level_as_published": "NVQ Level- 3 (Mobile Phone Repairer); NVQ Level- 4 (Mobile Phone Repair Technician)",
+      "duration_as_published": null,
+      "entry_as_published": "For NVQ Level 04 Qualification - Physically able to carry out the intended activity and required literacy and numeracy level for the occupation",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "G52S003U01",
+          "title_verbatim": "Receive and handover mobile phones at the repair center reception counter",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G52S003U02",
+          "title_verbatim": "Identify faults in mobile phones",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G52S003U03",
+          "title_verbatim": "Replace modules and parts of mobile phones",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G52S003U04",
+          "title_verbatim": "Perform mobile phone electronic repairs",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G52S003U05",
+          "title_verbatim": "Repair mobile phones using de-soldering and soldering practices",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G52S003U06",
+          "title_verbatim": "Perform software repairs of mobile phones",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G52S003U07",
+          "title_verbatim": "Operate business functions in mobile phone repairing unit",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G52S003BU01",
+          "title_verbatim": "Practice workplace communication and interpersonal relations",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G52S003BU02",
+          "title_verbatim": "Apply occupational literacy and numeracy",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G52S003BU03",
+          "title_verbatim": "Work in teams",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "G52S003BU04",
+          "title_verbatim": "Practice occupational health and safety procedures in a workplace",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://nvq.gov.lk/report_inquires/NCS_Request_Pdf.php?nm=G52S003_1_NCS.pdf",
+        "document_type": "pdf",
+        "document_sha256": "ae23fbe7dc3b51fa6e3762ca563fc58583e745364d5e8aed3a6ac583fc074c5e",
+        "publication_or_revision": "First Revision June 2024 (endorsed 25.06.2024); next revision June 2027",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Unit titles and codes read from the rendered Section 1 unit table and NVQ packaging (PDF page 8); endorsement and prerequisite from the detail page (PDF page 86); all matched against the pdf.js text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Copyright © 2024 TVEC; source states all rights reserved.",
+      "notes": [
+        "A national occupational standard and competency-based curriculum, not evidence that a named provider delivers the programme.",
+        "Stores the 11 competency units only; the curriculum modules and learning hours are not stored and no overall course duration is stated.",
+        "Revision 1 is the only revision of G52S003 on the NVQ portal (2026-10-18). The NVQ assessor list also shows an older code, K72S009, marked 'Please refer G52S003 NCS'."
+      ],
+      "scope_verbatim": [
+        "National certificate at NVQ Level- 4 in the occupation of Mobile Phone Repair Technician will be awarded to those who are competent in units U01+ U02+ U03+ U04 + U05+ U06 + U07 + BU01+ BU02+ BU03+ BU04 - G52S003Q2L4"
+      ]
+    },
+    {
+      "record_id": "PH-TESDA-MOBILE-NC3",
+      "country": "Philippines",
+      "country_group": "developing_emerging",
+      "institution": "Technical Education and Skills Development Authority (TESDA)",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Mobile Phones and Handheld Gadgets Servicing NC III",
+      "sector": "Electronics / Mobile phone repair",
+      "framework": "Philippine TVET Qualification (NC)",
+      "level_as_published": "NC III",
+      "duration_as_published": "Nominal Training Duration: 40 hours – Basic Competencies, 52 hours – Common Competencies, 280 hours – Core Competencies, 372 hours – Total (in-school / in-center), 300 hours – Supervised Industry Learning (SIL), 672 hours",
+      "entry_as_published": "Have completed at least 10 yrs. basic education or an alternative learning systems (ALS) certificate of completion with grade 10 equivalent holder; Communicate effectively both oral and written form; Can perform basic mathematical computations",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "400311319",
+          "title_verbatim": "Lead workplace communication",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311320",
+          "title_verbatim": "Lead small teams",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311321",
+          "title_verbatim": "Apply critical thinking and problem-solving techniques in the workplace",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311322",
+          "title_verbatim": "Work in a diverse environment",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311323",
+          "title_verbatim": "Propose methods of applying learning and innovation in the organization",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311324",
+          "title_verbatim": "Use information systematically",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311325",
+          "title_verbatim": "Evaluate occupational safety and health work practices",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311326",
+          "title_verbatim": "Evaluate environmental work practices",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "400311327",
+          "title_verbatim": "Facilitate entrepreneurial skills for micro-small-medium enterprises (MSMEs)",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC311205",
+          "title_verbatim": "Use Hand Tools",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC311201",
+          "title_verbatim": "Perform Mensuration and Calculation",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC311202",
+          "title_verbatim": "Prepare and Interpret Technical Drawing",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC311204",
+          "title_verbatim": "Apply Quality Standards",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC311203",
+          "title_verbatim": "Perform Computer Operations",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC311206",
+          "title_verbatim": "Terminate and Connect Electrical Wiring and Electronic Circuits",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC311209",
+          "title_verbatim": "Test Electronic Components",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC742301",
+          "title_verbatim": "Prepare workplace for servicing mobile phone unit and handheld gadget",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC742302",
+          "title_verbatim": "Diagnose and identity hardware and software related problems",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC742303",
+          "title_verbatim": "Troubleshoot and repair mobile phone unit and handheld gadget",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ELC742304",
+          "title_verbatim": "Perform functionality testing and documentation",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://tesda.gov.ph/Downloadables/TR-Mobile%20Phones%20and%20Handheld%20Gadgets%20Servicing%20NC%20III-final%20copy.pdf",
+        "document_type": "pdf",
+        "document_sha256": "5f35653091a1c7205085689da50bb0e34061535edf9d19e3e2ec54c403e07e81",
+        "publication_or_revision": "Revision No. 00 (ELCMPS321); the downloadable copy leaves the promulgation date and board resolution number blank",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Units, codes and scope read from the rendered Section 1 pages (PDF pages 5-6); hours from the Section 3.1 course design (PDF page 86); entry requirements from Section 3.3 (PDF page 116); qualification code from the revision history; all matched against the pdf.js text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Philippine government publication; reuse terms not checked.",
+      "notes": [
+        "A training regulation (standard), delivered by TESDA-registered institutions; no provider has been verified.",
+        "Listed as current in TESDA's list of promulgated training regulations (as of May 2022): Mobile Phones and Handheld Gadgets Servicing NC III, ELCMPS321, 672 hours, promulgated 02/09/21 (Board Resolution 2021-05). The downloadable 'final copy' itself prints 'Promulgated _________ 2020' and 'TBR No. 2021-____', so its exact promulgated wording should be confirmed by a reviewer.",
+        "Core unit ELC742302 is stored as published: 'Diagnose and identity hardware and software related problems'.",
+        "Stores the 20 units of competency; learning outcomes and activities are not stored."
+      ],
+      "scope_verbatim": [
+        "The Mobile Phones and Handheld Gadgets Servicing NC III Qualification consist of competencies that must be possessed to enable a person to service mobile phones and handheld gadgets’ hardware and software related troubles.",
+        "This qualification covers only the repair, service and maintenance of all types of mobile phones and handheld gadgets. It does not include the servicing of full-function laptops/notebooks, game consoles/gadgets like Xbox and PlayStation and handheld PABX devices."
+      ]
+    },
+    {
+      "record_id": "IN-NQR-TSSC-HANDHELD-V2",
+      "country": "India",
+      "country_group": "developing_emerging",
+      "institution": "Telecom Sector Skill Council (TSSC), submitting body; approved by the National Skills Qualification Committee (NSQC) on India's National Qualification Register",
+      "record_type": "national_qualification",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Handheld Devices (Mobile & Accessories) Technician",
+      "sector": "Electronics / Mobile phone repair",
+      "framework": "NSQF (India)",
+      "level_as_published": "NCrF/NSQF Level: 4.0",
+      "duration_as_published": "480 hours (Theory 180, Practical 210, OJT Mandatory 90)",
+      "entry_as_published": "12th Grade Pass; OR Completed 2nd year of 3-year diploma after 10th in Electronics/ Computer Engineering/ Information Technology domain; OR 10th Grade Pass with 3 years of experience in handheld device repair; OR Previous relevant Qualification of NSQF Level 3 with minimum education as 8th grade pass and 3 years of experience in handheld device repair; OR Previous relevant Qualification of NSQF Level 3.5 with 1.5 years of experience in handheld device repair",
+      "modules": [
+        {
+          "published_ref": "1",
+          "code": "TEL/N2213, v4.0",
+          "title_verbatim": "Perform basic hardware and software repair of Android mobile phones and iPhones",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": "2",
+          "code": "TEL/N2214, v3.0",
+          "title_verbatim": "Perform basic hardware and software repair of Android tablets and iPads",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": "3",
+          "code": "TEL/N2218, v1.0",
+          "title_verbatim": "Perform basic hardware and software repair of Windows laptops, MacBook, and mobile accessories",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": "4",
+          "code": "TEL/N9108, v1.0",
+          "title_verbatim": "Follow sustainability practices in telecom operations",
+          "outcome_verbatim": null,
+          "group": "Core"
+        },
+        {
+          "published_ref": "5",
+          "code": "DGT/VSQ/N0102, v1.0",
+          "title_verbatim": "Employability Skills (60 Hours)",
+          "outcome_verbatim": null,
+          "group": "Non-Core"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://www.nqr.gov.in/qualification/file/QF_Handheld%20Devices%20%28Mobile%20&%20Accessories%29%20Technician.pdf",
+        "document_type": "pdf",
+        "document_sha256": "57c22f12b93a67985b963365e5f55ded9d51cf01faf85bbebf528857210a8649",
+        "publication_or_revision": "QG-04-TL-04072-2025-V2-TSSC; approved in the 43rd NSQC meeting (08 May 2025); next review 30-04-2028",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Module summary read from the rendered Section 2 table (PDF page 6); description, level, entry criteria, duration and approval facts from PDF pages 2-5; all matched against the pdf.js text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Indian government qualification register publication; reuse terms not checked.",
+      "notes": [
+        "An NSQF-aligned short-term qualification listed on India's National Qualification Register; TSSC is the submitting body. No delivering centre has been verified.",
+        "The source is internally inconsistent on its approval date: the page header states the 43rd NSQC meeting of 08 May 2025, while field 23 states 'Final Approval Date by NSQC: 08-05-2024'.",
+        "Broader than phone repair: it also covers tablets, laptops and mobile accessories. The module (NOS) titles are broad; the module-level curriculum document is not stored.",
+        "DGT publishes no Craftsmen Training Scheme trade for mobile phone repair that was verified for this step."
+      ],
+      "scope_verbatim": [
+        "A Handheld Devices (Mobile & Accessories) Technician is responsible for diagnosing and repairing hardware and software issues in mobile phones, tablets, laptops and mobile accessories. The individual also performs basic chip-level repairs and ensures device functionality, maintains quality standards, and adheres to the applicable safety and environmental protocols."
+      ]
+    }
+  ]
+}

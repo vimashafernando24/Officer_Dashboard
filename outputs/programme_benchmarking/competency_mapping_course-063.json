@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "nysc_course_id": "COURSE-063",
+  "created_date": "2026-10-18",
+  "description": "Hand-curated one-row content mapping for NYSC COURSE-063 Dress Making Without Blocks. The comparison does not establish equivalence to the unverified block-free method.",
+  "method": "The NYSC column was assessed only from its single governed clothing heading. The approved display correction removes its weekend scheduling clause for display; attendance is not a competency and is not scored. Comparator cells assess garment scope only.",
+  "methodology": {
+    "DOCUMENTED": "The cited stored text explicitly names the competency. Coverage is FULL only where every component in category_components is named; otherwise it is PARTIAL.",
+    "FULL": "Every listed component of the competency category is explicitly named in the cited evidence.",
+    "PARTIAL": "Only part of the category, or a broader/lower-level activity, is explicitly documented.",
+    "NOT_EXPLICIT": "The competency is not documented within the available assessed source scope.",
+    "INSUFFICIENT_DATA": "Missing or incomplete material prevents reliable assessment.",
+    "caution": "This published-text comparison does not prove what is or is not taught.",
+    "areas_rule": "Areas to Investigate list NYSC NOT_EXPLICIT competencies documented with FULL coverage by at least two comparator records from at least two countries. PARTIAL evidence does not count.",
+    "decisions": [
+      "The single governed clothing heading is retained as one category; the title’s 'Without Blocks' wording is an unresolved method constraint, not an additional competency row.",
+      "The weekend clause is preserved in the cited governed text and removed only by the existing approved display correction; comparator attendance is not scored.",
+      "All three sources use patterns, and the Sri Lankan and Philippine sources explicitly use blocks or block patterns; none supports block-free method equivalence.",
+      "The TESDA qualification is PARTIAL because its assessed scope establishes women’s casual apparel but not children’s clothing."
+    ]
+  },
+  "category_components": {"garment_women_children_clothing": ["women’s clothing", "children’s clothing"]},
+  "human_reviewed": false,
+  "statuses": ["DOCUMENTED", "NOT_EXPLICIT", "INSUFFICIENT_DATA"],
+  "columns": [
+    {"column_id":"NYSC-COURSE-063","kind":"nysc","nysc_course_id":"COURSE-063","short_label":"NYSC COURSE-063"},
+    {"column_id":"LK-TVEC-NCS-TAILOR-R2-2017","kind":"benchmark","record_id":"LK-TVEC-NCS-TAILOR-R2-2017","short_label":"TVEC/NAITA · Sri Lanka"},
+    {"column_id":"IN-DGT-CTS-SEWING-TECHNOLOGY-V2","kind":"benchmark","record_id":"IN-DGT-CTS-SEWING-TECHNOLOGY-V2","short_label":"DGT · India"},
+    {"column_id":"PH-TESDA-DRESSMAKING-NC2-2005","kind":"benchmark","record_id":"PH-TESDA-DRESSMAKING-NC2-2005","short_label":"TESDA · Philippines"}
+  ],
+  "competencies": [{
+    "competency_id": "garment_women_children_clothing",
+    "label": "Women’s and children’s clothing",
+    "cells": {
+      "NYSC-COURSE-063": {"status":"DOCUMENTED","evidence":[{"module_index":0,"field":"title_verbatim","code":null,"text":"Women and children clothing which will be held on weekends.","display_text":"Women and children clothing"}],"note":"The schedule clause is preserved in governed text and excluded from the displayed competency by an existing approved correction. The block-free method remains unverified.","coverage":"FULL"},
+      "LK-TVEC-NCS-TAILOR-R2-2017": {"status":"DOCUMENTED","evidence":[{"module_index":0,"field":"scope_verbatim","code":null,"text":"This unit covers the competencies required to select appropriate needle gauge and required Stitches per inch (SPI), and thread tension to suit the required seams (machines or hand) on fabric & garment, and sew ladies’ basic blouses, skirts and frock using tools , fabric and equipment safely and economically."},{"module_index":1,"field":"scope_verbatim","code":null,"text":"Trousers coming under this unit may include Childrens’ trousers; Mens, trousers; Ladies trousers; Slacks/pants"}],"note":"Women’s garments and children’s trousers are explicit, but the appended curriculum uses blocks and is not method-equivalent.","coverage":"FULL"},
+      "IN-DGT-CTS-SEWING-TECHNOLOGY-V2": {"status":"DOCUMENTED","evidence":[{"module_index":0,"field":"scope_verbatim","code":null,"text":"Tailor, General: makes ladies and gents' garments and children's clothes by stitching various components together according to pattern, by hand or sewing machine."}],"note":"Both clothing components are explicit, but the curriculum uses patterns and is not method-equivalent.","coverage":"FULL"},
+      "PH-TESDA-DRESSMAKING-NC2-2005": {"status":"DOCUMENTED","evidence":[{"module_index":0,"field":"scope_verbatim","code":null,"text":"The DRESSMAKING NC II Qualification consists of competencies that a person must achieve to enable him/her to draft and cut pattern; lay-out pattern on the material/fabric, sew material/fabric and apply finishing touches on the ladies casual apparel of the Garment sector."}],"note":"Women’s casual apparel is explicit, children’s clothing is not, and block-pattern use prevents method equivalence.","coverage":"PARTIAL","supported_component":"women’s casual apparel"}
+    }
+  }]
+}

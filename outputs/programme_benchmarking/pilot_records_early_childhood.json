@@ -1,0 +1,385 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-early-childhood",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Comparator records for NYSC COURSE-041 Preschool Teacher (Early Childhood Development). Records describe documented curriculum only and do not establish equivalence, quality or labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its official source by a researcher before publication.",
+  "country_group_gaps": {},
+  "records": [
+    {
+      "record_id": "LK-TVEC-NCS-ECCD-TEACHER-2026",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "EARLY CHILDHOOD CARE AND DEVELOPMENT TEACHER",
+      "sector": "Education / Early childhood",
+      "framework": "NVQ (Sri Lanka)",
+      "level_as_published": "NVQ Level 04",
+      "duration_as_published": null,
+      "entry_as_published": "For NVQ Level 04 Qualification- Passed GCE O/L with 6 passes including Mathematics - (with three (03) Credit passes for any subject including Language) not more than two (02) sittings or Equivalent qualification",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "M80S001U01",
+          "title_verbatim": "Plan learning - teaching activities",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "M80S001U02",
+          "title_verbatim": "Organize learning - teaching activities",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "M80S001U03",
+          "title_verbatim": "Create learning - teaching environment",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "M80S001U04",
+          "title_verbatim": "Ensure security and safety of children",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "M80S001U05",
+          "title_verbatim": "Facilitate the development of language and early literacy skills of children",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "M80S001U06",
+          "title_verbatim": "Facilitate the cognitive development of children",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "M80S001U07",
+          "title_verbatim": "Facilitate the social and emotional development of children",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "M80S001U08",
+          "title_verbatim": "Facilitate the physical development of children",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "M80S001U09",
+          "title_verbatim": "Facilitate the development of aesthetic skills of children",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "M80S001U10",
+          "title_verbatim": "Maintain health and nutrition of children",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "M80S001U11",
+          "title_verbatim": "Promote inclusive practices for children with special needs",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "M80S001BU01",
+          "title_verbatim": "Work in teams",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "M80S001BU02",
+          "title_verbatim": "Practice occupational health and safety procedures in the Early Childhood Care and Development center",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://nvq.gov.lk/report_inquires/NCS_Request_Pdf.php?nm=M80S001_4_NCS.pdf",
+        "document_type": "pdf",
+        "document_sha256": "c9ae43dcff26acab5349494a442fa3871fa9d52e1eb2eb5d8b82b3a0e3678da6",
+        "publication_or_revision": "Forth Revision July 2026 (endorsed 14.07.2026); next revision July 2029",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Unit titles, codes and NVQ packaging read from the rendered List of Competency Units (PDF page 7); endorsement and prerequisites from the detail page (PDF page 94); all matched against the pdf.js text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Copyright TVEC; source states all rights reserved.",
+      "notes": [
+        "A national occupational standard, not evidence that a named provider delivers the programme.",
+        "Stores the 13 competency units only; curriculum modules and hours are not stored and no overall course duration is stated.",
+        "Revision 2 of M80S001 was titled 'PRESCHOOL TEACHER (Early Childhood Development)', the same as the NYSC course; revision 4 (July 2026) is titled 'Early Childhood Care and Development Teacher'.",
+        "The source is internally inconsistent: the unit list and page-7 packaging contain U01-U11, BU01 and BU02, while the endorsement page package also lists 'M80S001U12', which is not defined in the unit list.",
+        "The revision page spells 'Forth Revision July 2026'; the wording is kept as published."
+      ],
+      "scope_verbatim": [
+        "National Certificate at NVQ Level 04 in the occupation of Early Childhood Care and Development Teacher will be awarded to those who are competent in units U01+ U02+ U03+ U04+ U05+ U06+ U07+ U08+ U09+ U10+ U11+ BU01+ BU02– M80S001Q1L4"
+      ]
+    },
+    {
+      "record_id": "IN-DGT-CTS-EARLY-CHILDHOOD-EDUCATOR-V2",
+      "country": "India",
+      "country_group": "developing_emerging",
+      "institution": "Directorate General of Training (DGT), Ministry of Skill Development & Entrepreneurship",
+      "record_type": "national_curriculum",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Early Childhood Educator",
+      "sector": "Education / Early childhood",
+      "framework": "NSQF (India)",
+      "level_as_published": "NSQF LEVEL – 3.5",
+      "duration_as_published": "One Year (1200 Hours + 150 OJT/ Group Project)",
+      "entry_as_published": "Passed 10th class examination. Minimum Age 14 years as on first day of academic session.",
+      "modules": [
+        {
+          "published_ref": "LO1",
+          "code": "MEP/N4102",
+          "title_verbatim": "Develop growth and development of 0-6years old Physical, language, social, emotional, cognitive, fine motor development, gross motor following safety precautions.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO2",
+          "code": "MEP/N9427",
+          "title_verbatim": "Analyze Philosophies of Early Childhood Educationist Maria Montessori, Fedrick Forbel, Jean Piaget, Rudolf Stiener, Reggio Emilia.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO3",
+          "code": "MEP/N4101",
+          "title_verbatim": "Apply the knowledge to prepare an Inside – Outside Environment for Pre-School Health and Safety of Pre-School children First Aid.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO4",
+          "code": "MEP/N4102",
+          "title_verbatim": "Identify the development of Practical Life and Sensorial Lesson in Pre-School.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO5",
+          "code": "MEP/N4102",
+          "title_verbatim": "Select and execute the Progression and Presentation of Language and Math Skills in Early Childhood.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO6",
+          "code": "MEP/N4102",
+          "title_verbatim": "Select and apply the Art, Craft Music in Early Childhood to build concentration and calmness, realizing of feelings and developing balancing control movements to reach their full potential.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO7",
+          "code": "MEP/N4102",
+          "title_verbatim": "Comprehend Physical Science, Life Science, Botany, Zoology and Geography, Creating awareness and sensitivity of the world around us, making rational conclusions, being respectful of other cultures and communities.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO8",
+          "code": "MEP/N4102",
+          "title_verbatim": "Apply life skills and conflict resolution through Positive Discipline. Increase awareness of self, others and the environment.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://www.dgt.gov.in/sites/default/files/2024-12/Early%20Childhood%20Educator_CTS2.0_NSQF-3.5.pdf",
+        "document_type": "pdf",
+        "document_sha256": "7f69bfb57e6f1042b2c816a45402caf9afec381522dadedd1f6cb7372ae09baa",
+        "publication_or_revision": "Version 2.0, revised March 2023",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "All 8 learning outcomes and NOS codes read from the 5.1 Learning Outcomes page (PDF page 12) and matched against its pdf.js text layer; course facts from the general information table.",
+        "human_reviewed": false
+      },
+      "licence_note": "Government of India publication; reuse terms not checked.",
+      "notes": [
+        "A national curriculum delivered through Industrial Training Institutes (ITIs); no individual ITI has been verified.",
+        "Employability Skills are listed separately and not stored.",
+        "The curriculum states that the trade was 'Renamed from Pre-Preparatory School Management Assistant' (the former DGT trade name)."
+      ]
+    },
+    {
+      "record_id": "AU-TGA-CHC30125",
+      "country": "Australia",
+      "country_group": "developed",
+      "institution": "Australian Government, training.gov.au (CHC Community Services Training Package)",
+      "record_type": "national_qualification",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Certificate III in Early Childhood Education and Care",
+      "sector": "Education / Early childhood",
+      "framework": "AQF (Australia)",
+      "level_as_published": "Certificate III (national code CHC30125)",
+      "duration_as_published": null,
+      "entry_as_published": "Nil",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "CHCECE030",
+          "title_verbatim": "Support inclusion and diversity",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "CHCECE031",
+          "title_verbatim": "Support children's health, safety and wellbeing",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "CHCECE032",
+          "title_verbatim": "Nurture babies and toddlers",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "CHCECE033",
+          "title_verbatim": "Develop positive and respectful relationships with children",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "CHCECE034",
+          "title_verbatim": "Use an approved learning framework to guide practice",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "CHCECE035",
+          "title_verbatim": "Support the holistic learning and development of children",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "CHCECE036",
+          "title_verbatim": "Provide experiences to support children's play and learning",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "CHCECE037",
+          "title_verbatim": "Support children to connect with the natural environment",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "CHCECE038",
+          "title_verbatim": "Observe children to inform practice",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "CHCECE054",
+          "title_verbatim": "Encourage understanding of Aboriginal and/or Torres Strait Islander peoples' cultures",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "CHCECE055",
+          "title_verbatim": "Meet legal and ethical obligations in children's education and care",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "CHCECE056",
+          "title_verbatim": "Work effectively in children's education and care",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "CHCPRT025",
+          "title_verbatim": "Identify and report children and young people at risk",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "HLTAID012",
+          "title_verbatim": "Provide First Aid in an education and care setting",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "HLTWHS001",
+          "title_verbatim": "Participate in workplace health and safety",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://training.gov.au/assets/CHC/CHC30125_R2.pdf",
+        "document_type": "pdf",
+        "document_sha256": "93078bc1f10961174d0478dca0ef6f3115e43491b20a7bda97a7a9a68807aa4c",
+        "publication_or_revision": "CHC30125 Release 2 (released 2026-07-17; status Current on training.gov.au, 2026-10-18)",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Core units read from the official qualification PDF and matched against its pdf.js text layer; each code, title and core status equals the training.gov.au Release 2 unit grid.",
+        "human_reviewed": false
+      },
+      "licence_note": "© Commonwealth of Australia, 2026; training package content is published under its own licence terms (not checked).",
+      "notes": [
+        "A national qualification, not a delivered programme; no delivering provider has been verified and no nominal duration is stated.",
+        "Stores the 15 core units (17 units in total: 15 core plus 2 electives).",
+        "Framed around Australian regulated services and an approved learning framework; Australia-specific units (e.g. CHCECE054 on Aboriginal and Torres Strait Islander cultures) are kept as published."
+      ],
+      "scope_verbatim": [
+        "Early childhood educators work in long day care centres, family day care, pre-schools or kindergartens."
+      ]
+    }
+  ]
+}
