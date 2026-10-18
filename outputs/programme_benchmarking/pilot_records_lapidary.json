@@ -1,0 +1,176 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-lapidary",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Comparator records for NYSC COURSE-028 Lapiderist (Gem Cutting). The governed catalogue publishes no module headings for this course, so the records are shown without a competency matrix. Records describe documented curriculum only and do not establish equivalence, quality or labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its official source by a researcher before publication.",
+  "country_group_gaps": {
+    "developing_emerging": "No developing/emerging-economy gem-cutting curriculum was verified on 2026-10-18: TESDA's training-regulations listing shows only Jewelry Making qualifications (titles only; not inspected), and web searches of India's NQR returned only Stone Preparation Artisan and Jeweller qualification files (search results only; not inspected).",
+    "developed": "No developed-economy gem-cutting qualification was verified on 2026-10-18: Australia's Opal Cutting and Polishing qualifications are superseded or deleted, and current training.gov.au results are jewellery-handling units only."
+  },
+  "records": [
+    {
+      "record_id": "LK-TVEC-NCS-LAPIDARIST-2022",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "LAPIDARIST",
+      "sector": "Gem and jewellery / Gem cutting",
+      "framework": "NVQ (Sri Lanka)",
+      "level_as_published": "NVQ Level 2, 3 and 4 packages",
+      "duration_as_published": null,
+      "entry_as_published": null,
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "D26S001U01",
+          "title_verbatim": "Select gemstones required for processing",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "D26S001U02",
+          "title_verbatim": "Pre-form gemstones",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "D26S001U03",
+          "title_verbatim": "Perform heat treating of gemstones",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "D26S001U04",
+          "title_verbatim": "Perform calibration of gemstones",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "D26S001U05",
+          "title_verbatim": "Carry out dopping of gemstones",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "D26S001U06",
+          "title_verbatim": "Facet and polish preformed rough gemstones",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "D26S001U07",
+          "title_verbatim": "Facet and polish gemstones using traditional machines",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "D26S001U08",
+          "title_verbatim": "Carry out cabochoning and polishing of phenomenal, highly included or highly fractured gemstones",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "D26S001U09",
+          "title_verbatim": "Carryout beads making process",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "D26S001U10",
+          "title_verbatim": "Perform tumbling of gemstones",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "D26S001U11",
+          "title_verbatim": "Perform drilling, engraving & carving of gemstones",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "D26S001U12",
+          "title_verbatim": "Prepare gemstones for market",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "D26S001U13",
+          "title_verbatim": "Maintain and Repair lapidary Machines, tools and equipment",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "D26S001BU01",
+          "title_verbatim": "Practice workplace communication and interpersonal relations",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "D26S001BU02",
+          "title_verbatim": "Apply occupational literacy and numeracy",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "D26S001BU03",
+          "title_verbatim": "Work in teams",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "D26S001BU04",
+          "title_verbatim": "Practice occupational health and safety procedures in a workplace",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://nvq.gov.lk/report_inquires/NCS_Request_Pdf.php?nm=D26S001_1_NCS.pdf",
+        "document_type": "pdf",
+        "document_sha256": "a08e85e166bd09d02c8ab5ca8b7975e4a3e5b1f841927d1264f82f5ff6d4a324",
+        "publication_or_revision": "First Revision May 2022 (endorsed 30.05.2022); next revision May 2025",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Unit titles, codes and NVQ packaging read from the List of Competency Units (PDF page 8); endorsement from the detail page (PDF page 87); all matched against the pdf.js text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Copyright TVEC; source states all rights reserved.",
+      "notes": [
+        "A national occupational standard, not evidence that a named provider delivers the programme.",
+        "Stores the 17 competency units only; curriculum modules and hours are not stored and no overall course duration is stated.",
+        "The title matches the NYSC course (published as 'Lapiderist (Gem Cutting)').",
+        "The NVQ Level 4 packaging passage writes unit 11 as 'U011'; it is stored as published.",
+        "The stated date of review (30.05.2025) has passed and the NVQ portal serves no later revision (2026-10-18)."
+      ],
+      "scope_verbatim": [
+        "National Certificate at NVQ Level 4 in the occupation of Lapidarist will be awarded to those who are competent in units U01+ U02+ U03+ U04+ U05+ U06+ U07+ U08+ U09+ U10+ U011+ U12+ U13 + BU01 + BU02 + BU03 + BU04 – D26S001Q5L4"
+      ]
+    }
+  ]
+}

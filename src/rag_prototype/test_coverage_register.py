@@ -22,15 +22,12 @@ from src.rag_prototype.build_coverage_register import (
 )
 from src.rag_prototype.programme_design_evidence import load_governed_courses
 
-FULL_COURSES = {"COURSE-006", "COURSE-058", "COURSE-005", "COURSE-007", "COURSE-008", "COURSE-009", "COURSE-053", "COURSE-087", "COURSE-010", "COURSE-011", "COURSE-012", "COURSE-014", "COURSE-025", "COURSE-034", "COURSE-035", "COURSE-040", "COURSE-046", "COURSE-047", "COURSE-050", "COURSE-055", "COURSE-062", "COURSE-064", "COURSE-081", "COURSE-082"}
-COMPARATORS_ONLY_COURSES = {"COURSE-001", "COURSE-048", "COURSE-051", "COURSE-054", "COURSE-056", "COURSE-057", "COURSE-069",
-                            "COURSE-016", "COURSE-021", "COURSE-023", "COURSE-029", "COURSE-030", "COURSE-042", "COURSE-060",
-                            "COURSE-068", "COURSE-077", "COURSE-078", "COURSE-022", "COURSE-052",
-                            "COURSE-013", "COURSE-079", "COURSE-080", "COURSE-017", "COURSE-018", "COURSE-038",
-                            "COURSE-044", "COURSE-045", "COURSE-019", "COURSE-024", "COURSE-033", "COURSE-036",
-                            "COURSE-061", "COURSE-065", "COURSE-002", "COURSE-043", "COURSE-073", "COURSE-076"}
+FULL_COURSES = {"COURSE-005", "COURSE-006", "COURSE-007", "COURSE-008", "COURSE-009", "COURSE-010", "COURSE-011", "COURSE-012", "COURSE-014", "COURSE-025", "COURSE-034", "COURSE-035", "COURSE-037", "COURSE-040", "COURSE-041", "COURSE-046", "COURSE-047", "COURSE-050", "COURSE-053", "COURSE-055", "COURSE-058", "COURSE-062", "COURSE-063", "COURSE-064", "COURSE-071", "COURSE-081", "COURSE-082", "COURSE-087"}
+COMPARATORS_ONLY_COURSES = {"COURSE-001", "COURSE-002", "COURSE-004", "COURSE-013", "COURSE-016", "COURSE-017", "COURSE-018", "COURSE-019", "COURSE-020", "COURSE-021", "COURSE-022", "COURSE-023", "COURSE-024", "COURSE-026", "COURSE-028", "COURSE-029", "COURSE-030", "COURSE-031", "COURSE-032", "COURSE-033", "COURSE-036", "COURSE-038", "COURSE-042", "COURSE-043", "COURSE-044", "COURSE-045", "COURSE-048", "COURSE-051", "COURSE-052", "COURSE-054", "COURSE-056", "COURSE-057", "COURSE-059", "COURSE-060", "COURSE-061", "COURSE-065", "COURSE-066", "COURSE-068", "COURSE-069", "COURSE-073", "COURSE-076", "COURSE-077", "COURSE-078", "COURSE-079", "COURSE-080", "COURSE-084", "COURSE-085"}
 COMPLETE_COURSES = FULL_COURSES | COMPARATORS_ONLY_COURSES
-RESEARCH = {"COMPLETE", "NOT_RESEARCHED", "IN_PROGRESS", "BLOCKED"}
+RESEARCH = {"COMPLETE", "NOT_RESEARCHED", "IN_PROGRESS", "BLOCKED", "NO_DEFENSIBLE_COMPARATOR"}
+# Researched after Step 34, but no defensible official comparator was found (reasons in COURSE_NOTES).
+RESEARCHED_UNRESOLVED = {"COURSE-003", "COURSE-049", "COURSE-067", "COURSE-070", "COURSE-072", "COURSE-074", "COURSE-075", "COURSE-083", "COURSE-086"}
 AVAILABILITY = {"HEADINGS_AVAILABLE", "NO_HEADINGS", "HEADINGS_UNUSABLE"}
 MODES = {"FULL_COMPARISON", "COMPARATORS_ONLY", "RESEARCH_PENDING", "EVIDENCE_UNAVAILABLE"}
 PROPOSED_MODES = {"FULL_COMPARISON", "COMPARATORS_ONLY", "EVIDENCE_UNAVAILABLE"}
@@ -148,16 +145,24 @@ class CoverageRegisterTests(unittest.TestCase):
                     self.assertEqual(entry["current_presentation_mode"], "RESEARCH_PENDING")
                     self.assertIn("research has not started", entry["proposed_mode_reason"])
                     self.assertNotIn("blocking_evidence", entry)
+                if entry["research_status"] == "NO_DEFENSIBLE_COMPARATOR":
+                    # Researched, but unresolved: still shown as pending, never as blocked, with the documented reason kept.
+                    self.assertIn(course_id, RESEARCHED_UNRESOLVED)
+                    self.assertEqual(entry["comparator_record_count"], 0)
+                    self.assertEqual(entry["current_presentation_mode"], "RESEARCH_PENDING")
+                    self.assertIn("research was carried out", entry["proposed_mode_reason"])
+                    self.assertTrue(entry["notes"] and entry["notes"][0].startswith("Researched (Step"))
+                    self.assertNotIn("blocking_evidence", entry)
                 if entry["research_status"] == "BLOCKED":
                     self.assertTrue(entry["blocking_evidence"].strip())
                 if entry["research_status"] != "COMPLETE":
                     # Never classified as permanently not comparable.
                     self.assertNotEqual(entry["proposed_presentation_mode"], "EVIDENCE_UNAVAILABLE")
                     self.assertTrue(entry["further_research_could_improve"])
-        self.assertEqual(self.register["totals"]["research_status"], {"COMPLETE": 61, "NOT_RESEARCHED": 23})
+        self.assertEqual(self.register["totals"]["research_status"], {"COMPLETE": 75, "NO_DEFENSIBLE_COMPARATOR": 9})
         self.assertEqual(
             self.register["totals"]["current_presentation_mode"],
-            {"COMPARATORS_ONLY": 37, "FULL_COMPARISON": 24, "RESEARCH_PENDING": 23},
+            {"COMPARATORS_ONLY": 47, "FULL_COMPARISON": 28, "RESEARCH_PENDING": 9},
         )
 
     def test_current_mode_is_derived_from_verified_evidence_only(self):
@@ -215,9 +220,9 @@ class CoverageRegisterTests(unittest.TestCase):
         self.assertEqual(totals["courses_with_governed_headings"], 32)
         self.assertEqual(totals["evidence_availability"], {"HEADINGS_AVAILABLE": 29, "HEADINGS_UNUSABLE": 3, "NO_HEADINGS": 52})
         self.assertEqual(totals["proposed_presentation_mode"], {"COMPARATORS_ONLY": 55, "FULL_COMPARISON": 29})
-        self.assertEqual(totals["courses_with_comparators"], 61)
-        self.assertEqual(totals["courses_with_mapping"], 24)
-        self.assertEqual(totals["occupation_groups_complete"], 42)
+        self.assertEqual(totals["courses_with_comparators"], 75)
+        self.assertEqual(totals["courses_with_mapping"], 28)
+        self.assertEqual(totals["occupation_groups_complete"], 54)
         self.assertIn(f"uses {totals['occupation_groups']} groups", self.register["reconciliation"][0])
 
 
@@ -234,11 +239,17 @@ class FrontendCoverageIndexTests(unittest.TestCase):
         self.assertEqual(LOADERS_PATH.read_text(encoding="utf-8"), build_loaders())
 
     def test_index_carries_only_display_and_state_fields(self):
-        allowed = {"state", "research", "headings", "verified_headings", "records", "datasets", "mapping", "blocking_evidence"}
+        allowed = {"state", "research", "headings", "verified_headings", "records", "datasets", "mapping", "blocking_evidence", "research_note"}
         self.assertEqual(len(self.index["courses"]), 84)
+        register_notes = {e["course_id"]: e["notes"] for e in self.register["courses"]}
         for course_id, item in self.index["courses"].items():
             with self.subTest(course=course_id):
                 self.assertTrue(set(item) <= allowed)
+                # The documented reason travels only for researched-but-unresolved courses, verbatim from the register.
+                if item["research"] == "NO_DEFENSIBLE_COMPARATOR":
+                    self.assertEqual(item["research_note"], register_notes[course_id][0])
+                else:
+                    self.assertNotIn("research_note", item)
         # Research-only metadata stays out of the browser.
         text = INDEX_PATH.read_text(encoding="utf-8")
         for field in ("proposed_mode_reason", "research_improvement", "related_courses", "reconciliation"):

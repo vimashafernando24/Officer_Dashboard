@@ -1,0 +1,568 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-landscape",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Comparator records for NYSC COURSE-020 Landscape Development Assistant. The governed catalogue publishes no module headings for this course, so the records are shown without a competency matrix. Records describe documented curriculum only and do not establish equivalence, quality or labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its official source by a researcher before publication.",
+  "country_group_gaps": {},
+  "records": [
+    {
+      "record_id": "LK-TVEC-NCS-FLORICULTURE-LANDSCAPE-2022",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "FLORICULTURE AND LANDSCAPE DEVELOPMENT ASSISTANT",
+      "sector": "Agriculture / Landscaping",
+      "framework": "NVQ (Sri Lanka)",
+      "level_as_published": "NVQ Level 04",
+      "duration_as_published": null,
+      "entry_as_published": null,
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "A01S019BU1",
+          "title_verbatim": "Practice workplace communication and interpersonal relations",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S019BU2",
+          "title_verbatim": "Apply occupational literacy and numeracy",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S019BU3",
+          "title_verbatim": "Work in teams",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S019BU4",
+          "title_verbatim": "Practice occupational health and safety procedures in work place",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S019U01",
+          "title_verbatim": "Interpret designs",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S019U02",
+          "title_verbatim": "Carryout primary land preparation",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S019U03",
+          "title_verbatim": "Implement drainage and irrigation methods",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S019U04",
+          "title_verbatim": "Carry out nursery management activities",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S019U05",
+          "title_verbatim": "Recycle degradable materials",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S019U06",
+          "title_verbatim": "Operate and maintain landscape and floriculture tools, equipment and machinery",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S019U07",
+          "title_verbatim": "Control pests and diseases",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S019U08",
+          "title_verbatim": "Implement and maintain soft landscaping",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S019U09",
+          "title_verbatim": "Implement and maintain hard landscaping",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S019U10",
+          "title_verbatim": "Establish and maintain floriculture nursery",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S019U11",
+          "title_verbatim": "Assist in administration and management activities",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://nvq.gov.lk/report_inquires/NCS_Request_Pdf.php?nm=A01S019_0_NCS.pdf",
+        "document_type": "pdf",
+        "document_sha256": "3f6ff407bda9c4c7b5c7f133ee0c6b408dae6d70ddb3d41a0ef06e77d8cf4952",
+        "publication_or_revision": "First Revision January 2022; next revision January 2025",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Unit titles and codes read from the contents list (PDF page 6) and matched in order against the pdf.js text layer; revision facts from PDF page 2.",
+        "human_reviewed": false
+      },
+      "licence_note": "Copyright TVEC; source states all rights reserved.",
+      "notes": [
+        "A national occupational standard, not evidence that a named provider delivers the programme.",
+        "Stores the 15 competency units only; the curriculum modules and hours are not stored and no overall course duration is stated.",
+        "No endorsement or prerequisite page could be read from the PDF text layer, so no entry requirement is stored.",
+        "The stated next revision (January 2025) has passed and the NVQ portal serves no later revision (2026-10-18).",
+        "The portal also serves an older standard titled 'Landscape Development Assistant' (O92S001, 2014/2017), whose title matches NYSC COURSE-020 exactly; it was not stored because A01S019 is the more recent landscape standard."
+      ]
+    },
+    {
+      "record_id": "IN-DGT-CTS-FLORICULTURE-LANDSCAPING-V2",
+      "country": "India",
+      "country_group": "developing_emerging",
+      "institution": "Directorate General of Training (DGT), Ministry of Skill Development & Entrepreneurship",
+      "record_type": "national_curriculum",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Floriculture & Landscaping",
+      "sector": "Agriculture / Landscaping",
+      "framework": "NSQF (India)",
+      "level_as_published": "NSQF LEVEL – 3.5",
+      "duration_as_published": "One Year (1200 Hours + 150 Hours OJT/Group Project)",
+      "entry_as_published": "Passed 10th class examination or its equivalent .",
+      "modules": [
+        {
+          "published_ref": "LO1",
+          "code": "AGR/N9401",
+          "title_verbatim": "Identify metrological instruments and understand the diversity within the profession of Floriculture following safety precautions.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO2",
+          "code": "AGR/N9402",
+          "title_verbatim": "Identify Plant morphology, different plant varieties and plant families.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO3",
+          "code": "AGR/N8101, AGR/N8108",
+          "title_verbatim": "Identify different Soil types, Methods of soil sampling and collection, detection on physical and chemical properties of soil, Interpret soil test reports for proper rectification.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO4",
+          "code": "AGR/N0701",
+          "title_verbatim": "Measure Soil fertility and apply soil fertility management for improvement of fertility of soil.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO5",
+          "code": "AGR/N0701",
+          "title_verbatim": "Apply integrated nutrient Management system (INMS) in the field.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO6",
+          "code": "AGR/N0718",
+          "title_verbatim": "Identify and select different propagation methods, handling of seed, bulbs, cut flowers, Nursery plants, pot plants.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO7",
+          "code": "AGR/N0718",
+          "title_verbatim": "Identify and apply method of vegetative propagation and its management.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO8",
+          "code": "AGR/N0701, AGR/N0715, AGR/N0720, AGR/N0721, AGR/N0722, AGR/N0723, AGR/N0714, AGR/N0803, AGR/N0842, AGR/N0801",
+          "title_verbatim": "Identify Commercial Flowers and their packaging.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO9",
+          "code": "AGR/N0702",
+          "title_verbatim": "Identify the diseases and apply the pesticide as per requirement.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO10",
+          "code": "AGR/N0802, AGR/N0803, AGR/N0707, AGR/N0708",
+          "title_verbatim": "Plan and execute Survey for landscaping and various types of indoor gardening.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO11",
+          "code": "AGR/N1013",
+          "title_verbatim": "Carry out Protected cultivation of flower.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://www.dgt.gov.in/sites/default/files/2024-12/Floriculture%20%26%20Landscaping_CTS2.0_NSQF-3.5.pdf",
+        "document_type": "pdf",
+        "document_sha256": "acccc6aaed81aef6af6883bf46ff0f8a33d1e0fb0cf7a18c23384d8dbe7f7b89",
+        "publication_or_revision": "Version 2.0, revised March 2023",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "All 11 learning outcomes and NOS codes read from the 5.1 Learning Outcomes pages and matched against the pdf.js text layer (running page headers and footers removed); course facts from the general information table.",
+        "human_reviewed": false
+      },
+      "licence_note": "Government of India publication; reuse terms not checked.",
+      "notes": [
+        "A national curriculum delivered through Industrial Training Institutes (ITIs); no individual ITI has been verified.",
+        "Employability Skills are listed separately and not stored."
+      ]
+    },
+    {
+      "record_id": "PH-TESDA-LANDSCAPE-NC2",
+      "country": "Philippines",
+      "country_group": "developing_emerging",
+      "institution": "Technical Education and Skills Development Authority (TESDA)",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Landscape Installation and Maintenance NC II",
+      "sector": "Agriculture / Landscaping",
+      "framework": "Philippine TVET Qualification (NC)",
+      "level_as_published": "NC II",
+      "duration_as_published": "Nominal Training Duration: 212 Hours",
+      "entry_as_published": null,
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "500311105",
+          "title_verbatim": "Participate in Workplace Communication",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311106",
+          "title_verbatim": "Work in Team Environment",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311107",
+          "title_verbatim": "Practice Career Professionalism",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311108",
+          "title_verbatim": "Practice Occupational Health and Safety Procedures",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR321201",
+          "title_verbatim": "Apply safety measures in farm and nursery operations",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR321202",
+          "title_verbatim": "Use farm and nursery tools and equipment",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR321203",
+          "title_verbatim": "Perform estimation and calculations",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611371",
+          "title_verbatim": "Provide site clearing and grubbing activities",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611372",
+          "title_verbatim": "Perform rough grading operations",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611373",
+          "title_verbatim": "Perform site preparation activities",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611374",
+          "title_verbatim": "Install plants at designated locations as designed",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611375",
+          "title_verbatim": "Install plant supports",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611376",
+          "title_verbatim": "Trim and prune landscape plants",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611377",
+          "title_verbatim": "Perform weeding and cultivation",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611378",
+          "title_verbatim": "Apply fertilizer (Nutrition)",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611379",
+          "title_verbatim": "Water/Irrigate plants",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611380",
+          "title_verbatim": "Control and prevent plant pest and diseases",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611381",
+          "title_verbatim": "Provide plant support",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611382",
+          "title_verbatim": "Perform lawn grass maintenance",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611383",
+          "title_verbatim": "Perform re-planting activities",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611384",
+          "title_verbatim": "Collect, dispose and utilize organic waste",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://www.tesda.gov.ph/Downloadables/TR%20-%20Landscape%20Installation%20and%20Maintenance%20NC%20II.pdf",
+        "document_type": "pdf",
+        "document_sha256": "8a5cbc36a846a6558cf0d6f72c53397d4f26287587506ab13feec5fca8a481e3",
+        "publication_or_revision": "Training regulation for Landscape Installation and Maintenance NC II (TESDA list: AFFLIM208, promulgated 04/11/08)",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Units and codes read from the Section 1 page (PDF page 5) and matched in order against the pdf.js text layer; nominal duration from the Section 3.1 course design.",
+        "human_reviewed": false
+      },
+      "licence_note": "Philippine government publication; reuse terms not checked.",
+      "notes": [
+        "A training regulation (standard), delivered by TESDA-registered institutions; no provider has been verified.",
+        "Listed in TESDA's list of promulgated training regulations (as of May 2022) as Landscape Installation and Maintenance (Softscape) NC II, AFFLIM208, 212 hours, promulgated 04/11/08.",
+        "The document's Section 1 heading reads 'LANDSCAPING NC II'.",
+        "The PDF does not print a promulgation date on its Section 1 page; the date is taken from TESDA's promulgated-TR list.",
+        "Core units are published under two sub-headings: Installation / Construction (AGR611371, AGR611372, AGR611373, AGR611374, AGR611375) and Maintenance (AGR611376, AGR611377, AGR611378, AGR611379, AGR611380, AGR611381, AGR611382, AGR611383, AGR611384)."
+      ],
+      "scope_verbatim": [
+        "Landscape Installation and Maintenance NC II consists of competencies that a person must achieve in installing and maintaining landscape designs for all types of development projects including residential, commercial, industrial, institutional and open space areas."
+      ]
+    },
+    {
+      "record_id": "AU-TGA-AHC30921",
+      "country": "Australia",
+      "country_group": "developed",
+      "institution": "Australian Government, training.gov.au (AHC Agriculture, Horticulture and Conservation and Land Management Training Package)",
+      "record_type": "national_qualification",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Certificate III in Landscape Construction",
+      "sector": "Agriculture / Landscaping",
+      "framework": "AQF (Australia)",
+      "level_as_published": "Certificate III (national code AHC30921)",
+      "duration_as_published": null,
+      "entry_as_published": "Nil",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "AHCDRG305",
+          "title_verbatim": "Install drainage systems",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "AHCLSC311",
+          "title_verbatim": "Set out site for construction works",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "AHCLSC312",
+          "title_verbatim": "Construct brick and block structures and features",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "AHCLSC313",
+          "title_verbatim": "Construct stone structures and features, and install stone cladding",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "AHCLSC316",
+          "title_verbatim": "Implement a paving project",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "AHCLSC317",
+          "title_verbatim": "Construct landscape features using concrete",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "AHCLSC319",
+          "title_verbatim": "Implement a retaining wall project",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "AHCPCM306",
+          "title_verbatim": "Provide information on plants and their culture",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "AHCPGD307",
+          "title_verbatim": "Implement a plant establishment program",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "AHCSOL304",
+          "title_verbatim": "Implement soil improvements for garden and turf areas",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://training.gov.au/assets/AHC/AHC30921_R2.pdf",
+        "document_type": "pdf",
+        "document_sha256": "023133127d6afe48e58ffc63bafd6834db59c048a4a0b8a95cf362e70c30dc8e",
+        "publication_or_revision": "AHC30921 Release 2 (released 2024-05-01; status Current on training.gov.au, 2026-10-18)",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Core units read from the official qualification PDF and matched against its pdf.js text layer; each code, title and core status equals the training.gov.au Release 2 unit grid.",
+        "human_reviewed": false
+      },
+      "licence_note": "© Commonwealth of Australia, 2024; training package content is published under its own licence terms (not checked).",
+      "notes": [
+        "A national qualification, not a delivered programme; no delivering provider has been verified and no nominal duration is stated.",
+        "Stores the 10 core units only; electives are not stored.",
+        "Weighted towards hard-landscape construction (paving, walls, structures) with plant establishment and soil improvement; it is not a floriculture qualification."
+      ]
+    }
+  ]
+}

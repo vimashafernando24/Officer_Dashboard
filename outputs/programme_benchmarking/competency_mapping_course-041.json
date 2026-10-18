@@ -1,0 +1,484 @@
+{
+  "description": "Hand-curated competency mapping for NYSC COURSE-041 Preschool Teacher (Early Childhood Development) against its three linked early childhood records. A DOCUMENTED cell cites the exact stored text that names the competency. NOT_EXPLICIT means the available description does not name it, not that it is absent from teaching. INSUFFICIENT_DATA means the stored text is unavailable, outside the record's scope, or too ambiguous to assess.",
+  "schema_version": "1.0.0",
+  "nysc_course_id": "COURSE-041",
+  "created_date": "2026-10-18",
+  "method": "The NYSC column was assessed by hand against this course's four governed headings. Heading 1 ('Handling skills and design') is too unspecific to establish any competency and is not cited. Heading 2 is cited by its governed text with the verified display correction. Coverage is never inferred from programme titles, qualification levels or unstored text.",
+  "human_reviewed": false,
+  "statuses": [
+    "DOCUMENTED",
+    "NOT_EXPLICIT",
+    "INSUFFICIENT_DATA"
+  ],
+  "columns": [
+    {
+      "column_id": "NYSC-COURSE-041",
+      "kind": "nysc",
+      "nysc_course_id": "COURSE-041",
+      "short_label": "NYSC COURSE-041"
+    },
+    {
+      "column_id": "LK-TVEC-NCS-ECCD-TEACHER-2026",
+      "kind": "benchmark",
+      "record_id": "LK-TVEC-NCS-ECCD-TEACHER-2026",
+      "short_label": "NCS ECCD Teacher · Sri Lanka"
+    },
+    {
+      "column_id": "IN-DGT-CTS-EARLY-CHILDHOOD-EDUCATOR-V2",
+      "kind": "benchmark",
+      "record_id": "IN-DGT-CTS-EARLY-CHILDHOOD-EDUCATOR-V2",
+      "short_label": "DGT ECE · India"
+    },
+    {
+      "column_id": "AU-TGA-CHC30125",
+      "kind": "benchmark",
+      "record_id": "AU-TGA-CHC30125",
+      "short_label": "CHC30125 · Australia"
+    }
+  ],
+  "category_components": {
+    "ecd_child_development": [
+      "supporting children's development"
+    ],
+    "ecd_child_psychology": [
+      "understanding child psychology"
+    ],
+    "ecd_environment_exploration": [
+      "exploring the natural or wider environment with children"
+    ],
+    "ecd_learning_methods": [
+      "planning or organising learning activities using appropriate methods"
+    ],
+    "ecd_health_safety": [
+      "keeping children safe",
+      "supporting children's health"
+    ],
+    "ecd_language_literacy": [
+      "developing children's language or early literacy skills"
+    ],
+    "ecd_creative_arts": [
+      "developing children's aesthetic, art or music skills"
+    ],
+    "ecd_inclusion": [
+      "including children with diverse or special needs"
+    ]
+  },
+  "methodology": {
+    "DOCUMENTED": "The cited stored text explicitly names the competency. Coverage records whether it names every component of the category (FULL) or only some (PARTIAL).",
+    "FULL": "The cited evidence supports the competency as labelled: every listed component of the category is explicitly named.",
+    "PARTIAL": "Only a component of the category, or a lower level of activity, is explicitly documented; supported_component records what is supported.",
+    "NOT_EXPLICIT": "The competency is not documented within the available, assessed scope of the source (units, modules, learning outcomes or verified scope passages as stored).",
+    "INSUFFICIENT_DATA": "Missing or incomplete material prevents a reliable assessment.",
+    "caution": "None of these statuses proves that a competency is or is not actually taught.",
+    "areas_rule": "Areas to Investigate list competencies that the NYSC description does not name (NOT_EXPLICIT) and that at least two distinct comparator records, from at least two different countries, document with FULL coverage. PARTIAL evidence is shown but not counted.",
+    "decisions": [
+      "Only early childhood records are linked; the Sri Lankan standard is the renamed successor of the 'Preschool Teacher (Early Childhood Development)' standard.",
+      "Australian cells assess the 15 core units only; electives are not stored."
+    ]
+  },
+  "competencies": [
+    {
+      "competency_id": "ecd_child_development",
+      "label": "Supporting children's development",
+      "cells": {
+        "NYSC-COURSE-041": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Early Childhood Development Skills"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-ECCD-TEACHER-2026": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": "M80S001U06",
+              "text": "Facilitate the cognitive development of children"
+            },
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": "M80S001U07",
+              "text": "Facilitate the social and emotional development of children"
+            },
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": "M80S001U08",
+              "text": "Facilitate the physical development of children"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-EARLY-CHILDHOOD-EDUCATOR-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": "MEP/N4102",
+              "text": "Develop growth and development of 0-6years old Physical, language, social, emotional, cognitive, fine motor development, gross motor following safety precautions."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-CHC30125": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": "CHCECE035",
+              "text": "Support the holistic learning and development of children"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "ecd_child_psychology",
+      "label": "Child psychology",
+      "cells": {
+        "NYSC-COURSE-041": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Child Psychology"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-ECCD-TEACHER-2026": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored unit names child psychology; development units are not psychology."
+        },
+        "IN-DGT-CTS-EARLY-CHILDHOOD-EDUCATOR-V2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored learning outcome names child psychology."
+        },
+        "AU-TGA-CHC30125": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in the stored core units."
+        }
+      }
+    },
+    {
+      "competency_id": "ecd_environment_exploration",
+      "label": "Environmental and nature exploration",
+      "cells": {
+        "NYSC-COURSE-041": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Includes environmental exploration and learning methods time course which will be held on weekdays.",
+              "display_text": "Includes environmental exploration and learning methods"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-ECCD-TEACHER-2026": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "'Create learning - teaching environment' concerns the learning environment, not exploration of the natural environment."
+        },
+        "IN-DGT-CTS-EARLY-CHILDHOOD-EDUCATOR-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": "MEP/N4102",
+              "text": "Comprehend Physical Science, Life Science, Botany, Zoology and Geography, Creating awareness and sensitivity of the world around us, making rational conclusions, being respectful of other cultures and communities."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-CHC30125": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": "CHCECE037",
+              "text": "Support children to connect with the natural environment"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "ecd_learning_methods",
+      "label": "Learning and teaching methods",
+      "cells": {
+        "NYSC-COURSE-041": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Includes environmental exploration and learning methods time course which will be held on weekdays.",
+              "display_text": "Includes environmental exploration and learning methods"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-ECCD-TEACHER-2026": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": "M80S001U01",
+              "text": "Plan learning - teaching activities"
+            },
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": "M80S001U02",
+              "text": "Organize learning - teaching activities"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-EARLY-CHILDHOOD-EDUCATOR-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": "MEP/N9427",
+              "text": "Analyze Philosophies of Early Childhood Educationist Maria Montessori, Fedrick Forbel, Jean Piaget, Rudolf Stiener, Reggio Emilia."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Analysing early childhood education philosophies (e.g. Montessori); planning learning activities is not named"
+        },
+        "AU-TGA-CHC30125": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": "CHCECE036",
+              "text": "Provide experiences to support children's play and learning"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "ecd_health_safety",
+      "label": "Children's health and safety",
+      "cells": {
+        "NYSC-COURSE-041": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's interpretable governed headings."
+        },
+        "LK-TVEC-NCS-ECCD-TEACHER-2026": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": "M80S001U04",
+              "text": "Ensure security and safety of children"
+            },
+            {
+              "module_index": 9,
+              "field": "title_verbatim",
+              "code": "M80S001U10",
+              "text": "Maintain health and nutrition of children"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-EARLY-CHILDHOOD-EDUCATOR-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": "MEP/N4101",
+              "text": "Apply the knowledge to prepare an Inside – Outside Environment for Pre-School Health and Safety of Pre-School children First Aid."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-CHC30125": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": "CHCECE031",
+              "text": "Support children's health, safety and wellbeing"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "ecd_language_literacy",
+      "label": "Language and early literacy",
+      "cells": {
+        "NYSC-COURSE-041": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's interpretable governed headings."
+        },
+        "LK-TVEC-NCS-ECCD-TEACHER-2026": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": "M80S001U05",
+              "text": "Facilitate the development of language and early literacy skills of children"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-EARLY-CHILDHOOD-EDUCATOR-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": "MEP/N4102",
+              "text": "Select and execute the Progression and Presentation of Language and Math Skills in Early Childhood."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-CHC30125": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in the stored core units."
+        }
+      }
+    },
+    {
+      "competency_id": "ecd_creative_arts",
+      "label": "Art, music and aesthetic development",
+      "cells": {
+        "NYSC-COURSE-041": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's interpretable governed headings. Heading 1 ('Handling skills and design') is too unspecific to establish art or aesthetic development."
+        },
+        "LK-TVEC-NCS-ECCD-TEACHER-2026": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 8,
+              "field": "title_verbatim",
+              "code": "M80S001U09",
+              "text": "Facilitate the development of aesthetic skills of children"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-EARLY-CHILDHOOD-EDUCATOR-V2": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": "MEP/N4102",
+              "text": "Select and apply the Art, Craft Music in Early Childhood to build concentration and calmness, realizing of feelings and developing balancing control movements to reach their full potential."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-CHC30125": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in the stored core units."
+        }
+      }
+    },
+    {
+      "competency_id": "ecd_inclusion",
+      "label": "Inclusion and special needs",
+      "cells": {
+        "NYSC-COURSE-041": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's interpretable governed headings."
+        },
+        "LK-TVEC-NCS-ECCD-TEACHER-2026": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "title_verbatim",
+              "code": "M80S001U11",
+              "text": "Promote inclusive practices for children with special needs"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-EARLY-CHILDHOOD-EDUCATOR-V2": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored learning outcome names inclusion or special needs."
+        },
+        "AU-TGA-CHC30125": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": "CHCECE030",
+              "text": "Support inclusion and diversity"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    }
+  ]
+}

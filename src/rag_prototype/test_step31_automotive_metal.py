@@ -83,10 +83,10 @@ class Step31AutomotiveMetalTests(unittest.TestCase):
     def test_updated_totals(self):
         register = json.loads((BENCH / "coverage_register.json").read_text(encoding="utf-8"))
         self.assertEqual(register["totals"]["current_presentation_mode"], {
-            "COMPARATORS_ONLY": 37, "FULL_COMPARISON": 24, "RESEARCH_PENDING": 23,
+            "COMPARATORS_ONLY": 47, "FULL_COMPARISON": 28, "RESEARCH_PENDING": 9,
         })
-        self.assertEqual(register["totals"]["courses_with_mapping"], 24)
-        self.assertEqual(len(self.records), 100)
+        self.assertEqual(register["totals"]["courses_with_mapping"], 28)
+        self.assertEqual(len(self.records), 132)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,97 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-garment",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Official-source tailoring and dressmaking evidence for comparison with NYSC COURSE-037, COURSE-063 and COURSE-085.",
+  "status_note": "Source-inspected curricula, qualification and occupational standard awaiting independent human review.",
+  "country_group_gaps": {
+    "developed": "No developed-economy tailoring or dressmaking source with sufficiently specific inspected curriculum content was verified for this batch."
+  },
+  "records": [
+    {
+      "record_id": "IN-DGT-CTS-SEWING-TECHNOLOGY-V2",
+      "country": "India",
+      "country_group": "developing_emerging",
+      "institution": "Government of India, Directorate General of Training",
+      "record_type": "national_curriculum",
+      "delivering_provider_verified": false,
+      "title_verbatim": "SEWING TECHNOLOGY",
+      "sector": "Apparel / Sewing technology",
+      "framework": "Craftsmen Training Scheme (India)",
+      "level_as_published": "NSQF Level 2.5",
+      "duration_as_published": "One Year (1200 Hours+150 hours OJT/Group Project)",
+      "entry_as_published": "Passed 8th class examination",
+      "modules": [
+        {"published_ref":"Section 5.1, Learning Outcome 5 — printed p.9; PDF p.12","code":"AMH/N1947","title_verbatim":"Draft a pattern for Ladies’ Suit and Sew a Ladies’ Suit with the help of the given pattern.","outcome_verbatim":null,"group":"Trade-specific learning outcomes"},
+        {"published_ref":"Section 5.1, Learning Outcome 6 — printed p.9; PDF p.12","code":"AMH/N1211","title_verbatim":"Sketch the following garments:","outcome_verbatim":"Ladies’ Tops/Short kurties; Ladies ‘Suit; Nightwear (one piece/two-piece); Sari Blouse; Dresses for New Born; Dresses for Toddler; Dresses for Kids","group":"Trade-specific learning outcomes"},
+        {"published_ref":"Section 5.1, Learning Outcome 7 — printed pp.9–10; PDF pp.12–13","code":"AMH/NO701","title_verbatim":"Construct the following garments with fitting and quality according to the sketched designs","outcome_verbatim":"Sari Petticoat; Ladies’ Top/Short Kurties; Ladies’ Suit; Nightwear (One Piece with Yoke); Nightwear (Two Piece – Night suit); Sari Blouse (Simple Model - Plain); Dress for a New-born(Jhabla); Dress for a Toddler (Sun Suit); Dress for Kids (Frock); Gent’s Kurta and Pyjamas; Gent’s Casual-Shirt; Gent’s Trousers","group":"Trade-specific learning outcomes"}
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {"url":"https://www.dgt.gov.in/sites/default/files/2025-01/Sewing%20Technology_CTS2.0_NSQF-2.5.pdf","document_type":"pdf","document_sha256":"921fe728f2f38c4b3a36c05e8903e9db725a7268e0e844e5bacce5f5b6ab5eb8","publication_or_revision":"CTS Version 2.0; revised March 2023","retrieved_date":"2026-10-18"},
+      "language": "English",
+      "verification": {"status":"source_inspected_pending_human_review","method":"Trade identity, level, duration, occupational description, learning outcomes 5–7 and assessment criteria checked against official DGT PDF pages 9–13 and 15–24 (printed pages 6–10 and 12–21).","human_reviewed":false},
+      "licence_note": "Official Government of India curriculum; reuse terms not assessed.",
+      "notes": ["A national curriculum, not a verified named-provider delivery.","The curriculum explicitly uses patterns; it does not support equivalence to a block-free garment-making method.","The record stores only the outcomes needed for the governed women-and-children clothing comparison."],
+      "scope_verbatim": ["Tailor, General: makes ladies and gents' garments and children's clothes by stitching various components together according to pattern, by hand or sewing machine."]
+    },
+    {
+      "record_id": "PH-TESDA-DRESSMAKING-NC2-2005",
+      "country": "Philippines",
+      "country_group": "developing_emerging",
+      "institution": "Technical Education and Skills Development Authority",
+      "record_type": "national_qualification",
+      "delivering_provider_verified": false,
+      "title_verbatim": "DRESSMAKING NC II",
+      "sector": "Garment sector / Dressmaking",
+      "framework": "Philippine TVET Qualification and Certification System",
+      "level_as_published": "NC II",
+      "duration_as_published": "240 Hrs. core competencies, plus 18 Hours basic and 17 Hours common competencies",
+      "entry_as_published": null,
+      "modules": [
+        {"published_ref":"Section 1, GRM743301; printed p.1 / PDF p.3","code":"GRM743301","title_verbatim":"Draft and cut pattern of casual apparel","outcome_verbatim":"Plan garment design; Take clients body measurement; Draft basic/block pattern; Manipulate pattern; Cut final pattern","group":"Core competencies"},
+        {"published_ref":"Section 1, GRM743302; printed p.1 / PDF p.3","code":"GRM743302","title_verbatim":"Prepare and cut materials of casual apparel","outcome_verbatim":"Prepare materials (fabric); Layout and mark pattern on material; Cut materials","group":"Core competencies"},
+        {"published_ref":"Section 1, GRM743303; printed p.1 / PDF p.3","code":"GRM743303","title_verbatim":"Sew casual apparel","outcome_verbatim":"Prepare cut parts; Prepare sewing machine for operation; Sew and assemble garment parts; Alter completed garment","group":"Core competencies"},
+        {"published_ref":"Section 1, GRM743304; printed p.1 / PDF p.3","code":"GRM743304","title_verbatim":"Apply finishing touches on casual apparel","outcome_verbatim":null,"group":"Core competencies"}
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {"url":"https://www.tesda.gov.ph/Downloadables/TR%20-%20Dressmaking%20NC%20II.pdf","document_type":"pdf","document_sha256":"021baaa89023391a14a4e8dd6d41cb4be8cc2159e16395f2ad6cf4cffe03ca9e","publication_or_revision":"Promulgated March 18, 2005","retrieved_date":"2026-10-18"},
+      "language": "English",
+      "verification": {"status":"source_inspected_pending_human_review","method":"Qualification scope, four core units, block-pattern requirements, sewing/alteration criteria and training design checked against official TESDA PDF pages 3, 30–31, 40 and 48–50.","human_reviewed":false},
+      "licence_note": "Official TESDA training regulation; reuse terms not assessed.",
+      "notes": ["A national qualification and training regulation, not a verified named-provider delivery.","The assessed qualification scope is women’s casual apparel; children’s garments are not established.","The standard explicitly requires basic/block patterns and does not support block-free method equivalence.","The 2005 promulgation is retained as published; current supersession status was not established."],
+      "scope_verbatim": ["The DRESSMAKING NC II Qualification consists of competencies that a person must achieve to enable him/her to draft and cut pattern; lay-out pattern on the material/fabric, sew material/fabric and apply finishing touches on the ladies casual apparel of the Garment sector."]
+    },
+    {
+      "record_id": "LK-TVEC-NCS-TAILOR-R2-2017",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "National Apprentice & Industrial Training Authority; endorsed by Tertiary & Vocational Education Commission",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "NATIONAL COMPETENCY STANDARDS For TAILOR",
+      "sector": "Tailoring / garment production",
+      "framework": "National Vocational Qualifications Framework of Sri Lanka",
+      "level_as_published": null,
+      "duration_as_published": null,
+      "entry_as_published": null,
+      "modules": [
+        {"published_ref":"D18S004U04 — printed pp.13–17; PDF pp.36–40","code":"D18S004U04","title_verbatim":"Sew blouse, skirt and frock (basic)","outcome_verbatim":"This unit covers the competencies required to select appropriate needle gauge and required Stitches per inch (SPI), and thread tension to suit the required seams (machines or hand) on fabric & garment, and sew ladies’ basic blouses, skirts and frock using tools , fabric and equipment safely and economically.","group":"Units of competency"},
+        {"published_ref":"D18S004U06 — printed pp.22–23; PDF pp.45–46","code":"D18S004U06","title_verbatim":"Sew Trousers","outcome_verbatim":"This unit covers the competencies required to select appropriate needle gauge, required stitches per inch (SPI) , thread tension to suit the fabric & garment and sew trousers using tools, material and equipment economically ensuring safely.","group":"Units of competency"}
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {"url":"https://nvq.gov.lk/Report_Inquires/NCS_Request_Pdf.php?nm=D18S004_2_NCS.pdf","document_type":"pdf","document_sha256":"dc0ef847b0d8134bb0786a417786c528e8f119f34a08177c2b7bbbc01e85eb66","publication_or_revision":"Second revision; endorsed 25 September 2017; stated review date 25 September 2020","retrieved_date":"2026-10-18"},
+      "language": "English",
+      "verification": {"status":"source_inspected_pending_human_review","method":"Authority, revision information, women’s garment unit D18S004U04, trouser unit D18S004U06 and its children’s-trouser range checked against official TVEC/NAITA PDF pages 1–7, 36–40, 45–46 and 89–99.","human_reviewed":false},
+      "licence_note": "Copyright © 2017 TVEC; reuse terms not assessed.",
+      "notes": ["An occupational standard with appended curricula, not a verified named-provider delivery.","The appended ladies’ curriculum uses block templates; this record does not support block-free method equivalence.","The stated 2020 review date does not establish expiry or current supersession status."],
+      "scope_verbatim": ["This unit covers the competencies required to select appropriate needle gauge and required Stitches per inch (SPI), and thread tension to suit the required seams (machines or hand) on fabric & garment, and sew ladies’ basic blouses, skirts and frock using tools , fabric and equipment safely and economically.","Trousers coming under this unit may include Childrens’ trousers; Mens, trousers; Ladies trousers; Slacks/pants"]
+    }
+  ]
+}

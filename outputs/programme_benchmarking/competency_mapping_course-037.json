@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "nysc_course_id": "COURSE-037",
+  "created_date": "2026-10-18",
+  "description": "Hand-curated one-row competency mapping for NYSC COURSE-037 Tailor against three official-source garment comparators. The broad governed heading is not expanded into unstated techniques.",
+  "method": "The NYSC column was assessed only from its single governed heading. Comparator cells use exact stored source passages for women’s and children’s garment scope.",
+  "methodology": {
+    "DOCUMENTED": "The cited stored text explicitly names the competency. Coverage is FULL only where every component in category_components is named; otherwise it is PARTIAL.",
+    "FULL": "Every listed component of the competency category is explicitly named in the cited evidence.",
+    "PARTIAL": "Only part of the category, or a broader/lower-level activity, is explicitly documented.",
+    "NOT_EXPLICIT": "The competency is not documented within the available assessed source scope.",
+    "INSUFFICIENT_DATA": "Missing or incomplete material prevents reliable assessment.",
+    "caution": "This published-text comparison does not prove what is or is not taught.",
+    "areas_rule": "Areas to Investigate list NYSC NOT_EXPLICIT competencies documented with FULL coverage by at least two comparator records from at least two countries. PARTIAL evidence does not count.",
+    "decisions": [
+      "The single broad governed heading is retained as one category; measuring, drafting, machinery, alterations, safety and enterprise are not inferred as NYSC competencies.",
+      "FULL means only that both women’s and children’s clothing are explicit in the assessed source scope; it does not establish technique, garment-by-garment or qualification equivalence.",
+      "The TESDA qualification is PARTIAL because its assessed scope establishes women’s casual apparel but not children’s clothing."
+    ]
+  },
+  "category_components": {"garment_women_children_clothing": ["women’s clothing", "children’s clothing"]},
+  "human_reviewed": false,
+  "statuses": ["DOCUMENTED", "NOT_EXPLICIT", "INSUFFICIENT_DATA"],
+  "columns": [
+    {"column_id":"NYSC-COURSE-037","kind":"nysc","nysc_course_id":"COURSE-037","short_label":"NYSC COURSE-037"},
+    {"column_id":"LK-TVEC-NCS-TAILOR-R2-2017","kind":"benchmark","record_id":"LK-TVEC-NCS-TAILOR-R2-2017","short_label":"TVEC/NAITA · Sri Lanka"},
+    {"column_id":"IN-DGT-CTS-SEWING-TECHNOLOGY-V2","kind":"benchmark","record_id":"IN-DGT-CTS-SEWING-TECHNOLOGY-V2","short_label":"DGT · India"},
+    {"column_id":"PH-TESDA-DRESSMAKING-NC2-2005","kind":"benchmark","record_id":"PH-TESDA-DRESSMAKING-NC2-2005","short_label":"TESDA · Philippines"}
+  ],
+  "competencies": [{
+    "competency_id": "garment_women_children_clothing",
+    "label": "Women’s and children’s clothing",
+    "cells": {
+      "NYSC-COURSE-037": {"status":"DOCUMENTED","evidence":[{"module_index":0,"field":"title_verbatim","code":null,"text":"Women and children clothing"}],"note":"This is the complete governed scope available for mapping; no techniques or garment types are inferred.","coverage":"FULL"},
+      "LK-TVEC-NCS-TAILOR-R2-2017": {"status":"DOCUMENTED","evidence":[{"module_index":0,"field":"scope_verbatim","code":null,"text":"This unit covers the competencies required to select appropriate needle gauge and required Stitches per inch (SPI), and thread tension to suit the required seams (machines or hand) on fabric & garment, and sew ladies’ basic blouses, skirts and frock using tools , fabric and equipment safely and economically."},{"module_index":1,"field":"scope_verbatim","code":null,"text":"Trousers coming under this unit may include Childrens’ trousers; Mens, trousers; Ladies trousers; Slacks/pants"}],"note":"Women’s garments and children’s trousers are explicit across separate units; this does not imply every qualification package or garment type combines both.","coverage":"FULL"},
+      "IN-DGT-CTS-SEWING-TECHNOLOGY-V2": {"status":"DOCUMENTED","evidence":[{"module_index":0,"field":"scope_verbatim","code":null,"text":"Tailor, General: makes ladies and gents' garments and children's clothes by stitching various components together according to pattern, by hand or sewing machine."}],"note":"The occupational description explicitly names both components and pattern use.","coverage":"FULL"},
+      "PH-TESDA-DRESSMAKING-NC2-2005": {"status":"DOCUMENTED","evidence":[{"module_index":0,"field":"scope_verbatim","code":null,"text":"The DRESSMAKING NC II Qualification consists of competencies that a person must achieve to enable him/her to draft and cut pattern; lay-out pattern on the material/fabric, sew material/fabric and apply finishing touches on the ladies casual apparel of the Garment sector."}],"note":"The assessed scope establishes women’s casual apparel but not children’s clothing.","coverage":"PARTIAL","supported_component":"women’s casual apparel"}
+    }
+  }]
+}

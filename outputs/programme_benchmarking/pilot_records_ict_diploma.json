@@ -6,7 +6,7 @@
   "purpose": "Comparator records for NYSC COURSE-006 National Diploma In Information & Communication Technology. Records describe documented curriculum only and do not establish equivalence, quality or labour demand.",
   "status_note": "No record has been human-verified yet. Every record must be checked against its official source by a researcher before publication.",
   "country_group_gaps": {
-    "developing_emerging": "No developing/emerging-economy diploma-level ICT curriculum was verified on 2026-10-18: DGT and TESDA publish no comparable diploma; NIELIT's 'A' Level syllabus could not be retrieved (the NIELIT site served only an application shell) and the NQR copy is an outdated approval sheet.",
+    "developing_emerging": "No developing/emerging-economy diploma-level ICT curriculum was verified on 2026-10-18: no comparable diploma was identified in the DGT and TESDA sources searched; NIELIT's 'A' Level syllabus could not be retrieved (the NIELIT site served only an application shell) and the NQR copy is an outdated approval sheet.",
     "developed": "The existing Singapore ITE Higher Nitec in IT Applications Development delivered programme (web dataset) is linked as the developed-economy comparator. Australia's ICT50220 Diploma of Information Technology was inspected but not used: its core units are generic and its technical content depends on a single chosen specialisation."
   },
   "records": [

@@ -487,99 +487,292 @@
     },
     {
       "nysc_course_id": "COURSE-038",
-      "record_ids": ["IN-DGT-CTS-2W3W-V2"],
+      "record_ids": [
+        "IN-DGT-CTS-2W3W-V2"
+      ],
       "basis": "Three Wheeler Mechanic evidence verified on 2026-10-18 (Step 31): India's DGT Mechanic Two & Three Wheeler national curriculum explicitly covers servicing, repair and overhaul of two- and three-wheelers, including auto-rickshaws. Motorcycle-only records were excluded. The governed catalogue publishes no module headings, so the comparator is shown without a competency matrix.",
       "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Only one source-inspected specialist curriculum was verified. It is a national curriculum, not a confirmed delivery, and its scope combines two- and three-wheelers rather than isolating three-wheelers."
     },
     {
       "nysc_course_id": "COURSE-017",
-      "record_ids": ["IN-DGT-CTS-AGMACH-V2", "PH-TESDA-AGMACH-4WT-NC3", "AU-TGA-AUR30420"],
+      "record_ids": [
+        "IN-DGT-CTS-AGMACH-V2",
+        "PH-TESDA-AGMACH-4WT-NC3",
+        "AU-TGA-AUR30420"
+      ],
       "basis": "Agricultural-machinery mechanic evidence verified on 2026-10-18 (Step 31): India's Mechanic Agricultural Machinery curriculum, TESDA's Agricultural Machinery Servicing (4-Wheel Tractor) NC III and Australia's Certificate III in Agricultural Mechanical Technology. The governed catalogue publishes no module headings, so comparators are shown without a competency matrix.",
       "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. TESDA is limited to four-wheel tractors; Australia's specialist machinery units are electives; no exact Sri Lankan mechanic standard with inspectable content was verified."
     },
     {
       "nysc_course_id": "COURSE-045",
-      "record_ids": ["LK-TVEC-NCS-WELDER-R3", "IN-DGT-CTS-WELDER-V2", "AU-TGA-MEM31925-WELDING"],
+      "record_ids": [
+        "LK-TVEC-NCS-WELDER-R3",
+        "IN-DGT-CTS-WELDER-V2",
+        "AU-TGA-MEM31925-WELDING"
+      ],
       "basis": "Welder evidence verified on 2026-10-18 (Step 31): Sri Lanka's Welder NCS, India's DGT Welder curriculum and Australia's Certificate III in Engineering - Fabrication Trade (Welding). The governed catalogue publishes no module headings, so comparators are shown without a competency matrix.",
       "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. The Sri Lankan standard packages different welding processes separately; the Australian qualification uses elective specialisation packaging; none is a confirmed delivered programme."
     },
     {
       "nysc_course_id": "COURSE-044",
-      "record_ids": ["LK-TVEC-NCS-MACHINIST-R2", "PH-TESDA-MACHINING-NC2", "AU-TGA-MEM30219-MACHINING"],
+      "record_ids": [
+        "LK-TVEC-NCS-MACHINIST-R2",
+        "PH-TESDA-MACHINING-NC2",
+        "AU-TGA-MEM30219-MACHINING"
+      ],
       "basis": "Machinist evidence verified on 2026-10-18 (Step 31): Sri Lanka's Machinist NCS, TESDA Machining NC II and Australia's Certificate III in Engineering - Mechanical Trade (Machining). The governed catalogue publishes no module headings, so comparators are shown without a competency matrix.",
       "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. TESDA's regulation dates from 2005 and the Australian qualification uses elective specialisation packaging; standards and qualifications are not confirmed deliveries."
     },
     {
       "nysc_course_id": "COURSE-018",
-      "record_ids": ["LK-TVEC-NCS-ALUMINIUM-FABRICATOR-2022"],
+      "record_ids": [
+        "LK-TVEC-NCS-ALUMINIUM-FABRICATOR-2022"
+      ],
       "basis": "Aluminium Fabricator evidence verified on 2026-10-18 (Step 31): Sri Lanka's exact Aluminum Fabricator NCS/CBT curriculum. Broader sheet-metal, glazing and fenestration qualifications were excluded rather than treated as equivalent. The governed catalogue publishes no module headings, so the comparator is shown without a competency matrix.",
       "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Only one exact source-inspected occupational standard was verified; it is not a confirmed delivery, and its stated next-revision date has passed. No defensible international exact comparator was linked."
     },
     {
       "nysc_course_id": "COURSE-019",
-      "record_ids": ["LK-TVEC-NCS-QUANTITY-SURVEYING-ASSISTANT-2024"],
+      "record_ids": [
+        "LK-TVEC-NCS-QUANTITY-SURVEYING-ASSISTANT-2024"
+      ],
       "basis": "Quantity Surveying Assistant evidence verified on 2026-10-18 (Step 32): Sri Lanka's exact Quantity Surveying Assistant NCS covers bills of quantities, estimating and tendering, and post-contract activities for simple buildings. The governed catalogue publishes no module headings, so the comparator is shown without a competency matrix.",
       "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Only one source-inspected exact occupational standard was verified; it is not a confirmed delivery and its scope is limited to simple single-storey buildings and shallow foundations."
     },
     {
       "nysc_course_id": "COURSE-024",
-      "record_ids": ["LK-TVEC-NCS-DRAUGHTSPERSON-2023", "IN-DGT-CTS-DRAUGHTSMAN-CIVIL-V2", "PH-TESDA-TECHNICAL-DRAFTING-NC2"],
+      "record_ids": [
+        "LK-TVEC-NCS-DRAUGHTSPERSON-2023",
+        "IN-DGT-CTS-DRAUGHTSMAN-CIVIL-V2",
+        "PH-TESDA-TECHNICAL-DRAFTING-NC2"
+      ],
       "basis": "Draughtperson evidence verified on 2026-10-18 (Step 32): Sri Lanka's Draughtsperson NCS, India's Draughtsman Civil national curriculum and TESDA Technical Drafting NC II contain inspectable drawing, CAD and discipline-specific drafting competencies. The governed catalogue publishes no module headings, so comparators are shown without a competency matrix.",
       "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. The records are occupational standards or national curricula rather than confirmed deliveries, and their civil, architectural, mechanical and surveying scopes are not interchangeable. The Sri Lankan standard's stated next-revision date has passed."
     },
     {
       "nysc_course_id": "COURSE-061",
-      "record_ids": ["LK-TVEC-NCS-DRAUGHTSPERSON-2023", "IN-DGT-CTS-DRAUGHTSMAN-CIVIL-V2", "PH-TESDA-TECHNICAL-DRAFTING-NC2"],
+      "record_ids": [
+        "LK-TVEC-NCS-DRAUGHTSPERSON-2023",
+        "IN-DGT-CTS-DRAUGHTSMAN-CIVIL-V2",
+        "PH-TESDA-TECHNICAL-DRAFTING-NC2"
+      ],
       "basis": "Designing & Space Planing For Droughtmanship evidence verified on 2026-10-18 (Step 32): three official draughting records provide related technical, civil and architectural drawing evidence. They are linked as related comparators only; none establishes equivalence to an interior space-planning curriculum. The governed catalogue publishes no module headings, so no competency matrix is created.",
       "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map, and the governed title alone does not define its space-planning scope. The linked standards and curricula support related draughting comparisons but do not prove coverage of interior design or space planning."
     },
     {
       "nysc_course_id": "COURSE-065",
-      "record_ids": ["LK-TVEC-NCS-DRAUGHTSPERSON-2023", "IN-DGT-CTS-DRAUGHTSMAN-CIVIL-V2", "PH-TESDA-TECHNICAL-DRAFTING-NC2"],
+      "record_ids": [
+        "LK-TVEC-NCS-DRAUGHTSPERSON-2023",
+        "IN-DGT-CTS-DRAUGHTSMAN-CIVIL-V2",
+        "PH-TESDA-TECHNICAL-DRAFTING-NC2"
+      ],
       "basis": "Engineering Draughtsmanship evidence verified on 2026-10-18 (Step 32): Sri Lanka's Draughtsperson NCS, India's Draughtsman Civil curriculum and TESDA Technical Drafting NC II provide inspectable engineering drawing and CAD content. The governed catalogue publishes no module headings, so comparators are shown without a competency matrix.",
       "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to identify an engineering discipline. The linked records include civil, architectural and mechanical drafting scopes but are not evidence that every discipline is equivalent to the NYSC course."
     },
     {
       "nysc_course_id": "COURSE-033",
-      "record_ids": ["LK-TVEC-NCS-PLUMBER-R5", "IN-DGT-CTS-PLUMBER-V3", "PH-TESDA-PLUMBING-NC2-2014", "AU-TGA-CPC32420-PLUMBING-R8"],
+      "record_ids": [
+        "LK-TVEC-NCS-PLUMBER-R5",
+        "IN-DGT-CTS-PLUMBER-V3",
+        "PH-TESDA-PLUMBING-NC2-2014",
+        "AU-TGA-CPC32420-PLUMBING-R8"
+      ],
       "basis": "Plumber evidence verified on 2026-10-18 (Step 32): current Sri Lankan and Australian standards/qualifications, India's national curriculum and TESDA Plumbing NC II provide inspectable water-supply, sanitary, drainage and plumbing-system competencies. The governed catalogue publishes no module headings, so comparators are shown without a competency matrix.",
       "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. The records differ in level, duration, licensing context and scope; they are standards, qualifications or national curricula rather than confirmed delivered programmes."
     },
     {
       "nysc_course_id": "COURSE-036",
-      "record_ids": ["LK-TVEC-NCS-SURVEY-FIELD-ASSISTANT-2023", "IN-DGT-CTS-SURVEYOR-V2", "AU-TGA-CPP30226-SURVEYING-ASSISTANT"],
+      "record_ids": [
+        "LK-TVEC-NCS-SURVEY-FIELD-ASSISTANT-2023",
+        "IN-DGT-CTS-SURVEYOR-V2",
+        "AU-TGA-CPP30226-SURVEYING-ASSISTANT"
+      ],
       "basis": "Survey Field Assistant evidence verified on 2026-10-18 (Step 32): Sri Lanka's exact Survey Field Assistant NCS, India's Surveyor national curriculum and Australia's Certificate III in Surveying and Spatial Information Services contain inspectable field measurement, equipment, data and survey-support competencies. The governed catalogue publishes no module headings, so comparators are shown without a competency matrix.",
       "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. The Indian curriculum is broader than an assistant role; the Australian qualification has elective packaging; none of the linked records is a confirmed delivery, and the Sri Lankan standard's stated next-revision date has passed."
     },
     {
       "nysc_course_id": "COURSE-002",
-      "record_ids": ["IN-DGT-CTS-COPA-V3", "IN-DGT-CTS-AIPA-V1"],
+      "record_ids": [
+        "IN-DGT-CTS-COPA-V3",
+        "IN-DGT-CTS-AIPA-V1"
+      ],
       "basis": "Python-programming evidence verified on 2026-10-18 (Step 33): India's DGT Computer Operator and Programming Assistant curriculum and Artificial Intelligence Programming Assistant curriculum both explicitly publish Python programming outcomes. The governed NYSC catalogue publishes no module headings, so the records are shown without a competency matrix.",
       "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Both records are broader Indian national curricula rather than confirmed deliveries or evidence of equivalence to the three-month NYSC course; no Sri Lankan or developed-economy exact comparator was verified."
     },
     {
       "nysc_course_id": "COURSE-043",
-      "record_ids": ["IN-DGT-ATS-CADCAM-OPERATOR-PROGRAMMER", "PH-TESDA-TECHNICAL-DRAFTING-NC2"],
+      "record_ids": [
+        "IN-DGT-ATS-CADCAM-OPERATOR-PROGRAMMER",
+        "PH-TESDA-TECHNICAL-DRAFTING-NC2"
+      ],
       "basis": "Computer-aided-drafting evidence verified on 2026-10-18 (Step 33): India's DGT CAD/CAM Operator cum Programmer apprenticeship curriculum explicitly names AutoCAD configuration, commands and dimensioning; TESDA Technical Drafting NC II is reused only for its published computer-aided-drawing competency. The governed NYSC catalogue publishes no module headings.",
       "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. DGT's apprenticeship curriculum is broader CAD/CAM training and TESDA names computer-aided drawing without identifying AutoCAD; neither is a confirmed delivery or evidence of equivalence to the six-month NYSC course."
     },
     {
       "nysc_course_id": "COURSE-062",
-      "record_ids": ["LK-TVEC-NCS-GRAPHIC-DESIGNER-2025", "PH-TESDA-VGD-NC3", "SG-ITE-HNITEC-COMMDESIGN-2Y", "IN-DGT-CTS-DTPO-V2"],
+      "record_ids": [
+        "LK-TVEC-NCS-GRAPHIC-DESIGNER-2025",
+        "PH-TESDA-VGD-NC3",
+        "SG-ITE-HNITEC-COMMDESIGN-2Y",
+        "IN-DGT-CTS-DTPO-V2"
+      ],
       "basis": "Desktop-publishing evidence verified on 2026-10-18 (Step 33): Sri Lankan, Philippine and Singapore graphic/communication-design records are reused for related print-design scope, while India's DGT Desktop Publishing Operator curriculum explicitly names PageMaker, InDesign, Illustrator and Photoshop. The four governed NYSC headings are mapped independently.",
       "comparison_caveat": "Different programme duration, level and scope; curriculum content comparison only. Only the DGT curriculum explicitly names all four applications; related graphic-design records must not be interpreted as software-specific coverage. Standards, qualifications and national curricula are not confirmed deliveries."
     },
     {
       "nysc_course_id": "COURSE-073",
-      "record_ids": ["PH-TESDA-PROGRAMMING-JAVA-NC3-2021"],
+      "record_ids": [
+        "PH-TESDA-PROGRAMMING-JAVA-NC3-2021"
+      ],
       "basis": "Java-programming evidence verified on 2026-10-18 (Step 33): TESDA Programming (Java) NC III explicitly covers object-oriented analysis/design and creation and fine-tuning of Java applications. The governed NYSC catalogue publishes no module headings, so the qualification is shown without a competency matrix.",
       "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Only one source-inspected Java-specific national qualification was verified; it is not a confirmed delivery and does not establish equivalence to the six-month NYSC course."
     },
     {
       "nysc_course_id": "COURSE-076",
-      "record_ids": ["IN-DGT-ATS-MECHANIC-EMBEDDED-PLC"],
+      "record_ids": [
+        "IN-DGT-ATS-MECHANIC-EMBEDDED-PLC"
+      ],
       "basis": "Microcontroller evidence verified on 2026-10-18 (Step 33): India's DGT Mechanic (Embedded Systems and PLC) apprenticeship curriculum explicitly covers 8051 applications, microcontroller circuit implementation, fault finding and PIC/microcontroller programming. The governed NYSC catalogue publishes no module headings.",
       "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. The source is a broader national apprenticeship curriculum rather than a confirmed delivery or evidence of equivalence to the eight-month NYSC course; no Sri Lankan or second international exact comparator was verified."
+    },
+    {
+      "nysc_course_id": "COURSE-037",
+      "record_ids": [
+        "LK-TVEC-NCS-TAILOR-R2-2017",
+        "IN-DGT-CTS-SEWING-TECHNOLOGY-V2",
+        "PH-TESDA-DRESSMAKING-NC2-2005"
+      ],
+      "basis": "Tailoring and dressmaking evidence verified on 2026-10-18 (Step 34): Sri Lanka's Tailor NCS, India's Sewing Technology national curriculum and TESDA Dressmaking NC II contain inspected garment-production evidence. The single broad governed NYSC heading is mapped independently and is not expanded into unstated techniques.",
+      "comparison_caveat": "Different programme duration, level, scope and pattern methods; curriculum content comparison only. The Sri Lankan and Philippine documents explicitly use blocks or block patterns, and the Indian curriculum uses patterns. None is a confirmed delivery or evidence that every women’s or children’s garment type is equivalent to the NYSC course."
+    },
+    {
+      "nysc_course_id": "COURSE-063",
+      "record_ids": [
+        "LK-TVEC-NCS-TAILOR-R2-2017",
+        "IN-DGT-CTS-SEWING-TECHNOLOGY-V2",
+        "PH-TESDA-DRESSMAKING-NC2-2005"
+      ],
+      "basis": "Related garment-production evidence verified on 2026-10-18 (Step 34) for Dress Making Without Blocks: Sri Lanka's Tailor NCS, India's Sewing Technology curriculum and TESDA Dressmaking NC II. The one governed clothing heading is mapped, while the approved display correction removes only its weekend scheduling clause.",
+      "comparison_caveat": "The specific block-free NYSC method remains unverified. The Sri Lankan and Philippine documents explicitly use blocks or block patterns, and the Indian curriculum uses patterns; therefore these are occupational comparators, not method-matched equivalents. Attendance schedules are not compared, and none is a confirmed delivery."
+    },
+    {
+      "nysc_course_id": "COURSE-085",
+      "record_ids": [
+        "LK-TVEC-NCS-TAILOR-R2-2017",
+        "IN-DGT-CTS-SEWING-TECHNOLOGY-V2",
+        "PH-TESDA-DRESSMAKING-NC2-2005"
+      ],
+      "basis": "Tailoring and dressmaking evidence verified on 2026-10-18 (Step 34): three official occupational sources provide relevant tailoring scope. The governed catalogue publishes no module headings for this separate part-time Tailor course, so the records are shown without a competency matrix.",
+      "comparison_caveat": "COMPARATORS_ONLY: COURSE-085 has no published governed headings, so its content, specialisation and depth are unknown. Its comparator links reflect title-level occupational fit only; COURSE-037's heading is not copied to it. Standards, qualifications and curricula are not confirmed deliveries."
+    },
+    {
+      "nysc_course_id": "COURSE-041",
+      "record_ids": [
+        "LK-TVEC-NCS-ECCD-TEACHER-2026",
+        "IN-DGT-CTS-EARLY-CHILDHOOD-EDUCATOR-V2",
+        "AU-TGA-CHC30125"
+      ],
+      "basis": "Early childhood comparators verified on 2026-10-18 (Step 35) for the 12-month full-time NVQ Level 4 Preschool Teacher course: the Sri Lankan Early Childhood Care and Development Teacher standard (M80S001, formerly titled Preschool Teacher (Early Childhood Development)), India's DGT Early Childhood Educator curriculum and Australia's Certificate III in Early Childhood Education and Care.",
+      "comparison_caveat": "Different programme duration, level and scope; curriculum content comparison only. Standards and qualifications are not confirmed deliveries. The Australian qualification is framed around Australian regulated services; the Australian record stores core units only."
+    },
+    {
+      "nysc_course_id": "COURSE-071",
+      "record_ids": [
+        "LK-TVEC-NCS-HR-ASSOCIATE-2024",
+        "LK-TVEC-NCS-HRM-DIPLOMA-2022",
+        "AU-TGA-BSB40420"
+      ],
+      "basis": "Human resources comparators verified on 2026-10-18 (Step 35) for the 6-month part-time Human Resources Management course: the Sri Lankan NVQ Level 4 Human Resources Associate standard, the Sri Lankan NVQ Level 5/6 Human Resource Management diploma standard and Australia's Certificate IV in Human Resource Management.",
+      "comparison_caveat": "Different programme duration, level and scope; curriculum content comparison only. Standards and qualifications are not confirmed deliveries. The Sri Lankan diploma standard is higher-level than a 6-month part-time course; both Sri Lankan standards are past their stated review dates; no developing-economy comparator was verified."
+    },
+    {
+      "nysc_course_id": "COURSE-084",
+      "record_ids": [
+        "LK-TVEC-NCS-STORE-KEEPER-2019",
+        "IN-DGT-ATS-STORAGE-INVENTORY-EXECUTIVE",
+        "AU-TGA-TLI30325-WAREHOUSING"
+      ],
+      "basis": "Stores and warehousing comparators verified on 2026-10-18 (Step 35) for the 6-month part-time Store Management course: the Sri Lankan Logistics Operations (Store Keeper) standard, India's DGT Storage and Inventory Executive apprenticeship curriculum and Australia's Certificate III in Supply Chain Operations (Warehousing operations). The governed catalogue publishes no module headings for this course, so the comparators are shown without a competency matrix.",
+      "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. Standards and qualifications are not confirmed deliveries. The Sri Lankan standard is past its stated review date."
+    },
+    {
+      "nysc_course_id": "COURSE-020",
+      "record_ids": [
+        "LK-TVEC-NCS-FLORICULTURE-LANDSCAPE-2022",
+        "IN-DGT-CTS-FLORICULTURE-LANDSCAPING-V2",
+        "PH-TESDA-LANDSCAPE-NC2",
+        "AU-TGA-AHC30921"
+      ],
+      "basis": "Landscaping comparators verified on 2026-10-18 (Step 36) for the 6-month full-time NVQ Level 4 Landscape Development Assistant course: the Sri Lankan Floriculture and Landscape Development Assistant standard, India's DGT Floriculture & Landscaping curriculum, TESDA Landscape Installation and Maintenance NC II and Australia's Certificate III in Landscape Construction.",
+      "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. Standards and qualifications are not confirmed deliveries. The Australian record is weighted towards hard-landscape construction; the Sri Lankan and Indian records also cover floriculture; the TESDA regulation dates from 2008."
+    },
+    {
+      "nysc_course_id": "COURSE-026",
+      "record_ids": [
+        "LK-TVEC-NCS-FIELD-ASSISTANT-AGRICULTURE-2021",
+        "IN-DGT-CTS-HORTICULTURE-V2",
+        "PH-TESDA-AGRI-CROPS-NC3"
+      ],
+      "basis": "Agricultural field comparators verified on 2026-10-18 (Step 36) for the 6-month full-time NVQ Level 4 Field Assistant (agricultural) course: the Sri Lankan Field Assistant (Agriculture) standard (exact title), India's DGT Horticulture curriculum and TESDA Agricultural Crops Production NC III.",
+      "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. Standards and qualifications are not confirmed deliveries. India's record is a horticulture curriculum and TESDA's regulation (2006) targets small-farm management of agronomic crops; no developed-economy comparator was verified."
+    },
+    {
+      "nysc_course_id": "COURSE-032",
+      "record_ids": [
+        "LK-TVEC-NCS-PLANT-NURSERY-2022",
+        "IN-DGT-CTS-NURSERY-ORCHARD-V1",
+        "PH-TESDA-HORTICULTURE-NC3",
+        "AU-TGA-AHC31124"
+      ],
+      "basis": "Plant nursery comparators verified on 2026-10-18 (Step 36) for the 6-month full-time NVQ Level 4 Plant Nursery Development Assistant course: the Sri Lankan Plant Nursery Development Assistant standard (exact title), India's DGT Nursery & Orchard Technician curriculum, TESDA Horticulture NC III and Australia's Certificate III in Nursery Operations.",
+      "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. Standards and qualifications are not confirmed deliveries. India's curriculum also covers orchards; TESDA's regulation (2006) is a broader horticultural-crop qualification."
+    },
+    {
+      "nysc_course_id": "COURSE-031",
+      "record_ids": [
+        "LK-TVEC-NCS-TV-DIGITAL-MEDIA-PRODUCTION-2025",
+        "PH-TESDA-FILM-VIDEO-POSTPRODUCTION-NC3",
+        "SG-ITE-HNITEC-FILM-VIDEO-2Y"
+      ],
+      "basis": "Television and video production comparators verified on 2026-10-18 (Step 37) for the 12-month full-time NVQ Level 5 National Diploma in Television Program Production: the Sri Lankan Television and Digital Media Production Technology diploma standard (NVQ 5/6), TESDA Film and Video Postproduction NC III and ITE's Higher Nitec in Film & Video Production.",
+      "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. Standards and qualifications are not confirmed deliveries. TESDA's regulation covers post-production only; ITE's programme is film and video production with one broadcast module; Australia's CUA51020 was not used because its core units are generic."
+    },
+    {
+      "nysc_course_id": "COURSE-059",
+      "record_ids": [
+        "LK-TVEC-NCS-MULTIMEDIA-DESIGNING-ASSOCIATE-2019",
+        "IN-DGT-CTS-MASE-V2",
+        "PH-TESDA-3D-ANIMATION-NC3",
+        "PH-TESDA-FILM-VIDEO-POSTPRODUCTION-NC3"
+      ],
+      "basis": "Video editing and animation comparators verified on 2026-10-18 (Step 37) for the 6-month part-time Non-Linear Video Editing With Digital 3D Animation course: the Sri Lankan Multimedia Designing Associate standard, India's DGT Multimedia, Animation & Special Effects curriculum, TESDA 3D Animation NC III and TESDA Film and Video Postproduction NC III.",
+      "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. Standards and qualifications are not confirmed deliveries. The Sri Lankan and Indian records are broader multimedia standards; the two TESDA regulations each cover one half of the course title (3D animation; video post-production); no developed-economy comparator was verified."
+    },
+    {
+      "nysc_course_id": "COURSE-028",
+      "record_ids": [
+        "LK-TVEC-NCS-LAPIDARIST-2022"
+      ],
+      "basis": "Gem-cutting comparator verified on 2026-10-18 (Step 37) for the 6-month full-time NVQ Level 3 Lapiderist (Gem Cutting) course: the Sri Lankan Lapidarist national competency standard (exact occupation).",
+      "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. Standards and qualifications are not confirmed deliveries. Only one comparator was verified; the searches made (training.gov.au, TESDA's training-regulations listing and web searches of India's NQR) did not identify an international gem-cutting curriculum with inspectable official content."
+    },
+    {
+      "nysc_course_id": "COURSE-066",
+      "record_ids": [
+        "AU-VIC-22643VIC-EAL-EMPLOYMENT",
+        "AU-VIC-22644VIC-EAL-PROFESSIONAL"
+      ],
+      "basis": "English-for-employment comparators verified on 2026-10-18 (Step 38) for the 6-month part-time Professional English course: Victoria's accredited Certificate III in EAL (Employment) and Certificate IV in EAL (Employment / Professional), Professional Specialisation.",
+      "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. These are Australian state-accredited courses for adult learners of English as an additional language, not confirmed deliveries; the NYSC course level is not stated, so both the Certificate III and Certificate IV records are shown."
+    },
+    {
+      "nysc_course_id": "COURSE-004",
+      "record_ids": [
+        "AU-VIC-22643VIC-EAL-EMPLOYMENT",
+        "AU-VIC-22644VIC-EAL-PROFESSIONAL"
+      ],
+      "basis": "Same comparators as COURSE-066 (same governed title, Professional English), verified on 2026-10-18 (Step 38).",
+      "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. These are Australian state-accredited courses for adult learners of English as an additional language, not confirmed deliveries; the NYSC course level is not stated, so both the Certificate III and Certificate IV records are shown. The governed record for COURSE-004 also omits sector, attendance type and duration."
     }
   ]
 }

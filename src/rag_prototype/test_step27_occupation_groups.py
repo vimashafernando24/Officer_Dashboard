@@ -55,11 +55,13 @@ class Step27OccupationGroupTests(unittest.TestCase):
                     self.assertEqual(entry["current_presentation_mode"], "COMPARATORS_ONLY")
                     self.assertFalse((BENCH / f"competency_mapping_{course_id.lower()}.json").exists())
 
-    def test_related_groups_are_not_linked(self):
-        # Three Wheeler Mechanic and Desktop Publisher are separate occupation groups with too little specific evidence.
-        for course_id in ("COURSE-062",):
-            self.assertNotIn(course_id, self.links)
-            self.assertEqual(self.register[course_id]["current_presentation_mode"], "RESEARCH_PENDING")
+    def test_related_groups_use_their_own_later_evidence(self):
+        # Step 27 left Three Wheeler Mechanic and Desktop Publisher unlinked; later steps linked them on their own evidence,
+        # never by reusing the whole Step 27 motorcycle or graphic-design record sets.
+        self.assertEqual(self.links["COURSE-038"]["record_ids"], ["IN-DGT-CTS-2W3W-V2"])
+        self.assertEqual(self.register["COURSE-038"]["current_presentation_mode"], "COMPARATORS_ONLY")
+        self.assertIn("IN-DGT-CTS-DTPO-V2", self.links["COURSE-062"]["record_ids"])
+        self.assertEqual(self.register["COURSE-062"]["current_presentation_mode"], "FULL_COMPARISON")
 
     def test_missing_country_groups_are_explained(self):
         self.assertEqual(set(self.datasets["construction_supervisor"]["country_group_gaps"]), {"developing_emerging"})

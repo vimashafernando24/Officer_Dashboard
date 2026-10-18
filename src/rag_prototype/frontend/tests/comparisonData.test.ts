@@ -25,7 +25,7 @@ test("coverage states for all 84 courses are available before any comparator dat
     const coverage = coverageForCourse(course.course_id)!;
     states[coverage.state] = (states[coverage.state] ?? 0) + 1;
   }
-  assert.deepEqual(states, { FULL_COMPARISON: 24, COMPARATORS_ONLY: 37, RESEARCH_PENDING: 23 });
+  assert.deepEqual(states, { FULL_COMPARISON: 28, COMPARATORS_ONLY: 47, RESEARCH_PENDING: 9 });
 });
 
 

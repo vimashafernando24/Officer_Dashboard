@@ -6,6 +6,7 @@ import { NYSC_COURSES } from "../src/programmeComparison.ts";
 import { comparatorsForCourse } from "../src/programmeBenchmarks.ts";
 import { investigationAreas, mappingForCourse } from "../src/programmeComparisonMatrix.ts";
 import {
+  EVIDENCE_REVIEW_NOTICE,
   MISSING_COMPARISON_CAUTION,
   areasUnavailableMessage,
   coverageForCourse,
@@ -22,12 +23,8 @@ import { loadAllComparisonData } from "../src/comparisonData.ts";
 // Comparator data is loaded on demand in the dashboard; tests load all of it first.
 await loadAllComparisonData();
 
-const COMPLETE = ["COURSE-005", "COURSE-006", "COURSE-007", "COURSE-008", "COURSE-009", "COURSE-053", "COURSE-058", "COURSE-087", "COURSE-010", "COURSE-011", "COURSE-012", "COURSE-014", "COURSE-025", "COURSE-034", "COURSE-035", "COURSE-040", "COURSE-046", "COURSE-047", "COURSE-050", "COURSE-055", "COURSE-062", "COURSE-064", "COURSE-081", "COURSE-082"];
-const COMPARATORS_ONLY = ["COURSE-001", "COURSE-048", "COURSE-051", "COURSE-054", "COURSE-056", "COURSE-057", "COURSE-069",
-  "COURSE-016", "COURSE-021", "COURSE-022", "COURSE-023", "COURSE-029", "COURSE-030", "COURSE-042", "COURSE-052", "COURSE-060", "COURSE-068", "COURSE-077", "COURSE-078", "COURSE-013", "COURSE-079", "COURSE-080"];
-COMPARATORS_ONLY.push("COURSE-017", "COURSE-018", "COURSE-038", "COURSE-044", "COURSE-045");
-COMPARATORS_ONLY.push("COURSE-019", "COURSE-024", "COURSE-033", "COURSE-036", "COURSE-061", "COURSE-065");
-COMPARATORS_ONLY.push("COURSE-002", "COURSE-043", "COURSE-073", "COURSE-076");
+const COMPLETE = ["COURSE-005", "COURSE-006", "COURSE-007", "COURSE-008", "COURSE-009", "COURSE-010", "COURSE-011", "COURSE-012", "COURSE-014", "COURSE-025", "COURSE-034", "COURSE-035", "COURSE-037", "COURSE-040", "COURSE-041", "COURSE-046", "COURSE-047", "COURSE-050", "COURSE-053", "COURSE-055", "COURSE-058", "COURSE-062", "COURSE-063", "COURSE-064", "COURSE-071", "COURSE-081", "COURSE-082", "COURSE-087"];
+const COMPARATORS_ONLY = ["COURSE-001", "COURSE-002", "COURSE-004", "COURSE-013", "COURSE-016", "COURSE-017", "COURSE-018", "COURSE-019", "COURSE-020", "COURSE-021", "COURSE-022", "COURSE-023", "COURSE-024", "COURSE-026", "COURSE-028", "COURSE-029", "COURSE-030", "COURSE-031", "COURSE-032", "COURSE-033", "COURSE-036", "COURSE-038", "COURSE-042", "COURSE-043", "COURSE-044", "COURSE-045", "COURSE-048", "COURSE-051", "COURSE-052", "COURSE-054", "COURSE-056", "COURSE-057", "COURSE-059", "COURSE-060", "COURSE-061", "COURSE-065", "COURSE-066", "COURSE-068", "COURSE-069", "COURSE-073", "COURSE-076", "COURSE-077", "COURSE-078", "COURSE-079", "COURSE-080", "COURSE-084", "COURSE-085"];
 const ALL_IDS = NYSC_COURSES.map((course) => course.course_id);
 const registerById = new Map(coverageRegister.courses.map((entry) => [entry.course_id, entry]));
 const shownRecords = (courseId: string) => {
@@ -48,13 +45,13 @@ test("every one of the 84 governed courses has a coverage state that matches the
 });
 
 
-test("the 24 mapped courses keep their full comparison", () => {
+test("the 28 mapped courses keep their full comparison", () => {
   for (const courseId of COMPLETE) {
     const coverage = coverageForCourse(courseId)!;
     assert.equal(coverage.state, "FULL_COMPARISON", courseId);
     assert.deepEqual(coveragePresentation(coverage.state), { showComparators: true, showMatrix: true, showAreas: true });
     assert.ok(mappingForCourse(courseId), courseId);
-    if (courseId === "COURSE-062") {
+    if (["COURSE-037", "COURSE-062", "COURSE-063"].includes(courseId)) {
       assert.equal(investigationAreas(mappingForCourse(courseId)!).length, 0, courseId);
     } else {
       assert.ok(investigationAreas(mappingForCourse(courseId)!).length > 0, courseId);
@@ -63,21 +60,39 @@ test("the 24 mapped courses keep their full comparison", () => {
 });
 
 
-test("all 23 unresearched courses show RESEARCH_PENDING and no comparison", () => {
+test("all 9 researched-but-unresolved courses show RESEARCH_PENDING with their documented reason", () => {
   const pending = ALL_IDS.filter((id) => !COMPLETE.includes(id) && !COMPARATORS_ONLY.includes(id));
-  assert.equal(pending.length, 23);
+  assert.equal(pending.length, 9);
   for (const courseId of pending) {
     const coverage = coverageForCourse(courseId)!;
-    assert.equal(registerById.get(courseId)!.research_status, "NOT_RESEARCHED", courseId);
+    const entry = registerById.get(courseId)!;
+    assert.equal(entry.research_status, "NO_DEFENSIBLE_COMPARATOR", courseId);
     assert.equal(coverage.state, "RESEARCH_PENDING", courseId);
     assert.deepEqual(coveragePresentation(coverage.state), { showComparators: false, showMatrix: false, showAreas: false });
     assert.equal(shownRecords(courseId).length, 0, courseId);
     const note = coverageNote(coverage);
-    assert.equal(note.title, "Comparison research not yet completed");
-    assert.match(note.lines[0], /comparison research has not yet been completed/);
+    assert.equal(note.title, "No defensible comparison found");
+    assert.match(note.lines[0], /research was carried out/);
     assert.ok(note.lines.includes(MISSING_COMPARISON_CAUTION), courseId);
-    assert.match(areasUnavailableMessage(coverage), /once comparison research is completed/);
+    assert.ok(note.lines.includes(`Research note: ${entry.notes[0]}`), courseId);
+    assert.match(areasUnavailableMessage(coverage), /no defensible comparator/);
   }
+});
+
+
+test("a genuinely unresearched course keeps the not-yet-completed wording", () => {
+  const coverage = { ...coverageForCourse("COURSE-049")!, researchStatus: "NOT_RESEARCHED" as const, researchNote: null };
+  const note = coverageNote(coverage);
+  assert.equal(note.title, "Comparison research not yet completed");
+  assert.match(note.lines[0], /comparison research has not yet been completed/);
+  assert.match(areasUnavailableMessage(coverage), /once comparison research is completed/);
+});
+
+
+test("the dashboard review notice never implies human verification", () => {
+  assert.match(EVIDENCE_REVIEW_NOTICE, /not yet been independently reviewed/);
+  assert.match(EVIDENCE_REVIEW_NOTICE, /provisional/);
+  assert.doesNotMatch(EVIDENCE_REVIEW_NOTICE, /\bverified\b|\bapproved\b|\bconfirmed\b/i);
 });
 
 
@@ -127,7 +142,7 @@ test("missing NYSC headings and missing external evidence are explained separate
   assert.equal(headingsMessage(coverageForCourse("COURSE-009")!), "NYSC module headings: 9 usable headings published for this course.");
   assert.match(headingsMessage(coverageForCourse("COURSE-072")!), /names no curriculum content/);
   // A course with headings but no research is still pending: headings are not comparator evidence.
-  assert.equal(coverageForCourse("COURSE-041")!.state, "RESEARCH_PENDING");
+  assert.equal(coverageForCourse("COURSE-075")!.state, "RESEARCH_PENDING");
 });
 
 

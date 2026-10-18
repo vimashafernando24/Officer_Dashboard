@@ -1,0 +1,557 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-plant-nursery",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Comparator records for NYSC COURSE-032 Plant Nursery Development Assistant. The governed catalogue publishes no module headings for this course, so the records are shown without a competency matrix. Records describe documented curriculum only and do not establish equivalence, quality or labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its official source by a researcher before publication.",
+  "country_group_gaps": {},
+  "records": [
+    {
+      "record_id": "LK-TVEC-NCS-PLANT-NURSERY-2022",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "PLANT NURSERY DEVELOPMENT ASSISTANT",
+      "sector": "Agriculture / Plant nursery",
+      "framework": "NVQ (Sri Lanka)",
+      "level_as_published": "NVQ Level 03/04",
+      "duration_as_published": null,
+      "entry_as_published": "For NVQ Level 03 Qualification - None; For NVQ Level 04 Qualification - None",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "A01S001U01",
+          "title_verbatim": "Perform Preliminary Activities for Setting Up a Plant Nursery",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S001U02",
+          "title_verbatim": "Establish and Maintain Mother Plants and Produce Stock Plants",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S001U03",
+          "title_verbatim": "Propagate Plants",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S001U04",
+          "title_verbatim": "Protect Plants from Pests and Diseases",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S001U05",
+          "title_verbatim": "Perform Maintenance Activities of Plant Nursery",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S001U06",
+          "title_verbatim": "Conduct Sales and Marketing",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S001U07",
+          "title_verbatim": "Perform Administrative Activities",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S001BU01",
+          "title_verbatim": "Practice Workplace Communication and Interpersonal Relations",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S001BU02",
+          "title_verbatim": "Apply Occupational Literacy and Numeracy",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S001BU03",
+          "title_verbatim": "Work in Teams",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": null,
+          "code": "A01S001BU04",
+          "title_verbatim": "Practice Occupational Health and Safety Procedures in a Workplace",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://nvq.gov.lk/report_inquires/NCS_Request_Pdf.php?nm=A01S001_1_NCS.pdf",
+        "document_type": "pdf",
+        "document_sha256": "d8f55e38c0036aa765ad5afdcf1bd1ae8851290c053adbb25f1bf4e0d473afcf",
+        "publication_or_revision": "First Revision January 2022 (endorsed 27.01.2022); next revision January 2025",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Unit titles, codes and NVQ packaging read from the List of Units (PDF page 8); endorsement and prerequisites from the detail page (PDF page 71); all matched against the pdf.js text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Copyright TVEC; source states all rights reserved.",
+      "notes": [
+        "A national occupational standard, not evidence that a named provider delivers the programme.",
+        "Stores the 11 competency units only; curriculum modules and hours are not stored and no overall course duration is stated.",
+        "The title matches NYSC COURSE-032 exactly.",
+        "The NVQ Level 4 packaging passage reads 'BU02 + + BU04' (BU03 appears to be omitted); it is stored as published.",
+        "The stated date of review (27.01.2025) has passed and the NVQ portal serves no later revision (2026-10-18)."
+      ],
+      "scope_verbatim": [
+        "National Certificate at NVQ Level 4 in the occupation of Plant Nursery Development Assistant will be awarded to those who are competent in units U01 + U02 + U03 + U04 + U05 + U06 + U07 + BU01 + BU02 + + BU04 - A01S001Q2L4"
+      ]
+    },
+    {
+      "record_id": "IN-DGT-CTS-NURSERY-ORCHARD-V1",
+      "country": "India",
+      "country_group": "developing_emerging",
+      "institution": "Directorate General of Training (DGT), Ministry of Skill Development & Entrepreneurship",
+      "record_type": "national_curriculum",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Nursery & Orchard Technician",
+      "sector": "Agriculture / Plant nursery",
+      "framework": "NSQF (India)",
+      "level_as_published": "NSQF LEVEL – 3.5",
+      "duration_as_published": "One year (1200 hours + 150 hours OJT/Group Project)",
+      "entry_as_published": "Passed 10th class examination",
+      "modules": [
+        {
+          "published_ref": "LO1",
+          "code": "AGR/N9445",
+          "title_verbatim": "Identify metrological instruments and understand the diversity within the profession of nursery & orchard management following safety precautions.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO2",
+          "code": "AGR/N9446",
+          "title_verbatim": "Manage effectively a plant nursery, including tasks such as seed propagation, plant care, pest management to produce and maintain healthy, high-quality plants.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO3",
+          "code": "AGR/N9447",
+          "title_verbatim": "Apply various methods of plant propagation, including seed sowing, cuttings, grafting and division to produce new plants, maintain genetic diversity and contribute to sustainable plant cultivation and horticultural practices.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO4",
+          "code": "AGR/N9448",
+          "title_verbatim": "Perform Temperate Fruit Growing and Perform Fruit Plant Nursery Raising.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO5",
+          "code": "AGR/N9449",
+          "title_verbatim": "Plan and establish an Orchard and Perform General Cultural Practices related to soil.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO6",
+          "code": "AGR/N9450",
+          "title_verbatim": "Identify different diseases and pests required for mitigate the same.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO7",
+          "code": "AGR/N9451",
+          "title_verbatim": "Plan, install different irrigation systems, Water lifting systems and of water quality and perform different methods of irrigation.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO8",
+          "code": "AGR/N9452",
+          "title_verbatim": "Analyze Soil water holding capacity, Different methods and ingredient used for correction of Saline soil also visit Field for identification of soil problems.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO9",
+          "code": "AGR/N9453",
+          "title_verbatim": "Plan and execute different soil correction method through drainage and agronomic practices.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO10",
+          "code": "AGR/N9454",
+          "title_verbatim": "Measure Soil fertility and apply soil Fertility management for improvement of fertility of soil.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO11",
+          "code": "AGR/N9455",
+          "title_verbatim": "Apply integrated nutrient Management system (INMS) in the field and identify, prepare and apply Bio- fertilizers.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO12",
+          "code": "AGR/N9456",
+          "title_verbatim": "Identify the role of major and minor plant nutrients and its deficiency symptoms.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO13",
+          "code": "AGR/N9457",
+          "title_verbatim": "Develop the Cultivation techniques and methods of different fruits.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO14",
+          "code": "AGR/N9458",
+          "title_verbatim": "Identify and select different Vegetative propagation method and perform propagation techniques of cutting, grafting, budding and layering.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO15",
+          "code": "AGR/N9459",
+          "title_verbatim": "Perform Vines, Nuts and Berries culture, execute different mulching methods.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO16",
+          "code": "AGR/N9460",
+          "title_verbatim": "Perform Cultural Management of a Fruit Plantation in Orchard by practicing various pruning activity and interpret marketing of Horticulture produces.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://www.dgt.gov.in/sites/default/files/2025-01/Nursery_Orchard_Technician.pdf",
+        "document_type": "pdf",
+        "document_sha256": "ab3451280fe4ff5b3a925ae3ff7ce02d8fd8ea823641d006ddcf85df977a6752",
+        "publication_or_revision": "Version 1.0 (Designed in 2024)",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "All 16 learning outcomes and NOS codes read from the 5.1 Learning Outcomes pages and matched against the pdf.js text layer (running page headers and footers removed); course facts from the general information table.",
+        "human_reviewed": false
+      },
+      "licence_note": "Government of India publication; reuse terms not checked.",
+      "notes": [
+        "A national curriculum delivered through Industrial Training Institutes (ITIs); no individual ITI has been verified.",
+        "Employability Skills are listed separately and not stored.",
+        "Covers fruit orchards as well as plant nurseries."
+      ]
+    },
+    {
+      "record_id": "PH-TESDA-HORTICULTURE-NC3",
+      "country": "Philippines",
+      "country_group": "developing_emerging",
+      "institution": "Technical Education and Skills Development Authority (TESDA)",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Horticulture NC III",
+      "sector": "Agriculture / Horticulture",
+      "framework": "Philippine TVET Qualification (NC)",
+      "level_as_published": "NC III",
+      "duration_as_published": "Nominal Training Duration: 445 Hours",
+      "entry_as_published": null,
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "500311109",
+          "title_verbatim": "Lead workplace communication",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311110",
+          "title_verbatim": "Lead small teams",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311111",
+          "title_verbatim": "Develop and practice negotiation skills",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311112",
+          "title_verbatim": "Solve problems related to work activities",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311113",
+          "title_verbatim": "Use mathematical concepts and techniques",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311114",
+          "title_verbatim": "Use relevant technologies",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR321201",
+          "title_verbatim": "Apply safety measures in farm operations",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR321202",
+          "title_verbatim": "Use farm tools and equipment",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR321203",
+          "title_verbatim": "Perform estimation and calculations",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611310",
+          "title_verbatim": "Prepare land for agricultural crop production",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611311",
+          "title_verbatim": "Implement post-harvest program",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611312",
+          "title_verbatim": "Implement plant nutrition program",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611313",
+          "title_verbatim": "Control weeds",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611314",
+          "title_verbatim": "Prepare and apply chemicals",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611315",
+          "title_verbatim": "Establish horticultural crops",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611316",
+          "title_verbatim": "Coordinate horticultural maintenance program",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611317",
+          "title_verbatim": "Coordinate horticultural crop harvesting",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611318",
+          "title_verbatim": "Undertake field budding and grafting",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "AGR611319",
+          "title_verbatim": "Undertake propagation activities",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://www.tesda.gov.ph/Downloadables/TR%20-%20Horticulture%20NC%20III.pdf",
+        "document_type": "pdf",
+        "document_sha256": "2558928f075590aacfd27c5daf757477e9d5e47f4d40bfdebd3a29ca3d7b4c21",
+        "publication_or_revision": "Training regulation for Horticulture NC III (TESDA list: AFFHTC306, promulgated 04/20/06)",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Units and codes read from the Section 1 page (PDF page 5) and matched in order against the pdf.js text layer; nominal duration from the Section 3.1 course design.",
+        "human_reviewed": false
+      },
+      "licence_note": "Philippine government publication; reuse terms not checked.",
+      "notes": [
+        "A training regulation (standard), delivered by TESDA-registered institutions; no provider has been verified.",
+        "Listed in TESDA's list of promulgated training regulations (as of May 2022) as Horticulture NC III, AFFHTC306, 445 hours, promulgated 04/20/06.",
+        "Stores the basic, common and core units; the nine elective units are not stored.",
+        "A broader horticultural-crop qualification; its nursery-relevant core units are 'Undertake field budding and grafting' and 'Undertake propagation activities'.",
+        "The PDF does not print a promulgation date on its Section 1 page; the date is taken from TESDA's promulgated-TR list."
+      ],
+      "scope_verbatim": [
+        "The Horticulture NC III consists of competencies that a person must achieve in managing small farm."
+      ]
+    },
+    {
+      "record_id": "AU-TGA-AHC31124",
+      "country": "Australia",
+      "country_group": "developed",
+      "institution": "Australian Government, training.gov.au (AHC Agriculture, Horticulture and Conservation and Land Management Training Package)",
+      "record_type": "national_qualification",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Certificate III in Nursery Operations",
+      "sector": "Agriculture / Plant nursery",
+      "framework": "AQF (Australia)",
+      "level_as_published": "Certificate III (national code AHC31124)",
+      "duration_as_published": null,
+      "entry_as_published": "Nil",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "AHCCHM304",
+          "title_verbatim": "Transport and store chemicals",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "AHCCHM307",
+          "title_verbatim": "Prepare and apply chemicals to control pest, weeds and diseases",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "AHCIRG338",
+          "title_verbatim": "Troubleshoot irrigation systems",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "AHCNSY308",
+          "title_verbatim": "Maintain nursery plants",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "AHCPCM305",
+          "title_verbatim": "Implement a plant nutrition program",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "AHCPCM306",
+          "title_verbatim": "Provide information on plants and their culture",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "AHCPMG302",
+          "title_verbatim": "Control plant pests, diseases and disorders",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "AHCSOL305",
+          "title_verbatim": "Prepare growing media",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "AHCWHS302",
+          "title_verbatim": "Contribute to workplace health and safety processes",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://training.gov.au/assets/AHC/AHC31124_R2.pdf",
+        "document_type": "pdf",
+        "document_sha256": "1cd6e6b6f1e78bd4c8cd40d906dae9ab77599a4f84ecb310d7a0b7cfe28c6456",
+        "publication_or_revision": "AHC31124 Release 2 (released 2025-02-11; status Current on training.gov.au, 2026-10-18)",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Core units read from the official qualification PDF and matched against its pdf.js text layer; each code, title and core status equals the training.gov.au Release 2 unit grid.",
+        "human_reviewed": false
+      },
+      "licence_note": "© Commonwealth of Australia, 2025; training package content is published under its own licence terms (not checked).",
+      "notes": [
+        "A national qualification, not a delivered programme; no delivering provider has been verified and no nominal duration is stated.",
+        "Stores the 9 core units only; electives are not stored."
+      ]
+    }
+  ]
+}

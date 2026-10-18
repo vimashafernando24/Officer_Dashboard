@@ -59,6 +59,13 @@
   font-size: 16px;
 }
 
+.pcd-review-notice {
+  max-width: 760px;
+  margin: 6px 0 0;
+  color: var(--yc-muted);
+  font-size: 13px;
+}
+
 .pcd-main {
   padding: 22px 0 64px;
 }
@@ -729,6 +736,20 @@ button.pcd-status[aria-pressed="true"] {
 .pcd-modules-toggle:focus-visible {
   outline: 3px solid rgba(210, 141, 70, 0.3);
   outline-offset: 2px;
+}
+
+.pcd-source-details {
+  font-size: 13px;
+  color: var(--yc-muted);
+}
+
+.pcd-source-details summary {
+  cursor: pointer;
+}
+
+.pcd-source-details ul {
+  margin: 4px 0 0;
+  padding-left: 18px;
 }
 
 .pcd-card-source {

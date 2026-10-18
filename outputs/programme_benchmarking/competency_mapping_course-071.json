@@ -1,0 +1,566 @@
+{
+  "description": "Hand-curated competency mapping for NYSC COURSE-071 Human Recources Management against its three linked human resources records. A DOCUMENTED cell cites the exact stored text that names the competency. NOT_EXPLICIT means the available description does not name it, not that it is absent from teaching. INSUFFICIENT_DATA means the stored text is unavailable, outside the record's scope, or too ambiguous to assess.",
+  "schema_version": "1.0.0",
+  "nysc_course_id": "COURSE-071",
+  "created_date": "2026-10-18",
+  "method": "The NYSC column was assessed by hand against this course's three governed headings, cited with the verified display corrections. Only explicitly written terms are mapped (recruitment, selection, hiring, induction, discipline management, employee welfare, labour law). The abbreviations 'JD, JA', 'PE System', 'T and D' and 'LR System' are not expanded: the corresponding NYSC cells are INSUFFICIENT_DATA, so they never generate Areas to Investigate.",
+  "human_reviewed": false,
+  "statuses": [
+    "DOCUMENTED",
+    "NOT_EXPLICIT",
+    "INSUFFICIENT_DATA"
+  ],
+  "columns": [
+    {
+      "column_id": "NYSC-COURSE-071",
+      "kind": "nysc",
+      "nysc_course_id": "COURSE-071",
+      "short_label": "NYSC COURSE-071"
+    },
+    {
+      "column_id": "LK-TVEC-NCS-HR-ASSOCIATE-2024",
+      "kind": "benchmark",
+      "record_id": "LK-TVEC-NCS-HR-ASSOCIATE-2024",
+      "short_label": "NCS HR Associate · Sri Lanka"
+    },
+    {
+      "column_id": "LK-TVEC-NCS-HRM-DIPLOMA-2022",
+      "kind": "benchmark",
+      "record_id": "LK-TVEC-NCS-HRM-DIPLOMA-2022",
+      "short_label": "NCS HRM Diploma · Sri Lanka"
+    },
+    {
+      "column_id": "AU-TGA-BSB40420",
+      "kind": "benchmark",
+      "record_id": "AU-TGA-BSB40420",
+      "short_label": "BSB40420 · Australia"
+    }
+  ],
+  "category_components": {
+    "hr_recruitment_selection": [
+      "recruiting employees",
+      "selecting employees"
+    ],
+    "hr_induction": [
+      "inducting or onboarding new employees"
+    ],
+    "hr_discipline": [
+      "managing employee discipline"
+    ],
+    "hr_training_development": [
+      "coordinating employee training or learning and development"
+    ],
+    "hr_performance": [
+      "managing or supporting employee performance processes"
+    ],
+    "hr_employee_relations": [
+      "managing employee or industrial relations"
+    ],
+    "hr_welfare": [
+      "managing employee welfare"
+    ],
+    "hr_labour_law": [
+      "applying labour law"
+    ],
+    "hr_payroll_records": [
+      "administering payroll",
+      "maintaining HR records or information systems"
+    ],
+    "hr_whs": [
+      "implementing workplace health and safety"
+    ]
+  },
+  "methodology": {
+    "DOCUMENTED": "The cited stored text explicitly names the competency. Coverage records whether it names every component of the category (FULL) or only some (PARTIAL).",
+    "FULL": "The cited evidence supports the competency as labelled: every listed component of the category is explicitly named.",
+    "PARTIAL": "Only a component of the category, or a lower level of activity, is explicitly documented; supported_component records what is supported.",
+    "NOT_EXPLICIT": "The competency is not documented within the available, assessed scope of the source (units, modules, learning outcomes or verified scope passages as stored).",
+    "INSUFFICIENT_DATA": "Missing or incomplete material prevents a reliable assessment.",
+    "caution": "None of these statuses proves that a competency is or is not actually taught.",
+    "areas_rule": "Areas to Investigate list competencies that the NYSC description does not name (NOT_EXPLICIT) and that at least two distinct comparator records, from at least two different countries, document with FULL coverage. PARTIAL evidence is shown but not counted.",
+    "decisions": [
+      "Two Sri Lankan standards are linked: the NVQ Level 4 Human Resources Associate standard and the exact-title NVQ Level 5/6 Human Resource Management diploma standard, because the NYSC course level is not stated.",
+      "Australian cells assess the 6 core units only; electives are not stored."
+    ]
+  },
+  "competencies": [
+    {
+      "competency_id": "hr_recruitment_selection",
+      "label": "Recruitment and selection",
+      "cells": {
+        "NYSC-COURSE-071": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "JD, JA Recruitment, Selection, Hiring, Induction be held on weekends.",
+              "display_text": "JD, JA Recruitment, Selection, Hiring, Induction"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-HR-ASSOCIATE-2024": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": "K74S016U01",
+              "text": "Coordinate recruitment and selection process"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-HRM-DIPLOMA-2022": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": "K74T002U02",
+              "text": "Manage employee resourcing"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Employee resourcing; recruitment and selection are not named"
+        },
+        "AU-TGA-BSB40420": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": "BSBHRM415",
+              "text": "Coordinate recruitment and onboarding"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Coordinating recruitment; selection is not named"
+        }
+      }
+    },
+    {
+      "competency_id": "hr_induction",
+      "label": "Induction and onboarding",
+      "cells": {
+        "NYSC-COURSE-071": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "JD, JA Recruitment, Selection, Hiring, Induction be held on weekends.",
+              "display_text": "JD, JA Recruitment, Selection, Hiring, Induction"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-HR-ASSOCIATE-2024": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": "K74S016U02",
+              "text": "Organize induction and orientation (onboarding) process"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-HRM-DIPLOMA-2022": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in the stored units."
+        },
+        "AU-TGA-BSB40420": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": "BSBHRM415",
+              "text": "Coordinate recruitment and onboarding"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "hr_discipline",
+      "label": "Discipline management",
+      "cells": {
+        "NYSC-COURSE-071": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Discripline Management, PE System, T and D"
+            }
+          ],
+          "note": "Published as 'Discripline Management'.",
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-HR-ASSOCIATE-2024": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in the stored units."
+        },
+        "LK-TVEC-NCS-HRM-DIPLOMA-2022": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in the stored units; employee relations does not name discipline."
+        },
+        "AU-TGA-BSB40420": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in the stored core units."
+        }
+      }
+    },
+    {
+      "competency_id": "hr_training_development",
+      "label": "Training and development",
+      "cells": {
+        "NYSC-COURSE-071": {
+          "status": "INSUFFICIENT_DATA",
+          "evidence": [],
+          "note": "The governed heading uses the unexplained abbreviation 'T and D', which may denote this competency but is not expanded in the governed text, so it cannot be assessed."
+        },
+        "LK-TVEC-NCS-HR-ASSOCIATE-2024": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": "K74S016U05",
+              "text": "Coordinate learning/training and development"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-HRM-DIPLOMA-2022": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": "K74T002U04",
+              "text": "Manage learning and development"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-BSB40420": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": "BSBHRM413",
+              "text": "Support the learning and development of teams and individuals"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "hr_performance",
+      "label": "Performance management",
+      "cells": {
+        "NYSC-COURSE-071": {
+          "status": "INSUFFICIENT_DATA",
+          "evidence": [],
+          "note": "The governed heading uses the unexplained abbreviation 'PE System', which may denote this competency but is not expanded in the governed text, so it cannot be assessed."
+        },
+        "LK-TVEC-NCS-HR-ASSOCIATE-2024": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": "K74S016U07",
+              "text": "Support performance management process"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-HRM-DIPLOMA-2022": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": "K74T002U05",
+              "text": "Design and implement performance management system"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-BSB40420": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": "BSBHRM411",
+              "text": "Administer performance development processes"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "hr_employee_relations",
+      "label": "Employee and industrial relations",
+      "cells": {
+        "NYSC-COURSE-071": {
+          "status": "INSUFFICIENT_DATA",
+          "evidence": [],
+          "note": "The governed heading uses the unexplained abbreviation 'LR System', which may denote this competency but is not expanded in the governed text, so it cannot be assessed."
+        },
+        "LK-TVEC-NCS-HR-ASSOCIATE-2024": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in the stored units."
+        },
+        "LK-TVEC-NCS-HRM-DIPLOMA-2022": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": "K74T002U07",
+              "text": "Manage employee relations"
+            },
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": "K74T002U08",
+              "text": "Manage industrial relations"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-BSB40420": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": "BSBHRM412",
+              "text": "Support employee and industrial relations"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "hr_welfare",
+      "label": "Employee welfare",
+      "cells": {
+        "NYSC-COURSE-071": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "LR System, Employee welfare, Labour law gentle attitudes within a disciplined environment.",
+              "display_text": "LR System, Employee welfare, Labour law"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-HR-ASSOCIATE-2024": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": "K74S016U08",
+              "text": "Coordinate health, safety, and welfare aspects"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-HRM-DIPLOMA-2022": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in the stored units."
+        },
+        "AU-TGA-BSB40420": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in the stored core units; BSBWHS411 concerns work health and safety, not welfare."
+        }
+      }
+    },
+    {
+      "competency_id": "hr_labour_law",
+      "label": "Labour law",
+      "cells": {
+        "NYSC-COURSE-071": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "LR System, Employee welfare, Labour law gentle attitudes within a disciplined environment.",
+              "display_text": "LR System, Employee welfare, Labour law"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-HR-ASSOCIATE-2024": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in the stored units."
+        },
+        "LK-TVEC-NCS-HRM-DIPLOMA-2022": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in the stored units; industrial relations does not name labour law."
+        },
+        "AU-TGA-BSB40420": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in the stored core units."
+        }
+      }
+    },
+    {
+      "competency_id": "hr_payroll_records",
+      "label": "Payroll and HR records",
+      "cells": {
+        "NYSC-COURSE-071": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's governed headings."
+        },
+        "LK-TVEC-NCS-HR-ASSOCIATE-2024": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": "K74S016U03",
+              "text": "Maintain staff attendance and leave records/information"
+            },
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": "K74S016U04",
+              "text": "Support payroll administration functions"
+            },
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": "K74S016U06",
+              "text": "Coordinate Human Resource Information System (HRIS) operations"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-HRM-DIPLOMA-2022": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 8,
+              "field": "title_verbatim",
+              "code": "K74T002U09",
+              "text": "Administer HR operations and digitalization"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Administering HR operations and digitalization; payroll is not named"
+        },
+        "AU-TGA-BSB40420": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": "BSBHRM417",
+              "text": "Support human resource functions and processes"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Supporting human resources functions and processes; payroll and records are not named"
+        }
+      }
+    },
+    {
+      "competency_id": "hr_whs",
+      "label": "Workplace health and safety",
+      "cells": {
+        "NYSC-COURSE-071": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's governed headings."
+        },
+        "LK-TVEC-NCS-HR-ASSOCIATE-2024": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": "K74S016U08",
+              "text": "Coordinate health, safety, and welfare aspects"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-HRM-DIPLOMA-2022": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in the stored units."
+        },
+        "AU-TGA-BSB40420": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": "BSBWHS411",
+              "text": "Implement and monitor WHS policies, procedures and programs"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    }
+  ]
+}

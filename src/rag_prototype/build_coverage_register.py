@@ -134,7 +134,17 @@ COURSE_NOTES = {
     "COURSE-058": "Headings name accounting software packages rather than accounting competencies.",
     "COURSE-071": "Headings use unexplained abbreviations (e.g. 'JD, JA', 'PE System, T and D', 'LR System').",
     "COURSE-004": "The governed record states no sector, attendance type or duration.",
-    "COURSE-052": "A vendor certification; an official occupational comparator may not exist (not yet researched).",
+    "COURSE-052": "A vendor certification; national networking comparators are shown, and Cisco's own exam blueprint is not stored as a comparator record.",
+    # Researched after Step 34 but left RESEARCH_PENDING: no defensible official comparator with inspectable content.
+    "COURSE-003": "Researched (Step 38): no level or scope anchor in the governed record; Australia's EAL Access certificates could not be matched to a level without guessing. The Open University of Sri Lanka English programme pages read show descriptions but no module lists; TESDA's training-regulations listing has no English-language qualification; DGT curricula and India's NQR were not searched.",
+    "COURSE-049": "Researched (Step 35): generic title and no governed headings; Sri Lankan business standards (Business Associate J65S001, 2014; Management Services K74S010/K74S011) and Australian business qualifications cannot be matched to an unstated scope without NYSC syllabi.",
+    "COURSE-067": "Researched (Step 38): no French-language qualification was found in the sources searched (training.gov.au search, TESDA's training-regulations listing and the Sri Lankan NVQ occupation list); Indian and Singaporean sources were not searched.",
+    "COURSE-070": "Researched (Step 37): the craft is unspecified; Sri Lankan craft standards (e.g. Batik Artist D17S004, Handloom Craftsman D17S003) cover specific crafts and cannot be matched without NYSC syllabi.",
+    "COURSE-072": "Researched (Step 38): JLPT N5 is a proficiency test level, not a curriculum; no Japanese-language qualification was found in the sources searched (training.gov.au search, TESDA's training-regulations listing and the Sri Lankan NVQ occupation list).",
+    "COURSE-074": "Researched (Step 38): no Korean-language qualification was found in the sources searched (training.gov.au search, TESDA's training-regulations listing and the Sri Lankan NVQ occupation list); the Open University of Sri Lanka Korean (TOPIK) short-course pages could not be read (the fetched pages contained only site navigation).",
+    "COURSE-075": "Researched (Step 37): the single heading combines literary and arts components (criticism and taste; poetry, song and drama) with print and radio; Sri Lankan journalism standards (D22S014, D22T007) match only a fragment, so no comparison is defensible.",
+    "COURSE-083": "Researched (Step 38): whether the course teaches Sinhala as a first or second language is not stated; the Open University of Sri Lanka Sinhala-as-a-second-language pages read show descriptions and eligibility but no module lists (the certificate page could not be read), and no Sinhala qualification appears in the Sri Lankan NVQ occupation list.",
+    "COURSE-086": "Researched (Step 38): the Open University of Sri Lanka Tamil-as-a-second-language pages read show descriptions and eligibility but no module lists (the certificate page could not be read), and no Tamil qualification appears in the Sri Lankan NVQ occupation list.",
     "COURSE-024": "The three draughting courses are grouped provisionally; civil and engineering draughting may need separate comparators.",
     "COURSE-065": "The three draughting courses are grouped provisionally; civil and engineering draughting may need separate comparators.",
     "COURSE-061": "The three draughting courses are grouped provisionally; civil and engineering draughting may need separate comparators.",
@@ -143,7 +153,19 @@ COURSE_NOTES = {
 # Research status for courses whose comparator research is not complete. Every
 # course not listed here and not complete is NOT_RESEARCHED. BLOCKED requires a
 # documented, attempted research obstacle; none has been recorded yet.
-RESEARCH_OVERRIDES: dict[str, dict] = {}
+# Researched after Step 34 but no defensible official comparator with inspectable content was found (reasons in COURSE_NOTES).
+# They stay RESEARCH_PENDING in the dashboard; the research status distinguishes them from unresearched courses.
+RESEARCH_OVERRIDES: dict[str, dict] = {course_id: {"status": "NO_DEFENSIBLE_COMPARATOR"} for course_id in (
+    "COURSE-003",
+    "COURSE-049",
+    "COURSE-067",
+    "COURSE-070",
+    "COURSE-072",
+    "COURSE-074",
+    "COURSE-075",
+    "COURSE-083",
+    "COURSE-086",
+)}
 
 # Known gaps in completed comparisons that further official-source research could close.
 COMPLETE_GAPS = {
@@ -169,6 +191,10 @@ COMPLETE_GAPS = {
     "desktop_publisher": "Only the Indian DGT curriculum explicitly names all four governed applications; the other linked records provide related graphic-design evidence, and no exact Sri Lankan or developed-economy desktop-publishing curriculum was verified.",
     "java_programming": "Only one Java-specific national qualification was verified; no Sri Lankan, Indian or developed-economy exact comparator with inspectable official curriculum content was collected, and the NYSC course has no governed headings.",
     "microcontroller_design": "Only one broader Indian embedded-systems apprenticeship curriculum was verified; no Sri Lankan or second international exact comparator was collected, and the NYSC course has no governed headings.",
+    "tailor": "The Sri Lankan standard, Indian curriculum and Philippine qualification use patterns or blocks; COURSE-085 has no governed headings, no developed-economy comparator was verified, and current supersession of the older Sri Lankan and Philippine sources remains unconfirmed.",
+    "dressmaker": "The governed title's block-free method is not described by published NYSC content. All linked sources use patterns, with the Sri Lankan and Philippine documents explicitly using blocks or block patterns; no method-matched or developed-economy comparator was verified.",
+    "preschool_teacher": "All three sources are standards or national curricula rather than confirmed deliveries; NYSC heading 1 ('Handling skills and design') is too unspecific to map, and Australian evidence is limited to CHC30125 core units.",
+    "human_resource_management": "No developing-economy HR comparator with inspectable content was verified; both Sri Lankan standards are past their stated review dates, and the NYSC headings' abbreviations ('T and D', 'PE System', 'LR System') cannot be assessed without NYSC syllabi.",
 }
 
 
@@ -238,6 +264,11 @@ def build_register() -> dict:
                          if availability == "HEADINGS_AVAILABLE" else
                          "The governed catalogue publishes no usable module headings for this course, so a competency "
                          "matrix cannot be assessed; the verified comparators are shown without one."))
+        elif research == "NO_DEFENSIBLE_COMPARATOR":
+            proposed = "FULL_COMPARISON" if availability == "HEADINGS_AVAILABLE" else "COMPARATORS_ONLY"
+            reason = ("Comparator research was carried out, but no defensible official comparator with inspectable curriculum "
+                      "content was found (see notes); no comparison is shown. Missing NYSC headings do not imply that external comparators are missing, "
+                      "and a missing comparison does not mean that suitable programmes do not exist.")
         elif availability == "HEADINGS_AVAILABLE":
             proposed = "FULL_COMPARISON"
             reason = (f"{n} available. Comparator research has not started: a full comparison needs verified "
@@ -257,6 +288,9 @@ def build_register() -> dict:
         elif comparators:
             improvement = ("NYSC syllabi or TVEC national competency standards could supply module headings for a full "
                            "comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.")
+        elif research == "NO_DEFENSIBLE_COMPARATOR":
+            improvement = ("NYSC syllabi stating the course content or level, or newly published official curricula with inspectable "
+                           "content, could make a comparison defensible.")
         elif availability == "HEADINGS_AVAILABLE":
             improvement = "Official comparator records (and NYSC syllabi) could enable a full comparison."
         else:
@@ -309,6 +343,7 @@ def build_register() -> dict:
                 "COMPLETE": "Verified comparator records are linked, and a competency mapping exists or cannot be defended because NYSC headings are missing or unusable.",
                 "IN_PROGRESS": "Comparator research has started but records or a defensible mapping are incomplete.",
                 "NOT_RESEARCHED": "No official comparator research has been carried out for this course.",
+                "NO_DEFENSIBLE_COMPARATOR": "Comparator research was carried out, but no defensible official comparator with inspectable curriculum content was found; the reason is recorded in notes. Shown as RESEARCH_PENDING.",
                 "BLOCKED": "Research was attempted and a documented obstacle prevents progress (blocking_evidence is required).",
             },
             "evidence_availability": {
@@ -382,6 +417,8 @@ def build_frontend_index(register: dict) -> dict:
         }
         if "blocking_evidence" in entry:
             item["blocking_evidence"] = entry["blocking_evidence"]
+        if entry["research_status"] == "NO_DEFENSIBLE_COMPARATOR":
+            item["research_note"] = entry["notes"][0]
         courses[entry["course_id"]] = item
     return {
         "description": "Generated from coverage_register.json by src/rag_prototype/build_coverage_register.py; do not edit by hand. Only the fields the dashboard needs for display and state calculation.",

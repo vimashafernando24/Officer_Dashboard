@@ -82,12 +82,12 @@ class Step33TechnicalDigitalTests(unittest.TestCase):
 
     def test_updated_totals(self):
         self.assertEqual(self.totals["current_presentation_mode"], {
-            "COMPARATORS_ONLY": 37, "FULL_COMPARISON": 24, "RESEARCH_PENDING": 23,
+            "COMPARATORS_ONLY": 47, "FULL_COMPARISON": 28, "RESEARCH_PENDING": 9,
         })
-        self.assertEqual(self.totals["courses_with_mapping"], 24)
-        self.assertEqual(self.totals["courses_with_comparators"], 61)
-        self.assertEqual(self.totals["occupation_groups_complete"], 42)
-        self.assertEqual(len(self.records), 100)
+        self.assertEqual(self.totals["courses_with_mapping"], 28)
+        self.assertEqual(self.totals["courses_with_comparators"], 75)
+        self.assertEqual(self.totals["occupation_groups_complete"], 54)
+        self.assertEqual(len(self.records), 132)
 
 
 if __name__ == "__main__":

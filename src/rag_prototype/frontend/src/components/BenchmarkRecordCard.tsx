@@ -72,6 +72,18 @@ export function BenchmarkRecordCard({ record }: { record: BenchmarkRecord }) {
         Official source
       </a>
 
+      <details className="pcd-source-details">
+        <summary>Source version and notes</summary>
+        <p>
+          Version / revision: {record.source.publication_or_revision ?? "Not stated"} · Retrieved {record.source.retrieved_date}
+        </p>
+        {record.notes && record.notes.length > 0 && (
+          <ul>
+            {record.notes.map((note, index) => <li key={index}>{note}</li>)}
+          </ul>
+        )}
+      </details>
+
       <details className="pcd-modules">
         <summary>
           View Modules / Competencies

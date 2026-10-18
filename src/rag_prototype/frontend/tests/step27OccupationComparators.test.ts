@@ -42,11 +42,16 @@ test("the ten courses show verified comparators without a matrix", () => {
 });
 
 
-test("unresearched related occupation groups stay unlinked", () => {
-  for (const courseId of ["COURSE-037"]) {
-    assert.equal(ids(courseId).length, 0, courseId);
-    assert.equal(coverageForCourse(courseId)!.state, "RESEARCH_PENDING", courseId);
-  }
+test("related groups use their own later evidence; an unresolved course stays unlinked", async () => {
+  // Three Wheeler Mechanic was later linked only to the record that covers three-wheelers.
+  await loadCourseComparison("COURSE-038");
+  assert.deepEqual(ids("COURSE-038"), ["IN-DGT-CTS-2W3W-V2"]);
+  assert.equal(coverageForCourse("COURSE-038")!.state, "COMPARATORS_ONLY");
+  // Business Management was researched but has no defensible comparator.
+  await loadCourseComparison("COURSE-049");
+  assert.equal(ids("COURSE-049").length, 0);
+  assert.equal(coverageForCourse("COURSE-049")!.state, "RESEARCH_PENDING");
+  assert.equal(coverageForCourse("COURSE-049")!.researchStatus, "NO_DEFENSIBLE_COMPARATOR");
 });
 
 
