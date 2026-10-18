@@ -23,7 +23,7 @@ import os
 import sys
 from pathlib import Path
 
-from flask import Flask, jsonify, request, Response, send_from_directory
+from flask import Flask, jsonify, redirect, request, Response, send_from_directory
 from flask_cors import CORS
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -859,9 +859,12 @@ def frontend_favicon():
     return send_from_directory(FRONTEND_DIST_PATH, "favicon.svg")
 
 
-@app.route("/new-person")
+@app.route("/new-person", strict_slashes=False)
 def new_person_page():
-    return jsonify({"error": "Not found"}), 404
+    # The standalone walkthrough page was retired for Production; the new-person
+    # intake now lives in the officer dashboard at "/". Old links are redirected
+    # there instead of failing, and the retired walkthrough page is never served.
+    return redirect("/", code=302)
 
 
 if __name__ == "__main__":
