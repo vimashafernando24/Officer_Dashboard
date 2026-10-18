@@ -1,0 +1,788 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-web",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Comparator records for NYSC COURSE-087 Web Designing, COURSE-057 Multimedia & Web Design and COURSE-001 Freelancer Of Web Design & Development. Records describe documented curriculum only and do not establish equivalence, quality or labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its official source by a researcher before publication.",
+  "country_group_gaps": {},
+  "records": [
+    {
+      "record_id": "LK-TVEC-NCS-WEB-DEVELOPER-2025",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "WEB DEVELOPER",
+      "sector": "ICT / Web development",
+      "framework": "NVQ (Sri Lanka)",
+      "level_as_published": "NVQ Level 04",
+      "duration_as_published": null,
+      "entry_as_published": "Sat for GCE O/L",
+      "modules": [
+        {
+          "published_ref": "U1",
+          "code": "K72S005U01",
+          "title_verbatim": "Prepare System Requirements Specification (SRS)",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "U2",
+          "code": "K72S005U02",
+          "title_verbatim": "Prepare web application design",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "U3",
+          "code": "K72S005U03",
+          "title_verbatim": "Develop web application",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "U4",
+          "code": "K72S005U04",
+          "title_verbatim": "Perform deployment and maintenance of the web application",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "U5",
+          "code": "K72S005BU01",
+          "title_verbatim": "Practice workplace communication and interpersonal relations",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "U6",
+          "code": "K72S005BU02",
+          "title_verbatim": "Apply occupational literacy and numeracy",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "U7",
+          "code": "K72S005BU03",
+          "title_verbatim": "Work in teams",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "U8",
+          "code": "K72S005BU04",
+          "title_verbatim": "Practice occupational health and safety measures",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "M1",
+          "code": "K72S005M01",
+          "title_verbatim": "Introduction to ICT for web development",
+          "outcome_verbatim": "Explain the basics of ICT and its role in web development.; Explain fundamental web technologies and frameworks.; Explain how to secure data; Install and configure tools for web development",
+          "group": "List of Curriculum Modules"
+        },
+        {
+          "published_ref": "M2",
+          "code": "K72S005M02",
+          "title_verbatim": "System analysis and design for web development",
+          "outcome_verbatim": "Identify different types of systems and their components; Explain role and significance of systems analysis and design in web development; Analyze user requirements and map them into a functional design for web solutions",
+          "group": "List of Curriculum Modules"
+        },
+        {
+          "published_ref": "M3",
+          "code": "K72S005M03",
+          "title_verbatim": "Front-end designing",
+          "outcome_verbatim": "Explain the role of front-end development in web applications.; List out the key components of front-end technologies.; Explain the principles of front-end design, including user experience (UX) and user interface (UI) design.; Create responsive and interactive web pages using HTML, CSS, and JavaScript; Create web pages/web sites using front-end frameworks and libraries",
+          "group": "List of Curriculum Modules"
+        },
+        {
+          "published_ref": "M4",
+          "code": "K72S005M04",
+          "title_verbatim": "Database fundamentals",
+          "outcome_verbatim": "Explain the steps used to draw an ER diagram; Draw an ER Diagram; Explain the steps used to normalize a database; Create a normalized database structure; Explain the uses of SQL statements",
+          "group": "List of Curriculum Modules"
+        },
+        {
+          "published_ref": "M5",
+          "code": "K72S005M05",
+          "title_verbatim": "Back-end programming",
+          "outcome_verbatim": "Explain the role of back-end development in web systems; List the key components of back-end technologies; Explain server-side programming concepts and languages; Store, retrieve and manage data in databases; Build and integrate RESTful APIs with front-end systems; Deploy and manage back-end applications on web servers",
+          "group": "List of Curriculum Modules"
+        },
+        {
+          "published_ref": "M6",
+          "code": "K72S005M06",
+          "title_verbatim": "Testing, Deployment and maintenance",
+          "outcome_verbatim": "Explain different types of testing and their importance in web development.; Create and execute test cases for web applications.; Write and execute automated test scripts.; Describe deployment tools, techniques, and platforms.; Maintain and update web applications.; Explain debugging, performance monitoring, and version control best practices.; Conduct security testing on web applications.",
+          "group": "List of Curriculum Modules"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://nvq.gov.lk/report_inquires/NCS_Request_Pdf.php?nm=K72S005_1_NCS.pdf",
+        "document_type": "pdf",
+        "document_sha256": "9868d4f50c1ce3de58d2749491a714b2750fc702ddb72cd9415d5c34d87ed386",
+        "publication_or_revision": "First Revision - August 2025 (endorsed 12.08.2025); next revision August 2028",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Unit titles and codes read from the rendered List of Competency Units (PDF page 8); module titles from the List of Curriculum Modules (PDF page 29); module learning outcomes from the module pages (PDF pages 31-42); all matched against the pdf.js text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Copyright © 2025 TVEC; source states all rights reserved.",
+      "notes": [
+        "A national occupational standard and competency-based curriculum, not evidence that a named provider delivers the programme.",
+        "Stores the 8 competency units and the 6 technical curriculum modules with their learning outcomes; bullet points within a module's learning outcomes are joined with '; '.",
+        "The four basic curriculum modules are not stored: in the source, the 'Team Work' module lists safety outcomes and the safety module's outcomes do not extract cleanly, so they cannot be stored reliably. Basic competencies are represented by units BU01-BU04.",
+        "The module page for M06 is headed 'Testing, Deployment and maintenance of Web Application'; the module-list title is stored.",
+        "The curriculum totals 335 theory and 425 practical hours (List of Curriculum Modules); no overall course duration is stated.",
+        "Only revision 1 of K72S005 is available on the NVQ portal (2026-10-18)."
+      ],
+      "scope_verbatim": [
+        "National certificate at NVQ Level 04 in the Occupation of Web Developer will be awarded to those who are competent in U01+U02+U03+U04+BU01+BU02+BU03+BU04- K72S005Q1L4"
+      ]
+    },
+    {
+      "record_id": "IN-NQR-HARTRON-WEB-MULTIMEDIA-V2",
+      "country": "India",
+      "country_group": "developing_emerging",
+      "institution": "Haryana State Electronics Development Corporation Ltd. (HARTRON), awarding body; approved by the National Skills Qualification Committee (NSQC) on India's National Qualification Register",
+      "record_type": "national_qualification",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Certificate Course in Web Designing and Multimedia",
+      "sector": "ICT / Web design",
+      "framework": "NSQF (India)",
+      "level_as_published": "NCrF/NSQF Level: 3",
+      "duration_as_published": "300 hours (Theory 75, Practical 165, Employability Skills 30, OJT Mandatory 30)",
+      "entry_as_published": "Grade 10 Pass OR Pursuing 10th OR Grade 8 Pass with 2 year NTC/NAC OR Previous relevant qualification of NSQF level 2.5 with 1.5 years of relevant experience; No experience required",
+      "modules": [
+        {
+          "published_ref": "1",
+          "code": "HART/AWD/ITFDT/01, V1",
+          "title_verbatim": "IT Foundation and Digital Tools",
+          "outcome_verbatim": null,
+          "group": "Module Summary"
+        },
+        {
+          "published_ref": "2",
+          "code": "HART/AWD/MWD/01, V1",
+          "title_verbatim": "Introduction to Multimedia and Web Designing tools",
+          "outcome_verbatim": null,
+          "group": "Module Summary"
+        },
+        {
+          "published_ref": "3",
+          "code": "DGT/VSQ/N0101",
+          "title_verbatim": "Employability Skills DGT",
+          "outcome_verbatim": null,
+          "group": "Module Summary"
+        },
+        {
+          "published_ref": "4",
+          "code": null,
+          "title_verbatim": "OJT/Project & Viva",
+          "outcome_verbatim": null,
+          "group": "Module Summary"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://www.nqr.gov.in/qualification/file/STT%20_CCWDM.pdf",
+        "document_type": "pdf",
+        "document_sha256": "3fa2b2461c712dbc403c09a7e8785e016ba548dd049435923af7587257258d5e",
+        "publication_or_revision": "QG-03-IT-03521-2025-V2-HARTRON, Version 2.0; NSQC approval 18.02.2025; next review 18.02.2028",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Module summary read from the rendered Section 2 table (PDF page 5); description, level descriptors, duration and approval facts from PDF pages 3, 4, 7 and 8; all matched against the pdf.js text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Indian government qualification register publication; reuse terms not checked.",
+      "notes": [
+        "An NSQF-aligned short-term qualification approved by NSQC and listed on India's National Qualification Register; HARTRON (a Haryana state corporation) is the awarding body. No delivering centre has been verified.",
+        "DGT publishes no Craftsmen Training Scheme trade for web design; this record is used instead of reusing DGT COPA, whose web content is 2 of 14 learning outcomes in a general computer-operator curriculum.",
+        "Module titles are broad; the specific web technologies are named only in the qualification description and level descriptors, stored in scope_verbatim.",
+        "Duration is composed from the published training-duration table (page 4); the module-level curriculum document is not stored."
+      ],
+      "scope_verbatim": [
+        "Certificate course that helps students to learn and develop skills in designing multimedia web sites using various multimedia and web designing tools such as HTML, CSS, Photoshop etc.",
+        "Candidate is expected to design and maintain multipage web sites using various multimedia tools.",
+        "Candidate will acquire knowledge of HTML, CSS, JavaScript, Photoshop and CMS and is able to design web sites as per client needs."
+      ]
+    },
+    {
+      "record_id": "PH-TESDA-WEBDEV-NC3",
+      "country": "Philippines",
+      "country_group": "developing_emerging",
+      "institution": "Technical Education and Skills Development Authority (TESDA)",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Web Development NC III",
+      "sector": "ICT / Web development",
+      "framework": "Philippine TVET Qualification (NC)",
+      "level_as_published": "NC III",
+      "duration_as_published": "Nominal Training Duration: 68 hours – Basic Competencies, 28 hours – Common Competencies, 1,092 hours – Core Competencies; Total Nominal Duration - 1,188 hours",
+      "entry_as_published": "Must have completed at least 10 yrs. basic education or an alternative learning systems (ALS) certificate of completion with grade 10 equivalent holder; Must get 20 points out of 30 items mathematics (10 items algebra, 10 items trigonometry, 10 items geometry) test and 20 points out of 30 items abstract reasoning test given by the institution; Able to communicate both oral and written; Must know how to operate a computer and how to navigate the internet",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "500311109",
+          "title_verbatim": "Lead workplace communication",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311110",
+          "title_verbatim": "Lead small teams",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311111",
+          "title_verbatim": "Develop and practice negotiation skills",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311112",
+          "title_verbatim": "Solve problems related to work activities",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311113",
+          "title_verbatim": "Use mathematical concepts and techniques",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311114",
+          "title_verbatim": "Use relevant technologies",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311142",
+          "title_verbatim": "Apply critical thinking and problem solving techniques in the workplace",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311144",
+          "title_verbatim": "Use information creatively and critically",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "500311145",
+          "title_verbatim": "Work in a diverse environment",
+          "outcome_verbatim": null,
+          "group": "Basic Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ICT315202",
+          "title_verbatim": "Apply quality standards",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ICT311203",
+          "title_verbatim": "Perform Computer Operations",
+          "outcome_verbatim": null,
+          "group": "Common Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ICT251301",
+          "title_verbatim": "Utilize Software Methodologies",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ICT251302",
+          "title_verbatim": "Develop Responsive Web Design",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ICT251303",
+          "title_verbatim": "Create Interactive Websites",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": null,
+          "code": "ICT251304",
+          "title_verbatim": "Develop Website Backend Systems",
+          "outcome_verbatim": null,
+          "group": "Core Competencies"
+        },
+        {
+          "published_ref": "LO 1.1",
+          "code": null,
+          "title_verbatim": "Identify project requirements and software methodology",
+          "outcome_verbatim": null,
+          "group": "Core learning outcomes (Section 3.1)"
+        },
+        {
+          "published_ref": "LO 1.2",
+          "code": null,
+          "title_verbatim": "Apply software methodologies",
+          "outcome_verbatim": null,
+          "group": "Core learning outcomes (Section 3.1)"
+        },
+        {
+          "published_ref": "LO 1.3",
+          "code": null,
+          "title_verbatim": "Utilize code versioning tools",
+          "outcome_verbatim": null,
+          "group": "Core learning outcomes (Section 3.1)"
+        },
+        {
+          "published_ref": "LO 1.4",
+          "code": null,
+          "title_verbatim": "Conduct testing",
+          "outcome_verbatim": null,
+          "group": "Core learning outcomes (Section 3.1)"
+        },
+        {
+          "published_ref": "LO 2.1",
+          "code": null,
+          "title_verbatim": "Perform research and analytics",
+          "outcome_verbatim": null,
+          "group": "Core learning outcomes (Section 3.1)"
+        },
+        {
+          "published_ref": "LO 2.2",
+          "code": null,
+          "title_verbatim": "Identify and prepare design requirements",
+          "outcome_verbatim": null,
+          "group": "Core learning outcomes (Section 3.1)"
+        },
+        {
+          "published_ref": "LO 2.3",
+          "code": null,
+          "title_verbatim": "Design and develop user-friendly responsive Web interface",
+          "outcome_verbatim": null,
+          "group": "Core learning outcomes (Section 3.1)"
+        },
+        {
+          "published_ref": "LO 2.4",
+          "code": null,
+          "title_verbatim": "Develop HTML/CSS website",
+          "outcome_verbatim": null,
+          "group": "Core learning outcomes (Section 3.1)"
+        },
+        {
+          "published_ref": "LO 2.5",
+          "code": null,
+          "title_verbatim": "Use/Deploy website content management system (CMS)",
+          "outcome_verbatim": null,
+          "group": "Core learning outcomes (Section 3.1)"
+        },
+        {
+          "published_ref": "LO 2.6",
+          "code": null,
+          "title_verbatim": "Perform search engine optimization (SEO)",
+          "outcome_verbatim": null,
+          "group": "Core learning outcomes (Section 3.1)"
+        },
+        {
+          "published_ref": "LO 3.1",
+          "code": null,
+          "title_verbatim": "Inspect and analyze HTML/CSS files",
+          "outcome_verbatim": null,
+          "group": "Core learning outcomes (Section 3.1)"
+        },
+        {
+          "published_ref": "LO 3.2",
+          "code": null,
+          "title_verbatim": "Gather and review specifications and requirements",
+          "outcome_verbatim": null,
+          "group": "Core learning outcomes (Section 3.1)"
+        },
+        {
+          "published_ref": "LO 3.3",
+          "code": null,
+          "title_verbatim": "Apply JavaScript to HTML/CSS",
+          "outcome_verbatim": null,
+          "group": "Core learning outcomes (Section 3.1)"
+        },
+        {
+          "published_ref": "LO 3.4",
+          "code": null,
+          "title_verbatim": "Configure JavaScript Efficiency",
+          "outcome_verbatim": null,
+          "group": "Core learning outcomes (Section 3.1)"
+        },
+        {
+          "published_ref": "LO 4.1",
+          "code": null,
+          "title_verbatim": "Develop a project plan",
+          "outcome_verbatim": null,
+          "group": "Core learning outcomes (Section 3.1)"
+        },
+        {
+          "published_ref": "LO 4.2",
+          "code": null,
+          "title_verbatim": "Configure a web or cloud server",
+          "outcome_verbatim": null,
+          "group": "Core learning outcomes (Section 3.1)"
+        },
+        {
+          "published_ref": "LO 4.3",
+          "code": null,
+          "title_verbatim": "Design databases",
+          "outcome_verbatim": null,
+          "group": "Core learning outcomes (Section 3.1)"
+        },
+        {
+          "published_ref": "LO 4.4",
+          "code": null,
+          "title_verbatim": "Develop server side scripts",
+          "outcome_verbatim": null,
+          "group": "Core learning outcomes (Section 3.1)"
+        },
+        {
+          "published_ref": "LO 4.5",
+          "code": null,
+          "title_verbatim": "Develop web application using MVC Frameworks",
+          "outcome_verbatim": null,
+          "group": "Core learning outcomes (Section 3.1)"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://tesda.gov.ph/Downloadables/TR%20-%20Web%20Development%20NC%20III.pdf",
+        "document_type": "pdf",
+        "document_sha256": "32a740e78b4d52a290c6af693a755ffbabc692224a023ceb9f3337bdc36551f5",
+        "publication_or_revision": "ICTWBD318 (Version 00); Promulgated February 27, 2018",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Units and scope read from the rendered Section 1 page (PDF page 5); core learning outcomes from the Section 3.1 curriculum table (PDF pages 79-88); hours and entry requirements from PDF pages 67 and 89; all matched against the pdf.js text layer.",
+        "human_reviewed": false
+      },
+      "licence_note": "Philippine government publication; reuse terms not checked.",
+      "notes": [
+        "Listed as current in TESDA's list of promulgated training regulations (as of May 2022): Web Development NC III, ICTWBD318, 1,188 hours.",
+        "A training regulation (standard), delivered by TESDA-registered institutions; no provider has been verified.",
+        "Stores the 15 units of competency and the 19 learning outcomes of the four core units (Section 3.1); learning activities are not stored.",
+        "The basic competencies include no occupational health and safety unit.",
+        "scope_verbatim holds the exact Section 1 wording and each listed occupation as a separate passage."
+      ],
+      "scope_verbatim": [
+        "The Web Development NC III Qualification consists of competencies that a person must achieve to develop websites for hosting via intranet or Internet. It includes competencies for web design, content development, client-side/server-side scripting and website security configuration, among other tasks.",
+        "A person who has achieved this Qualification is competent to be:",
+        "Web Designer",
+        "Front-end Web Developer",
+        "Backend Web Developer",
+        "Full-stack Web Developer"
+      ]
+    },
+    {
+      "record_id": "SG-ITE-HNITEC-ITAD-2Y",
+      "country": "Singapore",
+      "country_group": "developed",
+      "institution": "Institute of Technical Education (ITE)",
+      "record_type": "programme",
+      "delivering_provider_verified": true,
+      "title_verbatim": "Higher Nitec in IT Applications Development (2 years)",
+      "sector": "ICT / Web and application development",
+      "framework": "ITE Nitec / Higher Nitec (Singapore)",
+      "level_as_published": "Higher Nitec",
+      "duration_as_published": "2 years; Total: 68 credits",
+      "entry_as_published": null,
+      "modules": [
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Applied Data Fundamentals",
+          "outcome_verbatim": "On completion of the module, students should be able to import data from external sources, perform basic data manipulation and present simple visualisation of the data.",
+          "group": "Sector Foundation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Generative AI Essentials",
+          "outcome_verbatim": "On completion of the module, students will gain knowledge in Generative AI applications for design and content creation.",
+          "group": "Sector Foundation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Software Development Practices",
+          "outcome_verbatim": "On completion of the module, students should be able to apply their knowledge and skills in software development methods on recommended solutions.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Programming 2",
+          "outcome_verbatim": "On completion of the module, students should be able to apply fundamental programming concepts and computational thinking for basic programs.",
+          "group": "Cluster Core Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "User Experience Development",
+          "outcome_verbatim": "On completion of the module, students should be able to apply the UX design process to create effective and user-friendly interfaces. They should also be able to use digital tools to design, prototype, and refine their work based on user feedback.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Low-Code Development",
+          "outcome_verbatim": "On completion of the module, students should be able to apply the knowledge, techniques and skills in developing web applications using a low-code platform.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Server-side Development",
+          "outcome_verbatim": "On completion of the module, students should be able to develop interactive application with database integrations on cloud/repository.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Web Content Management",
+          "outcome_verbatim": "On completion of the module, students should be able to configure and publish websites, with online payment support and social media integration. They should also be able to perform website testing.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Robotic Process Automation",
+          "outcome_verbatim": "Upon completion of this module, students should be able to design and implement automation solutions to streamline workflows, improve efficiency, and reduce human errors in routine procedures.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Enterprise Web Development",
+          "outcome_verbatim": "On completion of the module, students should be able to develop Enterprise Web applications using techniques to manage operations of an organisation.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Mobile Apps Development",
+          "outcome_verbatim": "On completion of the module, students should be able to design, develop and enhance feature-rich mobile applications, while effectively managing their codebase through version control systems, supported by advanced GenAI tools to create innovative user experiences.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Enterprise Solutions Development",
+          "outcome_verbatim": "On completion of the module, students should be able to develop, test and deploy secure web services.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Mobile Solutions Development",
+          "outcome_verbatim": "On completion of the module, students should be able to enhance and optimise cross- platform mobile applications. They will also be able to integrate relevant mobile features, apply generative AI tools to refine UI and code; and improve app performance.",
+          "group": "Specialisation Modules"
+        },
+        {
+          "published_ref": null,
+          "code": null,
+          "title_verbatim": "Internship Programme",
+          "outcome_verbatim": "On completion of the module, students should be able to apply and integrate the skills and knowledge that they have acquired at ITE College and develop competencies in other areas not covered in the curriculum, at the workplace.",
+          "group": "Internship Programme Modules"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://isomer-user-content.by.gov.sg/145/a391c75f-a696-4ee0-b2af-137f2c2ac7b6/Higher%20Nitec%20in%20IT%20Applications%20Development%20(2%20years).pdf",
+        "document_type": "pdf",
+        "document_sha256": "9c360ac9592533de6f55afe2a585939b66dcb78f22254a20976e095ca23dac66",
+        "publication_or_revision": "Last updated on 28 Nov 2025",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Modules and objectives extracted from the PDF linked on ITE's official course page (Higher Nitec in IT Applications Development) and matched against its text layer; objectives joined across line breaks.",
+        "human_reviewed": false
+      },
+      "licence_note": "Singapore Government agency publication; reuse terms not checked.",
+      "notes": [
+        "Offered at ITE College Central, ITE College East and ITE College West; course duration 24 months (official course page).",
+        "A broader application-development programme: web modules (user experience, low-code web applications, server-side development, web content management, enterprise web development, secure web services) sit alongside mobile apps and robotic process automation.",
+        "ITE's part-time 'Nitec in Technology - Web Applications' course page returned 404 on 2026-10-18 and was not used.",
+        "Life Skills, Cross-Disciplinary Core and elective modules are published separately and are not stored."
+      ]
+    },
+    {
+      "record_id": "AU-TGA-ICT40120-WEBDEV",
+      "country": "Australia",
+      "country_group": "developed",
+      "institution": "Australian Government, training.gov.au (ICT Information and Communications Technology Training Package)",
+      "record_type": "national_qualification",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Certificate IV in Information Technology (Web Development)",
+      "sector": "ICT / Web development",
+      "framework": "AQF (Australia)",
+      "level_as_published": "Certificate IV (national code ICT40120)",
+      "duration_as_published": null,
+      "entry_as_published": "Nil",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "BSBCRT404",
+          "title_verbatim": "Apply advanced critical thinking to work processes",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "BSBXCS404",
+          "title_verbatim": "Contribute to cyber security risk management",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "ICTICT426",
+          "title_verbatim": "Identify and evaluate emerging technologies and practices",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "ICTICT443",
+          "title_verbatim": "Work collaboratively in the ICT industry",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "ICTICT451",
+          "title_verbatim": "Comply with IP, ethics and privacy policies in ICT environments",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "ICTPRG302",
+          "title_verbatim": "Apply introductory programming techniques",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "ICTSAS432",
+          "title_verbatim": "Identify and resolve client ICT problems",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "ICTWEB431",
+          "title_verbatim": "Create and style simple markup language documents",
+          "outcome_verbatim": null,
+          "group": "Group G Web Development Specialisation"
+        },
+        {
+          "published_ref": null,
+          "code": "ICTWEB432",
+          "title_verbatim": "Design website layouts",
+          "outcome_verbatim": null,
+          "group": "Group G Web Development Specialisation"
+        },
+        {
+          "published_ref": null,
+          "code": "ICTWEB433",
+          "title_verbatim": "Confirm accessibility of websites",
+          "outcome_verbatim": null,
+          "group": "Group G Web Development Specialisation"
+        },
+        {
+          "published_ref": null,
+          "code": "ICTWEB434",
+          "title_verbatim": "Transfer content to websites",
+          "outcome_verbatim": null,
+          "group": "Group G Web Development Specialisation"
+        },
+        {
+          "published_ref": null,
+          "code": "ICTWEB443",
+          "title_verbatim": "Implement search engine optimisations",
+          "outcome_verbatim": null,
+          "group": "Group G Web Development Specialisation"
+        },
+        {
+          "published_ref": null,
+          "code": "ICTWEB450",
+          "title_verbatim": "Evaluate and select a web hosting service",
+          "outcome_verbatim": null,
+          "group": "Group G Web Development Specialisation"
+        },
+        {
+          "published_ref": null,
+          "code": "ICTWEB452",
+          "title_verbatim": "Create a markup language document",
+          "outcome_verbatim": null,
+          "group": "Group G Web Development Specialisation"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://training.gov.au/assets/ICT/ICT40120_R4.pdf",
+        "document_type": "pdf",
+        "document_sha256": "7794b2db08f8d3234a124b0f019127cd94da8cfe471164b09a41b16885378b7d",
+        "publication_or_revision": "ICT40120 Release 4 (current from 2022-02-03, training.gov.au)",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Core and Group G units read from the official qualification PDF (pages 4-5) and matched against its pdf.js text layer; each code and title equals the training.gov.au Release 4 unit grid; the specialisation rule from page 10.",
+        "human_reviewed": false
+      },
+      "licence_note": "© Commonwealth of Australia, 2022; training package content is published under its own licence terms (not checked).",
+      "notes": [
+        "A national qualification, not a delivered programme; no delivering provider has been verified and no nominal duration is stated.",
+        "Stores the 7 core units and the 7 Group G units that the Web Development specialisation requires ('Select all 7 elective units from Group G'); the remaining 6 electives are not assessed.",
+        "Core unit BSBCRT404 is marked 'Superseded' on training.gov.au but remains packaged in Release 4.",
+        "ICTWEB453 'Optimise websites for mobile devices' is a general elective, not part of Group G, so responsive/mobile design is not assessed as coverage."
+      ],
+      "scope_verbatim": [
+        "Select all 7 elective units from Group G Web Development Specialisation"
+      ]
+    }
+  ]
+}

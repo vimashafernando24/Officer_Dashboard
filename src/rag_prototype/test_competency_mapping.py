@@ -90,6 +90,16 @@ COMPETENCY_KEYWORDS = {
     "biscuits_cookies": ["biscuit", "cookie"],
     "chocolate_confectionery": ["chocolate", "cand", "confection"],
     "desserts_puddings": ["dessert", "pudding"],
+    # Cake Decorator categories. NYSC publishes "Oicing Methods".
+    "icing_methods": ["icing", "oicing"],
+    "cake_decoration": ["decorat", "icing"],
+    "icing_structures": ["icing structure"],
+    "occasion_specialty_cakes": ["birthday cake", "wedding cake", "engagement cake", "eggless cake", "homecoming cake", "gateau", "advanced cake", "special types of cakes", "mousse cakes"],
+    "basic_advanced_cake_production": ["cake"],
+    "cake_outer_covering": ["cover cake", "icing", "decorative work"],
+    "cake_food_safety_hygiene": ["food handling", "hygiene", "food safety"],
+    "customer_led_cake_design": ["customer", "cake design"],
+    "cake_business_operations": ["routine functions", "menu", "promotional"],
     # Professional Cookery categories.
     "menu_planning": ["menu", "recipe", "cost", "budget"],
     "regional_cuisines": ["cuisine", "indian", "continental", "chinese", "asian", "western"],
@@ -128,6 +138,39 @@ COMPETENCY_KEYWORDS = {
     "travel_arrangements": ["travel", "tickets", "hotels"],
     "workplace_communication": ["communication", "relationships", "communicating"],
     "diary_appointments": ["diary", "appointments", "schedules"],
+    # ICT Technician and computer applications categories (Step 23).
+    "ict_file_management": ["file", "folder"],
+    "ict_word_processing": ["word processing", "document"],
+    "ict_spreadsheets": ["spreadsheet", "workbook"],
+    "ict_presentations": ["presentation", "slides"],
+    "ict_databases": ["database", "sql", "mysql"],
+    "ict_internet_email": ["internet", "e-mail", "email", "electronic mail", "e-commerce"],
+    "ict_os_installation": ["operating system", "system software"],
+    "ict_os_use": ["operating system", "computer"],
+    "ict_networking": ["network"],
+    "ict_graphics_multimedia": ["graphic", "print", "multimedia", "digital media"],
+    "ict_web_design": ["web"],
+    "ict_software_development": ["program", "software", "information system", "script"],
+    "ict_system_maintenance": ["mainten", "maintain", "troubleshoot", "hardware"],
+    "ict_information_security": ["secur", "firewall", "intrusion", "cryptograph"],
+    "ict_workplace_safety": ["safety"],
+    "ict_office_applications": ["office", "word processing", "spreadsheet", "workbook", "presentation", "application software"],
+    # Web design and development categories (Step 24).
+    "web_html": ["html", "markup"],
+    "web_css": ["css", "style"],
+    "web_javascript": ["javascript", "java script"],
+    "web_forms_email": ["form", "email"],
+    "web_responsive": ["responsive", "mobile layout"],
+    "web_hosting_maintenance": ["host", "maint", "deploy", "publish", "server", "transfer content"],
+    "web_design_ux": ["design", "user experience", "ux", "layout", "interface"],
+    "web_backend": ["back-end", "backend", "server-side", "server side"],
+    "web_databases": ["database"],
+    "web_cms": ["cms", "content management"],
+    "web_seo": ["search engine", "seo"],
+    "web_testing": ["test", "accessibility"],
+    "web_security": ["secur"],
+    "web_requirements_methodology": ["requirement", "methodolog", "software development"],
+    "web_workplace_safety": ["safety"],
 }
 
 # Hardware categories with several components: a FULL cell's cited text must name every one.
@@ -198,6 +241,7 @@ class CompetencyMappingTests(unittest.TestCase):
                 "competency_mapping_course-005.json",
                 "competency_mapping_course-007.json",
                 "competency_mapping_course-008.json",
+                "competency_mapping_course-009.json",
                 "competency_mapping_course-010.json",
                 "competency_mapping_course-011.json",
                 "competency_mapping_course-012.json",
@@ -208,9 +252,12 @@ class CompetencyMappingTests(unittest.TestCase):
                 "competency_mapping_course-040.json",
                 "competency_mapping_course-046.json",
                 "competency_mapping_course-047.json",
+                "competency_mapping_course-050.json",
+                "competency_mapping_course-053.json",
                 "competency_mapping_course-055.json",
                 "competency_mapping_course-064.json",
                 "competency_mapping_course-082.json",
+                "competency_mapping_course-087.json",
             ],
         )
         course_ids = [mapping["nysc_course_id"] for mapping in self.mappings.values()]
@@ -230,7 +277,7 @@ class CompetencyMappingTests(unittest.TestCase):
     def test_every_competency_has_one_valid_cell_per_column(self):
         for name, mapping in self.mappings.items():
             competencies = mapping["competencies"]
-            self.assertTrue(8 <= len(competencies) <= 14)
+            self.assertTrue(8 <= len(competencies) <= 15)
             self.assertEqual(len({c["competency_id"] for c in competencies}), len(competencies))
             column_ids = [column["column_id"] for column in mapping["columns"]]
             for competency in competencies:

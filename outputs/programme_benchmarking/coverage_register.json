@@ -35,13 +35,13 @@
   "totals": {
     "courses": 84,
     "occupation_groups": 62,
-    "occupation_groups_complete": 11,
+    "occupation_groups_complete": 15,
     "courses_with_governed_headings": 32,
-    "courses_with_comparators": 19,
-    "courses_with_mapping": 16,
+    "courses_with_comparators": 27,
+    "courses_with_mapping": 20,
     "research_status": {
-      "COMPLETE": 19,
-      "NOT_RESEARCHED": 65
+      "COMPLETE": 27,
+      "NOT_RESEARCHED": 57
     },
     "evidence_availability": {
       "HEADINGS_AVAILABLE": 29,
@@ -49,9 +49,9 @@
       "NO_HEADINGS": 52
     },
     "current_presentation_mode": {
-      "COMPARATORS_ONLY": 3,
-      "FULL_COMPARISON": 16,
-      "RESEARCH_PENDING": 65
+      "COMPARATORS_ONLY": 7,
+      "FULL_COMPARISON": 20,
+      "RESEARCH_PENDING": 57
     },
     "proposed_presentation_mode": {
       "COMPARATORS_ONLY": 55,
@@ -76,16 +76,22 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-WEB-DEVELOPER-2025",
+        "IN-NQR-HARTRON-WEB-MULTIMEDIA-V2",
+        "PH-TESDA-WEBDEV-NC3",
+        "SG-ITE-HNITEC-ITAD-2Y",
+        "AU-TGA-ICT40120-WEBDEV"
+      ],
+      "comparator_record_count": 5,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "5 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -323,16 +329,22 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 1,
       "verified_heading_count": 9,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
-      "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-ICT-TECH-L4-2023",
+        "IN-DGT-CTS-COPA-V3",
+        "PH-TESDA-CSS-NC2",
+        "SG-ITE-HNITEC-ISN-2Y",
+        "AU-TGA-ICT20120"
+      ],
+      "comparator_record_count": 5,
+      "competency_mapping_status": "COMPLETE",
+      "research_status": "COMPLETE",
       "evidence_availability": "HEADINGS_AVAILABLE",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "FULL_COMPARISON",
       "proposed_presentation_mode": "FULL_COMPARISON",
-      "proposed_mode_reason": "9 verified headings available. Comparator research has not started: a full comparison needs verified official comparator records and a mapping first; no comparator is assumed.",
+      "proposed_mode_reason": "9 verified headings, 5 linked verified comparator records and a completed competency mapping; the full comparison is already shown.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records (and NYSC syllabi) could enable a full comparison.",
+      "research_improvement": "The Sri Lankan source is an occupational standard rather than a confirmed delivery; TESDA and ITE cover only the technical-support part of the role; Australian evidence is limited to ICT20120 core units; NYSC heading 10 is a merged heading that NYSC syllabi could clarify.",
       "notes": [
         "Heading 10 is flagged in the snapshot as two merged headings and is not counted as verified."
       ]
@@ -1475,16 +1487,20 @@
       "display_corrected_heading_count": 1,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 4,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
-      "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-CAKE-DECORATOR-2022",
+        "IN-DGT-CTS-BAKER-V2",
+        "SG-ITE-HNITEC-PASTRY-2Y"
+      ],
+      "comparator_record_count": 3,
+      "competency_mapping_status": "COMPLETE",
+      "research_status": "COMPLETE",
       "evidence_availability": "HEADINGS_AVAILABLE",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "FULL_COMPARISON",
       "proposed_presentation_mode": "FULL_COMPARISON",
-      "proposed_mode_reason": "4 verified headings available. Comparator research has not started: a full comparison needs verified official comparator records and a mapping first; no comparator is assumed.",
+      "proposed_mode_reason": "4 verified headings, 3 linked verified comparator records and a completed competency mapping; the full comparison is already shown.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records (and NYSC syllabi) could enable a full comparison.",
+      "research_improvement": "The Sri Lankan source is an occupational standard rather than a confirmed delivery; COURSE-051 has no governed module headings, and the broader Australian Baking qualification was excluded because its cake-decoration evidence is incidental.",
       "notes": []
     },
     {
@@ -1506,16 +1522,20 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-CAKE-DECORATOR-2022",
+        "IN-DGT-CTS-BAKER-V2",
+        "SG-ITE-HNITEC-PASTRY-2Y"
+      ],
+      "comparator_record_count": 3,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "3 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -1567,16 +1587,20 @@
       "display_corrected_heading_count": 1,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 3,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
-      "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-COMPUTER-APP-ASSIST-L3-2023",
+        "IN-DGT-CTS-COPA-V3",
+        "AU-TGA-ICT20120"
+      ],
+      "comparator_record_count": 3,
+      "competency_mapping_status": "COMPLETE",
+      "research_status": "COMPLETE",
       "evidence_availability": "HEADINGS_AVAILABLE",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "FULL_COMPARISON",
       "proposed_presentation_mode": "FULL_COMPARISON",
-      "proposed_mode_reason": "3 verified headings available. Comparator research has not started: a full comparison needs verified official comparator records and a mapping first; no comparator is assumed.",
+      "proposed_mode_reason": "3 verified headings, 3 linked verified comparator records and a completed competency mapping; the full comparison is already shown.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records (and NYSC syllabi) could enable a full comparison.",
+      "research_improvement": "The Sri Lankan source is an occupational standard rather than a confirmed delivery; COPA is broader than computer applications; Australian evidence is limited to ICT20120 core units; COURSE-054 has no governed module headings.",
       "notes": []
     },
     {
@@ -1595,16 +1619,20 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-COMPUTER-APP-ASSIST-L3-2023",
+        "IN-DGT-CTS-COPA-V3",
+        "AU-TGA-ICT20120"
+      ],
+      "comparator_record_count": 3,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "3 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -1693,16 +1721,22 @@
       "display_corrected_heading_count": 0,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 0,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-WEB-DEVELOPER-2025",
+        "IN-NQR-HARTRON-WEB-MULTIMEDIA-V2",
+        "PH-TESDA-WEBDEV-NC3",
+        "SG-ITE-HNITEC-ITAD-2Y",
+        "AU-TGA-ICT40120-WEBDEV"
+      ],
+      "comparator_record_count": 5,
       "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "research_status": "COMPLETE",
       "evidence_availability": "NO_HEADINGS",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "COMPARATORS_ONLY",
       "proposed_presentation_mode": "COMPARATORS_ONLY",
-      "proposed_mode_reason": "The governed catalogue publishes no module headings for this course, so a competency matrix cannot be assessed; verified comparator records could still be shown. Comparator research has not started. Missing NYSC headings do not imply that external comparators are missing.",
+      "proposed_mode_reason": "5 linked verified comparator records. The governed catalogue publishes no usable module headings for this course, so a competency matrix cannot be assessed; the verified comparators are shown without one.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records could be verified and shown; NYSC syllabi or TVEC national competency standards could supply headings for a full comparison.",
+      "research_improvement": "NYSC syllabi or TVEC national competency standards could supply module headings for a full comparison; further official comparators (e.g. a verified Sri Lankan programme) could be added.",
       "notes": []
     },
     {
@@ -2580,16 +2614,22 @@
       "display_corrected_heading_count": 2,
       "review_flagged_heading_count": 0,
       "verified_heading_count": 6,
-      "comparator_record_ids": [],
-      "comparator_record_count": 0,
-      "competency_mapping_status": "NONE",
-      "research_status": "NOT_RESEARCHED",
+      "comparator_record_ids": [
+        "LK-TVEC-NCS-WEB-DEVELOPER-2025",
+        "IN-NQR-HARTRON-WEB-MULTIMEDIA-V2",
+        "PH-TESDA-WEBDEV-NC3",
+        "SG-ITE-HNITEC-ITAD-2Y",
+        "AU-TGA-ICT40120-WEBDEV"
+      ],
+      "comparator_record_count": 5,
+      "competency_mapping_status": "COMPLETE",
+      "research_status": "COMPLETE",
       "evidence_availability": "HEADINGS_AVAILABLE",
-      "current_presentation_mode": "RESEARCH_PENDING",
+      "current_presentation_mode": "FULL_COMPARISON",
       "proposed_presentation_mode": "FULL_COMPARISON",
-      "proposed_mode_reason": "6 verified headings available. Comparator research has not started: a full comparison needs verified official comparator records and a mapping first; no comparator is assumed.",
+      "proposed_mode_reason": "6 verified headings, 5 linked verified comparator records and a completed competency mapping; the full comparison is already shown.",
       "further_research_could_improve": true,
-      "research_improvement": "Official comparator records (and NYSC syllabi) could enable a full comparison.",
+      "research_improvement": "No Sri Lankan, Indian or Australian delivering provider was verified; India's qualification has broad module titles; ITE's programme is broader application development; COURSE-057 and COURSE-001 have no governed module headings.",
       "notes": []
     }
   ]

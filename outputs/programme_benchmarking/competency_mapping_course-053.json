@@ -1,0 +1,475 @@
+{
+  "description": "Hand-curated competency mapping for NYSC COURSE-053 Computer Applications Assistant against its linked records. A DOCUMENTED cell cites the exact stored text that names the competency. NOT_EXPLICIT means the available description does not name it, not that it is absent from teaching. INSUFFICIENT_DATA means the stored text is unavailable, outside the record's scope, or too ambiguous to assess.",
+  "schema_version": "1.0.0",
+  "nysc_course_id": "COURSE-053",
+  "created_date": "2026-10-18",
+  "method": "The NYSC column was assessed by hand against this course's own governed module headings; a broad heading does not establish a more specific competency. COURSE-053 is the 6-month part-time weekend course; its heading 3 is cited by its governed text with the verified display correction. NYSC citations keep the exact governed text; where the snapshot holds a verified display correction for that heading, display_text carries the corrected wording. Coverage is never inferred from programme titles, qualification levels or unstored text.",
+  "human_reviewed": false,
+  "statuses": [
+    "DOCUMENTED",
+    "NOT_EXPLICIT",
+    "INSUFFICIENT_DATA"
+  ],
+  "columns": [
+    {
+      "column_id": "NYSC-COURSE-053",
+      "kind": "nysc",
+      "nysc_course_id": "COURSE-053",
+      "short_label": "NYSC COURSE-053"
+    },
+    {
+      "column_id": "LK-TVEC-NCS-COMPUTER-APP-ASSIST-L3-2023",
+      "kind": "benchmark",
+      "record_id": "LK-TVEC-NCS-COMPUTER-APP-ASSIST-L3-2023",
+      "short_label": "NCS NVQ 3 · Sri Lanka"
+    },
+    {
+      "column_id": "IN-DGT-CTS-COPA-V3",
+      "kind": "benchmark",
+      "record_id": "IN-DGT-CTS-COPA-V3",
+      "short_label": "DGT COPA · India"
+    },
+    {
+      "column_id": "AU-TGA-ICT20120",
+      "kind": "benchmark",
+      "record_id": "AU-TGA-ICT20120",
+      "short_label": "ICT20120 · Australia"
+    }
+  ],
+  "category_components": {
+    "ict_os_use": [
+      "using a computer and its operating system"
+    ],
+    "ict_file_management": [
+      "managing files and folders"
+    ],
+    "ict_office_applications": [
+      "using office application software (word processing, spreadsheets or presentations)"
+    ],
+    "ict_internet_email": [
+      "using the internet",
+      "using email"
+    ],
+    "ict_databases": [
+      "creating, maintaining or querying databases"
+    ],
+    "ict_system_maintenance": [
+      "maintaining or troubleshooting computer systems and peripherals"
+    ],
+    "ict_information_security": [
+      "securing information, systems or networks"
+    ],
+    "ict_workplace_safety": [
+      "occupational health and safety practice"
+    ]
+  },
+  "methodology": {
+    "DOCUMENTED": "The cited stored text explicitly names the competency. Coverage records whether it names every component of the category (FULL) or only some (PARTIAL).",
+    "FULL": "The cited evidence supports the competency as labelled: every listed component of the category is explicitly named.",
+    "PARTIAL": "Only a component of the category, or a lower level of activity, is explicitly documented; supported_component records what is supported.",
+    "NOT_EXPLICIT": "The competency is not documented within the available, assessed scope of the source (unit titles, learning outcomes or core units as stored).",
+    "INSUFFICIENT_DATA": "Missing or incomplete material prevents a reliable assessment.",
+    "caution": "None of these statuses proves that a competency is or is not actually taught.",
+    "areas_rule": "Areas to Investigate list competencies that the NYSC description does not name (NOT_EXPLICIT) and that at least two distinct comparator records, from at least two different countries, document with FULL coverage. PARTIAL evidence is shown but not counted.",
+    "decisions": [
+      "The Sri Lankan NCS K72S004 is linked as the package matching each course: NVQ Level 4 ICT Technician for COURSE-009 and NVQ Level 3 Computer Application Assistant for COURSE-053/054.",
+      "TESDA Computer Systems Servicing NC II and ITE IT Systems & Networks are reused for COURSE-009 only, for the technical-support part of the ICT Technician role.",
+      "COURSE-009's flagged merged heading 10 is not cited; web-design and software-development NYSC cells are INSUFFICIENT_DATA.",
+      "ICT20120 electives are not assessed; 'Operate application software packages' is partial support for office applications."
+    ]
+  },
+  "competencies": [
+    {
+      "competency_id": "ict_os_use",
+      "label": "Computer and operating system use",
+      "cells": {
+        "NYSC-COURSE-053": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "'ICT introduction' does not name computer or operating-system use."
+        },
+        "LK-TVEC-NCS-COMPUTER-APP-ASSIST-L3-2023": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": "K72S004U01",
+              "text": "Use the computer and manage files within standard operating systems"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-COPA-V3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Install and setup operating system and related software in a computer following safety precautions."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-ICT20120": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": "ICTICT213",
+              "text": "Use computer operating systems and hardware"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "ict_file_management",
+      "label": "File and folder management",
+      "cells": {
+        "NYSC-COURSE-053": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's published module headings."
+        },
+        "LK-TVEC-NCS-COMPUTER-APP-ASSIST-L3-2023": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": "K72S004U01",
+              "text": "Use the computer and manage files within standard operating systems"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-COPA-V3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored outcome names files or folders."
+        },
+        "AU-TGA-ICT20120": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "'Use computer operating systems and hardware' does not name file management. Only the 6 core units are stored; optional electives are not assessed."
+        }
+      }
+    },
+    {
+      "competency_id": "ict_office_applications",
+      "label": "Office application software",
+      "cells": {
+        "NYSC-COURSE-053": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "MS- Office"
+            }
+          ],
+          "note": "'MS- Office' names an office software suite; individual applications are not listed.",
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-COMPUTER-APP-ASSIST-L3-2023": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": "K72S004U02",
+              "text": "Perform word processing"
+            },
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": "K72S004U03",
+              "text": "Prepare spreadsheets"
+            },
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": "K72S004U04",
+              "text": "Prepare presentation resources"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-COPA-V3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Create, format and edit document using word processing application software."
+            },
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Create and customize slides for presentation."
+            },
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Create, format, edit and develop a workbook by using spreadsheet application software."
+            },
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Create workbooks with advanced formulae, macros, charts, pivot tables and demonstrate ability to use Power tools."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-ICT20120": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": "ICTICT214",
+              "text": "Operate application software packages"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Operating application software packages generally; office applications are not named"
+        }
+      }
+    },
+    {
+      "competency_id": "ict_internet_email",
+      "label": "Internet and email",
+      "cells": {
+        "NYSC-COURSE-053": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Using Internet & E-mail be held on weekends.",
+              "display_text": "Using Internet & E-mail"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-COMPUTER-APP-ASSIST-L3-2023": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": "K72S004U05",
+              "text": "Perform basic operations of cloud computing including internet and email services"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-COPA-V3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Install, setup/configure, troubleshoot and secure computer network including Internet."
+            },
+            {
+              "module_index": 9,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Browse, select and transact using E-commerce websites."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Internet use (network including Internet; e-commerce websites); email is not named"
+        },
+        "AU-TGA-ICT20120": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "'Use digital technologies to communicate in a work environment' does not name the internet or email. Only the 6 core units are stored; optional electives are not assessed."
+        }
+      }
+    },
+    {
+      "competency_id": "ict_databases",
+      "label": "Databases",
+      "cells": {
+        "NYSC-COURSE-053": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's published module headings."
+        },
+        "LK-TVEC-NCS-COMPUTER-APP-ASSIST-L3-2023": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": "K72S004U06",
+              "text": "Handle relational database"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-COPA-V3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Create and manage database file using MySQL."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-ICT20120": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No core unit names databases. Only the 6 core units are stored; optional electives are not assessed."
+        }
+      }
+    },
+    {
+      "competency_id": "ict_system_maintenance",
+      "label": "Computer system maintenance",
+      "cells": {
+        "NYSC-COURSE-053": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's published module headings."
+        },
+        "LK-TVEC-NCS-COMPUTER-APP-ASSIST-L3-2023": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": "K72S004U07",
+              "text": "Conduct routine maintenance services of computer system and peripherals"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-COPA-V3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored outcome names maintenance of computer systems; 'Troubleshoot the PC' is an assessment criterion, which is not stored."
+        },
+        "AU-TGA-ICT20120": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": "ICTICT213",
+              "text": "Use computer operating systems and hardware"
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Using computer hardware; maintenance or troubleshooting is not named"
+        }
+      }
+    },
+    {
+      "competency_id": "ict_information_security",
+      "label": "Information and network security",
+      "cells": {
+        "NYSC-COURSE-053": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's published module headings."
+        },
+        "LK-TVEC-NCS-COMPUTER-APP-ASSIST-L3-2023": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No unit title in the Level 3 package names information security. Only unit titles are stored; elements and curriculum modules are not."
+        },
+        "IN-DGT-CTS-COPA-V3": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 11,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Secure information from Internet by using cyber security concept."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "AU-TGA-ICT20120": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No core unit names security. Only the 6 core units are stored; optional electives are not assessed."
+        }
+      }
+    },
+    {
+      "competency_id": "ict_workplace_safety",
+      "label": "Workplace safety",
+      "cells": {
+        "NYSC-COURSE-053": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's published module headings."
+        },
+        "LK-TVEC-NCS-COMPUTER-APP-ASSIST-L3-2023": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "title_verbatim",
+              "code": "K72S004BU04",
+              "text": "Practice occupational health and safety measures"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "IN-DGT-CTS-COPA-V3": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Outcome 1 mentions 'following safety precautions' within an installation task; no stored outcome is a workplace-safety competency (as for the DGT automotive record)."
+        },
+        "AU-TGA-ICT20120": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": "BSBWHS211",
+              "text": "Contribute to the health and safety of self and others"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    }
+  ]
+}

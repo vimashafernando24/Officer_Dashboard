@@ -1,0 +1,67 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-cake-decorator",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Official Cake Decorator comparator evidence for NYSC COURSE-050 and COURSE-051. Records describe documented curriculum only and do not establish equivalence, quality, delivery or labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its official source by a researcher before publication.",
+  "country_group_gaps": {
+    "developing_emerging": "The existing India DGT Baker & Confectioner national curriculum is linked from the Baker dataset and provides substantial cake and icing evidence.",
+    "developed": "The existing Singapore ITE Higher Nitec in Pastry & Baking delivered programme is linked from the Baker dataset and provides substantial cake-design and decoration evidence."
+  },
+  "records": [
+    {
+      "record_id": "LK-TVEC-NCS-CAKE-DECORATOR-2022",
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "title_verbatim": "CAKE DECORATOR",
+      "sector": "Food production / cake decoration",
+      "framework": "NVQ (Sri Lanka)",
+      "level_as_published": "NVQ Levels 3 and 4 packaging",
+      "duration_as_published": null,
+      "entry_as_published": "For NVQ Level 03 Qualification- None; For NVQ Level 04 Qualification- None",
+      "modules": [
+        {"published_ref":"1","code":"D15S010U01","title_verbatim":"Maintain pleasant food handling area","outcome_verbatim":"This unit covers the competencies required to maintain pleasant and safe food handling area adhering to the standard operating procedures and company norms.","group":"List of Competency Units"},
+        {"published_ref":"2","code":"D15S010U02","title_verbatim":"Produce basic cakes","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"3","code":"D15S010U03","title_verbatim":"Produce advanced cakes","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"4","code":"D15S010U04","title_verbatim":"Prepare basic icing mixtures and toppings","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"5","code":"D15S010U05","title_verbatim":"Prepare advanced icing mixtures, toppings and syrups","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"6","code":"D15S010U06","title_verbatim":"Cover cake outer layer","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"7","code":"D15S010U07","title_verbatim":"Decorate cakes","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"8","code":"D15S010U08","title_verbatim":"Manage routine functions","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"9","code":"D15S010BU01","title_verbatim":"Practice workplace communication and interpersonal relations","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"10","code":"D15S010BU02","title_verbatim":"Apply occupational literacy and numeracy","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"11","code":"D15S010BU03","title_verbatim":"Work in teams","outcome_verbatim":null,"group":"List of Competency Units"},
+        {"published_ref":"12","code":"D15S010BU04","title_verbatim":"Practice occupational health and safety measures","outcome_verbatim":null,"group":"List of Competency Units"}
+      ],
+      "scope_verbatim": [
+        "Cake Decorator is the person who design and decorate cakes according to customers’ specifications while recommending customers the best solutions to achieve customer expectation."
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://nvq.gov.lk/report_inquires/NCS_Request_Pdf.php?nm=D15S010_1_NCS.pdf",
+        "document_type": "pdf",
+        "document_sha256": "086cec2e1cb921b3b1166e21cd2731250b44627fc9d71e2d972d0d1ed52463d8",
+        "publication_or_revision": "Endorsed 27 January 2022; validated 2 December 2021; review date stated as 27 January 2025",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "All 12 competency-unit titles and codes, the occupational definition and NVQ packaging were checked against the official NCS PDF (PDF page 6, printed page 1); the U01 descriptor was checked on PDF page 7, printed page 2; endorsement, validation, review and prerequisite details were checked on PDF page 64, printed page 59.",
+        "human_reviewed": false
+      },
+      "licence_note": "Copyright © Tertiary and Vocational Education Commission; source states all rights reserved.",
+      "notes": [
+        "This is a national occupational standard and competency-based curriculum, not evidence that a named provider delivers a programme.",
+        "The source's stated review date has passed; no later Cake Decorator standard was verified on 2026-10-18.",
+        "NVQ Levels 3 and 4 use different unit packages; the stored list contains all units published for the occupation."
+      ]
+    }
+  ]
+}

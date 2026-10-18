@@ -8,21 +8,25 @@ export const RECORD_DATASET_LOADERS: Record<string, () => JsonModule> = {
   "automotive": () => import("../../../../../outputs/programme_benchmarking/pilot_records_automotive.json", { with: { type: "json" } }),
   "baker": () => import("../../../../../outputs/programme_benchmarking/pilot_records_baker.json", { with: { type: "json" } }),
   "beauty": () => import("../../../../../outputs/programme_benchmarking/pilot_records_beauty.json", { with: { type: "json" } }),
+  "cake_decorator": () => import("../../../../../outputs/programme_benchmarking/pilot_records_cake_decorator.json", { with: { type: "json" } }),
   "cookery": () => import("../../../../../outputs/programme_benchmarking/pilot_records_cookery.json", { with: { type: "json" } }),
   "electrical": () => import("../../../../../outputs/programme_benchmarking/pilot_records_electrical.json", { with: { type: "json" } }),
   "hairdressing": () => import("../../../../../outputs/programme_benchmarking/pilot_records_hairdressing.json", { with: { type: "json" } }),
   "hardware": () => import("../../../../../outputs/programme_benchmarking/pilot_records_hardware.json", { with: { type: "json" } }),
+  "ict": () => import("../../../../../outputs/programme_benchmarking/pilot_records_ict.json", { with: { type: "json" } }),
   "rac": () => import("../../../../../outputs/programme_benchmarking/pilot_records_rac.json", { with: { type: "json" } }),
   "secretary": () => import("../../../../../outputs/programme_benchmarking/pilot_records_secretary.json", { with: { type: "json" } }),
+  "web": () => import("../../../../../outputs/programme_benchmarking/pilot_records_web.json", { with: { type: "json" } }),
 };
 
 /** Dataset order, so loaded records keep a stable order. */
-export const RECORD_DATASET_ORDER: string[] = ["automotive", "baker", "beauty", "cookery", "electrical", "hairdressing", "hardware", "rac", "secretary"];
+export const RECORD_DATASET_ORDER: string[] = ["automotive", "baker", "beauty", "cake_decorator", "cookery", "electrical", "hairdressing", "hardware", "ict", "rac", "secretary", "web"];
 
 export const MAPPING_LOADERS: Record<string, () => JsonModule> = {
   "COURSE-005": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-005.json", { with: { type: "json" } }),
   "COURSE-007": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-007.json", { with: { type: "json" } }),
   "COURSE-008": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-008.json", { with: { type: "json" } }),
+  "COURSE-009": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-009.json", { with: { type: "json" } }),
   "COURSE-010": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-010.json", { with: { type: "json" } }),
   "COURSE-011": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-011.json", { with: { type: "json" } }),
   "COURSE-012": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-012.json", { with: { type: "json" } }),
@@ -33,7 +37,10 @@ export const MAPPING_LOADERS: Record<string, () => JsonModule> = {
   "COURSE-040": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-040.json", { with: { type: "json" } }),
   "COURSE-046": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-046.json", { with: { type: "json" } }),
   "COURSE-047": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-047.json", { with: { type: "json" } }),
+  "COURSE-050": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-050.json", { with: { type: "json" } }),
+  "COURSE-053": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-053.json", { with: { type: "json" } }),
   "COURSE-055": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-055.json", { with: { type: "json" } }),
   "COURSE-064": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-064.json", { with: { type: "json" } }),
   "COURSE-082": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-082.json", { with: { type: "json" } }),
+  "COURSE-087": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-087.json", { with: { type: "json" } }),
 };

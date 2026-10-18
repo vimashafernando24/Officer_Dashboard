@@ -24,6 +24,7 @@ const TESDA_IDS = [
   "PH-TESDA-CAC-NC3",
   "PH-TESDA-CSS-NC2",
   "PH-TESDA-PRO-COOKERY-NC3",
+  "PH-TESDA-WEBDEV-NC3",
 ];
 
 const byId = new Map(BENCHMARK_RECORDS.map((record) => [record.record_id, record]));
@@ -47,7 +48,8 @@ test("programmes without Basic/Common/Core groups keep the first-five preview", 
   for (const item of BENCHMARK_RECORDS.filter((r) => !TESDA_IDS.includes(r.record_id))) {
     assert.equal(coreCompetencyGroup(item.modules), null, item.record_id);
     const preview = modulePreview(item.modules, false);
-    assert.equal(preview.mode, "first-items", item.record_id);
+    // Records with five or fewer items show them all; longer ones show the first five.
+    assert.equal(preview.mode, item.modules.length > MODULE_PREVIEW_LIMIT ? "first-items" : "full", item.record_id);
     assert.deepEqual(preview.modules, item.modules.slice(0, MODULE_PREVIEW_LIMIT));
   }
 });
@@ -113,10 +115,11 @@ test("the show-all control exposes its expanded state, and is absent for five or
   assert.deepEqual(moduleDisclosure(28, true), { label: "Show fewer", ariaExpanded: true });
   assert.equal(moduleDisclosure(5, false), null);
   assert.equal(moduleDisclosure(0, false), null);
-  // Every current comparator has more than five items, so every card offers the control.
+  // Cards with more than five items offer the control; shorter ones (e.g. the 4-module Indian web qualification) do not.
   for (const item of BENCHMARK_RECORDS) {
-    assert.ok(moduleDisclosure(item.modules.length, false), item.record_id);
+    assert.equal(Boolean(moduleDisclosure(item.modules.length, false)), item.modules.length > 5, item.record_id);
   }
+  assert.ok(BENCHMARK_RECORDS.some((item) => item.modules.length <= 5));
 });
 
 

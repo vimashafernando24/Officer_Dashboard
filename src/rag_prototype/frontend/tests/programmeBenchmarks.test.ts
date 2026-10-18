@@ -96,7 +96,7 @@ test("Electrician caveat covers duration, level and TESDA scope, and names unsta
 
 
 test("courses without verified links get no records, even in the same sector", () => {
-  for (const courseId of ["COURSE-021", "COURSE-001", "COURSE-999"]) {
+  for (const courseId of ["COURSE-021", "COURSE-002", "COURSE-999"]) {
     const comparators = comparatorsForCourse(courseId);
     assert.equal(comparators.sriLanka.length + comparators.developingEmerging.length + comparators.developed.length, 0);
   }

@@ -200,7 +200,7 @@ test("existing Automotive and Electrician comparators are unchanged", () => {
   assert.deepEqual(ids("COURSE-040"), automotive);
   assert.deepEqual(ids("COURSE-025"), electrician);
   assert.deepEqual(ids("COURSE-064"), electrician);
-  assert.equal(BENCHMARK_RECORDS.length, 37);
+  assert.equal(BENCHMARK_RECORDS.length, 47);
   // Rankings are unchanged by the two-country rule.
   assert.deepEqual(areaSummary("COURSE-005"), [
     ["Emission control", 4, 4],

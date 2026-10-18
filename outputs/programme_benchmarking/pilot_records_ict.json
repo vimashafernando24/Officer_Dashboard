@@ -1,0 +1,503 @@
+{
+  "dataset_id": "nysc-programme-benchmarking-ict",
+  "schema": "benchmark_record_schema.json",
+  "schema_version": "1.1.0",
+  "created_date": "2026-10-18",
+  "purpose": "Comparator records for NYSC COURSE-009 ICT Technician and COURSE-053/COURSE-054 computer applications courses. Records describe documented curriculum only and do not establish equivalence, quality or labour demand.",
+  "status_note": "No record has been human-verified yet. Every record must be checked against its official source by a researcher before publication.",
+  "country_group_gaps": {},
+  "records": [
+    {
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "sector": "ICT",
+      "framework": "NVQ (Sri Lanka)",
+      "duration_as_published": null,
+      "entry_as_published": null,
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://nvq.gov.lk/report_inquires/NCS_Request_Pdf.php?nm=K72S004_2_NCS.pdf",
+        "document_type": "pdf",
+        "document_sha256": "72f4a4d0905062910f6c70bb7211d98afac26a9086f33c0fc35604de3558124b",
+        "publication_or_revision": "2nd Revision - October 2023 (endorsed 31.10.2023); next revision October 2026",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "licence_note": "Copyright © 2023 TVEC; source states all rights reserved.",
+      "record_id": "LK-TVEC-NCS-ICT-TECH-L4-2023",
+      "title_verbatim": "INFORMATION AND COMMUNICATION TECHNOLOGY TECHNICIAN",
+      "level_as_published": "NVQ Level 04",
+      "modules": [
+        {
+          "published_ref": "1",
+          "code": "K72S004U01",
+          "title_verbatim": "Use the computer and manage files within standard operating systems",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "2",
+          "code": "K72S004U02",
+          "title_verbatim": "Perform word processing",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "3",
+          "code": "K72S004U03",
+          "title_verbatim": "Prepare spreadsheets",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "4",
+          "code": "K72S004U04",
+          "title_verbatim": "Prepare presentation resources",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "5",
+          "code": "K72S004U05",
+          "title_verbatim": "Perform basic operations of cloud computing including internet and email services",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "6",
+          "code": "K72S004U06",
+          "title_verbatim": "Handle relational database",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "7",
+          "code": "K72S004U07",
+          "title_verbatim": "Conduct routine maintenance services of computer system and peripherals",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "8",
+          "code": "K72S004U08",
+          "title_verbatim": "Produce print page layout and multimedia objects",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "9",
+          "code": "K72S004U09",
+          "title_verbatim": "Analyze, design and develop information system",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "10",
+          "code": "K72S004U10",
+          "title_verbatim": "Handle relational databases using standard SQL",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "11",
+          "code": "K72S004U11",
+          "title_verbatim": "Design static website",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "12",
+          "code": "K72S004BU01",
+          "title_verbatim": "Practice workplace communication and inpterpersonal relations",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "13",
+          "code": "K72S004BU02",
+          "title_verbatim": "Apply occupational literacy and numeracy",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "14",
+          "code": "K72S004BU03",
+          "title_verbatim": "Work in a team",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "15",
+          "code": "K72S004BU04",
+          "title_verbatim": "Practice occupational health and safety measures",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        }
+      ],
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "All 15 competency-unit titles and codes read from the rendered List of Competency Units (PDF page 6; printed page v) and matched in order against its pdf.js text layer; packaging and revision checked on PDF pages 2, 6 and 82.",
+        "human_reviewed": false
+      },
+      "notes": [
+        "This is a national occupational standard and competency-based curriculum, not evidence that a named provider delivers the programme.",
+        "One standard (K72S004) packages three qualifications: NVQ Level 2 Data Entry Operator, NVQ Level 3 Computer Application Assistant and NVQ Level 4 ICT Technician. Each linked record stores only the units its own package requires.",
+        "Unit 1 is titled 'Use the computer and manage files within standard operating systems' in the List of Competency Units but 'Handle computer and files within standard operating systems' on its unit page; the list title is stored.",
+        "'inpterpersonal' (BU01) is stored as published. The curriculum's competency-profile page carries an unrelated 'FLIGHT DISPATCHER' heading, a source error.",
+        "Only unit titles are stored; elements, performance criteria and the curriculum modules (e.g. network issues in competencies G6/G7) are not.",
+        "Stores the NVQ Level 4 ICT Technician package (K72S004Q3L4): all 15 units."
+      ],
+      "scope_verbatim": [
+        "National Certificate at NVQ Level 4 in the occupation of Information and Communication Technology Technician will be awarded to those who are competent in U01 + U02 + U03 + U04 + U05 + U06 + U07 + U08 + U09 +U10 +U11 + BU01 + BU02 + BU03 + BU04 – K72S004Q3L4"
+      ]
+    },
+    {
+      "country": "Sri Lanka",
+      "country_group": "sri_lanka",
+      "institution": "Tertiary and Vocational Education Commission / National Apprentice and Industrial Training Authority",
+      "record_type": "occupational_standard",
+      "delivering_provider_verified": false,
+      "sector": "ICT",
+      "framework": "NVQ (Sri Lanka)",
+      "duration_as_published": null,
+      "entry_as_published": null,
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://nvq.gov.lk/report_inquires/NCS_Request_Pdf.php?nm=K72S004_2_NCS.pdf",
+        "document_type": "pdf",
+        "document_sha256": "72f4a4d0905062910f6c70bb7211d98afac26a9086f33c0fc35604de3558124b",
+        "publication_or_revision": "2nd Revision - October 2023 (endorsed 31.10.2023); next revision October 2026",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "licence_note": "Copyright © 2023 TVEC; source states all rights reserved.",
+      "record_id": "LK-TVEC-NCS-COMPUTER-APP-ASSIST-L3-2023",
+      "title_verbatim": "Computer Application Assistant",
+      "level_as_published": "NVQ Level 3",
+      "modules": [
+        {
+          "published_ref": "1",
+          "code": "K72S004U01",
+          "title_verbatim": "Use the computer and manage files within standard operating systems",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "2",
+          "code": "K72S004U02",
+          "title_verbatim": "Perform word processing",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "3",
+          "code": "K72S004U03",
+          "title_verbatim": "Prepare spreadsheets",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "4",
+          "code": "K72S004U04",
+          "title_verbatim": "Prepare presentation resources",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "5",
+          "code": "K72S004U05",
+          "title_verbatim": "Perform basic operations of cloud computing including internet and email services",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "6",
+          "code": "K72S004U06",
+          "title_verbatim": "Handle relational database",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "7",
+          "code": "K72S004U07",
+          "title_verbatim": "Conduct routine maintenance services of computer system and peripherals",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "12",
+          "code": "K72S004BU01",
+          "title_verbatim": "Practice workplace communication and inpterpersonal relations",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "13",
+          "code": "K72S004BU02",
+          "title_verbatim": "Apply occupational literacy and numeracy",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "14",
+          "code": "K72S004BU03",
+          "title_verbatim": "Work in a team",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        },
+        {
+          "published_ref": "15",
+          "code": "K72S004BU04",
+          "title_verbatim": "Practice occupational health and safety measures",
+          "outcome_verbatim": null,
+          "group": "List of Competency Units"
+        }
+      ],
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "The 11 units of the NVQ Level 3 package were read from the rendered List of Competency Units (PDF page 6) and matched against its pdf.js text layer; the package is taken verbatim from the packaging statement on the same page.",
+        "human_reviewed": false
+      },
+      "notes": [
+        "This is a national occupational standard and competency-based curriculum, not evidence that a named provider delivers the programme.",
+        "One standard (K72S004) packages three qualifications: NVQ Level 2 Data Entry Operator, NVQ Level 3 Computer Application Assistant and NVQ Level 4 ICT Technician. Each linked record stores only the units its own package requires.",
+        "Unit 1 is titled 'Use the computer and manage files within standard operating systems' in the List of Competency Units but 'Handle computer and files within standard operating systems' on its unit page; the list title is stored.",
+        "'inpterpersonal' (BU01) is stored as published. The curriculum's competency-profile page carries an unrelated 'FLIGHT DISPATCHER' heading, a source error.",
+        "Only unit titles are stored; elements, performance criteria and the curriculum modules (e.g. network issues in competencies G6/G7) are not.",
+        "Stores the NVQ Level 3 Computer Application Assistant package (K72S004Q2L3): units U01-U07 and BU01-BU04 only; U08-U11 belong to Level 4 and are not part of this qualification."
+      ],
+      "scope_verbatim": [
+        "National Certificate at NVQ Level 3 in the occupation of Computer Application Assistant will be awarded to those who are competent in U01 + U02 + U03 + U04 + U05 + U06 + U07 + BU01 + BU02 + BU03 + BU04 – K72S004Q2L3"
+      ]
+    },
+    {
+      "record_id": "IN-DGT-CTS-COPA-V3",
+      "country": "India",
+      "country_group": "developing_emerging",
+      "institution": "Directorate General of Training (DGT), Ministry of Skill Development & Entrepreneurship",
+      "record_type": "national_curriculum",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Computer Operator and Programming Assistant (COPA)",
+      "sector": "ICT",
+      "framework": "NSQF (India)",
+      "level_as_published": "NSQF Level 3.5",
+      "duration_as_published": "One Years",
+      "entry_as_published": "Passed 10th class examination. Minimum Age 14 years as on first day of academic session.",
+      "modules": [
+        {
+          "published_ref": "LO1",
+          "code": null,
+          "title_verbatim": "Install and setup operating system and related software in a computer following safety precautions.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO2",
+          "code": null,
+          "title_verbatim": "Create, format and edit document using word processing application software.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO3",
+          "code": null,
+          "title_verbatim": "Create and customize slides for presentation.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO4",
+          "code": null,
+          "title_verbatim": "Create, format, edit and develop a workbook by using spreadsheet application software.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO5",
+          "code": null,
+          "title_verbatim": "Create workbooks with advanced formulae, macros, charts, pivot tables and demonstrate ability to use Power tools.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO6",
+          "code": null,
+          "title_verbatim": "Create and manage database file using MySQL.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO7",
+          "code": null,
+          "title_verbatim": "Install, setup/configure, troubleshoot and secure computer network including Internet.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO8",
+          "code": null,
+          "title_verbatim": "Develop web pages using HTML and CSS.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO9",
+          "code": null,
+          "title_verbatim": "Develop web pages using Java Script.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO10",
+          "code": null,
+          "title_verbatim": "Browse, select and transact using E-commerce websites.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO11",
+          "code": null,
+          "title_verbatim": "Explain Cloud concepts & services and Describe Application Development Life Cycle.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO12",
+          "code": null,
+          "title_verbatim": "Secure information from Internet by using cyber security concept.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO13",
+          "code": null,
+          "title_verbatim": "Demonstrate AI Integration with different applications",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        },
+        {
+          "published_ref": "LO14",
+          "code": null,
+          "title_verbatim": "Write programs using Python language.",
+          "outcome_verbatim": null,
+          "group": "Learning outcomes"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim_whitespace_normalised",
+      "curriculum_detail": "full",
+      "source": {
+        "url": "https://www.cstaricalcutta.gov.in/sites/default/files/2026-06/COPA_CTS3.0_NSQF-3.5.pdf",
+        "document_type": "pdf",
+        "document_sha256": "cd8f4f4f11cd0a4b7dad1f6ba732b9280e7a167a85828decc112a2b5528e0e50",
+        "publication_or_revision": "Version 3.0, revised August 2025",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "All 14 learning outcomes read from the rendered 5.1 Learning Outcome table (PDF page 13, printed page 10) and matched in order against its pdf.js text layer; course facts from the General Information table (PDF page 11).",
+        "human_reviewed": false
+      },
+      "licence_note": "Government of India publication; reuse terms not checked.",
+      "notes": [
+        "A national curriculum delivered through Industrial Training Institutes (ITIs); no individual ITI has been verified.",
+        "Hosted by CSTARI Kolkata (the DGT institute that develops CTS curricula). The previous Version 2.0 (March 2023) is on dgt.gov.in.",
+        "Learning outcomes carry no NOS codes in this version. Employability Skills (120 hours) are listed separately and not stored.",
+        "The published hours for outcome 14 read 70 + 20 = 75; stored outcome text is unaffected.",
+        "Assessment criteria (e.g. 'Assemble a computer', 'Troubleshoot the PC' under outcome 1) and the trade syllabus are not stored."
+      ]
+    },
+    {
+      "record_id": "AU-TGA-ICT20120",
+      "country": "Australia",
+      "country_group": "developed",
+      "institution": "Australian Government, training.gov.au (ICT Information and Communications Technology Training Package)",
+      "record_type": "national_qualification",
+      "delivering_provider_verified": false,
+      "title_verbatim": "Certificate II in Applied Digital Technologies",
+      "sector": "ICT",
+      "framework": "AQF (Australia)",
+      "level_as_published": "Certificate II (national code ICT20120)",
+      "duration_as_published": null,
+      "entry_as_published": "Nil",
+      "modules": [
+        {
+          "published_ref": null,
+          "code": "BSBSUS211",
+          "title_verbatim": "Participate in sustainable work practices",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "BSBTEC202",
+          "title_verbatim": "Use digital technologies to communicate in a work environment",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "BSBWHS211",
+          "title_verbatim": "Contribute to the health and safety of self and others",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "ICTICT213",
+          "title_verbatim": "Use computer operating systems and hardware",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "ICTICT214",
+          "title_verbatim": "Operate application software packages",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        },
+        {
+          "published_ref": null,
+          "code": "ICTICT215",
+          "title_verbatim": "Operate digital media technology packages",
+          "outcome_verbatim": null,
+          "group": "Core units"
+        }
+      ],
+      "content_summary_paraphrased": null,
+      "content_fidelity": "verbatim",
+      "curriculum_detail": "partial",
+      "source": {
+        "url": "https://training.gov.au/assets/ICT/ICT20120_R2.pdf",
+        "document_type": "pdf",
+        "document_sha256": "70c62cbc1d1841308a9e27d7428922675a429e5802136965a11d30aad9acafc7",
+        "publication_or_revision": "ICT20120 Release 2 (current from 2022-02-03, training.gov.au)",
+        "retrieved_date": "2026-10-18"
+      },
+      "language": "English",
+      "verification": {
+        "status": "source_inspected_pending_human_review",
+        "method": "Core units read from the official qualification PDF (page 3) and matched against its pdf.js text layer; each code and title equals the training.gov.au Release 2 unit grid exactly.",
+        "human_reviewed": false
+      },
+      "licence_note": "© Commonwealth of Australia, 2022; training package content is published under its own licence terms (not checked).",
+      "notes": [
+        "A national qualification, not a delivered programme; no delivering provider has been verified and no nominal duration is stated.",
+        "Requires 12 units (6 core, 6 elective). Only the 6 core units are stored; electives such as word processing, spreadsheets and databases are optional and are not assessed as coverage.",
+        "A foundation (pathways) qualification at AQF Certificate II; it is a content comparator only.",
+        "Codex's earlier download of ICT30120 was Release 1 (2020), a superseded release; ICT30120's current core units are generic and were not used."
+      ],
+      "scope_verbatim": [
+        "This pathways qualification provides the foundation skills and knowledge to use basic applied digital technologies in varied contexts."
+      ]
+    }
+  ]
+}

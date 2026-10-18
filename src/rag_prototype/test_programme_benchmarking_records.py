@@ -90,12 +90,15 @@ class ProgrammeBenchmarkingRecordTests(unittest.TestCase):
                 "pilot_records_automotive.json",
                 "pilot_records_baker.json",
                 "pilot_records_beauty.json",
+                "pilot_records_cake_decorator.json",
                 "pilot_records_cookery.json",
                 "pilot_records_electrical.json",
                 "pilot_records_hairdressing.json",
                 "pilot_records_hardware.json",
+                "pilot_records_ict.json",
                 "pilot_records_rac.json",
                 "pilot_records_secretary.json",
+                "pilot_records_web.json",
             ],
         )
         for name, dataset in self.datasets.items():
@@ -266,7 +269,7 @@ class ElectricianRecordTests(unittest.TestCase):
         self.assertEqual(self.links["COURSE-040"]["record_ids"], auto_ids)
         self.assertEqual(
             sorted(self.links),
-            ["COURSE-005", "COURSE-007", "COURSE-008", "COURSE-010", "COURSE-011", "COURSE-012", "COURSE-014", "COURSE-025", "COURSE-034", "COURSE-035", "COURSE-040", "COURSE-046", "COURSE-047", "COURSE-048", "COURSE-055", "COURSE-056", "COURSE-064", "COURSE-069", "COURSE-082"],
+            ["COURSE-001", "COURSE-005", "COURSE-007", "COURSE-008", "COURSE-009", "COURSE-010", "COURSE-011", "COURSE-012", "COURSE-014", "COURSE-025", "COURSE-034", "COURSE-035", "COURSE-040", "COURSE-046", "COURSE-047", "COURSE-048", "COURSE-050", "COURSE-051", "COURSE-053", "COURSE-054", "COURSE-055", "COURSE-056", "COURSE-057", "COURSE-064", "COURSE-069", "COURSE-082", "COURSE-087"],
         )
 
     def test_no_electrician_record_claims_human_review(self):
