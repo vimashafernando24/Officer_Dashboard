@@ -87,15 +87,25 @@ class ProgrammeBenchmarkingRecordTests(unittest.TestCase):
         self.assertEqual(
             sorted(self.datasets),
             [
+                "pilot_records_auto_electrical.json",
                 "pilot_records_automotive.json",
                 "pilot_records_baker.json",
                 "pilot_records_beauty.json",
                 "pilot_records_cake_decorator.json",
+                "pilot_records_computer_accounting.json",
+                "pilot_records_construction_supervisor.json",
                 "pilot_records_cookery.json",
                 "pilot_records_electrical.json",
+                "pilot_records_electronics_repair.json",
+                "pilot_records_graphic_design.json",
                 "pilot_records_hairdressing.json",
                 "pilot_records_hardware.json",
                 "pilot_records_ict.json",
+                "pilot_records_ict_diploma.json",
+                "pilot_records_mobile_repair.json",
+                "pilot_records_motor_winding.json",
+                "pilot_records_motorcycle.json",
+                "pilot_records_networking.json",
                 "pilot_records_rac.json",
                 "pilot_records_secretary.json",
                 "pilot_records_web.json",
@@ -269,7 +279,7 @@ class ElectricianRecordTests(unittest.TestCase):
         self.assertEqual(self.links["COURSE-040"]["record_ids"], auto_ids)
         self.assertEqual(
             sorted(self.links),
-            ["COURSE-001", "COURSE-005", "COURSE-007", "COURSE-008", "COURSE-009", "COURSE-010", "COURSE-011", "COURSE-012", "COURSE-014", "COURSE-025", "COURSE-034", "COURSE-035", "COURSE-040", "COURSE-046", "COURSE-047", "COURSE-048", "COURSE-050", "COURSE-051", "COURSE-053", "COURSE-054", "COURSE-055", "COURSE-056", "COURSE-057", "COURSE-064", "COURSE-069", "COURSE-082", "COURSE-087"],
+            ["COURSE-001", "COURSE-005", "COURSE-006", "COURSE-007", "COURSE-008", "COURSE-009", "COURSE-010", "COURSE-011", "COURSE-012", "COURSE-013", "COURSE-014", "COURSE-016", "COURSE-021", "COURSE-022", "COURSE-023", "COURSE-025", "COURSE-029", "COURSE-030", "COURSE-034", "COURSE-035", "COURSE-040", "COURSE-042", "COURSE-046", "COURSE-047", "COURSE-048", "COURSE-050", "COURSE-051", "COURSE-052", "COURSE-053", "COURSE-054", "COURSE-055", "COURSE-056", "COURSE-057", "COURSE-058", "COURSE-060", "COURSE-064", "COURSE-068", "COURSE-069", "COURSE-077", "COURSE-078", "COURSE-079", "COURSE-080", "COURSE-081", "COURSE-082", "COURSE-087"],
         )
 
     def test_no_electrician_record_claims_human_review(self):

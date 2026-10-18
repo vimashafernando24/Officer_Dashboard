@@ -25,13 +25,13 @@ test("coverage states for all 84 courses are available before any comparator dat
     const coverage = coverageForCourse(course.course_id)!;
     states[coverage.state] = (states[coverage.state] ?? 0) + 1;
   }
-  assert.deepEqual(states, { FULL_COMPARISON: 20, COMPARATORS_ONLY: 7, RESEARCH_PENDING: 57 });
+  assert.deepEqual(states, { FULL_COMPARISON: 23, COMPARATORS_ONLY: 22, RESEARCH_PENDING: 39 });
 });
 
 
 test("courses without stored comparator data load nothing", async () => {
-  assert.equal(courseNeedsData("COURSE-006"), false);
-  await loadCourseComparison("COURSE-006");
+  assert.equal(courseNeedsData("COURSE-002"), false);
+  await loadCourseComparison("COURSE-002");
   assert.equal(BENCHMARK_RECORDS.length, 0);
 });
 

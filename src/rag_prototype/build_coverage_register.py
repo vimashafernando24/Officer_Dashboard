@@ -162,6 +162,9 @@ COMPLETE_GAPS = {
     "bridal_dresser": "The governed catalogue publishes no module headings, so only broader beauty/cosmetology comparators can be shown and no Bridal Dresser competency matrix is defensible.",
     "hair_dresser": "The Sri Lankan source is an occupational standard rather than a confirmed independent delivery; ITE and Australian elective evidence is not guaranteed for every learner.",
     "secretary": "ITE is a broader business-administration programme, Australian administration/records units are elective choices, and the DGT source has an NSQF-level discrepancy between its current page and downloaded PDF.",
+    "national_diploma_ict": "No developing/emerging-economy diploma-level ICT curriculum was verified (NIELIT's 'A' Level syllabus could not be retrieved); the Sri Lankan source is a competency standard without curriculum modules, ITE's programme covers application development only, and NYSC heading 7 is an uninterpretable fragment.",
+    "computer_based_accounting": "No Sri Lankan computerised-accounting standard was verified; the NYSC headings name software packages rather than competencies, ITE's programme is a broader accounting diploma, and Australian evidence is limited to FNS30322 core units.",
+    "radio_tv_repairer": "All three comparator sources are standards or national curricula rather than confirmed deliveries; no developed-economy comparator with sufficiently specific published radio/TV repair content was verified, and the NYSC LED-board heading retains an apparent governed-text typo.",
 }
 
 

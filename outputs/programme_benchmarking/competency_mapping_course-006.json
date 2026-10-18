@@ -1,0 +1,653 @@
+{
+  "description": "Hand-curated competency mapping for NYSC COURSE-006 National Diploma in ICT against its three linked diploma-level records. A DOCUMENTED cell cites the exact stored text that names the competency. NOT_EXPLICIT means the available description does not name it, not that it is absent from teaching. INSUFFICIENT_DATA means the stored text is unavailable, outside the record's scope, or too ambiguous to assess.",
+  "schema_version": "1.0.0",
+  "nysc_course_id": "COURSE-006",
+  "created_date": "2026-10-18",
+  "method": "The NYSC column was assessed by hand against this course's 12 governed module headings; a broad heading does not establish a more specific competency. Heading 7 ('Documents & Resource Level 5 -') is a fragment whose meaning cannot be determined from the governed text, so it is not cited. Coverage is never inferred from programme titles, qualification levels or unstored text.",
+  "human_reviewed": false,
+  "statuses": [
+    "DOCUMENTED",
+    "NOT_EXPLICIT",
+    "INSUFFICIENT_DATA"
+  ],
+  "columns": [
+    {
+      "column_id": "NYSC-COURSE-006",
+      "kind": "nysc",
+      "nysc_course_id": "COURSE-006",
+      "short_label": "NYSC COURSE-006"
+    },
+    {
+      "column_id": "LK-TVEC-NCS-ICT-L5-2025",
+      "kind": "benchmark",
+      "record_id": "LK-TVEC-NCS-ICT-L5-2025",
+      "short_label": "NCS ICT NVQ 5 · Sri Lanka"
+    },
+    {
+      "column_id": "SG-ITE-HNITEC-ITAD-2Y",
+      "kind": "benchmark",
+      "record_id": "SG-ITE-HNITEC-ITAD-2Y",
+      "short_label": "ITE Applications · Singapore"
+    },
+    {
+      "column_id": "SG-ITE-HNITEC-ISN-2Y",
+      "kind": "benchmark",
+      "record_id": "SG-ITE-HNITEC-ISN-2Y",
+      "short_label": "ITE Systems & Networks · Singapore"
+    }
+  ],
+  "category_components": {
+    "dip_analysis_design": [
+      "analysing system or software requirements",
+      "designing system or software functionality"
+    ],
+    "dip_programming": [
+      "developing software by programming"
+    ],
+    "dip_databases": [
+      "designing, implementing or managing databases"
+    ],
+    "dip_graphics": [
+      "designing graphics for print or digital media"
+    ],
+    "dip_web": [
+      "developing websites or web applications"
+    ],
+    "dip_testing": [
+      "testing software or applications"
+    ],
+    "dip_networking": [
+      "setting up or managing computer networks"
+    ],
+    "dip_workplace_information": [
+      "collecting, organising and maintaining workplace information"
+    ],
+    "dip_workplace_communication": [
+      "communicating with teams and stakeholders at work"
+    ],
+    "dip_work_planning": [
+      "planning and scheduling work at the workplace"
+    ],
+    "dip_mobile_apps": [
+      "designing and developing mobile applications"
+    ],
+    "dip_multimedia": [
+      "designing and developing multimedia content"
+    ]
+  },
+  "methodology": {
+    "DOCUMENTED": "The cited stored text explicitly names the competency. Coverage records whether it names every component of the category (FULL) or only some (PARTIAL).",
+    "FULL": "The cited evidence supports the competency as labelled: every listed component of the category is explicitly named.",
+    "PARTIAL": "Only a component of the category, or a lower level of activity, is explicitly documented; supported_component records what is supported.",
+    "NOT_EXPLICIT": "The competency is not documented within the available, assessed scope of the source (units, modules, learning outcomes or verified scope passages as stored).",
+    "INSUFFICIENT_DATA": "Missing or incomplete material prevents a reliable assessment.",
+    "caution": "None of these statuses proves that a competency is or is not actually taught.",
+    "areas_rule": "Areas to Investigate list competencies that the NYSC description does not name (NOT_EXPLICIT) and that at least two distinct comparator records, from at least two different countries, document with FULL coverage. PARTIAL evidence is shown but not counted.",
+    "decisions": [
+      "Only diploma-level records are linked; Level 3/4 technician records were not reused.",
+      "The Sri Lankan record stores NVQ Level 5 unit titles and descriptors; its three employability units match NYSC headings 5, 6 and 12.",
+      "ITE Systems & Networks is linked because its published networking modules directly match NYSC's governed Local Area Network heading; its system scripting is recorded as PARTIAL programming coverage and no wider diploma equivalence is inferred.",
+      "ITE workplace-information, communication and planning cells are INSUFFICIENT_DATA because its life-skills modules are not stored."
+    ]
+  },
+  "competencies": [
+    {
+      "competency_id": "dip_analysis_design",
+      "label": "System analysis and design",
+      "cells": {
+        "NYSC-COURSE-006": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "System Analysis & Design - Semester 1"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-ICT-L5-2025": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "outcome_verbatim",
+              "code": "K72T001U01",
+              "text": "This unit covers the competencies needed to carryout requirement identification process of a software development project by identifying process boundaries and key stakeholders then document the business requirements"
+            },
+            {
+              "module_index": 1,
+              "field": "outcome_verbatim",
+              "code": "K72T001U02",
+              "text": "This unit covers the competencies required to check the system design specifications against outcomes and quality standards by analyzing therequirement and then design of software application followed by reviews"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored ITE module objective names this. Software Development Practices names development methods, and User Experience Development names interface design, not system analysis."
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored ITE Systems & Networks module objective names system or software analysis and design."
+        }
+      }
+    },
+    {
+      "competency_id": "dip_programming",
+      "label": "Software programming",
+      "cells": {
+        "NYSC-COURSE-006": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 1,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Software Programming - Semester 1"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-ICT-L5-2025": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": "K72T001U04",
+              "text": "Develop and Test Software"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to apply fundamental programming concepts and computational thinking for basic programs."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 9,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to apply basic structured thinking skill to develop script to perform basic system related tasks and activities."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Basic scripting for system-related tasks; general software programming is not named"
+        }
+      }
+    },
+    {
+      "competency_id": "dip_databases",
+      "label": "Database systems",
+      "cells": {
+        "NYSC-COURSE-006": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Database System - Semester 1"
+            },
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Database Systems II - Semester 2"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-ICT-L5-2025": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 2,
+              "field": "outcome_verbatim",
+              "code": "K72T001U03",
+              "text": "This unit covers the competencies required to design, implement and maintain the database"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to develop interactive application with database integrations on cloud/repository."
+            }
+          ],
+          "note": null,
+          "coverage": "PARTIAL",
+          "supported_component": "Integrating databases into applications; database design and management are not named"
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored ITE Systems & Networks module objective names database design, implementation or management."
+        }
+      }
+    },
+    {
+      "competency_id": "dip_graphics",
+      "label": "Computer graphics design",
+      "cells": {
+        "NYSC-COURSE-006": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Computer Graphics Design - Semester 1"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-ICT-L5-2025": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": "K72T001U05",
+              "text": "Create design for print media"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored ITE module objective names this. User Experience Development names interface design, not graphic design."
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored ITE Systems & Networks module objective names graphics design."
+        }
+      }
+    },
+    {
+      "competency_id": "dip_web",
+      "label": "Web programming",
+      "cells": {
+        "NYSC-COURSE-006": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 9,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Web Programming - Semester 2"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-ICT-L5-2025": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 6,
+              "field": "title_verbatim",
+              "code": "K72T001U07",
+              "text": "Design, Develop and host web sites"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 9,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to develop Enterprise Web applications using techniques to manage operations of an organisation."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored ITE Systems & Networks module objective names website or web-application development."
+        }
+      }
+    },
+    {
+      "competency_id": "dip_testing",
+      "label": "Software testing",
+      "cells": {
+        "NYSC-COURSE-006": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 8,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Software Testing - Semester 2"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-ICT-L5-2025": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 3,
+              "field": "outcome_verbatim",
+              "code": "K72T001U04",
+              "text": "This unit covers the competencies needed to develop the designed application according to the standard of the selected programming language/s and carry out unit, integration, system tests."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 11,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to develop, test and deploy secure web services."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored ITE Systems & Networks module objective names software or application testing."
+        }
+      }
+    },
+    {
+      "competency_id": "dip_networking",
+      "label": "Local area networks",
+      "cells": {
+        "NYSC-COURSE-006": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Local Area Network - Semester 2"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-ICT-L5-2025": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 7,
+              "field": "title_verbatim",
+              "code": "K72T001U08",
+              "text": "Manage computer networks with security measures and cloud environments"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored ITE module objective names this."
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 0,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to set up, configure, set up and troubleshoot wired and wireless network system for small office environment. They should be able to provide network support and configure network devices."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        }
+      }
+    },
+    {
+      "competency_id": "dip_workplace_information",
+      "label": "Managing workplace information",
+      "cells": {
+        "NYSC-COURSE-006": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 4,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Manage Workplace Information -"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-ICT-L5-2025": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 9,
+              "field": "outcome_verbatim",
+              "code": "EMPU01",
+              "text": "This unit covers the competencies required to collect, organise and analyse information from a variety of sources, use organisational management information system for decision making and innovation, maintain a database for controlling progress of activities at the work place and maintain a standard documentation system."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "INSUFFICIENT_DATA",
+          "evidence": [],
+          "note": "No stored module names this, but the course's life-skills, cross-disciplinary and elective modules are not stored, so it cannot be assessed reliably."
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "INSUFFICIENT_DATA",
+          "evidence": [],
+          "note": "No stored module names this, but the course's life-skills, cross-disciplinary and elective modules are not stored, so it cannot be assessed reliably."
+        }
+      }
+    },
+    {
+      "competency_id": "dip_workplace_communication",
+      "label": "Managing workplace communication",
+      "cells": {
+        "NYSC-COURSE-006": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Manage Workplace Communication -"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-ICT-L5-2025": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "outcome_verbatim",
+              "code": "EMPU02",
+              "text": "This unit covers the competencies required to communicate with target group and stakeholders, present information in verbal, non-verbal and written forms, accompanied by visuals if required, and in structured form appropriate to the work force and the purpose"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "INSUFFICIENT_DATA",
+          "evidence": [],
+          "note": "No stored module names this, but the course's life-skills, cross-disciplinary and elective modules are not stored, so it cannot be assessed reliably."
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "INSUFFICIENT_DATA",
+          "evidence": [],
+          "note": "No stored module names this, but the course's life-skills, cross-disciplinary and elective modules are not stored, so it cannot be assessed reliably."
+        }
+      }
+    },
+    {
+      "competency_id": "dip_work_planning",
+      "label": "Planning and scheduling work",
+      "cells": {
+        "NYSC-COURSE-006": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 11,
+              "field": "title_verbatim",
+              "code": null,
+              "text": "Planing & Scheduling Work at Workplace - Semester 2"
+            }
+          ],
+          "note": "Published as 'Planing & Scheduling Work at Workplace'.",
+          "coverage": "FULL"
+        },
+        "LK-TVEC-NCS-ICT-L5-2025": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 11,
+              "field": "outcome_verbatim",
+              "code": "EMPU03",
+              "text": "This unit covers the competencies required in planning and scheduling work to be performed, assessing competencies / work capacities of individual workers / working teams predict problems / changes and take appropriate action to achieve business plans of the organisation"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "INSUFFICIENT_DATA",
+          "evidence": [],
+          "note": "No stored module names this, but the course's life-skills, cross-disciplinary and elective modules are not stored, so it cannot be assessed reliably."
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "INSUFFICIENT_DATA",
+          "evidence": [],
+          "note": "No stored module names this, but the course's life-skills, cross-disciplinary and elective modules are not stored, so it cannot be assessed reliably."
+        }
+      }
+    },
+    {
+      "competency_id": "dip_mobile_apps",
+      "label": "Mobile app development",
+      "cells": {
+        "NYSC-COURSE-006": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's governed module headings."
+        },
+        "LK-TVEC-NCS-ICT-L5-2025": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 8,
+              "field": "title_verbatim",
+              "code": "K72T001U09",
+              "text": "Design and develop mobile app"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 10,
+              "field": "outcome_verbatim",
+              "code": null,
+              "text": "On completion of the module, students should be able to design, develop and enhance feature-rich mobile applications, while effectively managing their codebase through version control systems, supported by advanced GenAI tools to create innovative user experiences."
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored ITE Systems & Networks module objective names mobile-application development."
+        }
+      }
+    },
+    {
+      "competency_id": "dip_multimedia",
+      "label": "Multimedia content",
+      "cells": {
+        "NYSC-COURSE-006": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "Not named in this course's governed module headings."
+        },
+        "LK-TVEC-NCS-ICT-L5-2025": {
+          "status": "DOCUMENTED",
+          "evidence": [
+            {
+              "module_index": 5,
+              "field": "title_verbatim",
+              "code": "K72T001U06",
+              "text": "Design & Develop multimedia content"
+            }
+          ],
+          "note": null,
+          "coverage": "FULL"
+        },
+        "SG-ITE-HNITEC-ITAD-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored ITE module objective names this."
+        },
+        "SG-ITE-HNITEC-ISN-2Y": {
+          "status": "NOT_EXPLICIT",
+          "evidence": [],
+          "note": "No stored ITE Systems & Networks module objective names multimedia-content design or development."
+        }
+      }
+    }
+  ]
+}

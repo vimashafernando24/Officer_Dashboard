@@ -25,6 +25,10 @@ const TESDA_IDS = [
   "PH-TESDA-CSS-NC2",
   "PH-TESDA-PRO-COOKERY-NC3",
   "PH-TESDA-WEBDEV-NC3",
+  "PH-TESDA-MOTORCYCLE-NC2",
+  "PH-TESDA-ASER-ELEC-NC2",
+  "PH-TESDA-MOBILE-NC3",
+  "PH-TESDA-VGD-NC3",
 ];
 
 const byId = new Map(BENCHMARK_RECORDS.map((record) => [record.record_id, record]));

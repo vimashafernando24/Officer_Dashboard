@@ -5,25 +5,36 @@
 type JsonModule = Promise<{ default: unknown }>;
 
 export const RECORD_DATASET_LOADERS: Record<string, () => JsonModule> = {
+  "auto_electrical": () => import("../../../../../outputs/programme_benchmarking/pilot_records_auto_electrical.json", { with: { type: "json" } }),
   "automotive": () => import("../../../../../outputs/programme_benchmarking/pilot_records_automotive.json", { with: { type: "json" } }),
   "baker": () => import("../../../../../outputs/programme_benchmarking/pilot_records_baker.json", { with: { type: "json" } }),
   "beauty": () => import("../../../../../outputs/programme_benchmarking/pilot_records_beauty.json", { with: { type: "json" } }),
   "cake_decorator": () => import("../../../../../outputs/programme_benchmarking/pilot_records_cake_decorator.json", { with: { type: "json" } }),
+  "computer_accounting": () => import("../../../../../outputs/programme_benchmarking/pilot_records_computer_accounting.json", { with: { type: "json" } }),
+  "construction_supervisor": () => import("../../../../../outputs/programme_benchmarking/pilot_records_construction_supervisor.json", { with: { type: "json" } }),
   "cookery": () => import("../../../../../outputs/programme_benchmarking/pilot_records_cookery.json", { with: { type: "json" } }),
   "electrical": () => import("../../../../../outputs/programme_benchmarking/pilot_records_electrical.json", { with: { type: "json" } }),
+  "electronics_repair": () => import("../../../../../outputs/programme_benchmarking/pilot_records_electronics_repair.json", { with: { type: "json" } }),
+  "graphic_design": () => import("../../../../../outputs/programme_benchmarking/pilot_records_graphic_design.json", { with: { type: "json" } }),
   "hairdressing": () => import("../../../../../outputs/programme_benchmarking/pilot_records_hairdressing.json", { with: { type: "json" } }),
   "hardware": () => import("../../../../../outputs/programme_benchmarking/pilot_records_hardware.json", { with: { type: "json" } }),
   "ict": () => import("../../../../../outputs/programme_benchmarking/pilot_records_ict.json", { with: { type: "json" } }),
+  "ict_diploma": () => import("../../../../../outputs/programme_benchmarking/pilot_records_ict_diploma.json", { with: { type: "json" } }),
+  "mobile_repair": () => import("../../../../../outputs/programme_benchmarking/pilot_records_mobile_repair.json", { with: { type: "json" } }),
+  "motor_winding": () => import("../../../../../outputs/programme_benchmarking/pilot_records_motor_winding.json", { with: { type: "json" } }),
+  "motorcycle": () => import("../../../../../outputs/programme_benchmarking/pilot_records_motorcycle.json", { with: { type: "json" } }),
+  "networking": () => import("../../../../../outputs/programme_benchmarking/pilot_records_networking.json", { with: { type: "json" } }),
   "rac": () => import("../../../../../outputs/programme_benchmarking/pilot_records_rac.json", { with: { type: "json" } }),
   "secretary": () => import("../../../../../outputs/programme_benchmarking/pilot_records_secretary.json", { with: { type: "json" } }),
   "web": () => import("../../../../../outputs/programme_benchmarking/pilot_records_web.json", { with: { type: "json" } }),
 };
 
 /** Dataset order, so loaded records keep a stable order. */
-export const RECORD_DATASET_ORDER: string[] = ["automotive", "baker", "beauty", "cake_decorator", "cookery", "electrical", "hairdressing", "hardware", "ict", "rac", "secretary", "web"];
+export const RECORD_DATASET_ORDER: string[] = ["auto_electrical", "automotive", "baker", "beauty", "cake_decorator", "computer_accounting", "construction_supervisor", "cookery", "electrical", "electronics_repair", "graphic_design", "hairdressing", "hardware", "ict", "ict_diploma", "mobile_repair", "motor_winding", "motorcycle", "networking", "rac", "secretary", "web"];
 
 export const MAPPING_LOADERS: Record<string, () => JsonModule> = {
   "COURSE-005": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-005.json", { with: { type: "json" } }),
+  "COURSE-006": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-006.json", { with: { type: "json" } }),
   "COURSE-007": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-007.json", { with: { type: "json" } }),
   "COURSE-008": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-008.json", { with: { type: "json" } }),
   "COURSE-009": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-009.json", { with: { type: "json" } }),
@@ -40,7 +51,9 @@ export const MAPPING_LOADERS: Record<string, () => JsonModule> = {
   "COURSE-050": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-050.json", { with: { type: "json" } }),
   "COURSE-053": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-053.json", { with: { type: "json" } }),
   "COURSE-055": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-055.json", { with: { type: "json" } }),
+  "COURSE-058": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-058.json", { with: { type: "json" } }),
   "COURSE-064": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-064.json", { with: { type: "json" } }),
+  "COURSE-081": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-081.json", { with: { type: "json" } }),
   "COURSE-082": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-082.json", { with: { type: "json" } }),
   "COURSE-087": () => import("../../../../../outputs/programme_benchmarking/competency_mapping_course-087.json", { with: { type: "json" } }),
 };

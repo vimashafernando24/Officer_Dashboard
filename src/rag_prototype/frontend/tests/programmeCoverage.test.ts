@@ -22,8 +22,9 @@ import { loadAllComparisonData } from "../src/comparisonData.ts";
 // Comparator data is loaded on demand in the dashboard; tests load all of it first.
 await loadAllComparisonData();
 
-const COMPLETE = ["COURSE-005", "COURSE-007", "COURSE-008", "COURSE-009", "COURSE-053", "COURSE-087", "COURSE-010", "COURSE-011", "COURSE-012", "COURSE-014", "COURSE-025", "COURSE-034", "COURSE-035", "COURSE-040", "COURSE-046", "COURSE-047", "COURSE-050", "COURSE-055", "COURSE-064", "COURSE-082"];
-const COMPARATORS_ONLY = ["COURSE-001", "COURSE-048", "COURSE-051", "COURSE-054", "COURSE-056", "COURSE-057", "COURSE-069"];
+const COMPLETE = ["COURSE-005", "COURSE-006", "COURSE-007", "COURSE-008", "COURSE-009", "COURSE-053", "COURSE-058", "COURSE-087", "COURSE-010", "COURSE-011", "COURSE-012", "COURSE-014", "COURSE-025", "COURSE-034", "COURSE-035", "COURSE-040", "COURSE-046", "COURSE-047", "COURSE-050", "COURSE-055", "COURSE-064", "COURSE-081", "COURSE-082"];
+const COMPARATORS_ONLY = ["COURSE-001", "COURSE-048", "COURSE-051", "COURSE-054", "COURSE-056", "COURSE-057", "COURSE-069",
+  "COURSE-016", "COURSE-021", "COURSE-022", "COURSE-023", "COURSE-029", "COURSE-030", "COURSE-042", "COURSE-052", "COURSE-060", "COURSE-068", "COURSE-077", "COURSE-078", "COURSE-013", "COURSE-079", "COURSE-080"];
 const ALL_IDS = NYSC_COURSES.map((course) => course.course_id);
 const registerById = new Map(coverageRegister.courses.map((entry) => [entry.course_id, entry]));
 const shownRecords = (courseId: string) => {
@@ -44,7 +45,7 @@ test("every one of the 84 governed courses has a coverage state that matches the
 });
 
 
-test("the seventeen mapped courses keep their full comparison", () => {
+test("the 23 mapped courses keep their full comparison", () => {
   for (const courseId of COMPLETE) {
     const coverage = coverageForCourse(courseId)!;
     assert.equal(coverage.state, "FULL_COMPARISON", courseId);
@@ -55,9 +56,9 @@ test("the seventeen mapped courses keep their full comparison", () => {
 });
 
 
-test("all 57 unresearched courses show RESEARCH_PENDING and no comparison", () => {
+test("all 39 unresearched courses show RESEARCH_PENDING and no comparison", () => {
   const pending = ALL_IDS.filter((id) => !COMPLETE.includes(id) && !COMPARATORS_ONLY.includes(id));
-  assert.equal(pending.length, 57);
+  assert.equal(pending.length, 39);
   for (const courseId of pending) {
     const coverage = coverageForCourse(courseId)!;
     assert.equal(registerById.get(courseId)!.research_status, "NOT_RESEARCHED", courseId);
@@ -119,7 +120,7 @@ test("missing NYSC headings and missing external evidence are explained separate
   assert.equal(headingsMessage(coverageForCourse("COURSE-009")!), "NYSC module headings: 9 usable headings published for this course.");
   assert.match(headingsMessage(coverageForCourse("COURSE-072")!), /names no curriculum content/);
   // A course with headings but no research is still pending: headings are not comparator evidence.
-  assert.equal(coverageForCourse("COURSE-006")!.state, "RESEARCH_PENDING");
+  assert.equal(coverageForCourse("COURSE-041")!.state, "RESEARCH_PENDING");
 });
 
 

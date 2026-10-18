@@ -298,6 +298,192 @@
       ],
       "basis": "Related web design and development course (Freelancer Of Web Design & Development, 3-month part-time). The governed catalogue publishes no module headings for this course, so the COURSE-087 web comparators are shown without a competency matrix.",
       "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map, and its freelancing content is not stated. Different programme duration, level and scope; curriculum content comparison only. Standards and qualifications are not confirmed deliveries. TESDA Web Development NC III and the Sri Lankan Web Developer standard extend to back-end development; ITE's programme is broader application development; the Australian record is the Web Development specialisation of ICT40120 (core plus the required Group G units); the Indian record is a short NSQF Level 3 web designing and multimedia qualification."
+    },
+    {
+      "nysc_course_id": "COURSE-023",
+      "record_ids": [
+        "LK-TVEC-NCS-CONSTRUCTION-SITE-SUPERVISOR-2025",
+        "AU-TGA-CPC40120-SITE-MANAGEMENT"
+      ],
+      "basis": "Construction Site Supervisor comparators verified on 2026-10-18 (Step 27) for the 12-month full-time, NVQ Level 4 NYSC course: CONSTRUCTION SITE SUPERVISOR (Sri Lanka); Certificate IV in Building and Construction (Site Management) (Australia). The governed catalogue publishes no module headings for this course, so the comparators are shown without a competency matrix.",
+      "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. Standards and qualifications are not confirmed deliveries. The Australian record is the Site Management outcome of a broader Certificate IV in Building and Construction (core plus the required Group B units); no developing-economy comparator was verified."
+    },
+    {
+      "nysc_course_id": "COURSE-060",
+      "record_ids": [
+        "LK-TVEC-NCS-CONSTRUCTION-SITE-SUPERVISOR-2025",
+        "AU-TGA-CPC40120-SITE-MANAGEMENT"
+      ],
+      "basis": "Construction Site Supervisor comparators verified on 2026-10-18 (Step 27) for the 12-month part-time NYSC course: CONSTRUCTION SITE SUPERVISOR (Sri Lanka); Certificate IV in Building and Construction (Site Management) (Australia). The governed catalogue publishes no module headings for this course, so the comparators are shown without a competency matrix.",
+      "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. Standards and qualifications are not confirmed deliveries. The Australian record is the Site Management outcome of a broader Certificate IV in Building and Construction (core plus the required Group B units); no developing-economy comparator was verified."
+    },
+    {
+      "nysc_course_id": "COURSE-030",
+      "record_ids": [
+        "LK-TVEC-NCS-MOTORCYCLE-TECHNICIAN-2025",
+        "IN-DGT-CTS-2W3W-V2",
+        "PH-TESDA-MOTORCYCLE-NC2",
+        "AU-TGA-AUR30820"
+      ],
+      "basis": "Motorcycle Mechanic comparators verified on 2026-10-18 (Step 27) for the 12-month full-time, NVQ Level 3/4 NYSC course: MOTORCYCLE TECHNICIAN (Sri Lanka); Mechanic Two & Three Wheeler (India); Motorcycle/Small Engine Servicing NC II (Philippines); Certificate III in Motorcycle Mechanical Technology (Australia). The governed catalogue publishes no module headings for this course, so the comparators are shown without a competency matrix.",
+      "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. Standards and qualifications are not confirmed deliveries. India's DGT curriculum also covers three-wheelers; TESDA's regulation covers motorcycles and small engines; Australia's record stores core units only."
+    },
+    {
+      "nysc_course_id": "COURSE-078",
+      "record_ids": [
+        "LK-TVEC-NCS-MOTORCYCLE-TECHNICIAN-2025",
+        "IN-DGT-CTS-2W3W-V2",
+        "PH-TESDA-MOTORCYCLE-NC2",
+        "AU-TGA-AUR30820"
+      ],
+      "basis": "Motorcycle Mechanic comparators verified on 2026-10-18 (Step 27) for the 6-month part-time NYSC course: MOTORCYCLE TECHNICIAN (Sri Lanka); Mechanic Two & Three Wheeler (India); Motorcycle/Small Engine Servicing NC II (Philippines); Certificate III in Motorcycle Mechanical Technology (Australia). The governed catalogue publishes no module headings for this course, so the comparators are shown without a competency matrix.",
+      "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. Standards and qualifications are not confirmed deliveries. India's DGT curriculum also covers three-wheelers; TESDA's regulation covers motorcycles and small engines; Australia's record stores core units only."
+    },
+    {
+      "nysc_course_id": "COURSE-021",
+      "record_ids": [
+        "LK-TVEC-NCS-AUTO-ELECTRICIAN-2026",
+        "IN-DGT-CTS-MAEE-V2",
+        "PH-TESDA-ASER-ELEC-NC2",
+        "AU-TGA-AUR30320"
+      ],
+      "basis": "Automobile Electrician comparators verified on 2026-10-18 (Step 27) for the 6-month full-time, NVQ Level 4 NYSC course: AUTOMOBILE ELECTRICIAN/AUTOMOBILE ELECTRICAL TECHNICIAN (Sri Lanka); Mechanic Auto Electrical & Electronics (India); Automotive Servicing (Electrical Repair) NC II (Philippines); Certificate III in Automotive Electrical Technology (Australia). The governed catalogue publishes no module headings for this course, so the comparators are shown without a competency matrix.",
+      "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. Standards and qualifications are not confirmed deliveries. The Sri Lankan NVQ Level 4 Automobile Electrician package excludes the hybrid and electric vehicle units, which belong to the Automobile Electrical Technician package; TESDA's electrical NC II centres on air conditioning, ignition, starting, charging and body electrical systems; Australia's record stores core units only."
+    },
+    {
+      "nysc_course_id": "COURSE-042",
+      "record_ids": [
+        "LK-TVEC-NCS-AUTO-ELECTRICIAN-2026",
+        "IN-DGT-CTS-MAEE-V2",
+        "PH-TESDA-ASER-ELEC-NC2",
+        "AU-TGA-AUR30320"
+      ],
+      "basis": "Automobile Electrician comparators verified on 2026-10-18 (Step 27) for the 6-month full-time NYSC course: AUTOMOBILE ELECTRICIAN/AUTOMOBILE ELECTRICAL TECHNICIAN (Sri Lanka); Mechanic Auto Electrical & Electronics (India); Automotive Servicing (Electrical Repair) NC II (Philippines); Certificate III in Automotive Electrical Technology (Australia). The governed catalogue publishes no module headings for this course, so the comparators are shown without a competency matrix.",
+      "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. Standards and qualifications are not confirmed deliveries. The Sri Lankan NVQ Level 4 Automobile Electrician package excludes the hybrid and electric vehicle units, which belong to the Automobile Electrical Technician package; TESDA's electrical NC II centres on air conditioning, ignition, starting, charging and body electrical systems; Australia's record stores core units only."
+    },
+    {
+      "nysc_course_id": "COURSE-029",
+      "record_ids": [
+        "LK-TVEC-NCS-MOBILE-PHONE-REPAIR-2024",
+        "PH-TESDA-MOBILE-NC3",
+        "IN-NQR-TSSC-HANDHELD-V2"
+      ],
+      "basis": "Mobile Phone Repair Technician comparators verified on 2026-10-18 (Step 27) for the 8-month full-time, NVQ Level 4 NYSC course: MOBILE PHONE REPAIR TECHNICIAN (Sri Lanka); Mobile Phones and Handheld Gadgets Servicing NC III (Philippines); Handheld Devices (Mobile & Accessories) Technician (India). The governed catalogue publishes no module headings for this course, so the comparators are shown without a competency matrix.",
+      "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. Standards and qualifications are not confirmed deliveries. TESDA's NC III and India's NSQF 4 qualification also cover tablets and other handheld devices (India's also laptops and accessories); no developed-economy comparator was verified."
+    },
+    {
+      "nysc_course_id": "COURSE-077",
+      "record_ids": [
+        "LK-TVEC-NCS-MOBILE-PHONE-REPAIR-2024",
+        "PH-TESDA-MOBILE-NC3",
+        "IN-NQR-TSSC-HANDHELD-V2"
+      ],
+      "basis": "Mobile Phone Repair Technician comparators verified on 2026-10-18 (Step 27) for the 8-month part-time NYSC course: MOBILE PHONE REPAIR TECHNICIAN (Sri Lanka); Mobile Phones and Handheld Gadgets Servicing NC III (Philippines); Handheld Devices (Mobile & Accessories) Technician (India). The governed catalogue publishes no module headings for this course, so the comparators are shown without a competency matrix.",
+      "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. Standards and qualifications are not confirmed deliveries. TESDA's NC III and India's NSQF 4 qualification also cover tablets and other handheld devices (India's also laptops and accessories); no developed-economy comparator was verified."
+    },
+    {
+      "nysc_course_id": "COURSE-016",
+      "record_ids": [
+        "LK-TVEC-NCS-GRAPHIC-DESIGNER-2025",
+        "PH-TESDA-VGD-NC3",
+        "SG-ITE-HNITEC-COMMDESIGN-2Y"
+      ],
+      "basis": "Graphic Designer comparators verified on 2026-10-18 (Step 27) for the 6-month full-time, NVQ Level 4 NYSC course: GRAPHIC DESIGNER (Sri Lanka); Visual Graphic Design NC III (Philippines); Higher Nitec in Communication Design (2 years) (Singapore). The governed catalogue publishes no module headings for this course, so the comparators are shown without a competency matrix.",
+      "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. Standards and qualifications are not confirmed deliveries. TESDA's NC III extends to UI/UX, packaging and display design; ITE's two-year programme stores only its cluster core and Graphic Design specialisation modules."
+    },
+    {
+      "nysc_course_id": "COURSE-068",
+      "record_ids": [
+        "LK-TVEC-NCS-GRAPHIC-DESIGNER-2025",
+        "PH-TESDA-VGD-NC3",
+        "SG-ITE-HNITEC-COMMDESIGN-2Y"
+      ],
+      "basis": "Graphic Designer comparators verified on 2026-10-18 (Step 27) for the 6-month part-time NYSC course: GRAPHIC DESIGNER (Sri Lanka); Visual Graphic Design NC III (Philippines); Higher Nitec in Communication Design (2 years) (Singapore). The governed catalogue publishes no module headings for this course, so the comparators are shown without a competency matrix.",
+      "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. Standards and qualifications are not confirmed deliveries. TESDA's NC III extends to UI/UX, packaging and display design; ITE's two-year programme stores only its cluster core and Graphic Design specialisation modules."
+    },
+    {
+      "nysc_course_id": "COURSE-006",
+      "record_ids": [
+        "LK-TVEC-NCS-ICT-L5-2025",
+        "SG-ITE-HNITEC-ITAD-2Y",
+        "SG-ITE-HNITEC-ISN-2Y"
+      ],
+      "basis": "Diploma-level comparators verified on 2026-10-18 (Step 29) for the 12-month full-time NVQ Level 5 National Diploma in ICT: the Sri Lankan NVQ Level 5 ICT national competency standard (K72T001, 2025), ITE's Higher Nitec in IT Applications Development and ITE's Higher Nitec in IT Systems & Networks (both reused). The Systems & Networks record is included for its substantive published networking and system-scripting modules, which relate directly to NYSC's governed Local Area Network and Software Programming headings; it is not treated as evidence for the diploma's other subject areas. Level 3/4 technician records (the Sri Lankan ICT Technician standard, DGT COPA, ICT20120) were not reused.",
+      "comparison_caveat": "Different programme duration, level and scope; curriculum content comparison only. The Sri Lankan record is a standard, not a confirmed delivery. ITE's two programmes are separate specialisations: Applications Development does not cover networking or graphic design, while Systems & Networks is used only for its explicitly published networking and limited system-scripting scope. No developing-economy diploma was verified."
+    },
+    {
+      "nysc_course_id": "COURSE-022",
+      "record_ids": [
+        "LK-TVEC-NCS-COMPUTER-SYSTEMS-NETWORK-2026",
+        "IN-DGT-CTS-CHNM-V2",
+        "PH-TESDA-CSS-NC2",
+        "SG-ITE-HNITEC-ISN-2Y",
+        "AU-TGA-ICT40120-NETWORKING"
+      ],
+      "basis": "Networking comparators verified on 2026-10-18 (Step 29) for the 12-month full-time NVQ Level 4 Computer Network Technician course: the current Sri Lankan Computer Systems & Network Technician standard (K72S015, 2026), India's DGT Computer Hardware & Network Maintenance curriculum (reused), TESDA Computer Systems Servicing NC II (reused), ITE's Higher Nitec in IT Systems & Networks (reused) and Australia's Certificate IV in Information Technology (Networking). The governed catalogue publishes no module headings for this course, so the comparators are shown without a competency matrix.",
+      "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. Standards and qualifications are not confirmed deliveries. The DGT and TESDA records combine hardware servicing with networking; the Australian record is the Networking specialisation of ICT40120 (core plus the required Group D units)."
+    },
+    {
+      "nysc_course_id": "COURSE-052",
+      "record_ids": [
+        "LK-TVEC-NCS-COMPUTER-SYSTEMS-NETWORK-2026",
+        "SG-ITE-HNITEC-ISN-2Y",
+        "AU-TGA-ICT40120-NETWORKING"
+      ],
+      "basis": "Networking-focused national comparators verified on 2026-10-18 (Step 29) for the 6-month part-time Cisco Certified Network Associate course: the Sri Lankan Computer Systems & Network Technician standard, ITE's Higher Nitec in IT Systems & Networks and Australia's Certificate IV in Information Technology (Networking). Hardware-servicing records (DGT CHNM, TESDA CSS) were not linked. The governed catalogue publishes no module headings for this course.",
+      "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. CCNA is a vendor certification defined by Cisco's own exam topics; it is not a national vocational qualification, and no Cisco exam blueprint is stored as a comparator record. These national networking standards and programmes show related occupational scope only and are not equivalent to the CCNA certification."
+    },
+    {
+      "nysc_course_id": "COURSE-058",
+      "record_ids": [
+        "IN-NQR-HARTRON-COMPUTER-ACCOUNTING-V2",
+        "SG-ITE-HNITEC-ACCOUNTING-2Y",
+        "AU-TGA-FNS30322"
+      ],
+      "basis": "Computerised-accounting comparators verified on 2026-10-18 (Step 29) for the 6-month part-time Computer Based Accounting course: India's NSQF Level 3 Certificate Course in Computer Basics and Accounting (Tally), ITE's Higher Nitec in Accounting and Australia's Certificate III in Accounts Administration. Generic computer-applications records were not reused.",
+      "comparison_caveat": "Different programme duration, level and scope; curriculum content comparison only. ITE's programme is a broader two-year accounting programme; the Australian record stores core units only; the Indian qualification uses Tally rather than the packages NYSC names. No Sri Lankan comparator was verified."
+    },
+    {
+      "nysc_course_id": "COURSE-013",
+      "record_ids": [
+        "LK-TVEC-NCS-ELECTRONIC-APPLIANCES-2017",
+        "IN-DGT-CTS-MCEA-V2",
+        "PH-TESDA-EPAS-NC2"
+      ],
+      "basis": "Electronic-appliance servicing comparators verified on 2026-10-18 (Step 30) for the 12-month full-time NVQ Level 4 Electronic Appliances Technician course: Sri Lanka's Electronic Appliances Technician NCS/CBT curriculum, India's Mechanic Consumer Electronic Appliances CTS curriculum and TESDA Electronic Products Assembly and Servicing NC II. The governed catalogue publishes no module headings, so the comparators are shown without a competency matrix.",
+      "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. All three records are standards or national curricula, not confirmed deliveries; no developed-economy source with comparably specific published content was verified."
+    },
+    {
+      "nysc_course_id": "COURSE-081",
+      "record_ids": [
+        "LK-TVEC-NCS-ELECTRONIC-APPLIANCES-2017",
+        "IN-DGT-CTS-MCEA-V2",
+        "PH-TESDA-EPAS-NC2"
+      ],
+      "basis": "Radio, television and allied-equipment comparators verified on 2026-10-18 (Step 30) for the 6-month part-time NYSC course: Sri Lanka's Electronic Appliances Technician NCS/CBT curriculum, India's Mechanic Consumer Electronic Appliances CTS curriculum and TESDA Electronic Products Assembly and Servicing NC II. Each source explicitly covers consumer audio/video, television or display servicing rather than general electrical installation.",
+      "comparison_caveat": "Different programme duration, level and scope; curriculum content comparison only. All three records are standards or national curricula, not confirmed deliveries; the source scopes are broader than the NYSC course, and no developed-economy source with comparably specific published content was verified."
+    },
+    {
+      "nysc_course_id": "COURSE-079",
+      "record_ids": [
+        "LK-CGTTI-POWER-ELEC",
+        "IN-DGT-CTS-ELEC-V3",
+        "PH-TESDA-EIM-NC3",
+        "AU-TAFENSW-UEE30820"
+      ],
+      "basis": "Motor-control comparators verified on 2026-10-18 (Step 30) for the 6-month part-time Motor Controlling Technology course: CGTTI Power Electrical, India's Electrician CTS curriculum, TESDA Electrical Installation and Maintenance NC III and TAFE NSW Certificate III in Electrotechnology Electrician. Only records with explicit motor-control circuits, starters, control panels or control/protection units are linked.",
+      "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. These are broader electrical programmes and standards; their motor-control content is a substantive component, not evidence of equivalence to a dedicated motor-control course. TESDA NC II was excluded because general installation content does not establish motor control."
+    },
+    {
+      "nysc_course_id": "COURSE-080",
+      "record_ids": [
+        "LK-TVEC-NCS-ELECTRIC-MOTOR-WINDER",
+        "LK-CGTTI-POWER-ELEC",
+        "IN-DGT-CTS-ELEC-V3",
+        "AU-TGA-UEE30625"
+      ],
+      "basis": "Motor-winding comparators verified on 2026-10-18 (Step 30) for the 6-month part-time Motor Winding course: Sri Lanka's Electric Motor Winder NCS, CGTTI Power Electrical, India's Electrician CTS curriculum and Australia's Certificate III in Electrical Machine Repair. Every linked record explicitly names winding or rewinding motors/electrical machines.",
+      "comparison_caveat": "COMPARATORS_ONLY: the governed NYSC course has no published headings to map. Different programme duration, level and scope; curriculum content comparison only. The Sri Lankan and Australian records are standards/qualifications rather than confirmed deliveries; CGTTI and DGT are broader electrical programmes/curricula."
     }
   ]
 }
