@@ -8,12 +8,33 @@ import type {
   TeachingDistributionAnswer,
 } from "../types";
 import learningMascot from "../../../../mascots/small/rabbit1.png";
-import { EnglishOnlyNotice } from "../i18n/LanguageControls";
+import { EnglishOnlyNotice, EnglishOriginal } from "../i18n/LanguageControls";
 import { useLocalizer } from "../i18n/languageContext";
 import type { Localizer } from "../i18n/localize";
 
 
 const teachingLibrary = teachingLibraryJson as ClusterResearchTeachingLibrary;
+
+// English profile names as they appear inside conclusion sentences, mapped to
+// profile keys so the Sinhala profile name can be substituted.
+const PROFILE_KEY_BY_NAME = new Map<string, string>();
+for (const model of teachingLibrary.models) {
+  for (const profile of model.profiles) {
+    PROFILE_KEY_BY_NAME.set(profile.canonical_profile_name, profile.profile_key);
+    for (const finding of profile.retained_findings) {
+      for (const item of finding.distribution.profiles) {
+        if (item.profile_key) PROFILE_KEY_BY_NAME.set(item.profile_name, item.profile_key);
+      }
+    }
+  }
+}
+
+function localizedConclusion(finding: ClusterResearchTeachingFinding, localizer: Localizer): string | null {
+  return localizer.conclusion(finding.simple_conclusion, {
+    questionId: finding.survey_question.question_id,
+    profileName: (english) => localizer.profileName(PROFILE_KEY_BY_NAME.get(english), english),
+  });
+}
 
 interface Props {
   assignedProfiles: AssignedProfile[];
@@ -82,9 +103,14 @@ function EvidenceModal({ finding, profile, assignedProfileKeys, onClose }: Evide
 
         <section className="research-modal-question" aria-labelledby="research-question-label">
           <strong id="research-question-label">{localizer.t("teaching.exactQuestion")}</strong>
-          <p lang={finding.survey_question.question_text ? "en" : undefined}>
-            {finding.survey_question.question_text ?? localizer.t("teaching.questionMissing")}
-          </p>
+          {finding.survey_question.question_text ? (
+            <>
+              <p>{localizer.surveyQuestion(finding.survey_question.question_id, finding.survey_question.question_text)}</p>
+              <EnglishOriginal text={finding.survey_question.question_text} />
+            </>
+          ) : (
+            <p>{localizer.t("teaching.questionMissing")}</p>
+          )}
         </section>
 
         <div className="research-evidence-status-row">
@@ -128,7 +154,7 @@ function EvidenceModal({ finding, profile, assignedProfileKeys, onClose }: Evide
                     return (
                       <div className="research-category-row" key={answer.answer}>
                         <div>
-                          <span>{localizer.answer(answer.answer)}</span>
+                          <span>{localizer.answer(answer.answer, { questionId: finding.survey_question.question_id })}</span>
                           <strong>{displayMetric(answer, localizer)}</strong>
                         </div>
                         <div className="research-category-track" aria-hidden="true">
@@ -230,7 +256,9 @@ export function ClusterResearchTeachingPanel({ assignedProfiles }: Props) {
         </div>
       </div>
 
-      <EnglishOnlyNotice>{localizer.t("teaching.conclusionsEnglish")}</EnglishOnlyNotice>
+      {selected.profile.retained_findings.some((finding) => localizedConclusion(finding, localizer) === null) ? (
+        <EnglishOnlyNotice>{localizer.t("teaching.conclusionsEnglish")}</EnglishOnlyNotice>
+      ) : null}
       <div className="cluster-teaching-findings">
         {selected.profile.retained_findings.map((finding) => (
           <article className="cluster-teaching-finding" key={finding.evidence_id}>
@@ -238,7 +266,10 @@ export function ClusterResearchTeachingPanel({ assignedProfiles }: Props) {
               <span className={`research-status-dot ${finding.evidence_status}`} aria-hidden="true" />
               <div>
                 <h5>{localizer.findingTitle(finding.finding_title)}</h5>
-                <p lang="en">{finding.simple_conclusion}</p>
+                {(() => {
+                  const conclusion = localizedConclusion(finding, localizer);
+                  return <p lang={conclusion === null ? "en" : undefined}>{conclusion ?? finding.simple_conclusion}</p>;
+                })()}
               </div>
             </div>
             <button type="button" onClick={() => setOpenFinding(finding)}>{localizer.t("teaching.viewEvidence")}</button>

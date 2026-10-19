@@ -152,6 +152,19 @@ input[type="number"]:focus {
   outline: none;
 }
 
+input[type="number"].input-invalid,
+input[type="number"].input-invalid:focus {
+  border-color: #c0392b;
+  box-shadow: 0 0 0 4px rgba(192, 57, 43, 0.12);
+}
+
+.field-error {
+  margin-top: 8px;
+  color: #c0392b;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
 .btn-row {
   display: flex;
   justify-content: space-between;

@@ -2,7 +2,7 @@ import { useEffect, useId, useRef, type CSSProperties } from "react";
 import { createPortal } from "react-dom";
 import formationLibraryJson from "../../data/clusterFormationEvidenceLibrary.json";
 import "./ClusterFormationEvidenceModal.css";
-import { EnglishOnlyNotice } from "../../i18n/LanguageControls";
+import { EnglishOriginal } from "../../i18n/LanguageControls";
 import { useLocalizer } from "../../i18n/languageContext";
 
 interface ProfileValue {
@@ -109,7 +109,7 @@ function CategoricalChart({ variable, model }: { variable: FormationVariable; mo
                 </div>
               ))}
             </div>
-            <div className="formation-chart-category-label">{localizer.answer(row.answer)}</div>
+            <div className="formation-chart-category-label">{localizer.answer(row.answer, { questionId: variable.question_id, variable: variable.variable })}</div>
           </div>
         ))}
       </div>
@@ -168,7 +168,6 @@ export function ClusterFormationEvidenceModal({ modelKey, onClose }: Props) {
           <span>{localizer.t("formation.kicker")}</span>
           <h2 id={titleId}>{localizer.modelLabel(model.model_key, model.dimension_title)}</h2>
           <p>{localizer.t("formation.intro")}</p>
-          <EnglishOnlyNotice>{localizer.t("dimension.questionsNote")}</EnglishOnlyNotice>
         </header>
 
         <div className="formation-evidence-profiles" aria-label={localizer.t("formation.profilesLabel")}>
@@ -195,7 +194,8 @@ export function ClusterFormationEvidenceModal({ modelKey, onClose }: Props) {
               {variable.survey_question ? (
                 <div className="formation-evidence-question">
                   <span>{localizer.t("formation.question")}</span>
-                  <p lang="en">{variable.survey_question}</p>
+                  <p>{localizer.surveyQuestion(variable.question_id, variable.survey_question, variable.variable)}</p>
+                  <EnglishOriginal text={variable.survey_question} />
                 </div>
               ) : null}
               {variable.kind === "categorical" ? <CategoricalChart variable={variable} model={model} /> : null}

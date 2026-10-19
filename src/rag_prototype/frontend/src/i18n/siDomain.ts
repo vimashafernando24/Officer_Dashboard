@@ -178,6 +178,7 @@ export const SI_VARIABLES: Record<string, string> = {
 
 // Answer-option labels, keyed by the exact English label the backend serves.
 export const SI_ANSWERS: Record<string, string> = {
+  Median: "මධ්‍යස්ථය",
   "Intrinsic: genuinely passionate about the subject": "ස්වයං උනන්දුව (Intrinsic): විෂයට සැබෑ ආශාවක් ඇත",
   "Identified: aligned with own goals": "පුද්ගලික ඉලක්ක (Identified): තමන්ගේම ඉලක්කවලට ගැළපේ",
   "Introjected: avoid guilt or disappointing family": "අභ්‍යන්තර පීඩනය (Introjected): වරදකාරී හැඟීමක් හෝ පවුල කලකිරවීම වළක්වා ගැනීමට",

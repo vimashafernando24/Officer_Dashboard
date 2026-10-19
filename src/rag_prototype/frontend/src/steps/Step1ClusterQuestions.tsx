@@ -1,5 +1,6 @@
 import { Card, StepTitle, StepHint } from "../components/Card";
 import { ChoiceGrid } from "../components/ChoiceGrid";
+import { HOUSEHOLD_COUNT_MAX, validateNumberAnswers } from "../householdValidation";
 import { EnglishOnlyNotice, EnglishOriginal } from "../i18n/LanguageControls";
 import { useLocalizer } from "../i18n/languageContext";
 import type { ClusterQuestionGroup } from "../types";
@@ -20,6 +21,9 @@ export function Step1ClusterQuestions({
   const localizer = useLocalizer();
   const allVars = groups.flatMap((g) => g.questions.map((q) => q.variable));
   const complete = allVars.every((v) => answers[v] !== undefined && answers[v] !== "");
+  const numberVars = groups.flatMap((g) => g.questions.filter((q) => q.type === "number").map((q) => q.variable));
+  const numberErrors = validateNumberAnswers(answers, numberVars);
+  const valid = Object.keys(numberErrors).length === 0;
 
   return (
     <Card>
@@ -38,10 +42,21 @@ export function Step1ClusterQuestions({
                 </div>
                 <input
                   type="number"
-                  min={0}
+                  min={q.variable === "household_size" ? 1 : 0}
+                  max={HOUSEHOLD_COUNT_MAX}
+                  step={1}
+                  inputMode="numeric"
+                  aria-invalid={numberErrors[q.variable] ? true : undefined}
+                  aria-describedby={numberErrors[q.variable] ? `${q.variable}-error` : undefined}
+                  className={numberErrors[q.variable] ? "input-invalid" : undefined}
                   value={answers[q.variable] ?? ""}
                   onChange={(e) => onAnswer(q.variable, e.target.value)}
                 />
+                {numberErrors[q.variable] && (
+                  <div className="field-error" id={`${q.variable}-error`} role="alert">
+                    {localizer.t(numberErrors[q.variable].key, numberErrors[q.variable].vars)}
+                  </div>
+                )}
               </div>
             ) : (
               <div className="q-block" key={q.variable}>
@@ -53,7 +68,7 @@ export function Step1ClusterQuestions({
                   name={q.variable}
                   options={(q.options ?? []).map((option) => ({
                     code: option.code,
-                    label: localizer.answer(option.label),
+                    label: localizer.answer(option.label, { variable: q.variable }),
                   }))}
                   value={answers[q.variable] ?? null}
                   onChange={(code) => onAnswer(q.variable, code)}
@@ -67,7 +82,7 @@ export function Step1ClusterQuestions({
         <button className="btn-ghost" onClick={onBack}>
           {localizer.t("common.back")}
         </button>
-        <button className="btn-primary" disabled={!complete} onClick={onNext}>
+        <button className="btn-primary" disabled={!complete || !valid} onClick={onNext}>
           {localizer.t("common.next")}
         </button>
       </div>

@@ -35,6 +35,13 @@ export const en = {
   "step1.hint": "These are the exact, already-validated cluster-forming questions for this branch — the same items the original study used to build these profile models.",
   "step1.translationNote": "",
 
+  "household.notWholeNumber": "Enter a whole number (no decimals).",
+  "household.negative": "Enter 0 or more.",
+  "household.sizeMin": "Enter at least 1 — the household includes the member.",
+  "household.max": "Enter {max} or fewer.",
+  "household.exceedsSize": "This can't be more than the household size ({size}).",
+  "household.sumExceedsSize": "Working ({workers}) plus unemployed ({unemployed}) can't be more than the household size ({size}).",
+
   "step2.title": "Which sectors interest the member?",
   "step2.hint": "Select up to three. The next step will ask which skills interest them within each selected sector.",
 
@@ -239,7 +246,14 @@ export const si: Record<MessageKey, string> = {
 
   "step1.title": "සාමාජිකයාගෙන් ඇසිය යුතු පසුබිම් ප්‍රශ්න කිහිපයක්",
   "step1.hint": "මේවා මෙම තත්ත්වය සඳහා දැනටමත් තහවුරු කර ඇති, කණ්ඩායම් සැකසීමට භාවිත කළ ප්‍රශ්නම වේ — මුල් අධ්‍යයනයේදී මෙම කාණ්ඩ ආකෘති සැකසීමට භාවිත කළ ප්‍රශ්නමය.",
-  "step1.translationNote": "සිංහල ප්‍රශ්න සහ පිළිතුරු පරිවර්තන වේ. තහවුරු කළ මුල් ඉංග්‍රීසි ප්‍රශ්නය එක් එක් ප්‍රශ්නයට පහළින් දැක්වේ. ඔබ තෝරන පිළිතුර පද්ධතියට යවනු ලබන්නේ වෙනස් නොවී, මුල් පිළිතුරු කේතය ලෙසමය.",
+  "step1.translationNote": "සිංහල ප්‍රශ්න සහ පිළිතුරු මුල් සමීක්ෂණයේ සිංහල පාඨයෙන්ම ගෙන ඇත. තහවුරු කළ මුල් ඉංග්‍රීසි ප්‍රශ්නය එක් එක් ප්‍රශ්නයට පහළින් දැක්වේ. ඔබ තෝරන පිළිතුර පද්ධතියට යවනු ලබන්නේ වෙනස් නොවී, මුල් පිළිතුරු කේතය ලෙසමය.",
+
+  "household.notWholeNumber": "දශම නොමැති පූර්ණ සංඛ්‍යාවක් ඇතුළත් කරන්න.",
+  "household.negative": "0 හෝ ඊට වැඩි අගයක් ඇතුළත් කරන්න.",
+  "household.sizeMin": "අවම වශයෙන් 1ක් ඇතුළත් කරන්න — සාමාජිකයාද නිවසට ඇතුළත් වේ.",
+  "household.max": "{max} හෝ ඊට අඩු අගයක් ඇතුළත් කරන්න.",
+  "household.exceedsSize": "මෙය නිවසේ සාමාජික සංඛ්‍යාවට ({size}) වඩා වැඩි විය නොහැක.",
+  "household.sumExceedsSize": "රැකියාවල නියුතු ({workers}) සහ රැකියා විරහිත ({unemployed}) අයගේ එකතුව නිවසේ සාමාජික සංඛ්‍යාවට ({size}) වඩා වැඩි විය නොහැක.",
 
   "step2.title": "සාමාජිකයා උනන්දු වන්නේ කුමන ක්ෂේත්‍ර ගැනද?",
   "step2.hint": "උපරිම ක්ෂේත්‍ර තුනක් තෝරන්න. ඊළඟ පියවරේදී, තෝරාගත් එක් එක් ක්ෂේත්‍රය තුළ ඔවුන් උනන්දු වන කුසලතා මොනවාදැයි අසනු ඇත.",
@@ -369,7 +383,7 @@ export const si: Record<MessageKey, string> = {
   "formation.legendLabel": "ප්‍රස්ථාර සංකේත",
   "formation.variable": "කණ්ඩායම් සැකසීමට භාවිත කළ සාධකය",
   "formation.questionId": "සමීක්ෂණ ප්‍රශ්නය {id}",
-  "formation.question": "සමීක්ෂණ ප්‍රශ්නය (මුල් ඉංග්‍රීසි)",
+  "formation.question": "සමීක්ෂණ ප්‍රශ්නය",
   "formation.unavailable": "මෙම සාධකය සඳහා අවසන් ව්‍යාප්තියක් හෝ කාණ්ඩ සාරාංශයක් නොතිබුණි.",
   "formation.source": "මූලාශ්‍රය: {source}",
   "formation.axis": "එක් එක් පෙර සමීක්ෂණ කාණ්ඩයේ ප්‍රතිචාරකයින්ගේ ප්‍රතිශතය",
@@ -385,9 +399,9 @@ export const si: Record<MessageKey, string> = {
   "teaching.notAvailable": "ලබාගත නොහැක",
   "teaching.evidenceKicker": "සමීක්ෂණ සාක්ෂි",
   "teaching.closeEvidence": "සමීක්ෂණ සාක්ෂි වසන්න",
-  "teaching.exactQuestion": "නිශ්චිත සමීක්ෂණ ප්‍රශ්නය (මුල් ඉංග්‍රීසි)",
+  "teaching.exactQuestion": "නිශ්චිත සමීක්ෂණ ප්‍රශ්නය",
   "teaching.questionMissing": "අවසන් ලේඛනයේ ප්‍රශ්න පාඨය නොතිබුණි.",
-  "teaching.fdrSupported": "සංඛ්‍යානමය වශයෙන් තහවුරු කළ (FDR-supported)",
+  "teaching.fdrSupported": "සංඛ්‍යානමය වශයෙන් තහවුරු කළ",
   "teaching.retainedDescriptive": "විස්තරාත්මක රටාවක් පමණි (retained descriptive)",
   "teaching.distributionsLabel": "සමීක්ෂණ ප්‍රතිචාර ව්‍යාප්ති",
   "teaching.denominatorMissing": "ගණනයට ගත් මුළු සංඛ්‍යාව (denominator) සුරැකී නැත",

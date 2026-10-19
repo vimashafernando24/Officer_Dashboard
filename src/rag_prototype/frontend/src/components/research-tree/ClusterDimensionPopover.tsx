@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, type CSSProperties } from "react";
 import { createPortal } from "react-dom";
 import dimensionLibraryJson from "../../data/clusterDimensionResearchLibrary.json";
-import { EnglishOnlyNotice } from "../../i18n/LanguageControls";
+import { EnglishOriginal } from "../../i18n/LanguageControls";
 import { useLocalizer } from "../../i18n/languageContext";
 
 interface ClusterFormingVariable {
@@ -160,12 +160,12 @@ export function ClusterDimensionPopover({ modelId, anchor, container, onClose, o
 
       <section className="research-dimension-section">
         <h3>{localizer.t("dimension.variables")}</h3>
-        <EnglishOnlyNotice>{localizer.t("dimension.questionsNote")}</EnglishOnlyNotice>
         <ul className="research-dimension-variables">
           {research.cluster_forming_variables.map((variable) => (
             <li key={variable.variable_key}>
               <strong>{localizer.variableName(variable.variable_key, variable.variable)}</strong>
-              {variable.survey_question ? <span lang="en">{variable.survey_question}</span> : null}
+              {variable.survey_question ? <span>{localizer.question(variable.variable_key, variable.survey_question)}</span> : null}
+              {variable.survey_question ? <EnglishOriginal text={variable.survey_question} /> : null}
             </li>
           ))}
         </ul>
