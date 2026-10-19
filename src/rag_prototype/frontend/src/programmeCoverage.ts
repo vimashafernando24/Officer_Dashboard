@@ -95,9 +95,6 @@ export function coveragePresentation(state: CoverageState): {
 export const MISSING_COMPARISON_CAUTION =
   "A missing comparison does not mean that suitable programmes do not exist.";
 
-/** Dashboard-level notice: comparator evidence is drawn from official sources but has not been independently reviewed. */
-export const EVIDENCE_REVIEW_NOTICE =
-  "Comparator records are taken from official published sources and have not yet been independently reviewed by a human reviewer. Treat comparisons as provisional.";
 
 /** What NYSC publishes for the course: about its own headings only, never about external evidence. */
 export function headingsMessage(coverage: CourseCoverage): string {
@@ -140,6 +137,10 @@ const TITLES: Record<CoverageState, string> = {
   RESEARCH_PENDING: "Comparison research not yet completed",
   EVIDENCE_UNAVAILABLE: "Comparison evidence insufficient",
 };
+
+export function coverageStateTitle(state: CoverageState): string {
+  return TITLES[state];
+}
 
 /** The status note shown in place of a comparison that is not (fully) available. */
 export function coverageNote(coverage: CourseCoverage): { title: string; lines: string[] } {

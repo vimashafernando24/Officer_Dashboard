@@ -60,13 +60,6 @@
   font-size: 18px;
 }
 
-.pcd-review-notice {
-  max-width: 760px;
-  margin: 6px 0 0;
-  color: var(--yc-muted);
-  font-size: 13px;
-}
-
 .pcd-main {
   padding: 22px 0 64px;
 }
@@ -198,11 +191,6 @@
   vertical-align: 1px;
 }
 
-.pcd-flag-corrected {
-  background: rgba(62, 118, 144, 0.1);
-  color: var(--yc-blue);
-}
-
 .pcd-flag-review {
   background: var(--yc-warning-soft);
   color: #75492f;
@@ -226,6 +214,34 @@
   background: var(--yc-warning-soft);
   color: #75492f;
   font-size: 15px;
+}
+
+.pcd-caveat-summary {
+  margin: 0;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.pcd-caveat-details {
+  margin-top: 8px;
+}
+
+.pcd-caveat-details summary {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.pcd-caveat-status {
+  margin: 8px 0 4px;
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.pcd-caveat-technical {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
 }
 
 .pcd-counts {
@@ -558,21 +574,9 @@ button.pcd-status[aria-pressed="true"] {
   font-size: 13px;
 }
 
-.pcd-evidence-original {
-  display: block;
-  margin-top: 2px;
-  color: var(--yc-muted);
-}
-
 .pcd-matrix-detail .pcd-matrix-note {
   margin-top: 8px;
   color: var(--yc-muted);
-}
-
-.pcd-matrix-review {
-  margin: 10px 0 0;
-  color: var(--yc-muted);
-  font-size: 14px;
 }
 
 .pcd-record-group + .pcd-record-group {
@@ -740,7 +744,7 @@ button.pcd-status[aria-pressed="true"] {
 }
 
 .pcd-source-details {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--yc-muted);
 }
 

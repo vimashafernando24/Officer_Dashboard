@@ -180,6 +180,54 @@ export function comparisonCaveat(courseId: string): ComparisonCaveat | null {
   return { text, unstated };
 }
 
+/**
+ * A plain-language reading of a course's caveat for officers. It is built only
+ * from structured facts (comparison state, record types, unstated fields), never
+ * by paraphrasing the stored caveat, so it cannot add claims the research does
+ * not support. Course-specific detail stays in the verbatim technical caveat.
+ */
+export function plainCaveatSummary(input: {
+  state: "FULL_COMPARISON" | "COMPARATORS_ONLY";
+  records: BenchmarkRecord[];
+  unstatedCount: number;
+}): string[] {
+  const n = input.records.length;
+  const them = n === 1 ? "it" : "them";
+  const lines: string[] = [];
+  lines.push(
+    input.state === "FULL_COMPARISON"
+      ? `The NYSC course's published module headings are compared with ${n} related training record${n === 1 ? "" : "s"}.`
+      : `NYSC has not published a module list for this course, so the ${n} related training record${n === 1 ? "" : "s"} can be listed but not compared module by module.`,
+  );
+  const notDelivered = input.records.filter((record) => record.record_type !== "programme").length;
+  if (notDelivered === n && n > 0) {
+    lines.push(
+      n === 1
+        ? "It is a national standard, curriculum or qualification."
+        : "All of them are national standards, curricula or qualifications.",
+    );
+  } else if (notDelivered === 1) {
+    lines.push(`1 of ${them} is a national standard, curriculum or qualification.`);
+  } else if (notDelivered > 1) {
+    lines.push(`${notDelivered} of ${them} are national standards, curricula or qualifications.`);
+  }
+  if (input.unstatedCount > 0) {
+    const which = input.unstatedCount === n ? (n === 1 ? "it" : "any of them") : `${input.unstatedCount} of ${them}`;
+    lines.push(`Length or level is not published for ${which}.`);
+  }
+  lines.push("Length, level and scope can differ from the NYSC course, so use this as a guide to content, not as an equivalence.");
+  return lines;
+}
+
+const CAVEAT_STATUS_PREFIX = /^(COMPARATORS_ONLY|FULL_COMPARISON):\s*/;
+
+/** The stored caveat for display, with only its leading status code removed (the status is shown as a label). */
+export function technicalCaveatText(text: string): string {
+  if (!CAVEAT_STATUS_PREFIX.test(text)) return text;
+  const rest = text.replace(CAVEAT_STATUS_PREFIX, "");
+  return rest.charAt(0).toUpperCase() + rest.slice(1);
+}
+
 // ---- Display-only formatting. These never alter the stored record text. ----
 
 export const MODULE_PREVIEW_LIMIT = 5;

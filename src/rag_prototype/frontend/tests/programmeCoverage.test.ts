@@ -6,7 +6,6 @@ import { NYSC_COURSES } from "../src/programmeComparison.ts";
 import { comparatorsForCourse } from "../src/programmeBenchmarks.ts";
 import { investigationAreas, mappingForCourse } from "../src/programmeComparisonMatrix.ts";
 import {
-  EVIDENCE_REVIEW_NOTICE,
   MISSING_COMPARISON_CAUTION,
   areasUnavailableMessage,
   coverageForCourse,
@@ -89,11 +88,6 @@ test("a genuinely unresearched course keeps the not-yet-completed wording", () =
 });
 
 
-test("the dashboard review notice never implies human verification", () => {
-  assert.match(EVIDENCE_REVIEW_NOTICE, /not yet been independently reviewed/);
-  assert.match(EVIDENCE_REVIEW_NOTICE, /provisional/);
-  assert.doesNotMatch(EVIDENCE_REVIEW_NOTICE, /\bverified\b|\bapproved\b|\bconfirmed\b/i);
-});
 
 
 test("no course displays unverified comparator data", () => {

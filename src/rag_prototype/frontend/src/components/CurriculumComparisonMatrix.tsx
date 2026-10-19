@@ -105,12 +105,6 @@ export function CurriculumComparisonMatrix({ mapping }: { mapping: CompetencyMap
                     {evidence.code && <code>{evidence.code}</code>}
                     {evidence.field === "scope_verbatim" && <span className="pcd-flag pcd-flag-scope">Qualification scope</span>}
                     “{evidence.display_text ?? evidence.text}”
-                    {evidence.display_text && (
-                      <>
-                        {" "}<span className="pcd-flag pcd-flag-corrected">Display corrected</span>
-                        <small className="pcd-evidence-original">Governed text: “{evidence.text}”</small>
-                      </>
-                    )}
                   </li>
                 ))}
               </ul>
@@ -143,9 +137,6 @@ export function CurriculumComparisonMatrix({ mapping }: { mapping: CompetencyMap
         )}
       </div>
 
-      {!mapping.human_reviewed && (
-        <p className="pcd-matrix-review">Hand-curated mapping, not yet reviewed by a second researcher.</p>
-      )}
     </div>
   );
 }

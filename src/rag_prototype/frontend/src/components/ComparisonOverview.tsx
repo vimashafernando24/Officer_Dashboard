@@ -45,7 +45,6 @@ export function ComparisonOverview({
       : "Loading comparison data…")
     : null;
   const modules = course ? displayModules(course) : [];
-  const corrected = modules.filter((module) => module.original !== null);
   const screenshotChecked = modules.flatMap((module, index) =>
     module.verifiedAgainst ? [{ heading: index + 1, file: module.verifiedAgainst.split("/").pop() }] : [],
   );
@@ -82,7 +81,6 @@ export function ComparisonOverview({
                 {modules.map((module, index) => (
                   <li key={`${index}-${module.text}`}>
                     {module.text}
-                    {module.original !== null && <span className="pcd-flag pcd-flag-corrected">Display corrected</span>}
                     {module.reviewReason && (
                       <span className="pcd-flag pcd-flag-review" title={module.reviewReason}>Needs review</span>
                     )}
@@ -90,18 +88,8 @@ export function ComparisonOverview({
                 ))}
               </ol>
             )}
-            {(corrected.length > 0 || modules.some((module) => module.reviewReason)) && (
+            {(screenshotChecked.length > 0 || modules.some((module) => module.reviewReason)) && (
               <div className="pcd-module-notes">
-                {corrected.length > 0 && (
-                  <p>
-                    Display corrected: the source page placed the module list beside its overview text,
-                    and extraction merged a verified overview fragment into the heading. The governed
-                    catalogue is unchanged. Original:{" "}
-                    {corrected.map((module, index) => (
-                      <span key={index}>{index > 0 && "; "}“{module.original}”</span>
-                    ))}
-                  </p>
-                )}
                 {screenshotChecked.map(({ heading, file }) => (
                   <p key={heading}>
                     Heading {heading} was checked against this course's own source screenshot ({file}).
